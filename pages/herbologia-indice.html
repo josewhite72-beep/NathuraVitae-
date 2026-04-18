@@ -308,278 +308,123 @@ body{font-family:'Nunito',sans-serif;background:var(--crema);color:var(--tx);min
 /* ══════════════════════════════════════
    DATOS
 ══════════════════════════════════════ */
-const PLANTAS = [
-  {
-    id:"aloe-vera", nom:"Aloe vera", ci:"Aloe vera (L.) Burm.f.",
-    familia:"Asphodelaceae", emoji:"🌵",
-    partes:["hoja","gel interno"],
-    resumen:"El gel interno protege y regenera la mucosa intestinal. Estudiado en colitis ulcerosa.",
-    sistemas:["digestivo","dermatológico"],
-    dolencias:[
-      {nom:"Colitis ulcerosa leve",cat:"digestivo",evid:"moderado"},
-      {nom:"Síndrome de intestino irritable",cat:"digestivo",evid:"moderado"},
-      {nom:"Estreñimiento (látex)",cat:"digestivo",evid:"fuerte"},
-      {nom:"Quemaduras y heridas",cat:"dermatológico",evid:"fuerte"}
-    ],
-    propPrincipal:"Demulcente · protector de mucosa",
-    evidPrincipal:"moderado",
-    eiiSegura:true, noEIIBrote:false,
-    etiquetas:["demulcente","mucosa","piel","apta-eii"],
-    fuentes:["EMA 2013","Langmead et al. 2004"]
-  },
-  {
-    id:"ajo", nom:"Ajo", ci:"Allium sativum L.",
-    familia:"Amaryllidaceae", emoji:"🧄",
-    partes:["bulbo"],
-    resumen:"Alimento medicinal con actividad antimicrobiana, cardiovascular e inmunoestimulante de alto respaldo científico.",
-    sistemas:["inmunológico","cardiovascular","respiratorio"],
-    dolencias:[
-      {nom:"Infecciones respiratorias",cat:"respiratorio",evid:"moderado"},
-      {nom:"Hipertensión leve",cat:"cardiovascular",evid:"moderado"},
-      {nom:"Colesterol elevado",cat:"cardiovascular",evid:"moderado"},
-      {nom:"Defensas bajas",cat:"inmunológico",evid:"moderado"}
-    ],
-    propPrincipal:"Antimicrobiana · inmunoestimulante",
-    evidPrincipal:"fuerte",
-    eiiSegura:true, noEIIBrote:true,
-    etiquetas:["antimicrobiana","cardiovascular","inmune"],
-    fuentes:["OMS 1999","Ried K 2016"]
-  },
-  {
-    id:"ashwagandha", nom:"Ashwagandha", ci:"Withania somnifera (L.) Dunal",
-    familia:"Solanaceae", emoji:"🌰",
-    partes:["raíz"],
-    resumen:"Adaptógeno ayurvédico con sólido respaldo científico para el estrés crónico, la ansiedad y la fatiga.",
-    sistemas:["nervioso","inmunológico","general"],
-    dolencias:[
-      {nom:"Estrés crónico",cat:"nervioso",evid:"fuerte"},
-      {nom:"Ansiedad",cat:"nervioso",evid:"fuerte"},
-      {nom:"Fatiga crónica",cat:"general",evid:"moderado"},
-      {nom:"Insomnio",cat:"nervioso",evid:"moderado"}
-    ],
-    propPrincipal:"Adaptógena · ansiolítica",
-    evidPrincipal:"fuerte",
-    eiiSegura:true, noEIIBrote:true,
-    etiquetas:["adaptógeno","antiestres","ayurveda"],
-    fuentes:["Chandrasekhar et al. 2012","Pratte et al. 2014"]
-  },
-  {
-    id:"curcuma", nom:"Cúrcuma", ci:"Curcuma longa L.",
-    familia:"Zingiberaceae", emoji:"🟡",
-    partes:["rizoma"],
-    resumen:"La curcumina es uno de los antiinflamatorios naturales más potentes y estudiados, con ensayos clínicos en EII y artritis.",
-    sistemas:["digestivo","musculoesquelético","inmunológico"],
-    dolencias:[
-      {nom:"Enfermedad inflamatoria intestinal",cat:"digestivo",evid:"moderado"},
-      {nom:"Colitis ulcerosa",cat:"digestivo",evid:"moderado"},
-      {nom:"Artritis",cat:"musculoesquelético",evid:"moderado"},
-      {nom:"Dispepsia",cat:"digestivo",evid:"moderado"}
-    ],
-    propPrincipal:"Antiinflamatoria · antioxidante",
-    evidPrincipal:"fuerte",
-    eiiSegura:true, noEIIBrote:true,
-    etiquetas:["antiinflamatoria","eii","artritis","superalimento"],
-    fuentes:["EMA 2018","Hanai H et al. 2006"]
-  },
-  {
-    id:"equinacea", nom:"Equinácea", ci:"Echinacea purpurea (L.) Moench",
-    familia:"Asteraceae", emoji:"💜",
-    partes:["raíz","planta aérea"],
-    resumen:"La planta inmunoestimulante más vendida en Europa. Reduce la incidencia de resfriados en un 35% y acorta su duración.",
-    sistemas:["inmunológico","respiratorio"],
-    dolencias:[
-      {nom:"Resfriado y gripe",cat:"respiratorio",evid:"fuerte"},
-      {nom:"Infecciones respiratorias recurrentes",cat:"respiratorio",evid:"fuerte"},
-      {nom:"Defensas bajas",cat:"inmunológico",evid:"fuerte"}
-    ],
-    propPrincipal:"Inmunoestimulante · antiviral",
-    evidPrincipal:"fuerte",
-    eiiSegura:false, noEIIBrote:true,
-    etiquetas:["inmunoestimulante","antiviral","gripe"],
-    fuentes:["EMA 2015","Shah SA et al. 2007"]
-  },
-  {
-    id:"eucalipto", nom:"Eucalipto", ci:"Eucalyptus globulus Labill.",
-    familia:"Myrtaceae", emoji:"🌲",
-    partes:["hoja"],
-    resumen:"El cineol del eucalipto es el descongestionante natural más eficaz para las vías respiratorias superiores, con aval de la EMA.",
-    sistemas:["respiratorio"],
-    dolencias:[
-      {nom:"Congestión nasal y sinusitis",cat:"respiratorio",evid:"fuerte"},
-      {nom:"Bronquitis",cat:"respiratorio",evid:"fuerte"},
-      {nom:"Resfriado común",cat:"respiratorio",evid:"moderado"}
-    ],
-    propPrincipal:"Descongestionante · expectorante",
-    evidPrincipal:"fuerte",
-    eiiSegura:true, noEIIBrote:false,
-    etiquetas:["descongestionante","respiratoria","sinusitis"],
-    fuentes:["EMA 2013"]
-  },
-  {
-    id:"hinojo", nom:"Hinojo", ci:"Foeniculum vulgare Mill.",
-    familia:"Apiaceae", emoji:"🌱",
-    partes:["semilla","fruto"],
-    resumen:"La planta carminativa por excelencia. Muy eficaz para gases, distensión abdominal y cólicos. Segura en brote de EII.",
-    sistemas:["digestivo"],
-    dolencias:[
-      {nom:"Gases y flatulencia",cat:"digestivo",evid:"fuerte"},
-      {nom:"Distensión abdominal",cat:"digestivo",evid:"fuerte"},
-      {nom:"Cólicos",cat:"digestivo",evid:"moderado"},
-      {nom:"Síndrome de intestino irritable",cat:"digestivo",evid:"moderado"}
-    ],
-    propPrincipal:"Carminativa · antiespasmódica",
-    evidPrincipal:"fuerte",
-    eiiSegura:true, noEIIBrote:false,
-    etiquetas:["carminativa","digestiva","apta-eii","apta-brote"],
-    fuentes:["EMA 2008","OMS 1999"]
-  },
-  {
-    id:"jengibre", nom:"Jengibre", ci:"Zingiber officinale Roscoe",
-    familia:"Zingiberaceae", emoji:"🫚",
-    partes:["rizoma"],
-    resumen:"Raíz con potentes propiedades antiinflamatorias y antináuseas. Uno de los remedios más respaldados por la ciencia moderna.",
-    sistemas:["digestivo","musculoesquelético","inmunológico"],
-    dolencias:[
-      {nom:"Náuseas y vómitos",cat:"digestivo",evid:"fuerte"},
-      {nom:"Dispepsia",cat:"digestivo",evid:"fuerte"},
-      {nom:"Gases y flatulencia",cat:"digestivo",evid:"moderado"},
-      {nom:"Dolor articular",cat:"musculoesquelético",evid:"moderado"}
-    ],
-    propPrincipal:"Antiinflamatoria · antináuseas",
-    evidPrincipal:"fuerte",
-    eiiSegura:true, noEIIBrote:true,
-    etiquetas:["digestiva","antiinflamatoria","antináuseas"],
-    fuentes:["OMS 1999","EMA 2012"]
-  },
-  {
-    id:"manzanilla", nom:"Manzanilla", ci:"Matricaria chamomilla L.",
-    familia:"Asteraceae", emoji:"🌼",
-    partes:["flor"],
-    resumen:"Una de las plantas más estudiadas del mundo. Antiinflamatoria, antiespasmódica y calmante con amplio respaldo científico.",
-    sistemas:["digestivo","nervioso","hormonal"],
-    dolencias:[
-      {nom:"Colitis leve",cat:"digestivo",evid:"moderado"},
-      {nom:"Gastritis",cat:"digestivo",evid:"moderado"},
-      {nom:"Síndrome de intestino irritable",cat:"digestivo",evid:"moderado"},
-      {nom:"Insomnio leve",cat:"nervioso",evid:"moderado"},
-      {nom:"Ansiedad leve",cat:"nervioso",evid:"moderado"},
-      {nom:"Cólicos menstruales",cat:"hormonal",evid:"moderado"}
-    ],
-    propPrincipal:"Antiinflamatoria · antiespasmódica",
-    evidPrincipal:"fuerte",
-    eiiSegura:true, noEIIBrote:false,
-    etiquetas:["digestiva","calmante","apta-eii","nervina"],
-    fuentes:["OMS 1999","EMA 2015"]
-  },
-  {
-    id:"melisa", nom:"Melisa", ci:"Melissa officinalis L.",
-    familia:"Lamiaceae", emoji:"🍋",
-    partes:["hoja"],
-    resumen:"Doble acción: calmante del sistema nervioso y antiespasmódica digestiva. Ideal cuando el estrés se manifiesta en el intestino.",
-    sistemas:["nervioso","digestivo"],
-    dolencias:[
-      {nom:"Colon irritable de origen nervioso",cat:"digestivo",evid:"moderado"},
-      {nom:"Ansiedad con síntomas digestivos",cat:"nervioso",evid:"moderado"},
-      {nom:"Gases y distensión",cat:"digestivo",evid:"fuerte"},
-      {nom:"Insomnio leve",cat:"nervioso",evid:"moderado"}
-    ],
-    propPrincipal:"Ansiolítica · antiespasmódica digestiva",
-    evidPrincipal:"moderado",
-    eiiSegura:true, noEIIBrote:false,
-    etiquetas:["calmante","digestiva","apta-eii","estrés-digestivo"],
-    fuentes:["EMA 2013","Cases J et al. 2011"]
-  },
-  {
-    id:"pasiflora", nom:"Pasiflora", ci:"Passiflora incarnata L.",
-    familia:"Passifloraceae", emoji:"🌺",
-    partes:["hoja","tallo","flor"],
-    resumen:"Ansiolítica suave de origen americano avalada por la EMA. Muy bien tolerada incluso de día, sin somnolencia excesiva.",
-    sistemas:["nervioso","cardiovascular"],
-    dolencias:[
-      {nom:"Ansiedad leve a moderada",cat:"nervioso",evid:"fuerte"},
-      {nom:"Insomnio leve",cat:"nervioso",evid:"moderado"},
-      {nom:"Nerviosismo y tensión",cat:"nervioso",evid:"fuerte"},
-      {nom:"Palpitaciones funcionales",cat:"cardiovascular",evid:"preliminar"}
-    ],
-    propPrincipal:"Ansiolítica · sedante suave",
-    evidPrincipal:"fuerte",
-    eiiSegura:true, noEIIBrote:false,
-    etiquetas:["ansiolítica","sedante-suave","diurna","estrés"],
-    fuentes:["EMA 2014","Akhondzadeh et al. 2001"]
-  },
-  {
-    id:"regaliz", nom:"Regaliz DGL", ci:"Glycyrrhiza glabra L.",
-    familia:"Fabaceae", emoji:"🟤",
-    partes:["raíz"],
-    resumen:"El regaliz desglicoricínico (DGL) protege la mucosa gástrica sin elevar la presión arterial. Referencia en gastritis y úlceras.",
-    sistemas:["digestivo","respiratorio"],
-    dolencias:[
-      {nom:"Gastritis",cat:"digestivo",evid:"fuerte"},
-      {nom:"Úlcera gástrica",cat:"digestivo",evid:"moderado"},
-      {nom:"Reflujo gastroesofágico",cat:"digestivo",evid:"moderado"},
-      {nom:"Tos y bronquitis",cat:"respiratorio",evid:"moderado"}
-    ],
-    propPrincipal:"Gastroprotectora · antiinflamatoria",
-    evidPrincipal:"fuerte",
-    eiiSegura:true, noEIIBrote:false,
-    etiquetas:["gastroprotectora","mucosa","dgl","apta-eii"],
-    fuentes:["OMS 1999","EMA 2012"]
-  },
-  {
-    id:"sauco", nom:"Saúco", ci:"Sambucus nigra L.",
-    familia:"Adoxaceae", emoji:"🫐",
-    partes:["flor","fruto"],
-    resumen:"Las flores y bayas de saúco reducen la duración de la gripe 2-4 días según metaanálisis. El mejor antiviral natural disponible.",
-    sistemas:["respiratorio","inmunológico"],
-    dolencias:[
-      {nom:"Resfriado común",cat:"respiratorio",evid:"fuerte"},
-      {nom:"Gripe (influenza)",cat:"respiratorio",evid:"fuerte"},
-      {nom:"Sinusitis",cat:"respiratorio",evid:"moderado"},
-      {nom:"Fiebre",cat:"general",evid:"moderado"}
-    ],
-    propPrincipal:"Antiviral · inmunoestimulante",
-    evidPrincipal:"fuerte",
-    eiiSegura:false, noEIIBrote:true,
-    etiquetas:["antiviral","gripe","respiratoria","bayas"],
-    fuentes:["Zakay-Rones et al. 2004","Hawkins et al. 2019"]
-  },
-  {
-    id:"tomillo", nom:"Tomillo", ci:"Thymus vulgaris L.",
-    familia:"Lamiaceae", emoji:"🌿",
-    partes:["hoja","flor"],
-    resumen:"Expectorante y antiséptico respiratorio natural con aval de la EMA. Eficaz en tos, bronquitis y faringitis.",
-    sistemas:["respiratorio"],
-    dolencias:[
-      {nom:"Tos seca y productiva",cat:"respiratorio",evid:"fuerte"},
-      {nom:"Bronquitis",cat:"respiratorio",evid:"fuerte"},
-      {nom:"Faringitis",cat:"respiratorio",evid:"moderado"},
-      {nom:"Infecciones respiratorias",cat:"respiratorio",evid:"moderado"}
-    ],
-    propPrincipal:"Expectorante · antimicrobiana",
-    evidPrincipal:"fuerte",
-    eiiSegura:true, noEIIBrote:false,
-    etiquetas:["expectorante","tos","bronquitis","antiséptica"],
-    fuentes:["EMA 2013","Kemmerich et al. 2006"]
-  },
-  {
-    id:"valeriana", nom:"Valeriana", ci:"Valeriana officinalis L.",
-    familia:"Caprifoliaceae", emoji:"🌸",
-    partes:["raíz","rizoma"],
-    resumen:"La planta sedante e hipnótica más estudiada en fitoterapia europea. Avalada por la EMA para insomnio leve y ansiedad.",
-    sistemas:["nervioso","musculoesquelético"],
-    dolencias:[
-      {nom:"Insomnio leve a moderado",cat:"nervioso",evid:"fuerte"},
-      {nom:"Ansiedad",cat:"nervioso",evid:"moderado"},
-      {nom:"Nerviosismo y tensión",cat:"nervioso",evid:"moderado"},
-      {nom:"Espasmos musculares",cat:"musculoesquelético",evid:"moderado"}
-    ],
-    propPrincipal:"Sedante · hipnótica",
-    evidPrincipal:"fuerte",
-    eiiSegura:true, noEIIBrote:false,
-    etiquetas:["sedante","insomnio","ansiedad","nervina"],
-    fuentes:["EMA 2016","Bent S et al. 2006"]
-  }
+// Catálogo completo — cargado dinámicamente desde JSON
+const FICHAS_CONFIG = [
+  {id:'aloe-vera',      grupo:'digestivo'},
+  {id:'hinojo',         grupo:'digestivo'},
+  {id:'regaliz-dgl',    grupo:'digestivo'},
+  {id:'curcuma',        grupo:'digestivo'},
+  {id:'jengibre',       grupo:'digestivo'},
+  {id:'manzanilla',     grupo:'digestivo'},
+  {id:'menta-piperita', grupo:'digestivo'},
+  {id:'olmo-resbaladizo',grupo:'digestivo'},
+  {id:'psyllium',       grupo:'digestivo'},
+  {id:'alcachofa',      grupo:'digestivo'},
+  {id:'fumaria',        grupo:'digestivo'},
+  {id:'ajo',            grupo:'cardiovascular'},
+  {id:'espino-blanco',  grupo:'cardiovascular'},
+  {id:'hibisco',        grupo:'cardiovascular'},
+  {id:'olivo',          grupo:'cardiovascular'},
+  {id:'te-verde',       grupo:'cardiovascular'},
+  {id:'astragalo',      grupo:'inmunologico'},
+  {id:'andrographis',   grupo:'inmunologico'},
+  {id:'equinacea-purpurea', grupo:'inmunologico'},
+  {id:'bidens-pilosa',  grupo:'inmunologico'},
+  {id:'ginkgo-biloba',  grupo:'nervioso'},
+  {id:'bacopa-monnieri',grupo:'nervioso'},
+  {id:'centella-asiatica',grupo:'nervioso'},
+  {id:'maca',           grupo:'nervioso'},
+  {id:'ashwagandha',    grupo:'nervioso'},
+  {id:'rodiola',        grupo:'nervioso'},
+  {id:'escutelaria',    grupo:'nervioso'},
+  {id:'azafran',        grupo:'nervioso'},
+  {id:'griffonia',      grupo:'nervioso'},
+  {id:'damiana',        grupo:'nervioso'},
+  {id:'lupulo',         grupo:'nervioso'},
+  {id:'amapola-de-california', grupo:'nervioso'},
+  {id:'albahaca-sagrada',grupo:'nervioso'},
+  {id:'valeriana',      grupo:'nervioso'},
+  {id:'pasiflora',      grupo:'nervioso'},
+  {id:'eucalipto',      grupo:'respiratorio'},
+  {id:'tomillo',        grupo:'respiratorio'},
+  {id:'salvia',         grupo:'respiratorio'},
+  {id:'marrubio-blanco',grupo:'respiratorio'},
+  {id:'malvavisco',     grupo:'respiratorio'},
+  {id:'gordolobo',      grupo:'respiratorio'},
+  {id:'pino-silvestre', grupo:'respiratorio'},
+  {id:'sauco',          grupo:'respiratorio'},
+  {id:'regaliz-respiratorio', grupo:'respiratorio'},
+  {id:'pelargonium-sidoides', grupo:'respiratorio'},
+  {id:'guanabana',      grupo:'flora-panama'},
+  {id:'hierba-de-sapo', grupo:'flora-panama'},
+  {id:'achiote',        grupo:'flora-panama'},
+  {id:'santa-maria',    grupo:'flora-panama'},
+  {id:'noni',           grupo:'flora-panama'},
 ];
+
+let PLANTAS = [];
+
+async function cargarTodasLasFichas() {
+  const promesas = FICHAS_CONFIG.map(async ({id, grupo}) => {
+    try {
+      const r = await fetch(`../data/${grupo}/${id}.json`);
+      if (!r.ok) return null;
+      const d = await r.json();
+      return {
+        id,
+        nom: d.nombreComun || id,
+        ci: d.nombreCientifico || '',
+        familia: d.familia || '',
+        emoji: d.emoji || '🌿',
+        partes: (d.partesUsadas || []).map(p => typeof p === 'string' ? p : p.parte),
+        resumen: d.resumen || '',
+        sistemas: d.sistemas || [],
+        dolencias: (d.dolencias || []).map(x => ({
+          nom: x.nombre || x.nom || '',
+          cat: x.categoria || '',
+          evid: x.nivelEvidencia || ''
+        })),
+        propPrincipal: Array.isArray(d.grupoTerapeutico)
+          ? d.grupoTerapeutico.slice(0,2).join(' · ')
+          : (d.grupoTerapeutico || ''),
+        evidPrincipal: (d.propiedades && d.propiedades[0]) ? d.propiedades[0].nivelEvidencia : '',
+        eiiSegura: d.modoEII ? (d.modoEII.aptaEnMantenimiento || false) : false,
+        noEIIBrote: d.modoEII ? !d.modoEII.aptaEnBrote : false,
+        etiquetas: d.etiquetas || [],
+        fuentes: (d.fuentes || []).slice(0,2).map(f => f.autor || f.publicacion || ''),
+        nivel: d.nivelEvidenciaGlobal || 'C',
+        grupo
+      };
+    } catch(e) { return null; }
+  });
+
+  const resultados = await Promise.all(promesas);
+  PLANTAS = resultados.filter(Boolean);
+
+  // Actualizar contador en el header
+  const contEl = document.querySelector('.header-count');
+  if (contEl) contEl.textContent = PLANTAS.length + ' plantas';
+
+  // Actualizar stat de plantas
+  const statEl = document.querySelector('.stat-num');
+  if (statEl) statEl.textContent = PLANTAS.length;
+
+  renderAlfaRail();
+  renderPlantasAZ(PLANTAS);
+  renderDolencias();
+
+  // Aplicar búsqueda si viene por URL
+  const params = new URLSearchParams(window.location.search);
+  const termino = params.get('buscar');
+  if (termino) {
+    const inp = document.getElementById('searchInput');
+    if (inp) {
+      inp.value = termino;
+      onSearch(termino);
+      inp.scrollIntoView({behavior:'smooth', block:'center'});
+    }
+  }
+}
 
 /* ══════════════════════════════════════
    DOLENCIAS AGRUPADAS
@@ -700,35 +545,7 @@ let busq = '';
    INIT
 ══════════════════════════════════════ */
 document.addEventListener('DOMContentLoaded', () => {
-  renderAlfaRail();
-  renderPlantasAZ(PLANTAS);
-  renderDolencias();
-
-  // Recibir término de búsqueda desde index.html
-  const params = new URLSearchParams(window.location.search);
-  const termino = params.get('buscar');
-  if (termino) {
-    const inp = document.getElementById('searchInput');
-    if (inp) {
-      inp.value = termino;
-      onSearch(termino);
-      inp.scrollIntoView({behavior:'smooth', block:'center'});
-    } else {
-      // Si no hay input de búsqueda, filtrar visualmente las plantas
-      const q = termino.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');
-      const cards = document.querySelectorAll('.planta-card, .planta-item, [data-nom]');
-      cards.forEach(c => {
-        const nom = (c.dataset.nom || c.textContent || '').toLowerCase()
-          .normalize('NFD').replace(/[\u0300-\u036f]/g,'');
-        c.style.display = nom.includes(q) ? '' : 'none';
-      });
-      // Mostrar toast informativo
-      const matches = [...cards].filter(c => c.style.display !== 'none');
-      if (matches.length === 0) {
-        alert('No se encontraron resultados para "' + termino + '"');
-      }
-    }
-  }
+  cargarTodasLasFichas();
 });
 
 /* ══════════════════════════════════════
