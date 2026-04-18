@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#1a3d2a">
+<title>NathuraVitae — Recetas Especiales</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --v1:#1a3d2a;--v2:#245c3e;--v3:#2e8b5a;--v4:#4aab7f;--v5:#8dd4b0;
+  --vp:#eaf6f0;--vm:#c0e8d4;--vt:#8dd4b0;
+  --crema:#f8f5ee;--crema2:#ede8dc;--crema3:#e2dace;
+  --tx:#1a1a16;--tx2:#44443c;--tx3:#8a8878;
+  --amb:#9a6010;--ambp:#fdf2e0;
+  --c-sg:#1a5276;--c-keto:#6a1a6e;--c-eii:#006d4e;
+  --c-mant:#8b5e00;--c-bat:#2e6b6b;--c-pan:#5c3d11;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'DM Sans',sans-serif;background:var(--crema);color:var(--tx);padding-bottom:80px;-webkit-font-smoothing:antialiased}
+.status-spacer{height:env(safe-area-inset-top,0px);background:var(--v1)}
+.topbar{background:var(--v1);padding:12px 20px 14px;display:flex;align-items:center;gap:10px;position:sticky;top:0;z-index:40}
+.topbar-back{width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.1);border:none;display:flex;align-items:center;justify-content:center;cursor:pointer;color:white;font-size:18px;text-decoration:none}
+.topbar-icon{width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;font-size:16px}
+.topbar-nom{font-family:'Playfair Display',serif;font-size:20px;color:white;font-weight:600}
+.topbar-nom span{font-style:italic;font-weight:400;color:var(--vt)}
+
+.hero{background:var(--v1);padding:4px 24px 44px;position:relative;overflow:hidden}
+.hero::after{content:'';position:absolute;bottom:0;left:0;right:0;height:40px;background:linear-gradient(to bottom,transparent,var(--crema));pointer-events:none}
+.hero-deco{position:absolute;right:-20px;top:-10px;font-size:200px;opacity:.04;line-height:1;pointer-events:none}
+.hero-eyebrow{font-size:10px;font-weight:500;color:var(--vt);letter-spacing:2.5px;text-transform:uppercase;margin-bottom:10px;display:flex;align-items:center;gap:6px}
+.hero-eyebrow::before{content:'';width:20px;height:1px;background:var(--vt);opacity:.6}
+.hero-titulo{font-family:'Playfair Display',serif;font-size:28px;font-weight:700;line-height:1.2;color:white;margin-bottom:10px}
+.hero-titulo em{color:var(--vt);font-style:italic;font-weight:400}
+.hero-sub{font-size:13px;line-height:1.7;color:rgba(255,255,255,.65);max-width:320px}
+
+.tabs-wrap{padding:20px 16px 0;overflow-x:auto;scrollbar-width:none;display:flex;gap:8px}
+.tab{flex-shrink:0;border-radius:20px;padding:7px 14px;font-size:11px;font-weight:500;border:1.5px solid var(--crema3);background:white;color:var(--tx3);cursor:pointer;transition:all .2s;white-space:nowrap}
+.tab.activo{background:var(--v1);color:white;border-color:var(--v1)}
+
+.sec-titulo{padding:24px 20px 10px;display:flex;align-items:baseline;gap:10px}
+.sec-titulo h2{font-family:'Playfair Display',serif;font-size:18px;color:var(--v1)}
+.sec-titulo .lin{flex:1;height:1px;background:var(--crema3)}
+
+.lista{padding:0 16px;display:flex;flex-direction:column;gap:16px}
+
+.card{background:white;border-radius:22px;border:1.5px solid var(--crema3);overflow:hidden;box-shadow:0 2px 16px rgba(26,61,42,.06);animation:fadeUp .35s ease both}
+.card:nth-child(1){animation-delay:.04s}.card:nth-child(2){animation-delay:.08s}
+.card:nth-child(3){animation-delay:.12s}.card:nth-child(4){animation-delay:.16s}
+.card:nth-child(5){animation-delay:.20s}.card:nth-child(6){animation-delay:.24s}
+.card:nth-child(7){animation-delay:.28s}.card:nth-child(8){animation-delay:.32s}
+.card:nth-child(9){animation-delay:.36s}.card:nth-child(10){animation-delay:.40s}
+.card:nth-child(11){animation-delay:.44s}.card:nth-child(12){animation-delay:.48s}
+
+.card-header{padding:18px 18px 14px}
+.cat-badge{display:inline-flex;align-items:center;gap:5px;border-radius:20px;padding:4px 10px;font-size:9px;font-weight:600;letter-spacing:1px;text-transform:uppercase;margin-bottom:10px}
+.cat-sg{background:#e8f0f8;color:var(--c-sg)}
+.cat-keto{background:#f8e8f8;color:var(--c-keto)}
+.cat-eii{background:#e8f8f3;color:var(--c-eii)}
+.cat-mant{background:#fef5e0;color:var(--c-mant)}
+.cat-bat{background:#e8f5f5;color:var(--c-bat)}
+.cat-pan{background:#fdf2e0;color:var(--c-pan)}
+
+.card-titulo{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;line-height:1.2;margin-bottom:6px}
+.cat-sg .card-titulo{color:var(--c-sg)}
+.cat-keto .card-titulo,.card.cat-keto .card-titulo{color:var(--c-keto)}
+.cat-eii-h .card-titulo{color:var(--c-eii)}
+.cat-mant-h .card-titulo{color:var(--c-mant)}
+.cat-bat-h .card-titulo{color:var(--c-bat)}
+.cat-pan-h .card-titulo{color:var(--c-pan)}
+
+.card-tagline{font-size:12px;color:var(--tx3);line-height:1.5;margin-bottom:10px}
+.card-dirigida{font-size:11px;color:var(--tx2);background:var(--crema);border-radius:8px;padding:6px 10px;margin-bottom:4px}
+.card-div{height:1px;background:var(--crema2);margin:0 18px}
+.toggle-btn{width:100%;background:none;border:none;padding:12px 18px;display:flex;align-items:center;justify-content:space-between;cursor:pointer;font-size:12px;color:var(--tx3);font-weight:500;font-family:'DM Sans',sans-serif}
+.toggle-icon{transition:transform .25s;font-size:16px}
+.card.abierta .toggle-icon{transform:rotate(180deg)}
+.card-body{padding:14px 18px 18px;display:none}
+.card.abierta .card-body{display:block}
+
+.sec-label{font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--tx3);margin-bottom:10px}
+.ing-lista{list-style:none;display:flex;flex-direction:column;gap:6px;margin-bottom:16px}
+.ing-lista li{display:flex;align-items:flex-start;gap:8px;font-size:12px;color:var(--tx2);line-height:1.5}
+.ing-dot{width:6px;height:6px;border-radius:50%;background:var(--v3);flex-shrink:0;margin-top:5px}
+.paso{display:flex;gap:10px;margin-bottom:8px;align-items:flex-start}
+.paso-num{width:20px;height:20px;border-radius:50%;background:var(--v1);display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:700;flex-shrink:0;color:white}
+.paso-texto{font-size:12px;color:var(--tx2);line-height:1.6;padding-top:1px}
+.beneficios-wrap{background:var(--vp);border-radius:14px;padding:14px;margin:14px 0}
+.beneficios-texto{font-size:11px;color:var(--tx2);line-height:1.7}
+.precaucion{display:flex;align-items:flex-start;gap:6px;font-size:10px;color:var(--amb);background:var(--ambp);border-radius:10px;padding:8px 10px;margin-top:10px}
+
+/* Sub-recetas para batidos y panadería */
+.sub-receta{background:var(--crema);border-radius:12px;padding:12px 14px;margin-bottom:10px}
+.sub-titulo{font-family:'Playfair Display',serif;font-size:14px;font-weight:600;color:var(--v1);margin-bottom:8px}
+.sub-beneficio{font-size:10px;color:var(--v2);margin-top:6px;font-style:italic}
+
+.disclaimer{margin:20px 16px 0;background:var(--crema2);border-radius:14px;padding:14px 16px;font-size:10px;color:var(--tx3);line-height:1.7;text-align:center}
+.bottom-nav{position:fixed;bottom:0;left:0;right:0;background:white;border-top:1px solid var(--crema3);padding:8px 0 calc(8px + env(safe-area-inset-bottom,0px));display:flex;justify-content:space-around;z-index:40}
+.nav-item{display:flex;flex-direction:column;align-items:center;gap:2px;text-decoration:none;font-size:10px;color:var(--tx3);font-weight:400;min-width:52px}
+.nav-item.activo{color:var(--v3);font-weight:500}
+.nav-icon{font-size:20px}
+@keyframes fadeUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+</style>
+</head>
+<body>
+<div class="status-spacer"></div>
+<div class="topbar">
+  <a href="../index.html" class="topbar-back">←</a>
+  <div class="topbar-icon">🍽️</div>
+  <div class="topbar-nom">Recetas <span>especiales</span></div>
+</div>
+
+<div class="hero">
+  <div class="hero-deco">🥗</div>
+  <div class="hero-eyebrow">Nutrición terapéutica</div>
+  <div class="hero-titulo">Comer con <em>propósito</em></div>
+  <div class="hero-sub">12 recetas organizadas por condición: celiaquía, keto, EII activo, mantenimiento, batidos medicinales y panadería sin gluten.</div>
+</div>
+
+<div class="tabs-wrap">
+  <div class="tab activo" onclick="filtrar('todos',this)">Todas (12)</div>
+  <div class="tab" onclick="filtrar('sg',this)">🌾 Sin gluten</div>
+  <div class="tab" onclick="filtrar('keto',this)">🥑 Keto</div>
+  <div class="tab" onclick="filtrar('eii',this)">💊 Brote EII</div>
+  <div class="tab" onclick="filtrar('mant',this)">🌿 Mantenimiento</div>
+  <div class="tab" onclick="filtrar('bat',this)">🥤 Batidos</div>
+  <div class="tab" onclick="filtrar('pan',this)">🍞 Panadería</div>
+</div>
+
+<div class="sec-titulo"><h2>🍽️ Recetas especiales</h2><div class="lin"></div></div>
+<div class="lista" id="lista">
+
+<!-- 1 Sin gluten -->
+<div class="card" data-cat="sg">
+  <div class="card-header">
+    <div class="cat-badge cat-sg">🌾 Sin gluten · Celiaquía</div>
+    <div class="card-titulo" style="color:var(--c-sg)">Porridge de Arroz con Menta y Jengibre</div>
+    <div class="card-tagline">Desayuno suave, digestivo y 100% libre de gluten</div>
+    <div class="card-dirigida">👤 Personas con celiaquía o sensibilidad al gluten que necesitan desayunos suaves y antiinflamatorios.</div>
+  </div>
+  <div class="card-div"></div>
+  <button class="toggle-btn" onclick="toggle(this)">Ver receta completa <span class="toggle-icon">▾</span></button>
+  <div class="card-body">
+    <div class="sec-label">Ingredientes</div>
+    <ul class="ing-lista">
+      <li><div class="ing-dot"></div>½ taza de arroz blanco cocido (frío de la noche anterior)</li>
+      <li><div class="ing-dot"></div>1 taza de leche vegetal sin gluten</li>
+      <li><div class="ing-dot"></div>½ cdta de jengibre fresco rallado</li>
+      <li><div class="ing-dot"></div>4-5 hojas frescas de menta piperita</li>
+      <li><div class="ing-dot"></div>1 cdta de miel o sirope de agave</li>
+      <li><div class="ing-dot"></div>Pizca de canela</li>
+    </ul>
+    <div class="sec-label">Preparación</div>
+    <div class="paso"><div class="paso-num">1</div><div class="paso-texto">Calentar la leche vegetal con el jengibre 3 minutos.</div></div>
+    <div class="paso"><div class="paso-num">2</div><div class="paso-texto">Añadir el arroz cocido y cocinar a fuego bajo 5 minutos removiendo.</div></div>
+    <div class="paso"><div class="paso-num">3</div><div class="paso-texto">Apagar, incorporar las hojas de menta picadas y endulzar.</div></div>
+    <div class="paso"><div class="paso-num">4</div><div class="paso-texto">Servir tibio y espolvorear canela.</div></div>
+    <div class="beneficios-wrap">
+      <div class="sec-label">Beneficios terapéuticos</div>
+      <div class="beneficios-texto">Fácil de digerir, reduce náuseas y flatulencia. El jengibre y la menta mejoran la motilidad intestinal sin irritar la mucosa sensible.</div>
+    </div>
+    <div class="precaucion">⚠️ Usar arroz y leche certificados sin gluten. Evitar si hay alergia a menta.</div>
+  </div>
+</div>
+
+<!-- 2 Sin gluten -->
+<div class="card" data-cat="sg">
+  <div class="card-header">
+    <div class="cat-badge cat-sg">🌾 Sin gluten · Celiaquía</div>
+    <div class="card-titulo" style="color:var(--c-sg)">Puré de Plátano con Menta y Aloe</div>
+    <div class="card-tagline">Postre suave, digestivo y naturalmente libre de gluten</div>
+    <div class="card-dirigida">👤 Personas con celiaquía o sensibilidad al gluten que buscan postres suaves y terapéuticos.</div>
+  </div>
+  <div class="card-div"></div>
+  <button class="toggle-btn" onclick="toggle(this)">Ver receta completa <span class="toggle-icon">▾</span></button>
+  <div class="card-body">
+    <div class="sec-label">Ingredientes</div>
+    <ul class="ing-lista">
+      <li><div class="ing-dot"></div>2 plátanos maduros</li>
+      <li><div class="ing-dot"></div>2 cdas de gel puro de aloe vera (sin látex)</li>
+      <li><div class="ing-dot"></div>4-5 hojas frescas de menta piperita</li>
+      <li><div class="ing-dot"></div>1 cdta de miel (opcional)</li>
+    </ul>
+    <div class="sec-label">Preparación</div>
+    <div class="paso"><div class="paso-num">1</div><div class="paso-texto">Machacar los plátanos hasta obtener puré.</div></div>
+    <div class="paso"><div class="paso-num">2</div><div class="paso-texto">Incorporar el gel de aloe y las hojas de menta picadas finamente.</div></div>
+    <div class="paso"><div class="paso-num">3</div><div class="paso-texto">Mezclar bien y endulzar si deseas.</div></div>
+    <div class="paso"><div class="paso-num">4</div><div class="paso-texto">Servir frío o a temperatura ambiente.</div></div>
+    <div class="beneficios-wrap">
+      <div class="sec-label">Beneficios terapéuticos</div>
+      <div class="beneficios-texto">Fácil de digerir, protege la mucosa intestinal y reduce inflamación gracias al aloe y la menta. Ideal como merienda en remisión de EII.</div>
+    </div>
+    <div class="precaucion">⚠️ Usar aloe gel puro sin látex. Verificar tolerancia individual.</div>
+  </div>
+</div>
+
+<!-- 3 Keto -->
+<div class="card" data-cat="keto">
+  <div class="card-header">
+    <div class="cat-badge cat-keto">🥑 Keto · Bajo en carbohidratos</div>
+    <div class="card-titulo" style="color:var(--c-keto)">Tortillas Keto de Coliflor con Cúrcuma</div>
+    <div class="card-tagline">Tortillas bajas en carbohidratos con efecto antiinflamatorio</div>
+    <div class="card-dirigida">👤 Personas en dieta cetogénica o baja en carbohidratos que buscan opciones antiinflamatorias.</div>
+  </div>
+  <div class="card-div"></div>
+  <button class="toggle-btn" onclick="toggle(this)">Ver receta completa <span class="toggle-icon">▾</span></button>
+  <div class="card-body">
+    <div class="sec-label">Ingredientes</div>
+    <ul class="ing-lista">
+      <li><div class="ing-dot"></div>2 tazas de coliflor rallada (bien escurrida)</li>
+      <li><div class="ing-dot"></div>2 huevos medianos</li>
+      <li><div class="ing-dot"></div>½ cdta de cúrcuma en polvo</li>
+      <li><div class="ing-dot"></div>1 cdta de jengibre en polvo</li>
+      <li><div class="ing-dot"></div>Sal y pimienta al gusto</li>
+      <li><div class="ing-dot"></div>1 cda de aceite de coco</li>
+    </ul>
+    <div class="sec-label">Preparación</div>
+    <div class="paso"><div class="paso-num">1</div><div class="paso-texto">Mezclar la coliflor escurrida con huevo, cúrcuma, jengibre, sal y pimienta.</div></div>
+    <div class="paso"><div class="paso-num">2</div><div class="paso-texto">Calentar el aceite en sartén antiadherente.</div></div>
+    <div class="paso"><div class="paso-num">3</div><div class="paso-texto">Formar 4 tortillas pequeñas y cocinar 3 minutos por lado hasta dorar.</div></div>
+    <div class="paso"><div class="paso-num">4</div><div class="paso-texto">Servir calientes con aguacate o huevo.</div></div>
+    <div class="beneficios-wrap">
+      <div class="sec-label">Beneficios terapéuticos</div>
+      <div class="beneficios-texto">Bajo en carbohidratos netos (&lt;5g por tortilla) y rico en curcumina antiinflamatoria. Ideal para mantener cetosis y reducir inflamación.</div>
+    </div>
+    <div class="precaucion">⚠️ Verificar tolerancia a huevo. Consumir con grasa saludable para mejor absorción de cúrcuma.</div>
+  </div>
+</div>
+
+<!-- 4 Keto -->
+<div class="card" data-cat="keto">
+  <div class="card-header">
+    <div class="cat-badge cat-keto">🥑 Keto · Bajo en carbohidratos</div>
+    <div class="card-titulo" style="color:var(--c-keto)">Huevos Revueltos con Cúrcuma y Espinaca</div>
+    <div class="card-tagline">Desayuno cetogénico antiinflamatorio y nutritivo</div>
+    <div class="card-dirigida">👤 Personas en dieta keto o baja en carbohidratos con enfoque antiinflamatorio.</div>
+  </div>
+  <div class="card-div"></div>
+  <button class="toggle-btn" onclick="toggle(this)">Ver receta completa <span class="toggle-icon">▾</span></button>
+  <div class="card-body">
+    <div class="sec-label">Ingredientes</div>
+    <ul class="ing-lista">
+      <li><div class="ing-dot"></div>3 huevos</li>
+      <li><div class="ing-dot"></div>½ cdta de cúrcuma en polvo</li>
+      <li><div class="ing-dot"></div>1 taza de espinaca baby cocida suave</li>
+      <li><div class="ing-dot"></div>1 cda de aceite de coco</li>
+      <li><div class="ing-dot"></div>Sal y pimienta al gusto</li>
+    </ul>
+    <div class="sec-label">Preparación</div>
+    <div class="paso"><div class="paso-num">1</div><div class="paso-texto">Calentar el aceite de coco en sartén.</div></div>
+    <div class="paso"><div class="paso-num">2</div><div class="paso-texto">Añadir los huevos batidos con cúrcuma, sal y pimienta.</div></div>
+    <div class="paso"><div class="paso-num">3</div><div class="paso-texto">Incorporar la espinaca y cocinar a fuego medio removiendo hasta que cuaje.</div></div>
+    <div class="beneficios-wrap">
+      <div class="sec-label">Beneficios terapéuticos</div>
+      <div class="beneficios-texto">Alto en proteínas y grasas saludables, con curcumina que reduce inflamación. Ideal para mantener cetosis y nutrir el organismo.</div>
+    </div>
+    <div class="precaucion">⚠️ Ajustar según tolerancia a huevos.</div>
+  </div>
+</div>
+
+<!-- 5 EII brote -->
+<div class="card" data-cat="eii">
+  <div class="card-header">
+    <div class="cat-badge cat-eii">💊 Brote EII activo</div>
+    <div class="card-titulo" style="color:var(--c-eii)">Sopa Blanda de Arroz y Aloe</div>
+    <div class="card-tagline">Sopa ultra-blanda y reparadora para brotes inflamatorios</div>
+    <div class="card-dirigida">👤 Pacientes con brote activo de colitis ulcerosa o Crohn que necesitan dieta baja en residuos.</div>
+  </div>
+  <div class="card-div"></div>
+  <button class="toggle-btn" onclick="toggle(this)">Ver receta completa <span class="toggle-icon">▾</span></button>
+  <div class="card-body">
+    <div class="sec-label">Ingredientes</div>
+    <ul class="ing-lista">
+      <li><div class="ing-dot"></div>½ taza de arroz blanco</li>
+      <li><div class="ing-dot"></div>4 tazas de agua o caldo de huesos bajo en sodio</li>
+      <li><div class="ing-dot"></div>2 cdas de gel puro de aloe vera (sin látex)</li>
+      <li><div class="ing-dot"></div>½ cdta de manzanilla seca</li>
+      <li><div class="ing-dot"></div>Pizca de sal</li>
+    </ul>
+    <div class="sec-label">Preparación</div>
+    <div class="paso"><div class="paso-num">1</div><div class="paso-texto">Cocinar el arroz en el agua/caldo hasta que quede muy blando (20-25 min).</div></div>
+    <div class="paso"><div class="paso-num">2</div><div class="paso-texto">Añadir la manzanilla y cocinar 3 minutos más.</div></div>
+    <div class="paso"><div class="paso-num">3</div><div class="paso-texto">Retirar del fuego y mezclar el gel de aloe.</div></div>
+    <div class="paso"><div class="paso-num">4</div><div class="paso-texto">Licuar ligeramente si se desea textura más suave. Servir tibia.</div></div>
+    <div class="beneficios-wrap">
+      <div class="sec-label">Beneficios terapéuticos</div>
+      <div class="beneficios-texto">Baja en fibra, protege y repara la mucosa intestinal dañada. Aloe gel y manzanilla reducen inflamación sin irritar. Ideal como primera comida en brote.</div>
+    </div>
+    <div class="precaucion">⚠️ Usar solo gel de aloe puro sin aloína. Consultar médico antes de usar en brote severo.</div>
+  </div>
+</div>
+
+<!-- 6 EII brote -->
+<div class="card" data-cat="eii">
+  <div class="card-header">
+    <div class="cat-badge cat-eii">💊 Brote EII activo</div>
+    <div class="card-titulo" style="color:var(--c-eii)">Caldo Suave de Pollo con Zanahoria y Arroz</div>
+    <div class="card-tagline">Caldo blando y reconfortante para brotes inflamatorios</div>
+    <div class="card-dirigida">👤 Pacientes en brote activo de EII con dieta baja en residuos.</div>
+  </div>
+  <div class="card-div"></div>
+  <button class="toggle-btn" onclick="toggle(this)">Ver receta completa <span class="toggle-icon">▾</span></button>
+  <div class="card-body">
+    <div class="sec-label">Ingredientes</div>
+    <ul class="ing-lista">
+      <li><div class="ing-dot"></div>1 pechuga de pollo sin piel</li>
+      <li><div class="ing-dot"></div>2 zanahorias peladas y cortadas</li>
+      <li><div class="ing-dot"></div>½ taza de arroz blanco</li>
+      <li><div class="ing-dot"></div>4 tazas de agua</li>
+      <li><div class="ing-dot"></div>Pizca de sal</li>
+    </ul>
+    <div class="sec-label">Preparación</div>
+    <div class="paso"><div class="paso-num">1</div><div class="paso-texto">Cocinar el pollo y zanahorias en agua a fuego lento 25 minutos.</div></div>
+    <div class="paso"><div class="paso-num">2</div><div class="paso-texto">Añadir el arroz y cocinar hasta que quede muy blando (20 minutos más).</div></div>
+    <div class="paso"><div class="paso-num">3</div><div class="paso-texto">Desmenuzar el pollo y machacar ligeramente las zanahorias.</div></div>
+    <div class="paso"><div class="paso-num">4</div><div class="paso-texto">Servir tibio.</div></div>
+    <div class="beneficios-wrap">
+      <div class="sec-label">Beneficios terapéuticos</div>
+      <div class="beneficios-texto">Bajo en fibra y residuos, fácil de digerir, aporta proteínas y electrolitos sin irritar el intestino. Clásico de la dieta blanda terapéutica.</div>
+    </div>
+    <div class="precaucion">⚠️ Consultar médico o nutricionista. Evitar si hay restricción de proteínas animales.</div>
+  </div>
+</div>
+
+<!-- 7 Mantenimiento -->
+<div class="card" data-cat="mant">
+  <div class="card-header">
+    <div class="cat-badge cat-mant">🌿 Mantenimiento EII</div>
+    <div class="card-titulo" style="color:var(--c-mant)">Salmón al Horno con Cúrcuma y Linaza</div>
+    <div class="card-tagline">Plato antiinflamatorio rico en omega-3 para remisión</div>
+    <div class="card-dirigida">👤 Personas en fase de mantenimiento de EII que buscan comidas antiinflamatorias y nutritivas.</div>
+  </div>
+  <div class="card-div"></div>
+  <button class="toggle-btn" onclick="toggle(this)">Ver receta completa <span class="toggle-icon">▾</span></button>
+  <div class="card-body">
+    <div class="sec-label">Ingredientes</div>
+    <ul class="ing-lista">
+      <li><div class="ing-dot"></div>1 filete de salmón (150-180 g)</li>
+      <li><div class="ing-dot"></div>1 cdta de cúrcuma en polvo</li>
+      <li><div class="ing-dot"></div>1 cda de semillas de linaza molidas</li>
+      <li><div class="ing-dot"></div>½ cdta de jengibre en polvo</li>
+      <li><div class="ing-dot"></div>1 cda de aceite de oliva extra virgen</li>
+      <li><div class="ing-dot"></div>Sal y pimienta al gusto</li>
+    </ul>
+    <div class="sec-label">Preparación</div>
+    <div class="paso"><div class="paso-num">1</div><div class="paso-texto">Precalentar el horno a 180°C.</div></div>
+    <div class="paso"><div class="paso-num">2</div><div class="paso-texto">Mezclar cúrcuma, jengibre, linaza, aceite, sal y pimienta.</div></div>
+    <div class="paso"><div class="paso-num">3</div><div class="paso-texto">Untar el salmón con la mezcla y hornear 12-15 minutos.</div></div>
+    <div class="paso"><div class="paso-num">4</div><div class="paso-texto">Servir con vegetales cocidos suaves (calabacín, zanahoria).</div></div>
+    <div class="beneficios-wrap">
+      <div class="sec-label">Beneficios terapéuticos</div>
+      <div class="beneficios-texto">Omega-3 del salmón + curcumina reducen inflamación crónica y ayudan a mantener remisión en EII. Estudios clínicos respaldan la combinación omega-3 + cúrcuma.</div>
+    </div>
+    <div class="precaucion">⚠️ Sustituir salmón por tofu o sardinas si eres vegetariano. Consultar alergias.</div>
+  </div>
+</div>
+
+<!-- 8 Mantenimiento -->
+<div class="card" data-cat="mant">
+  <div class="card-header">
+    <div class="cat-badge cat-mant">🌿 Mantenimiento EII</div>
+    <div class="card-titulo" style="color:var(--c-mant)">Ensalada de Salmón con Aguacate y Linaza</div>
+    <div class="card-tagline">Plato rico en omega-3 y antiinflamatorio para remisión</div>
+    <div class="card-dirigida">👤 Personas en fase de mantenimiento de EII que buscan comidas nutritivas sin cocción.</div>
+  </div>
+  <div class="card-div"></div>
+  <button class="toggle-btn" onclick="toggle(this)">Ver receta completa <span class="toggle-icon">▾</span></button>
+  <div class="card-body">
+    <div class="sec-label">Ingredientes</div>
+    <ul class="ing-lista">
+      <li><div class="ing-dot"></div>150 g de salmón cocido o ahumado</li>
+      <li><div class="ing-dot"></div>½ aguacate maduro</li>
+      <li><div class="ing-dot"></div>1 cda de semillas de linaza molidas</li>
+      <li><div class="ing-dot"></div>1 cdta de aceite de oliva</li>
+      <li><div class="ing-dot"></div>½ cdta de cúrcuma</li>
+    </ul>
+    <div class="sec-label">Preparación</div>
+    <div class="paso"><div class="paso-num">1</div><div class="paso-texto">Desmenuzar el salmón y cortar el aguacate en cubos.</div></div>
+    <div class="paso"><div class="paso-num">2</div><div class="paso-texto">Mezclar con linaza, aceite de oliva y cúrcuma.</div></div>
+    <div class="paso"><div class="paso-num">3</div><div class="paso-texto">Servir fresco.</div></div>
+    <div class="beneficios-wrap">
+      <div class="sec-label">Beneficios terapéuticos</div>
+      <div class="beneficios-texto">Omega-3 del salmón y linaza + curcumina ayudan a mantener remisión y reducir inflamación crónica. El aguacate aporta grasas saludables que mejoran la absorción de curcumina.</div>
+    </div>
+    <div class="precaucion">⚠️ Sustituir salmón por fuente vegetal si es necesario. Verificar alergias.</div>
+  </div>
+</div>
+
+<!-- 9 Batidos -->
+<div class="card" data-cat="bat">
+  <div class="card-header">
+    <div class="cat-badge cat-bat">🥤 Batidos medicinales</div>
+    <div class="card-titulo" style="color:var(--c-bat)">Batidos Medicinales — 3 recetas</div>
+    <div class="card-tagline">Digestivo, inmune y energético — opciones rápidas y terapéuticas</div>
+    <div class="card-dirigida">👤 Personas que buscan opciones rápidas, nutritivas y con plantas medicinales integradas.</div>
+  </div>
+  <div class="card-div"></div>
+  <button class="toggle-btn" onclick="toggle(this)">Ver recetas completas <span class="toggle-icon">▾</span></button>
+  <div class="card-body">
+    <div class="sub-receta">
+      <div class="sub-titulo">🥤 Batido Digestivo</div>
+      <ul class="ing-lista">
+        <li><div class="ing-dot"></div>1 plátano maduro</li>
+        <li><div class="ing-dot"></div>1 cda de gel de aloe vera</li>
+        <li><div class="ing-dot"></div>4 hojas de menta piperita</li>
+        <li><div class="ing-dot"></div>½ taza de leche vegetal</li>
+        <li><div class="ing-dot"></div>½ cdta de hinojo en polvo</li>
+      </ul>
+      <div class="paso-texto" style="font-size:11px;color:var(--tx3)">Licuar 30 segundos. Beber fresco.</div>
+      <div class="sub-beneficio">✨ Alivia hinchazón y protege mucosa intestinal.</div>
+    </div>
+    <div class="sub-receta">
+      <div class="sub-titulo">🛡️ Batido Inmune</div>
+      <ul class="ing-lista">
+        <li><div class="ing-dot"></div>½ taza de pulpa de guanábana</li>
+        <li><div class="ing-dot"></div>1 cdta de jengibre fresco</li>
+        <li><div class="ing-dot"></div>1 cdta de hojas de mozote (bidens pilosa)</li>
+        <li><div class="ing-dot"></div>½ taza de agua de coco</li>
+      </ul>
+      <div class="paso-texto" style="font-size:11px;color:var(--tx3)">Licuar hasta cremoso. Tomar por la mañana.</div>
+      <div class="sub-beneficio">✨ Refuerza defensas y reduce inflamación general.</div>
+    </div>
+    <div class="sub-receta">
+      <div class="sub-titulo">⚡ Batido Energético</div>
+      <ul class="ing-lista">
+        <li><div class="ing-dot"></div>1 plátano</li>
+        <li><div class="ing-dot"></div>½ cdta de cúrcuma</li>
+        <li><div class="ing-dot"></div>½ cdta de jengibre</li>
+        <li><div class="ing-dot"></div>1 cda de semillas de linaza</li>
+        <li><div class="ing-dot"></div>1 taza de leche de almendra</li>
+      </ul>
+      <div class="paso-texto" style="font-size:11px;color:var(--tx3)">Licuar y servir inmediatamente.</div>
+      <div class="sub-beneficio">✨ Aumenta energía y combate fatiga inflamatoria.</div>
+    </div>
+    <div class="precaucion">⚠️ Usar ingredientes frescos y verificar alergias. No sustituir comidas principales sin supervisión.</div>
+  </div>
+</div>
+
+<!-- 10 Batidos adicionales -->
+<div class="card" data-cat="bat">
+  <div class="card-header">
+    <div class="cat-badge cat-bat">🥤 Batidos medicinales</div>
+    <div class="card-titulo" style="color:var(--c-bat)">Batidos con Plantas Locales — 2 recetas</div>
+    <div class="card-tagline">Respiratorio y calmante — con hierba de limón y toronjil</div>
+    <div class="card-dirigida">👤 Personas que prefieren opciones líquidas rápidas con plantas panameñas.</div>
+  </div>
+  <div class="card-div"></div>
+  <button class="toggle-btn" onclick="toggle(this)">Ver recetas completas <span class="toggle-icon">▾</span></button>
+  <div class="card-body">
+    <div class="sub-receta">
+      <div class="sub-titulo">🌬️ Batido Respiratorio</div>
+      <ul class="ing-lista">
+        <li><div class="ing-dot"></div>1 plátano</li>
+        <li><div class="ing-dot"></div>1 cdta de hierba de limón fresca</li>
+        <li><div class="ing-dot"></div>½ cdta de jengibre</li>
+        <li><div class="ing-dot"></div>1 taza de agua de coco</li>
+      </ul>
+      <div class="paso-texto" style="font-size:11px;color:var(--tx3)">Licuar todo hasta cremoso. Beber fresco.</div>
+      <div class="sub-beneficio">✨ Descongestiona y apoya vías respiratorias.</div>
+    </div>
+    <div class="sub-receta">
+      <div class="sub-titulo">😌 Batido Calmante</div>
+      <ul class="ing-lista">
+        <li><div class="ing-dot"></div>1 taza de leche vegetal</li>
+        <li><div class="ing-dot"></div>1 cdta de toronjil fresco</li>
+        <li><div class="ing-dot"></div>½ cdta de pasiflora seca</li>
+        <li><div class="ing-dot"></div>1 cdta de miel</li>
+      </ul>
+      <div class="paso-texto" style="font-size:11px;color:var(--tx3)">Licuar y servir tibia o fría.</div>
+      <div class="sub-beneficio">✨ Reduce ansiedad y favorece relajación.</div>
+    </div>
+    <div class="precaucion">⚠️ Usar ingredientes frescos y verificar tolerancia individual.</div>
+  </div>
+</div>
+
+<!-- 11 Panadería -->
+<div class="card" data-cat="pan">
+  <div class="card-header">
+    <div class="cat-badge cat-pan">🍞 Panadería sin gluten</div>
+    <div class="card-titulo" style="color:var(--c-pan)">Pan de Yuca y Achiote + Muffins de Plátano</div>
+    <div class="card-tagline">Dos opciones caseras con harinas alternativas y toque medicinal</div>
+    <div class="card-dirigida">👤 Personas con celiaquía o sensibilidad al gluten que quieren pan casero terapéutico.</div>
+  </div>
+  <div class="card-div"></div>
+  <button class="toggle-btn" onclick="toggle(this)">Ver recetas completas <span class="toggle-icon">▾</span></button>
+  <div class="card-body">
+    <div class="sub-receta">
+      <div class="sub-titulo">🍞 Pan de Yuca y Achiote</div>
+      <ul class="ing-lista">
+        <li><div class="ing-dot"></div>2 tazas de harina de yuca</li>
+        <li><div class="ing-dot"></div>1 cdta de semillas de achiote molidas</li>
+        <li><div class="ing-dot"></div>1 cdta de polvo de hornear</li>
+        <li><div class="ing-dot"></div>½ cdta de sal · 2 huevos · ¼ taza de aceite de coco</li>
+      </ul>
+      <div class="paso-texto" style="font-size:11px;color:var(--tx3)">Mezclar secos, incorporar huevos y aceite. Hornear en molde engrasado a 180°C por 25-30 min.</div>
+      <div class="sub-beneficio">✨ 100% sin gluten, con propiedades antimicrobianas del achiote.</div>
+    </div>
+    <div class="sub-receta">
+      <div class="sub-titulo">🧁 Muffins de Plátano y Cúrcuma</div>
+      <ul class="ing-lista">
+        <li><div class="ing-dot"></div>2 plátanos maduros</li>
+        <li><div class="ing-dot"></div>1 taza de harina de arroz integral</li>
+        <li><div class="ing-dot"></div>1 cdta de cúrcuma · 1 cdta de polvo de hornear</li>
+        <li><div class="ing-dot"></div>2 huevos · ¼ taza de aceite de oliva</li>
+      </ul>
+      <div class="paso-texto" style="font-size:11px;color:var(--tx3)">Machacar plátanos, mezclar con huevos y aceite, añadir secos. Hornear 20 min a 180°C.</div>
+      <div class="sub-beneficio">✨ Antiinflamatorios y aptos para mantenimiento EII.</div>
+    </div>
+    <div class="precaucion">⚠️ Verificar que todas las harinas sean certificadas sin gluten.</div>
+  </div>
+</div>
+
+<!-- 12 Panadería -->
+<div class="card" data-cat="pan">
+  <div class="card-header">
+    <div class="cat-badge cat-pan">🍞 Panadería sin gluten</div>
+    <div class="card-titulo" style="color:var(--c-pan)">Galletas de Coco y Achiote Sin Gluten</div>
+    <div class="card-tagline">Galletas crujientes, sin gluten y con toque antiinflamatorio</div>
+    <div class="card-dirigida">👤 Personas con celiaquía o intolerancia al gluten que buscan snacks caseros.</div>
+  </div>
+  <div class="card-div"></div>
+  <button class="toggle-btn" onclick="toggle(this)">Ver receta completa <span class="toggle-icon">▾</span></button>
+  <div class="card-body">
+    <div class="sec-label">Ingredientes</div>
+    <ul class="ing-lista">
+      <li><div class="ing-dot"></div>1 taza de harina de coco</li>
+      <li><div class="ing-dot"></div>½ cdta de semillas de achiote molidas</li>
+      <li><div class="ing-dot"></div>2 huevos</li>
+      <li><div class="ing-dot"></div>¼ taza de aceite de coco derretido</li>
+      <li><div class="ing-dot"></div>2 cdas de miel</li>
+    </ul>
+    <div class="sec-label">Preparación</div>
+    <div class="paso"><div class="paso-num">1</div><div class="paso-texto">Mezclar todos los ingredientes hasta formar masa.</div></div>
+    <div class="paso"><div class="paso-num">2</div><div class="paso-texto">Formar galletas pequeñas y colocar en bandeja con papel antiadherente.</div></div>
+    <div class="paso"><div class="paso-num">3</div><div class="paso-texto">Hornear a 180°C por 12-15 minutos hasta dorar.</div></div>
+    <div class="beneficios-wrap">
+      <div class="sec-label">Beneficios terapéuticos</div>
+      <div class="beneficios-texto">Libres de gluten, con propiedades antimicrobianas del achiote y textura crujiente agradable. El aceite de coco aporta grasas de cadena media de fácil digestión.</div>
+    </div>
+    <div class="precaucion">⚠️ Verificar que todos los ingredientes sean certificados sin gluten.</div>
+  </div>
+</div>
+
+</div><!-- /lista -->
+
+<div class="disclaimer">
+  🌿 Estas recetas son apoyo nutricional con base científica y tradicional.<br>
+  No reemplazan el diagnóstico médico ni el tratamiento farmacológico.<br>
+  <strong>Consultar siempre a un profesional de salud en EII activa.</strong>
+</div>
+
+<nav class="bottom-nav">
+  <a href="../index.html" class="nav-item"><span class="nav-icon">🏠</span>Inicio</a>
+  <a href="herbologia-indice.html" class="nav-item"><span class="nav-icon">🌿</span>Plantas</a>
+  <a href="explorador-sintoma.html" class="nav-item"><span class="nav-icon">🔍</span>Síntomas</a>
+  <a href="recetas-detox.html" class="nav-item"><span class="nav-icon">🥤</span>Detox</a>
+  <a href="recetas.html" class="nav-item activo"><span class="nav-icon">🍽️</span>Recetas</a>
+</nav>
+
+<script>
+function toggle(btn){btn.closest('.card').classList.toggle('abierta')}
+function filtrar(cat,tabEl){
+  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('activo'));
+  tabEl.classList.add('activo');
+  document.querySelectorAll('.card').forEach(c=>{
+    c.style.display=(cat==='todos'||c.dataset.cat===cat)?'':'none';
+    if(c.style.display==='none')c.classList.remove('abierta');
+  });
+}
+</script>
+</body>
+</html>

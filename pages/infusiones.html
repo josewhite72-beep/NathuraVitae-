@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#1a3d2a">
+<title>NathuraVitae — Infusiones</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --v1:#1a3d2a;--v2:#245c3e;--v3:#2e8b5a;--v4:#4aab7f;--v5:#8dd4b0;
+  --vp:#eaf6f0;--vm:#c0e8d4;--vt:#8dd4b0;
+  --crema:#f8f5ee;--crema2:#ede8dc;--crema3:#e2dace;
+  --tx:#1a1a16;--tx2:#44443c;--tx3:#8a8878;
+  --amb:#9a6010;--ambp:#fdf2e0;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'DM Sans',sans-serif;background:var(--crema);color:var(--tx);padding-bottom:80px;-webkit-font-smoothing:antialiased}
+.status-spacer{height:env(safe-area-inset-top,0px);background:var(--v1)}
+.topbar{background:var(--v1);padding:12px 20px 14px;display:flex;align-items:center;gap:10px;position:sticky;top:0;z-index:40}
+.topbar-back{width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.1);border:none;display:flex;align-items:center;justify-content:center;cursor:pointer;color:white;font-size:18px;text-decoration:none}
+.topbar-icon{width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;font-size:16px}
+.topbar-nom{font-family:'Playfair Display',serif;font-size:20px;color:white;font-weight:600}
+.topbar-nom span{font-style:italic;font-weight:400;color:var(--vt)}
+
+.hero{background:var(--v1);padding:4px 24px 44px;position:relative;overflow:hidden}
+.hero::after{content:'';position:absolute;bottom:0;left:0;right:0;height:40px;background:linear-gradient(to bottom,transparent,var(--crema));pointer-events:none}
+.hero-deco{position:absolute;right:-20px;top:-10px;font-size:200px;opacity:.04;line-height:1;pointer-events:none;transform:rotate(10deg)}
+.hero-eyebrow{font-size:10px;font-weight:500;color:var(--vt);letter-spacing:2.5px;text-transform:uppercase;margin-bottom:10px;display:flex;align-items:center;gap:6px}
+.hero-eyebrow::before{content:'';width:20px;height:1px;background:var(--vt);opacity:.6}
+.hero-titulo{font-family:'Playfair Display',serif;font-size:28px;font-weight:700;line-height:1.2;color:white;margin-bottom:10px}
+.hero-titulo em{color:var(--vt);font-style:italic;font-weight:400}
+.hero-sub{font-size:13px;line-height:1.7;color:rgba(255,255,255,.65);max-width:320px}
+
+.tabs-wrap{padding:20px 16px 0;overflow-x:auto;scrollbar-width:none;display:flex;gap:8px}
+.tab{flex-shrink:0;border-radius:20px;padding:7px 14px;font-size:11px;font-weight:500;border:1.5px solid var(--crema3);background:white;color:var(--tx3);cursor:pointer;transition:all .2s;white-space:nowrap}
+.tab.activo{background:var(--v1);color:white;border-color:var(--v1)}
+
+.sec-titulo{padding:24px 20px 10px;display:flex;align-items:baseline;gap:10px}
+.sec-titulo h2{font-family:'Playfair Display',serif;font-size:18px;color:var(--v1)}
+.sec-titulo .lin{flex:1;height:1px;background:var(--crema3)}
+
+.lista{padding:0 16px;display:flex;flex-direction:column;gap:16px}
+
+.card{background:white;border-radius:22px;border:1.5px solid var(--crema3);overflow:hidden;box-shadow:0 2px 16px rgba(26,61,42,.06);transition:transform .2s}
+.card:active{transform:scale(.985)}
+.card-header{padding:18px 18px 14px}
+.nivel-badge{display:inline-flex;align-items:center;gap:5px;border-radius:20px;padding:4px 10px;font-size:9px;font-weight:600;letter-spacing:1px;text-transform:uppercase;margin-bottom:10px}
+.nivel-A{background:#e8f8f3;color:#006d4e}
+.nivel-B{background:#e8f0f8;color:#1a5276}
+.nivel-C{background:#fdf2e0;color:#9a6010}
+.card-titulo{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;line-height:1.2;color:var(--v1);margin-bottom:6px}
+.card-tagline{font-size:12px;color:var(--tx3);line-height:1.5;margin-bottom:12px}
+.card-emoji{font-size:28px;margin-bottom:8px;display:block}
+.card-div{height:1px;background:var(--crema2);margin:0 18px}
+.toggle-btn{width:100%;background:none;border:none;padding:12px 18px;display:flex;align-items:center;justify-content:space-between;cursor:pointer;font-size:12px;color:var(--tx3);font-weight:500;font-family:'DM Sans',sans-serif}
+.toggle-icon{transition:transform .25s;font-size:16px}
+.card.abierta .toggle-icon{transform:rotate(180deg)}
+.card-body{padding:14px 18px 18px;display:none}
+.card.abierta .card-body{display:block}
+
+.sec-label{font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--tx3);margin-bottom:10px}
+.ing-lista{list-style:none;display:flex;flex-direction:column;gap:6px;margin-bottom:16px}
+.ing-lista li{display:flex;align-items:flex-start;gap:8px;font-size:12px;color:var(--tx2);line-height:1.5}
+.ing-dot{width:6px;height:6px;border-radius:50%;background:var(--v3);flex-shrink:0;margin-top:5px}
+.paso{display:flex;gap:10px;margin-bottom:8px;align-items:flex-start}
+.paso-num{width:20px;height:20px;border-radius:50%;background:var(--v1);display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:700;flex-shrink:0;color:white}
+.paso-texto{font-size:12px;color:var(--tx2);line-height:1.6;padding-top:1px}
+.efectos-wrap{background:var(--vp);border-radius:14px;padding:14px;margin:14px 0}
+.efecto-texto{font-size:11px;color:var(--tx2);line-height:1.7}
+.plantas-wrap{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 0}
+.planta-chip{font-size:10px;font-weight:500;background:var(--vp);color:var(--v2);border:1px solid var(--vm);border-radius:10px;padding:4px 10px}
+.precaucion{display:flex;align-items:flex-start;gap:6px;font-size:10px;color:var(--amb);background:var(--ambp);border-radius:10px;padding:8px 10px;margin-top:10px}
+
+.disclaimer{margin:20px 16px 0;background:var(--crema2);border-radius:14px;padding:14px 16px;font-size:10px;color:var(--tx3);line-height:1.7;text-align:center}
+
+.bottom-nav{position:fixed;bottom:0;left:0;right:0;background:white;border-top:1px solid var(--crema3);padding:8px 0 calc(8px + env(safe-area-inset-bottom,0px));display:flex;justify-content:space-around;z-index:40}
+.nav-item{display:flex;flex-direction:column;align-items:center;gap:2px;text-decoration:none;font-size:10px;color:var(--tx3);font-weight:400;min-width:52px}
+.nav-item.activo{color:var(--v3);font-weight:500}
+.nav-icon{font-size:20px}
+
+@keyframes fadeUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+.card{animation:fadeUp .35s ease both}
+.card:nth-child(1){animation-delay:.04s}.card:nth-child(2){animation-delay:.08s}
+.card:nth-child(3){animation-delay:.12s}.card:nth-child(4){animation-delay:.16s}
+.card:nth-child(5){animation-delay:.20s}.card:nth-child(6){animation-delay:.24s}
+.card:nth-child(7){animation-delay:.28s}.card:nth-child(8){animation-delay:.32s}
+.card:nth-child(9){animation-delay:.36s}.card:nth-child(10){animation-delay:.40s}
+</style>
+</head>
+<body>
+<div class="status-spacer"></div>
+<div class="topbar">
+  <a href="../index.html" class="topbar-back">←</a>
+  <div class="topbar-icon">🍵</div>
+  <div class="topbar-nom">Infusiones <span>medicinales</span></div>
+</div>
+
+<div class="hero">
+  <div class="hero-deco">🍵</div>
+  <div class="hero-eyebrow">Fitoterapia aplicada</div>
+  <div class="hero-titulo">Tés y mezclas<br><em>con propósito</em></div>
+  <div class="hero-sub">10 infusiones medicinales elaboradas con plantas de las fichas. Cada combinación tiene respaldo científico y adaptación panameña.</div>
+</div>
+
+<div class="tabs-wrap">
+  <div class="tab activo" onclick="filtrar('todos',this)">Todas (10)</div>
+  <div class="tab" onclick="filtrar('digestivo',this)">🌱 Digestivo</div>
+  <div class="tab" onclick="filtrar('nervioso',this)">🌙 Nervioso</div>
+  <div class="tab" onclick="filtrar('inmune',this)">🛡️ Inmune</div>
+  <div class="tab" onclick="filtrar('respiratorio',this)">🌬️ Respiratorio</div>
+  <div class="tab" onclick="filtrar('eii',this)">💊 EII</div>
+</div>
+
+<div class="sec-titulo"><h2>🍵 Infusiones</h2><div class="lin"></div></div>
+<div class="lista" id="lista">
+
+<!-- 1 -->
+<div class="card" data-cat="digestivo">
+  <div class="card-header">
+    <span class="card-emoji">🌼</span>
+    <div class="nivel-badge nivel-B">Nivel B · EMA</div>
+    <div class="card-titulo">Infusión Digestiva Clásica</div>
+    <div class="card-tagline">Alivia gases, hinchazón y mejora la digestión después de las comidas</div>
+  </div>
+  <div class="card-div"></div>
+  <button class="toggle-btn" onclick="toggle(this)">Ver receta completa <span class="toggle-icon">▾</span></button>
+  <div class="card-body">
+    <div class="sec-label">Ingredientes</div>
+    <ul class="ing-lista">
+      <li><div class="ing-dot"></div>1 cdta de flores secas de manzanilla</li>
+      <li><div class="ing-dot"></div>1 cdta de hojas secas de menta piperita</li>
+      <li><div class="ing-dot"></div>½ cdta de semillas de hinojo (ligeramente trituradas)</li>
+    </ul>
+    <div class="sec-label">Preparación</div>
+    <div class="paso"><div class="paso-num">1</div><div class="paso-texto">Hervir 250 ml de agua filtrada.</div></div>
+    <div class="paso"><div class="paso-num">2</div><div class="paso-texto">Añadir los tres ingredientes en una tetera o taza grande.</div></div>
+    <div class="paso"><div class="paso-num">3</div><div class="paso-texto">Dejar infusionar tapado durante 8-10 minutos.</div></div>
+    <div class="paso"><div class="paso-num">4</div><div class="paso-texto">Colar y beber tibia, ideal después de las comidas principales.</div></div>
+    <div class="efectos-wrap">
+      <div class="sec-label">Efectos terapéuticos</div>
+      <div class="efecto-texto">Combinación carminativa y antiespasmódica que reduce flatulencia, cólicos y síntomas de SII. La manzanilla y la menta relajan la musculatura intestinal; el hinojo favorece la expulsión de gases. Respaldado por monografías EMA de las tres plantas.</div>
+    </div>
+    <div class="plantas-wrap">
+      <span class="planta-chip">🌼 Manzanilla</span>
+      <span class="planta-chip">🌿 Menta piperita</span>
+      <span class="planta-chip">🌿 Hinojo</span>
+    </div>
+    <div class="precaucion">⚠️ Alergia a Asteraceae o Apiaceae. Evitar en embarazo sin supervisión. No usar si hay obstrucción intestinal.</div>
+  </div>
+</div>
+
+<!-- 2 -->
+<div class="card" data-cat="nervioso">
+  <div class="card-header">
+    <span class="card-emoji">🌙</span>
+    <div class="nivel-badge nivel-B">Nivel B · EMA</div>
+    <div class="card-titulo">Infusión Relajante Nocturna</div>
+    <div class="card-tagline">Duerme profundo y despierta renovado sin somnolencia matutina</div>
+  </div>
+  <div class="card-div"></div>
+  <button class="toggle-btn" onclick="toggle(this)">Ver receta completa <span class="toggle-icon">▾</span></button>
+  <div class="card-body">
+    <div class="sec-label">Ingredientes</div>
+    <ul class="ing-lista">
+      <li><div class="ing-dot"></div>1 cdta de raíz seca de valeriana</li>
+      <li><div class="ing-dot"></div>1 cdta de partes aéreas secas de pasiflora</li>
+      <li><div class="ing-dot"></div>½ cdta de flores secas de lúpulo</li>
+    </ul>
+    <div class="sec-label">Preparación</div>
+    <div class="paso"><div class="paso-num">1</div><div class="paso-texto">Hervir 250 ml de agua.</div></div>
+    <div class="paso"><div class="paso-num">2</div><div class="paso-texto">Añadir los ingredientes y tapar la tetera.</div></div>
+    <div class="paso"><div class="paso-num">3</div><div class="paso-texto">Dejar reposar 10-12 minutos (no más para evitar amargor).</div></div>
+    <div class="paso"><div class="paso-num">4</div><div class="paso-texto">Colar y beber 30-45 minutos antes de dormir. Opcional: endulzar con miel.</div></div>
+    <div class="efectos-wrap">
+      <div class="sec-label">Efectos terapéuticos</div>
+      <div class="efecto-texto">Mejora la calidad del sueño y reduce ansiedad nocturna. La valeriana y pasiflora aumentan GABA; el lúpulo potencia el efecto sedante suave. Apoyado por monografías EMA y estudios clínicos en insomnio leve.</div>
+    </div>
+    <div class="plantas-wrap">
+      <span class="planta-chip">🌸 Valeriana</span>
+      <span class="planta-chip">🌸 Pasiflora</span>
+      <span class="planta-chip">🌿 Lúpulo</span>
+    </div>
+    <div class="precaucion">⚠️ No combinar con sedantes, alcohol o benzodiacepinas. Evitar en embarazo, lactancia o menores de 12 años. No conducir.</div>
+  </div>
+</div>
+
+<!-- 3 -->
+<div class="card" data-cat="eii">
+  <div class="card-header">
+    <span class="card-emoji">🟢</span>
+    <div class="nivel-badge nivel-B">Nivel B · EMA</div>
+    <div class="card-titulo">Infusión Anti-Colitis</div>
+    <div class="card-tagline">Calma la inflamación intestinal y protege la mucosa</div>
+  </div>
+  <div class="card-div"></div>
+  <button class="toggle-btn" onclick="toggle(this)">Ver receta completa <span class="toggle-icon">▾</span></button>
+  <div class="card-body">
+    <div class="sec-label">Ingredientes</div>
+    <ul class="ing-lista">
+      <li><div class="ing-dot"></div>2 cdas de gel puro de aloe vera (sin látex)</li>
+      <li><div class="ing-dot"></div>½ cdta de polvo de cúrcuma orgánica</li>
+      <li><div class="ing-dot"></div>1 cdta de flores secas de manzanilla</li>
+    </ul>
+    <div class="sec-label">Preparación</div>
+    <div class="paso"><div class="paso-num">1</div><div class="paso-texto">Calentar 250 ml de agua a 70-80°C (no hervir).</div></div>
+    <div class="paso"><div class="paso-num">2</div><div class="paso-texto">Disolver el gel de aloe y la cúrcuma en el agua.</div></div>
+    <div class="paso"><div class="paso-num">3</div><div class="paso-texto">Añadir la manzanilla y tapar 8 minutos.</div></div>
+    <div class="paso"><div class="paso-num">4</div><div class="paso-texto">Colar y beber tibia 1-2 veces al día, preferiblemente entre comidas.</div></div>
+    <div class="efectos-wrap">
+      <div class="sec-label">Efectos terapéuticos</div>
+      <div class="efecto-texto">Reduce inflamación colónica y favorece cicatrización de mucosa. La curcumina inhibe NF-κB; el aloe gel es reparador de mucosa; la manzanilla es antiinflamatoria. Evidencia de ensayos clínicos en colitis ulcerosa leve.</div>
+    </div>
+    <div class="plantas-wrap">
+      <span class="planta-chip">🌵 Aloe vera</span>
+      <span class="planta-chip">🟡 Cúrcuma</span>
+      <span class="planta-chip">🌼 Manzanilla</span>
+    </div>
+    <div class="precaucion">⚠️ No usar látex de aloe. Evitar en obstrucción intestinal, embarazo o si tomas anticoagulantes. Consultar médico en EII activa.</div>
+  </div>
+</div>
+
+<!-- 4 -->
+<div class="card" data-cat="eii">
+  <div class="card-header">
+    <span class="card-emoji">🥛</span>
+    <div class="nivel-badge nivel-B">Nivel B · EMA · ESCOP</div>
+    <div class="card-titulo">Leche Dorada</div>
+    <div class="card-tagline">La bebida antiinflamatoria ayurvédica adaptada a Panamá</div>
+  </div>
+  <div class="card-div"></div>
+  <button class="toggle-btn" onclick="toggle(this)">Ver receta completa <span class="toggle-icon">▾</span></button>
+  <div class="card-body">
+    <div class="sec-label">Ingredientes</div>
+    <ul class="ing-lista">
+      <li><div class="ing-dot"></div>1 cdta de polvo de cúrcuma (yuquilla)</li>
+      <li><div class="ing-dot"></div>½ cdta de jengibre fresco rallado (o ¼ cdta seco)</li>
+      <li><div class="ing-dot"></div>Pizca de pimienta negra recién molida (indispensable)</li>
+      <li><div class="ing-dot"></div>250 ml de leche vegetal (almendra, coco o avena sin gluten)</li>
+      <li><div class="ing-dot"></div>½ cdta de miel o sirope de agave (opcional)</li>
+    </ul>
+    <div class="sec-label">Preparación</div>
+    <div class="paso"><div class="paso-num">1</div><div class="paso-texto">Calentar la leche vegetal a fuego bajo sin hervir.</div></div>
+    <div class="paso"><div class="paso-num">2</div><div class="paso-texto">Añadir cúrcuma, jengibre y pimienta negra. Revolver constantemente 5-7 minutos.</div></div>
+    <div class="paso"><div class="paso-num">3</div><div class="paso-texto">Retirar del fuego, colar si deseas y endulzar fuera del fuego. Beber tibia.</div></div>
+    <div class="efectos-wrap">
+      <div class="sec-label">Efectos terapéuticos</div>
+      <div class="efecto-texto">Potente antiinflamatorio y antioxidante. La piperina de la pimienta aumenta la absorción de curcumina hasta 2000%. Estudios clínicos confirman beneficios en EII, artritis y estrés oxidativo.</div>
+    </div>
+    <div class="plantas-wrap">
+      <span class="planta-chip">🟡 Cúrcuma</span>
+      <span class="planta-chip">🫚 Jengibre</span>
+    </div>
+    <div class="precaucion">⚠️ Evitar en obstrucción biliar, úlcera activa o si tomas anticoagulantes. No exceder 2 tazas diarias.</div>
+  </div>
+</div>
+
+<!-- 5 -->
+<div class="card" data-cat="inmune">
+  <div class="card-header">
+    <span class="card-emoji">🍋</span>
+    <div class="nivel-badge nivel-C">Nivel C · TRAMIL</div>
+    <div class="card-titulo">Infusión Antigripal Panameña</div>
+    <div class="card-tagline">Defensa natural contra resfriados y malestar general</div>
+  </div>
+  <div class="card-div"></div>
+  <button class="toggle-btn" onclick="toggle(this)">Ver receta completa <span class="toggle-icon">▾</span></button>
+  <div class="card-body">
+    <div class="sec-label">Ingredientes</div>
+    <ul class="ing-lista">
+      <li><div class="ing-dot"></div>1 trozo de 3 cm de jengibre fresco (rallado)</li>
+      <li><div class="ing-dot"></div>Jugo de ½ limón fresco</li>
+      <li><div class="ing-dot"></div>1 cdta de hojas secas de mozote (Bidens pilosa)</li>
+      <li><div class="ing-dot"></div>1 cdta de miel de abeja o panela</li>
+    </ul>
+    <div class="sec-label">Preparación</div>
+    <div class="paso"><div class="paso-num">1</div><div class="paso-texto">Hervir 300 ml de agua con el jengibre y las hojas de mozote durante 5 minutos.</div></div>
+    <div class="paso"><div class="paso-num">2</div><div class="paso-texto">Apagar el fuego y añadir el jugo de limón.</div></div>
+    <div class="paso"><div class="paso-num">3</div><div class="paso-texto">Dejar reposar tapado 8 minutos.</div></div>
+    <div class="paso"><div class="paso-num">4</div><div class="paso-texto">Colar, endulzar con miel y beber caliente 2-3 veces al día.</div></div>
+    <div class="efectos-wrap">
+      <div class="sec-label">Efectos terapéuticos</div>
+      <div class="efecto-texto">Inmunoestimulante, antiviral y expectorante. Jengibre y limón reducen náuseas y fiebre; Bidens pilosa tiene actividad antiinflamatoria y antimicrobiana validada en Panamá por TRAMIL.</div>
+    </div>
+    <div class="plantas-wrap">
+      <span class="planta-chip">🫚 Jengibre</span>
+      <span class="planta-chip">🌿 Mozote</span>
+    </div>
+    <div class="precaucion">⚠️ No usar en embarazo sin supervisión. No exceder 4 tazas diarias.</div>
+  </div>
+</div>
+
+<!-- 6 -->
+<div class="card" data-cat="digestivo">
+  <div class="card-header">
+    <span class="card-emoji">🍃</span>
+    <div class="nivel-badge nivel-C">Nivel C · TRAMIL</div>
+    <div class="card-titulo">Infusión Digestiva Panameña</div>
+    <div class="card-tagline">Alivia indigestión y diarrea con toque local</div>
+  </div>
+  <div class="card-div"></div>
+  <button class="toggle-btn" onclick="toggle(this)">Ver receta completa <span class="toggle-icon">▾</span></button>
+  <div class="card-body">
+    <div class="sec-label">Ingredientes</div>
+    <ul class="ing-lista">
+      <li><div class="ing-dot"></div>1 cdta de hojas secas de guayaba</li>
+      <li><div class="ing-dot"></div>1 cdta de hojas de menta piperita</li>
+      <li><div class="ing-dot"></div>½ cdta de semillas de hinojo trituradas</li>
+    </ul>
+    <div class="sec-label">Preparación</div>
+    <div class="paso"><div class="paso-num">1</div><div class="paso-texto">Hervir 250 ml de agua.</div></div>
+    <div class="paso"><div class="paso-num">2</div><div class="paso-texto">Añadir hojas de guayaba, menta y semillas de hinojo.</div></div>
+    <div class="paso"><div class="paso-num">3</div><div class="paso-texto">Tapar y dejar infusionar 8-10 minutos.</div></div>
+    <div class="paso"><div class="paso-num">4</div><div class="paso-texto">Colar y beber tibia después de las comidas.</div></div>
+    <div class="efectos-wrap">
+      <div class="sec-label">Efectos terapéuticos</div>
+      <div class="efecto-texto">Las hojas de guayaba son astringentes y antibacterianas, útiles contra diarrea. Combinadas con menta y hinojo reducen flatulencia y espasmos intestinales. Evidencia tradicional fuerte en Panamá y estudios preclínicos.</div>
+    </div>
+    <div class="plantas-wrap">
+      <span class="planta-chip">🍃 Guayaba</span>
+      <span class="planta-chip">🌿 Menta piperita</span>
+      <span class="planta-chip">🌿 Hinojo</span>
+    </div>
+    <div class="precaucion">⚠️ Evitar en embarazo sin supervisión. No usar si hay alergia a Apiaceae.</div>
+  </div>
+</div>
+
+<!-- 7 -->
+<div class="card" data-cat="nervioso">
+  <div class="card-header">
+    <span class="card-emoji">🌿</span>
+    <div class="nivel-badge nivel-B">Nivel B · EMA</div>
+    <div class="card-titulo">Infusión Relajante con Toronjil</div>
+    <div class="card-tagline">Calma la ansiedad y favorece un sueño reparador</div>
+  </div>
+  <div class="card-div"></div>
+  <button class="toggle-btn" onclick="toggle(this)">Ver receta completa <span class="toggle-icon">▾</span></button>
+  <div class="card-body">
+    <div class="sec-label">Ingredientes</div>
+    <ul class="ing-lista">
+      <li><div class="ing-dot"></div>1 cdta de hojas de toronjil (melisa)</li>
+      <li><div class="ing-dot"></div>1 cdta de partes aéreas de pasiflora</li>
+      <li><div class="ing-dot"></div>½ cdta de flores de manzanilla</li>
+    </ul>
+    <div class="sec-label">Preparación</div>
+    <div class="paso"><div class="paso-num">1</div><div class="paso-texto">Hervir 250 ml de agua.</div></div>
+    <div class="paso"><div class="paso-num">2</div><div class="paso-texto">Añadir toronjil, pasiflora y manzanilla.</div></div>
+    <div class="paso"><div class="paso-num">3</div><div class="paso-texto">Tapar y reposar 10 minutos.</div></div>
+    <div class="paso"><div class="paso-num">4</div><div class="paso-texto">Colar y beber 30 minutos antes de dormir.</div></div>
+    <div class="efectos-wrap">
+      <div class="sec-label">Efectos terapéuticos</div>
+      <div class="efecto-texto">Toronjil y pasiflora tienen efecto ansiolítico suave al modular GABA. La manzanilla añade efecto sedante y digestivo. Respaldado por monografías EMA y estudios en trastornos del sueño y ansiedad leve.</div>
+    </div>
+    <div class="plantas-wrap">
+      <span class="planta-chip">🌿 Toronjil</span>
+      <span class="planta-chip">🌸 Pasiflora</span>
+      <span class="planta-chip">🌼 Manzanilla</span>
+    </div>
+    <div class="precaucion">⚠️ No combinar con sedantes o alcohol. Evitar en embarazo y lactancia.</div>
+  </div>
+</div>
+
+<!-- 8 -->
+<div class="card" data-cat="respiratorio">
+  <div class="card-header">
+    <span class="card-emoji">🌬️</span>
+    <div class="nivel-badge nivel-C">Nivel C · TRAMIL</div>
+    <div class="card-titulo">Infusión Antiinflamatoria Respiratoria</div>
+    <div class="card-tagline">Descongestiona y calma la garganta irritada</div>
+  </div>
+  <div class="card-div"></div>
+  <button class="toggle-btn" onclick="toggle(this)">Ver receta completa <span class="toggle-icon">▾</span></button>
+  <div class="card-body">
+    <div class="sec-label">Ingredientes</div>
+    <ul class="ing-lista">
+      <li><div class="ing-dot"></div>1 trozo de 3 cm de jengibre fresco</li>
+      <li><div class="ing-dot"></div>1 cdta de hojas secas de hierba de limón (limoncillo)</li>
+      <li><div class="ing-dot"></div>½ cdta de hojas de hierba de sapo (culantro de monte)</li>
+    </ul>
+    <div class="sec-label">Preparación</div>
+    <div class="paso"><div class="paso-num">1</div><div class="paso-texto">Hervir 300 ml de agua con el jengibre rallado y hierba de limón durante 5 minutos.</div></div>
+    <div class="paso"><div class="paso-num">2</div><div class="paso-texto">Añadir hierba de sapo y apagar el fuego.</div></div>
+    <div class="paso"><div class="paso-num">3</div><div class="paso-texto">Tapar 8 minutos, colar y beber caliente.</div></div>
+    <div class="efectos-wrap">
+      <div class="sec-label">Efectos terapéuticos</div>
+      <div class="efecto-texto">Jengibre y hierba de limón actúan como antiinflamatorios y expectorantes. Hierba de sapo añade efecto antimicrobiano y descongestionante validado por TRAMIL en Panamá.</div>
+    </div>
+    <div class="plantas-wrap">
+      <span class="planta-chip">🫚 Jengibre</span>
+      <span class="planta-chip">🌿 Hierba de limón</span>
+      <span class="planta-chip">🌿 Hierba de sapo</span>
+    </div>
+    <div class="precaucion">⚠️ Evitar en embarazo en dosis altas. Precaución si hay litiasis biliar.</div>
+  </div>
+</div>
+
+<!-- 9 -->
+<div class="card" data-cat="inmune">
+  <div class="card-header">
+    <span class="card-emoji">🌺</span>
+    <div class="nivel-badge nivel-C">Nivel C · TRAMIL</div>
+    <div class="card-titulo">Infusión Inmune con Saril</div>
+    <div class="card-tagline">Refuerza defensas y aporta antioxidantes naturales</div>
+  </div>
+  <div class="card-div"></div>
+  <button class="toggle-btn" onclick="toggle(this)">Ver receta completa <span class="toggle-icon">▾</span></button>
+  <div class="card-body">
+    <div class="sec-label">Ingredientes</div>
+    <ul class="ing-lista">
+      <li><div class="ing-dot"></div>2 cdtas de flores secas de saril (flor de Jamaica)</li>
+      <li><div class="ing-dot"></div>½ cdta de jengibre seco</li>
+      <li><div class="ing-dot"></div>1 cdta de hojas de mozote (Bidens pilosa)</li>
+    </ul>
+    <div class="sec-label">Preparación</div>
+    <div class="paso"><div class="paso-num">1</div><div class="paso-texto">Hervir 250 ml de agua.</div></div>
+    <div class="paso"><div class="paso-num">2</div><div class="paso-texto">Añadir saril, jengibre y mozote.</div></div>
+    <div class="paso"><div class="paso-num">3</div><div class="paso-texto">Dejar infusionar tapado 10 minutos.</div></div>
+    <div class="paso"><div class="paso-num">4</div><div class="paso-texto">Colar, endulzar con miel si deseas y beber tibia.</div></div>
+    <div class="efectos-wrap">
+      <div class="sec-label">Efectos terapéuticos</div>
+      <div class="efecto-texto">Saril es rico en antioxidantes y ayuda a bajar presión arterial. Jengibre y mozote aportan propiedades antiinflamatorias e inmunoestimulantes. Evidencia etnobotánica fuerte en Panamá.</div>
+    </div>
+    <div class="plantas-wrap">
+      <span class="planta-chip">🌺 Saril</span>
+      <span class="planta-chip">🫚 Jengibre</span>
+      <span class="planta-chip">🌿 Mozote</span>
+    </div>
+    <div class="precaucion">⚠️ Evitar en embarazo o si tomas medicamentos para la presión arterial sin supervisión.</div>
+  </div>
+</div>
+
+<!-- 10 -->
+<div class="card" data-cat="digestivo">
+  <div class="card-header">
+    <span class="card-emoji">🍵</span>
+    <div class="nivel-badge nivel-C">Nivel C · Etnobotánica</div>
+    <div class="card-titulo">Infusión Hepática y Digestiva</div>
+    <div class="card-tagline">Apoya suavemente el hígado y mejora la digestión</div>
+  </div>
+  <div class="card-div"></div>
+  <button class="toggle-btn" onclick="toggle(this)">Ver receta completa <span class="toggle-icon">▾</span></button>
+  <div class="card-body">
+    <div class="sec-label">Ingredientes</div>
+    <ul class="ing-lista">
+      <li><div class="ing-dot"></div>1 cdta de hojas de guayaba</li>
+      <li><div class="ing-dot"></div>½ cdta de flores secas de manzanilla</li>
+      <li><div class="ing-dot"></div>½ cdta de semillas de hinojo</li>
+    </ul>
+    <div class="sec-label">Preparación</div>
+    <div class="paso"><div class="paso-num">1</div><div class="paso-texto">Hervir 250 ml de agua.</div></div>
+    <div class="paso"><div class="paso-num">2</div><div class="paso-texto">Añadir guayaba, manzanilla e hinojo.</div></div>
+    <div class="paso"><div class="paso-num">3</div><div class="paso-texto">Infusionar tapado 8-10 minutos.</div></div>
+    <div class="paso"><div class="paso-num">4</div><div class="paso-texto">Colar y beber después de comidas pesadas.</div></div>
+    <div class="efectos-wrap">
+      <div class="sec-label">Efectos terapéuticos</div>
+      <div class="efecto-texto">Guayaba e hinojo favorecen digestión y reducen gases. Manzanilla apoya función digestiva y alivia indigestión. Uso tradicional panameño con respaldo etnobotánico.</div>
+    </div>
+    <div class="plantas-wrap">
+      <span class="planta-chip">🍃 Guayaba</span>
+      <span class="planta-chip">🌼 Manzanilla</span>
+      <span class="planta-chip">🌿 Hinojo</span>
+    </div>
+    <div class="precaucion">⚠️ Consultar médico si hay problemas hepáticos diagnosticados.</div>
+  </div>
+</div>
+
+</div><!-- /lista -->
+
+<div class="disclaimer">
+  🌿 Estas infusiones son apoyo nutricional con base en fitoterapia documentada.<br>
+  No reemplazan el diagnóstico médico ni el tratamiento farmacológico.
+</div>
+
+<nav class="bottom-nav">
+  <a href="../index.html" class="nav-item"><span class="nav-icon">🏠</span>Inicio</a>
+  <a href="herbologia-indice.html" class="nav-item"><span class="nav-icon">🌿</span>Plantas</a>
+  <a href="explorador-sintoma.html" class="nav-item"><span class="nav-icon">🔍</span>Síntomas</a>
+  <a href="recetas-detox.html" class="nav-item"><span class="nav-icon">🥤</span>Recetas</a>
+  <a href="infusiones.html" class="nav-item activo"><span class="nav-icon">🍵</span>Infusiones</a>
+</nav>
+
+<script>
+function toggle(btn){btn.closest('.card').classList.toggle('abierta')}
+function filtrar(cat,tabEl){
+  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('activo'));
+  tabEl.classList.add('activo');
+  document.querySelectorAll('.card').forEach(c=>{
+    c.style.display=(cat==='todos'||c.dataset.cat===cat)?'':'none';
+    if(c.style.display==='none')c.classList.remove('abierta');
+  });
+}
+</script>
+</body>
+</html>
