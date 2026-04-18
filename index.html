@@ -413,6 +413,7 @@ body{
     <input id="searchGlobal" class="hero-search-input" type="text"
       placeholder="Buscar planta, dolencia, técnica…"
       oninput="busquedaGlobal(this.value)"
+      onkeydown="if(event.key==='Enter')ejecutarBusqueda(this.value)"
       onfocus="this.placeholder='Ej: colitis, manzanilla, insomnio…'">
   </div>
 </div>
@@ -726,28 +727,143 @@ function focusBusqueda() {
 }
 
 /* ── BÚSQUEDA GLOBAL (demo) ── */
-const BUSQUEDA_INDEX = [
-  {nom:'Manzanilla', tipo:'planta', url:'ficha-planta.html'},
-  {nom:'Jengibre', tipo:'planta', url:'herbologia-indice.html'},
-  {nom:'Hinojo', tipo:'planta', url:'herbologia-indice.html'},
-  {nom:'Cúrcuma', tipo:'planta', url:'herbologia-indice.html'},
-  {nom:'Valeriana', tipo:'planta', url:'herbologia-indice.html'},
-  {nom:'Pasiflora', tipo:'planta', url:'herbologia-indice.html'},
-  {nom:'Colitis', tipo:'dolencia', url:'explorador-sintoma.html'},
-  {nom:'Ansiedad', tipo:'dolencia', url:'explorador-sintoma.html'},
-  {nom:'Insomnio', tipo:'dolencia', url:'explorador-sintoma.html'},
-  {nom:'Respiración 4-7-8', tipo:'técnica', url:'mindfulness-audio.html'},
-  {nom:'Body scan', tipo:'técnica', url:'mindfulness-audio.html'},
-  {nom:'Coherencia cardíaca', tipo:'técnica', url:'mindfulness-audio.html'},
+// Grupos y fichas conocidas del proyecto
+const GRUPOS = ['digestivo','cardiovascular','inmunologico','nervioso','respiratorio','flora-panama'];
+
+// Índice completo de plantas — se construye leyendo los JSON
+let PLANTAS_INDEX = [];
+let indexCargado = false;
+
+async function cargarIndex() {
+  if (indexCargado) return;
+  const ids = [
+    // Digestivo
+    'aloe-vera','hinojo','regaliz-dgl','curcuma','jengibre','manzanilla','menta-piperita',
+    'olmo-resbaladizo','psyllium','alcachofa','fumaria',
+    // Cardiovascular
+    'ajo','espino-blanco','hibisco','olivo','te-verde',
+    // Inmunológico
+    'astragalo','andrographis','equinacea-purpurea','bidens-pilosa',
+    // Nervioso
+    'ginkgo-biloba','bacopa-monnieri','centella-asiatica','maca','ashwagandha',
+    'rodiola','escutelaria','azafran','griffonia','damiana','lupulo',
+    'amapola-de-california','albahaca-sagrada','valeriana','pasiflora',
+    // Respiratorio
+    'eucalipto','tomillo','salvia','marrubio-blanco','malvavisco','gordolobo',
+    'pino-silvestre','sauco','regaliz-respiratorio','pelargonium-sidoides',
+    // Flora Panamá
+    'guanabana','hierba-de-sapo','achiote','santa-maria','noni'
+  ];
+
+  const grupos = {
+    'aloe-vera':'digestivo','hinojo':'digestivo','regaliz-dgl':'digestivo',
+    'curcuma':'digestivo','jengibre':'digestivo','manzanilla':'digestivo',
+    'menta-piperita':'digestivo','olmo-resbaladizo':'digestivo','psyllium':'digestivo',
+    'alcachofa':'digestivo','fumaria':'digestivo',
+    'ajo':'cardiovascular','espino-blanco':'cardiovascular','hibisco':'cardiovascular',
+    'olivo':'cardiovascular','te-verde':'cardiovascular',
+    'astragalo':'inmunologico','andrographis':'inmunologico',
+    'equinacea-purpurea':'inmunologico','bidens-pilosa':'inmunologico',
+    'ginkgo-biloba':'nervioso','bacopa-monnieri':'nervioso','centella-asiatica':'nervioso',
+    'maca':'nervioso','ashwagandha':'nervioso','rodiola':'nervioso','escutelaria':'nervioso',
+    'azafran':'nervioso','griffonia':'nervioso','damiana':'nervioso','lupulo':'nervioso',
+    'amapola-de-california':'nervioso','albahaca-sagrada':'nervioso',
+    'valeriana':'nervioso','pasiflora':'nervioso',
+    'eucalipto':'respiratorio','tomillo':'respiratorio','salvia':'respiratorio',
+    'marrubio-blanco':'respiratorio','malvavisco':'respiratorio','gordolobo':'respiratorio',
+    'pino-silvestre':'respiratorio','sauco':'respiratorio',
+    'regaliz-respiratorio':'respiratorio','pelargonium-sidoides':'respiratorio',
+    'guanabana':'flora-panama','hierba-de-sapo':'flora-panama','achiote':'flora-panama',
+    'santa-maria':'flora-panama','noni':'flora-panama'
+  };
+
+  const promesas = ids.map(async id => {
+    const grupo = grupos[id];
+    try {
+      const r = await fetch(`../data/${grupo}/${id}.json`);
+      if (!r.ok) return null;
+      const d = await r.json();
+      return {
+        id,
+        nom: d.nombreComun || id,
+        alternos: (d.nombresAlternativos || []).map(a => typeof a === 'string' ? a : a.nombre).join(' '),
+        dolencias: (d.dolencias || []).map(x => x.nombre || '').join(' '),
+        grupo,
+        emoji: d.emoji || '🌿'
+      };
+    } catch { return null; }
+  });
+
+  const resultados = await Promise.all(promesas);
+  PLANTAS_INDEX = resultados.filter(Boolean);
+  indexCargado = true;
+}
+
+// Índice de dolencias y técnicas estáticas
+const INDEX_EXTRA = [
+  {nom:'Colitis ulcerosa', tipo:'dolencia', url:'pages/explorador-sintoma.html'},
+  {nom:'Ansiedad', tipo:'dolencia', url:'pages/explorador-sintoma.html'},
+  {nom:'Insomnio', tipo:'dolencia', url:'pages/explorador-sintoma.html'},
+  {nom:'Flatulencia', tipo:'dolencia', url:'pages/explorador-sintoma.html'},
+  {nom:'Náuseas', tipo:'dolencia', url:'pages/explorador-sintoma.html'},
+  {nom:'Cefalea', tipo:'dolencia', url:'pages/explorador-sintoma.html'},
+  {nom:'Fiebre', tipo:'dolencia', url:'pages/explorador-sintoma.html'},
+  {nom:'Respiración 4-7-8', tipo:'técnica', url:'pages/mindfulness-audio.html'},
+  {nom:'Body scan', tipo:'técnica', url:'pages/mindfulness-audio.html'},
+  {nom:'Coherencia cardíaca', tipo:'técnica', url:'pages/mindfulness-audio.html'},
+  {nom:'Binaural 432 Hz', tipo:'técnica', url:'pages/mindfulness-audio.html'},
 ];
 
-function busquedaGlobal(v) {
+async function busquedaGlobal(v) {
   if (!v || v.length < 2) return;
-  const resultados = BUSQUEDA_INDEX.filter(x =>
-    x.nom.toLowerCase().includes(v.toLowerCase())
+  await cargarIndex();
+  const q = v.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'');
+
+  const plantas = PLANTAS_INDEX.filter(p => {
+    const texto = (p.nom + ' ' + p.alternos + ' ' + p.dolencias)
+      .toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'');
+    return texto.includes(q);
+  }).slice(0, 3);
+
+  const extras = INDEX_EXTRA.filter(x =>
+    x.nom.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').includes(q)
+  ).slice(0, 2);
+
+  const todos = [
+    ...plantas.map(p => p.emoji + ' ' + p.nom),
+    ...extras.map(x => x.nom)
+  ];
+
+  if (todos.length) {
+    mostrarToast('→ ' + todos.join('  ·  '));
+  } else if (v.length > 2) {
+    mostrarToast('Sin resultados para "' + v + '"');
+  }
+}
+
+async function ejecutarBusqueda(v) {
+  if (!v || v.length < 2) return;
+  await cargarIndex();
+  const q = v.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'');
+
+  // Buscar en extras primero (dolencias, técnicas)
+  const extra = INDEX_EXTRA.find(x =>
+    x.nom.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').includes(q)
   );
-  if (resultados.length) {
-    mostrarToast('→ ' + resultados.map(r => r.nom).slice(0,3).join(', '));
+  if (extra) { window.location.href = extra.url; return; }
+
+  // Buscar planta exacta
+  const planta = PLANTAS_INDEX.find(p => {
+    const texto = (p.nom + ' ' + p.alternos)
+      .toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'');
+    return texto.includes(q);
+  });
+
+  if (planta) {
+    window.location.href = `pages/herbologia-indice.html?buscar=${encodeURIComponent(v)}`;
+  } else {
+    // Si no hay coincidencia exacta, ir al índice con el término
+    window.location.href = `pages/herbologia-indice.html?buscar=${encodeURIComponent(v)}`;
   }
 }
 
