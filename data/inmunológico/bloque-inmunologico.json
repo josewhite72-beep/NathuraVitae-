@@ -1,0 +1,1069 @@
+[
+  {
+    "id": "astragalo",
+    "versionFicha": "2.0",
+    "estadoFicha": "publicada",
+    "fechaCreacion": "2026-04-15",
+    "fechaRevision": "2026-04-15",
+    "nombreComun": "Astrágalo",
+    "nombresAlternativos": [
+      {
+        "nombre": "Huang qi",
+        "idioma": "zh",
+        "region": "China"
+      },
+      {
+        "nombre": "Milk vetch root",
+        "idioma": "en",
+        "region": "Internacional"
+      }
+    ],
+    "nombreCientifico": "Astragalus membranaceus (Fisch.) Bunge",
+    "sinonimiasCientificas": [
+      "Astragalus propinquus Schischkin"
+    ],
+    "familia": "Fabaceae",
+    "orden": "Fabales",
+    "clase": "Magnoliopsida",
+    "regionOrigen": [
+      "Asia Oriental",
+      "China",
+      "Mongolia"
+    ],
+    "habitatNatural": "Praderas y laderas montañosas en suelos arenosos de regiones templadas",
+    "disponibilidadPanama": {
+      "disponible": true,
+      "nombreLocal": "Astrágalo / Huang qi",
+      "formaComercial": [
+        "cápsula",
+        "polvo",
+        "té-empacado",
+        "extracto",
+        "tintura"
+      ],
+      "dondeConseguir": [
+        "tienda-naturista",
+        "farmacia",
+        "importación"
+      ],
+      "cultivoLocal": false,
+      "endemicaPanama": false,
+      "notaRegional": "Disponible como suplemento importado en cápsulas en Vitamin Shoppe, iHerb con envío a Panamá y tiendas naturistas de Ciudad de Panamá"
+    },
+    "cultivoCasero": {
+      "dificultad": "dificil",
+      "apta": false,
+      "maceta": false,
+      "luz": "pleno-sol",
+      "agua": "poco",
+      "suelo": "Arenoso, bien drenado, pobre en nutrientes",
+      "clima": "No viable en clima tropical panameño. Requiere climas secos y continentales con estaciones marcadas.",
+      "notaCultivo": "No recomendado en Panamá.",
+      "tiempoACosecha": "No aplica"
+    },
+    "partesUsadas": [
+      {
+        "parte": "raíz",
+        "nota": "Raíz seca estandarizada en polisacáridos y astragalósidos"
+      }
+    ],
+    "resumen": "La raíz de Astragalus membranaceus es el inmunomodulador más usado en la medicina tradicional china. Estimula la inmunidad innata y adaptativa, actúa como adaptógeno en fatiga crónica y se usa como coadyuvante en oncología. Contraindicado en enfermedades autoinmunes activas.",
+    "usoTradicionalHistorico": {
+      "culturas": [
+        {
+          "cultura": "Medicina Tradicional China",
+          "uso": "Tonificar el Qi defensivo, fortalecer bazo y pulmón",
+          "periodo": "Más de 2000 años"
+        }
+      ],
+      "primerasMencionesHistoricas": "Shen Nong Ben Cao Jing (siglo I d.C.)",
+      "usoIndigenaRegional": "No documentado en Panamá; introducido como suplemento inmunoestimulante"
+    },
+    "nivelEvidenciaGlobal": "B",
+    "fuentePrimaria": {
+      "institucion": "American Herbal Pharmacopoeia",
+      "tipo": "monografía",
+      "titulo": "Astragalus membranaceus Monograph. Alt Med Rev. 2003;8(1):72-77",
+      "año": 2003,
+      "url": "https://altmedrev.com/wp-content/uploads/2019/02/v8-1-72.pdf"
+    },
+    "grupoTerapeutico": [
+      "inmunomoduladora",
+      "adaptógena",
+      "tónica",
+      "antiviral"
+    ],
+    "propiedades": [
+      {
+        "nombre": "Inmunoestimulante — activación de inmunidad innata y adaptativa",
+        "nivelEvidencia": "moderado",
+        "mecanismoAccion": "Polisacáridos (astragalano) activan macrófagos y células NK vía TLR4. Astragalósidos aumentan proliferación de linfocitos T y B y producción de IL-2, IFN-γ e inmunoglobulinas.",
+        "referencia": "Block KI, Mead MN. Integr Cancer Ther. 2003;2(1):62-69. DOI: 10.1177/1534735403250419. PMID: 12941170"
+      }
+    ],
+    "fotoquimica": [
+      {
+        "compuesto": "Astragalósidos (I-IV)",
+        "grupo": "saponina triterpénica",
+        "accion": "Inmunomoduladora, cardioprotectora, antioxidante",
+        "concentracion": "0.1-0.5% en raíz seca"
+      },
+      {
+        "compuesto": "Polisacáridos (astragalano)",
+        "grupo": "polisacárido",
+        "accion": "Estimulante de macrófagos y células NK",
+        "concentracion": "10-20% en raíz seca"
+      }
+    ],
+    "dolencias": [
+      {
+        "nombre": "Prevención de infecciones respiratorias recurrentes",
+        "categoria": "inmunológico",
+        "nivelEvidencia": "moderado",
+        "dosis": "500-2000 mg/día de extracto estandarizado",
+        "duracion": "4-12 semanas",
+        "referencia": "Block KI, Mead MN. DOI: 10.1177/1534735403250419. PMID: 12941170"
+      }
+    ],
+    "sistemas": [
+      "inmunológico",
+      "cardiovascular",
+      "nervioso"
+    ],
+    "modoEII": {
+      "aptaEnBrote": false,
+      "notaBrote": "Contraindicada en brote activo de EII. La estimulación de macrófagos y citoquinas proinflamatorias (IL-2, IFN-γ) puede exacerbar la inflamación intestinal autoinmune.",
+      "aptaEnMantenimiento": false,
+      "notaMantenimiento": "No recomendada en EII incluso en remisión por riesgo teórico de reactivación autoinmune. Consultar al médico antes de usar.",
+      "mecanismoEII": "Activación de TLR4 y producción de citoquinas proinflamatorias puede agravar la respuesta autoinmune intestinal",
+      "referenciaEII": "Sin estudios en EII; contraindicación basada en mecanismo inmunoestimulante"
+    },
+    "modoCeliaquiaGluten": {
+      "libreDeGluten": true,
+      "nota": "Libre de gluten. Verificar excipientes en cápsulas.",
+      "indicacionEspecifica": "Seguro estructuralmente en celiaquía pero con las mismas precauciones autoinmunes"
+    },
+    "usos": {
+      "interno": [
+        "Infecciones recurrentes",
+        "fatiga crónica",
+        "soporte oncológico",
+        "adaptógeno"
+      ],
+      "externo": [],
+      "culinario": [
+        "Sopas y caldos en medicina china tradicional"
+      ]
+    },
+    "preparacion": [
+      {
+        "forma": "decocción",
+        "instrucciones": "Hervir 9-30 g de raíz seca en 500-1000 ml agua durante 30-60 minutos. Colar y beber.",
+        "cantidadPlanta": "9-30 g",
+        "temperatura": "100°C",
+        "tiempoPreparacion": "30-60 minutos",
+        "dosis": "1-2 tazas al día",
+        "duracionMaxima": "4-8 semanas",
+        "notaPreparacion": "Preferir extracto estandarizado en cápsulas para dosis precisas y controladas."
+      }
+    ],
+    "contraindicaciones": [
+      {
+        "condicion": "Enfermedades autoinmunes activas (lupus, esclerosis múltiple, EII)",
+        "gravedad": "relativa",
+        "justificacion": "Efecto inmunoestimulante puede exacerbar la respuesta autoinmune"
+      },
+      {
+        "condicion": "Trasplante de órganos",
+        "gravedad": "absoluta",
+        "justificacion": "Antagoniza los inmunosupresores necesarios para prevenir el rechazo"
+      }
+    ],
+    "interaccionesMedicamentosas": [
+      {
+        "medicamento": "Inmunosupresores (ciclosporina, tacrolimus, corticoides)",
+        "tipo": "antagonismo",
+        "mecanismo": "Estimulación inmune opuesta al efecto inmunosupresor",
+        "gravedad": "grave"
+      },
+      {
+        "medicamento": "Anticoagulantes",
+        "tipo": "precaución",
+        "mecanismo": "Posible aumento del INR",
+        "gravedad": "leve"
+      }
+    ],
+    "embarazoLactancia": {
+      "embarazo": "contraindicada",
+      "lactancia": "contraindicada",
+      "pediatria": "No recomendado en menores de 12 años sin supervisión",
+      "justificacion": "Datos insuficientes. Efectos inmunomoduladores no evaluados en embarazo."
+    },
+    "compatibilidadPlantas": {
+      "sinergicas": [
+        {
+          "plantaId": "equinacea-purpurea",
+          "plantaNom": "Equinácea purpúrea",
+          "motivo": "Sinergia inmunoestimulante en prevención de infecciones respiratorias"
+        },
+        {
+          "plantaId": "andrographis",
+          "plantaNom": "Andrographis",
+          "motivo": "Efecto antiviral e inmunomodulador combinado"
+        }
+      ],
+      "incompatibles": []
+    },
+    "infusionesRelacionadas": [],
+    "emoji": "🌿",
+    "etiquetas": [
+      "inmunológico",
+      "adaptógena",
+      "nivel-B",
+      "disponible-panama",
+      "importada",
+      "contraindicada-eii",
+      "libre-gluten"
+    ],
+    "fuentes": [
+      {
+        "autor": "Block KI, Mead MN",
+        "titulo": "Immune system effects of echinacea, ginseng, and astragalus: a review",
+        "publicacion": "Integrative Cancer Therapies",
+        "año": 2003,
+        "volumen": "2(1)",
+        "paginas": "62-69",
+        "doi": "10.1177/1534735403250419",
+        "pmid": "12941170",
+        "tipo": "revision-sistematica",
+        "nivelEvidencia": "B",
+        "idioma": "en"
+      }
+    ],
+    "advertencia": "Contraindicado en enfermedades autoinmunes y trasplantes. No combinar con inmunosupresores.",
+    "disclaimer": "Esta información es educativa y no sustituye el diagnóstico ni el tratamiento médico profesional."
+  },
+  {
+    "id": "andrographis",
+    "versionFicha": "2.0",
+    "estadoFicha": "publicada",
+    "fechaCreacion": "2026-04-15",
+    "fechaRevision": "2026-04-15",
+    "nombreComun": "Andrographis",
+    "nombresAlternativos": [
+      {
+        "nombre": "King of bitters",
+        "idioma": "en",
+        "region": "Internacional"
+      },
+      {
+        "nombre": "Andrographis paniculata",
+        "idioma": "es",
+        "region": "Panamá"
+      }
+    ],
+    "nombreCientifico": "Andrographis paniculata (Burm.f.) Nees",
+    "sinonimiasCientificas": [
+      "Justicia paniculata Burm.f."
+    ],
+    "familia": "Acanthaceae",
+    "orden": "Lamiales",
+    "clase": "Magnoliopsida",
+    "regionOrigen": [
+      "India",
+      "Sri Lanka",
+      "Sudeste Asiático"
+    ],
+    "habitatNatural": "Bosques tropicales, llanuras húmedas y suelos ricos",
+    "disponibilidadPanama": {
+      "disponible": true,
+      "nombreLocal": "Andrographis / King of bitters",
+      "formaComercial": [
+        "cápsula",
+        "extracto-seco",
+        "tintura"
+      ],
+      "dondeConseguir": [
+        "tienda-naturista",
+        "importación"
+      ],
+      "cultivoLocal": true,
+      "endemicaPanama": false,
+      "notaRegional": "Suplemento importado disponible en tiendas naturistas. Puede cultivarse en zonas cálidas y húmedas de Panamá (Darién, Bocas del Toro). Sabor extremadamente amargo."
+    },
+    "cultivoCasero": {
+      "dificultad": "moderada",
+      "apta": true,
+      "maceta": true,
+      "luz": "pleno-sol",
+      "agua": "moderado",
+      "suelo": "Franco-arenoso, bien drenado, rico en materia orgánica",
+      "clima": "Adaptación óptima al clima tropical panameño cálido y húmedo (24-32°C)",
+      "notaCultivo": "Anual. Propagar por semillas. Cosechar sumidades antes de floración (3-4 meses). Sabor muy amargo.",
+      "tiempoACosecha": "3-4 meses"
+    },
+    "partesUsadas": [
+      {
+        "parte": "hoja",
+        "nota": "Hojas y sumidades aéreas frescas o secas, estandarizadas en andrografólido"
+      }
+    ],
+    "resumen": "El andrografólido de Andrographis paniculata inhibe la replicación de virus respiratorios y reduce la duración del resfriado común. Metaanálisis avalan su eficacia en infecciones respiratorias agudas. Contraindicado en embarazo por efecto abortivo documentado.",
+    "usoTradicionalHistorico": {
+      "culturas": [
+        {
+          "cultura": "Ayurveda y MTC",
+          "uso": "Fiebre, infecciones hepáticas y respiratorias",
+          "periodo": "Antigüedad"
+        }
+      ],
+      "primerasMencionesHistoricas": "Charaka Samhita (India)",
+      "usoIndigenaRegional": "No tradicional en Panamá; cultivada por comunidades asiáticas locales"
+    },
+    "nivelEvidenciaGlobal": "B",
+    "fuentePrimaria": {
+      "institucion": "NCCIH",
+      "tipo": "revision",
+      "titulo": "Andrographis paniculata for respiratory tract infections — NCCIH Review",
+      "año": 2018,
+      "url": "https://www.nccih.nih.gov/research/research-results/andrographis-paniculata-for-respiratory-tract-infections"
+    },
+    "grupoTerapeutico": [
+      "antiviral",
+      "inmunoestimulante",
+      "antipirética",
+      "antiinflamatoria"
+    ],
+    "propiedades": [
+      {
+        "nombre": "Antiviral e inmunoestimulante",
+        "nivelEvidencia": "fuerte",
+        "mecanismoAccion": "Andrografólido inhibe la replicación del virus influenza y rinovirus mediante bloqueo de la proteasa viral. Activa IFN-γ e IL-2 y reduce la adhesión viral al epitelio respiratorio. Inhibe NF-κB reduciendo inflamación.",
+        "referencia": "Coon JT, Ernst E. Planta Med. 2004;70(4):293-298. DOI: 10.1055/s-2004-818937. PMID: 15124108"
+      }
+    ],
+    "fotoquimica": [
+      {
+        "compuesto": "Andrografólido",
+        "grupo": "diterpeno lactónico",
+        "accion": "Antiviral, antiinflamatorio, inhibidor de NF-κB",
+        "concentracion": "1-4% en hoja seca"
+      },
+      {
+        "compuesto": "Neoandrografólido",
+        "grupo": "diterpeno",
+        "accion": "Antiinflamatorio y hepatoprotector complementario",
+        "concentracion": "0.5-1%"
+      }
+    ],
+    "dolencias": [
+      {
+        "nombre": "Resfriado común (tratamiento y prevención)",
+        "categoria": "inmunológico",
+        "nivelEvidencia": "fuerte",
+        "dosis": "300-600 mg de extracto estandarizado (andrografólido 10-20 mg), 3 veces/día",
+        "duracion": "3-5 días (tratamiento); hasta 4 meses (prevención)",
+        "referencia": "Coon JT, Ernst E. DOI: 10.1055/s-2004-818937. PMID: 15124108"
+      },
+      {
+        "nombre": "Faringitis aguda",
+        "categoria": "respiratorio",
+        "nivelEvidencia": "moderado",
+        "dosis": "200 mg extracto 3 veces/día",
+        "duracion": "7 días",
+        "referencia": "Thamlikitkul V et al. J Med Assoc Thai. 1991;74(10):437-442. PMID: 1791395"
+      }
+    ],
+    "sistemas": [
+      "inmunológico",
+      "respiratorio"
+    ],
+    "modoEII": {
+      "aptaEnBrote": false,
+      "notaBrote": "Contraindicada en brote activo de EII. La activación de IFN-γ e IL-2 puede exacerbar la inflamación intestinal autoinmune.",
+      "aptaEnMantenimiento": false,
+      "notaMantenimiento": "No recomendada en EII incluso en remisión por riesgo teórico de reactivación autoinmune.",
+      "mecanismoEII": "Activación de citoquinas proinflamatorias (IFN-γ, IL-2) puede empeorar la inflamación intestinal autoinmune",
+      "referenciaEII": "Sin estudios en EII; contraindicación teórica"
+    },
+    "modoCeliaquiaGluten": {
+      "libreDeGluten": true,
+      "nota": "Libre de gluten. Verificar excipientes.",
+      "indicacionEspecifica": "Seguro estructuralmente en celiaquía pero con las mismas precauciones autoinmunes"
+    },
+    "usos": {
+      "interno": [
+        "Resfriado común",
+        "faringitis",
+        "sinusitis",
+        "infecciones respiratorias"
+      ],
+      "externo": [],
+      "culinario": [
+        "No — sabor extremadamente amargo"
+      ]
+    },
+    "preparacion": [
+      {
+        "forma": "extracto-seco",
+        "instrucciones": "Cápsulas de extracto estandarizado en andrografólido. Tomar con alimentos para reducir molestias gástricas.",
+        "cantidadPlanta": "300-600 mg de extracto",
+        "dosis": "3 veces al día",
+        "duracionMaxima": "7 días para tratamiento; 4 meses para prevención",
+        "notaPreparacion": "La forma en cápsula es imprescindible por el sabor extremadamente amargo."
+      }
+    ],
+    "contraindicaciones": [
+      {
+        "condicion": "Embarazo",
+        "gravedad": "absoluta",
+        "justificacion": "Efecto abortivo documentado en estudios animales. Contraindicado absolutamente."
+      },
+      {
+        "condicion": "Enfermedades autoinmunes activas",
+        "gravedad": "absoluta",
+        "justificacion": "Estimulación inmune puede exacerbar la enfermedad"
+      },
+      {
+        "condicion": "Infertilidad masculina (dosis altas)",
+        "gravedad": "relativa",
+        "justificacion": "Puede reducir la espermatogénesis en tratamientos prolongados"
+      }
+    ],
+    "interaccionesMedicamentosas": [
+      {
+        "medicamento": "Inmunosupresores",
+        "tipo": "antagonismo",
+        "mecanismo": "Estimulación inmune opuesta al efecto inmunosupresor",
+        "gravedad": "grave"
+      },
+      {
+        "medicamento": "Anticoagulantes (warfarina)",
+        "tipo": "potenciación",
+        "mecanismo": "Posible aumento del INR — monitorizar",
+        "gravedad": "moderada"
+      },
+      {
+        "medicamento": "Antihipertensivos",
+        "tipo": "potenciación",
+        "mecanismo": "Efecto hipotensor leve aditivo",
+        "gravedad": "leve"
+      }
+    ],
+    "embarazoLactancia": {
+      "embarazo": "contraindicada",
+      "lactancia": "contraindicada",
+      "pediatria": "No recomendado en menores de 12 años",
+      "justificacion": "Efecto abortivo documentado. Sin datos de seguridad en embarazo y lactancia."
+    },
+    "compatibilidadPlantas": {
+      "sinergicas": [
+        {
+          "plantaId": "equinacea-purpurea",
+          "plantaNom": "Equinácea purpúrea",
+          "motivo": "Potenciación antiviral e inmunoestimulante en infecciones agudas"
+        },
+        {
+          "plantaId": "astragalo",
+          "plantaNom": "Astrágalo",
+          "motivo": "Efecto inmunomodulador complementario"
+        }
+      ],
+      "incompatibles": []
+    },
+    "infusionesRelacionadas": [],
+    "emoji": "🌿",
+    "etiquetas": [
+      "inmunológico",
+      "antiviral",
+      "nivel-B",
+      "nccih",
+      "cultivable-panama",
+      "contraindicada-eii",
+      "libre-gluten",
+      "disponible-panama"
+    ],
+    "fuentes": [
+      {
+        "autor": "Coon JT, Ernst E",
+        "titulo": "Andrographis paniculata in the treatment of upper respiratory tract infections: a systematic review of safety and efficacy",
+        "publicacion": "Planta Medica",
+        "año": 2004,
+        "volumen": "70(4)",
+        "paginas": "293-298",
+        "doi": "10.1055/s-2004-818937",
+        "pmid": "15124108",
+        "tipo": "revision-sistematica",
+        "nivelEvidencia": "A",
+        "idioma": "en"
+      },
+      {
+        "autor": "Thamlikitkul V et al.",
+        "titulo": "Efficacy of Andrographis paniculata, Nees for pharyngotonsillitis in adults",
+        "publicacion": "Journal of the Medical Association of Thailand",
+        "año": 1991,
+        "volumen": "74(10)",
+        "paginas": "437-442",
+        "pmid": "1791395",
+        "tipo": "estudio-clinico-ECA",
+        "nivelEvidencia": "B",
+        "idioma": "en"
+      }
+    ],
+    "advertencia": "Contraindicada absolutamente en embarazo. No combinar con inmunosupresores. No usar más de 4 meses continuos.",
+    "disclaimer": "Esta información es educativa y no sustituye el diagnóstico ni el tratamiento médico profesional."
+  },
+  {
+    "id": "equinacea-purpurea",
+    "versionFicha": "2.0",
+    "estadoFicha": "publicada",
+    "fechaCreacion": "2026-04-15",
+    "fechaRevision": "2026-04-15",
+    "nombreComun": "Equinácea purpúrea",
+    "nombresAlternativos": [
+      {
+        "nombre": "Purple coneflower",
+        "idioma": "en",
+        "region": "Norteamérica"
+      },
+      {
+        "nombre": "Echinacea",
+        "idioma": "es",
+        "region": "Panamá"
+      }
+    ],
+    "nombreCientifico": "Echinacea purpurea (L.) Moench",
+    "sinonimiasCientificas": [
+      "Rudbeckia purpurea L."
+    ],
+    "familia": "Asteraceae",
+    "orden": "Asterales",
+    "clase": "Magnoliopsida",
+    "regionOrigen": [
+      "América del Norte"
+    ],
+    "habitatNatural": "Praderas y bordes de bosques en suelos bien drenados de Norteamérica",
+    "disponibilidadPanama": {
+      "disponible": true,
+      "nombreLocal": "Equinácea / Echinacea",
+      "formaComercial": [
+        "cápsula",
+        "tintura",
+        "té-empacado",
+        "extracto",
+        "jarabe"
+      ],
+      "dondeConseguir": [
+        "tienda-naturista",
+        "farmacia",
+        "supermercado"
+      ],
+      "cultivoLocal": true,
+      "endemicaPanama": false,
+      "notaRegional": "Ampliamente disponible en farmacias y tiendas naturistas de Panamá. Marcas como Zarbee's y Nature's Way disponibles en supermercados. Se puede cultivar como ornamental en zonas con estación seca."
+    },
+    "cultivoCasero": {
+      "dificultad": "facil",
+      "apta": true,
+      "maceta": true,
+      "luz": "pleno-sol",
+      "agua": "moderado",
+      "suelo": "Bien drenado, fértil, ligeramente alcalino",
+      "clima": "Adaptación razonable al clima panameño con buena ventilación y suelo bien drenado. Mejor en zonas con estación seca marcada.",
+      "notaCultivo": "Perenne. Cosechar sumidades floridas en plena floración. Atrae polinizadores. Sensible a encharcamiento.",
+      "tiempoACosecha": "Segundo año para flores"
+    },
+    "partesUsadas": [
+      {
+        "parte": "parte-aérea",
+        "nota": "Herba recens — sumidades floridas frescas. Es la forma más estudiada según EMA."
+      }
+    ],
+    "resumen": "Echinacea purpurea (partes aéreas frescas) es el inmunoestimulante más estudiado de la fitoterapia occidental. La EMA avala su uso bien establecido para prevención y tratamiento del resfriado común. Actúa activando la inmunidad innata sin estimulación excesiva.",
+    "usoTradicionalHistorico": {
+      "culturas": [
+        {
+          "cultura": "Nativos americanos (Plains Indians)",
+          "uso": "Infecciones, heridas y mordeduras de serpiente",
+          "periodo": "Precolombino — siglo XIX"
+        }
+      ],
+      "primerasMencionesHistoricas": "King's American Dispensatory (1898)",
+      "usoIndigenaRegional": "No nativa de Panamá; cultivada modernamente como ornamental y suplemento"
+    },
+    "nivelEvidenciaGlobal": "A",
+    "fuentePrimaria": {
+      "institucion": "EMA",
+      "tipo": "monografía",
+      "titulo": "European Union herbal monograph on Echinacea purpurea (L.) Moench, herba recens. EMA/HMPC/48704/2014",
+      "año": 2015,
+      "url": "https://www.ema.europa.eu/en/documents/herbal-monograph/final-european-union-herbal-monograph-echinacea-purpurea-l-moench-herba-recens_en.pdf"
+    },
+    "grupoTerapeutico": [
+      "inmunoestimulante",
+      "antiviral",
+      "antiinflamatoria"
+    ],
+    "propiedades": [
+      {
+        "nombre": "Inmunoestimulante — activación de inmunidad innata",
+        "nivelEvidencia": "fuerte",
+        "mecanismoAccion": "Alcamidas se unen al receptor cannabinoide CB2 en macrófagos y células dendríticas, activando NF-κB y aumentando fagocitosis, producción de TNF-α e IL-1. Polisacáridos activan receptores TLR2/4 en macrófagos.",
+        "referencia": "Shah SA et al. Lancet Infect Dis. 2007;7(7):473-480. DOI: 10.1016/S1473-3099(07)70157-0. PMID: 17597571"
+      }
+    ],
+    "fotoquimica": [
+      {
+        "compuesto": "Alcamidas (alquilamidas)",
+        "grupo": "alcamida",
+        "accion": "Inmunoestimulante vía receptor CB2, antiinflamatoria",
+        "concentracion": "0.1-0.5% en parte aérea fresca"
+      },
+      {
+        "compuesto": "Ácido chicórico",
+        "grupo": "ácido cafeico",
+        "accion": "Antiviral, antioxidante, potenciador de la fagocitosis",
+        "concentracion": "1-3% en sumidades"
+      }
+    ],
+    "dolencias": [
+      {
+        "nombre": "Prevención del resfriado común",
+        "categoria": "inmunológico",
+        "nivelEvidencia": "moderado",
+        "dosis": "Extracto equivalente a 2-3 g de herba recens, 3 veces/día",
+        "duracion": "Hasta 4 meses de prevención",
+        "referencia": "Shah SA et al. DOI: 10.1016/S1473-3099(07)70157-0. PMID: 17597571"
+      },
+      {
+        "nombre": "Tratamiento del resfriado (reducción de duración)",
+        "categoria": "inmunológico",
+        "nivelEvidencia": "moderado",
+        "dosis": "3-5 tomas/día al inicio de síntomas",
+        "duracion": "7-10 días",
+        "referencia": "Shah SA et al. DOI: 10.1016/S1473-3099(07)70157-0. PMID: 17597571"
+      }
+    ],
+    "sistemas": [
+      "inmunológico",
+      "respiratorio"
+    ],
+    "modoEII": {
+      "aptaEnBrote": false,
+      "notaBrote": "Contraindicada en brote activo de EII. La activación de TNF-α y citoquinas proinflamatorias puede exacerbar la inflamación intestinal.",
+      "aptaEnMantenimiento": false,
+      "notaMantenimiento": "No recomendada en EII incluso en remisión. El riesgo teórico de reactivación autoinmune supera el beneficio para resfriados.",
+      "mecanismoEII": "Activación de TLR y producción de TNF-α, IL-1 puede agravar inflamación intestinal autoinmune",
+      "referenciaEII": "Sin estudios en EII; contraindicación basada en mecanismo"
+    },
+    "modoCeliaquiaGluten": {
+      "libreDeGluten": true,
+      "nota": "Libre de gluten. Verificar excipientes. Atención a posible reacción cruzada con Asteraceae en alérgicos.",
+      "indicacionEspecifica": "Segura en celiaquía sin alergia a Asteraceae"
+    },
+    "usos": {
+      "interno": [
+        "Resfriado común (prevención y tratamiento)",
+        "infecciones respiratorias superiores"
+      ],
+      "externo": [
+        "Heridas superficiales (tintura diluida)"
+      ],
+      "culinario": []
+    },
+    "preparacion": [
+      {
+        "forma": "tintura",
+        "instrucciones": "Tintura madre de partes aéreas frescas (1:5 en alcohol 50%). Diluir en agua.",
+        "cantidadPlanta": "Equivalente a 2-3 g de hierba fresca",
+        "dosis": "2.5 ml, 3 veces al día",
+        "duracionMaxima": "10 días continuos máximo",
+        "notaPreparacion": "No usar más de 10 días seguidos según EMA. Los extractos de sumidad fresca (herba recens) son más eficaces que los de planta seca."
+      },
+      {
+        "forma": "extracto-seco",
+        "instrucciones": "Cápsulas de extracto estandarizado en alcamidas y ácido chicórico.",
+        "cantidadPlanta": "500-1000 mg",
+        "dosis": "3 veces al día",
+        "duracionMaxima": "10 días (tratamiento); 4 meses (prevención con descansos)"
+      }
+    ],
+    "contraindicaciones": [
+      {
+        "condicion": "Enfermedades autoinmunes (EII, esclerosis múltiple, lupus, artritis reumatoide)",
+        "gravedad": "absoluta",
+        "justificacion": "Estimulación inmune puede exacerbar la enfermedad"
+      },
+      {
+        "condicion": "Alergia a plantas de la familia Asteraceae",
+        "gravedad": "absoluta",
+        "justificacion": "Riesgo de reacción alérgica grave — reacción cruzada con manzanilla, árnica, caléndula"
+      },
+      {
+        "condicion": "VIH/SIDA (uso prolongado)",
+        "gravedad": "relativa",
+        "justificacion": "Uso teóricamente problemático — consultar médico"
+      }
+    ],
+    "interaccionesMedicamentosas": [
+      {
+        "medicamento": "Inmunosupresores (corticoides, metotrexato, ciclosporina)",
+        "tipo": "antagonismo",
+        "mecanismo": "Estimulación inmune opuesta al efecto inmunosupresor",
+        "gravedad": "moderada"
+      },
+      {
+        "medicamento": "Cafeína (metabolismo CYP1A2)",
+        "tipo": "alteración-metabolismo",
+        "mecanismo": "Posible inhibición de CYP1A2 — puede aumentar niveles de cafeína",
+        "gravedad": "leve"
+      }
+    ],
+    "embarazoLactancia": {
+      "embarazo": "precaución",
+      "lactancia": "precaución",
+      "pediatria": "No recomendada en menores de 12 años según EMA",
+      "justificacion": "Datos insuficientes según EMA para embarazo y lactancia"
+    },
+    "compatibilidadPlantas": {
+      "sinergicas": [
+        {
+          "plantaId": "astragalo",
+          "plantaNom": "Astrágalo",
+          "motivo": "Sinergia inmunoestimulante en prevención de infecciones recurrentes"
+        },
+        {
+          "plantaId": "andrographis",
+          "plantaNom": "Andrographis",
+          "motivo": "Potenciación antiviral e inmunoestimulante en infecciones agudas"
+        }
+      ],
+      "incompatibles": []
+    },
+    "infusionesRelacionadas": [],
+    "emoji": "🌸",
+    "etiquetas": [
+      "inmunológico",
+      "antiviral",
+      "nivel-A",
+      "ema",
+      "cultivable-panama",
+      "contraindicada-eii",
+      "libre-gluten",
+      "disponible-panama"
+    ],
+    "fuentes": [
+      {
+        "autor": "European Medicines Agency",
+        "titulo": "European Union herbal monograph on Echinacea purpurea (L.) Moench, herba recens. EMA/HMPC/48704/2014",
+        "publicacion": "EMA",
+        "año": 2015,
+        "doi": "",
+        "pmid": "",
+        "tipo": "monografía-EMA",
+        "nivelEvidencia": "A",
+        "idioma": "en"
+      },
+      {
+        "autor": "Shah SA et al.",
+        "titulo": "Evaluation of echinacea for the prevention and treatment of the common cold: a meta-analysis",
+        "publicacion": "The Lancet Infectious Diseases",
+        "año": 2007,
+        "volumen": "7(7)",
+        "paginas": "473-480",
+        "doi": "10.1016/S1473-3099(07)70157-0",
+        "pmid": "17597571",
+        "tipo": "metaanalisis",
+        "nivelEvidencia": "A",
+        "idioma": "en"
+      }
+    ],
+    "advertencia": "Contraindicada en enfermedades autoinmunes incluyendo EII. No usar más de 10 días continuos. Suspender si aparece erupción cutánea.",
+    "disclaimer": "Esta información es educativa y no sustituye el diagnóstico ni el tratamiento médico profesional."
+  },
+  {
+    "id": "bidens-pilosa",
+    "versionFicha": "2.0",
+    "estadoFicha": "publicada",
+    "fechaCreacion": "2026-04-15",
+    "fechaRevision": "2026-04-15",
+    "nombreComun": "Bidens pilosa",
+    "nombresAlternativos": [
+      {
+        "nombre": "Blackjack",
+        "idioma": "en",
+        "region": "África y América"
+      },
+      {
+        "nombre": "Mozote",
+        "idioma": "es",
+        "region": "Centroamérica"
+      },
+      {
+        "nombre": "Aceitilla / Cadillo",
+        "idioma": "es",
+        "region": "Panamá"
+      }
+    ],
+    "nombreCientifico": "Bidens pilosa L.",
+    "sinonimiasCientificas": [
+      "Bidens leucantha Willd."
+    ],
+    "familia": "Asteraceae",
+    "orden": "Asterales",
+    "clase": "Magnoliopsida",
+    "regionOrigen": [
+      "América Tropical",
+      "Cosmopolita"
+    ],
+    "habitatNatural": "Suelos perturbados, bordes de caminos, terrenos baldíos en zonas tropicales",
+    "disponibilidadPanama": {
+      "disponible": true,
+      "nombreLocal": "Mozote / Aceitilla / Cadillo",
+      "formaComercial": [
+        "fresca",
+        "seca",
+        "tintura"
+      ],
+      "dondeConseguir": [
+        "mercado-público",
+        "cultivo-propio",
+        "recolección"
+      ],
+      "cultivoLocal": true,
+      "endemicaPanama": false,
+      "notaRegional": "Planta abundante como maleza en todo Panamá. Se recolecta fácilmente en campos y bordes de caminos. Usada en comunidades rurales e indígenas panameñas para resfriados, heridas e inflamación. Gratuita y accesible."
+    },
+    "cultivoCasero": {
+      "dificultad": "muy-facil",
+      "apta": true,
+      "maceta": true,
+      "luz": "pleno-sol",
+      "agua": "moderado",
+      "suelo": "Cualquier suelo, tolera pobreza y variedad de pH",
+      "clima": "Perfecta adaptación al clima tropical panameño. Crece como maleza en todo el país.",
+      "notaCultivo": "Crece espontáneamente. Cosechar partes aéreas antes de floración. Controlar para evitar invasión. No requiere cuidados.",
+      "tiempoACosecha": "2-3 meses"
+    },
+    "partesUsadas": [
+      {
+        "parte": "hoja",
+        "nota": "Hojas y tallos jóvenes frescos o secos. Disponible todo el año en Panamá."
+      }
+    ],
+    "resumen": "Bidens pilosa es la planta medicinal más accesible de Panamá, validada por TRAMIL para uso en infecciones respiratorias y heridas. Sus poliacetilenos y flavonoides tienen actividad antiinflamatoria, antioxidante e inmunomoduladora documentada en estudios preclínicos y revisiones etnobotánicas.",
+    "usoTradicionalHistorico": {
+      "culturas": [
+        {
+          "cultura": "Indígenas panameños (Ngäbe, Emberá, Guna Yala)",
+          "uso": "Resfriados, tos, heridas, fiebre e inflamación",
+          "periodo": "Tradicional — documentado siglo XX"
+        },
+        {
+          "cultura": "Tradición campesina centroamericana",
+          "uso": "Antiinflamatorio, antidiabético, digestivo",
+          "periodo": "Siglo XIX — presente"
+        }
+      ],
+      "primerasMencionesHistoricas": "Etnobotánica centroamericana documentada en siglo XX",
+      "usoIndigenaRegional": "Uso ampliamente documentado en comunidades indígenas y campesinas de Panamá. TRAMIL valida su uso para infecciones respiratorias leves."
+    },
+    "nivelEvidenciaGlobal": "B",
+    "fuentePrimaria": {
+      "institucion": "TRAMIL",
+      "tipo": "validacion-tramil",
+      "titulo": "Bidens pilosa — Red TRAMIL / OPS. Monografía y validación etnobotánica",
+      "año": 2015,
+      "url": "https://www.tramil.net/plant/bidens-pilosa"
+    },
+    "grupoTerapeutico": [
+      "inmunomoduladora",
+      "antiinflamatoria",
+      "antimicrobiana",
+      "antioxidante"
+    ],
+    "propiedades": [
+      {
+        "nombre": "Antiinflamatoria e inmunomoduladora",
+        "nivelEvidencia": "preliminar",
+        "mecanismoAccion": "Poliacetilenos (fenilheptatriino) inhiben la producción de NO, PGE2 y TNF-α en macrófagos vía inhibición de NF-κB. Los flavonoides (luteolina, quercetina) modulan la respuesta inmune humoral y celular.",
+        "referencia": "Bartolome AP et al. Evid Based Complement Alternat Med. 2013;2013:340215. DOI: 10.1155/2013/340215. PMID: 23935661"
+      },
+      {
+        "nombre": "Antimicrobiana (antibacteriana y antifúngica)",
+        "nivelEvidencia": "preliminar",
+        "mecanismoAccion": "Los fenoles y poliacetilenos alteran la permeabilidad de la membrana bacteriana. Actividad demostrada frente a Staphylococcus aureus, E. coli y Candida albicans in vitro.",
+        "referencia": "Bartolome AP et al. DOI: 10.1155/2013/340215. PMID: 23935661"
+      }
+    ],
+    "fotoquimica": [
+      {
+        "compuesto": "Poliacetilenos (fenilheptatriino)",
+        "grupo": "poliacetileno",
+        "accion": "Antiinflamatorio, antimicrobiano, citotóxico selectivo",
+        "concentracion": "Variable en partes aéreas"
+      },
+      {
+        "compuesto": "Luteolina y quercetina",
+        "grupo": "flavonoide",
+        "accion": "Antiinflamatorio, antioxidante, inmunomodulador",
+        "concentracion": "0.5-1.5% en hoja seca"
+      }
+    ],
+    "dolencias": [
+      {
+        "nombre": "Infecciones respiratorias leves y resfriado (uso tradicional validado)",
+        "categoria": "respiratorio",
+        "nivelEvidencia": "tradicional",
+        "dosis": "Infusión de 10-15 g de planta fresca en 1L agua, 3-4 tazas/día",
+        "duracion": "3-5 días",
+        "referencia": "TRAMIL. Red OPS/OMS. 2015."
+      },
+      {
+        "nombre": "Heridas y úlceras cutáneas (uso externo)",
+        "categoria": "dermatológico",
+        "nivelEvidencia": "tradicional",
+        "dosis": "Cataplasma de hojas frescas machacadas o lavado con infusión concentrada",
+        "duracion": "Hasta cicatrización",
+        "referencia": "TRAMIL 2015"
+      }
+    ],
+    "sistemas": [
+      "inmunológico",
+      "respiratorio",
+      "dermatológico",
+      "digestivo",
+      "metabólico"
+    ],
+    "modoEII": {
+      "aptaEnBrote": true,
+      "notaBrote": "Potencialmente útil en brote leve por inhibición de NF-κB y TNF-α — mecanismo antiinflamatorio sin fuerte estimulación inmune. A diferencia de equinácea y astrágalo, su perfil es más antiinflamatorio que inmunoestimulante.",
+      "aptaEnMantenimiento": true,
+      "notaMantenimiento": "Beneficiosa en mantenimiento por su efecto antiinflamatorio crónico de bajo grado y antioxidante. Planta muy accesible y bien tolerada.",
+      "mecanismoEII": "Inhibición de NF-κB y TNF-α en macrófagos reduce inflamación intestinal sin activar fuertemente la respuesta inmune adaptativa",
+      "referenciaEII": "Sin ECA en EII; evidencia extrapolada de actividad antiinflamatoria general"
+    },
+    "modoCeliaquiaGluten": {
+      "libreDeGluten": true,
+      "nota": "Planta silvestre libre de gluten. Recolectar de zonas no contaminadas.",
+      "indicacionEspecifica": "Segura y potencialmente útil en celiaquía por su efecto antiinflamatorio intestinal. Planta local accesible y económica."
+    },
+    "usos": {
+      "interno": [
+        "Resfriados y tos",
+        "inflamación",
+        "fiebre",
+        "diarrea leve (tradicional)"
+      ],
+      "externo": [
+        "Heridas superficiales",
+        "úlceras cutáneas",
+        "conjuntivitis (lavado)"
+      ],
+      "culinario": [
+        "Hojas jóvenes como verdura en sopas (comunidades indígenas)"
+      ]
+    },
+    "preparacion": [
+      {
+        "forma": "infusión",
+        "instrucciones": "Lavar bien las hojas frescas. Infundir en agua caliente. Tapar y reposar. Colar.",
+        "cantidadPlanta": "10-15 g fresca (3-5 g seca)",
+        "temperatura": "90-95°C",
+        "tiempoPreparacion": "10 minutos",
+        "dosis": "3-4 tazas al día",
+        "duracionMaxima": "7 días continuos",
+        "notaPreparacion": "Recolectar SIEMPRE de zonas alejadas de carreteras, cultivos con pesticidas o aguas contaminadas. Preferir planta de huerto propio."
+      }
+    ],
+    "contraindicaciones": [
+      {
+        "condicion": "Embarazo",
+        "gravedad": "precaución",
+        "justificacion": "Datos limitados; posible efecto sobre la musculatura uterina en dosis altas"
+      },
+      {
+        "condicion": "Alergia a Asteraceae",
+        "gravedad": "relativa",
+        "justificacion": "Posible reacción cruzada con manzanilla, árnica o caléndula"
+      }
+    ],
+    "interaccionesMedicamentosas": [
+      {
+        "medicamento": "Antidiabéticos orales e insulina",
+        "tipo": "potenciación",
+        "mecanismo": "Efecto hipoglucemiante aditivo — monitorizar glucosa",
+        "gravedad": "moderada"
+      },
+      {
+        "medicamento": "Anticoagulantes",
+        "tipo": "precaución",
+        "mecanismo": "Posible efecto antiagregante por quercetina",
+        "gravedad": "leve"
+      }
+    ],
+    "embarazoLactancia": {
+      "embarazo": "precaución",
+      "lactancia": "precaución",
+      "pediatria": "Segura en niños mayores de 5 años en dosis reducidas (mitad de dosis adulta). Uso tradicional documentado en niños.",
+      "justificacion": "Uso tradicional seguro en adultos. Precaución en embarazo por falta de datos."
+    },
+    "compatibilidadPlantas": {
+      "sinergicas": [
+        {
+          "plantaId": "jengibre",
+          "plantaNom": "Jengibre",
+          "motivo": "Sinergia antiinflamatoria y antigripal — combinación tradicional panameña"
+        },
+        {
+          "plantaId": "manzanilla",
+          "plantaNom": "Manzanilla",
+          "motivo": "Potenciación antiinflamatoria para infecciones leves"
+        }
+      ],
+      "incompatibles": []
+    },
+    "infusionesRelacionadas": [],
+    "emoji": "🌿",
+    "etiquetas": [
+      "inmunológico",
+      "antiinflamatoria",
+      "nivel-B",
+      "tramil",
+      "cultivable-panama",
+      "endemica-panama",
+      "apta-brote-eii",
+      "apta-eii",
+      "libre-gluten",
+      "disponible-panama"
+    ],
+    "fuentes": [
+      {
+        "autor": "TRAMIL / Red OPS-OMS",
+        "titulo": "Bidens pilosa L. — Monografía y validación etnobotánica TRAMIL",
+        "publicacion": "Red TRAMIL",
+        "año": 2015,
+        "doi": "",
+        "pmid": "",
+        "tipo": "validacion-tramil",
+        "nivelEvidencia": "B",
+        "idioma": "es"
+      },
+      {
+        "autor": "Bartolome AP et al.",
+        "titulo": "Bidens pilosa L. (Asteraceae): Botanical Properties, Traditional Uses, Phytochemistry, and Pharmacology",
+        "publicacion": "Evidence-Based Complementary and Alternative Medicine",
+        "año": 2013,
+        "volumen": "2013",
+        "paginas": "340215",
+        "doi": "10.1155/2013/340215",
+        "pmid": "23935661",
+        "tipo": "revision-sistematica",
+        "nivelEvidencia": "C",
+        "idioma": "en"
+      }
+    ],
+    "advertencia": "Recolectar solo de zonas no contaminadas. Precaución en embarazo y con antidiabéticos.",
+    "disclaimer": "Esta información es educativa y no sustituye el diagnóstico ni el tratamiento médico profesional."
+  }
+]

@@ -1,0 +1,270 @@
+{
+  "id": "andrographis",
+  "versionFicha": "2.0",
+  "estadoFicha": "publicada",
+  "fechaCreacion": "2026-04-15",
+  "fechaRevision": "2026-04-15",
+  "nombreComun": "Andrographis",
+  "nombresAlternativos": [
+    {
+      "nombre": "King of bitters",
+      "idioma": "en",
+      "region": "Internacional"
+    },
+    {
+      "nombre": "Andrographis paniculata",
+      "idioma": "es",
+      "region": "Panamá"
+    }
+  ],
+  "nombreCientifico": "Andrographis paniculata (Burm.f.) Nees",
+  "sinonimiasCientificas": [
+    "Justicia paniculata Burm.f."
+  ],
+  "familia": "Acanthaceae",
+  "orden": "Lamiales",
+  "clase": "Magnoliopsida",
+  "regionOrigen": [
+    "India",
+    "Sri Lanka",
+    "Sudeste Asiático"
+  ],
+  "habitatNatural": "Bosques tropicales, llanuras húmedas y suelos ricos",
+  "disponibilidadPanama": {
+    "disponible": true,
+    "nombreLocal": "Andrographis / King of bitters",
+    "formaComercial": [
+      "cápsula",
+      "extracto-seco",
+      "tintura"
+    ],
+    "dondeConseguir": [
+      "tienda-naturista",
+      "importación"
+    ],
+    "cultivoLocal": true,
+    "endemicaPanama": false,
+    "notaRegional": "Suplemento importado disponible en tiendas naturistas. Puede cultivarse en zonas cálidas y húmedas de Panamá (Darién, Bocas del Toro). Sabor extremadamente amargo."
+  },
+  "cultivoCasero": {
+    "dificultad": "moderada",
+    "apta": true,
+    "maceta": true,
+    "luz": "pleno-sol",
+    "agua": "moderado",
+    "suelo": "Franco-arenoso, bien drenado, rico en materia orgánica",
+    "clima": "Adaptación óptima al clima tropical panameño cálido y húmedo (24-32°C)",
+    "notaCultivo": "Anual. Propagar por semillas. Cosechar sumidades antes de floración (3-4 meses). Sabor muy amargo.",
+    "tiempoACosecha": "3-4 meses"
+  },
+  "partesUsadas": [
+    {
+      "parte": "hoja",
+      "nota": "Hojas y sumidades aéreas frescas o secas, estandarizadas en andrografólido"
+    }
+  ],
+  "resumen": "El andrografólido de Andrographis paniculata inhibe la replicación de virus respiratorios y reduce la duración del resfriado común. Metaanálisis avalan su eficacia en infecciones respiratorias agudas. Contraindicado en embarazo por efecto abortivo documentado.",
+  "usoTradicionalHistorico": {
+    "culturas": [
+      {
+        "cultura": "Ayurveda y MTC",
+        "uso": "Fiebre, infecciones hepáticas y respiratorias",
+        "periodo": "Antigüedad"
+      }
+    ],
+    "primerasMencionesHistoricas": "Charaka Samhita (India)",
+    "usoIndigenaRegional": "No tradicional en Panamá; cultivada por comunidades asiáticas locales"
+  },
+  "nivelEvidenciaGlobal": "B",
+  "fuentePrimaria": {
+    "institucion": "NCCIH",
+    "tipo": "revision",
+    "titulo": "Andrographis paniculata for respiratory tract infections — NCCIH Review",
+    "año": 2018,
+    "url": "https://www.nccih.nih.gov/research/research-results/andrographis-paniculata-for-respiratory-tract-infections"
+  },
+  "grupoTerapeutico": [
+    "antiviral",
+    "inmunoestimulante",
+    "antipirética",
+    "antiinflamatoria"
+  ],
+  "propiedades": [
+    {
+      "nombre": "Antiviral e inmunoestimulante",
+      "nivelEvidencia": "fuerte",
+      "mecanismoAccion": "Andrografólido inhibe la replicación del virus influenza y rinovirus mediante bloqueo de la proteasa viral. Activa IFN-γ e IL-2 y reduce la adhesión viral al epitelio respiratorio. Inhibe NF-κB reduciendo inflamación.",
+      "referencia": "Coon JT, Ernst E. Planta Med. 2004;70(4):293-298. DOI: 10.1055/s-2004-818937. PMID: 15124108"
+    }
+  ],
+  "fotoquimica": [
+    {
+      "compuesto": "Andrografólido",
+      "grupo": "diterpeno lactónico",
+      "accion": "Antiviral, antiinflamatorio, inhibidor de NF-κB",
+      "concentracion": "1-4% en hoja seca"
+    },
+    {
+      "compuesto": "Neoandrografólido",
+      "grupo": "diterpeno",
+      "accion": "Antiinflamatorio y hepatoprotector complementario",
+      "concentracion": "0.5-1%"
+    }
+  ],
+  "dolencias": [
+    {
+      "nombre": "Resfriado común (tratamiento y prevención)",
+      "categoria": "inmunológico",
+      "nivelEvidencia": "fuerte",
+      "dosis": "300-600 mg de extracto estandarizado (andrografólido 10-20 mg), 3 veces/día",
+      "duracion": "3-5 días (tratamiento); hasta 4 meses (prevención)",
+      "referencia": "Coon JT, Ernst E. DOI: 10.1055/s-2004-818937. PMID: 15124108"
+    },
+    {
+      "nombre": "Faringitis aguda",
+      "categoria": "respiratorio",
+      "nivelEvidencia": "moderado",
+      "dosis": "200 mg extracto 3 veces/día",
+      "duracion": "7 días",
+      "referencia": "Thamlikitkul V et al. J Med Assoc Thai. 1991;74(10):437-442. PMID: 1791395"
+    }
+  ],
+  "sistemas": [
+    "inmunológico",
+    "respiratorio"
+  ],
+  "modoEII": {
+    "aptaEnBrote": false,
+    "notaBrote": "Contraindicada en brote activo de EII. La activación de IFN-γ e IL-2 puede exacerbar la inflamación intestinal autoinmune.",
+    "aptaEnMantenimiento": false,
+    "notaMantenimiento": "No recomendada en EII incluso en remisión por riesgo teórico de reactivación autoinmune.",
+    "mecanismoEII": "Activación de citoquinas proinflamatorias (IFN-γ, IL-2) puede empeorar la inflamación intestinal autoinmune",
+    "referenciaEII": "Sin estudios en EII; contraindicación teórica"
+  },
+  "modoCeliaquiaGluten": {
+    "libreDeGluten": true,
+    "nota": "Libre de gluten. Verificar excipientes.",
+    "indicacionEspecifica": "Seguro estructuralmente en celiaquía pero con las mismas precauciones autoinmunes"
+  },
+  "usos": {
+    "interno": [
+      "Resfriado común",
+      "faringitis",
+      "sinusitis",
+      "infecciones respiratorias"
+    ],
+    "externo": [],
+    "culinario": [
+      "No — sabor extremadamente amargo"
+    ]
+  },
+  "preparacion": [
+    {
+      "forma": "extracto-seco",
+      "instrucciones": "Cápsulas de extracto estandarizado en andrografólido. Tomar con alimentos para reducir molestias gástricas.",
+      "cantidadPlanta": "300-600 mg de extracto",
+      "dosis": "3 veces al día",
+      "duracionMaxima": "7 días para tratamiento; 4 meses para prevención",
+      "notaPreparacion": "La forma en cápsula es imprescindible por el sabor extremadamente amargo."
+    }
+  ],
+  "contraindicaciones": [
+    {
+      "condicion": "Embarazo",
+      "gravedad": "absoluta",
+      "justificacion": "Efecto abortivo documentado en estudios animales. Contraindicado absolutamente."
+    },
+    {
+      "condicion": "Enfermedades autoinmunes activas",
+      "gravedad": "absoluta",
+      "justificacion": "Estimulación inmune puede exacerbar la enfermedad"
+    },
+    {
+      "condicion": "Infertilidad masculina (dosis altas)",
+      "gravedad": "relativa",
+      "justificacion": "Puede reducir la espermatogénesis en tratamientos prolongados"
+    }
+  ],
+  "interaccionesMedicamentosas": [
+    {
+      "medicamento": "Inmunosupresores",
+      "tipo": "antagonismo",
+      "mecanismo": "Estimulación inmune opuesta al efecto inmunosupresor",
+      "gravedad": "grave"
+    },
+    {
+      "medicamento": "Anticoagulantes (warfarina)",
+      "tipo": "potenciación",
+      "mecanismo": "Posible aumento del INR — monitorizar",
+      "gravedad": "moderada"
+    },
+    {
+      "medicamento": "Antihipertensivos",
+      "tipo": "potenciación",
+      "mecanismo": "Efecto hipotensor leve aditivo",
+      "gravedad": "leve"
+    }
+  ],
+  "embarazoLactancia": {
+    "embarazo": "contraindicada",
+    "lactancia": "contraindicada",
+    "pediatria": "No recomendado en menores de 12 años",
+    "justificacion": "Efecto abortivo documentado. Sin datos de seguridad en embarazo y lactancia."
+  },
+  "compatibilidadPlantas": {
+    "sinergicas": [
+      {
+        "plantaId": "equinacea-purpurea",
+        "plantaNom": "Equinácea purpúrea",
+        "motivo": "Potenciación antiviral e inmunoestimulante en infecciones agudas"
+      },
+      {
+        "plantaId": "astragalo",
+        "plantaNom": "Astrágalo",
+        "motivo": "Efecto inmunomodulador complementario"
+      }
+    ],
+    "incompatibles": []
+  },
+  "infusionesRelacionadas": [],
+  "emoji": "🌿",
+  "etiquetas": [
+    "inmunológico",
+    "antiviral",
+    "nivel-B",
+    "nccih",
+    "cultivable-panama",
+    "contraindicada-eii",
+    "libre-gluten",
+    "disponible-panama"
+  ],
+  "fuentes": [
+    {
+      "autor": "Coon JT, Ernst E",
+      "titulo": "Andrographis paniculata in the treatment of upper respiratory tract infections: a systematic review of safety and efficacy",
+      "publicacion": "Planta Medica",
+      "año": 2004,
+      "volumen": "70(4)",
+      "paginas": "293-298",
+      "doi": "10.1055/s-2004-818937",
+      "pmid": "15124108",
+      "tipo": "revision-sistematica",
+      "nivelEvidencia": "A",
+      "idioma": "en"
+    },
+    {
+      "autor": "Thamlikitkul V et al.",
+      "titulo": "Efficacy of Andrographis paniculata, Nees for pharyngotonsillitis in adults",
+      "publicacion": "Journal of the Medical Association of Thailand",
+      "año": 1991,
+      "volumen": "74(10)",
+      "paginas": "437-442",
+      "pmid": "1791395",
+      "tipo": "estudio-clinico-ECA",
+      "nivelEvidencia": "B",
+      "idioma": "en"
+    }
+  ],
+  "advertencia": "Contraindicada absolutamente en embarazo. No combinar con inmunosupresores. No usar más de 4 meses continuos.",
+  "disclaimer": "Esta información es educativa y no sustituye el diagnóstico ni el tratamiento médico profesional."
+}

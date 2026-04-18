@@ -1,0 +1,285 @@
+{
+  "id": "bidens-pilosa",
+  "versionFicha": "2.0",
+  "estadoFicha": "publicada",
+  "fechaCreacion": "2026-04-15",
+  "fechaRevision": "2026-04-15",
+  "nombreComun": "Bidens pilosa",
+  "nombresAlternativos": [
+    {
+      "nombre": "Blackjack",
+      "idioma": "en",
+      "region": "África y América"
+    },
+    {
+      "nombre": "Mozote",
+      "idioma": "es",
+      "region": "Centroamérica"
+    },
+    {
+      "nombre": "Aceitilla / Cadillo",
+      "idioma": "es",
+      "region": "Panamá"
+    }
+  ],
+  "nombreCientifico": "Bidens pilosa L.",
+  "sinonimiasCientificas": [
+    "Bidens leucantha Willd."
+  ],
+  "familia": "Asteraceae",
+  "orden": "Asterales",
+  "clase": "Magnoliopsida",
+  "regionOrigen": [
+    "América Tropical",
+    "Cosmopolita"
+  ],
+  "habitatNatural": "Suelos perturbados, bordes de caminos, terrenos baldíos en zonas tropicales",
+  "disponibilidadPanama": {
+    "disponible": true,
+    "nombreLocal": "Mozote / Aceitilla / Cadillo",
+    "formaComercial": [
+      "fresca",
+      "seca",
+      "tintura"
+    ],
+    "dondeConseguir": [
+      "mercado-público",
+      "cultivo-propio",
+      "recolección"
+    ],
+    "cultivoLocal": true,
+    "endemicaPanama": false,
+    "notaRegional": "Planta abundante como maleza en todo Panamá. Se recolecta fácilmente en campos y bordes de caminos. Usada en comunidades rurales e indígenas panameñas para resfriados, heridas e inflamación. Gratuita y accesible."
+  },
+  "cultivoCasero": {
+    "dificultad": "muy-facil",
+    "apta": true,
+    "maceta": true,
+    "luz": "pleno-sol",
+    "agua": "moderado",
+    "suelo": "Cualquier suelo, tolera pobreza y variedad de pH",
+    "clima": "Perfecta adaptación al clima tropical panameño. Crece como maleza en todo el país.",
+    "notaCultivo": "Crece espontáneamente. Cosechar partes aéreas antes de floración. Controlar para evitar invasión. No requiere cuidados.",
+    "tiempoACosecha": "2-3 meses"
+  },
+  "partesUsadas": [
+    {
+      "parte": "hoja",
+      "nota": "Hojas y tallos jóvenes frescos o secos. Disponible todo el año en Panamá."
+    }
+  ],
+  "resumen": "Bidens pilosa es la planta medicinal más accesible de Panamá, validada por TRAMIL para uso en infecciones respiratorias y heridas. Sus poliacetilenos y flavonoides tienen actividad antiinflamatoria, antioxidante e inmunomoduladora documentada en estudios preclínicos y revisiones etnobotánicas.",
+  "usoTradicionalHistorico": {
+    "culturas": [
+      {
+        "cultura": "Indígenas panameños (Ngäbe, Emberá, Guna Yala)",
+        "uso": "Resfriados, tos, heridas, fiebre e inflamación",
+        "periodo": "Tradicional — documentado siglo XX"
+      },
+      {
+        "cultura": "Tradición campesina centroamericana",
+        "uso": "Antiinflamatorio, antidiabético, digestivo",
+        "periodo": "Siglo XIX — presente"
+      }
+    ],
+    "primerasMencionesHistoricas": "Etnobotánica centroamericana documentada en siglo XX",
+    "usoIndigenaRegional": "Uso ampliamente documentado en comunidades indígenas y campesinas de Panamá. TRAMIL valida su uso para infecciones respiratorias leves."
+  },
+  "nivelEvidenciaGlobal": "B",
+  "fuentePrimaria": {
+    "institucion": "TRAMIL",
+    "tipo": "validacion-tramil",
+    "titulo": "Bidens pilosa — Red TRAMIL / OPS. Monografía y validación etnobotánica",
+    "año": 2015,
+    "url": "https://www.tramil.net/plant/bidens-pilosa"
+  },
+  "grupoTerapeutico": [
+    "inmunomoduladora",
+    "antiinflamatoria",
+    "antimicrobiana",
+    "antioxidante"
+  ],
+  "propiedades": [
+    {
+      "nombre": "Antiinflamatoria e inmunomoduladora",
+      "nivelEvidencia": "preliminar",
+      "mecanismoAccion": "Poliacetilenos (fenilheptatriino) inhiben la producción de NO, PGE2 y TNF-α en macrófagos vía inhibición de NF-κB. Los flavonoides (luteolina, quercetina) modulan la respuesta inmune humoral y celular.",
+      "referencia": "Bartolome AP et al. Evid Based Complement Alternat Med. 2013;2013:340215. DOI: 10.1155/2013/340215. PMID: 23935661"
+    },
+    {
+      "nombre": "Antimicrobiana (antibacteriana y antifúngica)",
+      "nivelEvidencia": "preliminar",
+      "mecanismoAccion": "Los fenoles y poliacetilenos alteran la permeabilidad de la membrana bacteriana. Actividad demostrada frente a Staphylococcus aureus, E. coli y Candida albicans in vitro.",
+      "referencia": "Bartolome AP et al. DOI: 10.1155/2013/340215. PMID: 23935661"
+    }
+  ],
+  "fotoquimica": [
+    {
+      "compuesto": "Poliacetilenos (fenilheptatriino)",
+      "grupo": "poliacetileno",
+      "accion": "Antiinflamatorio, antimicrobiano, citotóxico selectivo",
+      "concentracion": "Variable en partes aéreas"
+    },
+    {
+      "compuesto": "Luteolina y quercetina",
+      "grupo": "flavonoide",
+      "accion": "Antiinflamatorio, antioxidante, inmunomodulador",
+      "concentracion": "0.5-1.5% en hoja seca"
+    }
+  ],
+  "dolencias": [
+    {
+      "nombre": "Infecciones respiratorias leves y resfriado (uso tradicional validado)",
+      "categoria": "respiratorio",
+      "nivelEvidencia": "tradicional",
+      "dosis": "Infusión de 10-15 g de planta fresca en 1L agua, 3-4 tazas/día",
+      "duracion": "3-5 días",
+      "referencia": "TRAMIL. Red OPS/OMS. 2015."
+    },
+    {
+      "nombre": "Heridas y úlceras cutáneas (uso externo)",
+      "categoria": "dermatológico",
+      "nivelEvidencia": "tradicional",
+      "dosis": "Cataplasma de hojas frescas machacadas o lavado con infusión concentrada",
+      "duracion": "Hasta cicatrización",
+      "referencia": "TRAMIL 2015"
+    }
+  ],
+  "sistemas": [
+    "inmunológico",
+    "respiratorio",
+    "dermatológico",
+    "digestivo",
+    "metabólico"
+  ],
+  "modoEII": {
+    "aptaEnBrote": true,
+    "notaBrote": "Potencialmente útil en brote leve por inhibición de NF-κB y TNF-α — mecanismo antiinflamatorio sin fuerte estimulación inmune. A diferencia de equinácea y astrágalo, su perfil es más antiinflamatorio que inmunoestimulante.",
+    "aptaEnMantenimiento": true,
+    "notaMantenimiento": "Beneficiosa en mantenimiento por su efecto antiinflamatorio crónico de bajo grado y antioxidante. Planta muy accesible y bien tolerada.",
+    "mecanismoEII": "Inhibición de NF-κB y TNF-α en macrófagos reduce inflamación intestinal sin activar fuertemente la respuesta inmune adaptativa",
+    "referenciaEII": "Sin ECA en EII; evidencia extrapolada de actividad antiinflamatoria general"
+  },
+  "modoCeliaquiaGluten": {
+    "libreDeGluten": true,
+    "nota": "Planta silvestre libre de gluten. Recolectar de zonas no contaminadas.",
+    "indicacionEspecifica": "Segura y potencialmente útil en celiaquía por su efecto antiinflamatorio intestinal. Planta local accesible y económica."
+  },
+  "usos": {
+    "interno": [
+      "Resfriados y tos",
+      "inflamación",
+      "fiebre",
+      "diarrea leve (tradicional)"
+    ],
+    "externo": [
+      "Heridas superficiales",
+      "úlceras cutáneas",
+      "conjuntivitis (lavado)"
+    ],
+    "culinario": [
+      "Hojas jóvenes como verdura en sopas (comunidades indígenas)"
+    ]
+  },
+  "preparacion": [
+    {
+      "forma": "infusión",
+      "instrucciones": "Lavar bien las hojas frescas. Infundir en agua caliente. Tapar y reposar. Colar.",
+      "cantidadPlanta": "10-15 g fresca (3-5 g seca)",
+      "temperatura": "90-95°C",
+      "tiempoPreparacion": "10 minutos",
+      "dosis": "3-4 tazas al día",
+      "duracionMaxima": "7 días continuos",
+      "notaPreparacion": "Recolectar SIEMPRE de zonas alejadas de carreteras, cultivos con pesticidas o aguas contaminadas. Preferir planta de huerto propio."
+    }
+  ],
+  "contraindicaciones": [
+    {
+      "condicion": "Embarazo",
+      "gravedad": "precaución",
+      "justificacion": "Datos limitados; posible efecto sobre la musculatura uterina en dosis altas"
+    },
+    {
+      "condicion": "Alergia a Asteraceae",
+      "gravedad": "relativa",
+      "justificacion": "Posible reacción cruzada con manzanilla, árnica o caléndula"
+    }
+  ],
+  "interaccionesMedicamentosas": [
+    {
+      "medicamento": "Antidiabéticos orales e insulina",
+      "tipo": "potenciación",
+      "mecanismo": "Efecto hipoglucemiante aditivo — monitorizar glucosa",
+      "gravedad": "moderada"
+    },
+    {
+      "medicamento": "Anticoagulantes",
+      "tipo": "precaución",
+      "mecanismo": "Posible efecto antiagregante por quercetina",
+      "gravedad": "leve"
+    }
+  ],
+  "embarazoLactancia": {
+    "embarazo": "precaución",
+    "lactancia": "precaución",
+    "pediatria": "Segura en niños mayores de 5 años en dosis reducidas (mitad de dosis adulta). Uso tradicional documentado en niños.",
+    "justificacion": "Uso tradicional seguro en adultos. Precaución en embarazo por falta de datos."
+  },
+  "compatibilidadPlantas": {
+    "sinergicas": [
+      {
+        "plantaId": "jengibre",
+        "plantaNom": "Jengibre",
+        "motivo": "Sinergia antiinflamatoria y antigripal — combinación tradicional panameña"
+      },
+      {
+        "plantaId": "manzanilla",
+        "plantaNom": "Manzanilla",
+        "motivo": "Potenciación antiinflamatoria para infecciones leves"
+      }
+    ],
+    "incompatibles": []
+  },
+  "infusionesRelacionadas": [],
+  "emoji": "🌿",
+  "etiquetas": [
+    "inmunológico",
+    "antiinflamatoria",
+    "nivel-B",
+    "tramil",
+    "cultivable-panama",
+    "endemica-panama",
+    "apta-brote-eii",
+    "apta-eii",
+    "libre-gluten",
+    "disponible-panama"
+  ],
+  "fuentes": [
+    {
+      "autor": "TRAMIL / Red OPS-OMS",
+      "titulo": "Bidens pilosa L. — Monografía y validación etnobotánica TRAMIL",
+      "publicacion": "Red TRAMIL",
+      "año": 2015,
+      "doi": "",
+      "pmid": "",
+      "tipo": "validacion-tramil",
+      "nivelEvidencia": "B",
+      "idioma": "es"
+    },
+    {
+      "autor": "Bartolome AP et al.",
+      "titulo": "Bidens pilosa L. (Asteraceae): Botanical Properties, Traditional Uses, Phytochemistry, and Pharmacology",
+      "publicacion": "Evidence-Based Complementary and Alternative Medicine",
+      "año": 2013,
+      "volumen": "2013",
+      "paginas": "340215",
+      "doi": "10.1155/2013/340215",
+      "pmid": "23935661",
+      "tipo": "revision-sistematica",
+      "nivelEvidencia": "C",
+      "idioma": "en"
+    }
+  ],
+  "advertencia": "Recolectar solo de zonas no contaminadas. Precaución en embarazo y con antidiabéticos.",
+  "disclaimer": "Esta información es educativa y no sustituye el diagnóstico ni el tratamiento médico profesional."
+}

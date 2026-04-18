@@ -1,0 +1,244 @@
+{
+  "id": "astragalo",
+  "versionFicha": "2.0",
+  "estadoFicha": "publicada",
+  "fechaCreacion": "2026-04-15",
+  "fechaRevision": "2026-04-15",
+  "nombreComun": "Astrágalo",
+  "nombresAlternativos": [
+    {
+      "nombre": "Huang qi",
+      "idioma": "zh",
+      "region": "China"
+    },
+    {
+      "nombre": "Milk vetch root",
+      "idioma": "en",
+      "region": "Internacional"
+    }
+  ],
+  "nombreCientifico": "Astragalus membranaceus (Fisch.) Bunge",
+  "sinonimiasCientificas": [
+    "Astragalus propinquus Schischkin"
+  ],
+  "familia": "Fabaceae",
+  "orden": "Fabales",
+  "clase": "Magnoliopsida",
+  "regionOrigen": [
+    "Asia Oriental",
+    "China",
+    "Mongolia"
+  ],
+  "habitatNatural": "Praderas y laderas montañosas en suelos arenosos de regiones templadas",
+  "disponibilidadPanama": {
+    "disponible": true,
+    "nombreLocal": "Astrágalo / Huang qi",
+    "formaComercial": [
+      "cápsula",
+      "polvo",
+      "té-empacado",
+      "extracto",
+      "tintura"
+    ],
+    "dondeConseguir": [
+      "tienda-naturista",
+      "farmacia",
+      "importación"
+    ],
+    "cultivoLocal": false,
+    "endemicaPanama": false,
+    "notaRegional": "Disponible como suplemento importado en cápsulas en Vitamin Shoppe, iHerb con envío a Panamá y tiendas naturistas de Ciudad de Panamá"
+  },
+  "cultivoCasero": {
+    "dificultad": "dificil",
+    "apta": false,
+    "maceta": false,
+    "luz": "pleno-sol",
+    "agua": "poco",
+    "suelo": "Arenoso, bien drenado, pobre en nutrientes",
+    "clima": "No viable en clima tropical panameño. Requiere climas secos y continentales con estaciones marcadas.",
+    "notaCultivo": "No recomendado en Panamá.",
+    "tiempoACosecha": "No aplica"
+  },
+  "partesUsadas": [
+    {
+      "parte": "raíz",
+      "nota": "Raíz seca estandarizada en polisacáridos y astragalósidos"
+    }
+  ],
+  "resumen": "La raíz de Astragalus membranaceus es el inmunomodulador más usado en la medicina tradicional china. Estimula la inmunidad innata y adaptativa, actúa como adaptógeno en fatiga crónica y se usa como coadyuvante en oncología. Contraindicado en enfermedades autoinmunes activas.",
+  "usoTradicionalHistorico": {
+    "culturas": [
+      {
+        "cultura": "Medicina Tradicional China",
+        "uso": "Tonificar el Qi defensivo, fortalecer bazo y pulmón",
+        "periodo": "Más de 2000 años"
+      }
+    ],
+    "primerasMencionesHistoricas": "Shen Nong Ben Cao Jing (siglo I d.C.)",
+    "usoIndigenaRegional": "No documentado en Panamá; introducido como suplemento inmunoestimulante"
+  },
+  "nivelEvidenciaGlobal": "B",
+  "fuentePrimaria": {
+    "institucion": "American Herbal Pharmacopoeia",
+    "tipo": "monografía",
+    "titulo": "Astragalus membranaceus Monograph. Alt Med Rev. 2003;8(1):72-77",
+    "año": 2003,
+    "url": "https://altmedrev.com/wp-content/uploads/2019/02/v8-1-72.pdf"
+  },
+  "grupoTerapeutico": [
+    "inmunomoduladora",
+    "adaptógena",
+    "tónica",
+    "antiviral"
+  ],
+  "propiedades": [
+    {
+      "nombre": "Inmunoestimulante — activación de inmunidad innata y adaptativa",
+      "nivelEvidencia": "moderado",
+      "mecanismoAccion": "Polisacáridos (astragalano) activan macrófagos y células NK vía TLR4. Astragalósidos aumentan proliferación de linfocitos T y B y producción de IL-2, IFN-γ e inmunoglobulinas.",
+      "referencia": "Block KI, Mead MN. Integr Cancer Ther. 2003;2(1):62-69. DOI: 10.1177/1534735403250419. PMID: 12941170"
+    }
+  ],
+  "fotoquimica": [
+    {
+      "compuesto": "Astragalósidos (I-IV)",
+      "grupo": "saponina triterpénica",
+      "accion": "Inmunomoduladora, cardioprotectora, antioxidante",
+      "concentracion": "0.1-0.5% en raíz seca"
+    },
+    {
+      "compuesto": "Polisacáridos (astragalano)",
+      "grupo": "polisacárido",
+      "accion": "Estimulante de macrófagos y células NK",
+      "concentracion": "10-20% en raíz seca"
+    }
+  ],
+  "dolencias": [
+    {
+      "nombre": "Prevención de infecciones respiratorias recurrentes",
+      "categoria": "inmunológico",
+      "nivelEvidencia": "moderado",
+      "dosis": "500-2000 mg/día de extracto estandarizado",
+      "duracion": "4-12 semanas",
+      "referencia": "Block KI, Mead MN. DOI: 10.1177/1534735403250419. PMID: 12941170"
+    }
+  ],
+  "sistemas": [
+    "inmunológico",
+    "cardiovascular",
+    "nervioso"
+  ],
+  "modoEII": {
+    "aptaEnBrote": false,
+    "notaBrote": "Contraindicada en brote activo de EII. La estimulación de macrófagos y citoquinas proinflamatorias (IL-2, IFN-γ) puede exacerbar la inflamación intestinal autoinmune.",
+    "aptaEnMantenimiento": false,
+    "notaMantenimiento": "No recomendada en EII incluso en remisión por riesgo teórico de reactivación autoinmune. Consultar al médico antes de usar.",
+    "mecanismoEII": "Activación de TLR4 y producción de citoquinas proinflamatorias puede agravar la respuesta autoinmune intestinal",
+    "referenciaEII": "Sin estudios en EII; contraindicación basada en mecanismo inmunoestimulante"
+  },
+  "modoCeliaquiaGluten": {
+    "libreDeGluten": true,
+    "nota": "Libre de gluten. Verificar excipientes en cápsulas.",
+    "indicacionEspecifica": "Seguro estructuralmente en celiaquía pero con las mismas precauciones autoinmunes"
+  },
+  "usos": {
+    "interno": [
+      "Infecciones recurrentes",
+      "fatiga crónica",
+      "soporte oncológico",
+      "adaptógeno"
+    ],
+    "externo": [],
+    "culinario": [
+      "Sopas y caldos en medicina china tradicional"
+    ]
+  },
+  "preparacion": [
+    {
+      "forma": "decocción",
+      "instrucciones": "Hervir 9-30 g de raíz seca en 500-1000 ml agua durante 30-60 minutos. Colar y beber.",
+      "cantidadPlanta": "9-30 g",
+      "temperatura": "100°C",
+      "tiempoPreparacion": "30-60 minutos",
+      "dosis": "1-2 tazas al día",
+      "duracionMaxima": "4-8 semanas",
+      "notaPreparacion": "Preferir extracto estandarizado en cápsulas para dosis precisas y controladas."
+    }
+  ],
+  "contraindicaciones": [
+    {
+      "condicion": "Enfermedades autoinmunes activas (lupus, esclerosis múltiple, EII)",
+      "gravedad": "relativa",
+      "justificacion": "Efecto inmunoestimulante puede exacerbar la respuesta autoinmune"
+    },
+    {
+      "condicion": "Trasplante de órganos",
+      "gravedad": "absoluta",
+      "justificacion": "Antagoniza los inmunosupresores necesarios para prevenir el rechazo"
+    }
+  ],
+  "interaccionesMedicamentosas": [
+    {
+      "medicamento": "Inmunosupresores (ciclosporina, tacrolimus, corticoides)",
+      "tipo": "antagonismo",
+      "mecanismo": "Estimulación inmune opuesta al efecto inmunosupresor",
+      "gravedad": "grave"
+    },
+    {
+      "medicamento": "Anticoagulantes",
+      "tipo": "precaución",
+      "mecanismo": "Posible aumento del INR",
+      "gravedad": "leve"
+    }
+  ],
+  "embarazoLactancia": {
+    "embarazo": "contraindicada",
+    "lactancia": "contraindicada",
+    "pediatria": "No recomendado en menores de 12 años sin supervisión",
+    "justificacion": "Datos insuficientes. Efectos inmunomoduladores no evaluados en embarazo."
+  },
+  "compatibilidadPlantas": {
+    "sinergicas": [
+      {
+        "plantaId": "equinacea-purpurea",
+        "plantaNom": "Equinácea purpúrea",
+        "motivo": "Sinergia inmunoestimulante en prevención de infecciones respiratorias"
+      },
+      {
+        "plantaId": "andrographis",
+        "plantaNom": "Andrographis",
+        "motivo": "Efecto antiviral e inmunomodulador combinado"
+      }
+    ],
+    "incompatibles": []
+  },
+  "infusionesRelacionadas": [],
+  "emoji": "🌿",
+  "etiquetas": [
+    "inmunológico",
+    "adaptógena",
+    "nivel-B",
+    "disponible-panama",
+    "importada",
+    "contraindicada-eii",
+    "libre-gluten"
+  ],
+  "fuentes": [
+    {
+      "autor": "Block KI, Mead MN",
+      "titulo": "Immune system effects of echinacea, ginseng, and astragalus: a review",
+      "publicacion": "Integrative Cancer Therapies",
+      "año": 2003,
+      "volumen": "2(1)",
+      "paginas": "62-69",
+      "doi": "10.1177/1534735403250419",
+      "pmid": "12941170",
+      "tipo": "revision-sistematica",
+      "nivelEvidencia": "B",
+      "idioma": "en"
+    }
+  ],
+  "advertencia": "Contraindicado en enfermedades autoinmunes y trasplantes. No combinar con inmunosupresores.",
+  "disclaimer": "Esta información es educativa y no sustituye el diagnóstico ni el tratamiento médico profesional."
+}
