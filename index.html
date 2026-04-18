@@ -699,20 +699,18 @@ body{
 
 /* ── NAVEGACIÓN ── */
 function irA(url) {
-  // En PWA real: window.location.href = url
-  // Demo: toast informativo
-  const nombres = {
-    'herbologia-indice.html':'Índice de Herbología',
-    'explorador-sintoma.html':'Explorador por síntoma',
-    'mindfulness-audio.html':'Zona Mindfulness',
-    'ficha-planta.html':'Ficha — Manzanilla',
-    'infusiones.html':'Infusiones (próximamente)',
-    'recetas.html':'Recetas especiales (próximamente)'
+  // Próximamente — páginas no implementadas aún
+  const proximamente = ['infusiones.html','recetas.html'];
+  const labels = {
+    'infusiones.html':'Infusiones',
+    'recetas.html':'Recetas especiales'
   };
-  const nom = nombres[url] || url;
-  mostrarToast('Navegando a: ' + nom);
-  // Descomentar en producción:
-  // window.location.href = url;
+  if (proximamente.includes(url)) {
+    const nom = labels[url] || url;
+    mostrarToast('🚧 ' + nom + ' — próximamente');
+    return;
+  }
+  window.location.href = 'pages/' + url;
 }
 
 function navActivo(btn, url) {
