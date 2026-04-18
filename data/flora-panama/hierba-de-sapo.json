@@ -1,0 +1,140 @@
+{
+  "id": "hierba-de-sapo",
+  "versionFicha": "2.0",
+  "estadoFicha": "publicada",
+  "fechaCreacion": "2026-04-16",
+  "fechaRevision": "2026-04-16",
+  "nombreComun": "Hierba de sapo",
+  "nombresAlternativos": [
+    "Culantro de monte",
+    "Cilantro cimarrón",
+    "Recao",
+    "Kö kö (Ngäbe)",
+    "Bënë (Emberá)"
+  ],
+  "nombreCientifico": "Eryngium foetidum L.",
+  "sinonimiasCientificas": [
+    "Eryngium antihystericum Rottl."
+  ],
+  "familia": "Apiaceae",
+  "orden": "Apiales",
+  "clase": "Magnoliopsida",
+  "regionOrigen": "América tropical",
+  "habitatNatural": "Áreas húmedas y sombreadas en bordes de bosques",
+  "disponibilidadPanama": {
+    "disponible": true,
+    "nombreLocal": "Hierba de sapo, Culantro de monte",
+    "formaComercial": "Hojas frescas o secas",
+    "dondeConseguir": "Mercados locales, huertos caseros, silvestre",
+    "cultivoLocal": true,
+    "endemicaPanama": false,
+    "notaRegional": "Planta silvestre abundante en toda Panamá. Condimento en mercados. Uso TRAMIL validado."
+  },
+  "cultivoCasero": {
+    "dificultad": "muy-facil",
+    "apta": true,
+    "maceta": true,
+    "luz": "semisombra",
+    "agua": "moderado",
+    "suelo": "Húmedo y fértil",
+    "clima": "Excelente — crece espontáneamente en Panamá",
+    "notaCultivo": "Crece como maleza. Continuo desde 2 meses.",
+    "tiempoACosecha": "Continuo desde 2 meses"
+  },
+  "partesUsadas": [
+    "Hojas frescas o secas"
+  ],
+  "resumen": "El 'cilantro panameño'. Condimento y medicinal con actividad antiinflamatoria documentada (inhibe TNF-α, IL-1β en macrófagos). TRAMIL valida uso antipirético. Uso cotidiano en comunidades Ngäbe ('Kö kö') y Emberá ('Bënë').",
+  "usoTradicionalHistorico": "Condimento culinario y para fiebre, cólicos, flatulencia y resfriados. Uso Ngäbe y Emberá.",
+  "nivelEvidenciaGlobal": "C",
+  "fuentePrimaria": "TRAMIL — Eryngium foetidum",
+  "grupoTerapeutico": "Digestivo, antipirético, antiinflamatorio",
+  "propiedades": "Antiinflamatorio, antioxidante, digestivo, antipirético",
+  "fotoquimica": "Flavonoides (quercetina, kaempferol), ácidos fenólicos",
+  "dolencias": [
+    "Fiebre leve (TRAMIL)",
+    "Cólicos",
+    "Flatulencia"
+  ],
+  "sistemas": [
+    "Digestivo",
+    "Inmune"
+  ],
+  "modoEII": {
+    "aptaEnBrote": false,
+    "notaBrote": "Evitar en diarrea severa. Usar infusiones diluidas.",
+    "aptaEnMantenimiento": true,
+    "notaMantenimiento": "Uso culinario continuo seguro en remisión. Actividad antiinflamatoria beneficiosa.",
+    "mecanismoEII": "Supresión de mediadores inflamatorios (TNF-α, IL-1β) en macrófagos.",
+    "referenciaEII": "PMID: 22981145"
+  },
+  "modoCeliaquiaGluten": {
+    "libreDeGluten": true,
+    "nota": "Naturalmente libre.",
+    "indicacionEspecifica": "Seguro. Excelente sustituto culinario del cilantro."
+  },
+  "usos": {
+    "interno": true,
+    "externo": false,
+    "culinario": true
+  },
+  "preparacion": "Decocción de 3-4 hojas en 300 ml agua 5 min. Culinario: usar fresco en sancochos, arroces y ceviches.",
+  "contraindicaciones": "Alergia a Apiaceae. Precaución en úlcera o gastritis severa.",
+  "interaccionesMedicamentosas": "Precaución con hipoglucemiantes e hipotensores por actividad leve.",
+  "embarazoLactancia": "Seguro como condimento. Evitar infusiones medicinales concentradas en embarazo.",
+  "compatibilidadPlantas": {
+    "sinergicas": [],
+    "incompatibles": []
+  },
+  "infusionesRelacionadas": [],
+  "emoji": "🌿",
+  "etiquetas": [
+    "digestivo",
+    "condimento",
+    "flora-panama",
+    "nivel-C",
+    "tramil",
+    "cultivable-panama",
+    "disponible-panama",
+    "ngäbe",
+    "emberá",
+    "culinaria"
+  ],
+  "fuentes": [
+    {
+      "autor": "TRAMIL",
+      "titulo": "Eryngium foetidum",
+      "publicacion": "Red TRAMIL/OPS",
+      "año": "2015",
+      "doi": "",
+      "pmid": "",
+      "tipo": "Base de Datos",
+      "nivelEvidencia": "C",
+      "idioma": "es"
+    },
+    {
+      "autor": "",
+      "titulo": "Eryngium foetidum L.: a review",
+      "publicacion": "",
+      "año": "",
+      "doi": "",
+      "pmid": "21054585",
+      "tipo": "Revisión",
+      "nivelEvidencia": "C",
+      "idioma": "en"
+    },
+    {
+      "autor": "",
+      "titulo": "Eryngium foetidum suppresses inflammatory mediators produced by macrophages",
+      "publicacion": "",
+      "año": "",
+      "doi": "",
+      "pmid": "22981145",
+      "tipo": "Estudio preclínico",
+      "nivelEvidencia": "C",
+      "idioma": "en"
+    }
+  ],
+  "advertencia": "Recolectar solo de zonas sin pesticidas. Alergia cruzada con Apiaceae.",
+  "disclaimer": "Esta información es educativa y no sustituye el diagnóstico ni el tratamiento médico profesional."
+}

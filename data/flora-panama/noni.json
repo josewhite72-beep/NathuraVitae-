@@ -1,0 +1,133 @@
+{
+  "id": "noni",
+  "versionFicha": "2.0",
+  "estadoFicha": "publicada",
+  "fechaCreacion": "2026-04-16",
+  "fechaRevision": "2026-04-16",
+  "nombreComun": "Noni",
+  "nombresAlternativos": [
+    "Indian mulberry",
+    "Dö (Ngäbe)",
+    "Ñëkë (Emberá)"
+  ],
+  "nombreCientifico": "Morinda citrifolia L.",
+  "sinonimiasCientificas": [],
+  "familia": "Rubiaceae",
+  "orden": "Gentianales",
+  "clase": "Magnoliopsida",
+  "regionOrigen": "Polinesia, Asia tropical",
+  "habitatNatural": "Zonas tropicales costeras",
+  "disponibilidadPanama": {
+    "disponible": true,
+    "nombreLocal": "Noni",
+    "formaComercial": "Fruto fresco, jugo, cápsulas",
+    "dondeConseguir": "Supermercados, tiendas naturales",
+    "cultivoLocal": true,
+    "endemicaPanama": false,
+    "notaRegional": "Árbol en patios panameños. Jugo en supermercados. ADVERTENCIA CRÍTICA: hepatotoxicidad reportada."
+  },
+  "cultivoCasero": {
+    "dificultad": "facil",
+    "apta": true,
+    "maceta": false,
+    "luz": "pleno-sol",
+    "agua": "moderado",
+    "suelo": "Tolerante",
+    "clima": "Excelente en Panamá",
+    "notaCultivo": "Rápido crecimiento. Fruto maloliente al madurar.",
+    "tiempoACosecha": "1-2 años"
+  },
+  "partesUsadas": [
+    "Fruto (jugo)",
+    "Hojas"
+  ],
+  "resumen": "Adaptógeno con propiedades inmunomoduladoras moderadas. ADVERTENCIA CRÍTICA: hepatotoxicidad aguda y nefrotoxicidad documentadas. Interacciona con warfarina. Supervisión médica obligatoria. NO apto en EII.",
+  "usoTradicionalHistorico": "Tónico general para fortalecer el sistema inmune y tratar hipertensión, diabetes y dolores articulares.",
+  "nivelEvidenciaGlobal": "C",
+  "fuentePrimaria": "TRAMIL — Morinda citrifolia",
+  "grupoTerapeutico": "Adaptógeno, inmunomodulador",
+  "propiedades": "Inmunoestimulante, antioxidante, antiinflamatorio",
+  "fotoquimica": "Damnacantal, scoparetina",
+  "dolencias": [
+    "Soporte inmunológico (uso breve y supervisado)"
+  ],
+  "sistemas": [
+    "Inmune"
+  ],
+  "modoEII": {
+    "aptaEnBrote": false,
+    "notaBrote": "CONTRAINDICADO en brote activo. Puede empeorar la diarrea y aumentar absorción de compuestos tóxicos.",
+    "aptaEnMantenimiento": false,
+    "notaMantenimiento": "No recomendado en EII. Riesgo de hepatotoxicidad especialmente relevante con inmunosupresores hepatotóxicos (azatioprina, MTX).",
+    "mecanismoEII": "Sin mecanismo documentado en EII. Riesgo supera beneficio.",
+    "referenciaEII": "Reportes de hepatotoxicidad — DOI: 10.1055/s-2004-826015"
+  },
+  "modoCeliaquiaGluten": {
+    "libreDeGluten": true,
+    "nota": "Puro libre de gluten. Verificar aditivos en jugos comerciales.",
+    "indicacionEspecifica": "Libre de gluten pero contraindicado en EII."
+  },
+  "usos": {
+    "interno": true,
+    "externo": false,
+    "culinario": true
+  },
+  "preparacion": "30-90 ml de jugo puro/día. MÁXIMO 4 semanas. Monitorizar ALT/AST antes y después.",
+  "contraindicaciones": "Enfermedad hepática (absoluta). Insuficiencia renal (absoluta). Warfarina y anticoagulantes (absoluta). Embarazo y lactancia. Menores de 18 años.",
+  "interaccionesMedicamentosas": "Potencia anticoagulantes (warfarina — aumenta INR gravemente). Diuréticos ahorradores de K+ (hiperkalemia). Fármacos hepatotóxicos.",
+  "embarazoLactancia": "Contraindicado.",
+  "compatibilidadPlantas": {
+    "sinergicas": [],
+    "incompatibles": []
+  },
+  "infusionesRelacionadas": [],
+  "emoji": "🟢",
+  "etiquetas": [
+    "inmunomodulador",
+    "flora-panama",
+    "nivel-C",
+    "tramil",
+    "cultivable-panama",
+    "disponible-panama",
+    "advertencia-hepatotoxicidad",
+    "no-apta-eii"
+  ],
+  "advertenciaCritica": "Se han reportado casos de hepatotoxicidad aguda asociados al jugo de Noni, incluso preparaciones comerciales. También nefrotoxicidad e hiperkalemia. Interacciona con warfarina aumentando riesgo de hemorragia.",
+  "fuentes": [
+    {
+      "autor": "TRAMIL",
+      "titulo": "Morinda citrifolia",
+      "publicacion": "Red TRAMIL/OPS",
+      "año": "2015",
+      "doi": "",
+      "pmid": "",
+      "tipo": "Base de Datos",
+      "nivelEvidencia": "C",
+      "idioma": "es"
+    },
+    {
+      "autor": "",
+      "titulo": "Immunomodulatory actions of a Polynesian herb Noni (Morinda citrifolia) and its clinical applications",
+      "publicacion": "",
+      "año": "",
+      "doi": "",
+      "pmid": "31570036",
+      "tipo": "Revisión",
+      "nivelEvidencia": "C",
+      "idioma": "en"
+    },
+    {
+      "autor": "",
+      "titulo": "Herbal Hepatotoxicity: Acute Hepatitis caused by a Noni-preparation",
+      "publicacion": "",
+      "año": "",
+      "doi": "10.1055/s-2004-826015",
+      "pmid": "",
+      "tipo": "Reporte de Caso",
+      "nivelEvidencia": "C",
+      "idioma": "en"
+    }
+  ],
+  "advertencia": "HEPATOTOXICIDAD REPORTADA. No usar en enfermedades hepáticas ni con warfarina. Máximo 4 semanas con monitorización.",
+  "disclaimer": "Esta información es educativa y no sustituye el diagnóstico ni el tratamiento médico profesional."
+}

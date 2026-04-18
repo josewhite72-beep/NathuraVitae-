@@ -1,0 +1,138 @@
+{
+  "id": "achiote",
+  "versionFicha": "2.0",
+  "estadoFicha": "publicada",
+  "fechaCreacion": "2026-04-16",
+  "fechaRevision": "2026-04-16",
+  "nombreComun": "Achiote",
+  "nombresAlternativos": [
+    "Achote",
+    "Annatto",
+    "Möta (Ngäbe)",
+    "Törö (Emberá)"
+  ],
+  "nombreCientifico": "Bixa orellana L.",
+  "sinonimiasCientificas": [
+    "Bixa urucurana Willd."
+  ],
+  "familia": "Bixaceae",
+  "orden": "Malvales",
+  "clase": "Magnoliopsida",
+  "regionOrigen": "América tropical",
+  "habitatNatural": "Bosques tropicales y zonas perturbadas",
+  "disponibilidadPanama": {
+    "disponible": true,
+    "nombreLocal": "Achiote, Achote",
+    "formaComercial": "Semillas, polvo, pasta",
+    "dondeConseguir": "Supermercados, mercados locales",
+    "cultivoLocal": true,
+    "endemicaPanama": false,
+    "notaRegional": "Ingrediente esencial de la cocina panameña. Uso TRAMIL. Importancia ritual Ngäbe y Emberá."
+  },
+  "cultivoCasero": {
+    "dificultad": "facil",
+    "apta": true,
+    "maceta": false,
+    "luz": "pleno-sol",
+    "agua": "moderado",
+    "suelo": "Variado bien drenado",
+    "clima": "Excelente en Panamá",
+    "notaCultivo": "Árbol ornamental con frutos rojos espinosos. Producción en 2-3 años.",
+    "tiempoACosecha": "2-3 años"
+  },
+  "partesUsadas": [
+    "Semillas (arilo)",
+    "Hojas"
+  ],
+  "resumen": "Colorante culinario indígena más importante de Panamá. Profundo arraigo en culturas Ngäbe ('Möta') y Emberá ('Törö'). El bixín tiene actividad antioxidante y antimicrobiana documentada. TRAMIL validado.",
+  "usoTradicionalHistorico": "Culinario como colorante. Medicinalmente para fiebre, infecciones cutáneas y diabetes. Uso ritual Ngäbe y Emberá.",
+  "nivelEvidenciaGlobal": "C",
+  "fuentePrimaria": "TRAMIL — Bixa orellana",
+  "grupoTerapeutico": "Antimicrobiano, antioxidante, antidiabético",
+  "propiedades": "Antimicrobiano, antiinflamatorio, antioxidante",
+  "fotoquimica": "Bixín, nor-bixina (carotenoides)",
+  "dolencias": [
+    "Infecciones cutáneas (TRAMIL)",
+    "Diabetes (uso tradicional)"
+  ],
+  "sistemas": [
+    "Dermatológico",
+    "Metabólico"
+  ],
+  "modoEII": {
+    "aptaEnBrote": false,
+    "notaBrote": "Evitar grandes cantidades por posible irritación. Uso culinario normal seguro.",
+    "aptaEnMantenimiento": true,
+    "notaMantenimiento": "Uso culinario continuo seguro. Bixín tiene actividad antioxidante sistémica beneficiosa.",
+    "mecanismoEII": "Sin mecanismo directo en EII. Efecto antioxidante sistémico.",
+    "referenciaEII": "Sin estudios en EII"
+  },
+  "modoCeliaquiaGluten": {
+    "libreDeGluten": true,
+    "nota": "Puro libre de gluten. ATENCIÓN: pastas comerciales pueden contener trigo — verificar etiqueta.",
+    "indicacionEspecifica": "Seguro como especia pura."
+  },
+  "usos": {
+    "interno": true,
+    "externo": true,
+    "culinario": true
+  },
+  "preparacion": "Culinario: sofreír semillas en aceite hasta coloración rojiza, retirar semillas y usar el aceite coloreado.",
+  "contraindicaciones": "Alergia a la planta. Precaución en hipotensión con dosis medicinales.",
+  "interaccionesMedicamentosas": "Potencia antihipertensivos y diuréticos. Posible interferencia con absorción de hierro.",
+  "embarazoLactancia": "Seguro culinario. Evitar decocciones medicinales en embarazo.",
+  "compatibilidadPlantas": {
+    "sinergicas": [],
+    "incompatibles": []
+  },
+  "infusionesRelacionadas": [],
+  "emoji": "🧡",
+  "etiquetas": [
+    "culinario",
+    "antimicrobiano",
+    "flora-panama",
+    "nivel-C",
+    "tramil",
+    "cultivable-panama",
+    "disponible-panama",
+    "ngäbe",
+    "emberá"
+  ],
+  "fuentes": [
+    {
+      "autor": "TRAMIL",
+      "titulo": "Bixa orellana",
+      "publicacion": "Red TRAMIL/OPS",
+      "año": "2015",
+      "doi": "",
+      "pmid": "",
+      "tipo": "Base de Datos",
+      "nivelEvidencia": "C",
+      "idioma": "es"
+    },
+    {
+      "autor": "",
+      "titulo": "Bixa orellana L. (Achiote, Annatto) as an antimicrobial agent: A scoping review",
+      "publicacion": "",
+      "año": "",
+      "doi": "",
+      "pmid": "35381912",
+      "tipo": "Revisión",
+      "nivelEvidencia": "C",
+      "idioma": "en"
+    },
+    {
+      "autor": "",
+      "titulo": "Phytochemical screening of Bixa orellana and preliminary antidiabetic, antibacterial...",
+      "publicacion": "",
+      "año": "2023",
+      "doi": "10.1016/j.jksus.2023.102876",
+      "pmid": "",
+      "tipo": "Estudio preclínico",
+      "nivelEvidencia": "C",
+      "idioma": "en"
+    }
+  ],
+  "advertencia": "Verificar que pastas comerciales no contengan gluten.",
+  "disclaimer": "Esta información es educativa y no sustituye el diagnóstico ni el tratamiento médico profesional."
+}

@@ -1,0 +1,128 @@
+{
+  "id": "santa-maria",
+  "versionFicha": "2.0",
+  "estadoFicha": "publicada",
+  "fechaCreacion": "2026-04-16",
+  "fechaRevision": "2026-04-16",
+  "nombreComun": "Santa María",
+  "nombresAlternativos": [
+    "Anamú",
+    "Guinea hen weed",
+    "Krä (Ngäbe)",
+    "Bëjë (Emberá)"
+  ],
+  "nombreCientifico": "Petiveria alliacea L.",
+  "sinonimiasCientificas": [
+    "Petiveria foetida Salisb."
+  ],
+  "familia": "Phytolaccaceae",
+  "orden": "Caryophyllales",
+  "clase": "Magnoliopsida",
+  "regionOrigen": "América tropical",
+  "habitatNatural": "Áreas perturbadas y bordes de bosques tropicales",
+  "disponibilidadPanama": {
+    "disponible": true,
+    "nombreLocal": "Santa María, Anamú",
+    "formaComercial": "Hojas, raíz seca",
+    "dondeConseguir": "Huertos familiares, herbolarios, silvestre",
+    "cultivoLocal": true,
+    "endemicaPanama": false,
+    "notaRegional": "Gran importancia ritual en culturas Ngäbe ('Krä') y Emberá ('Bëjë'). Olor característico a ajo al frotar."
+  },
+  "cultivoCasero": {
+    "dificultad": "facil",
+    "apta": true,
+    "maceta": true,
+    "luz": "pleno-sol",
+    "agua": "moderado",
+    "suelo": "Variado",
+    "clima": "Excelente en Panamá",
+    "notaCultivo": "Perenne, crece espontáneamente.",
+    "tiempoACosecha": "Continuo"
+  },
+  "partesUsadas": [
+    "Hojas",
+    "Raíz"
+  ],
+  "resumen": "Planta de máxima importancia ritual Ngäbe y Emberá. Los compuestos azufrados tienen actividad analgésica y antiinflamatoria documentada. CONTRAINDICADA en embarazo (efecto abortivo) y en EII activa por vía oral (irritante).",
+  "usoTradicionalHistorico": "Para fiebre, dolores reumáticos, inflamación y limpias rituales Ngäbe y Emberá.",
+  "nivelEvidenciaGlobal": "C",
+  "fuentePrimaria": "TRAMIL — Petiveria alliacea",
+  "grupoTerapeutico": "Analgésico, antiinflamatorio",
+  "propiedades": "Analgésico, antiinflamatorio, inmunomodulador",
+  "fotoquimica": "Dibenzil disulfuro (DDS), bencil isotiocianato",
+  "dolencias": [
+    "Dolor reumático (uso externo TRAMIL)",
+    "Cefalea (uso externo)"
+  ],
+  "sistemas": [
+    "Musculoesquelético",
+    "Inmune"
+  ],
+  "modoEII": {
+    "aptaEnBrote": false,
+    "notaBrote": "CONTRAINDICADA en brote activo por vía oral. Compuestos azufrados irritan la mucosa inflamada.",
+    "aptaEnMantenimiento": false,
+    "notaMantenimiento": "No recomendada en EII por vía oral. Uso externo (baños) posible en remisión.",
+    "mecanismoEII": "Los compuestos azufrados son irritantes de la mucosa gastrointestinal.",
+    "referenciaEII": "PMID: 12046866"
+  },
+  "modoCeliaquiaGluten": {
+    "libreDeGluten": true,
+    "nota": "Naturalmente libre.",
+    "indicacionEspecifica": "Libre de gluten pero contraindicada por vía oral en EII."
+  },
+  "usos": {
+    "interno": true,
+    "externo": true,
+    "culinario": false
+  },
+  "preparacion": "USO EXTERNO preferido: hervir hojas en 2L agua, usar como baño o compresas. Oral solo fuera de EII, máx 7 días.",
+  "contraindicaciones": "Embarazo (absoluta — efecto abortivo). Lactancia (absoluta). EII activa oral (relativa). Anticoagulantes.",
+  "interaccionesMedicamentosas": "Potencia anticoagulantes, hipoglucemiantes e hipotensores.",
+  "embarazoLactancia": "CONTRAINDICADO. Efecto abortivo documentado en estudios preclínicos.",
+  "compatibilidadPlantas": {
+    "sinergicas": [],
+    "incompatibles": []
+  },
+  "infusionesRelacionadas": [],
+  "emoji": "🌿",
+  "etiquetas": [
+    "analgésico",
+    "flora-panama",
+    "nivel-C",
+    "tramil",
+    "cultivable-panama",
+    "disponible-panama",
+    "ngäbe",
+    "emberá",
+    "contraindicada-embarazo",
+    "no-apta-eii"
+  ],
+  "fuentes": [
+    {
+      "autor": "TRAMIL",
+      "titulo": "Petiveria alliacea",
+      "publicacion": "Red TRAMIL/OPS",
+      "año": "2015",
+      "doi": "",
+      "pmid": "",
+      "tipo": "Base de Datos",
+      "nivelEvidencia": "C",
+      "idioma": "es"
+    },
+    {
+      "autor": "",
+      "titulo": "The anti-inflammatory and analgesic effects of a crude extract of Petiveria alliacea L.",
+      "publicacion": "",
+      "año": "",
+      "doi": "",
+      "pmid": "12046866",
+      "tipo": "Estudio preclínico",
+      "nivelEvidencia": "C",
+      "idioma": "en"
+    }
+  ],
+  "advertencia": "CONTRAINDICADA en embarazo. No usar por vía oral en EII activa. Uso externo seguro.",
+  "disclaimer": "Esta información es educativa y no sustituye el diagnóstico ni el tratamiento médico profesional."
+}

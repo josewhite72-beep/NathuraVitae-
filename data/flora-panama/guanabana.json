@@ -1,0 +1,123 @@
+{
+  "id": "guanabana",
+  "versionFicha": "2.0",
+  "estadoFicha": "publicada",
+  "fechaCreacion": "2026-04-16",
+  "fechaRevision": "2026-04-16",
+  "nombreComun": "Guanábana",
+  "nombresAlternativos": [
+    "Soursop",
+    "Mönkö (Ngäbe)"
+  ],
+  "nombreCientifico": "Annona muricata L.",
+  "sinonimiasCientificas": [],
+  "familia": "Annonaceae",
+  "orden": "Magnoliales",
+  "clase": "Magnoliopsida",
+  "regionOrigen": "América tropical",
+  "habitatNatural": "Zonas tropicales húmedas",
+  "disponibilidadPanama": {
+    "disponible": true,
+    "nombreLocal": "Guanábana",
+    "formaComercial": "Fruta fresca, hojas secas, jugo",
+    "dondeConseguir": "Mercados, supermercados, herbolarios",
+    "cultivoLocal": true,
+    "endemicaPanama": false,
+    "notaRegional": "Fruta popular panameña. Árbol cultivado en patios. Uso validado por TRAMIL."
+  },
+  "cultivoCasero": {
+    "dificultad": "facil",
+    "apta": true,
+    "maceta": false,
+    "luz": "pleno-sol",
+    "agua": "moderado",
+    "suelo": "Franco bien drenado",
+    "clima": "Excelente en Panamá",
+    "notaCultivo": "Árbol de rápido crecimiento. Producción en 2-3 años.",
+    "tiempoACosecha": "2-3 años"
+  },
+  "partesUsadas": [
+    "Hojas (infusión)",
+    "Fruto (pulpa — alimento)"
+  ],
+  "resumen": "Árbol frutal medicinal popular en Panamá. Hojas con actividad inmunomoduladora e hipoglucemiante (TRAMIL). ADVERTENCIA: acetogeninas neurotóxicas con uso prolongado — máximo 2 semanas. Contraindicada en Parkinson.",
+  "usoTradicionalHistorico": "Infusión de hojas para malestares estomacales, diarrea, fiebre y diabetes. Uso Ngäbe ('Mönkö').",
+  "nivelEvidenciaGlobal": "C",
+  "fuentePrimaria": "TRAMIL — Annona muricata",
+  "grupoTerapeutico": "Inmunomodulador, hipoglucemiante, antipirético",
+  "propiedades": "Antiinflamatorio, inmunomodulador, hipoglucemiante",
+  "fotoquimica": "Acetogeninas (annonacina)",
+  "dolencias": [
+    "Fiebre leve (TRAMIL)",
+    "Diabetes tipo 2 (coadyuvante)"
+  ],
+  "sistemas": [
+    "Inmune",
+    "Metabólico"
+  ],
+  "modoEII": {
+    "aptaEnBrote": false,
+    "notaBrote": "Evitar en brotes. Acetogeninas pueden irritar mucosa dañada.",
+    "aptaEnMantenimiento": false,
+    "notaMantenimiento": "No recomendada en EII — acetogeninas neurotóxicas con uso prolongado superan cualquier beneficio.",
+    "mecanismoEII": "Sin mecanismo documentado en EII. Neurotoxicidad supera beneficios teóricos.",
+    "referenciaEII": "Sin estudios en EII"
+  },
+  "modoCeliaquiaGluten": {
+    "libreDeGluten": true,
+    "nota": "Naturalmente libre.",
+    "indicacionEspecifica": "Libre de gluten pero no apta en EII."
+  },
+  "usos": {
+    "interno": true,
+    "externo": false,
+    "culinario": true
+  },
+  "preparacion": "Decocción de 3-4 hojas en 500 ml agua 10 min. MÁXIMO 2 semanas continuas. No usar semillas (tóxicas).",
+  "contraindicaciones": "Parkinson (absoluta — acetogeninas). Embarazo (absoluta). Uso > 2 semanas. Insuficiencia hepática/renal.",
+  "interaccionesMedicamentosas": "Potencia hipoglucemiantes e hipotensores. Antagonismo con levodopa.",
+  "embarazoLactancia": "Contraindicado por acetogeninas embriotóxicas. Fruto maduro esporádico como alimento es seguro.",
+  "compatibilidadPlantas": {
+    "sinergicas": [],
+    "incompatibles": []
+  },
+  "infusionesRelacionadas": [],
+  "emoji": "🌳",
+  "etiquetas": [
+    "inmunomodulador",
+    "flora-panama",
+    "nivel-C",
+    "tramil",
+    "cultivable-panama",
+    "disponible-panama",
+    "ngäbe",
+    "advertencia-neurotoxicidad",
+    "no-apta-eii"
+  ],
+  "fuentes": [
+    {
+      "autor": "TRAMIL",
+      "titulo": "Annona muricata",
+      "publicacion": "Red TRAMIL/OPS",
+      "año": "2015",
+      "doi": "",
+      "pmid": "",
+      "tipo": "Base de Datos",
+      "nivelEvidencia": "C",
+      "idioma": "es"
+    },
+    {
+      "autor": "",
+      "titulo": "Annona muricata: Comprehensive Review on the Ethnomedicinal, Phytochemistry, and Pharmacological Aspects",
+      "publicacion": "",
+      "año": "",
+      "doi": "",
+      "pmid": "28653156",
+      "tipo": "Revisión",
+      "nivelEvidencia": "C",
+      "idioma": "en"
+    }
+  ],
+  "advertencia": "MÁXIMO 2 semanas. Contraindicada en Parkinson y embarazo. No usar semillas.",
+  "disclaimer": "Esta información es educativa y no sustituye el diagnóstico ni el tratamiento médico profesional."
+}
