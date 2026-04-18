@@ -1,0 +1,109 @@
+{
+  "id": "manzanilla",
+  "nombreComun": "Manzanilla",
+  "nombresAlternativos": ["camomila", "manzanilla alemana", "manzanilla común"],
+  "nombreCientifico": "Matricaria chamomilla L.",
+  "familia": "Asteraceae",
+  "origen": "Europa y Asia occidental; ampliamente naturalizada en América",
+  "partesUsadas": ["flor"],
+  "resumen": "Una de las plantas medicinales más estudiadas y utilizadas del mundo. Sus flores poseen propiedades antiinflamatorias, antiespasmódicas y calmantes respaldadas por numerosos estudios clínicos.",
+  "propiedades": [
+    { "nombre": "antiinflamatoria", "nivelEvidencia": "fuerte", "nota": "Mediada principalmente por el azuleno y la apigenina" },
+    { "nombre": "antiespasmódica", "nivelEvidencia": "fuerte", "nota": "Relaja la musculatura lisa del tracto gastrointestinal" },
+    { "nombre": "ansiolítica leve", "nivelEvidencia": "moderado", "nota": "La apigenina actúa sobre receptores GABA-A" },
+    { "nombre": "cicatrizante", "nivelEvidencia": "moderado" },
+    { "nombre": "antimicrobiana", "nivelEvidencia": "preliminar" }
+  ],
+  "dolencias": [
+    { "nombre": "colitis leve", "categoria": "digestivo", "nivelEvidencia": "moderado" },
+    { "nombre": "gastritis", "categoria": "digestivo", "nivelEvidencia": "moderado" },
+    { "nombre": "síndrome de intestino irritable", "categoria": "digestivo", "nivelEvidencia": "moderado" },
+    { "nombre": "insomnio leve", "categoria": "nervioso", "nivelEvidencia": "moderado" },
+    { "nombre": "ansiedad leve", "categoria": "nervioso", "nivelEvidencia": "moderado" },
+    { "nombre": "cólicos menstruales", "categoria": "hormonal", "nivelEvidencia": "moderado" },
+    { "nombre": "eccema, dermatitis", "categoria": "dermatológico", "nivelEvidencia": "preliminar" }
+  ],
+  "usos": {
+    "interno": [
+      "Trastornos digestivos leves: gases, espasmos, gastritis",
+      "Ansiedad leve y dificultad para conciliar el sueño",
+      "Colitis funcional y síndrome de intestino irritable",
+      "Cólicos menstruales"
+    ],
+    "externo": [
+      "Compresas para irritación e inflamación cutánea",
+      "Enjuagues bucales para aftas y encías inflamadas",
+      "Baños de asiento para hemorroides",
+      "Vaporizaciones para congestión nasal"
+    ]
+  },
+  "preparacion": [
+    {
+      "forma": "infusión",
+      "instrucciones": "Verter 150 ml de agua hirviendo sobre 3 g de flores secas (1 cucharada colmada). Tapar y dejar reposar 10 minutos. Colar antes de beber.",
+      "dosis": "3 tazas al día, preferiblemente entre comidas",
+      "duracion": "Uso continuado hasta 4-6 semanas; consultar si persisten los síntomas"
+    },
+    {
+      "forma": "tintura",
+      "instrucciones": "Tintura 1:5 en alcohol de 45°. 20-30 gotas diluidas en agua, 3 veces al día.",
+      "dosis": "20-30 gotas × 3 al día"
+    },
+    {
+      "forma": "cataplasma",
+      "instrucciones": "Flores secas remojadas en agua caliente, escurridas y aplicadas directamente sobre la zona afectada cubiertas con un paño.",
+      "dosis": "1-2 aplicaciones diarias de 15-20 minutos"
+    }
+  ],
+  "contraindicaciones": [
+    "Alergia conocida a plantas de la familia Asteraceae (ambrosía, árnica, caléndula, crisantemo)",
+    "No usar aceite esencial puro sin diluir en niños menores de 3 años",
+    "Evitar dosis altas en embarazo (potencial efecto uterotónico en dosis muy elevadas)"
+  ],
+  "interaccionesMedicamentosas": [
+    "Anticoagulantes orales (warfarina): puede potenciar el efecto; monitorizar",
+    "Benzodiazepinas y sedantes: puede potenciar la sedación",
+    "Ciclosporina: posible reducción de niveles plasmáticos"
+  ],
+  "embarazoLactancia": "precaución",
+  "principiosActivos": [
+    "Aceite esencial (alfa-bisabolol, camazuleno, farneseno)",
+    "Flavonoides (apigenina, luteolina, quercetina)",
+    "Ácidos fenólicos (ácido clorogénico)",
+    "Cumarinas (herniarina, umbeliferona)",
+    "Mucílagos"
+  ],
+  "infusionesRelacionadas": ["digestiva-clasica", "relajante-nocturna", "mezcla-anti-colitis"],
+  "recetasRelacionadas": ["caldo-suave-eii", "gelatina-manzanilla"],
+  "imagen": {
+    "url": "",
+    "alt": "Flores blancas de manzanilla (Matricaria chamomilla) con centro amarillo",
+    "credito": "Wikimedia Commons / CC BY-SA"
+  },
+  "fuentes": [
+    {
+      "autor": "Organización Mundial de la Salud",
+      "titulo": "WHO Monographs on Selected Medicinal Plants — Flos Chamomillae",
+      "año": 1999,
+      "url": "https://apps.who.int/medicinedocs/en/d/Js2200e/",
+      "tipo": "monografía-OMS"
+    },
+    {
+      "autor": "European Medicines Agency",
+      "titulo": "Assessment report on Matricaria recutita L., flos",
+      "año": 2015,
+      "url": "https://www.ema.europa.eu/en/medicines/herbal/matricariae-flos",
+      "tipo": "monografía-EMA"
+    },
+    {
+      "autor": "Srivastava JK, Shankar E, Gupta S",
+      "titulo": "Chamomile: A herbal medicine of the past with bright future",
+      "año": 2010,
+      "url": "https://doi.org/10.1016/j.maturitas.2010.07.003",
+      "tipo": "revisión-sistemática"
+    }
+  ],
+  "advertencia": "Esta información es educativa y no sustituye el diagnóstico ni el consejo médico profesional.",
+  "fechaRevision": "2026-04-01",
+  "etiquetas": ["digestiva", "calmante", "antiinflamatoria", "apta-eii", "nervina", "pediátrica"]
+}

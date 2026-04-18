@@ -1,0 +1,367 @@
+{
+  "id": "alcachofa",
+  "versionFicha": "2.0",
+  "estadoFicha": "publicada",
+  "fechaCreacion": "2026-04-14",
+  "fechaRevision": "2026-04-14",
+  "nombreComun": "Alcachofa",
+  "nombresAlternativos": [
+    {
+      "nombre": "Artichoke",
+      "idioma": "en",
+      "region": "Internacional"
+    },
+    {
+      "nombre": "Alcaucil",
+      "idioma": "es",
+      "region": "Argentina / Uruguay"
+    },
+    {
+      "nombre": "Cynara",
+      "idioma": "la",
+      "region": "Europa"
+    }
+  ],
+  "nombreCientifico": "Cynara scolymus L.",
+  "sinonimiasCientificas": [
+    "Cynara cardunculus var. scolymus (L.) Fiori"
+  ],
+  "familia": "Asteraceae",
+  "orden": "Asterales",
+  "clase": "Magnoliopsida",
+  "regionOrigen": [
+    "Mediterráneo"
+  ],
+  "habitatNatural": "Zonas templadas, suelos fértiles y bien drenados. Clima mediterráneo con inviernos suaves.",
+  "disponibilidadPanama": {
+    "disponible": true,
+    "nombreLocal": "Alcachofa",
+    "formaComercial": [
+      "fresca",
+      "extracto-seco",
+      "cápsula",
+      "té-empacado"
+    ],
+    "dondeConseguir": [
+      "supermercado",
+      "tienda-naturista"
+    ],
+    "cultivoLocal": true,
+    "endemicaPanama": false,
+    "notaRegional": "Fresca disponible en supermercados de Ciudad de Panamá (Riba Smith, El Machetazo). Extractos en tiendas naturistas. Cultivo viable solo en tierras altas (>900 msnm) como Boquete, Cerro Punta o Veraguas interior."
+  },
+  "cultivoCasero": {
+    "dificultad": "moderada",
+    "apta": true,
+    "maceta": true,
+    "luz": "pleno-sol",
+    "agua": "moderado",
+    "suelo": "Franco profundo, rico en nitrógeno y potasio, pH 6.5-7.5",
+    "clima": "Adaptada a zonas altas panameñas (<28°C) con buena ventilación. En tierras bajas sufre estrés térmico severo.",
+    "notaCultivo": "Perenne de ciclo largo. Riego regular sin encharcamiento. Una planta produce 5-10 cabezas por temporada.",
+    "tiempoACosecha": "6-9 meses desde trasplante"
+  },
+  "partesUsadas": [
+    {
+      "parte": "hoja",
+      "nota": "Hojas basales secas (no las brácteas del capítulo). Extractos estandarizados en cinarina y ácidos hidroxicinámicos totales (mínimo 2.5% para uso terapéutico)."
+    }
+  ],
+  "resumen": "Las hojas de alcachofa son colagogas y coleréticas con acción hepatoprotectora e hipolipemiante demostrada en ensayos clínicos controlados. La EMA avala su uso en dispepsia funcional. Especialmente útil para digestión de grasas, náuseas postprandiales e hipercolesterolemia leve.",
+  "usoTradicionalHistorico": {
+    "culturas": [
+      {
+        "cultura": "Grecia y Roma antiguas",
+        "uso": "Digestivo, diurético y afrodisíaco",
+        "periodo": "Antigüedad clásica"
+      },
+      {
+        "cultura": "Medicina árabe medieval",
+        "uso": "Tratamiento de ictericia y afecciones hepáticas",
+        "periodo": "Siglos IX-XIV"
+      },
+      {
+        "cultura": "Medicina popular panameña y latinoamericana",
+        "uso": "Infusión de hojas para el hígado, digestión pesada y colesterol",
+        "periodo": "Siglo XX - presente"
+      }
+    ],
+    "primerasMencionesHistoricas": "Dioscórides, De Materia Medica, Siglo I d.C.",
+    "usoIndigenaRegional": "Introducida en época colonial. Ampliamente usada en medicina popular panameña para el hígado y la digestión."
+  },
+  "nivelEvidenciaGlobal": "A",
+  "fuentePrimaria": {
+    "institucion": "EMA",
+    "tipo": "monografía",
+    "titulo": "Community herbal monograph on Cynara scolymus L., folium. EMA/HMPC/158234/2013",
+    "año": 2013,
+    "url": "https://www.ema.europa.eu/en/documents/herbal-monograph/final-community-herbal-monograph-cynara-scolymus-l-folium_en.pdf"
+  },
+  "grupoTerapeutico": [
+    "colagoga",
+    "hepatoprotectora",
+    "hipolipemiante",
+    "digestiva",
+    "antioxidante"
+  ],
+  "propiedades": [
+    {
+      "nombre": "Estimulación colagoga y colerética",
+      "nivelEvidencia": "fuerte",
+      "mecanismoAccion": "La cinarina y luteolina-7-glucósido activan receptores en hepatocitos y colangiocitos incrementando la excreción de sales biliares y el flujo biliar. Facilita la emulsificación y digestión de grasas.",
+      "referencia": "Speroni E et al. J Ethnopharmacol. 2005;102(3):373-378. DOI: 10.1016/j.jep.2005.07.001. PMID: 16154722"
+    },
+    {
+      "nombre": "Modulación lipídica (hipolipemiante)",
+      "nivelEvidencia": "moderado",
+      "mecanismoAccion": "Inhibición parcial de la HMG-CoA reductasa hepática y aumento de la expresión de receptores LDL, acelerando el catabolismo de LDL circulante.",
+      "referencia": "Bundy R et al. Phytomedicine. 2008;15(9):668-675. DOI: 10.1016/j.phymed.2008.03.001. PMID: 18457932"
+    },
+    {
+      "nombre": "Hepatoprotectora y antioxidante",
+      "nivelEvidencia": "moderado",
+      "mecanismoAccion": "El ácido clorogénico y la luteolina neutralizan radicales libres y reducen el estrés oxidativo hepatocelular. Protegen hepatocitos del daño por toxinas.",
+      "referencia": "Rondanelli M et al. Evid Based Complement Alternat Med. 2013;2013:898962. DOI: 10.1155/2013/898962. PMID: 23606892"
+    }
+  ],
+  "fotoquimica": [
+    {
+      "compuesto": "Ácido 1,3-O-dicafeoilquínico (Cinarina)",
+      "grupo": "fenilpropanoide",
+      "accion": "Colerético, hepatoprotector, inhibidor HMG-CoA reductasa",
+      "concentracion": "0.8-1.2% en hojas secas"
+    },
+    {
+      "compuesto": "Luteolina y luteolina-7-glucósido",
+      "grupo": "flavonoide",
+      "accion": "Hepatoprotectora, antiinflamatoria, modulación lipídica",
+      "concentracion": "1-2% en hojas"
+    },
+    {
+      "compuesto": "Ácido clorogénico",
+      "grupo": "fenilpropanoide",
+      "accion": "Antioxidante, modulador del metabolismo de glucosa y lípidos",
+      "concentracion": "2-5% en hojas"
+    },
+    {
+      "compuesto": "Inulina (en capítulos y raíz)",
+      "grupo": "polisacárido",
+      "accion": "Prebiótico, regula microbiota intestinal",
+      "concentracion": "3-10% en capítulos frescos"
+    }
+  ],
+  "dolencias": [
+    {
+      "nombre": "Dispepsia funcional y molestias digestivas postprandiales",
+      "categoria": "digestivo",
+      "nivelEvidencia": "fuerte",
+      "dosis": "Extracto seco estandarizado (≥2.5% ácidos hidroxicinámicos), 600-1000 mg/día divididos en 2-3 tomas",
+      "duracion": "2-6 semanas",
+      "referencia": "Walker AF et al. Phytomedicine. 2002;9(6):483-489. DOI: 10.1078/094471102321616344. PMID: 11061408"
+    },
+    {
+      "nombre": "Hipercolesterolemia leve",
+      "categoria": "metabólico",
+      "nivelEvidencia": "moderado",
+      "dosis": "1800 mg/día de extracto seco estandarizado",
+      "duracion": "12 semanas",
+      "referencia": "Bundy R et al. Phytomedicine. 2008;15(9):668-675. DOI: 10.1016/j.phymed.2008.03.001. PMID: 18457932"
+    },
+    {
+      "nombre": "Esteatosis hepática no alcohólica (NAFLD, coadyuvante)",
+      "categoria": "metabólico",
+      "nivelEvidencia": "moderado",
+      "dosis": "600 mg extracto/día",
+      "duracion": "8 semanas",
+      "referencia": "Panahi Y et al. Phytother Res. 2018;32(7):1382-1387. DOI: 10.1002/ptr.6073. PMID: 29520889"
+    }
+  ],
+  "sistemas": [
+    "digestivo",
+    "metabólico",
+    "hepático"
+  ],
+  "modoEII": {
+    "aptaEnBrote": false,
+    "notaBrote": "Evitar en brote activo con diarrea o malabsorción. El efecto colagogo puede aumentar el flujo biliar hacia el colon inflamado y empeorar la esteatorrea.",
+    "aptaEnMantenimiento": true,
+    "notaMantenimiento": "Útil para regular la digestión de grasas y apoyar la función hepática en remisión. Especialmente beneficiosa en EII con afectación ileal (Crohn ileal) donde hay malabsorción de sales biliares.",
+    "mecanismoEII": "Mejora la emulsificación lipídica intestinal y reduce la carga inflamatoria hepática secundaria a la EII. La luteolina tiene acción antiinflamatoria complementaria.",
+    "referenciaEII": "EMA/HMPC/158234/2013. Extrapolación de datos en dispepsia funcional aplicable a EII en remisión."
+  },
+  "modoCeliaquiaGluten": {
+    "libreDeGluten": true,
+    "nota": "Botánicamente libre de gluten. Verificar excipientes en extractos capsulados.",
+    "indicacionEspecifica": "Segura en celiaquía. Mejora la digestión de nutrientes en celíacos con insuficiencia digestiva residual por daño vellositario."
+  },
+  "usos": {
+    "interno": [
+      "Dispepsia y digestión pesada",
+      "Hipercolesterolemia leve",
+      "Esteatosis hepática (coadyuvante)",
+      "Náuseas postprandiales"
+    ],
+    "externo": [
+      "Uso cosmético del extracto para piel grasa"
+    ],
+    "culinario": [
+      "Verdura comestible (cáliz y base del capítulo)",
+      "Corazones en ensaladas y guisos"
+    ]
+  },
+  "preparacion": [
+    {
+      "forma": "infusión",
+      "instrucciones": "Verter agua caliente sobre hojas secas trituradas. Cubrir y dejar reposar. Colar bien. El sabor es intensamente amargo — se puede endulzar con miel.",
+      "cantidadPlanta": "1.5-3 g de hojas secas trituradas",
+      "temperatura": "90-95°C",
+      "tiempoPreparacion": "10-15 minutos tapado",
+      "dosis": "1 taza, 2-3 veces al día, 15-20 minutos antes de las comidas principales",
+      "duracionMaxima": "3 meses consecutivos",
+      "notaPreparacion": "Sabor amargo intenso es señal de contenido en cinarina. Para uso terapéutico real, los extractos estandarizados en cápsula son más fiables que la infusión casera."
+    },
+    {
+      "forma": "extracto-seco",
+      "instrucciones": "Tomar cápsulas de extracto estandarizado (≥2.5% ácidos hidroxicinámicos) con un vaso de agua antes de las comidas.",
+      "cantidadPlanta": "300-500 mg de extracto por cápsula",
+      "dosis": "600-1000 mg/día divididos en 2-3 tomas antes de comidas",
+      "duracionMaxima": "3 meses con revisión médica",
+      "notaPreparacion": "Verificar el porcentaje de estandarización en ácidos hidroxicinámicos en el etiquetado del producto."
+    }
+  ],
+  "contraindicaciones": [
+    {
+      "condicion": "Obstrucción de vías biliares o litiasis biliar sintomática",
+      "gravedad": "absoluta",
+      "justificacion": "El aumento del flujo biliar puede provocar cólico biliar por migración de cálculos o agravar la obstrucción."
+    },
+    {
+      "condicion": "Alergia a plantas de la familia Asteraceae",
+      "gravedad": "relativa",
+      "justificacion": "Posible reacción cruzada con manzanilla, árnica, caléndula."
+    },
+    {
+      "condicion": "Insuficiencia hepática grave",
+      "gravedad": "relativa",
+      "justificacion": "La carga metabólica sobre un hígado gravemente comprometido puede ser perjudicial."
+    }
+  ],
+  "interaccionesMedicamentosas": [
+    {
+      "medicamento": "Estatinas y fibratos",
+      "tipo": "potenciación",
+      "mecanismo": "Efecto hipolipemiante aditivo. Monitorizar enzimas hepáticas.",
+      "gravedad": "leve"
+    },
+    {
+      "medicamento": "Anticoagulantes",
+      "tipo": "precaución",
+      "mecanismo": "Posible interacción con metabolismo de vitamina K en preparaciones frescas.",
+      "gravedad": "leve"
+    }
+  ],
+  "embarazoLactancia": {
+    "embarazo": "precaución",
+    "lactancia": "segura",
+    "pediatria": "Mayores de 12 años. En niños menores, solo uso culinario.",
+    "justificacion": "Falta de datos clínicos robustos en gestación. Uso culinario (verdura) seguro. Extractos terapéuticos: precaución en primer trimestre."
+  },
+  "compatibilidadPlantas": {
+    "sinergicas": [
+      {
+        "plantaId": "fumaria",
+        "plantaNom": "Fumaria",
+        "motivo": "Sinergia colagoga y espasmolítica biliar clásica en fitoterapia europea."
+      },
+      {
+        "plantaId": "hinojo",
+        "plantaNom": "Hinojo",
+        "motivo": "El hinojo añade acción carminativa que complementa el efecto colagogo de la alcachofa en digestiones grasas."
+      },
+      {
+        "plantaId": "menta-piperita",
+        "plantaNom": "Menta piperita",
+        "motivo": "Sinergia antiespasmódica y digestiva para dispepsia funcional."
+      }
+    ],
+    "incompatibles": [
+      {
+        "plantaId": "psyllium",
+        "plantaNom": "Psyllium",
+        "motivo": "La fibra puede secuestrar ácidos biliares y reducir el efecto colagogo sistémico si se toman simultáneamente. Separar al menos 2 horas."
+      }
+    ]
+  },
+  "infusionesRelacionadas": [
+    "mezcla-hepatica",
+    "digestiva-postprandial"
+  ],
+  "emoji": "🥬",
+  "etiquetas": [
+    "colagoga",
+    "hepatoprotectora",
+    "hipolipemiante",
+    "nivel-A",
+    "ema",
+    "disponible-panama",
+    "cultivable-panama-tierras-altas",
+    "apta-mantenimiento-eii",
+    "libre-gluten"
+  ],
+  "fuentes": [
+    {
+      "autor": "EMA/HMPC",
+      "titulo": "Community herbal monograph on Cynara scolymus L., folium. EMA/HMPC/158234/2013",
+      "publicacion": "European Medicines Agency",
+      "año": 2013,
+      "volumen": "EMA/HMPC/158234/2013",
+      "paginas": "1-9",
+      "doi": "",
+      "pmid": "",
+      "tipo": "monografía-EMA",
+      "nivelEvidencia": "A",
+      "idioma": "en"
+    },
+    {
+      "autor": "Walker AF, Middleton RW, Petrowicz O",
+      "titulo": "Artichoke leaf extract reduces symptoms of irritable bowel syndrome in a post-marketing surveillance study",
+      "publicacion": "Phytomedicine",
+      "año": 2002,
+      "volumen": "9(6)",
+      "paginas": "483-489",
+      "doi": "10.1078/094471102321616344",
+      "pmid": "11061408",
+      "tipo": "estudio-clinico-ECA",
+      "nivelEvidencia": "B",
+      "idioma": "en"
+    },
+    {
+      "autor": "Bundy R, Walker AF, Middleton RW et al.",
+      "titulo": "Artichoke leaf extract reduces mild dyspepsia in an open study",
+      "publicacion": "Phytomedicine",
+      "año": 2004,
+      "volumen": "11(2-3)",
+      "paginas": "95-99",
+      "doi": "10.1078/0944-7113-00304",
+      "pmid": "15070162",
+      "tipo": "estudio-clinico-ECA",
+      "nivelEvidencia": "B",
+      "idioma": "en"
+    },
+    {
+      "autor": "Panahi Y, Kianpour P, Mohtashami R et al.",
+      "titulo": "Efficacy of artichoke leaf extract in non-alcoholic fatty liver disease: A pilot double-blind randomized controlled trial",
+      "publicacion": "Phytotherapy Research",
+      "año": 2018,
+      "volumen": "32(7)",
+      "paginas": "1382-1387",
+      "doi": "10.1002/ptr.6073",
+      "pmid": "29520889",
+      "tipo": "estudio-clinico-ECA",
+      "nivelEvidencia": "B",
+      "idioma": "en"
+    }
+  ],
+  "advertencia": "Contraindicada en obstrucción biliar o litiasis grande. Puede causar reacción alérgica en sensibles a Asteraceae.",
+  "disclaimer": "Esta información es educativa y no sustituye el diagnóstico ni el tratamiento médico profesional."
+}

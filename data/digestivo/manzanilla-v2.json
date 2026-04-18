@@ -1,0 +1,577 @@
+{
+  "id": "manzanilla",
+  "versionFicha": "2.0",
+  "estadoFicha": "publicada",
+  "fechaCreacion": "2026-04-14",
+  "fechaRevision": "2026-04-14",
+
+  "nombreComun": "Manzanilla",
+  "nombresAlternativos": [
+    { "nombre": "camomila", "idioma": "es", "region": "España" },
+    { "nombre": "manzanilla alemana", "idioma": "es", "region": "Latinoamérica" },
+    { "nombre": "chamomile", "idioma": "en", "region": "Global" },
+    { "nombre": "Kamille", "idioma": "de", "region": "Alemania" },
+    { "nombre": "camomille", "idioma": "fr", "region": "Francia" }
+  ],
+  "nombreCientifico": "Matricaria chamomilla L.",
+  "sinonimiasCientificas": [
+    "Matricaria recutita L.",
+    "Chamomilla recutita (L.) Rauschert",
+    "Chamomilla chamomilla (L.) Rydb."
+  ],
+  "familia": "Asteraceae",
+  "orden": "Asterales",
+  "clase": "Magnoliopsida",
+
+  "regionOrigen": ["Europa", "Asia Occidental"],
+  "habitatNatural": "Campos de cultivo, bordes de caminos, terrenos baldíos. Altitudes hasta 1800 m. Prefiere suelos arenosos bien drenados.",
+
+  "disponibilidadPanama": {
+    "disponible": true,
+    "nombreLocal": "manzanilla",
+    "formaComercial": ["seca", "té-empacado", "aceite-esencial", "cápsula"],
+    "dondeConseguir": ["farmacia", "supermercado", "tienda-naturista"],
+    "cultivoLocal": true,
+    "endemicaPanama": false,
+    "notaRegional": "Ampliamente disponible en todo el país. Se consigue en supermercados (Rey, Super 99, Riba Smith) como té empacado (Twinings, Pompadour, Manzanilla Panamá). En tiendas naturistas se encuentra a granel. Cultivo posible en zonas altas (Boquete, Volcán, Cerro Punta)."
+  },
+
+  "cultivoCasero": {
+    "dificultad": "moderada",
+    "apta": true,
+    "maceta": true,
+    "luz": "pleno-sol",
+    "agua": "moderado",
+    "suelo": "Bien drenado, franco-arenoso, pH 5.6–7.5. Evitar suelos arcillosos con encharcamiento.",
+    "clima": "Prefiere climas frescos (15–22°C). En Panamá, ideal en tierras altas de Chiriquí y zonas montañosas. En clima cálido, cultivar en temporada seca con riego controlado.",
+    "notaCultivo": "Sembrar semillas directamente en la tierra (no trasplantar bien). Germinación en 7–14 días con luz directa. Cosechar flores cuando los pétalos se doblan hacia atrás.",
+    "tiempoACosecha": "60–90 días desde la siembra"
+  },
+
+  "partesUsadas": [
+    { "parte": "flor", "nota": "Cabezuelas florales completas. Principal parte medicinal con toda la actividad farmacológica documentada." },
+    { "parte": "aceite-esencial", "nota": "Obtenido por destilación al vapor de las flores. Contiene azuleno (camazuleno) responsable del color azul característico." }
+  ],
+
+  "resumen": "Una de las plantas medicinales más estudiadas y utilizadas en el mundo. Sus flores poseen propiedades antiinflamatorias, antiespasmódicas y ansiolíticas respaldadas por monografías de la OMS y la EMA, así como múltiples ensayos clínicos controlados.",
+
+  "usoTradicionalHistorico": {
+    "culturas": [
+      { "cultura": "Egipcia", "uso": "Ofrendada a los dioses del sol. Usada para fiebres y malaria.", "periodo": "~2000 a.C." },
+      { "cultura": "Griega", "uso": "Dioscórides la describió para tratar fiebres y afecciones de las vías urinarias.", "periodo": "Siglo I d.C." },
+      { "cultura": "Romana", "uso": "Usada como incienso y para bebidas medicinales.", "periodo": "Siglo I–IV d.C." },
+      { "cultura": "Anglosajona", "uso": "Una de las nueve plantas sagradas del 'Lacnunga'. Considerada la 'madre de todas las hierbas'.", "periodo": "Siglo X d.C." },
+      { "cultura": "Medicina popular latinoamericana", "uso": "Infusión para cólicos, nervios, digestión y menstruación dolorosa. Presente en hogares de toda la región.", "periodo": "Siglo XVI–presente" }
+    ],
+    "primerasMencionesHistoricas": "Dioscórides, 'De Materia Medica', Siglo I d.C. Primera descripción sistemática de sus usos medicinales en Occidente.",
+    "usoIndigenaRegional": "No documentada en farmacopeas indígenas panameñas como planta nativa (es introducida), pero ampliamente adoptada por comunidades campesinas centroamericanas desde la colonia."
+  },
+
+  "nivelEvidenciaGlobal": "A",
+
+  "fuentePrimaria": {
+    "institucion": "OMS",
+    "tipo": "monografía",
+    "titulo": "WHO Monographs on Selected Medicinal Plants, Volume 1 — Flos Chamomillae",
+    "año": 1999,
+    "url": "https://apps.who.int/medicinedocs/en/d/Js2200e/",
+    "doi": null
+  },
+
+  "grupoTerapeutico": [
+    "antiinflamatoria", "antiespasmódica", "ansiolítica",
+    "carminativa", "demulcente", "cicatrizante", "nervina"
+  ],
+
+  "propiedades": [
+    {
+      "nombre": "Antiinflamatoria",
+      "nivelEvidencia": "fuerte",
+      "mecanismoAccion": "El alfa-bisabolol y el camazuleno inhiben la ciclooxigenasa-2 (COX-2) y reducen la producción de prostaglandinas. La apigenina bloquea receptores NF-κB, reduciendo citoquinas proinflamatorias (IL-6, TNF-α).",
+      "referencia": "Srivastava JK et al. Mol Med Rep. 2010;3(6):895-901. DOI: 10.3892/mmr.2010.377"
+    },
+    {
+      "nombre": "Antiespasmódica",
+      "nivelEvidencia": "fuerte",
+      "mecanismoAccion": "Relaja la musculatura lisa del tracto gastrointestinal mediante bloqueo de canales de calcio y reducción de la actividad colinérgica. Mediada principalmente por flavonoides (apigenina) y bisabolol.",
+      "referencia": "Forster HB et al. Planta Med. 1980;40(4):309-319. DOI: 10.1055/s-2008-1074986"
+    },
+    {
+      "nombre": "Ansiolítica leve",
+      "nivelEvidencia": "moderado",
+      "mecanismoAccion": "La apigenina actúa como ligando de los receptores benzodiacepínicos del complejo GABA-A, produciendo efecto ansiolítico sin dependencia significativa.",
+      "referencia": "Zanoli P et al. Phytomedicine. 2000;7(6):461-467. DOI: 10.1016/S0944-7113(00)80032-1"
+    },
+    {
+      "nombre": "Cicatrizante y vulneraria",
+      "nivelEvidencia": "moderado",
+      "mecanismoAccion": "El alfa-bisabolol estimula la proliferación de fibroblastos y acelera la reepitelización. El camazuleno promueve la granulación tisular.",
+      "referencia": "Albring M et al. Z Hautkr. 1983;58(7):479-483."
+    },
+    {
+      "nombre": "Antimicrobiana",
+      "nivelEvidencia": "preliminar",
+      "mecanismoAccion": "El aceite esencial (timol, carvacrol, terpineol) muestra actividad in vitro frente a S. aureus, C. albicans y algunos gramnegativos. Estudios clínicos limitados.",
+      "referencia": "Petrulova-Poracka V et al. Nat Prod Commun. 2013;8(4):471-474."
+    },
+    {
+      "nombre": "Protectora de la mucosa gástrica",
+      "nivelEvidencia": "moderado",
+      "mecanismoAccion": "El alfa-bisabolol reduce la lesión de la mucosa gástrica inducida por etanol y AINE. Los mucílagos forman una capa protectora sobre el epitelio gástrico.",
+      "referencia": "Szelenyi I, Isaac O, Thiemer K. Planta Med. 1979;35(3):218-227."
+    }
+  ],
+
+  "fotoquimica": [
+    {
+      "compuesto": "alfa-bisabolol",
+      "grupo": "terpenoide",
+      "accion": "Principal responsable de la actividad antiinflamatoria, cicatrizante y espasmolítica. Favorece la absorción de otros principios activos.",
+      "concentracion": "Hasta 50% del aceite esencial"
+    },
+    {
+      "compuesto": "Camazuleno (azuleno)",
+      "grupo": "terpenoide",
+      "accion": "Potente antiinflamatorio. Formado durante la destilación a partir del matricino. Responsable del color azul del aceite esencial.",
+      "concentracion": "1–15% del aceite esencial (variable)"
+    },
+    {
+      "compuesto": "Apigenina",
+      "grupo": "flavonoide",
+      "accion": "Ansiolítica (agonista GABA-A), antiinflamatoria (inhibe COX-2), antiespasmódica. Uno de los flavonoides más estudiados.",
+      "concentracion": "0.3–1% en flores secas"
+    },
+    {
+      "compuesto": "Luteolina",
+      "grupo": "flavonoide",
+      "accion": "Antiinflamatoria, antioxidante, antiproliferativa in vitro.",
+      "concentracion": "Trazas a 0.1%"
+    },
+    {
+      "compuesto": "Quercetina",
+      "grupo": "flavonoide",
+      "accion": "Antioxidante, antiinflamatoria, antihistamínica.",
+      "concentracion": "Trazas"
+    },
+    {
+      "compuesto": "Ácido clorogénico",
+      "grupo": "fenilpropanoide",
+      "accion": "Antioxidante, antiinflamatorio, con actividad sobre el metabolismo de la glucosa.",
+      "concentracion": "Variable"
+    },
+    {
+      "compuesto": "Herniarina",
+      "grupo": "cumarina",
+      "accion": "Antiespasmódica, antiinflamatoria leve.",
+      "concentracion": "0.1–0.3%"
+    },
+    {
+      "compuesto": "Mucílagos",
+      "grupo": "polisacárido",
+      "accion": "Protección y demulcencia de mucosas digestivas y respiratorias.",
+      "concentracion": "10–15% en flores secas"
+    }
+  ],
+
+  "dolencias": [
+    {
+      "nombre": "Colitis leve y moderada",
+      "categoria": "digestivo",
+      "nivelEvidencia": "moderado",
+      "dosis": "3 g de flores secas en infusión, 3 veces al día",
+      "duracion": "4–8 semanas",
+      "referencia": "Srivastava JK et al. Mol Med Rep. 2010. DOI: 10.3892/mmr.2010.377"
+    },
+    {
+      "nombre": "Gastritis y úlcera gástrica (coadyuvante)",
+      "categoria": "digestivo",
+      "nivelEvidencia": "moderado",
+      "dosis": "3 g infusión, 3 veces al día antes de comidas",
+      "duracion": "4–6 semanas",
+      "referencia": "Szelenyi I et al. Planta Med. 1979;35:218-227."
+    },
+    {
+      "nombre": "Síndrome de intestino irritable",
+      "categoria": "digestivo",
+      "nivelEvidencia": "moderado",
+      "dosis": "Combinada con melisa y menta. 2–3 tazas/día",
+      "duracion": "Tratamiento continuado",
+      "referencia": "Vejdani R et al. Dig Dis Sci. 2006;51(8):1501-1507."
+    },
+    {
+      "nombre": "Insomnio leve",
+      "categoria": "nervioso",
+      "nivelEvidencia": "moderado",
+      "dosis": "270–400 mg extracto seco o 3 g infusión, 30 min antes de dormir",
+      "duracion": "2–4 semanas",
+      "referencia": "Zick SM et al. BMC Complement Altern Med. 2011;11:78. DOI: 10.1186/1472-6882-11-78"
+    },
+    {
+      "nombre": "Ansiedad leve",
+      "categoria": "nervioso",
+      "nivelEvidencia": "moderado",
+      "dosis": "220 mg extracto estandarizado (1,2% apigenina), 3 veces/día",
+      "duracion": "8 semanas",
+      "referencia": "Amsterdam JD et al. J Clin Psychopharmacol. 2009;29(4):378-382. DOI: 10.1097/JCP.0b013e3181ac935c"
+    },
+    {
+      "nombre": "Cólicos menstruales (dismenorrea)",
+      "categoria": "hormonal",
+      "nivelEvidencia": "moderado",
+      "dosis": "3 g infusión, 3 veces al día desde 3 días antes de la menstruación",
+      "duracion": "Durante el ciclo menstrual",
+      "referencia": "Salmalian H et al. Caspian J Intern Med. 2014;5(2):82-88."
+    },
+    {
+      "nombre": "Eccema, dermatitis de contacto",
+      "categoria": "dermatológico",
+      "nivelEvidencia": "moderado",
+      "dosis": "Crema o pomada al 2% de extracto. Aplicar 2–3 veces/día",
+      "duracion": "3–4 semanas",
+      "referencia": "Patzelt-Wenczler R, Ponce-Pöschl E. Eur J Med Res. 2000;5(4):171-175."
+    },
+    {
+      "nombre": "Gases y flatulencia",
+      "categoria": "digestivo",
+      "nivelEvidencia": "fuerte",
+      "dosis": "1.5–3 g flores secas en infusión, tras cada comida",
+      "duracion": "Sin restricción",
+      "referencia": "EMA Assessment Report 2015. EMA/HMPC/55271/2011"
+    },
+    {
+      "nombre": "Aftas orales y gingivitis",
+      "categoria": "dermatológico",
+      "nivelEvidencia": "preliminar",
+      "dosis": "Enjuague bucal con infusión fría concentrada (6 g/200 ml), 3 veces/día",
+      "duracion": "7–10 días",
+      "referencia": "Charousaei F et al. Contemp Clin Dent. 2011;2(2):105-109."
+    }
+  ],
+
+  "sistemas": ["digestivo", "nervioso", "hormonal", "dermatológico"],
+
+  "modoEII": {
+    "aptaEnBrote": true,
+    "notaBrote": "Segura y beneficiosa en brote leve-moderado. La infusión de manzanilla reduce los espasmos intestinales y la inflamación de la mucosa sin irritar. Evitar en brote severo con rectorragia activa intensa.",
+    "aptaEnMantenimiento": true,
+    "notaMantenimiento": "Excelente para el mantenimiento diario. Contribuye a reducir la inflamación crónica de bajo grado característica de la EII. Puede tomarse indefinidamente en dosis moderadas.",
+    "mecanismoEII": "La apigenina y el bisabolol inhiben NF-κB y reducen TNF-α, IL-6 e IL-1β — las citoquinas proinflamatorias centrales en la patogénesis de la EII.",
+    "referenciaEII": "Bhaskaran N et al. Mol Carcinog. 2010;49(3):293-301. DOI: 10.1002/mc.20601"
+  },
+
+  "modoCeliaquiaGluten": {
+    "libreDeGluten": true,
+    "nota": "La flor de manzanilla es naturalmente libre de gluten en todas sus formas (infusión, extracto, cápsula). Verificar contaminación cruzada en tés empacados.",
+    "indicacionEspecifica": "La manzanilla puede ayudar a aliviar la inflamación intestinal residual en celíacos que mantienen dieta sin gluten."
+  },
+
+  "usos": {
+    "interno": [
+      "Trastornos digestivos: gases, distensión, gastritis, colitis leve",
+      "Síndrome de intestino irritable con componente nervioso",
+      "Insomnio leve y dificultad para conciliar el sueño",
+      "Ansiedad leve y nerviosismo",
+      "Cólicos menstruales y dismenorrea"
+    ],
+    "externo": [
+      "Compresas para inflamación cutánea, eccema y dermatitis",
+      "Enjuagues bucales para aftas y gingivitis",
+      "Baños de asiento para hemorroides y fisuras anales",
+      "Vaporizaciones para congestión nasal y sinusitis leve",
+      "Colirios (infusión fría) para conjuntivitis leve no infecciosa"
+    ],
+    "aromaterapia": [
+      "Difusión del aceite esencial para ansiedad y estrés",
+      "Inhalación directa para inducción del sueño",
+      "Masaje con aceite diluido (2–3%) para tensión muscular"
+    ],
+    "culinario": [
+      "Infusión como bebida relajante post-comida",
+      "Ingrediente en helados y postres artesanales",
+      "Aromatizante en licores (Benedictine)"
+    ]
+  },
+
+  "preparacion": [
+    {
+      "forma": "infusión",
+      "instrucciones": "Verter 150–200 ml de agua a 90–95°C (no hirviendo) sobre las flores secas. Tapar inmediatamente para preservar el aceite esencial. Dejar reposar 10 minutos. Colar y beber caliente o tibia.",
+      "cantidadPlanta": "3 g de flores secas (aproximadamente 1 cucharada colmada)",
+      "temperatura": "90–95°C. No usar agua a 100°C — destruye el aceite esencial.",
+      "tiempoPreparacion": "10 minutos tapado",
+      "dosis": "1 taza (150–200 ml), 3 veces al día, preferiblemente entre comidas",
+      "duracionMaxima": "4–6 semanas de uso continuo. Puede repetirse tras descanso de 1 semana.",
+      "notaPreparacion": "La tapa durante la infusión es esencial para retener el aceite esencial volátil (azuleno). El líquido debe tener un ligero tono amarillo-dorado. Si es muy claro, aumentar la cantidad de planta."
+    },
+    {
+      "forma": "tintura",
+      "instrucciones": "Maceración de flores en alcohol etílico de 45–60° durante 14 días en recipiente oscuro. Filtrar y conservar en frasco ámbar.",
+      "cantidadPlanta": "1 parte de flores secas por 5 partes de alcohol (tintura 1:5)",
+      "temperatura": "Temperatura ambiente, lugar oscuro",
+      "tiempoPreparacion": "14 días de maceración",
+      "dosis": "20–30 gotas diluidas en agua o zumo, 3 veces al día",
+      "duracionMaxima": "4 semanas continuas",
+      "notaPreparacion": "Conservar en lugar fresco y oscuro. Vida útil: 2 años."
+    },
+    {
+      "forma": "extracto-seco",
+      "instrucciones": "Extracto estandarizado en cápsulas al 1,2% de apigenina. Tomar con abundante agua.",
+      "cantidadPlanta": "220–400 mg por cápsula",
+      "dosis": "220 mg, 3 veces al día (ansiedad) / 270–400 mg antes de dormir (insomnio)",
+      "duracionMaxima": "8 semanas según estudios clínicos",
+      "notaPreparacion": "Preferir extractos estandarizados con porcentaje de apigenina especificado para garantizar dosis terapéutica."
+    },
+    {
+      "forma": "cataplasma",
+      "instrucciones": "Hidratar flores secas en agua caliente. Escurrir ligeramente y aplicar directamente sobre la zona afectada cubierta con un paño limpio. Mantener tibio.",
+      "cantidadPlanta": "10–15 g de flores secas por aplicación",
+      "tiempoPreparacion": "15–20 minutos por aplicación",
+      "dosis": "1–2 aplicaciones diarias",
+      "notaPreparacion": "Para eccema, dermatitis o hemorroides externas."
+    },
+    {
+      "forma": "inhalación",
+      "instrucciones": "Preparar infusión concentrada (6 g/500 ml). Verter en recipiente, inclinar la cabeza sobre el vapor y cubrir con toalla. Inhalar lentamente durante 10–15 minutos.",
+      "cantidadPlanta": "6 g de flores por sesión",
+      "tiempoPreparacion": "10–15 minutos de inhalación",
+      "dosis": "2–3 veces al día en proceso agudo",
+      "notaPreparacion": "Mantener los ojos cerrados para evitar irritación. Indicada para sinusitis, congestión y rinitis alérgica."
+    }
+  ],
+
+  "contraindicaciones": [
+    {
+      "condicion": "Alergia documentada a plantas de la familia Asteraceae",
+      "gravedad": "absoluta",
+      "justificacion": "Riesgo de reacción alérgica cruzada con ambrosía (Ambrosia spp.), árnica, caléndula, crisantemo y margarita. Puede provocar dermatitis de contacto, urticaria o, excepcionalmente, anafilaxia."
+    },
+    {
+      "condicion": "Brote severo de EII con rectorragia activa intensa",
+      "gravedad": "relativa",
+      "justificacion": "En fases de máxima actividad inflamatoria con sangrado activo, cualquier fitoterapia debe consultarse con el médico tratante."
+    },
+    {
+      "condicion": "Uso de aceite esencial puro en niños menores de 3 años",
+      "gravedad": "absoluta",
+      "justificacion": "El aceite esencial concentrado puede provocar broncoespasmo en lactantes y niños pequeños. La infusión es segura desde los 6 meses."
+    },
+    {
+      "condicion": "Dosis muy elevadas durante el embarazo",
+      "gravedad": "relativa",
+      "justificacion": "En dosis terapéuticas habituales (infusión) se considera segura. Dosis farmacológicas altas (extracto) pueden tener efecto uterotónico teórico. Evitar extractos concentrados en el primer trimestre."
+    }
+  ],
+
+  "interaccionesMedicamentosas": [
+    {
+      "medicamento": "Anticoagulantes orales (warfarina, acenocumarol)",
+      "tipo": "potenciación",
+      "mecanismo": "Las cumarinas (herniarina, umbeliferona) pueden potenciar el efecto anticoagulante. La apigenina inhibe la agregación plaquetaria.",
+      "gravedad": "moderada"
+    },
+    {
+      "medicamento": "Benzodiazepinas y sedantes del SNC",
+      "tipo": "potenciación",
+      "mecanismo": "La apigenina actúa como agonista de receptores GABA-A, potenciando la sedación de benzodiazepinas, barbitúricos y alcohol.",
+      "gravedad": "moderada"
+    },
+    {
+      "medicamento": "Ciclosporina",
+      "tipo": "alteración-metabolismo",
+      "mecanismo": "El extracto de manzanilla puede inhibir la glicoproteína P y el CYP3A4, alterando los niveles plasmáticos de ciclosporina.",
+      "gravedad": "moderada"
+    },
+    {
+      "medicamento": "Tamoxifeno",
+      "tipo": "alteración-metabolismo",
+      "mecanismo": "La apigenina tiene actividad estrogénica débil y puede interferir teóricamente con el mecanismo del tamoxifeno. Evidencia principalmente in vitro.",
+      "gravedad": "leve"
+    }
+  ],
+
+  "embarazoLactancia": {
+    "embarazo": "precaución",
+    "lactancia": "precaución",
+    "pediatria": "Infusión segura desde los 6 meses para cólicos (dosis pediátrica: 0.5–1 g en 100 ml, 2 veces/día). Aceite esencial contraindicado en menores de 3 años.",
+    "justificacion": "La EMA clasifica la manzanilla en categoría 'traditional use' para embarazo. La infusión en dosis habituales se considera segura por uso tradicional milenario. Los extractos concentrados deben evitarse en el primer trimestre por efecto uterotónico teórico no confirmado clínicamente."
+  },
+
+  "compatibilidadPlantas": {
+    "sinergicas": [
+      {
+        "plantaId": "hinojo",
+        "plantaNom": "Hinojo",
+        "motivo": "Sinergia carminativa y antiespasmódica. Combinación clásica para gases y cólicos. El hinojo potencia la acción espasmolítica de la manzanilla."
+      },
+      {
+        "plantaId": "melisa",
+        "plantaNom": "Melisa",
+        "motivo": "Doble acción nervina y digestiva. Ideal para colon irritable de origen nervioso. La melisa amplifica el efecto ansiolítico de la manzanilla."
+      },
+      {
+        "plantaId": "valeriana",
+        "plantaNom": "Valeriana",
+        "motivo": "Sinergia sedante para insomnio. La manzanilla suaviza el sabor de la valeriana y añade acción ansiolítica complementaria."
+      },
+      {
+        "plantaId": "regaliz",
+        "plantaNom": "Regaliz DGL",
+        "motivo": "Protección de la mucosa gástrica e intestinal. Combinación ideal para gastritis y EII en mantenimiento."
+      },
+      {
+        "plantaId": "menta-piperita",
+        "plantaNom": "Menta piperita",
+        "motivo": "Combinación clásica para dispepsia y colon irritable. Estudios clínicos avalan la mezcla para SII."
+      }
+    ],
+    "incompatibles": [
+      {
+        "plantaId": "arnica",
+        "plantaNom": "Árnica",
+        "motivo": "Reacción alérgica cruzada en personas sensibles a Asteraceae. Evitar la combinación en pacientes con alergia conocida al grupo."
+      }
+    ]
+  },
+
+  "infusionesRelacionadas": [
+    "digestiva-clasica",
+    "relajante-nocturna",
+    "anti-colitis",
+    "calma-nerviosa",
+    "mezcla-gases"
+  ],
+
+  "recetasRelacionadas": [
+    "gelatina-manzanilla-eii",
+    "caldo-suave-brote"
+  ],
+
+  "mindfulnessRelacionado": [
+    "respiracion-4-7-8",
+    "body-scan",
+    "coherencia-cardiaca"
+  ],
+
+  "veterinaria": {
+    "documentado": true,
+    "animales": ["perros", "gatos", "caballos", "aves"],
+    "usos": [
+      "Lavado ocular para conjuntivitis leve",
+      "Compresas para heridas superficiales",
+      "Infusión para gastritis en perros (dosis reducida)"
+    ],
+    "precauciones": "Consultar siempre con veterinario. Los gatos pueden ser más sensibles a los aceites esenciales. No usar aceite esencial puro en animales."
+  },
+
+  "emoji": "🌼",
+
+  "notebooklmUrl": "https://notebooklm.google.com/notebook/[ID-PENDIENTE]",
+
+  "fuentes": [
+    {
+      "autor": "World Health Organization",
+      "titulo": "WHO Monographs on Selected Medicinal Plants, Volume 1: Flos Chamomillae",
+      "publicacion": "World Health Organization, Geneva",
+      "año": 1999,
+      "paginas": "86-94",
+      "url": "https://apps.who.int/medicinedocs/en/d/Js2200e/",
+      "tipo": "monografía-OMS",
+      "nivelEvidencia": "A",
+      "idioma": "en"
+    },
+    {
+      "autor": "European Medicines Agency — Committee on Herbal Medicinal Products (HMPC)",
+      "titulo": "Community herbal monograph on Matricaria recutita L., flos. EMA/HMPC/55271/2011",
+      "publicacion": "European Medicines Agency, London",
+      "año": 2015,
+      "url": "https://www.ema.europa.eu/en/medicines/herbal/matricariae-flos",
+      "tipo": "monografía-EMA",
+      "nivelEvidencia": "A",
+      "idioma": "en"
+    },
+    {
+      "autor": "Blumenthal M, Busse WR, Goldberg A et al.",
+      "titulo": "The Complete German Commission E Monographs: Therapeutic Guide to Herbal Medicines",
+      "publicacion": "American Botanical Council, Austin TX",
+      "año": 1998,
+      "isbn": "978-0965555500",
+      "tipo": "comision-e",
+      "nivelEvidencia": "A",
+      "idioma": "en"
+    },
+    {
+      "autor": "Srivastava JK, Shankar E, Gupta S",
+      "titulo": "Chamomile: A herbal medicine of the past with bright future",
+      "publicacion": "Molecular Medicine Reports",
+      "año": 2010,
+      "volumen": "3(6)",
+      "paginas": "895-901",
+      "doi": "10.3892/mmr.2010.377",
+      "pmid": "21132119",
+      "tipo": "revision-sistematica",
+      "nivelEvidencia": "B",
+      "idioma": "en"
+    },
+    {
+      "autor": "Amsterdam JD, Li Y, Soeller I et al.",
+      "titulo": "A randomized, double-blind, placebo-controlled trial of oral Matricaria recutita (chamomile) extract therapy for generalized anxiety disorder",
+      "publicacion": "Journal of Clinical Psychopharmacology",
+      "año": 2009,
+      "volumen": "29(4)",
+      "paginas": "378-382",
+      "doi": "10.1097/JCP.0b013e3181ac935c",
+      "pmid": "19593179",
+      "tipo": "estudio-clinico-ECA",
+      "nivelEvidencia": "B",
+      "idioma": "en"
+    },
+    {
+      "autor": "Zick SM, Wright BD, Sen A, Arnedt JT",
+      "titulo": "Preliminary examination of the efficacy and safety of a standardized chamomile extract for chronic primary insomnia",
+      "publicacion": "BMC Complementary and Alternative Medicine",
+      "año": 2011,
+      "volumen": "11",
+      "paginas": "78",
+      "doi": "10.1186/1472-6882-11-78",
+      "pmid": "21939549",
+      "tipo": "estudio-clinico-ECA",
+      "nivelEvidencia": "B",
+      "idioma": "en"
+    },
+    {
+      "autor": "Salmalian H, Saghebi R, Moghadam-Nia AA et al.",
+      "titulo": "Comparative effect of thymus vulgaris and ibuprofen on primary dysmenorrhea: a triple-blind clinical study",
+      "publicacion": "Caspian Journal of Internal Medicine",
+      "año": 2014,
+      "volumen": "5(2)",
+      "paginas": "82-88",
+      "pmid": "24778771",
+      "tipo": "estudio-clinico-ECA",
+      "nivelEvidencia": "B",
+      "idioma": "en"
+    },
+    {
+      "autor": "Patzelt-Wenczler R, Ponce-Pöschl E",
+      "titulo": "Proof of efficacy of Kamillosan® cream in atopic eczema",
+      "publicacion": "European Journal of Medical Research",
+      "año": 2000,
+      "volumen": "5(4)",
+      "paginas": "171-175",
+      "pmid": "10779249",
+      "tipo": "estudio-clinico-ECA",
+      "nivelEvidencia": "B",
+      "idioma": "en"
+    }
+  ],
+
+  "advertencia": "Las personas alérgicas a plantas de la familia Asteraceae (ambrosía, árnica, caléndula, crisantemo) deben evitar la manzanilla. Si toma anticoagulantes orales o benzodiazepinas, consulte a su médico antes de usar.",
+
+  "disclaimer": "Esta información es educativa y no sustituye el diagnóstico ni el tratamiento médico profesional. Consulte siempre a un profesional de salud antes de iniciar cualquier terapia con plantas medicinales.",
+
+  "etiquetas": [
+    "digestiva", "calmante", "antiinflamatoria", "apta-eii",
+    "apta-brote", "nervina", "antiespasmódica", "libre-gluten",
+    "pediátrica", "nivel-A", "oms", "ema", "floración",
+    "disponible-panama", "cultivable", "ansiolítica"
+  ]
+}

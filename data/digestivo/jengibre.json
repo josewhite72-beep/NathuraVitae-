@@ -1,0 +1,137 @@
+{
+  "id": "jengibre",
+  "versionFicha": "2.0",
+  "estadoFicha": "publicada",
+  "fechaCreacion": "2026-04-16",
+  "fechaRevision": "2026-04-16",
+  "nombreComun": "Jengibre",
+  "nombresAlternativos": [
+    "Gengibre",
+    "Ginger"
+  ],
+  "nombreCientifico": "Zingiber officinale Roscoe",
+  "sinonimiasCientificas": [
+    "Amomum zingiber L."
+  ],
+  "familia": "Zingiberaceae",
+  "orden": "Zingiberales",
+  "clase": "Liliopsida",
+  "regionOrigen": "Asia",
+  "habitatNatural": "Zonas tropicales húmedas",
+  "disponibilidadPanama": {
+    "disponible": true,
+    "nombreLocal": "Jengibre, Gengibre",
+    "formaComercial": "Fresco, seco, polvo, cápsula",
+    "dondeConseguir": "Supermercados, mercados locales",
+    "cultivoLocal": true,
+    "endemicaPanama": false,
+    "notaRegional": "Disponible en todos los mercados panameños. Ingrediente de la chicha de jengibre panameña."
+  },
+  "cultivoCasero": {
+    "dificultad": "facil",
+    "apta": true,
+    "maceta": true,
+    "luz": "semisombra",
+    "agua": "moderado",
+    "suelo": "Franco bien drenado",
+    "clima": "Excelente en Panamá",
+    "notaCultivo": "Plantar rizoma con brotes. Cosechar a los 8-10 meses.",
+    "tiempoACosecha": "8-10 meses"
+  },
+  "partesUsadas": [
+    "Rizoma (raíz)"
+  ],
+  "resumen": "Antiemético nivel A según OMS. El gingerol y shogaoles bloquean receptores 5-HT3 reduciendo náuseas. También inhiben COX-2 y LOX-5. Planta cotidiana panameña con la base científica más sólida entre los Zingiberáceos.",
+  "usoTradicionalHistorico": "Infusión para náuseas, indigestión, resfriados y dolores menstruales. Chicha de jengibre panameña.",
+  "nivelEvidenciaGlobal": "A",
+  "fuentePrimaria": "WHO Monographs Vol.1 — Rhizoma Zingiberis, 1999",
+  "grupoTerapeutico": "Antiemético, procinético, antiinflamatorio",
+  "propiedades": "Antiemético, antiinflamatorio, procinético, carminativo",
+  "fotoquimica": "6-Gingerol, 6-Shogaol",
+  "dolencias": [
+    "Náuseas y vómitos del embarazo",
+    "Cinetosis",
+    "Dispepsia",
+    "Flatulencia"
+  ],
+  "sistemas": [
+    "Digestivo",
+    "Musculoesquelético"
+  ],
+  "modoEII": {
+    "aptaEnBrote": false,
+    "notaBrote": "Evitar en brotes severos. El jengibre crudo puede irritar mucosa inflamada. En brote leve: infusión suave.",
+    "aptaEnMantenimiento": true,
+    "notaMantenimiento": "Muy recomendable en remisión. Antiinflamatorio sistémico y procinético. Útil durante tratamiento con metotrexato o azatioprina (antinauseoso).",
+    "mecanismoEII": "Inhibición de COX-2, LOX-5 y NF-κB en mucosa intestinal.",
+    "referenciaEII": "Thomson M et al. PMID: 25347860"
+  },
+  "modoCeliaquiaGluten": {
+    "libreDeGluten": true,
+    "nota": "Naturalmente libre. Precaución con mezclas de especias.",
+    "indicacionEspecifica": "Seguro y recomendable en celiaquía."
+  },
+  "usos": {
+    "interno": true,
+    "externo": false,
+    "culinario": true
+  },
+  "preparacion": "3-4 rodajas frescas hervidas 5 min en 300 ml agua. Añadir miel y limón. Jengibre fresco = más antiemético; seco = más antiinflamatorio.",
+  "contraindicaciones": "Alergia a Zingiberaceae. Litiasis biliar (precaución). Trastornos de coagulación. Suspender 7-10 días antes de cirugía.",
+  "interaccionesMedicamentosas": "Potencia anticoagulantes. Puede interferir con antiácidos y acelerar vaciamiento gástrico.",
+  "embarazoLactancia": "Seguro a dosis bajas (≤1g/día) para náuseas del embarazo bajo supervisión médica.",
+  "compatibilidadPlantas": {
+    "sinergicas": [],
+    "incompatibles": []
+  },
+  "infusionesRelacionadas": [],
+  "emoji": "🫚",
+  "etiquetas": [
+    "antiemético",
+    "digestivo",
+    "antiinflamatorio",
+    "nivel-A",
+    "oms",
+    "escop",
+    "cultivable-panama",
+    "disponible-panama",
+    "superalimento"
+  ],
+  "fuentes": [
+    {
+      "autor": "WHO",
+      "titulo": "WHO Monographs on Selected Medicinal Plants - Volume 1: Rhizoma Zingiberis",
+      "publicacion": "World Health Organization",
+      "año": "1999",
+      "doi": "",
+      "pmid": "",
+      "tipo": "Monografía",
+      "nivelEvidencia": "A",
+      "idioma": "en"
+    },
+    {
+      "autor": "ESCOP",
+      "titulo": "Zingiberis rhizoma",
+      "publicacion": "ESCOP Monographs",
+      "año": "2008",
+      "doi": "",
+      "pmid": "",
+      "tipo": "Monografía",
+      "nivelEvidencia": "A",
+      "idioma": "en"
+    },
+    {
+      "autor": "Thomson M et al.",
+      "titulo": "The Effectiveness of Ginger in the Prevention of Nausea and Vomiting during Pregnancy and Chemotherapy",
+      "publicacion": "",
+      "año": "",
+      "doi": "",
+      "pmid": "27042872",
+      "tipo": "Meta-análisis",
+      "nivelEvidencia": "A",
+      "idioma": "en"
+    }
+  ],
+  "advertencia": "Suspender 7-10 días antes de cirugía. Monitorizar INR con anticoagulantes.",
+  "disclaimer": "Esta información es educativa y no sustituye el diagnóstico ni el tratamiento médico profesional."
+}

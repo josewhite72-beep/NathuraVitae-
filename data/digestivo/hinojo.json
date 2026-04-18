@@ -1,0 +1,120 @@
+{
+  "id": "hinojo",
+  "versionFicha": "2.0",
+  "estadoFicha": "publicada",
+  "fechaCreacion": "2026-04-16",
+  "fechaRevision": "2026-04-16",
+  "nombreComun": "Hinojo",
+  "nombresAlternativos": [
+    "Fennel"
+  ],
+  "nombreCientifico": "Foeniculum vulgare Mill.",
+  "sinonimiasCientificas": [
+    "Anethum foeniculum L."
+  ],
+  "familia": "Apiaceae",
+  "orden": "Apiales",
+  "clase": "Magnoliopsida",
+  "regionOrigen": "Mediterráneo",
+  "habitatNatural": "Zonas templadas",
+  "disponibilidadPanama": {
+    "disponible": true,
+    "nombreLocal": "Hinojo",
+    "formaComercial": "Semillas secas, infusiones",
+    "dondeConseguir": "Herbolarios, supermercados, mercados naturales",
+    "cultivoLocal": true,
+    "endemicaPanama": false,
+    "notaRegional": "Cultivable en tierras altas de Panamá."
+  },
+  "cultivoCasero": {
+    "dificultad": "facil",
+    "apta": true,
+    "maceta": false,
+    "luz": "pleno-sol",
+    "agua": "moderado",
+    "suelo": "Bien drenado",
+    "clima": "Zonas altas de Panamá",
+    "notaCultivo": "Planta alta hasta 2m. Sembrar directo.",
+    "tiempoACosecha": "90-120 días"
+  },
+  "partesUsadas": [
+    "Frutos (semillas) secos"
+  ],
+  "resumen": "Carminativo y antiespasmódico digestivo avalado por EMA. Útil para flatulencia, cólicos y SII. No usar aceite esencial en EII.",
+  "usoTradicionalHistorico": "Infusión de semillas para cólicos, flatulencia y digestión, especialmente en niños.",
+  "nivelEvidenciaGlobal": "B",
+  "fuentePrimaria": "EMA/HMPC/137428/2006",
+  "grupoTerapeutico": "Carminativo, antiespasmódico digestivo",
+  "propiedades": "Carminativo, antiespasmódico, digestivo",
+  "fotoquimica": "Trans-anetol, fenchona",
+  "dolencias": [
+    "Espasmos gastrointestinales",
+    "Flatulencia",
+    "Síndrome de intestino irritable"
+  ],
+  "sistemas": [
+    "Digestivo"
+  ],
+  "modoEII": {
+    "aptaEnBrote": false,
+    "notaBrote": "Evitar en brotes agudos severos con diarrea. No usar aceite esencial.",
+    "aptaEnMantenimiento": true,
+    "notaMantenimiento": "Alivia síntomas dispépticos y flatulencia en remisión.",
+    "mecanismoEII": "El trans-anetol relaja músculo liso intestinal sin modificar la inflamación subyacente.",
+    "referenciaEII": "EMA/HMPC/137428/2006"
+  },
+  "modoCeliaquiaGluten": {
+    "libreDeGluten": true,
+    "nota": "Semillas naturalmente libres de gluten. Verificar contaminación cruzada.",
+    "indicacionEspecifica": "Seguro en celiaquía."
+  },
+  "usos": {
+    "interno": true,
+    "externo": false,
+    "culinario": true
+  },
+  "preparacion": "Machacar levemente 1.5 g semillas. Infundir en 200 ml agua caliente tapado 10 min.",
+  "contraindicaciones": "Alergia a Apiaceae. Obstrucción biliar, colangitis, enfermedades hepáticas. No usar aceite esencial en niños o prolongadamente.",
+  "interaccionesMedicamentosas": "Posible interferencia con CYP450 por aceite esencial. Bajo riesgo con semillas.",
+  "embarazoLactancia": "Seguro como especia culinaria. Evitar infusión medicinal en embarazo.",
+  "compatibilidadPlantas": {
+    "sinergicas": [],
+    "incompatibles": []
+  },
+  "infusionesRelacionadas": [],
+  "emoji": "🌿",
+  "etiquetas": [
+    "digestivo",
+    "carminativo",
+    "nivel-B",
+    "ema",
+    "cultivable-panama",
+    "disponible-panama"
+  ],
+  "fuentes": [
+    {
+      "autor": "EMA",
+      "titulo": "Community herbal monograph on Foeniculum vulgare Miller, fructus. EMA/HMPC/137428/2006",
+      "publicacion": "European Medicines Agency",
+      "año": "2007",
+      "doi": "",
+      "pmid": "",
+      "tipo": "Monografía",
+      "nivelEvidencia": "B",
+      "idioma": "en"
+    },
+    {
+      "autor": "Badgujar SB et al.",
+      "titulo": "Foeniculum vulgare Mill: A Review",
+      "publicacion": "BioMed Research International",
+      "año": "2014",
+      "doi": "10.1155/2014/842674",
+      "pmid": "25162032",
+      "tipo": "Revisión",
+      "nivelEvidencia": "C",
+      "idioma": "en"
+    }
+  ],
+  "advertencia": "No usar aceite esencial puro. Alergia cruzada con Apiaceae.",
+  "disclaimer": "Esta información es educativa y no sustituye el diagnóstico ni el tratamiento médico profesional."
+}

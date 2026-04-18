@@ -1,0 +1,123 @@
+{
+  "id": "aloe-vera",
+  "versionFicha": "2.0",
+  "estadoFicha": "publicada",
+  "fechaCreacion": "2026-04-16",
+  "fechaRevision": "2026-04-16",
+  "nombreComun": "Sábila",
+  "nombresAlternativos": [
+    "Aloe vera",
+    "Aloe barbadensis"
+  ],
+  "nombreCientifico": "Aloe vera (L.) Burm.f.",
+  "sinonimiasCientificas": [],
+  "familia": "Asphodelaceae",
+  "orden": "Asparagales",
+  "clase": "Liliopsida",
+  "regionOrigen": "África, Arabia",
+  "habitatNatural": "Zonas áridas y semiáridas",
+  "disponibilidadPanama": {
+    "disponible": true,
+    "nombreLocal": "Sábila",
+    "formaComercial": "Gel fresco, hojas, extractos",
+    "dondeConseguir": "Huertos familiares, jardines, viveros, mercados locales",
+    "cultivoLocal": true,
+    "endemicaPanama": false,
+    "notaRegional": "Cultivada ampliamente en Panamá"
+  },
+  "cultivoCasero": {
+    "dificultad": "muy-facil",
+    "apta": true,
+    "maceta": true,
+    "luz": "pleno-sol",
+    "agua": "poco",
+    "suelo": "Arenoso bien drenado",
+    "clima": "Excelente en Panamá",
+    "notaCultivo": "Propagar por hijuelos. Muy resistente.",
+    "tiempoACosecha": "Continuo"
+  },
+  "partesUsadas": [
+    "Gel de la hoja (pulpa interna). NUNCA el látex amarillo (aloína)."
+  ],
+  "resumen": "Planta de primer auxilio panameña. El gel (acemanano) tiene propiedades demulcentes y antiinflamatorias con ECA en colitis ulcerosa leve. SOLO gel transparente — nunca el látex amarillo.",
+  "usoTradicionalHistorico": "Uso popular del gel fresco como cicatrizante de heridas, quemaduras leves y para aliviar gastritis y colitis.",
+  "nivelEvidenciaGlobal": "B",
+  "fuentePrimaria": "EMA/HMPC/333042/2010",
+  "grupoTerapeutico": "Antiinflamatorio gastrointestinal, cicatrizante de mucosa",
+  "propiedades": "Antiinflamatorio, inmunomodulador, cicatrizante",
+  "fotoquimica": "Acemanano (polisacárido)",
+  "dolencias": [
+    "Colitis ulcerosa leve",
+    "Gastritis",
+    "Síndrome de intestino irritable"
+  ],
+  "sistemas": [
+    "Digestivo",
+    "Dermatológico"
+  ],
+  "modoEII": {
+    "aptaEnBrote": true,
+    "notaBrote": "GEL PURO apto en brote activo de EII. ECA Langmead 2004 lo avala. NUNCA usar el látex amarillo (aloína).",
+    "aptaEnMantenimiento": true,
+    "notaMantenimiento": "Excelente en remisión para colitis ulcerosa.",
+    "mecanismoEII": "El acemanano inhibe NF-κB y reduce IL-1β en mucosa colónica inflamada.",
+    "referenciaEII": "Langmead L et al. Aliment Pharmacol Ther. 2004;19(7):739-747. PMID: 15023164"
+  },
+  "modoCeliaquiaGluten": {
+    "libreDeGluten": true,
+    "nota": "Gel puro naturalmente libre de gluten. Verificar extractos comerciales.",
+    "indicacionEspecifica": "Seguro y beneficioso en celiaquía."
+  },
+  "usos": {
+    "interno": true,
+    "externo": true,
+    "culinario": false
+  },
+  "preparacion": "Gel fresco directo o en jugos/smoothies. Solo gel transparente.",
+  "contraindicaciones": "Alergia a Asphodelaceae. Obstrucción intestinal. Látex (aloína) contraindicado en EII.",
+  "interaccionesMedicamentosas": "Puede potenciar hipoglucemiantes. Gel puro tiene bajo riesgo.",
+  "embarazoLactancia": "Gel tópico seguro. Uso oral con precaución. Látex contraindicado.",
+  "compatibilidadPlantas": {
+    "sinergicas": [],
+    "incompatibles": []
+  },
+  "infusionesRelacionadas": [],
+  "emoji": "🌵",
+  "etiquetas": [
+    "digestivo",
+    "antiinflamatorio",
+    "cicatrizante",
+    "nivel-B",
+    "ema",
+    "apta-brote-eii",
+    "apta-eii",
+    "cultivable-panama",
+    "disponible-panama"
+  ],
+  "fuentes": [
+    {
+      "autor": "EMA",
+      "titulo": "Community herbal monograph on Aloe vera (L.) Burm. f., folii gel. EMA/HMPC/333042/2010",
+      "publicacion": "European Medicines Agency",
+      "año": "2012",
+      "doi": "",
+      "pmid": "",
+      "tipo": "Monografía",
+      "nivelEvidencia": "B",
+      "idioma": "en"
+    },
+    {
+      "autor": "Langmead L et al.",
+      "titulo": "Randomized, double-blind, placebo-controlled trial of oral aloe vera gel for active ulcerative colitis",
+      "publicacion": "Aliment Pharmacol Ther",
+      "año": "2004",
+      "doi": "10.1111/j.1365-2036.2004.01902.x",
+      "pmid": "15023164",
+      "tipo": "ECA",
+      "nivelEvidencia": "B",
+      "idioma": "en"
+    }
+  ],
+  "advertencia": "SOLO GEL TRANSPARENTE. El látex amarillo (aloína) está contraindicado en EII y embarazo.",
+  "disclaimer": "Esta información es educativa y no sustituye el diagnóstico ni el tratamiento médico profesional."
+}

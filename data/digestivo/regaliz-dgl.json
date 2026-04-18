@@ -1,0 +1,123 @@
+{
+  "id": "regaliz-dgl",
+  "versionFicha": "2.0",
+  "estadoFicha": "publicada",
+  "fechaCreacion": "2026-04-16",
+  "fechaRevision": "2026-04-16",
+  "nombreComun": "Regaliz DGL (deglicirrizado)",
+  "nombresAlternativos": [
+    "Licorice DGL"
+  ],
+  "nombreCientifico": "Glycyrrhiza glabra L.",
+  "sinonimiasCientificas": [],
+  "familia": "Fabaceae",
+  "orden": "Fabales",
+  "clase": "Magnoliopsida",
+  "regionOrigen": "Mediterráneo, Asia",
+  "habitatNatural": "Zonas templadas continentales",
+  "disponibilidadPanama": {
+    "disponible": true,
+    "nombreLocal": "Regaliz DGL",
+    "formaComercial": "Comprimidos masticables, cápsulas",
+    "dondeConseguir": "Tiendas de productos naturales, farmacias",
+    "cultivoLocal": false,
+    "endemicaPanama": false,
+    "notaRegional": "Suplemento importado. DISTINTO de regaliz-respiratorio (ID: regaliz-respiratorio)."
+  },
+  "cultivoCasero": {
+    "dificultad": "dificil",
+    "apta": false,
+    "maceta": false,
+    "luz": "",
+    "agua": "",
+    "suelo": "",
+    "clima": "No viable en Panamá",
+    "notaCultivo": "No recomendado",
+    "tiempoACosecha": "No aplica"
+  },
+  "partesUsadas": [
+    "Raíz desglicirrizinada (extracto estandarizado, <3% glicirricina)"
+  ],
+  "resumen": "Forma segura del regaliz sin glicirricina — sin hipertensión ni hipopotasemia. Protege mucosa gástrica. DISTINTO de regaliz-respiratorio.",
+  "usoTradicionalHistorico": "Alivio de acidez, gastritis y úlceras pépticas.",
+  "nivelEvidenciaGlobal": "B",
+  "fuentePrimaria": "DOI: 10.1002/ptr.2629",
+  "grupoTerapeutico": "Protector de mucosa gástrica",
+  "propiedades": "Cicatrizante de mucosa, aumenta secreción de moco, anti-H. pylori",
+  "fotoquimica": "Liquiritigenina, glabridina (flavonoides)",
+  "dolencias": [
+    "Úlceras gástricas y duodenales",
+    "Gastritis",
+    "Reflujo gastroesofágico"
+  ],
+  "sistemas": [
+    "Digestivo"
+  ],
+  "modoEII": {
+    "aptaEnBrote": false,
+    "notaBrote": "Sin indicación en brote activo. Útil para síntomas dispépticos asociados.",
+    "aptaEnMantenimiento": true,
+    "notaMantenimiento": "Beneficioso en EII con Crohn gastroduodenal o úlcera asociada a AINEs. Sin riesgo hipertensivo.",
+    "mecanismoEII": "Aumento de moco protector y flujo sanguíneo local. Sin efecto mineralocorticoide.",
+    "referenciaEII": "DOI: 10.1002/ptr.2629"
+  },
+  "modoCeliaquiaGluten": {
+    "libreDeGluten": true,
+    "nota": "Raíz y DGL libres de gluten. Verificar excipientes en formulaciones.",
+    "indicacionEspecifica": "Seguro en celiaquía."
+  },
+  "usos": {
+    "interno": true,
+    "externo": false,
+    "culinario": false
+  },
+  "preparacion": "Comprimidos masticables: MASTICAR completamente 20 min antes de comidas.",
+  "contraindicaciones": "Alergia a Fabaceae. Precaución en hipertensión, enfermedades renales, hepáticas o cardiovasculares.",
+  "interaccionesMedicamentosas": "Bajo potencial. Posible interferencia con antihipertensivos y diuréticos por trazas de glicirricina.",
+  "embarazoLactancia": "Desaconsejado por falta de estudios específicos.",
+  "compatibilidadPlantas": {
+    "sinergicas": [],
+    "incompatibles": [
+      {
+        "plantaId": "regaliz-respiratorio",
+        "plantaNom": "Regaliz respiratorio",
+        "motivo": "No combinar — misma planta en formas distintas"
+      }
+    ]
+  },
+  "infusionesRelacionadas": [],
+  "emoji": "🌱",
+  "etiquetas": [
+    "digestivo",
+    "protector-mucosa",
+    "nivel-B",
+    "dgl",
+    "disponible-panama"
+  ],
+  "fuentes": [
+    {
+      "autor": "",
+      "titulo": "Glycyrrhiza glabra (Licorice): A Review of Its Pharmacological and Clinical Effects",
+      "publicacion": "Phytotherapy Research",
+      "año": "",
+      "doi": "10.1002/ptr.2629",
+      "pmid": "",
+      "tipo": "Revisión",
+      "nivelEvidencia": "B",
+      "idioma": "en"
+    },
+    {
+      "autor": "",
+      "titulo": "Efficacy of Glycyrrhiza glabra on peptic ulcer disease: A systematic review and meta-analysis",
+      "publicacion": "Complementary Therapies in Clinical Practice",
+      "año": "2025",
+      "doi": "10.1016/j.ctcp.2025.101891",
+      "pmid": "",
+      "tipo": "Revisión Sistemática",
+      "nivelEvidencia": "B",
+      "idioma": "en"
+    }
+  ],
+  "advertencia": "DISTINTO del regaliz respiratorio. Masticar el comprimido antes de tragar.",
+  "disclaimer": "Esta información es educativa y no sustituye el diagnóstico ni el tratamiento médico profesional."
+}

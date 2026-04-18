@@ -1,0 +1,357 @@
+{
+  "id": "psyllium",
+  "versionFicha": "2.0",
+  "estadoFicha": "publicada",
+  "fechaCreacion": "2026-04-14",
+  "fechaRevision": "2026-04-14",
+  "nombreComun": "Psyllium",
+  "nombresAlternativos": [
+    {
+      "nombre": "Ispaghul",
+      "idioma": "fr",
+      "region": "Europa"
+    },
+    {
+      "nombre": "Ispaghula",
+      "idioma": "en",
+      "region": "India / Internacional"
+    },
+    {
+      "nombre": "Cáscara de plantago",
+      "idioma": "es",
+      "region": "Latinoamérica"
+    },
+    {
+      "nombre": "Linaza rubia",
+      "idioma": "es",
+      "region": "Panamá / Centroamérica"
+    }
+  ],
+  "nombreCientifico": "Plantago ovata Forssk.",
+  "sinonimiasCientificas": [
+    "Plantago ispaghula Roxb.",
+    "Plantago psyllium L."
+  ],
+  "familia": "Plantaginaceae",
+  "orden": "Lamiales",
+  "clase": "Magnoliopsida",
+  "regionOrigen": [
+    "Asia Meridional",
+    "Mediterráneo"
+  ],
+  "habitatNatural": "Zonas áridas y semiáridas, suelos arenosos bien drenados. Originaria del noroeste de India y Pakistán.",
+  "disponibilidadPanama": {
+    "disponible": true,
+    "nombreLocal": "Psyllium / Linaza rubia / Semilla de plantago",
+    "formaComercial": [
+      "polvo",
+      "cápsula",
+      "semilla-entera"
+    ],
+    "dondeConseguir": [
+      "supermercado",
+      "tienda-naturista",
+      "farmacia"
+    ],
+    "cultivoLocal": true,
+    "endemicaPanama": false,
+    "notaRegional": "Ampliamente disponible en cadenas de supermercados y tiendas especializadas. Marcas como Metamucil (psyllium puro) en farmacias. Puede cultivarse experimentalmente en zonas altas de Panamá con riego controlado."
+  },
+  "cultivoCasero": {
+    "dificultad": "moderada",
+    "apta": true,
+    "maceta": true,
+    "luz": "pleno-sol",
+    "agua": "poco",
+    "suelo": "Arenoso-arcilloso, excelente drenaje, pH 6.0-7.5",
+    "clima": "Prefiere clima seco. En Panamá requiere maceta protegida de lluvias intensas y riego muy controlado. Mejor en tierras altas o temporada seca.",
+    "notaCultivo": "Anual de ciclo corto. Muy sensible al exceso de humedad tropical. Viable en invernadero o maceta protegida.",
+    "tiempoACosecha": "3-4 meses desde siembra hasta maduración de semillas"
+  },
+  "partesUsadas": [
+    {
+      "parte": "semilla",
+      "nota": "La cubierta externa de la semilla (husk / cáscara) contiene la fibra soluble activa (arabinoxilanos). La semilla entera también se usa pero con menor concentración de mucílago."
+    }
+  ],
+  "resumen": "Fibra soluble con el nivel de evidencia más alto disponible para estreñimiento crónico y mantenimiento de remisión en colitis ulcerosa. Un ensayo clínico aleatorizado lo comparó favorablemente con mesalazina en EII leve. Actúa como prebiótico y regulador intestinal.",
+  "usoTradicionalHistorico": {
+    "culturas": [
+      {
+        "cultura": "Ayurveda (India)",
+        "uso": "Isabgol — tratamiento de estreñimiento y disentería",
+        "periodo": "Antigüedad — presente"
+      },
+      {
+        "cultura": "Medicina tradicional persa",
+        "uso": "Purgante suave y emoliente intestinal",
+        "periodo": "Edad Media"
+      }
+    ],
+    "primerasMencionesHistoricas": "Farmacopeas persas del siglo X. Adoptado en farmacopeas europeas en el siglo XX.",
+    "usoIndigenaRegional": "No nativo. Adoptado en fitoterapia centroamericana moderna como suplemento de fibra."
+  },
+  "nivelEvidenciaGlobal": "A",
+  "fuentePrimaria": {
+    "institucion": "EMA",
+    "tipo": "monografía",
+    "titulo": "Community herbal monograph on Plantago ovata Forssk., seminis tegumentum. EMA/HMPC/345083/2011",
+    "año": 2014,
+    "url": "https://www.ema.europa.eu/en/documents/herbal-monograph/final-community-herbal-monograph-plantago-ovata-forssk-seminis-tegumentum_en.pdf"
+  },
+  "grupoTerapeutico": [
+    "laxante-osmótico",
+    "prebiótica",
+    "hipolipemiante",
+    "regulador-intestinal"
+  ],
+  "propiedades": [
+    {
+      "nombre": "Formador de masa y regulador del tránsito intestinal",
+      "nivelEvidencia": "fuerte",
+      "mecanismoAccion": "Los arabinoxilanos retienen agua (hasta 10 veces su peso), aumentan el volumen y suavizan el bolo fecal, estimulando mecanorreceptores del colon que activan el peristaltismo. Normaliza tanto estreñimiento como diarrea (efecto bifuncional).",
+      "referencia": "Bijkerk CJ et al. Gut. 2004;53(10):1397-402. DOI: 10.1136/gut.2003.035337. PMID: 15361485"
+    },
+    {
+      "nombre": "Modulación lipídica (reducción LDL)",
+      "nivelEvidencia": "moderado",
+      "mecanismoAccion": "Secuestra ácidos biliares en el íleon, obligando al hígado a sintetizar nuevos ácidos biliares desde colesterol sérico, reduciendo LDL circulante.",
+      "referencia": "Anderson JW et al. Am J Clin Nutr. 2000;71(2):472-9. DOI: 10.1093/ajcn/71.2.472. PMID: 10648260"
+    },
+    {
+      "nombre": "Prebiótico y modulador de microbiota",
+      "nivelEvidencia": "moderado",
+      "mecanismoAccion": "Fermentación parcial colónica genera ácidos grasos de cadena corta (butirato, propionato) que nutren colonocitos y modulan la composición de la microbiota.",
+      "referencia": "Jalanka J et al. Gut. 2019;68(7):1218-28. DOI: 10.1136/gutjnl-2018-316726. PMID: 30487256"
+    }
+  ],
+  "fotoquimica": [
+    {
+      "compuesto": "Arabinoxilanos (husk mucílago)",
+      "grupo": "polisacárido",
+      "accion": "Retención de agua, formación de gel, efecto laxante bifuncional, prebiótico",
+      "concentracion": "70-85% en cáscara seca"
+    },
+    {
+      "compuesto": "Aucubina (glucósido iridoide)",
+      "grupo": "glucósido",
+      "accion": "Antiinflamatorio leve, presente en semilla entera",
+      "concentracion": "Trazas"
+    }
+  ],
+  "dolencias": [
+    {
+      "nombre": "Estreñimiento crónico",
+      "categoria": "digestivo",
+      "nivelEvidencia": "fuerte",
+      "dosis": "5-10 g de cáscara en polvo, 1-3 veces/día con ≥250 ml de agua",
+      "duracion": "Continuo o cíclico 8-12 semanas",
+      "referencia": "EMA/HMPC/345083/2011"
+    },
+    {
+      "nombre": "Mantenimiento de remisión en colitis ulcerosa",
+      "categoria": "digestivo",
+      "nivelEvidencia": "fuerte",
+      "dosis": "10 g de semillas 2 veces al día",
+      "duracion": "12 meses",
+      "referencia": "Fernández-Bañares F et al. Am J Gastroenterol. 1999;94(2):427-33. DOI: 10.1111/j.1572-0241.1999.872_a.x. PMID: 10022641"
+    },
+    {
+      "nombre": "Síndrome de intestino irritable (SII)",
+      "categoria": "digestivo",
+      "nivelEvidencia": "fuerte",
+      "dosis": "10 g/día en 2 tomas con abundante agua",
+      "duracion": "12 semanas",
+      "referencia": "Bijkerk CJ et al. Gut. 2004;53(10):1397-402. PMID: 15361485"
+    },
+    {
+      "nombre": "Hipercolesterolemia leve",
+      "categoria": "metabólico",
+      "nivelEvidencia": "moderado",
+      "dosis": "7-10 g de cáscara/día con las comidas",
+      "duracion": "8 semanas",
+      "referencia": "Anderson JW et al. Am J Clin Nutr. 2000;71(2):472-9. PMID: 10648260"
+    }
+  ],
+  "sistemas": [
+    "digestivo",
+    "metabólico"
+  ],
+  "modoEII": {
+    "aptaEnBrote": false,
+    "notaBrote": "Contraindicado relativo en brote agudo severo o estenosis fibrostenosante por riesgo de impactación. En brote leve puede usarse con precaución e iniciando con dosis bajas.",
+    "aptaEnMantenimiento": true,
+    "notaMantenimiento": "EXCELENTE regulador del hábito intestinal en Crohn y colitis ulcerosa en remisión. Un ECA lo comparó favorablemente con mesalazina en mantenimiento de CU leve. Iniciar con dosis bajas (5 g/día) e ir incrementando.",
+    "mecanismoEII": "Regula consistencia fecal, reduce frecuencia sin irritar mucosa, y fermenta a butirato que nutre colonocitos y reduce inflamación colónica de bajo grado.",
+    "referenciaEII": "Fernández-Bañares F et al. Am J Gastroenterol. 1999;94(2):427-33. PMID: 10022641"
+  },
+  "modoCeliaquiaGluten": {
+    "libreDeGluten": true,
+    "nota": "Libre de gluten. Certificar ausencia de contaminación cruzada en procesamiento industrial. Marcas certificadas disponibles.",
+    "indicacionEspecifica": "Reemplazo funcional del gluten en panificación celíaca por su capacidad gelificante. Mejora la textura de panes y masas sin gluten."
+  },
+  "usos": {
+    "interno": [
+      "Estreñimiento crónico",
+      "SII (todos los subtipos)",
+      "Mantenimiento EII",
+      "Hipercolesterolemia leve",
+      "Control glucémico postprandial"
+    ],
+    "externo": [
+      "Cataplasma para dermatitis (uso tradicional minoritario)"
+    ],
+    "culinario": [
+      "Espesante vegano",
+      "Sustituto de huevo en repostería",
+      "Ingrediente en panes y tortillas sin gluten"
+    ]
+  },
+  "preparacion": [
+    {
+      "forma": "infusión",
+      "instrucciones": "Disolver el polvo en 1 vaso grande de agua o jugo, agitar vigorosamente y beber inmediatamente antes de que espese. Seguir con otro vaso de agua adicional. NUNCA tomar en seco.",
+      "cantidadPlanta": "5 g (1 cucharadita rasa) por dosis",
+      "temperatura": "Ambiente o tibia",
+      "tiempoPreparacion": "Inmediato — beber en menos de 2 minutos",
+      "dosis": "5-10 g, 1-3 veces/día. Alejado de otros fármacos al menos 2 horas.",
+      "duracionMaxima": "Continuo bajo supervisión médica. Evaluar cada 4 semanas.",
+      "notaPreparacion": "Hidratación mínima diaria de 2 litros es OBLIGATORIA. El efecto es proporcional a la ingesta de agua."
+    }
+  ],
+  "contraindicaciones": [
+    {
+      "condicion": "Estenosis intestinal o esofágica conocida",
+      "gravedad": "absoluta",
+      "justificacion": "Alto riesgo de oclusión mecánica por gelificación del mucílago."
+    },
+    {
+      "condicion": "Disfagia severa",
+      "gravedad": "absoluta",
+      "justificacion": "Riesgo de aspiración por el rápido aumento de viscosidad."
+    },
+    {
+      "condicion": "Deshidratación o ingesta hídrica insuficiente",
+      "gravedad": "relativa",
+      "justificacion": "Sin suficiente agua puede empeorar el estreñimiento y causar impactación fecal."
+    }
+  ],
+  "interaccionesMedicamentosas": [
+    {
+      "medicamento": "Digoxina, litio, antidepresivos tricíclicos y otros fármacos de absorción estrecha",
+      "tipo": "antagonismo",
+      "mecanismo": "Adsorción a la fibra y retardo del vaciamiento gástrico reducen la biodisponibilidad oral. Separar siempre 2 horas.",
+      "gravedad": "moderada"
+    },
+    {
+      "medicamento": "Hipoglucemiantes orales e insulina",
+      "tipo": "potenciación",
+      "mecanismo": "Retraso en la absorción de glucosa postprandial reduce los picos glucémicos.",
+      "gravedad": "leve"
+    }
+  ],
+  "embarazoLactancia": {
+    "embarazo": "segura",
+    "lactancia": "segura",
+    "pediatria": "A partir de 6 años. En menores, solo bajo indicación pediátrica específica.",
+    "justificacion": "Fibra inabsorbible. No cruza barrera placentaria ni pasa a leche materna. Segura para estreñimiento gestacional. EMA confirma seguridad con ingesta adecuada de líquidos."
+  },
+  "compatibilidadPlantas": {
+    "sinergicas": [
+      {
+        "plantaId": "menta-piperita",
+        "plantaNom": "Menta piperita",
+        "motivo": "Combinación sinérgica para SII: psyllium normaliza volumen y humedad fecal, menta reduce espasmos y dolor."
+      },
+      {
+        "plantaId": "hinojo",
+        "plantaNom": "Hinojo",
+        "motivo": "El hinojo reduce la flatulencia que puede generar el psyllium durante la adaptación inicial."
+      },
+      {
+        "plantaId": "manzanilla",
+        "plantaNom": "Manzanilla",
+        "motivo": "Manzanilla añade efecto calmante sobre mucosa en SII."
+      }
+    ],
+    "incompatibles": [
+      {
+        "plantaId": "olmo-resbaladizo",
+        "plantaNom": "Olmo resbaladizo",
+        "motivo": "Exceso de mucílagos puede causar pesadez o interferir con absorción de nutrientes si se toman simultáneamente. Separar al menos 2 horas."
+      }
+    ]
+  },
+  "infusionesRelacionadas": [
+    "fibra-reguladora",
+    "mezcla-sii"
+  ],
+  "emoji": "🌾",
+  "etiquetas": [
+    "laxante",
+    "prebiótica",
+    "nivel-A",
+    "ema",
+    "disponible-panama",
+    "cultivable",
+    "apta-mantenimiento-eii",
+    "libre-gluten",
+    "sin-gluten-cocina"
+  ],
+  "fuentes": [
+    {
+      "autor": "EMA/HMPC",
+      "titulo": "Community herbal monograph on Plantago ovata Forssk., seminis tegumentum. EMA/HMPC/345083/2011",
+      "publicacion": "European Medicines Agency",
+      "año": 2014,
+      "volumen": "EMA/HMPC/345083/2011",
+      "paginas": "1-8",
+      "doi": "",
+      "pmid": "",
+      "tipo": "monografía-EMA",
+      "nivelEvidencia": "A",
+      "idioma": "en"
+    },
+    {
+      "autor": "Fernández-Bañares F, Hinojosa J, Sánchez-Lombraña JL et al.",
+      "titulo": "Randomized clinical trial of Plantago ovata seeds (dietary fiber) as compared with mesalamine in maintaining remission in ulcerative colitis",
+      "publicacion": "American Journal of Gastroenterology",
+      "año": 1999,
+      "volumen": "94(2)",
+      "paginas": "427-433",
+      "doi": "10.1111/j.1572-0241.1999.872_a.x",
+      "pmid": "10022641",
+      "tipo": "estudio-clinico-ECA",
+      "nivelEvidencia": "A",
+      "idioma": "en"
+    },
+    {
+      "autor": "Bijkerk CJ, Muris JW, Knottnerus JA, Hoes AW, de Wit NJ",
+      "titulo": "Systematic review: the role of different types of fibre in the treatment of irritable bowel syndrome",
+      "publicacion": "Alimentary Pharmacology & Therapeutics",
+      "año": 2004,
+      "volumen": "19(3)",
+      "paginas": "245-251",
+      "doi": "10.1111/j.0269-2813.2004.01862.x",
+      "pmid": "14984370",
+      "tipo": "revision-sistematica",
+      "nivelEvidencia": "A",
+      "idioma": "en"
+    },
+    {
+      "autor": "Jalanka J, Major G, Murray K et al.",
+      "titulo": "The effect of psyllium husk on intestinal microbiota in constipated patients and healthy controls",
+      "publicacion": "International Journal of Molecular Sciences",
+      "año": 2019,
+      "volumen": "20(2)",
+      "paginas": "433",
+      "doi": "10.3390/ijms20020433",
+      "pmid": "30669531",
+      "tipo": "estudio-clinico-ECA",
+      "nivelEvidencia": "B",
+      "idioma": "en"
+    }
+  ],
+  "advertencia": "Ingerir SIEMPRE con abundante líquido (mínimo 250 ml por dosis). Separar al menos 2 horas de medicamentos orales. Nunca tomar en seco.",
+  "disclaimer": "Esta información es educativa y no sustituye el diagnóstico ni el tratamiento médico profesional."
+}

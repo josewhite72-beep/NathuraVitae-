@@ -1,0 +1,320 @@
+{
+  "id": "fumaria",
+  "versionFicha": "2.0",
+  "estadoFicha": "publicada",
+  "fechaCreacion": "2026-04-14",
+  "fechaRevision": "2026-04-14",
+  "nombreComun": "Fumaria",
+  "nombresAlternativos": [
+    {
+      "nombre": "Fumitory",
+      "idioma": "en",
+      "region": "Europa"
+    },
+    {
+      "nombre": "Palomilla",
+      "idioma": "es",
+      "region": "España"
+    },
+    {
+      "nombre": "Hierba de la sangre",
+      "idioma": "es",
+      "region": "América / España"
+    }
+  ],
+  "nombreCientifico": "Fumaria officinalis L.",
+  "sinonimiasCientificas": [
+    "Fumaria vaillantii Loisel."
+  ],
+  "familia": "Papaveraceae",
+  "orden": "Ranunculales",
+  "clase": "Magnoliopsida",
+  "regionOrigen": [
+    "Europa",
+    "Norte de África",
+    "Asia Occidental"
+  ],
+  "habitatNatural": "Campos cultivados, bordes de caminos y terrenos nitrogenados perturbados. Planta arvense común en Europa.",
+  "disponibilidadPanama": {
+    "disponible": false,
+    "nombreLocal": "Fumaria",
+    "formaComercial": [
+      "seca",
+      "cápsula"
+    ],
+    "dondeConseguir": [
+      "importación"
+    ],
+    "cultivoLocal": false,
+    "endemicaPanama": false,
+    "notaRegional": "Prácticamente no comercializada en Panamá. Disponible solo por importación especializada o pedidos internacionales. No cultivable en clima tropical panameño."
+  },
+  "cultivoCasero": {
+    "dificultad": "dificil",
+    "apta": false,
+    "maceta": false,
+    "luz": "semisombra",
+    "agua": "poco",
+    "suelo": "Franco-calizo, bien drenado, pH alcalino",
+    "clima": "Prefiere climas templados-fríos de Europa. No tolera calor húmedo tropical.",
+    "notaCultivo": "No viable en Panamá. Requiere estaciones marcadas para germinación y desarrollo.",
+    "tiempoACosecha": "3-4 meses"
+  },
+  "partesUsadas": [
+    {
+      "parte": "flor",
+      "nota": "Partes aéreas en floración secas. Contiene alcaloides isoquinolínicos de acción espasmolítica."
+    }
+  ],
+  "resumen": "Planta colagoga y espasmolítica biliar con uso documentado en la Comisión E alemana y la EMA para dispepsia y trastornos hepatobiliares leves. Su perfil alcaloidico le confiere acción sobre músculo liso biliar. Limitada disponibilidad en Panamá.",
+  "usoTradicionalHistorico": {
+    "culturas": [
+      {
+        "cultura": "Herboristería medieval europea (Escuela de Salerno)",
+        "uso": "Ictericia, eccema y melancolía. Depurativo sanguíneo.",
+        "periodo": "Siglos XII-XVI"
+      },
+      {
+        "cultura": "Medicina popular española y latinoamericana",
+        "uso": "Purificador hepático y digestivo",
+        "periodo": "Siglo XIX–XX"
+      }
+    ],
+    "primerasMencionesHistoricas": "Escuela de Salerno (siglo XII). Mattioli y Fuchs en herbarios del siglo XVI.",
+    "usoIndigenaRegional": "Sin uso documentado en pueblos indígenas panameños o centroamericanos."
+  },
+  "nivelEvidenciaGlobal": "C",
+  "fuentePrimaria": {
+    "institucion": "EMA",
+    "tipo": "monografía",
+    "titulo": "Community herbal monograph on Fumaria officinalis L., herba. EMA/HMPC/150396/2010",
+    "año": 2011,
+    "url": "https://www.ema.europa.eu/en/documents/herbal-monograph/final-community-herbal-monograph-fumaria-officinalis-l-herba_en.pdf"
+  },
+  "grupoTerapeutico": [
+    "colagoga",
+    "espasmolítica",
+    "depurativa"
+  ],
+  "propiedades": [
+    {
+      "nombre": "Espasmolítica biliar y digestiva",
+      "nivelEvidencia": "tradicional",
+      "mecanismoAccion": "La protopina y fumarina bloquean canales de calcio dependientes de voltaje en músculo liso del esfínter de Oddi y tubo digestivo, reduciendo el espasmo biliar y la hipertonía intestinal.",
+      "referencia": "EMA/HMPC/150396/2010. Community herbal monograph. 2011."
+    },
+    {
+      "nombre": "Colagoga (estimulante biliar)",
+      "nivelEvidencia": "tradicional",
+      "mecanismoAccion": "Los alcaloides estimulan la secreción y flujo de bilis desde la vesícula biliar hacia el duodeno, mejorando la digestión de grasas.",
+      "referencia": "Blumenthal M et al. The Complete German Commission E Monographs. American Botanical Council. 1998. p.156-158."
+    },
+    {
+      "nombre": "Hepatoprotectora leve",
+      "nivelEvidencia": "preliminar",
+      "mecanismoAccion": "Inducción moderada de enzimas de fase II hepáticas y actividad antioxidante flavonoidal.",
+      "referencia": "EMA/HMPC/150396/2010"
+    }
+  ],
+  "fotoquimica": [
+    {
+      "compuesto": "Protopina",
+      "grupo": "alcaloide",
+      "accion": "Espasmolítica, anticolinérgica débil, relajante de músculo liso biliar",
+      "concentracion": "0.4-0.6%"
+    },
+    {
+      "compuesto": "Fumarina",
+      "grupo": "alcaloide",
+      "accion": "Modulación del flujo biliar, hipotensora leve",
+      "concentracion": "0.1-0.2%"
+    },
+    {
+      "compuesto": "Criptopina",
+      "grupo": "alcaloide",
+      "accion": "Antiespasmódica complementaria",
+      "concentracion": "Trazas"
+    }
+  ],
+  "dolencias": [
+    {
+      "nombre": "Dispepsia biliar y espasmos digestivos leves",
+      "categoria": "digestivo",
+      "nivelEvidencia": "tradicional",
+      "dosis": "2-4 g de planta seca en infusión, 3 veces/día antes de comidas",
+      "duracion": "2-3 semanas",
+      "referencia": "EMA/HMPC/150396/2010"
+    },
+    {
+      "nombre": "Eccema crónico leve (uso oral coadyuvante)",
+      "categoria": "dermatológico",
+      "nivelEvidencia": "tradicional",
+      "dosis": "Extracto fluido 10-20 gotas, 2-3 veces/día",
+      "duracion": "4 semanas",
+      "referencia": "Blumenthal M et al. Commission E Monographs. 1998."
+    }
+  ],
+  "sistemas": [
+    "digestivo",
+    "hepático",
+    "dermatológico"
+  ],
+  "modoEII": {
+    "aptaEnBrote": false,
+    "notaBrote": "No indicada en brote activo. La estimulación biliar puede aumentar el flujo de ácidos biliares hacia el colon inflamado.",
+    "aptaEnMantenimiento": false,
+    "notaMantenimiento": "No recomendada como tratamiento de base en EII por falta de evidencia clínica directa y perfil alcaloidico activo.",
+    "mecanismoEII": "Sin evidencia específica en EII.",
+    "referenciaEII": "Sin estudios clínicos específicos en EII."
+  },
+  "modoCeliaquiaGluten": {
+    "libreDeGluten": true,
+    "nota": "Libre de gluten. Sin indicación primaria en celiaquía.",
+    "indicacionEspecifica": "Puede usarse en dispepsia biliar funcional asociada a celiaquía, pero sin indicación primaria."
+  },
+  "usos": {
+    "interno": [
+      "Dispepsia biliar",
+      "Espasmos digestivos",
+      "Depuración hepática suave"
+    ],
+    "externo": [
+      "Lociones para eccema y dermatitis (uso tradicional)"
+    ],
+    "culinario": [
+      "Ninguno. Amargor intenso y alcaloides la hacen inadecuada para consumo."
+    ]
+  },
+  "preparacion": [
+    {
+      "forma": "infusión",
+      "instrucciones": "Infusionar la planta seca en agua caliente. Filtrar cuidadosamente. Tomar antes de las comidas.",
+      "cantidadPlanta": "2-3 g de planta seca",
+      "temperatura": "95°C",
+      "tiempoPreparacion": "10 minutos tapado",
+      "dosis": "1 taza, 3 veces al día, 15 minutos antes de comidas",
+      "duracionMaxima": "3 semanas. No superar sin supervisión médica.",
+      "notaPreparacion": "No exceder la dosis por el contenido en alcaloides. Suspender si aparecen náuseas, mareo o hipotensión."
+    }
+  ],
+  "contraindicaciones": [
+    {
+      "condicion": "Embarazo y lactancia",
+      "gravedad": "absoluta",
+      "justificacion": "Alcaloides isoquinolínicos con potencial efecto uterotónico. Sin datos de seguridad en gestación ni lactancia."
+    },
+    {
+      "condicion": "Obstrucción biliar",
+      "gravedad": "absoluta",
+      "justificacion": "El efecto colagogo puede agravar la obstrucción."
+    },
+    {
+      "condicion": "Menores de 18 años",
+      "gravedad": "relativa",
+      "justificacion": "Sin datos de seguridad en pediatría."
+    },
+    {
+      "condicion": "Hipotensión arterial",
+      "gravedad": "precaución",
+      "justificacion": "La fumarina puede causar hipotensión leve."
+    }
+  ],
+  "interaccionesMedicamentosas": [
+    {
+      "medicamento": "Antihipertensivos",
+      "tipo": "potenciación",
+      "mecanismo": "La fumarina puede potenciar el efecto hipotensor.",
+      "gravedad": "leve"
+    },
+    {
+      "medicamento": "Fármacos hepatotóxicos",
+      "tipo": "precaución",
+      "mecanismo": "Sobrecarga potencial de las vías metabólicas hepáticas por metabolismo de alcaloides.",
+      "gravedad": "leve"
+    },
+    {
+      "medicamento": "Sedantes del SNC",
+      "tipo": "potenciación",
+      "mecanismo": "Los alcaloides pueden potenciar levemente efectos depresores.",
+      "gravedad": "leve"
+    }
+  ],
+  "embarazoLactancia": {
+    "embarazo": "contraindicada",
+    "lactancia": "contraindicada",
+    "pediatria": "Contraindicada en menores de 18 años",
+    "justificacion": "Alcaloides con perfil farmacológico activo sin datos de seguridad en gestación, lactancia ni pediatría."
+  },
+  "compatibilidadPlantas": {
+    "sinergicas": [
+      {
+        "plantaId": "alcachofa",
+        "plantaNom": "Alcachofa",
+        "motivo": "Combinación clásica europea para dispepsia biliar. Potencian secreción biliar y relajan espasmos de forma complementaria."
+      }
+    ],
+    "incompatibles": [
+      {
+        "plantaId": "olmo-resbaladizo",
+        "plantaNom": "Olmo resbaladizo",
+        "motivo": "El efecto demulcente del olmo puede interferir con la absorción de los alcaloides activos de la fumaria si se toman simultáneamente."
+      }
+    ]
+  },
+  "infusionesRelacionadas": [
+    "mezcla-colagogica",
+    "depurativa-higado"
+  ],
+  "emoji": "🌸",
+  "etiquetas": [
+    "colagoga",
+    "espasmolítica",
+    "nivel-C",
+    "ema",
+    "no-disponible-panama",
+    "no-cultivable-panama",
+    "no-apta-eii",
+    "libre-gluten"
+  ],
+  "fuentes": [
+    {
+      "autor": "EMA/HMPC",
+      "titulo": "Community herbal monograph on Fumaria officinalis L., herba. EMA/HMPC/150396/2010",
+      "publicacion": "European Medicines Agency",
+      "año": 2011,
+      "volumen": "EMA/HMPC/150396/2010",
+      "paginas": "1-7",
+      "doi": "",
+      "pmid": "",
+      "tipo": "monografía-EMA",
+      "nivelEvidencia": "C",
+      "idioma": "en"
+    },
+    {
+      "autor": "Blumenthal M, Busse WR, Goldberg A et al.",
+      "titulo": "The Complete German Commission E Monographs: Therapeutic Guide to Herbal Medicines",
+      "publicacion": "American Botanical Council, Austin TX",
+      "año": 1998,
+      "volumen": "",
+      "paginas": "156-158",
+      "isbn": "978-0965555500",
+      "tipo": "comision-e",
+      "nivelEvidencia": "C",
+      "idioma": "en"
+    },
+    {
+      "autor": "Hentschel C, Dippel M, Richter G, Kraft B",
+      "titulo": "Fumaria officinalis (fumitory) — clinical applications",
+      "publicacion": "Fortschritte der Medizin",
+      "año": 1995,
+      "volumen": "113(15)",
+      "paginas": "291-293",
+      "pmid": "7672742",
+      "tipo": "estudio-clinico",
+      "nivelEvidencia": "C",
+      "idioma": "de"
+    }
+  ],
+  "advertencia": "Contraindicada en embarazo y lactancia. Contiene alcaloides activos. Respetar estrictamente dosis y duración máxima. Puede causar hipotensión leve.",
+  "disclaimer": "Esta información es educativa y no sustituye el diagnóstico ni el tratamiento médico profesional."
+}

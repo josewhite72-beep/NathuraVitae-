@@ -1,0 +1,383 @@
+{
+  "id": "menta-piperita",
+  "versionFicha": "2.0",
+  "estadoFicha": "publicada",
+  "fechaCreacion": "2026-04-14",
+  "fechaRevision": "2026-04-14",
+  "nombreComun": "Menta piperita",
+  "nombresAlternativos": [
+    {
+      "nombre": "Peppermint",
+      "idioma": "en",
+      "region": "Internacional"
+    },
+    {
+      "nombre": "Hierbabuena piperita",
+      "idioma": "es",
+      "region": "Latinoamérica"
+    },
+    {
+      "nombre": "Menthol mint",
+      "idioma": "en",
+      "region": "Comercial"
+    }
+  ],
+  "nombreCientifico": "Mentha × piperita L.",
+  "sinonimiasCientificas": [
+    "Mentha balsamea Willd.",
+    "Mentha officinalis Sole"
+  ],
+  "familia": "Lamiaceae",
+  "orden": "Lamiales",
+  "clase": "Magnoliopsida",
+  "regionOrigen": [
+    "Europa",
+    "Asia Occidental"
+  ],
+  "habitatNatural": "Humedales, riberas y suelos frescos. Planta estéril de hibridación natural (Mentha aquatica × Mentha spicata). Se propaga exclusivamente por estolones.",
+  "disponibilidadPanama": {
+    "disponible": true,
+    "nombreLocal": "Menta / Hierbabuena fuerte / Menta piperita",
+    "formaComercial": [
+      "fresca",
+      "seca",
+      "té-empacado",
+      "aceite-esencial",
+      "cápsula"
+    ],
+    "dondeConseguir": [
+      "supermercado",
+      "mercado-público",
+      "tienda-naturista",
+      "farmacia",
+      "cultivo-propio"
+    ],
+    "cultivoLocal": true,
+    "endemicaPanama": false,
+    "notaRegional": "Extremadamente común y fácil de conseguir en todo Panamá. Fresca en mercados y huertos caseros. Té empacado en todos los supermercados. Aceite esencial en tiendas naturistas y farmacias."
+  },
+  "cultivoCasero": {
+    "dificultad": "muy-facil",
+    "apta": true,
+    "maceta": true,
+    "luz": "semisombra",
+    "agua": "moderado",
+    "suelo": "Húmedo, rico en materia orgánica, tolera variados tipos de suelo",
+    "clima": "Se adapta perfectamente al clima tropical panameño. Requiere protección del sol directo intenso en verano.",
+    "notaCultivo": "Planta invasora. Mejor en maceta para controlar su expansión. Propagar por esquejes de tallo. Riego frecuente mantiene alto contenido de mentol. Podar frecuentemente para evitar que florezca (la floración reduce el contenido en aceite esencial).",
+    "tiempoACosecha": "Poda continua a partir de las 6-8 semanas"
+  },
+  "partesUsadas": [
+    {
+      "parte": "hoja",
+      "nota": "Hojas frescas o secas para infusión. Aceite esencial destilado, estandarizado en L-mentol (≥44%), para uso terapéutico en cápsulas gastroresistentes."
+    }
+  ],
+  "resumen": "La menta piperita tiene el nivel de evidencia más alto disponible para el síndrome de intestino irritable. El aceite esencial recubierto entérico es superior al placebo en múltiples metaanálisis, reduciendo dolor abdominal, espasmos y distensión. Espasmolítico de referencia en fitoterapia digestiva.",
+  "usoTradicionalHistorico": {
+    "culturas": [
+      {
+        "cultura": "Medicina europea (siglos XVIII-XIX)",
+        "uso": "Carminativo, analgésico abdominal, refrescante y antinauseoso",
+        "periodo": "Siglo XVIII — presente"
+      },
+      {
+        "cultura": "Medicina tradicional japonesa y china",
+        "uso": "Bòhé — regulación del flujo Qi, alivio de distensión y cefalea",
+        "periodo": "Milenaria — presente"
+      },
+      {
+        "cultura": "Medicina popular panameña y centroamericana",
+        "uso": "Infusión de hojas para digestión, gases y náuseas",
+        "periodo": "Siglo XIX — presente"
+      }
+    ],
+    "primerasMencionesHistoricas": "Linnaeus describió Mentha × piperita en 1753. Adoptada rápidamente en farmacopeas europeas del siglo XIX.",
+    "usoIndigenaRegional": "Ampliamente cultivada y usada en infusiones en toda Panamá. Nombre local 'hierbabuena fuerte' para distinguirla de Mentha spicata (hierbabuena común)."
+  },
+  "nivelEvidenciaGlobal": "A",
+  "fuentePrimaria": {
+    "institucion": "EMA",
+    "tipo": "monografía",
+    "titulo": "Community herbal monograph on Mentha × piperita L., aetheroleum. EMA/HMPC/203217/2013",
+    "año": 2014,
+    "url": "https://www.ema.europa.eu/en/documents/herbal-monograph/final-community-herbal-monograph-mentha-x-piperita-l-aetheroleum_en.pdf"
+  },
+  "grupoTerapeutico": [
+    "antiespasmódica",
+    "carminativa",
+    "analgésica",
+    "procinética-relajante"
+  ],
+  "propiedades": [
+    {
+      "nombre": "Relajación de músculo liso gastrointestinal",
+      "nivelEvidencia": "fuerte",
+      "mecanismoAccion": "El L-mentol bloquea canales de calcio dependientes de voltaje (VGCC) en el músculo liso intestinal. Adicionalmente, actúa como agonista de canales TRPM8 (termosensores fríos) en terminaciones nerviosas entéricas, reduciendo la excitabilidad neuronal y la contractilidad espástica del colon.",
+      "referencia": "Ford AC et al. BMJ. 2008;337:a2313. DOI: 10.1136/bmj.a2313. PMID: 18827108"
+    },
+    {
+      "nombre": "Modulación de la percepción visceral (analgesia visceral)",
+      "nivelEvidencia": "moderado",
+      "mecanismoAccion": "El agonismo de canales TRPM8 en terminaciones nerviosas vagales aferentes reduce la señal de dolor visceral (hipoalgesia visceral), disminuyendo la hipersensibilidad intestinal característica del SII.",
+      "referencia": "Alammar N et al. BMC Complement Altern Med. 2019;19(1):21. DOI: 10.1186/s12906-018-2409-0. PMID: 30654773"
+    },
+    {
+      "nombre": "Carminativa",
+      "nivelEvidencia": "fuerte",
+      "mecanismoAccion": "Reduce la fermentación bacteriana intestinal y facilita la expulsión de gases mediante relajación del esfínter anal interno y el músculo liso colónico.",
+      "referencia": "EMA/HMPC/203217/2013"
+    }
+  ],
+  "fotoquimica": [
+    {
+      "compuesto": "L-Mentol",
+      "grupo": "terpenoide",
+      "accion": "Espasmolítico (bloqueo VGCC), analgésico visceral (agonista TRPM8), antimicrobiano leve, carminativo",
+      "concentracion": "35-55% en aceite esencial"
+    },
+    {
+      "compuesto": "Mentona",
+      "grupo": "terpenoide",
+      "accion": "Colerético suave, contribuye al sabor y al efecto carminativo",
+      "concentracion": "10-20% en aceite esencial"
+    },
+    {
+      "compuesto": "Mentofurano",
+      "grupo": "terpenoide",
+      "accion": "Carminativo. En dosis muy altas potencialmente hepatotóxico (razón para respetar dosis).",
+      "concentracion": "1-9% en aceite esencial"
+    },
+    {
+      "compuesto": "Ácido rosmarínico",
+      "grupo": "fenilpropanoide",
+      "accion": "Antioxidante, antiinflamatorio leve en hojas secas",
+      "concentracion": "Variable en hojas"
+    }
+  ],
+  "dolencias": [
+    {
+      "nombre": "Síndrome del intestino irritable (SII)",
+      "categoria": "digestivo",
+      "nivelEvidencia": "fuerte",
+      "dosis": "Aceite esencial recubierto entérico: 180-220 mg, 2-3 veces/día, 30-60 min antes de comidas",
+      "duracion": "4-12 semanas",
+      "referencia": "Ford AC et al. BMJ. 2008;337:a2313. DOI: 10.1136/bmj.a2313. PMID: 18827108"
+    },
+    {
+      "nombre": "Dispepsia funcional",
+      "categoria": "digestivo",
+      "nivelEvidencia": "moderado",
+      "dosis": "Aceite esencial en cápsula 90 mg + aceite de alcaravea 50 mg, 2 veces/día",
+      "duracion": "4 semanas",
+      "referencia": "May B et al. Arzneimittelforschung. 1996;46(8):799-801. PMID: 8902021"
+    },
+    {
+      "nombre": "Náuseas postoperatorias y por quimioterapia (aromaterápia)",
+      "categoria": "general",
+      "nivelEvidencia": "moderado",
+      "dosis": "Inhalación directa de aceite esencial puro, 3-5 inhalaciones profundas",
+      "duracion": "Según necesidad",
+      "referencia": "Lua PL, Zakaria NS. J Altern Complement Med. 2012;18(6):534-40. DOI: 10.1089/acm.2010.0453. PMID: 22300499"
+    }
+  ],
+  "sistemas": [
+    "digestivo",
+    "nervioso"
+  ],
+  "modoEII": {
+    "aptaEnBrote": false,
+    "notaBrote": "No indicada en brote activo. La relajación del esfínter esofágico inferior puede causar reflujo. En colitis ulcerosa activa puede enmascarar síntomas de complicación.",
+    "aptaEnMantenimiento": true,
+    "notaMantenimiento": "Excelente para manejo del dolor espástico residual y distensión en remisión de EII. Preferir formulación en cápsula con recubrimiento entérico para liberar el aceite en el colon.",
+    "mecanismoEII": "Bloqueo directo de VGCC en músculo liso colónico reduce el hiperperistaltismo y el dolor visceral referido, frecuentes en EII en remisión con síntomas funcionales superpuestos.",
+    "referenciaEII": "Ford AC et al. BMJ. 2008;337:a2313. PMID: 18827108"
+  },
+  "modoCeliaquiaGluten": {
+    "libreDeGluten": true,
+    "nota": "Aceite esencial puro es 100% libre de gluten. Verificar excipientes en cápsulas comerciales (algunos contienen almidón de trigo).",
+    "indicacionEspecifica": "Segura para aliviar la distensión y espasmos abdominales después de ingesta inadvertida de gluten. La inhalación de aceite esencial puede aliviar náuseas rápidamente."
+  },
+  "usos": {
+    "interno": [
+      "SII (aceite en cápsula entérica)",
+      "Dispepsia funcional",
+      "Náuseas leves",
+      "Espasmos abdominales",
+      "Flatulencia"
+    ],
+    "externo": [
+      "Ungüento tópico para cefalea tensional (sien y frente)",
+      "Inhalación para congestión nasal",
+      "Masaje muscular (diluido en aceite base)"
+    ],
+    "culinario": [
+      "Infusión digestiva",
+      "Condimento en repostería",
+      "Bebidas refrescantes",
+      "Salsas y ensaladas"
+    ]
+  },
+  "preparacion": [
+    {
+      "forma": "infusión",
+      "instrucciones": "Verter agua caliente sobre hojas frescas o secas. Tapar inmediatamente para evitar la volatilización del aceite esencial. Dejar reposar. Colar.",
+      "cantidadPlanta": "1-2 cucharaditas (1.5-3 g) de hojas secas o 5-6 hojas frescas",
+      "temperatura": "90-95°C",
+      "tiempoPreparacion": "10 minutos, tapado",
+      "dosis": "1 taza, 2-3 veces al día, después de las comidas",
+      "duracionMaxima": "Uso continuo seguro para infusión",
+      "notaPreparacion": "La infusión alivia síntomas leves. Para SII moderado-severo, el aceite en cápsula entérica es más eficaz por la liberación colónica."
+    },
+    {
+      "forma": "extracto-seco",
+      "instrucciones": "Cápsulas con recubrimiento entérico que libera el aceite en intestino delgado/colon. Tomar con un vaso de agua, 30-60 minutos antes de las comidas principales. NO masticar ni abrir la cápsula.",
+      "cantidadPlanta": "180-220 mg de aceite esencial por cápsula (estandarizado ≥44% L-mentol)",
+      "dosis": "1 cápsula, 2-3 veces al día antes de comidas",
+      "duracionMaxima": "12 semanas consecutivas",
+      "notaPreparacion": "El recubrimiento entérico es CRÍTICO. Sin él, el mentol se libera en el estómago causando ardor intenso y eructos con sabor a menta. No combinar con antiácidos o IBP (disuelven el recubrimiento)."
+    }
+  ],
+  "contraindicaciones": [
+    {
+      "condicion": "Reflujo gastroesofágico severo (ERGE) o hernia de hiato sintomática",
+      "gravedad": "relativa",
+      "justificacion": "El mentol relaja el esfínter esofágico inferior, potencialmente agravando el reflujo. Usar solo cápsulas entéricas y con precaución."
+    },
+    {
+      "condicion": "Cálculos biliares grandes",
+      "gravedad": "precaución",
+      "justificacion": "El efecto colagogo leve podría provocar migración dolorosa de cálculos."
+    },
+    {
+      "condicion": "Aplicación tópica de mentol puro cerca de nariz o boca de bebés y niños pequeños",
+      "gravedad": "absoluta",
+      "justificacion": "Riesgo de espasmo laríngeo reflejo y apnea en menores de 2 años."
+    }
+  ],
+  "interaccionesMedicamentosas": [
+    {
+      "medicamento": "Inhibidores de bomba de protones (IBP) y antiácidos",
+      "tipo": "antagonismo",
+      "mecanismo": "Neutralizan el recubrimiento entérico de las cápsulas, liberando el mentol en el estómago y causando ardor gástrico intenso.",
+      "gravedad": "moderada"
+    },
+    {
+      "medicamento": "Ciclosporina",
+      "tipo": "alteración-metabolismo",
+      "mecanismo": "El mentol inhibe CYP3A4, reduciendo el metabolismo de la ciclosporina y aumentando sus niveles plasmáticos.",
+      "gravedad": "moderada"
+    },
+    {
+      "medicamento": "Antihipertensivos (bloqueadores de canales de calcio)",
+      "tipo": "precaución",
+      "mecanismo": "Posible efecto hipotensor aditivo leve por el mecanismo bloqueador de VGCC del mentol.",
+      "gravedad": "leve"
+    }
+  ],
+  "embarazoLactancia": {
+    "embarazo": "precaución",
+    "lactancia": "precaución",
+    "pediatria": "Infusión: segura en mayores de 2 años. Aceite esencial oral: solo en mayores de 8 años. Mentol tópico facial: contraindicado menores de 2 años.",
+    "justificacion": "Infusión en dosis dietéticas segura en embarazo. Aceite esencial en cápsula: precaución por ausencia de ECA amplios en embarazo. En lactancia, el mentol puede reducir la producción de leche en dosis altas."
+  },
+  "compatibilidadPlantas": {
+    "sinergicas": [
+      {
+        "plantaId": "psyllium",
+        "plantaNom": "Psyllium",
+        "motivo": "Sinergia ideal para SII: psyllium normaliza consistencia y volumen fecal, menta controla dolor y espasmos."
+      },
+      {
+        "plantaId": "hinojo",
+        "plantaNom": "Hinojo",
+        "motivo": "Triple carminativa clásica. Hinojo añade efecto sobre gases, menta sobre espasmos."
+      },
+      {
+        "plantaId": "manzanilla",
+        "plantaNom": "Manzanilla",
+        "motivo": "Combinación clásica para dispepsia y colon irritable. Estudio clínico avala la mezcla menta+manzanilla+hinojo para SII."
+      }
+    ],
+    "incompatibles": [
+      {
+        "plantaId": "regaliz-dgl",
+        "plantaNom": "Regaliz DGL",
+        "motivo": "No son incompatibles per se, pero deben dosificarse con precaución: el regaliz protege la mucosa gástrica mientras la menta puede relajar el EEI. Separar las tomas (regaliz antes de comidas, menta después)."
+      }
+    ]
+  },
+  "infusionesRelacionadas": [
+    "mezcla-sii-carminativa",
+    "digestiva-triple",
+    "digestiva-esencial"
+  ],
+  "emoji": "🌿",
+  "etiquetas": [
+    "antiespasmódica",
+    "carminativa",
+    "ibs",
+    "sii",
+    "nivel-A",
+    "ema",
+    "disponible-panama",
+    "cultivable-panama",
+    "apta-mantenimiento-eii",
+    "libre-gluten"
+  ],
+  "fuentes": [
+    {
+      "autor": "EMA/HMPC",
+      "titulo": "Community herbal monograph on Mentha × piperita L., aetheroleum. EMA/HMPC/203217/2013",
+      "publicacion": "European Medicines Agency",
+      "año": 2014,
+      "volumen": "EMA/HMPC/203217/2013",
+      "paginas": "1-9",
+      "doi": "",
+      "pmid": "",
+      "tipo": "monografía-EMA",
+      "nivelEvidencia": "A",
+      "idioma": "en"
+    },
+    {
+      "autor": "Ford AC, Talley NJ, Spiegel BM et al.",
+      "titulo": "Effect of fibre, antispasmodics, and peppermint oil in the treatment of irritable bowel syndrome: systematic review and meta-analysis",
+      "publicacion": "BMJ",
+      "año": 2008,
+      "volumen": "337",
+      "paginas": "a2313",
+      "doi": "10.1136/bmj.a2313",
+      "pmid": "18827108",
+      "tipo": "metaanalisis",
+      "nivelEvidencia": "A",
+      "idioma": "en"
+    },
+    {
+      "autor": "Alammar N, Wang L, Saberi B et al.",
+      "titulo": "The impact of peppermint oil on the irritable bowel syndrome: a meta-analysis of the pooled clinical data",
+      "publicacion": "BMC Complementary and Alternative Medicine",
+      "año": 2019,
+      "volumen": "19(1)",
+      "paginas": "21",
+      "doi": "10.1186/s12906-018-2409-0",
+      "pmid": "30654773",
+      "tipo": "metaanalisis",
+      "nivelEvidencia": "A",
+      "idioma": "en"
+    },
+    {
+      "autor": "May B, Kuntz HD, Kieser M, Köhler S",
+      "titulo": "Efficacy of a fixed peppermint oil/caraway oil combination in non-ulcer dyspepsia",
+      "publicacion": "Arzneimittelforschung",
+      "año": 1996,
+      "volumen": "46(8)",
+      "paginas": "799-801",
+      "pmid": "8902021",
+      "tipo": "estudio-clinico-ECA",
+      "nivelEvidencia": "B",
+      "idioma": "en"
+    }
+  ],
+  "advertencia": "Usar SIEMPRE cápsulas con recubrimiento entérico para uso terapéutico en SII. No combinar con IBP o antiácidos. No aplicar mentol puro cerca de nariz o boca de menores de 2 años.",
+  "disclaimer": "Esta información es educativa y no sustituye el diagnóstico ni el tratamiento médico profesional."
+}

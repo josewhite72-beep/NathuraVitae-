@@ -1,0 +1,304 @@
+{
+  "id": "olmo-resbaladizo",
+  "versionFicha": "2.0",
+  "estadoFicha": "publicada",
+  "fechaCreacion": "2026-04-14",
+  "fechaRevision": "2026-04-14",
+  "nombreComun": "Olmo resbaladizo",
+  "nombresAlternativos": [
+    {
+      "nombre": "Slippery elm",
+      "idioma": "en",
+      "region": "Norteamérica"
+    },
+    {
+      "nombre": "Olmo rojo",
+      "idioma": "es",
+      "region": "América Latina"
+    },
+    {
+      "nombre": "Cortex Ulmi rubrae",
+      "idioma": "la",
+      "region": "Internacional"
+    }
+  ],
+  "nombreCientifico": "Ulmus rubra Muhl.",
+  "sinonimiasCientificas": [
+    "Ulmus fulva Michx."
+  ],
+  "familia": "Ulmaceae",
+  "orden": "Rosales",
+  "clase": "Magnoliopsida",
+  "regionOrigen": [
+    "América del Norte"
+  ],
+  "habitatNatural": "Bosques de ribera y laderas bien drenadas del este y centro de Norteamérica. Suelos franco-profundos ricos en materia orgánica.",
+  "disponibilidadPanama": {
+    "disponible": true,
+    "nombreLocal": "Olmo resbaladizo / Corteza de olmo",
+    "formaComercial": [
+      "polvo",
+      "cápsula",
+      "seca"
+    ],
+    "dondeConseguir": [
+      "tienda-naturista",
+      "farmacia"
+    ],
+    "cultivoLocal": false,
+    "endemicaPanama": false,
+    "notaRegional": "Planta 100% importada. Disponible en herboristerías especializadas de Ciudad de Panamá y David en formatos de polvo y cápsulas. No cultivable en clima tropical panameño."
+  },
+  "cultivoCasero": {
+    "dificultad": "dificil",
+    "apta": false,
+    "maceta": false,
+    "luz": "pleno-sol",
+    "agua": "moderado",
+    "suelo": "Franco profundo, rico en materia orgánica y bien drenado",
+    "clima": "Requiere estratificación invernal y estaciones marcadas; no viable en clima tropical panameño",
+    "notaCultivo": "Árbol caduco de zonas templadas. Impráctico para Panamá. Depende exclusivamente de importación.",
+    "tiempoACosecha": "No aplica"
+  },
+  "partesUsadas": [
+    {
+      "parte": "corteza",
+      "nota": "Corteza interna desecada y micronizada por su alto contenido en mucílagos polisacáridos. No confundir con la corteza externa."
+    }
+  ],
+  "resumen": "Demulcente gastrointestinal de tradición nativa norteamericana que forma un hidrogel protector sobre epitelios irritados. Coadyuvante de barrera mucosa en gastritis, reflujo y síntomas leves de enfermedad inflamatoria intestinal en remisión.",
+  "usoTradicionalHistorico": {
+    "culturas": [
+      {
+        "cultura": "Pueblos nativos norteamericanos (Cherokee, Delaware, Iroquois)",
+        "uso": "Curación de heridas, úlceras gástricas, diarrea y afecciones respiratorias",
+        "periodo": "Precolombino — siglo XIX"
+      },
+      {
+        "cultura": "Farmacopea tradicional estadounidense",
+        "uso": "Emoliente digestivo y tópico en pomadas",
+        "periodo": "Siglo XIX–XX"
+      }
+    ],
+    "primerasMencionesHistoricas": "Farmacopea de los Estados Unidos (USP) desde 1830. Ampliamente utilizada en la medicina ecléctica norteamericana del siglo XIX.",
+    "usoIndigenaRegional": "Sin registro histórico en Panamá o Centroamérica. Introducida como suplemento importado en las últimas décadas."
+  },
+  "nivelEvidenciaGlobal": "C",
+  "fuentePrimaria": {
+    "institucion": "EMA",
+    "tipo": "monografía",
+    "titulo": "Community herbal monograph on Ulmus fulva Michx. (syn. Ulmus rubra Muhl.), cortex. EMA/HMPC/680170/2014",
+    "año": 2015,
+    "url": "https://www.ema.europa.eu/en/documents/herbal-monograph/final-community-herbal-monograph-ulmus-fulva-michx-syn-ulmus-rubra-muhl-cortex_en.pdf"
+  },
+  "grupoTerapeutico": [
+    "demulcente",
+    "emoliente",
+    "gastroprotectora"
+  ],
+  "propiedades": [
+    {
+      "nombre": "Efecto mucoadhesivo y demulcente",
+      "nivelEvidencia": "tradicional",
+      "mecanismoAccion": "Polisacáridos mucilaginosos (xilanarabinogalactanos) hidrofílicos retienen agua hasta 40 veces su peso, forman un coloide viscoso y recubren físicamente la mucosa gastrointestinal, reduciendo la permeabilidad a irritantes y protegiendo el epitelio.",
+      "referencia": "EMA/HMPC/680170/2014. Community herbal monograph on Ulmus rubra. 2015."
+    },
+    {
+      "nombre": "Antioxidante in vitro sobre tejido inflamado",
+      "nivelEvidencia": "preliminar",
+      "mecanismoAccion": "Extractos acuosos muestran actividad antioxidante sobre tejido de colitis ulcerosa in vitro, reduciendo la peroxidación lipídica.",
+      "referencia": "Langmead L et al. Aliment Pharmacol Ther. 2002;16(2):197-205. DOI: 10.1046/j.1365-2036.2002.01157.x. PMID: 11863278"
+    }
+  ],
+  "fotoquimica": [
+    {
+      "compuesto": "Mucílago de ulmus (xilanarabinogalactanos)",
+      "grupo": "polisacárido",
+      "accion": "Formación de película protectora y retención de agua en mucosas digestivas",
+      "concentracion": "15-20% en corteza seca"
+    },
+    {
+      "compuesto": "Taninos catéquicos",
+      "grupo": "tanino",
+      "accion": "Astringente leve, antimicrobiano",
+      "concentracion": "3-6%"
+    }
+  ],
+  "dolencias": [
+    {
+      "nombre": "Gastritis, reflujo e irritación faríngea",
+      "categoria": "digestivo",
+      "nivelEvidencia": "tradicional",
+      "dosis": "4-8 g de corteza en polvo suspendida en 200 ml de agua tibia, 3-4 veces/día",
+      "duracion": "Hasta 4 semanas",
+      "referencia": "EMA/HMPC/680170/2014"
+    },
+    {
+      "nombre": "Síntomas de SII (coadyuvante en fórmula herbaria)",
+      "categoria": "digestivo",
+      "nivelEvidencia": "preliminar",
+      "dosis": "Formulación combinada con otras plantas: ver estudio Ried 2020",
+      "duracion": "Hasta 12 semanas",
+      "referencia": "Ried K et al. Nutrients. 2020;12(3):718. DOI: 10.3390/nu12030718. PMID: 32151878"
+    }
+  ],
+  "sistemas": [
+    "digestivo",
+    "respiratorio"
+  ],
+  "modoEII": {
+    "aptaEnBrote": false,
+    "notaBrote": "No recomendado en brote agudo sin supervisión médica. El mucílago puede alterar la farmacocinética de fármacos de absorción crítica usados en el tratamiento del brote.",
+    "aptaEnMantenimiento": true,
+    "notaMantenimiento": "Coadyuvante sintomático útil para proteger mucosa en remisión. Tomar siempre alejado (2h) de la medicación habitual.",
+    "mecanismoEII": "La capa mucoadhesiva disminuye el contacto directo de ácidos biliares y residuos alimentarios con el epitelio inflamado o ulcerado.",
+    "referenciaEII": "Langmead L et al. Aliment Pharmacol Ther. 2002;16(2):197-205. PMID: 11863278"
+  },
+  "modoCeliaquiaGluten": {
+    "libreDeGluten": true,
+    "nota": "Botánicamente libre de gluten. Verificar certificación de procesamiento en plantas libres de contaminación cruzada con trigo.",
+    "indicacionEspecifica": "Segura como demulcente en enfermedad celíaca. Puede ayudar a aliviar la irritación esofágica y gástrica asociada."
+  },
+  "usos": {
+    "interno": [
+      "Gastritis y reflujo",
+      "Irritación faríngea y esofágica",
+      "Diarrea leve",
+      "SII (coadyuvante)"
+    ],
+    "externo": [
+      "Cataplasma para heridas superficiales y forúnculos"
+    ],
+    "culinario": [
+      "Espesante tradicional de sopas (medicina pionera americana)"
+    ]
+  },
+  "preparacion": [
+    {
+      "forma": "infusión",
+      "instrucciones": "Mezclar el polvo en un poco de agua fría hasta disolver. Añadir agua caliente sin hervir y remover hasta obtener consistencia uniforme. Beber lentamente para maximizar contacto con mucosa.",
+      "cantidadPlanta": "4-8 g de corteza en polvo",
+      "temperatura": "60-70°C (no hervir — degrada polisacáridos)",
+      "tiempoPreparacion": "5-10 minutos de reposo",
+      "dosis": "1 taza, 3 veces al día. Preferiblemente entre comidas.",
+      "duracionMaxima": "4 semanas continuas",
+      "notaPreparacion": "Consumir inmediatamente tras preparar. No calentar al fuego directo. Siempre tomar con abundante líquido adicional."
+    }
+  ],
+  "contraindicaciones": [
+    {
+      "condicion": "Obstrucción intestinal o estenosis esofágica",
+      "gravedad": "absoluta",
+      "justificacion": "Riesgo de impactación por formación de masa viscosa que puede agravar la obstrucción."
+    },
+    {
+      "condicion": "Uso concomitante con fármacos de absorción estrecha (levotiroxina, digoxina, litio)",
+      "gravedad": "precaución",
+      "justificacion": "La barrera física mucoadhesiva puede reducir significativamente la biodisponibilidad oral. Separar siempre 2 horas de cualquier medicamento."
+    }
+  ],
+  "interaccionesMedicamentosas": [
+    {
+      "medicamento": "Levotiroxina y otros fármacos con ventana terapéutica estrecha",
+      "tipo": "antagonismo",
+      "mecanismo": "Reducción de absorción gastrointestinal por efecto barrera mucoadhesiva.",
+      "gravedad": "moderada"
+    },
+    {
+      "medicamento": "Antibióticos orales",
+      "tipo": "alteración-metabolismo",
+      "mecanismo": "Retraso o disminución de absorción intestinal.",
+      "gravedad": "moderada"
+    }
+  ],
+  "embarazoLactancia": {
+    "embarazo": "precaución",
+    "lactancia": "segura",
+    "pediatria": "Mayores de 3 años bajo supervisión médica",
+    "justificacion": "Datos limitados en gestación. No se absorbe sistémicamente. En lactancia se considera segura al no tener absorción sistémica relevante."
+  },
+  "compatibilidadPlantas": {
+    "sinergicas": [
+      {
+        "plantaId": "manzanilla",
+        "plantaNom": "Manzanilla",
+        "motivo": "Potencian efecto calmante y antiinflamatorio sobre mucosa digestiva."
+      },
+      {
+        "plantaId": "regaliz-dgl",
+        "plantaNom": "Regaliz DGL",
+        "motivo": "Sinergia demulcente y protectora de mucosa. Regaliz añade acción antiinflamatoria activa."
+      },
+      {
+        "plantaId": "psyllium",
+        "plantaNom": "Psyllium",
+        "motivo": "Potencian efecto regulador del tránsito y protección mucosa, pero tomar en momentos separados."
+      }
+    ],
+    "incompatibles": [
+      {
+        "plantaId": "alcachofa",
+        "plantaNom": "Alcachofa",
+        "motivo": "El efecto colagogo de la alcachofa puede acelerar tránsito y reducir tiempo de contacto del mucílago de olmo con la mucosa."
+      }
+    ]
+  },
+  "infusionesRelacionadas": [
+    "mezcla-gastroprotectora",
+    "infusion-demulcente"
+  ],
+  "emoji": "🌳",
+  "etiquetas": [
+    "demulcente",
+    "gastroprotectora",
+    "nivel-C",
+    "ema",
+    "disponible-panama",
+    "no-cultivable-panama",
+    "apta-mantenimiento-eii",
+    "libre-gluten"
+  ],
+  "fuentes": [
+    {
+      "autor": "EMA/HMPC",
+      "titulo": "Community herbal monograph on Ulmus fulva Michx. (syn. Ulmus rubra Muhl.), cortex. EMA/HMPC/680170/2014",
+      "publicacion": "European Medicines Agency",
+      "año": 2015,
+      "volumen": "EMA/HMPC/680170/2014",
+      "paginas": "1-7",
+      "doi": "",
+      "pmid": "",
+      "tipo": "monografía-EMA",
+      "nivelEvidencia": "C",
+      "idioma": "en"
+    },
+    {
+      "autor": "Langmead L, Dawson C, Mahon C et al.",
+      "titulo": "Antioxidant effects of herbal therapies used by patients with inflammatory bowel disease: an in vitro study",
+      "publicacion": "Alimentary Pharmacology & Therapeutics",
+      "año": 2002,
+      "volumen": "16(2)",
+      "paginas": "197-205",
+      "doi": "10.1046/j.1365-2036.2002.01157.x",
+      "pmid": "11863278",
+      "tipo": "estudio-observacional",
+      "nivelEvidencia": "C",
+      "idioma": "en"
+    },
+    {
+      "autor": "Ried K, Travica N, Dorairaj R, Sali A",
+      "titulo": "Herbal formula improves upper and lower gastrointestinal symptoms and modulates colonic microbiota in patients with irritable bowel syndrome",
+      "publicacion": "Nutrients",
+      "año": 2020,
+      "volumen": "12(3)",
+      "paginas": "718",
+      "doi": "10.3390/nu12030718",
+      "pmid": "32151878",
+      "tipo": "estudio-clinico-ECA",
+      "nivelEvidencia": "B",
+      "idioma": "en"
+    }
+  ],
+  "advertencia": "Tomar siempre con abundante agua. Separar al menos 2 horas de cualquier medicamento oral. No usar en obstrucción intestinal.",
+  "disclaimer": "Esta información es educativa y no sustituye el diagnóstico ni el tratamiento médico profesional."
+}

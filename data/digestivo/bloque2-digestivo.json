@@ -1,0 +1,975 @@
+[
+  {
+    "id": "olmo-resbaladizo",
+    "versionFicha": "2.0",
+    "estadoFicha": "publicada",
+    "fechaCreacion": "2026-04-14",
+    "fechaRevision": "2026-04-14",
+    "nombreComun": "Olmo resbaladizo",
+    "nombresAlternativos": [
+      {"nombre": "Slippery elm", "idioma": "en", "region": "Norteamérica"},
+      {"nombre": "Olmo rojo", "idioma": "es", "region": "América Latina"},
+      {"nombre": "Cortex Ulmi rubrae", "idioma": "la", "region": "Internacional"}
+    ],
+    "nombreCientifico": "Ulmus rubra Muhl.",
+    "sinonimiasCientificas": ["Ulmus fulva Michx."],
+    "familia": "Ulmaceae",
+    "orden": "Rosales",
+    "clase": "Magnoliopsida",
+    "regionOrigen": ["América del Norte"],
+    "habitatNatural": "Bosques de ribera y laderas bien drenadas del este y centro de Norteamérica. Suelos franco-profundos ricos en materia orgánica.",
+    "disponibilidadPanama": {
+      "disponible": true,
+      "nombreLocal": "Olmo resbaladizo / Corteza de olmo",
+      "formaComercial": ["polvo", "cápsula", "seca"],
+      "dondeConseguir": ["tienda-naturista", "farmacia"],
+      "cultivoLocal": false,
+      "endemicaPanama": false,
+      "notaRegional": "Planta 100% importada. Disponible en herboristerías especializadas de Ciudad de Panamá y David en formatos de polvo y cápsulas. No cultivable en clima tropical panameño."
+    },
+    "cultivoCasero": {
+      "dificultad": "dificil",
+      "apta": false,
+      "maceta": false,
+      "luz": "pleno-sol",
+      "agua": "moderado",
+      "suelo": "Franco profundo, rico en materia orgánica y bien drenado",
+      "clima": "Requiere estratificación invernal y estaciones marcadas; no viable en clima tropical panameño",
+      "notaCultivo": "Árbol caduco de zonas templadas. Impráctico para Panamá. Depende exclusivamente de importación.",
+      "tiempoACosecha": "No aplica"
+    },
+    "partesUsadas": [
+      {"parte": "corteza", "nota": "Corteza interna desecada y micronizada por su alto contenido en mucílagos polisacáridos. No confundir con la corteza externa."}
+    ],
+    "resumen": "Demulcente gastrointestinal de tradición nativa norteamericana que forma un hidrogel protector sobre epitelios irritados. Coadyuvante de barrera mucosa en gastritis, reflujo y síntomas leves de enfermedad inflamatoria intestinal en remisión.",
+    "usoTradicionalHistorico": {
+      "culturas": [
+        {"cultura": "Pueblos nativos norteamericanos (Cherokee, Delaware, Iroquois)", "uso": "Curación de heridas, úlceras gástricas, diarrea y afecciones respiratorias", "periodo": "Precolombino — siglo XIX"},
+        {"cultura": "Farmacopea tradicional estadounidense", "uso": "Emoliente digestivo y tópico en pomadas", "periodo": "Siglo XIX–XX"}
+      ],
+      "primerasMencionesHistoricas": "Farmacopea de los Estados Unidos (USP) desde 1830. Ampliamente utilizada en la medicina ecléctica norteamericana del siglo XIX.",
+      "usoIndigenaRegional": "Sin registro histórico en Panamá o Centroamérica. Introducida como suplemento importado en las últimas décadas."
+    },
+    "nivelEvidenciaGlobal": "C",
+    "fuentePrimaria": {
+      "institucion": "EMA",
+      "tipo": "monografía",
+      "titulo": "Community herbal monograph on Ulmus fulva Michx. (syn. Ulmus rubra Muhl.), cortex. EMA/HMPC/680170/2014",
+      "año": 2015,
+      "url": "https://www.ema.europa.eu/en/documents/herbal-monograph/final-community-herbal-monograph-ulmus-fulva-michx-syn-ulmus-rubra-muhl-cortex_en.pdf"
+    },
+    "grupoTerapeutico": ["demulcente", "emoliente", "gastroprotectora"],
+    "propiedades": [
+      {
+        "nombre": "Efecto mucoadhesivo y demulcente",
+        "nivelEvidencia": "tradicional",
+        "mecanismoAccion": "Polisacáridos mucilaginosos (xilanarabinogalactanos) hidrofílicos retienen agua hasta 40 veces su peso, forman un coloide viscoso y recubren físicamente la mucosa gastrointestinal, reduciendo la permeabilidad a irritantes y protegiendo el epitelio.",
+        "referencia": "EMA/HMPC/680170/2014. Community herbal monograph on Ulmus rubra. 2015."
+      },
+      {
+        "nombre": "Antioxidante in vitro sobre tejido inflamado",
+        "nivelEvidencia": "preliminar",
+        "mecanismoAccion": "Extractos acuosos muestran actividad antioxidante sobre tejido de colitis ulcerosa in vitro, reduciendo la peroxidación lipídica.",
+        "referencia": "Langmead L et al. Aliment Pharmacol Ther. 2002;16(2):197-205. DOI: 10.1046/j.1365-2036.2002.01157.x. PMID: 11863278"
+      }
+    ],
+    "fotoquimica": [
+      {
+        "compuesto": "Mucílago de ulmus (xilanarabinogalactanos)",
+        "grupo": "polisacárido",
+        "accion": "Formación de película protectora y retención de agua en mucosas digestivas",
+        "concentracion": "15-20% en corteza seca"
+      },
+      {
+        "compuesto": "Taninos catéquicos",
+        "grupo": "tanino",
+        "accion": "Astringente leve, antimicrobiano",
+        "concentracion": "3-6%"
+      }
+    ],
+    "dolencias": [
+      {
+        "nombre": "Gastritis, reflujo e irritación faríngea",
+        "categoria": "digestivo",
+        "nivelEvidencia": "tradicional",
+        "dosis": "4-8 g de corteza en polvo suspendida en 200 ml de agua tibia, 3-4 veces/día",
+        "duracion": "Hasta 4 semanas",
+        "referencia": "EMA/HMPC/680170/2014"
+      },
+      {
+        "nombre": "Síntomas de SII (coadyuvante en fórmula herbaria)",
+        "categoria": "digestivo",
+        "nivelEvidencia": "preliminar",
+        "dosis": "Formulación combinada con otras plantas: ver estudio Ried 2020",
+        "duracion": "Hasta 12 semanas",
+        "referencia": "Ried K et al. Nutrients. 2020;12(3):718. DOI: 10.3390/nu12030718. PMID: 32151878"
+      }
+    ],
+    "sistemas": ["digestivo", "respiratorio"],
+    "modoEII": {
+      "aptaEnBrote": false,
+      "notaBrote": "No recomendado en brote agudo sin supervisión médica. El mucílago puede alterar la farmacocinética de fármacos de absorción crítica usados en el tratamiento del brote.",
+      "aptaEnMantenimiento": true,
+      "notaMantenimiento": "Coadyuvante sintomático útil para proteger mucosa en remisión. Tomar siempre alejado (2h) de la medicación habitual.",
+      "mecanismoEII": "La capa mucoadhesiva disminuye el contacto directo de ácidos biliares y residuos alimentarios con el epitelio inflamado o ulcerado.",
+      "referenciaEII": "Langmead L et al. Aliment Pharmacol Ther. 2002;16(2):197-205. PMID: 11863278"
+    },
+    "modoCeliaquiaGluten": {
+      "libreDeGluten": true,
+      "nota": "Botánicamente libre de gluten. Verificar certificación de procesamiento en plantas libres de contaminación cruzada con trigo.",
+      "indicacionEspecifica": "Segura como demulcente en enfermedad celíaca. Puede ayudar a aliviar la irritación esofágica y gástrica asociada."
+    },
+    "usos": {
+      "interno": ["Gastritis y reflujo", "Irritación faríngea y esofágica", "Diarrea leve", "SII (coadyuvante)"],
+      "externo": ["Cataplasma para heridas superficiales y forúnculos"],
+      "culinario": ["Espesante tradicional de sopas (medicina pionera americana)"]
+    },
+    "preparacion": [
+      {
+        "forma": "infusión",
+        "instrucciones": "Mezclar el polvo en un poco de agua fría hasta disolver. Añadir agua caliente sin hervir y remover hasta obtener consistencia uniforme. Beber lentamente para maximizar contacto con mucosa.",
+        "cantidadPlanta": "4-8 g de corteza en polvo",
+        "temperatura": "60-70°C (no hervir — degrada polisacáridos)",
+        "tiempoPreparacion": "5-10 minutos de reposo",
+        "dosis": "1 taza, 3 veces al día. Preferiblemente entre comidas.",
+        "duracionMaxima": "4 semanas continuas",
+        "notaPreparacion": "Consumir inmediatamente tras preparar. No calentar al fuego directo. Siempre tomar con abundante líquido adicional."
+      }
+    ],
+    "contraindicaciones": [
+      {"condicion": "Obstrucción intestinal o estenosis esofágica", "gravedad": "absoluta", "justificacion": "Riesgo de impactación por formación de masa viscosa que puede agravar la obstrucción."},
+      {"condicion": "Uso concomitante con fármacos de absorción estrecha (levotiroxina, digoxina, litio)", "gravedad": "precaución", "justificacion": "La barrera física mucoadhesiva puede reducir significativamente la biodisponibilidad oral. Separar siempre 2 horas de cualquier medicamento."}
+    ],
+    "interaccionesMedicamentosas": [
+      {"medicamento": "Levotiroxina y otros fármacos con ventana terapéutica estrecha", "tipo": "antagonismo", "mecanismo": "Reducción de absorción gastrointestinal por efecto barrera mucoadhesiva.", "gravedad": "moderada"},
+      {"medicamento": "Antibióticos orales", "tipo": "alteración-metabolismo", "mecanismo": "Retraso o disminución de absorción intestinal.", "gravedad": "moderada"}
+    ],
+    "embarazoLactancia": {
+      "embarazo": "precaución",
+      "lactancia": "segura",
+      "pediatria": "Mayores de 3 años bajo supervisión médica",
+      "justificacion": "Datos limitados en gestación. No se absorbe sistémicamente. En lactancia se considera segura al no tener absorción sistémica relevante."
+    },
+    "compatibilidadPlantas": {
+      "sinergicas": [
+        {"plantaId": "manzanilla", "plantaNom": "Manzanilla", "motivo": "Potencian efecto calmante y antiinflamatorio sobre mucosa digestiva."},
+        {"plantaId": "regaliz-dgl", "plantaNom": "Regaliz DGL", "motivo": "Sinergia demulcente y protectora de mucosa. Regaliz añade acción antiinflamatoria activa."},
+        {"plantaId": "psyllium", "plantaNom": "Psyllium", "motivo": "Potencian efecto regulador del tránsito y protección mucosa, pero tomar en momentos separados."}
+      ],
+      "incompatibles": [
+        {"plantaId": "alcachofa", "plantaNom": "Alcachofa", "motivo": "El efecto colagogo de la alcachofa puede acelerar tránsito y reducir tiempo de contacto del mucílago de olmo con la mucosa."}
+      ]
+    },
+    "infusionesRelacionadas": ["mezcla-gastroprotectora", "infusion-demulcente"],
+    "emoji": "🌳",
+    "etiquetas": ["demulcente", "gastroprotectora", "nivel-C", "ema", "disponible-panama", "no-cultivable-panama", "apta-mantenimiento-eii", "libre-gluten"],
+    "fuentes": [
+      {"autor": "EMA/HMPC", "titulo": "Community herbal monograph on Ulmus fulva Michx. (syn. Ulmus rubra Muhl.), cortex. EMA/HMPC/680170/2014", "publicacion": "European Medicines Agency", "año": 2015, "volumen": "EMA/HMPC/680170/2014", "paginas": "1-7", "doi": "", "pmid": "", "tipo": "monografía-EMA", "nivelEvidencia": "C", "idioma": "en"},
+      {"autor": "Langmead L, Dawson C, Mahon C et al.", "titulo": "Antioxidant effects of herbal therapies used by patients with inflammatory bowel disease: an in vitro study", "publicacion": "Alimentary Pharmacology & Therapeutics", "año": 2002, "volumen": "16(2)", "paginas": "197-205", "doi": "10.1046/j.1365-2036.2002.01157.x", "pmid": "11863278", "tipo": "estudio-observacional", "nivelEvidencia": "C", "idioma": "en"},
+      {"autor": "Ried K, Travica N, Dorairaj R, Sali A", "titulo": "Herbal formula improves upper and lower gastrointestinal symptoms and modulates colonic microbiota in patients with irritable bowel syndrome", "publicacion": "Nutrients", "año": 2020, "volumen": "12(3)", "paginas": "718", "doi": "10.3390/nu12030718", "pmid": "32151878", "tipo": "estudio-clinico-ECA", "nivelEvidencia": "B", "idioma": "en"}
+    ],
+    "advertencia": "Tomar siempre con abundante agua. Separar al menos 2 horas de cualquier medicamento oral. No usar en obstrucción intestinal.",
+    "disclaimer": "Esta información es educativa y no sustituye el diagnóstico ni el tratamiento médico profesional."
+  },
+  {
+    "id": "psyllium",
+    "versionFicha": "2.0",
+    "estadoFicha": "publicada",
+    "fechaCreacion": "2026-04-14",
+    "fechaRevision": "2026-04-14",
+    "nombreComun": "Psyllium",
+    "nombresAlternativos": [
+      {"nombre": "Ispaghul", "idioma": "fr", "region": "Europa"},
+      {"nombre": "Ispaghula", "idioma": "en", "region": "India / Internacional"},
+      {"nombre": "Cáscara de plantago", "idioma": "es", "region": "Latinoamérica"},
+      {"nombre": "Linaza rubia", "idioma": "es", "region": "Panamá / Centroamérica"}
+    ],
+    "nombreCientifico": "Plantago ovata Forssk.",
+    "sinonimiasCientificas": ["Plantago ispaghula Roxb.", "Plantago psyllium L."],
+    "familia": "Plantaginaceae",
+    "orden": "Lamiales",
+    "clase": "Magnoliopsida",
+    "regionOrigen": ["Asia Meridional", "Mediterráneo"],
+    "habitatNatural": "Zonas áridas y semiáridas, suelos arenosos bien drenados. Originaria del noroeste de India y Pakistán.",
+    "disponibilidadPanama": {
+      "disponible": true,
+      "nombreLocal": "Psyllium / Linaza rubia / Semilla de plantago",
+      "formaComercial": ["polvo", "cápsula", "semilla-entera"],
+      "dondeConseguir": ["supermercado", "tienda-naturista", "farmacia"],
+      "cultivoLocal": true,
+      "endemicaPanama": false,
+      "notaRegional": "Ampliamente disponible en cadenas de supermercados y tiendas especializadas. Marcas como Metamucil (psyllium puro) en farmacias. Puede cultivarse experimentalmente en zonas altas de Panamá con riego controlado."
+    },
+    "cultivoCasero": {
+      "dificultad": "moderada",
+      "apta": true,
+      "maceta": true,
+      "luz": "pleno-sol",
+      "agua": "poco",
+      "suelo": "Arenoso-arcilloso, excelente drenaje, pH 6.0-7.5",
+      "clima": "Prefiere clima seco. En Panamá requiere maceta protegida de lluvias intensas y riego muy controlado. Mejor en tierras altas o temporada seca.",
+      "notaCultivo": "Anual de ciclo corto. Muy sensible al exceso de humedad tropical. Viable en invernadero o maceta protegida.",
+      "tiempoACosecha": "3-4 meses desde siembra hasta maduración de semillas"
+    },
+    "partesUsadas": [
+      {"parte": "semilla", "nota": "La cubierta externa de la semilla (husk / cáscara) contiene la fibra soluble activa (arabinoxilanos). La semilla entera también se usa pero con menor concentración de mucílago."}
+    ],
+    "resumen": "Fibra soluble con el nivel de evidencia más alto disponible para estreñimiento crónico y mantenimiento de remisión en colitis ulcerosa. Un ensayo clínico aleatorizado lo comparó favorablemente con mesalazina en EII leve. Actúa como prebiótico y regulador intestinal.",
+    "usoTradicionalHistorico": {
+      "culturas": [
+        {"cultura": "Ayurveda (India)", "uso": "Isabgol — tratamiento de estreñimiento y disentería", "periodo": "Antigüedad — presente"},
+        {"cultura": "Medicina tradicional persa", "uso": "Purgante suave y emoliente intestinal", "periodo": "Edad Media"}
+      ],
+      "primerasMencionesHistoricas": "Farmacopeas persas del siglo X. Adoptado en farmacopeas europeas en el siglo XX.",
+      "usoIndigenaRegional": "No nativo. Adoptado en fitoterapia centroamericana moderna como suplemento de fibra."
+    },
+    "nivelEvidenciaGlobal": "A",
+    "fuentePrimaria": {
+      "institucion": "EMA",
+      "tipo": "monografía",
+      "titulo": "Community herbal monograph on Plantago ovata Forssk., seminis tegumentum. EMA/HMPC/345083/2011",
+      "año": 2014,
+      "url": "https://www.ema.europa.eu/en/documents/herbal-monograph/final-community-herbal-monograph-plantago-ovata-forssk-seminis-tegumentum_en.pdf"
+    },
+    "grupoTerapeutico": ["laxante-osmótico", "prebiótica", "hipolipemiante", "regulador-intestinal"],
+    "propiedades": [
+      {
+        "nombre": "Formador de masa y regulador del tránsito intestinal",
+        "nivelEvidencia": "fuerte",
+        "mecanismoAccion": "Los arabinoxilanos retienen agua (hasta 10 veces su peso), aumentan el volumen y suavizan el bolo fecal, estimulando mecanorreceptores del colon que activan el peristaltismo. Normaliza tanto estreñimiento como diarrea (efecto bifuncional).",
+        "referencia": "Bijkerk CJ et al. Gut. 2004;53(10):1397-402. DOI: 10.1136/gut.2003.035337. PMID: 15361485"
+      },
+      {
+        "nombre": "Modulación lipídica (reducción LDL)",
+        "nivelEvidencia": "moderado",
+        "mecanismoAccion": "Secuestra ácidos biliares en el íleon, obligando al hígado a sintetizar nuevos ácidos biliares desde colesterol sérico, reduciendo LDL circulante.",
+        "referencia": "Anderson JW et al. Am J Clin Nutr. 2000;71(2):472-9. DOI: 10.1093/ajcn/71.2.472. PMID: 10648260"
+      },
+      {
+        "nombre": "Prebiótico y modulador de microbiota",
+        "nivelEvidencia": "moderado",
+        "mecanismoAccion": "Fermentación parcial colónica genera ácidos grasos de cadena corta (butirato, propionato) que nutren colonocitos y modulan la composición de la microbiota.",
+        "referencia": "Jalanka J et al. Gut. 2019;68(7):1218-28. DOI: 10.1136/gutjnl-2018-316726. PMID: 30487256"
+      }
+    ],
+    "fotoquimica": [
+      {
+        "compuesto": "Arabinoxilanos (husk mucílago)",
+        "grupo": "polisacárido",
+        "accion": "Retención de agua, formación de gel, efecto laxante bifuncional, prebiótico",
+        "concentracion": "70-85% en cáscara seca"
+      },
+      {
+        "compuesto": "Aucubina (glucósido iridoide)",
+        "grupo": "glucósido",
+        "accion": "Antiinflamatorio leve, presente en semilla entera",
+        "concentracion": "Trazas"
+      }
+    ],
+    "dolencias": [
+      {
+        "nombre": "Estreñimiento crónico",
+        "categoria": "digestivo",
+        "nivelEvidencia": "fuerte",
+        "dosis": "5-10 g de cáscara en polvo, 1-3 veces/día con ≥250 ml de agua",
+        "duracion": "Continuo o cíclico 8-12 semanas",
+        "referencia": "EMA/HMPC/345083/2011"
+      },
+      {
+        "nombre": "Mantenimiento de remisión en colitis ulcerosa",
+        "categoria": "digestivo",
+        "nivelEvidencia": "fuerte",
+        "dosis": "10 g de semillas 2 veces al día",
+        "duracion": "12 meses",
+        "referencia": "Fernández-Bañares F et al. Am J Gastroenterol. 1999;94(2):427-33. DOI: 10.1111/j.1572-0241.1999.872_a.x. PMID: 10022641"
+      },
+      {
+        "nombre": "Síndrome de intestino irritable (SII)",
+        "categoria": "digestivo",
+        "nivelEvidencia": "fuerte",
+        "dosis": "10 g/día en 2 tomas con abundante agua",
+        "duracion": "12 semanas",
+        "referencia": "Bijkerk CJ et al. Gut. 2004;53(10):1397-402. PMID: 15361485"
+      },
+      {
+        "nombre": "Hipercolesterolemia leve",
+        "categoria": "metabólico",
+        "nivelEvidencia": "moderado",
+        "dosis": "7-10 g de cáscara/día con las comidas",
+        "duracion": "8 semanas",
+        "referencia": "Anderson JW et al. Am J Clin Nutr. 2000;71(2):472-9. PMID: 10648260"
+      }
+    ],
+    "sistemas": ["digestivo", "metabólico"],
+    "modoEII": {
+      "aptaEnBrote": false,
+      "notaBrote": "Contraindicado relativo en brote agudo severo o estenosis fibrostenosante por riesgo de impactación. En brote leve puede usarse con precaución e iniciando con dosis bajas.",
+      "aptaEnMantenimiento": true,
+      "notaMantenimiento": "EXCELENTE regulador del hábito intestinal en Crohn y colitis ulcerosa en remisión. Un ECA lo comparó favorablemente con mesalazina en mantenimiento de CU leve. Iniciar con dosis bajas (5 g/día) e ir incrementando.",
+      "mecanismoEII": "Regula consistencia fecal, reduce frecuencia sin irritar mucosa, y fermenta a butirato que nutre colonocitos y reduce inflamación colónica de bajo grado.",
+      "referenciaEII": "Fernández-Bañares F et al. Am J Gastroenterol. 1999;94(2):427-33. PMID: 10022641"
+    },
+    "modoCeliaquiaGluten": {
+      "libreDeGluten": true,
+      "nota": "Libre de gluten. Certificar ausencia de contaminación cruzada en procesamiento industrial. Marcas certificadas disponibles.",
+      "indicacionEspecifica": "Reemplazo funcional del gluten en panificación celíaca por su capacidad gelificante. Mejora la textura de panes y masas sin gluten."
+    },
+    "usos": {
+      "interno": ["Estreñimiento crónico", "SII (todos los subtipos)", "Mantenimiento EII", "Hipercolesterolemia leve", "Control glucémico postprandial"],
+      "externo": ["Cataplasma para dermatitis (uso tradicional minoritario)"],
+      "culinario": ["Espesante vegano", "Sustituto de huevo en repostería", "Ingrediente en panes y tortillas sin gluten"]
+    },
+    "preparacion": [
+      {
+        "forma": "infusión",
+        "instrucciones": "Disolver el polvo en 1 vaso grande de agua o jugo, agitar vigorosamente y beber inmediatamente antes de que espese. Seguir con otro vaso de agua adicional. NUNCA tomar en seco.",
+        "cantidadPlanta": "5 g (1 cucharadita rasa) por dosis",
+        "temperatura": "Ambiente o tibia",
+        "tiempoPreparacion": "Inmediato — beber en menos de 2 minutos",
+        "dosis": "5-10 g, 1-3 veces/día. Alejado de otros fármacos al menos 2 horas.",
+        "duracionMaxima": "Continuo bajo supervisión médica. Evaluar cada 4 semanas.",
+        "notaPreparacion": "Hidratación mínima diaria de 2 litros es OBLIGATORIA. El efecto es proporcional a la ingesta de agua."
+      }
+    ],
+    "contraindicaciones": [
+      {"condicion": "Estenosis intestinal o esofágica conocida", "gravedad": "absoluta", "justificacion": "Alto riesgo de oclusión mecánica por gelificación del mucílago."},
+      {"condicion": "Disfagia severa", "gravedad": "absoluta", "justificacion": "Riesgo de aspiración por el rápido aumento de viscosidad."},
+      {"condicion": "Deshidratación o ingesta hídrica insuficiente", "gravedad": "relativa", "justificacion": "Sin suficiente agua puede empeorar el estreñimiento y causar impactación fecal."}
+    ],
+    "interaccionesMedicamentosas": [
+      {"medicamento": "Digoxina, litio, antidepresivos tricíclicos y otros fármacos de absorción estrecha", "tipo": "antagonismo", "mecanismo": "Adsorción a la fibra y retardo del vaciamiento gástrico reducen la biodisponibilidad oral. Separar siempre 2 horas.", "gravedad": "moderada"},
+      {"medicamento": "Hipoglucemiantes orales e insulina", "tipo": "potenciación", "mecanismo": "Retraso en la absorción de glucosa postprandial reduce los picos glucémicos.", "gravedad": "leve"}
+    ],
+    "embarazoLactancia": {
+      "embarazo": "segura",
+      "lactancia": "segura",
+      "pediatria": "A partir de 6 años. En menores, solo bajo indicación pediátrica específica.",
+      "justificacion": "Fibra inabsorbible. No cruza barrera placentaria ni pasa a leche materna. Segura para estreñimiento gestacional. EMA confirma seguridad con ingesta adecuada de líquidos."
+    },
+    "compatibilidadPlantas": {
+      "sinergicas": [
+        {"plantaId": "menta-piperita", "plantaNom": "Menta piperita", "motivo": "Combinación sinérgica para SII: psyllium normaliza volumen y humedad fecal, menta reduce espasmos y dolor."},
+        {"plantaId": "hinojo", "plantaNom": "Hinojo", "motivo": "El hinojo reduce la flatulencia que puede generar el psyllium durante la adaptación inicial."},
+        {"plantaId": "manzanilla", "plantaNom": "Manzanilla", "motivo": "Manzanilla añade efecto calmante sobre mucosa en SII."}
+      ],
+      "incompatibles": [
+        {"plantaId": "olmo-resbaladizo", "plantaNom": "Olmo resbaladizo", "motivo": "Exceso de mucílagos puede causar pesadez o interferir con absorción de nutrientes si se toman simultáneamente. Separar al menos 2 horas."}
+      ]
+    },
+    "infusionesRelacionadas": ["fibra-reguladora", "mezcla-sii"],
+    "emoji": "🌾",
+    "etiquetas": ["laxante", "prebiótica", "nivel-A", "ema", "disponible-panama", "cultivable", "apta-mantenimiento-eii", "libre-gluten", "sin-gluten-cocina"],
+    "fuentes": [
+      {"autor": "EMA/HMPC", "titulo": "Community herbal monograph on Plantago ovata Forssk., seminis tegumentum. EMA/HMPC/345083/2011", "publicacion": "European Medicines Agency", "año": 2014, "volumen": "EMA/HMPC/345083/2011", "paginas": "1-8", "doi": "", "pmid": "", "tipo": "monografía-EMA", "nivelEvidencia": "A", "idioma": "en"},
+      {"autor": "Fernández-Bañares F, Hinojosa J, Sánchez-Lombraña JL et al.", "titulo": "Randomized clinical trial of Plantago ovata seeds (dietary fiber) as compared with mesalamine in maintaining remission in ulcerative colitis", "publicacion": "American Journal of Gastroenterology", "año": 1999, "volumen": "94(2)", "paginas": "427-433", "doi": "10.1111/j.1572-0241.1999.872_a.x", "pmid": "10022641", "tipo": "estudio-clinico-ECA", "nivelEvidencia": "A", "idioma": "en"},
+      {"autor": "Bijkerk CJ, Muris JW, Knottnerus JA, Hoes AW, de Wit NJ", "titulo": "Systematic review: the role of different types of fibre in the treatment of irritable bowel syndrome", "publicacion": "Alimentary Pharmacology & Therapeutics", "año": 2004, "volumen": "19(3)", "paginas": "245-251", "doi": "10.1111/j.0269-2813.2004.01862.x", "pmid": "14984370", "tipo": "revision-sistematica", "nivelEvidencia": "A", "idioma": "en"},
+      {"autor": "Jalanka J, Major G, Murray K et al.", "titulo": "The effect of psyllium husk on intestinal microbiota in constipated patients and healthy controls", "publicacion": "International Journal of Molecular Sciences", "año": 2019, "volumen": "20(2)", "paginas": "433", "doi": "10.3390/ijms20020433", "pmid": "30669531", "tipo": "estudio-clinico-ECA", "nivelEvidencia": "B", "idioma": "en"}
+    ],
+    "advertencia": "Ingerir SIEMPRE con abundante líquido (mínimo 250 ml por dosis). Separar al menos 2 horas de medicamentos orales. Nunca tomar en seco.",
+    "disclaimer": "Esta información es educativa y no sustituye el diagnóstico ni el tratamiento médico profesional."
+  },
+  {
+    "id": "alcachofa",
+    "versionFicha": "2.0",
+    "estadoFicha": "publicada",
+    "fechaCreacion": "2026-04-14",
+    "fechaRevision": "2026-04-14",
+    "nombreComun": "Alcachofa",
+    "nombresAlternativos": [
+      {"nombre": "Artichoke", "idioma": "en", "region": "Internacional"},
+      {"nombre": "Alcaucil", "idioma": "es", "region": "Argentina / Uruguay"},
+      {"nombre": "Cynara", "idioma": "la", "region": "Europa"}
+    ],
+    "nombreCientifico": "Cynara scolymus L.",
+    "sinonimiasCientificas": ["Cynara cardunculus var. scolymus (L.) Fiori"],
+    "familia": "Asteraceae",
+    "orden": "Asterales",
+    "clase": "Magnoliopsida",
+    "regionOrigen": ["Mediterráneo"],
+    "habitatNatural": "Zonas templadas, suelos fértiles y bien drenados. Clima mediterráneo con inviernos suaves.",
+    "disponibilidadPanama": {
+      "disponible": true,
+      "nombreLocal": "Alcachofa",
+      "formaComercial": ["fresca", "extracto-seco", "cápsula", "té-empacado"],
+      "dondeConseguir": ["supermercado", "tienda-naturista"],
+      "cultivoLocal": true,
+      "endemicaPanama": false,
+      "notaRegional": "Fresca disponible en supermercados de Ciudad de Panamá (Riba Smith, El Machetazo). Extractos en tiendas naturistas. Cultivo viable solo en tierras altas (>900 msnm) como Boquete, Cerro Punta o Veraguas interior."
+    },
+    "cultivoCasero": {
+      "dificultad": "moderada",
+      "apta": true,
+      "maceta": true,
+      "luz": "pleno-sol",
+      "agua": "moderado",
+      "suelo": "Franco profundo, rico en nitrógeno y potasio, pH 6.5-7.5",
+      "clima": "Adaptada a zonas altas panameñas (<28°C) con buena ventilación. En tierras bajas sufre estrés térmico severo.",
+      "notaCultivo": "Perenne de ciclo largo. Riego regular sin encharcamiento. Una planta produce 5-10 cabezas por temporada.",
+      "tiempoACosecha": "6-9 meses desde trasplante"
+    },
+    "partesUsadas": [
+      {"parte": "hoja", "nota": "Hojas basales secas (no las brácteas del capítulo). Extractos estandarizados en cinarina y ácidos hidroxicinámicos totales (mínimo 2.5% para uso terapéutico)."}
+    ],
+    "resumen": "Las hojas de alcachofa son colagogas y coleréticas con acción hepatoprotectora e hipolipemiante demostrada en ensayos clínicos controlados. La EMA avala su uso en dispepsia funcional. Especialmente útil para digestión de grasas, náuseas postprandiales e hipercolesterolemia leve.",
+    "usoTradicionalHistorico": {
+      "culturas": [
+        {"cultura": "Grecia y Roma antiguas", "uso": "Digestivo, diurético y afrodisíaco", "periodo": "Antigüedad clásica"},
+        {"cultura": "Medicina árabe medieval", "uso": "Tratamiento de ictericia y afecciones hepáticas", "periodo": "Siglos IX-XIV"},
+        {"cultura": "Medicina popular panameña y latinoamericana", "uso": "Infusión de hojas para el hígado, digestión pesada y colesterol", "periodo": "Siglo XX - presente"}
+      ],
+      "primerasMencionesHistoricas": "Dioscórides, De Materia Medica, Siglo I d.C.",
+      "usoIndigenaRegional": "Introducida en época colonial. Ampliamente usada en medicina popular panameña para el hígado y la digestión."
+    },
+    "nivelEvidenciaGlobal": "A",
+    "fuentePrimaria": {
+      "institucion": "EMA",
+      "tipo": "monografía",
+      "titulo": "Community herbal monograph on Cynara scolymus L., folium. EMA/HMPC/158234/2013",
+      "año": 2013,
+      "url": "https://www.ema.europa.eu/en/documents/herbal-monograph/final-community-herbal-monograph-cynara-scolymus-l-folium_en.pdf"
+    },
+    "grupoTerapeutico": ["colagoga", "hepatoprotectora", "hipolipemiante", "digestiva", "antioxidante"],
+    "propiedades": [
+      {
+        "nombre": "Estimulación colagoga y colerética",
+        "nivelEvidencia": "fuerte",
+        "mecanismoAccion": "La cinarina y luteolina-7-glucósido activan receptores en hepatocitos y colangiocitos incrementando la excreción de sales biliares y el flujo biliar. Facilita la emulsificación y digestión de grasas.",
+        "referencia": "Speroni E et al. J Ethnopharmacol. 2005;102(3):373-378. DOI: 10.1016/j.jep.2005.07.001. PMID: 16154722"
+      },
+      {
+        "nombre": "Modulación lipídica (hipolipemiante)",
+        "nivelEvidencia": "moderado",
+        "mecanismoAccion": "Inhibición parcial de la HMG-CoA reductasa hepática y aumento de la expresión de receptores LDL, acelerando el catabolismo de LDL circulante.",
+        "referencia": "Bundy R et al. Phytomedicine. 2008;15(9):668-675. DOI: 10.1016/j.phymed.2008.03.001. PMID: 18457932"
+      },
+      {
+        "nombre": "Hepatoprotectora y antioxidante",
+        "nivelEvidencia": "moderado",
+        "mecanismoAccion": "El ácido clorogénico y la luteolina neutralizan radicales libres y reducen el estrés oxidativo hepatocelular. Protegen hepatocitos del daño por toxinas.",
+        "referencia": "Rondanelli M et al. Evid Based Complement Alternat Med. 2013;2013:898962. DOI: 10.1155/2013/898962. PMID: 23606892"
+      }
+    ],
+    "fotoquimica": [
+      {
+        "compuesto": "Ácido 1,3-O-dicafeoilquínico (Cinarina)",
+        "grupo": "fenilpropanoide",
+        "accion": "Colerético, hepatoprotector, inhibidor HMG-CoA reductasa",
+        "concentracion": "0.8-1.2% en hojas secas"
+      },
+      {
+        "compuesto": "Luteolina y luteolina-7-glucósido",
+        "grupo": "flavonoide",
+        "accion": "Hepatoprotectora, antiinflamatoria, modulación lipídica",
+        "concentracion": "1-2% en hojas"
+      },
+      {
+        "compuesto": "Ácido clorogénico",
+        "grupo": "fenilpropanoide",
+        "accion": "Antioxidante, modulador del metabolismo de glucosa y lípidos",
+        "concentracion": "2-5% en hojas"
+      },
+      {
+        "compuesto": "Inulina (en capítulos y raíz)",
+        "grupo": "polisacárido",
+        "accion": "Prebiótico, regula microbiota intestinal",
+        "concentracion": "3-10% en capítulos frescos"
+      }
+    ],
+    "dolencias": [
+      {
+        "nombre": "Dispepsia funcional y molestias digestivas postprandiales",
+        "categoria": "digestivo",
+        "nivelEvidencia": "fuerte",
+        "dosis": "Extracto seco estandarizado (≥2.5% ácidos hidroxicinámicos), 600-1000 mg/día divididos en 2-3 tomas",
+        "duracion": "2-6 semanas",
+        "referencia": "Walker AF et al. Phytomedicine. 2002;9(6):483-489. DOI: 10.1078/094471102321616344. PMID: 11061408"
+      },
+      {
+        "nombre": "Hipercolesterolemia leve",
+        "categoria": "metabólico",
+        "nivelEvidencia": "moderado",
+        "dosis": "1800 mg/día de extracto seco estandarizado",
+        "duracion": "12 semanas",
+        "referencia": "Bundy R et al. Phytomedicine. 2008;15(9):668-675. DOI: 10.1016/j.phymed.2008.03.001. PMID: 18457932"
+      },
+      {
+        "nombre": "Esteatosis hepática no alcohólica (NAFLD, coadyuvante)",
+        "categoria": "metabólico",
+        "nivelEvidencia": "moderado",
+        "dosis": "600 mg extracto/día",
+        "duracion": "8 semanas",
+        "referencia": "Panahi Y et al. Phytother Res. 2018;32(7):1382-1387. DOI: 10.1002/ptr.6073. PMID: 29520889"
+      }
+    ],
+    "sistemas": ["digestivo", "metabólico", "hepático"],
+    "modoEII": {
+      "aptaEnBrote": false,
+      "notaBrote": "Evitar en brote activo con diarrea o malabsorción. El efecto colagogo puede aumentar el flujo biliar hacia el colon inflamado y empeorar la esteatorrea.",
+      "aptaEnMantenimiento": true,
+      "notaMantenimiento": "Útil para regular la digestión de grasas y apoyar la función hepática en remisión. Especialmente beneficiosa en EII con afectación ileal (Crohn ileal) donde hay malabsorción de sales biliares.",
+      "mecanismoEII": "Mejora la emulsificación lipídica intestinal y reduce la carga inflamatoria hepática secundaria a la EII. La luteolina tiene acción antiinflamatoria complementaria.",
+      "referenciaEII": "EMA/HMPC/158234/2013. Extrapolación de datos en dispepsia funcional aplicable a EII en remisión."
+    },
+    "modoCeliaquiaGluten": {
+      "libreDeGluten": true,
+      "nota": "Botánicamente libre de gluten. Verificar excipientes en extractos capsulados.",
+      "indicacionEspecifica": "Segura en celiaquía. Mejora la digestión de nutrientes en celíacos con insuficiencia digestiva residual por daño vellositario."
+    },
+    "usos": {
+      "interno": ["Dispepsia y digestión pesada", "Hipercolesterolemia leve", "Esteatosis hepática (coadyuvante)", "Náuseas postprandiales"],
+      "externo": ["Uso cosmético del extracto para piel grasa"],
+      "culinario": ["Verdura comestible (cáliz y base del capítulo)", "Corazones en ensaladas y guisos"]
+    },
+    "preparacion": [
+      {
+        "forma": "infusión",
+        "instrucciones": "Verter agua caliente sobre hojas secas trituradas. Cubrir y dejar reposar. Colar bien. El sabor es intensamente amargo — se puede endulzar con miel.",
+        "cantidadPlanta": "1.5-3 g de hojas secas trituradas",
+        "temperatura": "90-95°C",
+        "tiempoPreparacion": "10-15 minutos tapado",
+        "dosis": "1 taza, 2-3 veces al día, 15-20 minutos antes de las comidas principales",
+        "duracionMaxima": "3 meses consecutivos",
+        "notaPreparacion": "Sabor amargo intenso es señal de contenido en cinarina. Para uso terapéutico real, los extractos estandarizados en cápsula son más fiables que la infusión casera."
+      },
+      {
+        "forma": "extracto-seco",
+        "instrucciones": "Tomar cápsulas de extracto estandarizado (≥2.5% ácidos hidroxicinámicos) con un vaso de agua antes de las comidas.",
+        "cantidadPlanta": "300-500 mg de extracto por cápsula",
+        "dosis": "600-1000 mg/día divididos en 2-3 tomas antes de comidas",
+        "duracionMaxima": "3 meses con revisión médica",
+        "notaPreparacion": "Verificar el porcentaje de estandarización en ácidos hidroxicinámicos en el etiquetado del producto."
+      }
+    ],
+    "contraindicaciones": [
+      {"condicion": "Obstrucción de vías biliares o litiasis biliar sintomática", "gravedad": "absoluta", "justificacion": "El aumento del flujo biliar puede provocar cólico biliar por migración de cálculos o agravar la obstrucción."},
+      {"condicion": "Alergia a plantas de la familia Asteraceae", "gravedad": "relativa", "justificacion": "Posible reacción cruzada con manzanilla, árnica, caléndula."},
+      {"condicion": "Insuficiencia hepática grave", "gravedad": "relativa", "justificacion": "La carga metabólica sobre un hígado gravemente comprometido puede ser perjudicial."}
+    ],
+    "interaccionesMedicamentosas": [
+      {"medicamento": "Estatinas y fibratos", "tipo": "potenciación", "mecanismo": "Efecto hipolipemiante aditivo. Monitorizar enzimas hepáticas.", "gravedad": "leve"},
+      {"medicamento": "Anticoagulantes", "tipo": "precaución", "mecanismo": "Posible interacción con metabolismo de vitamina K en preparaciones frescas.", "gravedad": "leve"}
+    ],
+    "embarazoLactancia": {
+      "embarazo": "precaución",
+      "lactancia": "segura",
+      "pediatria": "Mayores de 12 años. En niños menores, solo uso culinario.",
+      "justificacion": "Falta de datos clínicos robustos en gestación. Uso culinario (verdura) seguro. Extractos terapéuticos: precaución en primer trimestre."
+    },
+    "compatibilidadPlantas": {
+      "sinergicas": [
+        {"plantaId": "fumaria", "plantaNom": "Fumaria", "motivo": "Sinergia colagoga y espasmolítica biliar clásica en fitoterapia europea."},
+        {"plantaId": "hinojo", "plantaNom": "Hinojo", "motivo": "El hinojo añade acción carminativa que complementa el efecto colagogo de la alcachofa en digestiones grasas."},
+        {"plantaId": "menta-piperita", "plantaNom": "Menta piperita", "motivo": "Sinergia antiespasmódica y digestiva para dispepsia funcional."}
+      ],
+      "incompatibles": [
+        {"plantaId": "psyllium", "plantaNom": "Psyllium", "motivo": "La fibra puede secuestrar ácidos biliares y reducir el efecto colagogo sistémico si se toman simultáneamente. Separar al menos 2 horas."}
+      ]
+    },
+    "infusionesRelacionadas": ["mezcla-hepatica", "digestiva-postprandial"],
+    "emoji": "🥬",
+    "etiquetas": ["colagoga", "hepatoprotectora", "hipolipemiante", "nivel-A", "ema", "disponible-panama", "cultivable-panama-tierras-altas", "apta-mantenimiento-eii", "libre-gluten"],
+    "fuentes": [
+      {"autor": "EMA/HMPC", "titulo": "Community herbal monograph on Cynara scolymus L., folium. EMA/HMPC/158234/2013", "publicacion": "European Medicines Agency", "año": 2013, "volumen": "EMA/HMPC/158234/2013", "paginas": "1-9", "doi": "", "pmid": "", "tipo": "monografía-EMA", "nivelEvidencia": "A", "idioma": "en"},
+      {"autor": "Walker AF, Middleton RW, Petrowicz O", "titulo": "Artichoke leaf extract reduces symptoms of irritable bowel syndrome in a post-marketing surveillance study", "publicacion": "Phytomedicine", "año": 2002, "volumen": "9(6)", "paginas": "483-489", "doi": "10.1078/094471102321616344", "pmid": "11061408", "tipo": "estudio-clinico-ECA", "nivelEvidencia": "B", "idioma": "en"},
+      {"autor": "Bundy R, Walker AF, Middleton RW et al.", "titulo": "Artichoke leaf extract reduces mild dyspepsia in an open study", "publicacion": "Phytomedicine", "año": 2004, "volumen": "11(2-3)", "paginas": "95-99", "doi": "10.1078/0944-7113-00304", "pmid": "15070162", "tipo": "estudio-clinico-ECA", "nivelEvidencia": "B", "idioma": "en"},
+      {"autor": "Panahi Y, Kianpour P, Mohtashami R et al.", "titulo": "Efficacy of artichoke leaf extract in non-alcoholic fatty liver disease: A pilot double-blind randomized controlled trial", "publicacion": "Phytotherapy Research", "año": 2018, "volumen": "32(7)", "paginas": "1382-1387", "doi": "10.1002/ptr.6073", "pmid": "29520889", "tipo": "estudio-clinico-ECA", "nivelEvidencia": "B", "idioma": "en"}
+    ],
+    "advertencia": "Contraindicada en obstrucción biliar o litiasis grande. Puede causar reacción alérgica en sensibles a Asteraceae.",
+    "disclaimer": "Esta información es educativa y no sustituye el diagnóstico ni el tratamiento médico profesional."
+  },
+  {
+    "id": "fumaria",
+    "versionFicha": "2.0",
+    "estadoFicha": "publicada",
+    "fechaCreacion": "2026-04-14",
+    "fechaRevision": "2026-04-14",
+    "nombreComun": "Fumaria",
+    "nombresAlternativos": [
+      {"nombre": "Fumitory", "idioma": "en", "region": "Europa"},
+      {"nombre": "Palomilla", "idioma": "es", "region": "España"},
+      {"nombre": "Hierba de la sangre", "idioma": "es", "region": "América / España"}
+    ],
+    "nombreCientifico": "Fumaria officinalis L.",
+    "sinonimiasCientificas": ["Fumaria vaillantii Loisel."],
+    "familia": "Papaveraceae",
+    "orden": "Ranunculales",
+    "clase": "Magnoliopsida",
+    "regionOrigen": ["Europa", "Norte de África", "Asia Occidental"],
+    "habitatNatural": "Campos cultivados, bordes de caminos y terrenos nitrogenados perturbados. Planta arvense común en Europa.",
+    "disponibilidadPanama": {
+      "disponible": false,
+      "nombreLocal": "Fumaria",
+      "formaComercial": ["seca", "cápsula"],
+      "dondeConseguir": ["importación"],
+      "cultivoLocal": false,
+      "endemicaPanama": false,
+      "notaRegional": "Prácticamente no comercializada en Panamá. Disponible solo por importación especializada o pedidos internacionales. No cultivable en clima tropical panameño."
+    },
+    "cultivoCasero": {
+      "dificultad": "dificil",
+      "apta": false,
+      "maceta": false,
+      "luz": "semisombra",
+      "agua": "poco",
+      "suelo": "Franco-calizo, bien drenado, pH alcalino",
+      "clima": "Prefiere climas templados-fríos de Europa. No tolera calor húmedo tropical.",
+      "notaCultivo": "No viable en Panamá. Requiere estaciones marcadas para germinación y desarrollo.",
+      "tiempoACosecha": "3-4 meses"
+    },
+    "partesUsadas": [
+      {"parte": "flor", "nota": "Partes aéreas en floración secas. Contiene alcaloides isoquinolínicos de acción espasmolítica."}
+    ],
+    "resumen": "Planta colagoga y espasmolítica biliar con uso documentado en la Comisión E alemana y la EMA para dispepsia y trastornos hepatobiliares leves. Su perfil alcaloidico le confiere acción sobre músculo liso biliar. Limitada disponibilidad en Panamá.",
+    "usoTradicionalHistorico": {
+      "culturas": [
+        {"cultura": "Herboristería medieval europea (Escuela de Salerno)", "uso": "Ictericia, eccema y melancolía. Depurativo sanguíneo.", "periodo": "Siglos XII-XVI"},
+        {"cultura": "Medicina popular española y latinoamericana", "uso": "Purificador hepático y digestivo", "periodo": "Siglo XIX–XX"}
+      ],
+      "primerasMencionesHistoricas": "Escuela de Salerno (siglo XII). Mattioli y Fuchs en herbarios del siglo XVI.",
+      "usoIndigenaRegional": "Sin uso documentado en pueblos indígenas panameños o centroamericanos."
+    },
+    "nivelEvidenciaGlobal": "C",
+    "fuentePrimaria": {
+      "institucion": "EMA",
+      "tipo": "monografía",
+      "titulo": "Community herbal monograph on Fumaria officinalis L., herba. EMA/HMPC/150396/2010",
+      "año": 2011,
+      "url": "https://www.ema.europa.eu/en/documents/herbal-monograph/final-community-herbal-monograph-fumaria-officinalis-l-herba_en.pdf"
+    },
+    "grupoTerapeutico": ["colagoga", "espasmolítica", "depurativa"],
+    "propiedades": [
+      {
+        "nombre": "Espasmolítica biliar y digestiva",
+        "nivelEvidencia": "tradicional",
+        "mecanismoAccion": "La protopina y fumarina bloquean canales de calcio dependientes de voltaje en músculo liso del esfínter de Oddi y tubo digestivo, reduciendo el espasmo biliar y la hipertonía intestinal.",
+        "referencia": "EMA/HMPC/150396/2010. Community herbal monograph. 2011."
+      },
+      {
+        "nombre": "Colagoga (estimulante biliar)",
+        "nivelEvidencia": "tradicional",
+        "mecanismoAccion": "Los alcaloides estimulan la secreción y flujo de bilis desde la vesícula biliar hacia el duodeno, mejorando la digestión de grasas.",
+        "referencia": "Blumenthal M et al. The Complete German Commission E Monographs. American Botanical Council. 1998. p.156-158."
+      },
+      {
+        "nombre": "Hepatoprotectora leve",
+        "nivelEvidencia": "preliminar",
+        "mecanismoAccion": "Inducción moderada de enzimas de fase II hepáticas y actividad antioxidante flavonoidal.",
+        "referencia": "EMA/HMPC/150396/2010"
+      }
+    ],
+    "fotoquimica": [
+      {
+        "compuesto": "Protopina",
+        "grupo": "alcaloide",
+        "accion": "Espasmolítica, anticolinérgica débil, relajante de músculo liso biliar",
+        "concentracion": "0.4-0.6%"
+      },
+      {
+        "compuesto": "Fumarina",
+        "grupo": "alcaloide",
+        "accion": "Modulación del flujo biliar, hipotensora leve",
+        "concentracion": "0.1-0.2%"
+      },
+      {
+        "compuesto": "Criptopina",
+        "grupo": "alcaloide",
+        "accion": "Antiespasmódica complementaria",
+        "concentracion": "Trazas"
+      }
+    ],
+    "dolencias": [
+      {
+        "nombre": "Dispepsia biliar y espasmos digestivos leves",
+        "categoria": "digestivo",
+        "nivelEvidencia": "tradicional",
+        "dosis": "2-4 g de planta seca en infusión, 3 veces/día antes de comidas",
+        "duracion": "2-3 semanas",
+        "referencia": "EMA/HMPC/150396/2010"
+      },
+      {
+        "nombre": "Eccema crónico leve (uso oral coadyuvante)",
+        "categoria": "dermatológico",
+        "nivelEvidencia": "tradicional",
+        "dosis": "Extracto fluido 10-20 gotas, 2-3 veces/día",
+        "duracion": "4 semanas",
+        "referencia": "Blumenthal M et al. Commission E Monographs. 1998."
+      }
+    ],
+    "sistemas": ["digestivo", "hepático", "dermatológico"],
+    "modoEII": {
+      "aptaEnBrote": false,
+      "notaBrote": "No indicada en brote activo. La estimulación biliar puede aumentar el flujo de ácidos biliares hacia el colon inflamado.",
+      "aptaEnMantenimiento": false,
+      "notaMantenimiento": "No recomendada como tratamiento de base en EII por falta de evidencia clínica directa y perfil alcaloidico activo.",
+      "mecanismoEII": "Sin evidencia específica en EII.",
+      "referenciaEII": "Sin estudios clínicos específicos en EII."
+    },
+    "modoCeliaquiaGluten": {
+      "libreDeGluten": true,
+      "nota": "Libre de gluten. Sin indicación primaria en celiaquía.",
+      "indicacionEspecifica": "Puede usarse en dispepsia biliar funcional asociada a celiaquía, pero sin indicación primaria."
+    },
+    "usos": {
+      "interno": ["Dispepsia biliar", "Espasmos digestivos", "Depuración hepática suave"],
+      "externo": ["Lociones para eccema y dermatitis (uso tradicional)"],
+      "culinario": ["Ninguno. Amargor intenso y alcaloides la hacen inadecuada para consumo."]
+    },
+    "preparacion": [
+      {
+        "forma": "infusión",
+        "instrucciones": "Infusionar la planta seca en agua caliente. Filtrar cuidadosamente. Tomar antes de las comidas.",
+        "cantidadPlanta": "2-3 g de planta seca",
+        "temperatura": "95°C",
+        "tiempoPreparacion": "10 minutos tapado",
+        "dosis": "1 taza, 3 veces al día, 15 minutos antes de comidas",
+        "duracionMaxima": "3 semanas. No superar sin supervisión médica.",
+        "notaPreparacion": "No exceder la dosis por el contenido en alcaloides. Suspender si aparecen náuseas, mareo o hipotensión."
+      }
+    ],
+    "contraindicaciones": [
+      {"condicion": "Embarazo y lactancia", "gravedad": "absoluta", "justificacion": "Alcaloides isoquinolínicos con potencial efecto uterotónico. Sin datos de seguridad en gestación ni lactancia."},
+      {"condicion": "Obstrucción biliar", "gravedad": "absoluta", "justificacion": "El efecto colagogo puede agravar la obstrucción."},
+      {"condicion": "Menores de 18 años", "gravedad": "relativa", "justificacion": "Sin datos de seguridad en pediatría."},
+      {"condicion": "Hipotensión arterial", "gravedad": "precaución", "justificacion": "La fumarina puede causar hipotensión leve."}
+    ],
+    "interaccionesMedicamentosas": [
+      {"medicamento": "Antihipertensivos", "tipo": "potenciación", "mecanismo": "La fumarina puede potenciar el efecto hipotensor.", "gravedad": "leve"},
+      {"medicamento": "Fármacos hepatotóxicos", "tipo": "precaución", "mecanismo": "Sobrecarga potencial de las vías metabólicas hepáticas por metabolismo de alcaloides.", "gravedad": "leve"},
+      {"medicamento": "Sedantes del SNC", "tipo": "potenciación", "mecanismo": "Los alcaloides pueden potenciar levemente efectos depresores.", "gravedad": "leve"}
+    ],
+    "embarazoLactancia": {
+      "embarazo": "contraindicada",
+      "lactancia": "contraindicada",
+      "pediatria": "Contraindicada en menores de 18 años",
+      "justificacion": "Alcaloides con perfil farmacológico activo sin datos de seguridad en gestación, lactancia ni pediatría."
+    },
+    "compatibilidadPlantas": {
+      "sinergicas": [
+        {"plantaId": "alcachofa", "plantaNom": "Alcachofa", "motivo": "Combinación clásica europea para dispepsia biliar. Potencian secreción biliar y relajan espasmos de forma complementaria."}
+      ],
+      "incompatibles": [
+        {"plantaId": "olmo-resbaladizo", "plantaNom": "Olmo resbaladizo", "motivo": "El efecto demulcente del olmo puede interferir con la absorción de los alcaloides activos de la fumaria si se toman simultáneamente."}
+      ]
+    },
+    "infusionesRelacionadas": ["mezcla-colagogica", "depurativa-higado"],
+    "emoji": "🌸",
+    "etiquetas": ["colagoga", "espasmolítica", "nivel-C", "ema", "no-disponible-panama", "no-cultivable-panama", "no-apta-eii", "libre-gluten"],
+    "fuentes": [
+      {"autor": "EMA/HMPC", "titulo": "Community herbal monograph on Fumaria officinalis L., herba. EMA/HMPC/150396/2010", "publicacion": "European Medicines Agency", "año": 2011, "volumen": "EMA/HMPC/150396/2010", "paginas": "1-7", "doi": "", "pmid": "", "tipo": "monografía-EMA", "nivelEvidencia": "C", "idioma": "en"},
+      {"autor": "Blumenthal M, Busse WR, Goldberg A et al.", "titulo": "The Complete German Commission E Monographs: Therapeutic Guide to Herbal Medicines", "publicacion": "American Botanical Council, Austin TX", "año": 1998, "volumen": "", "paginas": "156-158", "isbn": "978-0965555500", "tipo": "comision-e", "nivelEvidencia": "C", "idioma": "en"},
+      {"autor": "Hentschel C, Dippel M, Richter G, Kraft B", "titulo": "Fumaria officinalis (fumitory) — clinical applications", "publicacion": "Fortschritte der Medizin", "año": 1995, "volumen": "113(15)", "paginas": "291-293", "pmid": "7672742", "tipo": "estudio-clinico", "nivelEvidencia": "C", "idioma": "de"}
+    ],
+    "advertencia": "Contraindicada en embarazo y lactancia. Contiene alcaloides activos. Respetar estrictamente dosis y duración máxima. Puede causar hipotensión leve.",
+    "disclaimer": "Esta información es educativa y no sustituye el diagnóstico ni el tratamiento médico profesional."
+  },
+  {
+    "id": "menta-piperita",
+    "versionFicha": "2.0",
+    "estadoFicha": "publicada",
+    "fechaCreacion": "2026-04-14",
+    "fechaRevision": "2026-04-14",
+    "nombreComun": "Menta piperita",
+    "nombresAlternativos": [
+      {"nombre": "Peppermint", "idioma": "en", "region": "Internacional"},
+      {"nombre": "Hierbabuena piperita", "idioma": "es", "region": "Latinoamérica"},
+      {"nombre": "Menthol mint", "idioma": "en", "region": "Comercial"}
+    ],
+    "nombreCientifico": "Mentha × piperita L.",
+    "sinonimiasCientificas": ["Mentha balsamea Willd.", "Mentha officinalis Sole"],
+    "familia": "Lamiaceae",
+    "orden": "Lamiales",
+    "clase": "Magnoliopsida",
+    "regionOrigen": ["Europa", "Asia Occidental"],
+    "habitatNatural": "Humedales, riberas y suelos frescos. Planta estéril de hibridación natural (Mentha aquatica × Mentha spicata). Se propaga exclusivamente por estolones.",
+    "disponibilidadPanama": {
+      "disponible": true,
+      "nombreLocal": "Menta / Hierbabuena fuerte / Menta piperita",
+      "formaComercial": ["fresca", "seca", "té-empacado", "aceite-esencial", "cápsula"],
+      "dondeConseguir": ["supermercado", "mercado-público", "tienda-naturista", "farmacia", "cultivo-propio"],
+      "cultivoLocal": true,
+      "endemicaPanama": false,
+      "notaRegional": "Extremadamente común y fácil de conseguir en todo Panamá. Fresca en mercados y huertos caseros. Té empacado en todos los supermercados. Aceite esencial en tiendas naturistas y farmacias."
+    },
+    "cultivoCasero": {
+      "dificultad": "muy-facil",
+      "apta": true,
+      "maceta": true,
+      "luz": "semisombra",
+      "agua": "moderado",
+      "suelo": "Húmedo, rico en materia orgánica, tolera variados tipos de suelo",
+      "clima": "Se adapta perfectamente al clima tropical panameño. Requiere protección del sol directo intenso en verano.",
+      "notaCultivo": "Planta invasora. Mejor en maceta para controlar su expansión. Propagar por esquejes de tallo. Riego frecuente mantiene alto contenido de mentol. Podar frecuentemente para evitar que florezca (la floración reduce el contenido en aceite esencial).",
+      "tiempoACosecha": "Poda continua a partir de las 6-8 semanas"
+    },
+    "partesUsadas": [
+      {"parte": "hoja", "nota": "Hojas frescas o secas para infusión. Aceite esencial destilado, estandarizado en L-mentol (≥44%), para uso terapéutico en cápsulas gastroresistentes."}
+    ],
+    "resumen": "La menta piperita tiene el nivel de evidencia más alto disponible para el síndrome de intestino irritable. El aceite esencial recubierto entérico es superior al placebo en múltiples metaanálisis, reduciendo dolor abdominal, espasmos y distensión. Espasmolítico de referencia en fitoterapia digestiva.",
+    "usoTradicionalHistorico": {
+      "culturas": [
+        {"cultura": "Medicina europea (siglos XVIII-XIX)", "uso": "Carminativo, analgésico abdominal, refrescante y antinauseoso", "periodo": "Siglo XVIII — presente"},
+        {"cultura": "Medicina tradicional japonesa y china", "uso": "Bòhé — regulación del flujo Qi, alivio de distensión y cefalea", "periodo": "Milenaria — presente"},
+        {"cultura": "Medicina popular panameña y centroamericana", "uso": "Infusión de hojas para digestión, gases y náuseas", "periodo": "Siglo XIX — presente"}
+      ],
+      "primerasMencionesHistoricas": "Linnaeus describió Mentha × piperita en 1753. Adoptada rápidamente en farmacopeas europeas del siglo XIX.",
+      "usoIndigenaRegional": "Ampliamente cultivada y usada en infusiones en toda Panamá. Nombre local 'hierbabuena fuerte' para distinguirla de Mentha spicata (hierbabuena común)."
+    },
+    "nivelEvidenciaGlobal": "A",
+    "fuentePrimaria": {
+      "institucion": "EMA",
+      "tipo": "monografía",
+      "titulo": "Community herbal monograph on Mentha × piperita L., aetheroleum. EMA/HMPC/203217/2013",
+      "año": 2014,
+      "url": "https://www.ema.europa.eu/en/documents/herbal-monograph/final-community-herbal-monograph-mentha-x-piperita-l-aetheroleum_en.pdf"
+    },
+    "grupoTerapeutico": ["antiespasmódica", "carminativa", "analgésica", "procinética-relajante"],
+    "propiedades": [
+      {
+        "nombre": "Relajación de músculo liso gastrointestinal",
+        "nivelEvidencia": "fuerte",
+        "mecanismoAccion": "El L-mentol bloquea canales de calcio dependientes de voltaje (VGCC) en el músculo liso intestinal. Adicionalmente, actúa como agonista de canales TRPM8 (termosensores fríos) en terminaciones nerviosas entéricas, reduciendo la excitabilidad neuronal y la contractilidad espástica del colon.",
+        "referencia": "Ford AC et al. BMJ. 2008;337:a2313. DOI: 10.1136/bmj.a2313. PMID: 18827108"
+      },
+      {
+        "nombre": "Modulación de la percepción visceral (analgesia visceral)",
+        "nivelEvidencia": "moderado",
+        "mecanismoAccion": "El agonismo de canales TRPM8 en terminaciones nerviosas vagales aferentes reduce la señal de dolor visceral (hipoalgesia visceral), disminuyendo la hipersensibilidad intestinal característica del SII.",
+        "referencia": "Alammar N et al. BMC Complement Altern Med. 2019;19(1):21. DOI: 10.1186/s12906-018-2409-0. PMID: 30654773"
+      },
+      {
+        "nombre": "Carminativa",
+        "nivelEvidencia": "fuerte",
+        "mecanismoAccion": "Reduce la fermentación bacteriana intestinal y facilita la expulsión de gases mediante relajación del esfínter anal interno y el músculo liso colónico.",
+        "referencia": "EMA/HMPC/203217/2013"
+      }
+    ],
+    "fotoquimica": [
+      {
+        "compuesto": "L-Mentol",
+        "grupo": "terpenoide",
+        "accion": "Espasmolítico (bloqueo VGCC), analgésico visceral (agonista TRPM8), antimicrobiano leve, carminativo",
+        "concentracion": "35-55% en aceite esencial"
+      },
+      {
+        "compuesto": "Mentona",
+        "grupo": "terpenoide",
+        "accion": "Colerético suave, contribuye al sabor y al efecto carminativo",
+        "concentracion": "10-20% en aceite esencial"
+      },
+      {
+        "compuesto": "Mentofurano",
+        "grupo": "terpenoide",
+        "accion": "Carminativo. En dosis muy altas potencialmente hepatotóxico (razón para respetar dosis).",
+        "concentracion": "1-9% en aceite esencial"
+      },
+      {
+        "compuesto": "Ácido rosmarínico",
+        "grupo": "fenilpropanoide",
+        "accion": "Antioxidante, antiinflamatorio leve en hojas secas",
+        "concentracion": "Variable en hojas"
+      }
+    ],
+    "dolencias": [
+      {
+        "nombre": "Síndrome del intestino irritable (SII)",
+        "categoria": "digestivo",
+        "nivelEvidencia": "fuerte",
+        "dosis": "Aceite esencial recubierto entérico: 180-220 mg, 2-3 veces/día, 30-60 min antes de comidas",
+        "duracion": "4-12 semanas",
+        "referencia": "Ford AC et al. BMJ. 2008;337:a2313. DOI: 10.1136/bmj.a2313. PMID: 18827108"
+      },
+      {
+        "nombre": "Dispepsia funcional",
+        "categoria": "digestivo",
+        "nivelEvidencia": "moderado",
+        "dosis": "Aceite esencial en cápsula 90 mg + aceite de alcaravea 50 mg, 2 veces/día",
+        "duracion": "4 semanas",
+        "referencia": "May B et al. Arzneimittelforschung. 1996;46(8):799-801. PMID: 8902021"
+      },
+      {
+        "nombre": "Náuseas postoperatorias y por quimioterapia (aromaterápia)",
+        "categoria": "general",
+        "nivelEvidencia": "moderado",
+        "dosis": "Inhalación directa de aceite esencial puro, 3-5 inhalaciones profundas",
+        "duracion": "Según necesidad",
+        "referencia": "Lua PL, Zakaria NS. J Altern Complement Med. 2012;18(6):534-40. DOI: 10.1089/acm.2010.0453. PMID: 22300499"
+      }
+    ],
+    "sistemas": ["digestivo", "nervioso"],
+    "modoEII": {
+      "aptaEnBrote": false,
+      "notaBrote": "No indicada en brote activo. La relajación del esfínter esofágico inferior puede causar reflujo. En colitis ulcerosa activa puede enmascarar síntomas de complicación.",
+      "aptaEnMantenimiento": true,
+      "notaMantenimiento": "Excelente para manejo del dolor espástico residual y distensión en remisión de EII. Preferir formulación en cápsula con recubrimiento entérico para liberar el aceite en el colon.",
+      "mecanismoEII": "Bloqueo directo de VGCC en músculo liso colónico reduce el hiperperistaltismo y el dolor visceral referido, frecuentes en EII en remisión con síntomas funcionales superpuestos.",
+      "referenciaEII": "Ford AC et al. BMJ. 2008;337:a2313. PMID: 18827108"
+    },
+    "modoCeliaquiaGluten": {
+      "libreDeGluten": true,
+      "nota": "Aceite esencial puro es 100% libre de gluten. Verificar excipientes en cápsulas comerciales (algunos contienen almidón de trigo).",
+      "indicacionEspecifica": "Segura para aliviar la distensión y espasmos abdominales después de ingesta inadvertida de gluten. La inhalación de aceite esencial puede aliviar náuseas rápidamente."
+    },
+    "usos": {
+      "interno": ["SII (aceite en cápsula entérica)", "Dispepsia funcional", "Náuseas leves", "Espasmos abdominales", "Flatulencia"],
+      "externo": ["Ungüento tópico para cefalea tensional (sien y frente)", "Inhalación para congestión nasal", "Masaje muscular (diluido en aceite base)"],
+      "culinario": ["Infusión digestiva", "Condimento en repostería", "Bebidas refrescantes", "Salsas y ensaladas"]
+    },
+    "preparacion": [
+      {
+        "forma": "infusión",
+        "instrucciones": "Verter agua caliente sobre hojas frescas o secas. Tapar inmediatamente para evitar la volatilización del aceite esencial. Dejar reposar. Colar.",
+        "cantidadPlanta": "1-2 cucharaditas (1.5-3 g) de hojas secas o 5-6 hojas frescas",
+        "temperatura": "90-95°C",
+        "tiempoPreparacion": "10 minutos, tapado",
+        "dosis": "1 taza, 2-3 veces al día, después de las comidas",
+        "duracionMaxima": "Uso continuo seguro para infusión",
+        "notaPreparacion": "La infusión alivia síntomas leves. Para SII moderado-severo, el aceite en cápsula entérica es más eficaz por la liberación colónica."
+      },
+      {
+        "forma": "extracto-seco",
+        "instrucciones": "Cápsulas con recubrimiento entérico que libera el aceite en intestino delgado/colon. Tomar con un vaso de agua, 30-60 minutos antes de las comidas principales. NO masticar ni abrir la cápsula.",
+        "cantidadPlanta": "180-220 mg de aceite esencial por cápsula (estandarizado ≥44% L-mentol)",
+        "dosis": "1 cápsula, 2-3 veces al día antes de comidas",
+        "duracionMaxima": "12 semanas consecutivas",
+        "notaPreparacion": "El recubrimiento entérico es CRÍTICO. Sin él, el mentol se libera en el estómago causando ardor intenso y eructos con sabor a menta. No combinar con antiácidos o IBP (disuelven el recubrimiento)."
+      }
+    ],
+    "contraindicaciones": [
+      {"condicion": "Reflujo gastroesofágico severo (ERGE) o hernia de hiato sintomática", "gravedad": "relativa", "justificacion": "El mentol relaja el esfínter esofágico inferior, potencialmente agravando el reflujo. Usar solo cápsulas entéricas y con precaución."},
+      {"condicion": "Cálculos biliares grandes", "gravedad": "precaución", "justificacion": "El efecto colagogo leve podría provocar migración dolorosa de cálculos."},
+      {"condicion": "Aplicación tópica de mentol puro cerca de nariz o boca de bebés y niños pequeños", "gravedad": "absoluta", "justificacion": "Riesgo de espasmo laríngeo reflejo y apnea en menores de 2 años."}
+    ],
+    "interaccionesMedicamentosas": [
+      {"medicamento": "Inhibidores de bomba de protones (IBP) y antiácidos", "tipo": "antagonismo", "mecanismo": "Neutralizan el recubrimiento entérico de las cápsulas, liberando el mentol en el estómago y causando ardor gástrico intenso.", "gravedad": "moderada"},
+      {"medicamento": "Ciclosporina", "tipo": "alteración-metabolismo", "mecanismo": "El mentol inhibe CYP3A4, reduciendo el metabolismo de la ciclosporina y aumentando sus niveles plasmáticos.", "gravedad": "moderada"},
+      {"medicamento": "Antihipertensivos (bloqueadores de canales de calcio)", "tipo": "precaución", "mecanismo": "Posible efecto hipotensor aditivo leve por el mecanismo bloqueador de VGCC del mentol.", "gravedad": "leve"}
+    ],
+    "embarazoLactancia": {
+      "embarazo": "precaución",
+      "lactancia": "precaución",
+      "pediatria": "Infusión: segura en mayores de 2 años. Aceite esencial oral: solo en mayores de 8 años. Mentol tópico facial: contraindicado menores de 2 años.",
+      "justificacion": "Infusión en dosis dietéticas segura en embarazo. Aceite esencial en cápsula: precaución por ausencia de ECA amplios en embarazo. En lactancia, el mentol puede reducir la producción de leche en dosis altas."
+    },
+    "compatibilidadPlantas": {
+      "sinergicas": [
+        {"plantaId": "psyllium", "plantaNom": "Psyllium", "motivo": "Sinergia ideal para SII: psyllium normaliza consistencia y volumen fecal, menta controla dolor y espasmos."},
+        {"plantaId": "hinojo", "plantaNom": "Hinojo", "motivo": "Triple carminativa clásica. Hinojo añade efecto sobre gases, menta sobre espasmos."},
+        {"plantaId": "manzanilla", "plantaNom": "Manzanilla", "motivo": "Combinación clásica para dispepsia y colon irritable. Estudio clínico avala la mezcla menta+manzanilla+hinojo para SII."}
+      ],
+      "incompatibles": [
+        {"plantaId": "regaliz-dgl", "plantaNom": "Regaliz DGL", "motivo": "No son incompatibles per se, pero deben dosificarse con precaución: el regaliz protege la mucosa gástrica mientras la menta puede relajar el EEI. Separar las tomas (regaliz antes de comidas, menta después)."}
+      ]
+    },
+    "infusionesRelacionadas": ["mezcla-sii-carminativa", "digestiva-triple", "digestiva-esencial"],
+    "emoji": "🌿",
+    "etiquetas": ["antiespasmódica", "carminativa", "ibs", "sii", "nivel-A", "ema", "disponible-panama", "cultivable-panama", "apta-mantenimiento-eii", "libre-gluten"],
+    "fuentes": [
+      {"autor": "EMA/HMPC", "titulo": "Community herbal monograph on Mentha × piperita L., aetheroleum. EMA/HMPC/203217/2013", "publicacion": "European Medicines Agency", "año": 2014, "volumen": "EMA/HMPC/203217/2013", "paginas": "1-9", "doi": "", "pmid": "", "tipo": "monografía-EMA", "nivelEvidencia": "A", "idioma": "en"},
+      {"autor": "Ford AC, Talley NJ, Spiegel BM et al.", "titulo": "Effect of fibre, antispasmodics, and peppermint oil in the treatment of irritable bowel syndrome: systematic review and meta-analysis", "publicacion": "BMJ", "año": 2008, "volumen": "337", "paginas": "a2313", "doi": "10.1136/bmj.a2313", "pmid": "18827108", "tipo": "metaanalisis", "nivelEvidencia": "A", "idioma": "en"},
+      {"autor": "Alammar N, Wang L, Saberi B et al.", "titulo": "The impact of peppermint oil on the irritable bowel syndrome: a meta-analysis of the pooled clinical data", "publicacion": "BMC Complementary and Alternative Medicine", "año": 2019, "volumen": "19(1)", "paginas": "21", "doi": "10.1186/s12906-018-2409-0", "pmid": "30654773", "tipo": "metaanalisis", "nivelEvidencia": "A", "idioma": "en"},
+      {"autor": "May B, Kuntz HD, Kieser M, Köhler S", "titulo": "Efficacy of a fixed peppermint oil/caraway oil combination in non-ulcer dyspepsia", "publicacion": "Arzneimittelforschung", "año": 1996, "volumen": "46(8)", "paginas": "799-801", "pmid": "8902021", "tipo": "estudio-clinico-ECA", "nivelEvidencia": "B", "idioma": "en"}
+    ],
+    "advertencia": "Usar SIEMPRE cápsulas con recubrimiento entérico para uso terapéutico en SII. No combinar con IBP o antiácidos. No aplicar mentol puro cerca de nariz o boca de menores de 2 años.",
+    "disclaimer": "Esta información es educativa y no sustituye el diagnóstico ni el tratamiento médico profesional."
+  }
+]

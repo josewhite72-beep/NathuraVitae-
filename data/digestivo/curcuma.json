@@ -1,0 +1,138 @@
+{
+  "id": "curcuma",
+  "versionFicha": "2.0",
+  "estadoFicha": "publicada",
+  "fechaCreacion": "2026-04-16",
+  "fechaRevision": "2026-04-16",
+  "nombreComun": "Cúrcuma",
+  "nombresAlternativos": [
+    "Palillo",
+    "Turmeric",
+    "Yuquilla"
+  ],
+  "nombreCientifico": "Curcuma longa L.",
+  "sinonimiasCientificas": [
+    "Curcuma domestica Valeton"
+  ],
+  "familia": "Zingiberaceae",
+  "orden": "Zingiberales",
+  "clase": "Liliopsida",
+  "regionOrigen": "Asia del Sur",
+  "habitatNatural": "Zonas tropicales húmedas",
+  "disponibilidadPanama": {
+    "disponible": true,
+    "nombreLocal": "Cúrcuma, Palillo, Yuquilla",
+    "formaComercial": "Raíz fresca, polvo seco, cápsula",
+    "dondeConseguir": "Supermercados, mercados naturales, herbolarios",
+    "cultivoLocal": true,
+    "endemicaPanama": false,
+    "notaRegional": "La raíz fresca se vende como 'yuquilla' en mercados panameños. Cultivable en Panamá."
+  },
+  "cultivoCasero": {
+    "dificultad": "facil",
+    "apta": true,
+    "maceta": true,
+    "luz": "semisombra",
+    "agua": "moderado",
+    "suelo": "Franco bien drenado",
+    "clima": "Excelente en Panamá",
+    "notaCultivo": "Propagar por rizomas. Cosechar a los 8-10 meses.",
+    "tiempoACosecha": "8-10 meses"
+  },
+  "partesUsadas": [
+    "Rizoma (raíz)"
+  ],
+  "resumen": "Antiinflamatorio natural más estudiado del mundo. Metaanálisis demuestran eficacia como adyuvante en colitis ulcerosa. EMA y ESCOP avalan. SIEMPRE con pimienta negra (piperina) — aumenta absorción 2000%.",
+  "usoTradicionalHistorico": "Uso culinario y para problemas digestivos, dolores articulares e inflamación.",
+  "nivelEvidenciaGlobal": "B",
+  "fuentePrimaria": "EMA/HMPC/456845/2008",
+  "grupoTerapeutico": "Antiinflamatorio, antioxidante",
+  "propiedades": "Antiinflamatorio, antioxidante, hepatoprotector",
+  "fotoquimica": "Curcumina, demetoxicurcumina, bisdemetoxicurcumina",
+  "dolencias": [
+    "Colitis ulcerosa (adyuvante)",
+    "Dispepsia",
+    "Artritis"
+  ],
+  "sistemas": [
+    "Digestivo",
+    "Musculoesquelético"
+  ],
+  "modoEII": {
+    "aptaEnBrote": false,
+    "notaBrote": "No en brote severo. En brote leve puede usarse como adyuvante a dosis bajas con precaución.",
+    "aptaEnMantenimiento": true,
+    "notaMantenimiento": "EXCELENTE en remisión. Metaanálisis 2021 (PMID 33938775) demuestra que como adyuvante a mesalazina mantiene la remisión significativamente mejor.",
+    "mecanismoEII": "Inhibición de NF-κB, TNF-α e IL-1β en mucosa colónica.",
+    "referenciaEII": "Zheng T et al. Pharmacol Res. 2021. PMID: 33938775"
+  },
+  "modoCeliaquiaGluten": {
+    "libreDeGluten": true,
+    "nota": "Naturalmente libre. Verificar mezclas comerciales — pueden contener gluten.",
+    "indicacionEspecifica": "Segura y recomendable en celiaquía."
+  },
+  "usos": {
+    "interno": true,
+    "externo": false,
+    "culinario": true
+  },
+  "preparacion": "Extracto 95% curcuminoides con piperina. Tomar con comida que contenga grasa. Culinario: añadir siempre con pimienta negra.",
+  "contraindicaciones": "Alergia a Zingiberaceae. Obstrucción biliar, colelitiasis. Precaución en úlcera activa. Suspender 2 semanas antes de cirugía.",
+  "interaccionesMedicamentosas": "Potencia anticoagulantes y antiagregantes. Interferencia con CYP450.",
+  "embarazoLactancia": "Seguro culinario. Dosis medicinales altas contraindicadas en embarazo.",
+  "compatibilidadPlantas": {
+    "sinergicas": [],
+    "incompatibles": []
+  },
+  "infusionesRelacionadas": [],
+  "emoji": "🟡",
+  "etiquetas": [
+    "antiinflamatorio",
+    "EII",
+    "antioxidante",
+    "nivel-B",
+    "ema",
+    "escop",
+    "cultivable-panama",
+    "disponible-panama",
+    "apta-eii",
+    "superalimento"
+  ],
+  "fuentes": [
+    {
+      "autor": "EMA",
+      "titulo": "Community herbal monograph on Curcuma longa L., rhizoma. EMA/HMPC/456845/2008",
+      "publicacion": "European Medicines Agency",
+      "año": "2010",
+      "doi": "",
+      "pmid": "",
+      "tipo": "Monografía",
+      "nivelEvidencia": "B",
+      "idioma": "en"
+    },
+    {
+      "autor": "ESCOP",
+      "titulo": "Curcuma longa rhizoma",
+      "publicacion": "ESCOP Monographs",
+      "año": "2019",
+      "doi": "",
+      "pmid": "",
+      "tipo": "Monografía",
+      "nivelEvidencia": "B",
+      "idioma": "en"
+    },
+    {
+      "autor": "Zheng T et al.",
+      "titulo": "Efficacy of Adjuvant Curcumin Therapy in Ulcerative Colitis: A Meta-Analysis",
+      "publicacion": "Pharmacological Research",
+      "año": "2021",
+      "doi": "10.1016/j.phrs.2021.105422",
+      "pmid": "33938775",
+      "tipo": "Metaanálisis",
+      "nivelEvidencia": "B",
+      "idioma": "en"
+    }
+  ],
+  "advertencia": "SIEMPRE con pimienta negra. Contraindicada en cálculos biliares activos.",
+  "disclaimer": "Esta información es educativa y no sustituye el diagnóstico ni el tratamiento médico profesional."
+}
