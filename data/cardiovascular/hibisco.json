@@ -1,0 +1,279 @@
+{
+  "id": "hibisco",
+  "versionFicha": "2.0",
+  "estadoFicha": "publicada",
+  "fechaCreacion": "2026-04-15",
+  "fechaRevision": "2026-04-15",
+  "nombreComun": "Hibisco",
+  "nombresAlternativos": [
+    {
+      "nombre": "Roselle",
+      "idioma": "en",
+      "region": "África y Caribe"
+    },
+    {
+      "nombre": "Flor de Jamaica",
+      "idioma": "es",
+      "region": "México y Centroamérica"
+    },
+    {
+      "nombre": "Saril",
+      "idioma": "es",
+      "region": "Panamá"
+    }
+  ],
+  "nombreCientifico": "Hibiscus sabdariffa L.",
+  "sinonimiasCientificas": [],
+  "familia": "Malvaceae",
+  "orden": "Malvales",
+  "clase": "Magnoliopsida",
+  "regionOrigen": [
+    "África tropical"
+  ],
+  "habitatNatural": "Zonas tropicales y subtropicales con suelos bien drenados",
+  "disponibilidadPanama": {
+    "disponible": true,
+    "nombreLocal": "Saril / Flor de Jamaica",
+    "formaComercial": [
+      "seca",
+      "té-empacado",
+      "fresca"
+    ],
+    "dondeConseguir": [
+      "mercado-público",
+      "supermercado",
+      "tienda-naturista",
+      "cultivo-propio"
+    ],
+    "cultivoLocal": true,
+    "endemicaPanama": false,
+    "notaRegional": "Muy común en Panamá. Se consigue fresco y seco en mercados públicos como el Mercado de Abastos. Chicha de saril es bebida tradicional navideña. Fácil de cultivar en cualquier hogar panameño."
+  },
+  "cultivoCasero": {
+    "dificultad": "facil",
+    "apta": true,
+    "maceta": true,
+    "luz": "pleno-sol",
+    "agua": "moderado",
+    "suelo": "Bien drenado, fértil, pH 5.5-7.0",
+    "clima": "Excelente adaptación al clima tropical panameño cálido y húmedo",
+    "notaCultivo": "Anual de rápido crecimiento (3-4 meses). Cosechar cálices maduros carnosos y rojizos antes de que sequen. Atrae colibríes.",
+    "tiempoACosecha": "3-4 meses"
+  },
+  "partesUsadas": [
+    {
+      "parte": "cáliz",
+      "nota": "Cálices carnosos (epicáliz) — la parte roja que rodea la semilla"
+    }
+  ],
+  "resumen": "Los cálices de Hibiscus sabdariffa reducen significativamente la presión arterial sistólica y diastólica mediante inhibición de ACE y efecto diurético natriurético. Metaanálisis 2022 confirma reducción media de 7.1 mmHg sistólica. Conocido popularmente en Panamá como saril.",
+  "usoTradicionalHistorico": {
+    "culturas": [
+      {
+        "cultura": "África Occidental, Egipto (karkadé) y Caribe",
+        "uso": "Hipotensor, diurético, refrescante",
+        "periodo": "Tradicional — siglo XX presente"
+      }
+    ],
+    "primerasMencionesHistoricas": "Uso como karkadé en Egipto y Sudán documentado desde el siglo XVII",
+    "usoIndigenaRegional": "Ampliamente usado en Panamá como chicha de saril para refrescarse y controlar la presión arterial"
+  },
+  "nivelEvidenciaGlobal": "A",
+  "fuentePrimaria": {
+    "institucion": "NCCIH",
+    "tipo": "revision",
+    "titulo": "Ellis LR et al. Systematic review and meta-analysis: effects of Hibiscus sabdariffa on blood pressure. Nutr Rev. 2022",
+    "año": 2022,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/34927694/"
+  },
+  "grupoTerapeutico": [
+    "hipotensora",
+    "diurética",
+    "hipolipemiante",
+    "antioxidante"
+  ],
+  "propiedades": [
+    {
+      "nombre": "Hipotensora (inhibición de ACE y diuresis)",
+      "nivelEvidencia": "fuerte",
+      "mecanismoAccion": "Antocianinas (delfinidina-3-sambubiósido) inhiben la ACE y promueven diuresis natriurética. Efecto adicional de relajación vascular directa por activación de canales de potasio.",
+      "referencia": "Ellis LR et al. Nutr Rev. 2022;80(6):1723-1737. DOI: 10.1093/nutrit/nuab104. PMID: 34927694"
+    }
+  ],
+  "fotoquimica": [
+    {
+      "compuesto": "Delfinidina-3-sambubiósido",
+      "grupo": "antocianina",
+      "accion": "Inhibidora de ACE, antioxidante, antiinflamatoria",
+      "concentracion": "1-2% en cáliz seco"
+    },
+    {
+      "compuesto": "Ácido hibíscico",
+      "grupo": "ácido hidroxicítrico",
+      "accion": "Diurético, hipolipemiante leve",
+      "concentracion": "0.5-1.5%"
+    }
+  ],
+  "dolencias": [
+    {
+      "nombre": "Hipertensión arterial leve-moderada",
+      "categoria": "cardiovascular",
+      "nivelEvidencia": "fuerte",
+      "dosis": "9-10 g de cálices secos en 250-500 ml agua, 2 veces/día",
+      "duracion": "4-6 semanas",
+      "referencia": "Ellis LR et al. DOI: 10.1093/nutrit/nuab104. PMID: 34927694"
+    },
+    {
+      "nombre": "Hipercolesterolemia leve",
+      "categoria": "cardiovascular",
+      "nivelEvidencia": "moderado",
+      "dosis": "5 g cálices secos 3 veces/día",
+      "duracion": "4 semanas",
+      "referencia": "Mozaffari-Khosravi H et al. J Altern Complement Med. 2009;15(8):899-903. DOI: 10.1089/acm.2008.0347. PMID: 19678778"
+    }
+  ],
+  "sistemas": [
+    "cardiovascular",
+    "urológico",
+    "digestivo"
+  ],
+  "modoEII": {
+    "aptaEnBrote": false,
+    "notaBrote": "Precaución en brote activo. El efecto diurético puede agravar la deshidratación por diarrea. La acidez de la infusión puede irritar mucosa inflamada.",
+    "aptaEnMantenimiento": true,
+    "notaMantenimiento": "Excelente en remisión para control de hipertensión y como antioxidante. Endulzar con stevia para evitar azúcar.",
+    "mecanismoEII": "Sin acción directa sobre mucosa intestinal. Antocianinas tienen efecto antioxidante sistémico beneficioso.",
+    "referenciaEII": "Sin estudios específicos en EII"
+  },
+  "modoCeliaquiaGluten": {
+    "libreDeGluten": true,
+    "nota": "Libre de gluten. Verificar jarabes comerciales que pueden contener azúcares o aditivos.",
+    "indicacionEspecifica": "Seguro y popular en Panamá. La chicha de saril sin azúcar es una excelente bebida para celíacos."
+  },
+  "usos": {
+    "interno": [
+      "Hipertensión",
+      "diurético leve",
+      "dislipidemia",
+      "retención de líquidos"
+    ],
+    "externo": [],
+    "culinario": [
+      "Chicha de saril (bebida tradicional panameña)",
+      "agua de Jamaica",
+      "mermeladas",
+      "salsas agridulces"
+    ]
+  },
+  "preparacion": [
+    {
+      "forma": "infusión",
+      "instrucciones": "Hervir 9-10 g de cálices secos en 500 ml agua durante 5-10 minutos. Colar. Beber frío o caliente.",
+      "cantidadPlanta": "9-10 g",
+      "temperatura": "100°C",
+      "tiempoPreparacion": "5-10 minutos",
+      "dosis": "1-2 tazas al día",
+      "duracionMaxima": "Uso continuo seguro",
+      "notaPreparacion": "Para máximo efecto hipotensor, NO añadir azúcar. Endulzar con stevia si se desea."
+    }
+  ],
+  "contraindicaciones": [
+    {
+      "condicion": "Hipotensión grave",
+      "gravedad": "absoluta",
+      "justificacion": "Puede reducir aún más la presión"
+    },
+    {
+      "condicion": "Litiasis renal por oxalato",
+      "gravedad": "relativa",
+      "justificacion": "Contenido moderado de oxalatos"
+    },
+    {
+      "condicion": "Embarazo",
+      "gravedad": "precaución",
+      "justificacion": "Posibles efectos emenagogos en dosis altas"
+    }
+  ],
+  "interaccionesMedicamentosas": [
+    {
+      "medicamento": "Antihipertensivos",
+      "tipo": "potenciación",
+      "mecanismo": "Efecto hipotensor aditivo — riesgo de hipotensión",
+      "gravedad": "moderada"
+    },
+    {
+      "medicamento": "Diuréticos",
+      "tipo": "potenciación",
+      "mecanismo": "Efecto diurético aditivo",
+      "gravedad": "leve"
+    },
+    {
+      "medicamento": "Digoxina",
+      "tipo": "precaución",
+      "mecanismo": "El hibisco puede alterar la absorción de digoxina",
+      "gravedad": "leve"
+    }
+  ],
+  "embarazoLactancia": {
+    "embarazo": "precaución",
+    "lactancia": "segura",
+    "pediatria": "Seguro en niños mayores de 2 años en dosis moderadas",
+    "justificacion": "Uso tradicional amplio. Dosis altas en embarazo: precaución por posible efecto emenagogo."
+  },
+  "compatibilidadPlantas": {
+    "sinergicas": [
+      {
+        "plantaId": "ajo",
+        "plantaNom": "Ajo",
+        "motivo": "Sinergia hipotensora e hipolipemiante"
+      },
+      {
+        "plantaId": "olivo",
+        "plantaNom": "Olivo",
+        "motivo": "Efecto combinado diurético e hipotensor"
+      }
+    ],
+    "incompatibles": []
+  },
+  "infusionesRelacionadas": [],
+  "emoji": "🌺",
+  "etiquetas": [
+    "cardiovascular",
+    "hipotensora",
+    "diurética",
+    "nivel-A",
+    "cultivable-panama",
+    "libre-gluten",
+    "disponible-panama"
+  ],
+  "fuentes": [
+    {
+      "autor": "Ellis LR et al.",
+      "titulo": "A systematic review and meta-analysis of the effects of Hibiscus sabdariffa on blood pressure and cardiometabolic markers",
+      "publicacion": "Nutrition Reviews",
+      "año": 2022,
+      "volumen": "80(6)",
+      "paginas": "1723-1737",
+      "doi": "10.1093/nutrit/nuab104",
+      "pmid": "34927694",
+      "tipo": "metaanalisis",
+      "nivelEvidencia": "A",
+      "idioma": "en"
+    },
+    {
+      "autor": "Mozaffari-Khosravi H et al.",
+      "titulo": "The effects of sour tea (Hibiscus sabdariffa) on lipid profiles: a randomized, double-blind, placebo-controlled trial",
+      "publicacion": "Journal of Alternative and Complementary Medicine",
+      "año": 2009,
+      "volumen": "15(8)",
+      "paginas": "899-903",
+      "doi": "10.1089/acm.2008.0347",
+      "pmid": "19678778",
+      "tipo": "estudio-clinico-ECA",
+      "nivelEvidencia": "B",
+      "idioma": "en"
+    }
+  ],
+  "advertencia": "Puede potenciar antihipertensivos. No usar en hipotensión. Evitar durante el embarazo en dosis altas.",
+  "disclaimer": "Esta información es educativa y no sustituye el diagnóstico ni el tratamiento médico profesional."
+}

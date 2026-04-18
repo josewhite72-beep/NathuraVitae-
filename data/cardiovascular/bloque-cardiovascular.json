@@ -1,0 +1,1386 @@
+[
+  {
+    "id": "espino-blanco",
+    "versionFicha": "2.0",
+    "estadoFicha": "publicada",
+    "fechaCreacion": "2026-04-15",
+    "fechaRevision": "2026-04-15",
+    "nombreComun": "Espino blanco",
+    "nombresAlternativos": [
+      {
+        "nombre": "Hawthorn",
+        "idioma": "en",
+        "region": "Europa y Norteamérica"
+      },
+      {
+        "nombre": "Crataegus",
+        "idioma": "es",
+        "region": "Panamá"
+      }
+    ],
+    "nombreCientifico": "Crataegus monogyna Jacq. o C. laevigata (Poir.) DC. o sus híbridos",
+    "sinonimiasCientificas": [
+      "Crataegus oxyacantha auct."
+    ],
+    "familia": "Rosaceae",
+    "orden": "Rosales",
+    "clase": "Magnoliopsida",
+    "regionOrigen": [
+      "Europa",
+      "Asia Occidental"
+    ],
+    "habitatNatural": "Setos, bordes de bosques y matorrales en climas templados",
+    "disponibilidadPanama": {
+      "disponible": true,
+      "nombreLocal": "Espino blanco",
+      "formaComercial": [
+        "cápsula",
+        "té-empacado",
+        "polvo"
+      ],
+      "dondeConseguir": [
+        "tienda-naturista",
+        "farmacia",
+        "importación"
+      ],
+      "cultivoLocal": false,
+      "endemicaPanama": false,
+      "notaRegional": "Disponible como suplemento importado en cápsulas y extractos en tiendas naturistas de Ciudad de Panamá y iHerb con envío; no común en mercados públicos"
+    },
+    "cultivoCasero": {
+      "dificultad": "moderada",
+      "apta": false,
+      "maceta": false,
+      "luz": "pleno-sol",
+      "agua": "moderado",
+      "suelo": "Bien drenado, fértil, ligeramente alcalino",
+      "clima": "Requiere climas templados con estaciones marcadas; no viable en el clima tropical panameño",
+      "notaCultivo": "Árbol de zonas templadas; no recomendado para cultivo en Panamá",
+      "tiempoACosecha": "No aplica"
+    },
+    "partesUsadas": [
+      {
+        "parte": "hoja y flor",
+        "nota": "Sumidad florida (folium cum flore)"
+      }
+    ],
+    "resumen": "El extracto estandarizado de Crataegus spp. mejora la función cardíaca y reduce la presión arterial en hipertensión leve mediante vasodilatación y efecto inotrópico positivo. Coadyuvante avalado por EMA en insuficiencia cardíaca leve-moderada (NYHA I-II).",
+    "usoTradicionalHistorico": {
+      "culturas": [
+        {
+          "cultura": "Europea medieval",
+          "uso": "Fortificante cardíaco",
+          "periodo": "Edad Media"
+        }
+      ],
+      "primerasMencionesHistoricas": "Dioscórides y herbarios del siglo XVI",
+      "usoIndigenaRegional": "No documentado en Panamá; introducido como suplemento cardiovascular"
+    },
+    "nivelEvidenciaGlobal": "B",
+    "fuentePrimaria": {
+      "institucion": "EMA",
+      "tipo": "draft",
+      "titulo": "Draft European Union herbal monograph on Crataegus monogyna Jacq. (Lindm.), C. laevigata (Poir.) DC. or their hybrids. EMA/HMPC/234781/2024",
+      "año": 2025,
+      "url": "https://www.ema.europa.eu/en/documents/herbal-monograph/draft-european-union-herbal-monograph-crataegus-monogyna-jacq-lindm-c-laevigata-poir-dc-or-their-hybrids-c-pentagyna-waldst-et-kit-ex-willd-c-azarolus-l_en.pdf"
+    },
+    "grupoTerapeutico": [
+      "cardiotónica",
+      "hipotensora",
+      "antiarrítmica",
+      "antioxidante"
+    ],
+    "propiedades": [
+      {
+        "nombre": "Hipotensora y vasodilatadora",
+        "nivelEvidencia": "fuerte",
+        "mecanismoAccion": "Flavonoides (vitexina, hiperósido) inhiben la ACE y aumentan la liberación de óxido nítrico endotelial, reduciendo la resistencia vascular periférica",
+        "referencia": "Djordjević S et al. Pharmaceuticals. 2025;18(7):1027. DOI: 10.3390/ph18071027. PMID: 40732315"
+      },
+      {
+        "nombre": "Inotrópico positivo (mejora contractilidad cardíaca)",
+        "nivelEvidencia": "moderado",
+        "mecanismoAccion": "Proantocianidinas inhiben fosfodiesterasa III, aumentando AMPc intracelular y mejorando la contractilidad del miocardio sin incrementar consumo de oxígeno",
+        "referencia": "Pittler MH et al. Am J Med. 2003;114(8):665-674. DOI: 10.1016/s0002-9343(03)00131-1. PMID: 12798455"
+      }
+    ],
+    "fotoquimica": [
+      {
+        "compuesto": "Vitexina y hiperósido",
+        "grupo": "flavonoide",
+        "accion": "Vasodilatadora, antioxidante, inhibidora de ACE",
+        "concentracion": "1-3% en hoja y flor seca"
+      },
+      {
+        "compuesto": "Proantocianidinas oligoméricas",
+        "grupo": "tanino condensado",
+        "accion": "Inotrópico positivo, antioxidante vascular",
+        "concentracion": "1-3%"
+      }
+    ],
+    "dolencias": [
+      {
+        "nombre": "Hipertensión arterial leve",
+        "categoria": "cardiovascular",
+        "nivelEvidencia": "fuerte",
+        "dosis": "250-1200 mg/día de extracto estandarizado",
+        "duracion": "10-24 semanas",
+        "referencia": "Djordjević S et al. DOI: 10.3390/ph18071027. PMID: 40732315"
+      },
+      {
+        "nombre": "Insuficiencia cardíaca crónica leve-moderada (NYHA I-II)",
+        "categoria": "cardiovascular",
+        "nivelEvidencia": "moderado",
+        "dosis": "900 mg/día de extracto WS 1442",
+        "duracion": "8-24 semanas",
+        "referencia": "Pittler MH et al. DOI: 10.1016/s0002-9343(03)00131-1. PMID: 12798455"
+      }
+    ],
+    "sistemas": [
+      "cardiovascular"
+    ],
+    "modoEII": {
+      "aptaEnBrote": false,
+      "notaBrote": "Sin indicación en brote de EII. No interfiere negativamente pero tampoco aporta beneficio directo sobre la inflamación intestinal.",
+      "aptaEnMantenimiento": true,
+      "notaMantenimiento": "Puede usarse en remisión en pacientes con EII y comorbilidad cardiovascular. Sus flavonoides tienen efecto antioxidante sistémico beneficioso.",
+      "mecanismoEII": "Sin mecanismo directo sobre la mucosa intestinal. Efecto antioxidante general vía flavonoides.",
+      "referenciaEII": "Sin estudios clínicos en EII; uso extrapolado de efecto antioxidante general"
+    },
+    "modoCeliaquiaGluten": {
+      "libreDeGluten": true,
+      "nota": "Libre de gluten. Verificar excipientes en cápsulas comerciales.",
+      "indicacionEspecifica": "Seguro en celiaquía para soporte cardiovascular"
+    },
+    "usos": {
+      "interno": [
+        "Hipertensión leve",
+        "insuficiencia cardíaca NYHA I-II",
+        "palpitaciones nerviosas",
+        "aterosclerosis (coadyuvante)"
+      ],
+      "externo": [],
+      "culinario": []
+    },
+    "preparacion": [
+      {
+        "forma": "extracto-seco",
+        "instrucciones": "Cápsulas de extracto estandarizado (mínimo 1.8% vitexina o 18.75% proantocianidinas). Tomar con alimentos.",
+        "cantidadPlanta": "300-600 mg de extracto por toma",
+        "dosis": "2-3 veces al día",
+        "duracionMaxima": "Uso prolongado seguro bajo supervisión médica",
+        "notaPreparacion": "El efecto terapéutico completo puede tardar 4-6 semanas. No suspender medicación cardiológica convencional."
+      },
+      {
+        "forma": "infusión",
+        "instrucciones": "Infundir 1-2 g de sumidad florida seca en 200 ml de agua caliente, tapar y reposar.",
+        "cantidadPlanta": "1-2 g",
+        "temperatura": "90°C",
+        "tiempoPreparacion": "15 minutos",
+        "dosis": "Hasta 3 veces al día",
+        "duracionMaxima": "4-6 semanas"
+      }
+    ],
+    "contraindicaciones": [
+      {
+        "condicion": "Insuficiencia cardíaca avanzada (NYHA III-IV)",
+        "gravedad": "relativa",
+        "justificacion": "No debe reemplazar medicación convencional en estadios avanzados"
+      },
+      {
+        "condicion": "Hipotensión grave",
+        "gravedad": "relativa",
+        "justificacion": "Efecto hipotensor aditivo"
+      }
+    ],
+    "interaccionesMedicamentosas": [
+      {
+        "medicamento": "Digoxina y antiarrítmicos",
+        "tipo": "potenciación",
+        "mecanismo": "Efecto inotrópico y cronotrópico aditivo; monitorizar frecuencia cardíaca",
+        "gravedad": "moderada"
+      },
+      {
+        "medicamento": "Antihipertensivos",
+        "tipo": "potenciación",
+        "mecanismo": "Efecto hipotensor aditivo",
+        "gravedad": "moderada"
+      },
+      {
+        "medicamento": "Nitratos",
+        "tipo": "potenciación",
+        "mecanismo": "Vasodilatación aditiva, riesgo de hipotensión",
+        "gravedad": "moderada"
+      }
+    ],
+    "embarazoLactancia": {
+      "embarazo": "precaución",
+      "lactancia": "precaución",
+      "pediatria": "No recomendado en menores de 18 años",
+      "justificacion": "Datos limitados según EMA"
+    },
+    "compatibilidadPlantas": {
+      "sinergicas": [
+        {
+          "plantaId": "ajo",
+          "plantaNom": "Ajo",
+          "motivo": "Sinergia hipotensora y antiaterosclerótica"
+        },
+        {
+          "plantaId": "te-verde",
+          "plantaNom": "Té verde",
+          "motivo": "Efecto antioxidante vascular combinado"
+        }
+      ],
+      "incompatibles": []
+    },
+    "infusionesRelacionadas": [],
+    "emoji": "🌸",
+    "etiquetas": [
+      "cardiovascular",
+      "hipotensora",
+      "nivel-B",
+      "ema",
+      "disponible-panama",
+      "no-cultivable-panama",
+      "libre-gluten"
+    ],
+    "fuentes": [
+      {
+        "autor": "European Medicines Agency",
+        "titulo": "Draft European Union herbal monograph on Crataegus monogyna Jacq. (Lindm.), C. laevigata (Poir.) DC. or their hybrids. EMA/HMPC/234781/2024",
+        "publicacion": "EMA",
+        "año": 2025,
+        "doi": "",
+        "pmid": "",
+        "tipo": "draft-EMA",
+        "nivelEvidencia": "B",
+        "idioma": "en"
+      },
+      {
+        "autor": "Djordjević S et al.",
+        "titulo": "Hawthorn (Crataegus spp.) Clinically Significantly Reduces Blood Pressure in Hypertension: A Meta-Analysis of Randomized Placebo-Controlled Clinical Trials",
+        "publicacion": "Pharmaceuticals",
+        "año": 2025,
+        "volumen": "18(7)",
+        "paginas": "1027",
+        "doi": "10.3390/ph18071027",
+        "pmid": "40732315",
+        "tipo": "metaanalisis",
+        "nivelEvidencia": "A",
+        "idioma": "en"
+      },
+      {
+        "autor": "Pittler MH, Schmidt K, Ernst E",
+        "titulo": "Hawthorn extract for treating chronic heart failure: meta-analysis of randomized trials",
+        "publicacion": "American Journal of Medicine",
+        "año": 2003,
+        "volumen": "114(8)",
+        "paginas": "665-674",
+        "doi": "10.1016/s0002-9343(03)00131-1",
+        "pmid": "12798455",
+        "tipo": "metaanalisis",
+        "nivelEvidencia": "B",
+        "idioma": "en"
+      }
+    ],
+    "advertencia": "No suspender medicación cardiológica convencional. Puede potenciar el efecto de digoxina y antihipertensivos. Consultar médico antes de usar.",
+    "disclaimer": "Esta información es educativa y no sustituye el diagnóstico ni el tratamiento médico profesional."
+  },
+  {
+    "id": "ajo",
+    "versionFicha": "2.0",
+    "estadoFicha": "publicada",
+    "fechaCreacion": "2026-04-15",
+    "fechaRevision": "2026-04-15",
+    "nombreComun": "Ajo",
+    "nombresAlternativos": [
+      {
+        "nombre": "Garlic",
+        "idioma": "en",
+        "region": "Internacional"
+      },
+      {
+        "nombre": "Ajo común",
+        "idioma": "es",
+        "region": "Panamá"
+      }
+    ],
+    "nombreCientifico": "Allium sativum L.",
+    "sinonimiasCientificas": [],
+    "familia": "Amaryllidaceae",
+    "orden": "Asparagales",
+    "clase": "Liliopsida",
+    "regionOrigen": [
+      "Asia Central"
+    ],
+    "habitatNatural": "Cultivos en regiones templadas y subtropicales",
+    "disponibilidadPanama": {
+      "disponible": true,
+      "nombreLocal": "Ajo",
+      "formaComercial": [
+        "fresca",
+        "cápsula",
+        "extracto",
+        "polvo"
+      ],
+      "dondeConseguir": [
+        "mercado-público",
+        "supermercado",
+        "tienda-naturista",
+        "farmacia"
+      ],
+      "cultivoLocal": true,
+      "endemicaPanama": false,
+      "notaRegional": "Muy común en mercados y supermercados. Extractos en iHerb y farmacias de Ciudad de Panamá. Cultivable en zonas altas de Chiriquí."
+    },
+    "cultivoCasero": {
+      "dificultad": "facil",
+      "apta": true,
+      "maceta": true,
+      "luz": "pleno-sol",
+      "agua": "moderado",
+      "suelo": "Fértil, bien drenado, rico en materia orgánica",
+      "clima": "Adaptación al clima tropical panameño; mejor en temporada seca y zonas altas",
+      "notaCultivo": "Plantar dientes en maceta o suelo. Cosechar cuando hojas amarilleen. Controlar hongos en lluvias.",
+      "tiempoACosecha": "4-6 meses"
+    },
+    "partesUsadas": [
+      {
+        "parte": "bulbo",
+        "nota": "Fresco, seco o como extracto envejecido (sin olor)"
+      }
+    ],
+    "resumen": "El bulbo de Allium sativum reduce la presión arterial, el colesterol LDL y la agregación plaquetaria mediante compuestos organosulfurados. La alicina se forma al triturar el diente fresco; el extracto envejecido (S-alilcisteína) es más estable y sin olor.",
+    "usoTradicionalHistorico": {
+      "culturas": [
+        {
+          "cultura": "Antigua egipcia, griega y china",
+          "uso": "Cardiovascular, antiinfeccioso, tonificante",
+          "periodo": "3000 a.C. — presente"
+        }
+      ],
+      "primerasMencionesHistoricas": "Papiro Ebers (1550 a.C.)",
+      "usoIndigenaRegional": "Ampliamente usado en Panamá como condimento y remedio para circulación e hipertensión"
+    },
+    "nivelEvidenciaGlobal": "A",
+    "fuentePrimaria": {
+      "institucion": "EMA",
+      "tipo": "monografía",
+      "titulo": "European Union herbal monograph on Allium sativum L., bulbus. EMA/HMPC/7685/2013",
+      "año": 2016,
+      "url": "https://www.ema.europa.eu/en/documents/herbal-monograph/final-european-union-herbal-monograph-allium-sativum-l-bulbus_en.pdf"
+    },
+    "grupoTerapeutico": [
+      "hipotensora",
+      "hipolipemiante",
+      "antiagregante",
+      "antimicrobiana",
+      "antioxidante"
+    ],
+    "propiedades": [
+      {
+        "nombre": "Hipotensora",
+        "nivelEvidencia": "fuerte",
+        "mecanismoAccion": "S-alilcisteína inhibe la ACE y aumenta producción de H2S y óxido nítrico endógeno, relajando músculo liso vascular. Efecto demostrado en hipertensos con reducción de 8-10 mmHg sistólica.",
+        "referencia": "Wang HP et al. J Clin Hypertens. 2015;17(3):223-231. DOI: 10.1111/jch.12473. PMID: 25588003"
+      },
+      {
+        "nombre": "Hipolipemiante",
+        "nivelEvidencia": "fuerte",
+        "mecanismoAccion": "Inhibe HMG-CoA reductasa hepática y aumenta excreción de ácidos biliares, reduciendo LDL y triglicéridos.",
+        "referencia": "Ried K et al. Nutr Rev. 2013;71(5):282-299. DOI: 10.1111/nure.12012. PMID: 23590705"
+      }
+    ],
+    "fotoquimica": [
+      {
+        "compuesto": "Alicina (allicina)",
+        "grupo": "organosulfurado",
+        "accion": "Hipotensora, antimicrobiana, antiagregante — se forma al triturar el diente fresco",
+        "concentracion": "0.5-1% en bulbo fresco triturado"
+      },
+      {
+        "compuesto": "S-alilcisteína (SAC)",
+        "grupo": "aminoácido azufrado",
+        "accion": "Antioxidante, hipotensora, hipolipemiante — presente en extracto envejecido",
+        "concentracion": "0.1-0.5% en extracto envejecido"
+      }
+    ],
+    "dolencias": [
+      {
+        "nombre": "Hipertensión arterial leve-moderada",
+        "categoria": "cardiovascular",
+        "nivelEvidencia": "fuerte",
+        "dosis": "600-1200 mg/día de extracto envejecido, o 2-3 dientes frescos/día",
+        "duracion": "8-12 semanas",
+        "referencia": "Wang HP et al. DOI: 10.1111/jch.12473. PMID: 25588003"
+      },
+      {
+        "nombre": "Hipercolesterolemia leve",
+        "categoria": "cardiovascular",
+        "nivelEvidencia": "fuerte",
+        "dosis": "300-1000 mg/día de extracto envejecido",
+        "duracion": "12 semanas",
+        "referencia": "Ried K et al. DOI: 10.1111/nure.12012. PMID: 23590705"
+      }
+    ],
+    "sistemas": [
+      "cardiovascular",
+      "inmunológico",
+      "digestivo"
+    ],
+    "modoEII": {
+      "aptaEnBrote": false,
+      "notaBrote": "El ajo crudo puede irritar la mucosa intestinal inflamada y empeorar la diarrea en brote activo. Evitar en brote. El extracto envejecido (sin aloína) es mejor tolerado pero se recomienda precaución.",
+      "aptaEnMantenimiento": true,
+      "notaMantenimiento": "El ajo cocido o el extracto envejecido son bien tolerados en remisión. Beneficioso para reducir riesgo cardiovascular asociado a EII crónica.",
+      "mecanismoEII": "Efecto antiinflamatorio sistémico vía S-alilcisteína. El ajo crudo puede irritar la mucosa localmente.",
+      "referenciaEII": "Sin ECA específicos en EII; recomendación basada en tolerancia clínica"
+    },
+    "modoCeliaquiaGluten": {
+      "libreDeGluten": true,
+      "nota": "Bulbo puro libre de gluten. Verificar excipientes en cápsulas comerciales.",
+      "indicacionEspecifica": "Seguro y beneficioso en celiaquía para soporte cardiovascular e inmunológico"
+    },
+    "usos": {
+      "interno": [
+        "Hipertensión",
+        "hipercolesterolemia",
+        "aterosclerosis",
+        "infecciones recurrentes"
+      ],
+      "externo": [
+        "Cataplasma para verrugas",
+        "aceite para otitis (diluido)"
+      ],
+      "culinario": [
+        "Condimento universal en cocina panameña"
+      ]
+    },
+    "preparacion": [
+      {
+        "forma": "extracto-seco",
+        "instrucciones": "Cápsulas de extracto envejecido de ajo (sin olor). Tomar con comidas.",
+        "cantidadPlanta": "600-1200 mg",
+        "dosis": "1-2 veces al día",
+        "duracionMaxima": "Uso prolongado seguro",
+        "notaPreparacion": "Para activar la alicina en ajo fresco: triturar o machacar el diente y dejar reposar 10 minutos antes de consumir."
+      },
+      {
+        "forma": "culinario",
+        "instrucciones": "Incorporar 1-3 dientes de ajo fresco machacado diariamente en la alimentación.",
+        "cantidadPlanta": "1-3 dientes (3-9 g)",
+        "dosis": "Diario",
+        "duracionMaxima": "Indefinida",
+        "notaPreparacion": "El cocinado destruye parcialmente la alicina pero conserva otros compuestos beneficiosos."
+      }
+    ],
+    "contraindicaciones": [
+      {
+        "condicion": "Cirugía programada",
+        "gravedad": "precaución",
+        "justificacion": "Suspender 7-10 días antes por efecto antiagregante plaquetario"
+      },
+      {
+        "condicion": "Trastornos hemorrágicos",
+        "gravedad": "relativa",
+        "justificacion": "Efecto antiagregante puede aumentar riesgo de sangrado"
+      }
+    ],
+    "interaccionesMedicamentosas": [
+      {
+        "medicamento": "Anticoagulantes (warfarina, DOACs)",
+        "tipo": "potenciación",
+        "mecanismo": "Inhibición plaquetaria aditiva — aumenta riesgo de sangrado",
+        "gravedad": "moderada"
+      },
+      {
+        "medicamento": "Antihipertensivos",
+        "tipo": "potenciación",
+        "mecanismo": "Efecto hipotensor aditivo",
+        "gravedad": "leve"
+      },
+      {
+        "medicamento": "Saquinavir (antirretroviral)",
+        "tipo": "antagonismo",
+        "mecanismo": "Puede reducir los niveles plasmáticos de saquinavir",
+        "gravedad": "moderada"
+      }
+    ],
+    "embarazoLactancia": {
+      "embarazo": "segura",
+      "lactancia": "segura",
+      "pediatria": "Seguro como alimento desde 6 meses. Suplementos: mayores de 6 años.",
+      "justificacion": "Uso culinario seguro. Suplementos concentrados: precaución en embarazo."
+    },
+    "compatibilidadPlantas": {
+      "sinergicas": [
+        {
+          "plantaId": "espino-blanco",
+          "plantaNom": "Espino blanco",
+          "motivo": "Sinergia hipotensora y cardioprotectora"
+        },
+        {
+          "plantaId": "hibisco",
+          "plantaNom": "Hibisco",
+          "motivo": "Efecto hipotensor e hipolipemiante combinado"
+        },
+        {
+          "plantaId": "olivo",
+          "plantaNom": "Olivo",
+          "motivo": "Potenciación del efecto hipotensor e hipolipemiante"
+        }
+      ],
+      "incompatibles": []
+    },
+    "infusionesRelacionadas": [],
+    "emoji": "🧄",
+    "etiquetas": [
+      "cardiovascular",
+      "hipotensora",
+      "hipolipemiante",
+      "nivel-A",
+      "ema",
+      "cultivable-panama",
+      "libre-gluten",
+      "disponible-panama"
+    ],
+    "fuentes": [
+      {
+        "autor": "European Medicines Agency",
+        "titulo": "European Union herbal monograph on Allium sativum L., bulbus. EMA/HMPC/7685/2013",
+        "publicacion": "EMA",
+        "año": 2016,
+        "doi": "",
+        "pmid": "",
+        "tipo": "monografía-EMA",
+        "nivelEvidencia": "A",
+        "idioma": "en"
+      },
+      {
+        "autor": "Wang HP et al.",
+        "titulo": "Effect of Garlic on Blood Pressure: A Meta-Analysis",
+        "publicacion": "Journal of Clinical Hypertension",
+        "año": 2015,
+        "volumen": "17(3)",
+        "paginas": "223-231",
+        "doi": "10.1111/jch.12473",
+        "pmid": "25588003",
+        "tipo": "metaanalisis",
+        "nivelEvidencia": "A",
+        "idioma": "en"
+      },
+      {
+        "autor": "Ried K, Toben C, Fakler P",
+        "titulo": "Effect of garlic on serum lipids: an updated meta-analysis",
+        "publicacion": "Nutrition Reviews",
+        "año": 2013,
+        "volumen": "71(5)",
+        "paginas": "282-299",
+        "doi": "10.1111/nure.12012",
+        "pmid": "23590705",
+        "tipo": "metaanalisis",
+        "nivelEvidencia": "A",
+        "idioma": "en"
+      }
+    ],
+    "advertencia": "Suspender 7-10 días antes de cirugía. El ajo crudo puede causar irritación gástrica. Evitar en brote activo de EII.",
+    "disclaimer": "Esta información es educativa y no sustituye el diagnóstico ni el tratamiento médico profesional."
+  },
+  {
+    "id": "olivo",
+    "versionFicha": "2.0",
+    "estadoFicha": "publicada",
+    "fechaCreacion": "2026-04-15",
+    "fechaRevision": "2026-04-15",
+    "nombreComun": "Olivo",
+    "nombresAlternativos": [
+      {
+        "nombre": "Olive leaf",
+        "idioma": "en",
+        "region": "Mediterráneo"
+      },
+      {
+        "nombre": "Hoja de olivo",
+        "idioma": "es",
+        "region": "Panamá"
+      }
+    ],
+    "nombreCientifico": "Olea europaea L.",
+    "sinonimiasCientificas": [],
+    "familia": "Oleaceae",
+    "orden": "Lamiales",
+    "clase": "Magnoliopsida",
+    "regionOrigen": [
+      "Mediterráneo"
+    ],
+    "habitatNatural": "Suelos secos y calcáreos en climas mediterráneos",
+    "disponibilidadPanama": {
+      "disponible": true,
+      "nombreLocal": "Hoja de olivo",
+      "formaComercial": [
+        "cápsula",
+        "extracto",
+        "té-empacado"
+      ],
+      "dondeConseguir": [
+        "tienda-naturista",
+        "farmacia",
+        "importación"
+      ],
+      "cultivoLocal": false,
+      "endemicaPanama": false,
+      "notaRegional": "Disponible como extracto en cápsulas en Vitamin Shoppe Panamá y iHerb. Hojas secas importadas en tiendas naturistas especializadas."
+    },
+    "cultivoCasero": {
+      "dificultad": "moderada",
+      "apta": false,
+      "maceta": false,
+      "luz": "pleno-sol",
+      "agua": "poco",
+      "suelo": "Bien drenado, calcáreo, pobre en nutrientes",
+      "clima": "Requiere clima mediterráneo con inviernos frescos. El olivo puede crecer ornamentalmente en zonas altas de Chiriquí pero no produce hojas medicinales en calidad óptima.",
+      "notaCultivo": "No recomendado para producción de hojas medicinales en Panamá.",
+      "tiempoACosecha": "No aplica"
+    },
+    "partesUsadas": [
+      {
+        "parte": "hoja",
+        "nota": "Hoja seca estandarizada en oleuropeína (mínimo 6-15%)"
+      }
+    ],
+    "resumen": "El extracto de hoja de Olea europaea reduce la presión arterial mediante inhibición de la ACE por la oleuropeína y el hidroxitirosol. Adicionalmente tiene efectos hipolipemiantes y antioxidantes documentados en ensayos clínicos controlados.",
+    "usoTradicionalHistorico": {
+      "culturas": [
+        {
+          "cultura": "Mediterránea antigua",
+          "uso": "Diurético, antipirético y cardiovascular",
+          "periodo": "Antigüedad"
+        }
+      ],
+      "primerasMencionesHistoricas": "Textos hipocráticos y Dioscórides",
+      "usoIndigenaRegional": "No tradicional en Panamá; adoptado modernamente como suplemento para hipertensión"
+    },
+    "nivelEvidenciaGlobal": "B",
+    "fuentePrimaria": {
+      "institucion": "EMA",
+      "tipo": "monografía",
+      "titulo": "European Union herbal monograph on Olea europaea L., folium. EMA/HMPC/359238/2016",
+      "año": 2017,
+      "url": "https://www.ema.europa.eu/en/documents/herbal-monograph/final-european-union-herbal-monograph-olea-europaea-l-folium-first-version_en.pdf"
+    },
+    "grupoTerapeutico": [
+      "hipotensora",
+      "hipolipemiante",
+      "antioxidante",
+      "antimicrobiana"
+    ],
+    "propiedades": [
+      {
+        "nombre": "Hipotensora (inhibición de ACE)",
+        "nivelEvidencia": "moderado",
+        "mecanismoAccion": "Oleuropeína e hidroxitirosol inhiben la enzima convertidora de angiotensina (ACE) y relajan músculo liso vascular vía aumento de óxido nítrico. Efecto comparable a captopril 25 mg en un ECA.",
+        "referencia": "Susalit E et al. Phytother Res. 2011;25(1):1-6. DOI: 10.1002/ptr.3217. PMID: 20486136"
+      }
+    ],
+    "fotoquimica": [
+      {
+        "compuesto": "Oleuropeína",
+        "grupo": "secoiridoide",
+        "accion": "Inhibidora de ACE, antioxidante, antimicrobiana",
+        "concentracion": "6-15% en hoja seca"
+      },
+      {
+        "compuesto": "Hidroxitirosol",
+        "grupo": "polifenol",
+        "accion": "Antioxidante potente, cardioprotector",
+        "concentracion": "0.5-2%"
+      }
+    ],
+    "dolencias": [
+      {
+        "nombre": "Hipertensión arterial leve-moderada",
+        "categoria": "cardiovascular",
+        "nivelEvidencia": "moderado",
+        "dosis": "500-1000 mg/día de extracto estandarizado",
+        "duracion": "8-12 semanas",
+        "referencia": "Susalit E et al. DOI: 10.1002/ptr.3217. PMID: 20486136"
+      }
+    ],
+    "sistemas": [
+      "cardiovascular",
+      "inmunológico"
+    ],
+    "modoEII": {
+      "aptaEnBrote": false,
+      "notaBrote": "Sin indicación en brote. El efecto hipotensor puede ser problemático si hay deshidratación por diarrea severa.",
+      "aptaEnMantenimiento": true,
+      "notaMantenimiento": "Beneficiosa en remisión para control de hipertensión asociada y reducción de estrés oxidativo sistémico.",
+      "mecanismoEII": "Sin mecanismo directo sobre mucosa intestinal. El hidroxitirosol tiene efecto antioxidante sistémico beneficioso.",
+      "referenciaEII": "Sin estudios específicos en EII"
+    },
+    "modoCeliaquiaGluten": {
+      "libreDeGluten": true,
+      "nota": "Libre de gluten. Verificar excipientes en cápsulas.",
+      "indicacionEspecifica": "Segura en celiaquía"
+    },
+    "usos": {
+      "interno": [
+        "Hipertensión",
+        "hipercolesterolemia",
+        "aterosclerosis",
+        "diabetes tipo 2 (coadyuvante)"
+      ],
+      "externo": [],
+      "culinario": []
+    },
+    "preparacion": [
+      {
+        "forma": "infusión",
+        "instrucciones": "Infundir 5-10 g de hojas secas en 200 ml de agua caliente. Tapar y reposar.",
+        "cantidadPlanta": "5-10 g",
+        "temperatura": "90-95°C",
+        "tiempoPreparacion": "10-15 minutos",
+        "dosis": "2-3 tazas al día",
+        "duracionMaxima": "3 meses",
+        "notaPreparacion": "Sabor amargo. Para uso terapéutico, preferir extracto estandarizado en oleuropeína."
+      },
+      {
+        "forma": "extracto-seco",
+        "instrucciones": "Cápsulas de extracto estandarizado (mínimo 6% oleuropeína). Tomar con alimentos.",
+        "cantidadPlanta": "500 mg",
+        "dosis": "2 veces al día",
+        "duracionMaxima": "3 meses con revisión"
+      }
+    ],
+    "contraindicaciones": [
+      {
+        "condicion": "Hipotensión",
+        "gravedad": "relativa",
+        "justificacion": "Puede reducir aún más la presión arterial"
+      },
+      {
+        "condicion": "Embarazo y lactancia",
+        "gravedad": "precaución",
+        "justificacion": "Datos insuficientes según EMA"
+      }
+    ],
+    "interaccionesMedicamentosas": [
+      {
+        "medicamento": "Antihipertensivos (IECA, ARAII, diuréticos)",
+        "tipo": "potenciación",
+        "mecanismo": "Efecto hipotensor aditivo",
+        "gravedad": "moderada"
+      },
+      {
+        "medicamento": "Antidiabéticos orales",
+        "tipo": "potenciación",
+        "mecanismo": "Puede reducir glucemia — monitorizar",
+        "gravedad": "leve"
+      }
+    ],
+    "embarazoLactancia": {
+      "embarazo": "precaución",
+      "lactancia": "precaución",
+      "pediatria": "No recomendado en menores de 12 años",
+      "justificacion": "Datos limitados"
+    },
+    "compatibilidadPlantas": {
+      "sinergicas": [
+        {
+          "plantaId": "espino-blanco",
+          "plantaNom": "Espino blanco",
+          "motivo": "Sinergia hipotensora y cardioprotectora"
+        },
+        {
+          "plantaId": "ajo",
+          "plantaNom": "Ajo",
+          "motivo": "Potenciación del efecto hipotensor e hipolipemiante"
+        },
+        {
+          "plantaId": "hibisco",
+          "plantaNom": "Hibisco",
+          "motivo": "Efecto diurético e hipotensor combinado"
+        }
+      ],
+      "incompatibles": []
+    },
+    "infusionesRelacionadas": [],
+    "emoji": "🫒",
+    "etiquetas": [
+      "cardiovascular",
+      "hipotensora",
+      "hipolipemiante",
+      "nivel-B",
+      "ema",
+      "disponible-panama",
+      "importada",
+      "libre-gluten"
+    ],
+    "fuentes": [
+      {
+        "autor": "European Medicines Agency",
+        "titulo": "European Union herbal monograph on Olea europaea L., folium. EMA/HMPC/359238/2016",
+        "publicacion": "EMA",
+        "año": 2017,
+        "doi": "",
+        "pmid": "",
+        "tipo": "monografía-EMA",
+        "nivelEvidencia": "B",
+        "idioma": "en"
+      },
+      {
+        "autor": "Susalit E, Agus N, Effendi I et al.",
+        "titulo": "Olive (Olea europaea) leaf extract effective in patients with stage-1 hypertension",
+        "publicacion": "Phytotherapy Research",
+        "año": 2011,
+        "volumen": "25(1)",
+        "paginas": "1-6",
+        "doi": "10.1002/ptr.3217",
+        "pmid": "20486136",
+        "tipo": "estudio-clinico-ECA",
+        "nivelEvidencia": "B",
+        "idioma": "en"
+      }
+    ],
+    "advertencia": "Puede potenciar el efecto de antihipertensivos. Monitorizar presión arterial al iniciar.",
+    "disclaimer": "Esta información es educativa y no sustituye el diagnóstico ni el tratamiento médico profesional."
+  },
+  {
+    "id": "te-verde",
+    "versionFicha": "2.0",
+    "estadoFicha": "publicada",
+    "fechaCreacion": "2026-04-15",
+    "fechaRevision": "2026-04-15",
+    "nombreComun": "Té verde",
+    "nombresAlternativos": [
+      {
+        "nombre": "Green tea",
+        "idioma": "en",
+        "region": "Asia"
+      },
+      {
+        "nombre": "Té verde",
+        "idioma": "es",
+        "region": "Panamá"
+      }
+    ],
+    "nombreCientifico": "Camellia sinensis (L.) Kuntze",
+    "sinonimiasCientificas": [
+      "Thea sinensis L."
+    ],
+    "familia": "Theaceae",
+    "orden": "Ericales",
+    "clase": "Magnoliopsida",
+    "regionOrigen": [
+      "China",
+      "Asia Oriental"
+    ],
+    "habitatNatural": "Suelos ácidos y húmedos en regiones subtropicales montañosas",
+    "disponibilidadPanama": {
+      "disponible": true,
+      "nombreLocal": "Té verde",
+      "formaComercial": [
+        "seca",
+        "cápsula",
+        "té-empacado",
+        "extracto"
+      ],
+      "dondeConseguir": [
+        "supermercado",
+        "tienda-naturista",
+        "mercado-público"
+      ],
+      "cultivoLocal": true,
+      "endemicaPanama": false,
+      "notaRegional": "Ampliamente disponible en supermercados y tiendas naturistas. Cultivado experimentalmente en Boquete. Marcas importadas en todos los supermercados."
+    },
+    "cultivoCasero": {
+      "dificultad": "moderada",
+      "apta": true,
+      "maceta": true,
+      "luz": "semisombra",
+      "agua": "moderado",
+      "suelo": "Ácido, bien drenado, rico en materia orgánica, pH 4.5-6.0",
+      "clima": "Se adapta en zonas altas de Panamá (Boquete, Volcán) con semisombra y humedad alta. En tierras bajas el calor excesivo reduce calidad.",
+      "notaCultivo": "Arbusto perenne. Cosechar brotes jóvenes. Sensible a cal en el suelo.",
+      "tiempoACosecha": "Continuo desde el primer año"
+    },
+    "partesUsadas": [
+      {
+        "parte": "hoja",
+        "nota": "Hojas jóvenes no fermentadas. La no fermentación preserva las catequinas."
+      }
+    ],
+    "resumen": "Las catequinas del té verde (especialmente EGCG) reducen la presión arterial, mejoran el perfil lipídico y protegen el endotelio vascular. Metaanálisis múltiples avalan su efecto hipotensor y antiaterosclerótico con consumo habitual de 3-5 tazas diarias.",
+    "usoTradicionalHistorico": {
+      "culturas": [
+        {
+          "cultura": "China antigua",
+          "uso": "Tónico cardiovascular, digestivo y estimulante",
+          "periodo": "Siglo VIII d.C."
+        }
+      ],
+      "primerasMencionesHistoricas": "Lu Yu — El Clásico del Té (760 d.C.)",
+      "usoIndigenaRegional": "Usado en Panamá principalmente como bebida antioxidante y para control de peso"
+    },
+    "nivelEvidenciaGlobal": "A",
+    "fuentePrimaria": {
+      "institucion": "EMA",
+      "tipo": "monografía",
+      "titulo": "Community herbal monograph on Camellia sinensis (L.) Kuntze, non fermentatum folium. EMA/HMPC/283630/2012",
+      "año": 2013,
+      "url": "https://www.ema.europa.eu/en/documents/herbal-monograph/final-community-herbal-monograph-camellia-sinensis-l-kuntze-non-fermentatum-folium_en.pdf"
+    },
+    "grupoTerapeutico": [
+      "hipotensora",
+      "hipolipemiante",
+      "antioxidante",
+      "cardioprotectora"
+    ],
+    "propiedades": [
+      {
+        "nombre": "Hipotensora y cardioprotectora",
+        "nivelEvidencia": "fuerte",
+        "mecanismoAccion": "EGCG aumenta la biodisponibilidad de óxido nítrico endotelial, reduce la oxidación de LDL e inhibe la conversión de angiotensina I a II. Mejora la elasticidad arterial.",
+        "referencia": "Khalesi S et al. Eur J Nutr. 2014;53(6):1299-1311. DOI: 10.1007/s00394-014-0720-1. PMID: 24861099"
+      }
+    ],
+    "fotoquimica": [
+      {
+        "compuesto": "EGCG (epigalocatequina galato)",
+        "grupo": "catequina",
+        "accion": "Antioxidante potente, hipotensora, inhibidora de LDL oxidada",
+        "concentracion": "50-60% de catequinas totales (5-10% en hoja seca)"
+      },
+      {
+        "compuesto": "Cafeína",
+        "grupo": "xantina",
+        "accion": "Estimulante del SNC — puede elevar presión en dosis altas",
+        "concentracion": "2-4% en hoja seca"
+      }
+    ],
+    "dolencias": [
+      {
+        "nombre": "Hipertensión arterial leve y dislipidemia",
+        "categoria": "cardiovascular",
+        "nivelEvidencia": "fuerte",
+        "dosis": "3-5 tazas/día de infusión o 250-500 mg/día de extracto (EGCG 50-200 mg)",
+        "duracion": "8-12 semanas",
+        "referencia": "Khalesi S et al. DOI: 10.1007/s00394-014-0720-1. PMID: 24861099"
+      }
+    ],
+    "sistemas": [
+      "cardiovascular",
+      "nervioso",
+      "digestivo"
+    ],
+    "modoEII": {
+      "aptaEnBrote": false,
+      "notaBrote": "La cafeína puede aumentar la motilidad intestinal y empeorar la diarrea en brote. Las catequinas en dosis altas pueden ser irritantes. Usar versión descafeinada con precaución.",
+      "aptaEnMantenimiento": true,
+      "notaMantenimiento": "El té verde descafeinado es excelente en remisión por sus propiedades antioxidantes y antiinflamatorias sistémicas.",
+      "mecanismoEII": "EGCG inhibe NF-κB y reduce producción de citoquinas proinflamatorias. La cafeína contrarresta parte de este beneficio en brote.",
+      "referenciaEII": "Sin ECA específicos en EII; extrapolado de efectos antiinflamatorios generales"
+    },
+    "modoCeliaquiaGluten": {
+      "libreDeGluten": true,
+      "nota": "Libre de gluten. Verificar bolsas de té (algunos adhesivos pueden contener gluten).",
+      "indicacionEspecifica": "Seguro y beneficioso en celiaquía por sus propiedades antioxidantes"
+    },
+    "usos": {
+      "interno": [
+        "Hipertensión",
+        "dislipidemia",
+        "prevención cardiovascular",
+        "antioxidante general"
+      ],
+      "externo": [
+        "Compresas para ojos cansados",
+        "mascarillas faciales"
+      ],
+      "culinario": [
+        "Infusión diaria",
+        "matcha en cocina"
+      ]
+    },
+    "preparacion": [
+      {
+        "forma": "infusión",
+        "instrucciones": "Verter agua caliente (no hirviendo) sobre las hojas. Tapar y reposar. Colar.",
+        "cantidadPlanta": "2-3 g (1 cucharadita)",
+        "temperatura": "75-85°C",
+        "tiempoPreparacion": "2-3 minutos",
+        "dosis": "3-5 tazas al día",
+        "duracionMaxima": "Uso continuo seguro",
+        "notaPreparacion": "No sobrepasar 3 minutos para evitar extraer demasiada cafeína y taninos amargos. Evitar con leche para maximizar absorción de catequinas."
+      }
+    ],
+    "contraindicaciones": [
+      {
+        "condicion": "Ansiedad severa o insomnio",
+        "gravedad": "precaución",
+        "justificacion": "Cafeína puede exacerbar"
+      },
+      {
+        "condicion": "Embarazo (más de 2 tazas/día)",
+        "gravedad": "precaución",
+        "justificacion": "Exceso de cafeína se asocia a bajo peso al nacer"
+      }
+    ],
+    "interaccionesMedicamentosas": [
+      {
+        "medicamento": "Anticoagulantes (warfarina)",
+        "tipo": "precaución",
+        "mecanismo": "Las catequinas pueden inhibir levemente la agregación plaquetaria",
+        "gravedad": "leve"
+      },
+      {
+        "medicamento": "Hierro no hémico",
+        "tipo": "antagonismo",
+        "mecanismo": "Las catequinas reducen la absorción de hierro — tomar el té alejado de comidas ricas en hierro",
+        "gravedad": "leve"
+      }
+    ],
+    "embarazoLactancia": {
+      "embarazo": "precaución",
+      "lactancia": "precaución",
+      "pediatria": "No recomendado en menores de 6 años. Limitar cafeína en niños.",
+      "justificacion": "Moderar cafeína. Máximo 2 tazas/día en embarazo."
+    },
+    "compatibilidadPlantas": {
+      "sinergicas": [
+        {
+          "plantaId": "ajo",
+          "plantaNom": "Ajo",
+          "motivo": "Sinergia antioxidante y cardioprotectora"
+        },
+        {
+          "plantaId": "espino-blanco",
+          "plantaNom": "Espino blanco",
+          "motivo": "Efecto vascular y antioxidante combinado"
+        }
+      ],
+      "incompatibles": []
+    },
+    "infusionesRelacionadas": [],
+    "emoji": "🍵",
+    "etiquetas": [
+      "cardiovascular",
+      "antioxidante",
+      "hipotensora",
+      "nivel-A",
+      "ema",
+      "cultivable-panama",
+      "libre-gluten",
+      "disponible-panama"
+    ],
+    "fuentes": [
+      {
+        "autor": "European Medicines Agency",
+        "titulo": "Community herbal monograph on Camellia sinensis (L.) Kuntze, non fermentatum folium. EMA/HMPC/283630/2012",
+        "publicacion": "EMA",
+        "año": 2013,
+        "doi": "",
+        "pmid": "",
+        "tipo": "monografía-EMA",
+        "nivelEvidencia": "A",
+        "idioma": "en"
+      },
+      {
+        "autor": "Khalesi S et al.",
+        "titulo": "Green tea catechins and blood pressure: a systematic review and meta-analysis of randomised controlled trials",
+        "publicacion": "European Journal of Nutrition",
+        "año": 2014,
+        "volumen": "53(6)",
+        "paginas": "1299-1311",
+        "doi": "10.1007/s00394-014-0720-1",
+        "pmid": "24861099",
+        "tipo": "metaanalisis",
+        "nivelEvidencia": "A",
+        "idioma": "en"
+      }
+    ],
+    "advertencia": "Moderar en personas sensibles a la cafeína. Los extractos concentrados pueden ser hepatotóxicos en dosis altas. No superar 800 mg/día de EGCG.",
+    "disclaimer": "Esta información es educativa y no sustituye el diagnóstico ni el tratamiento médico profesional."
+  },
+  {
+    "id": "hibisco",
+    "versionFicha": "2.0",
+    "estadoFicha": "publicada",
+    "fechaCreacion": "2026-04-15",
+    "fechaRevision": "2026-04-15",
+    "nombreComun": "Hibisco",
+    "nombresAlternativos": [
+      {
+        "nombre": "Roselle",
+        "idioma": "en",
+        "region": "África y Caribe"
+      },
+      {
+        "nombre": "Flor de Jamaica",
+        "idioma": "es",
+        "region": "México y Centroamérica"
+      },
+      {
+        "nombre": "Saril",
+        "idioma": "es",
+        "region": "Panamá"
+      }
+    ],
+    "nombreCientifico": "Hibiscus sabdariffa L.",
+    "sinonimiasCientificas": [],
+    "familia": "Malvaceae",
+    "orden": "Malvales",
+    "clase": "Magnoliopsida",
+    "regionOrigen": [
+      "África tropical"
+    ],
+    "habitatNatural": "Zonas tropicales y subtropicales con suelos bien drenados",
+    "disponibilidadPanama": {
+      "disponible": true,
+      "nombreLocal": "Saril / Flor de Jamaica",
+      "formaComercial": [
+        "seca",
+        "té-empacado",
+        "fresca"
+      ],
+      "dondeConseguir": [
+        "mercado-público",
+        "supermercado",
+        "tienda-naturista",
+        "cultivo-propio"
+      ],
+      "cultivoLocal": true,
+      "endemicaPanama": false,
+      "notaRegional": "Muy común en Panamá. Se consigue fresco y seco en mercados públicos como el Mercado de Abastos. Chicha de saril es bebida tradicional navideña. Fácil de cultivar en cualquier hogar panameño."
+    },
+    "cultivoCasero": {
+      "dificultad": "facil",
+      "apta": true,
+      "maceta": true,
+      "luz": "pleno-sol",
+      "agua": "moderado",
+      "suelo": "Bien drenado, fértil, pH 5.5-7.0",
+      "clima": "Excelente adaptación al clima tropical panameño cálido y húmedo",
+      "notaCultivo": "Anual de rápido crecimiento (3-4 meses). Cosechar cálices maduros carnosos y rojizos antes de que sequen. Atrae colibríes.",
+      "tiempoACosecha": "3-4 meses"
+    },
+    "partesUsadas": [
+      {
+        "parte": "cáliz",
+        "nota": "Cálices carnosos (epicáliz) — la parte roja que rodea la semilla"
+      }
+    ],
+    "resumen": "Los cálices de Hibiscus sabdariffa reducen significativamente la presión arterial sistólica y diastólica mediante inhibición de ACE y efecto diurético natriurético. Metaanálisis 2022 confirma reducción media de 7.1 mmHg sistólica. Conocido popularmente en Panamá como saril.",
+    "usoTradicionalHistorico": {
+      "culturas": [
+        {
+          "cultura": "África Occidental, Egipto (karkadé) y Caribe",
+          "uso": "Hipotensor, diurético, refrescante",
+          "periodo": "Tradicional — siglo XX presente"
+        }
+      ],
+      "primerasMencionesHistoricas": "Uso como karkadé en Egipto y Sudán documentado desde el siglo XVII",
+      "usoIndigenaRegional": "Ampliamente usado en Panamá como chicha de saril para refrescarse y controlar la presión arterial"
+    },
+    "nivelEvidenciaGlobal": "A",
+    "fuentePrimaria": {
+      "institucion": "NCCIH",
+      "tipo": "revision",
+      "titulo": "Ellis LR et al. Systematic review and meta-analysis: effects of Hibiscus sabdariffa on blood pressure. Nutr Rev. 2022",
+      "año": 2022,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34927694/"
+    },
+    "grupoTerapeutico": [
+      "hipotensora",
+      "diurética",
+      "hipolipemiante",
+      "antioxidante"
+    ],
+    "propiedades": [
+      {
+        "nombre": "Hipotensora (inhibición de ACE y diuresis)",
+        "nivelEvidencia": "fuerte",
+        "mecanismoAccion": "Antocianinas (delfinidina-3-sambubiósido) inhiben la ACE y promueven diuresis natriurética. Efecto adicional de relajación vascular directa por activación de canales de potasio.",
+        "referencia": "Ellis LR et al. Nutr Rev. 2022;80(6):1723-1737. DOI: 10.1093/nutrit/nuab104. PMID: 34927694"
+      }
+    ],
+    "fotoquimica": [
+      {
+        "compuesto": "Delfinidina-3-sambubiósido",
+        "grupo": "antocianina",
+        "accion": "Inhibidora de ACE, antioxidante, antiinflamatoria",
+        "concentracion": "1-2% en cáliz seco"
+      },
+      {
+        "compuesto": "Ácido hibíscico",
+        "grupo": "ácido hidroxicítrico",
+        "accion": "Diurético, hipolipemiante leve",
+        "concentracion": "0.5-1.5%"
+      }
+    ],
+    "dolencias": [
+      {
+        "nombre": "Hipertensión arterial leve-moderada",
+        "categoria": "cardiovascular",
+        "nivelEvidencia": "fuerte",
+        "dosis": "9-10 g de cálices secos en 250-500 ml agua, 2 veces/día",
+        "duracion": "4-6 semanas",
+        "referencia": "Ellis LR et al. DOI: 10.1093/nutrit/nuab104. PMID: 34927694"
+      },
+      {
+        "nombre": "Hipercolesterolemia leve",
+        "categoria": "cardiovascular",
+        "nivelEvidencia": "moderado",
+        "dosis": "5 g cálices secos 3 veces/día",
+        "duracion": "4 semanas",
+        "referencia": "Mozaffari-Khosravi H et al. J Altern Complement Med. 2009;15(8):899-903. DOI: 10.1089/acm.2008.0347. PMID: 19678778"
+      }
+    ],
+    "sistemas": [
+      "cardiovascular",
+      "urológico",
+      "digestivo"
+    ],
+    "modoEII": {
+      "aptaEnBrote": false,
+      "notaBrote": "Precaución en brote activo. El efecto diurético puede agravar la deshidratación por diarrea. La acidez de la infusión puede irritar mucosa inflamada.",
+      "aptaEnMantenimiento": true,
+      "notaMantenimiento": "Excelente en remisión para control de hipertensión y como antioxidante. Endulzar con stevia para evitar azúcar.",
+      "mecanismoEII": "Sin acción directa sobre mucosa intestinal. Antocianinas tienen efecto antioxidante sistémico beneficioso.",
+      "referenciaEII": "Sin estudios específicos en EII"
+    },
+    "modoCeliaquiaGluten": {
+      "libreDeGluten": true,
+      "nota": "Libre de gluten. Verificar jarabes comerciales que pueden contener azúcares o aditivos.",
+      "indicacionEspecifica": "Seguro y popular en Panamá. La chicha de saril sin azúcar es una excelente bebida para celíacos."
+    },
+    "usos": {
+      "interno": [
+        "Hipertensión",
+        "diurético leve",
+        "dislipidemia",
+        "retención de líquidos"
+      ],
+      "externo": [],
+      "culinario": [
+        "Chicha de saril (bebida tradicional panameña)",
+        "agua de Jamaica",
+        "mermeladas",
+        "salsas agridulces"
+      ]
+    },
+    "preparacion": [
+      {
+        "forma": "infusión",
+        "instrucciones": "Hervir 9-10 g de cálices secos en 500 ml agua durante 5-10 minutos. Colar. Beber frío o caliente.",
+        "cantidadPlanta": "9-10 g",
+        "temperatura": "100°C",
+        "tiempoPreparacion": "5-10 minutos",
+        "dosis": "1-2 tazas al día",
+        "duracionMaxima": "Uso continuo seguro",
+        "notaPreparacion": "Para máximo efecto hipotensor, NO añadir azúcar. Endulzar con stevia si se desea."
+      }
+    ],
+    "contraindicaciones": [
+      {
+        "condicion": "Hipotensión grave",
+        "gravedad": "absoluta",
+        "justificacion": "Puede reducir aún más la presión"
+      },
+      {
+        "condicion": "Litiasis renal por oxalato",
+        "gravedad": "relativa",
+        "justificacion": "Contenido moderado de oxalatos"
+      },
+      {
+        "condicion": "Embarazo",
+        "gravedad": "precaución",
+        "justificacion": "Posibles efectos emenagogos en dosis altas"
+      }
+    ],
+    "interaccionesMedicamentosas": [
+      {
+        "medicamento": "Antihipertensivos",
+        "tipo": "potenciación",
+        "mecanismo": "Efecto hipotensor aditivo — riesgo de hipotensión",
+        "gravedad": "moderada"
+      },
+      {
+        "medicamento": "Diuréticos",
+        "tipo": "potenciación",
+        "mecanismo": "Efecto diurético aditivo",
+        "gravedad": "leve"
+      },
+      {
+        "medicamento": "Digoxina",
+        "tipo": "precaución",
+        "mecanismo": "El hibisco puede alterar la absorción de digoxina",
+        "gravedad": "leve"
+      }
+    ],
+    "embarazoLactancia": {
+      "embarazo": "precaución",
+      "lactancia": "segura",
+      "pediatria": "Seguro en niños mayores de 2 años en dosis moderadas",
+      "justificacion": "Uso tradicional amplio. Dosis altas en embarazo: precaución por posible efecto emenagogo."
+    },
+    "compatibilidadPlantas": {
+      "sinergicas": [
+        {
+          "plantaId": "ajo",
+          "plantaNom": "Ajo",
+          "motivo": "Sinergia hipotensora e hipolipemiante"
+        },
+        {
+          "plantaId": "olivo",
+          "plantaNom": "Olivo",
+          "motivo": "Efecto combinado diurético e hipotensor"
+        }
+      ],
+      "incompatibles": []
+    },
+    "infusionesRelacionadas": [],
+    "emoji": "🌺",
+    "etiquetas": [
+      "cardiovascular",
+      "hipotensora",
+      "diurética",
+      "nivel-A",
+      "cultivable-panama",
+      "libre-gluten",
+      "disponible-panama"
+    ],
+    "fuentes": [
+      {
+        "autor": "Ellis LR et al.",
+        "titulo": "A systematic review and meta-analysis of the effects of Hibiscus sabdariffa on blood pressure and cardiometabolic markers",
+        "publicacion": "Nutrition Reviews",
+        "año": 2022,
+        "volumen": "80(6)",
+        "paginas": "1723-1737",
+        "doi": "10.1093/nutrit/nuab104",
+        "pmid": "34927694",
+        "tipo": "metaanalisis",
+        "nivelEvidencia": "A",
+        "idioma": "en"
+      },
+      {
+        "autor": "Mozaffari-Khosravi H et al.",
+        "titulo": "The effects of sour tea (Hibiscus sabdariffa) on lipid profiles: a randomized, double-blind, placebo-controlled trial",
+        "publicacion": "Journal of Alternative and Complementary Medicine",
+        "año": 2009,
+        "volumen": "15(8)",
+        "paginas": "899-903",
+        "doi": "10.1089/acm.2008.0347",
+        "pmid": "19678778",
+        "tipo": "estudio-clinico-ECA",
+        "nivelEvidencia": "B",
+        "idioma": "en"
+      }
+    ],
+    "advertencia": "Puede potenciar antihipertensivos. No usar en hipotensión. Evitar durante el embarazo en dosis altas.",
+    "disclaimer": "Esta información es educativa y no sustituye el diagnóstico ni el tratamiento médico profesional."
+  }
+]

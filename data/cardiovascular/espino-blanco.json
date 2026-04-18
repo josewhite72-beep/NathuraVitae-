@@ -1,0 +1,288 @@
+{
+  "id": "espino-blanco",
+  "versionFicha": "2.0",
+  "estadoFicha": "publicada",
+  "fechaCreacion": "2026-04-15",
+  "fechaRevision": "2026-04-15",
+  "nombreComun": "Espino blanco",
+  "nombresAlternativos": [
+    {
+      "nombre": "Hawthorn",
+      "idioma": "en",
+      "region": "Europa y Norteamérica"
+    },
+    {
+      "nombre": "Crataegus",
+      "idioma": "es",
+      "region": "Panamá"
+    }
+  ],
+  "nombreCientifico": "Crataegus monogyna Jacq. o C. laevigata (Poir.) DC. o sus híbridos",
+  "sinonimiasCientificas": [
+    "Crataegus oxyacantha auct."
+  ],
+  "familia": "Rosaceae",
+  "orden": "Rosales",
+  "clase": "Magnoliopsida",
+  "regionOrigen": [
+    "Europa",
+    "Asia Occidental"
+  ],
+  "habitatNatural": "Setos, bordes de bosques y matorrales en climas templados",
+  "disponibilidadPanama": {
+    "disponible": true,
+    "nombreLocal": "Espino blanco",
+    "formaComercial": [
+      "cápsula",
+      "té-empacado",
+      "polvo"
+    ],
+    "dondeConseguir": [
+      "tienda-naturista",
+      "farmacia",
+      "importación"
+    ],
+    "cultivoLocal": false,
+    "endemicaPanama": false,
+    "notaRegional": "Disponible como suplemento importado en cápsulas y extractos en tiendas naturistas de Ciudad de Panamá y iHerb con envío; no común en mercados públicos"
+  },
+  "cultivoCasero": {
+    "dificultad": "moderada",
+    "apta": false,
+    "maceta": false,
+    "luz": "pleno-sol",
+    "agua": "moderado",
+    "suelo": "Bien drenado, fértil, ligeramente alcalino",
+    "clima": "Requiere climas templados con estaciones marcadas; no viable en el clima tropical panameño",
+    "notaCultivo": "Árbol de zonas templadas; no recomendado para cultivo en Panamá",
+    "tiempoACosecha": "No aplica"
+  },
+  "partesUsadas": [
+    {
+      "parte": "hoja y flor",
+      "nota": "Sumidad florida (folium cum flore)"
+    }
+  ],
+  "resumen": "El extracto estandarizado de Crataegus spp. mejora la función cardíaca y reduce la presión arterial en hipertensión leve mediante vasodilatación y efecto inotrópico positivo. Coadyuvante avalado por EMA en insuficiencia cardíaca leve-moderada (NYHA I-II).",
+  "usoTradicionalHistorico": {
+    "culturas": [
+      {
+        "cultura": "Europea medieval",
+        "uso": "Fortificante cardíaco",
+        "periodo": "Edad Media"
+      }
+    ],
+    "primerasMencionesHistoricas": "Dioscórides y herbarios del siglo XVI",
+    "usoIndigenaRegional": "No documentado en Panamá; introducido como suplemento cardiovascular"
+  },
+  "nivelEvidenciaGlobal": "B",
+  "fuentePrimaria": {
+    "institucion": "EMA",
+    "tipo": "draft",
+    "titulo": "Draft European Union herbal monograph on Crataegus monogyna Jacq. (Lindm.), C. laevigata (Poir.) DC. or their hybrids. EMA/HMPC/234781/2024",
+    "año": 2025,
+    "url": "https://www.ema.europa.eu/en/documents/herbal-monograph/draft-european-union-herbal-monograph-crataegus-monogyna-jacq-lindm-c-laevigata-poir-dc-or-their-hybrids-c-pentagyna-waldst-et-kit-ex-willd-c-azarolus-l_en.pdf"
+  },
+  "grupoTerapeutico": [
+    "cardiotónica",
+    "hipotensora",
+    "antiarrítmica",
+    "antioxidante"
+  ],
+  "propiedades": [
+    {
+      "nombre": "Hipotensora y vasodilatadora",
+      "nivelEvidencia": "fuerte",
+      "mecanismoAccion": "Flavonoides (vitexina, hiperósido) inhiben la ACE y aumentan la liberación de óxido nítrico endotelial, reduciendo la resistencia vascular periférica",
+      "referencia": "Djordjević S et al. Pharmaceuticals. 2025;18(7):1027. DOI: 10.3390/ph18071027. PMID: 40732315"
+    },
+    {
+      "nombre": "Inotrópico positivo (mejora contractilidad cardíaca)",
+      "nivelEvidencia": "moderado",
+      "mecanismoAccion": "Proantocianidinas inhiben fosfodiesterasa III, aumentando AMPc intracelular y mejorando la contractilidad del miocardio sin incrementar consumo de oxígeno",
+      "referencia": "Pittler MH et al. Am J Med. 2003;114(8):665-674. DOI: 10.1016/s0002-9343(03)00131-1. PMID: 12798455"
+    }
+  ],
+  "fotoquimica": [
+    {
+      "compuesto": "Vitexina y hiperósido",
+      "grupo": "flavonoide",
+      "accion": "Vasodilatadora, antioxidante, inhibidora de ACE",
+      "concentracion": "1-3% en hoja y flor seca"
+    },
+    {
+      "compuesto": "Proantocianidinas oligoméricas",
+      "grupo": "tanino condensado",
+      "accion": "Inotrópico positivo, antioxidante vascular",
+      "concentracion": "1-3%"
+    }
+  ],
+  "dolencias": [
+    {
+      "nombre": "Hipertensión arterial leve",
+      "categoria": "cardiovascular",
+      "nivelEvidencia": "fuerte",
+      "dosis": "250-1200 mg/día de extracto estandarizado",
+      "duracion": "10-24 semanas",
+      "referencia": "Djordjević S et al. DOI: 10.3390/ph18071027. PMID: 40732315"
+    },
+    {
+      "nombre": "Insuficiencia cardíaca crónica leve-moderada (NYHA I-II)",
+      "categoria": "cardiovascular",
+      "nivelEvidencia": "moderado",
+      "dosis": "900 mg/día de extracto WS 1442",
+      "duracion": "8-24 semanas",
+      "referencia": "Pittler MH et al. DOI: 10.1016/s0002-9343(03)00131-1. PMID: 12798455"
+    }
+  ],
+  "sistemas": [
+    "cardiovascular"
+  ],
+  "modoEII": {
+    "aptaEnBrote": false,
+    "notaBrote": "Sin indicación en brote de EII. No interfiere negativamente pero tampoco aporta beneficio directo sobre la inflamación intestinal.",
+    "aptaEnMantenimiento": true,
+    "notaMantenimiento": "Puede usarse en remisión en pacientes con EII y comorbilidad cardiovascular. Sus flavonoides tienen efecto antioxidante sistémico beneficioso.",
+    "mecanismoEII": "Sin mecanismo directo sobre la mucosa intestinal. Efecto antioxidante general vía flavonoides.",
+    "referenciaEII": "Sin estudios clínicos en EII; uso extrapolado de efecto antioxidante general"
+  },
+  "modoCeliaquiaGluten": {
+    "libreDeGluten": true,
+    "nota": "Libre de gluten. Verificar excipientes en cápsulas comerciales.",
+    "indicacionEspecifica": "Seguro en celiaquía para soporte cardiovascular"
+  },
+  "usos": {
+    "interno": [
+      "Hipertensión leve",
+      "insuficiencia cardíaca NYHA I-II",
+      "palpitaciones nerviosas",
+      "aterosclerosis (coadyuvante)"
+    ],
+    "externo": [],
+    "culinario": []
+  },
+  "preparacion": [
+    {
+      "forma": "extracto-seco",
+      "instrucciones": "Cápsulas de extracto estandarizado (mínimo 1.8% vitexina o 18.75% proantocianidinas). Tomar con alimentos.",
+      "cantidadPlanta": "300-600 mg de extracto por toma",
+      "dosis": "2-3 veces al día",
+      "duracionMaxima": "Uso prolongado seguro bajo supervisión médica",
+      "notaPreparacion": "El efecto terapéutico completo puede tardar 4-6 semanas. No suspender medicación cardiológica convencional."
+    },
+    {
+      "forma": "infusión",
+      "instrucciones": "Infundir 1-2 g de sumidad florida seca en 200 ml de agua caliente, tapar y reposar.",
+      "cantidadPlanta": "1-2 g",
+      "temperatura": "90°C",
+      "tiempoPreparacion": "15 minutos",
+      "dosis": "Hasta 3 veces al día",
+      "duracionMaxima": "4-6 semanas"
+    }
+  ],
+  "contraindicaciones": [
+    {
+      "condicion": "Insuficiencia cardíaca avanzada (NYHA III-IV)",
+      "gravedad": "relativa",
+      "justificacion": "No debe reemplazar medicación convencional en estadios avanzados"
+    },
+    {
+      "condicion": "Hipotensión grave",
+      "gravedad": "relativa",
+      "justificacion": "Efecto hipotensor aditivo"
+    }
+  ],
+  "interaccionesMedicamentosas": [
+    {
+      "medicamento": "Digoxina y antiarrítmicos",
+      "tipo": "potenciación",
+      "mecanismo": "Efecto inotrópico y cronotrópico aditivo; monitorizar frecuencia cardíaca",
+      "gravedad": "moderada"
+    },
+    {
+      "medicamento": "Antihipertensivos",
+      "tipo": "potenciación",
+      "mecanismo": "Efecto hipotensor aditivo",
+      "gravedad": "moderada"
+    },
+    {
+      "medicamento": "Nitratos",
+      "tipo": "potenciación",
+      "mecanismo": "Vasodilatación aditiva, riesgo de hipotensión",
+      "gravedad": "moderada"
+    }
+  ],
+  "embarazoLactancia": {
+    "embarazo": "precaución",
+    "lactancia": "precaución",
+    "pediatria": "No recomendado en menores de 18 años",
+    "justificacion": "Datos limitados según EMA"
+  },
+  "compatibilidadPlantas": {
+    "sinergicas": [
+      {
+        "plantaId": "ajo",
+        "plantaNom": "Ajo",
+        "motivo": "Sinergia hipotensora y antiaterosclerótica"
+      },
+      {
+        "plantaId": "te-verde",
+        "plantaNom": "Té verde",
+        "motivo": "Efecto antioxidante vascular combinado"
+      }
+    ],
+    "incompatibles": []
+  },
+  "infusionesRelacionadas": [],
+  "emoji": "🌸",
+  "etiquetas": [
+    "cardiovascular",
+    "hipotensora",
+    "nivel-B",
+    "ema",
+    "disponible-panama",
+    "no-cultivable-panama",
+    "libre-gluten"
+  ],
+  "fuentes": [
+    {
+      "autor": "European Medicines Agency",
+      "titulo": "Draft European Union herbal monograph on Crataegus monogyna Jacq. (Lindm.), C. laevigata (Poir.) DC. or their hybrids. EMA/HMPC/234781/2024",
+      "publicacion": "EMA",
+      "año": 2025,
+      "doi": "",
+      "pmid": "",
+      "tipo": "draft-EMA",
+      "nivelEvidencia": "B",
+      "idioma": "en"
+    },
+    {
+      "autor": "Djordjević S et al.",
+      "titulo": "Hawthorn (Crataegus spp.) Clinically Significantly Reduces Blood Pressure in Hypertension: A Meta-Analysis of Randomized Placebo-Controlled Clinical Trials",
+      "publicacion": "Pharmaceuticals",
+      "año": 2025,
+      "volumen": "18(7)",
+      "paginas": "1027",
+      "doi": "10.3390/ph18071027",
+      "pmid": "40732315",
+      "tipo": "metaanalisis",
+      "nivelEvidencia": "A",
+      "idioma": "en"
+    },
+    {
+      "autor": "Pittler MH, Schmidt K, Ernst E",
+      "titulo": "Hawthorn extract for treating chronic heart failure: meta-analysis of randomized trials",
+      "publicacion": "American Journal of Medicine",
+      "año": 2003,
+      "volumen": "114(8)",
+      "paginas": "665-674",
+      "doi": "10.1016/s0002-9343(03)00131-1",
+      "pmid": "12798455",
+      "tipo": "metaanalisis",
+      "nivelEvidencia": "B",
+      "idioma": "en"
+    }
+  ],
+  "advertencia": "No suspender medicación cardiológica convencional. Puede potenciar el efecto de digoxina y antihipertensivos. Consultar médico antes de usar.",
+  "disclaimer": "Esta información es educativa y no sustituye el diagnóstico ni el tratamiento médico profesional."
+}

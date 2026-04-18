@@ -1,0 +1,259 @@
+{
+  "id": "olivo",
+  "versionFicha": "2.0",
+  "estadoFicha": "publicada",
+  "fechaCreacion": "2026-04-15",
+  "fechaRevision": "2026-04-15",
+  "nombreComun": "Olivo",
+  "nombresAlternativos": [
+    {
+      "nombre": "Olive leaf",
+      "idioma": "en",
+      "region": "Mediterráneo"
+    },
+    {
+      "nombre": "Hoja de olivo",
+      "idioma": "es",
+      "region": "Panamá"
+    }
+  ],
+  "nombreCientifico": "Olea europaea L.",
+  "sinonimiasCientificas": [],
+  "familia": "Oleaceae",
+  "orden": "Lamiales",
+  "clase": "Magnoliopsida",
+  "regionOrigen": [
+    "Mediterráneo"
+  ],
+  "habitatNatural": "Suelos secos y calcáreos en climas mediterráneos",
+  "disponibilidadPanama": {
+    "disponible": true,
+    "nombreLocal": "Hoja de olivo",
+    "formaComercial": [
+      "cápsula",
+      "extracto",
+      "té-empacado"
+    ],
+    "dondeConseguir": [
+      "tienda-naturista",
+      "farmacia",
+      "importación"
+    ],
+    "cultivoLocal": false,
+    "endemicaPanama": false,
+    "notaRegional": "Disponible como extracto en cápsulas en Vitamin Shoppe Panamá y iHerb. Hojas secas importadas en tiendas naturistas especializadas."
+  },
+  "cultivoCasero": {
+    "dificultad": "moderada",
+    "apta": false,
+    "maceta": false,
+    "luz": "pleno-sol",
+    "agua": "poco",
+    "suelo": "Bien drenado, calcáreo, pobre en nutrientes",
+    "clima": "Requiere clima mediterráneo con inviernos frescos. El olivo puede crecer ornamentalmente en zonas altas de Chiriquí pero no produce hojas medicinales en calidad óptima.",
+    "notaCultivo": "No recomendado para producción de hojas medicinales en Panamá.",
+    "tiempoACosecha": "No aplica"
+  },
+  "partesUsadas": [
+    {
+      "parte": "hoja",
+      "nota": "Hoja seca estandarizada en oleuropeína (mínimo 6-15%)"
+    }
+  ],
+  "resumen": "El extracto de hoja de Olea europaea reduce la presión arterial mediante inhibición de la ACE por la oleuropeína y el hidroxitirosol. Adicionalmente tiene efectos hipolipemiantes y antioxidantes documentados en ensayos clínicos controlados.",
+  "usoTradicionalHistorico": {
+    "culturas": [
+      {
+        "cultura": "Mediterránea antigua",
+        "uso": "Diurético, antipirético y cardiovascular",
+        "periodo": "Antigüedad"
+      }
+    ],
+    "primerasMencionesHistoricas": "Textos hipocráticos y Dioscórides",
+    "usoIndigenaRegional": "No tradicional en Panamá; adoptado modernamente como suplemento para hipertensión"
+  },
+  "nivelEvidenciaGlobal": "B",
+  "fuentePrimaria": {
+    "institucion": "EMA",
+    "tipo": "monografía",
+    "titulo": "European Union herbal monograph on Olea europaea L., folium. EMA/HMPC/359238/2016",
+    "año": 2017,
+    "url": "https://www.ema.europa.eu/en/documents/herbal-monograph/final-european-union-herbal-monograph-olea-europaea-l-folium-first-version_en.pdf"
+  },
+  "grupoTerapeutico": [
+    "hipotensora",
+    "hipolipemiante",
+    "antioxidante",
+    "antimicrobiana"
+  ],
+  "propiedades": [
+    {
+      "nombre": "Hipotensora (inhibición de ACE)",
+      "nivelEvidencia": "moderado",
+      "mecanismoAccion": "Oleuropeína e hidroxitirosol inhiben la enzima convertidora de angiotensina (ACE) y relajan músculo liso vascular vía aumento de óxido nítrico. Efecto comparable a captopril 25 mg en un ECA.",
+      "referencia": "Susalit E et al. Phytother Res. 2011;25(1):1-6. DOI: 10.1002/ptr.3217. PMID: 20486136"
+    }
+  ],
+  "fotoquimica": [
+    {
+      "compuesto": "Oleuropeína",
+      "grupo": "secoiridoide",
+      "accion": "Inhibidora de ACE, antioxidante, antimicrobiana",
+      "concentracion": "6-15% en hoja seca"
+    },
+    {
+      "compuesto": "Hidroxitirosol",
+      "grupo": "polifenol",
+      "accion": "Antioxidante potente, cardioprotector",
+      "concentracion": "0.5-2%"
+    }
+  ],
+  "dolencias": [
+    {
+      "nombre": "Hipertensión arterial leve-moderada",
+      "categoria": "cardiovascular",
+      "nivelEvidencia": "moderado",
+      "dosis": "500-1000 mg/día de extracto estandarizado",
+      "duracion": "8-12 semanas",
+      "referencia": "Susalit E et al. DOI: 10.1002/ptr.3217. PMID: 20486136"
+    }
+  ],
+  "sistemas": [
+    "cardiovascular",
+    "inmunológico"
+  ],
+  "modoEII": {
+    "aptaEnBrote": false,
+    "notaBrote": "Sin indicación en brote. El efecto hipotensor puede ser problemático si hay deshidratación por diarrea severa.",
+    "aptaEnMantenimiento": true,
+    "notaMantenimiento": "Beneficiosa en remisión para control de hipertensión asociada y reducción de estrés oxidativo sistémico.",
+    "mecanismoEII": "Sin mecanismo directo sobre mucosa intestinal. El hidroxitirosol tiene efecto antioxidante sistémico beneficioso.",
+    "referenciaEII": "Sin estudios específicos en EII"
+  },
+  "modoCeliaquiaGluten": {
+    "libreDeGluten": true,
+    "nota": "Libre de gluten. Verificar excipientes en cápsulas.",
+    "indicacionEspecifica": "Segura en celiaquía"
+  },
+  "usos": {
+    "interno": [
+      "Hipertensión",
+      "hipercolesterolemia",
+      "aterosclerosis",
+      "diabetes tipo 2 (coadyuvante)"
+    ],
+    "externo": [],
+    "culinario": []
+  },
+  "preparacion": [
+    {
+      "forma": "infusión",
+      "instrucciones": "Infundir 5-10 g de hojas secas en 200 ml de agua caliente. Tapar y reposar.",
+      "cantidadPlanta": "5-10 g",
+      "temperatura": "90-95°C",
+      "tiempoPreparacion": "10-15 minutos",
+      "dosis": "2-3 tazas al día",
+      "duracionMaxima": "3 meses",
+      "notaPreparacion": "Sabor amargo. Para uso terapéutico, preferir extracto estandarizado en oleuropeína."
+    },
+    {
+      "forma": "extracto-seco",
+      "instrucciones": "Cápsulas de extracto estandarizado (mínimo 6% oleuropeína). Tomar con alimentos.",
+      "cantidadPlanta": "500 mg",
+      "dosis": "2 veces al día",
+      "duracionMaxima": "3 meses con revisión"
+    }
+  ],
+  "contraindicaciones": [
+    {
+      "condicion": "Hipotensión",
+      "gravedad": "relativa",
+      "justificacion": "Puede reducir aún más la presión arterial"
+    },
+    {
+      "condicion": "Embarazo y lactancia",
+      "gravedad": "precaución",
+      "justificacion": "Datos insuficientes según EMA"
+    }
+  ],
+  "interaccionesMedicamentosas": [
+    {
+      "medicamento": "Antihipertensivos (IECA, ARAII, diuréticos)",
+      "tipo": "potenciación",
+      "mecanismo": "Efecto hipotensor aditivo",
+      "gravedad": "moderada"
+    },
+    {
+      "medicamento": "Antidiabéticos orales",
+      "tipo": "potenciación",
+      "mecanismo": "Puede reducir glucemia — monitorizar",
+      "gravedad": "leve"
+    }
+  ],
+  "embarazoLactancia": {
+    "embarazo": "precaución",
+    "lactancia": "precaución",
+    "pediatria": "No recomendado en menores de 12 años",
+    "justificacion": "Datos limitados"
+  },
+  "compatibilidadPlantas": {
+    "sinergicas": [
+      {
+        "plantaId": "espino-blanco",
+        "plantaNom": "Espino blanco",
+        "motivo": "Sinergia hipotensora y cardioprotectora"
+      },
+      {
+        "plantaId": "ajo",
+        "plantaNom": "Ajo",
+        "motivo": "Potenciación del efecto hipotensor e hipolipemiante"
+      },
+      {
+        "plantaId": "hibisco",
+        "plantaNom": "Hibisco",
+        "motivo": "Efecto diurético e hipotensor combinado"
+      }
+    ],
+    "incompatibles": []
+  },
+  "infusionesRelacionadas": [],
+  "emoji": "🫒",
+  "etiquetas": [
+    "cardiovascular",
+    "hipotensora",
+    "hipolipemiante",
+    "nivel-B",
+    "ema",
+    "disponible-panama",
+    "importada",
+    "libre-gluten"
+  ],
+  "fuentes": [
+    {
+      "autor": "European Medicines Agency",
+      "titulo": "European Union herbal monograph on Olea europaea L., folium. EMA/HMPC/359238/2016",
+      "publicacion": "EMA",
+      "año": 2017,
+      "doi": "",
+      "pmid": "",
+      "tipo": "monografía-EMA",
+      "nivelEvidencia": "B",
+      "idioma": "en"
+    },
+    {
+      "autor": "Susalit E, Agus N, Effendi I et al.",
+      "titulo": "Olive (Olea europaea) leaf extract effective in patients with stage-1 hypertension",
+      "publicacion": "Phytotherapy Research",
+      "año": 2011,
+      "volumen": "25(1)",
+      "paginas": "1-6",
+      "doi": "10.1002/ptr.3217",
+      "pmid": "20486136",
+      "tipo": "estudio-clinico-ECA",
+      "nivelEvidencia": "B",
+      "idioma": "en"
+    }
+  ],
+  "advertencia": "Puede potenciar el efecto de antihipertensivos. Monitorizar presión arterial al iniciar.",
+  "disclaimer": "Esta información es educativa y no sustituye el diagnóstico ni el tratamiento médico profesional."
+}

@@ -1,0 +1,258 @@
+{
+  "id": "te-verde",
+  "versionFicha": "2.0",
+  "estadoFicha": "publicada",
+  "fechaCreacion": "2026-04-15",
+  "fechaRevision": "2026-04-15",
+  "nombreComun": "Té verde",
+  "nombresAlternativos": [
+    {
+      "nombre": "Green tea",
+      "idioma": "en",
+      "region": "Asia"
+    },
+    {
+      "nombre": "Té verde",
+      "idioma": "es",
+      "region": "Panamá"
+    }
+  ],
+  "nombreCientifico": "Camellia sinensis (L.) Kuntze",
+  "sinonimiasCientificas": [
+    "Thea sinensis L."
+  ],
+  "familia": "Theaceae",
+  "orden": "Ericales",
+  "clase": "Magnoliopsida",
+  "regionOrigen": [
+    "China",
+    "Asia Oriental"
+  ],
+  "habitatNatural": "Suelos ácidos y húmedos en regiones subtropicales montañosas",
+  "disponibilidadPanama": {
+    "disponible": true,
+    "nombreLocal": "Té verde",
+    "formaComercial": [
+      "seca",
+      "cápsula",
+      "té-empacado",
+      "extracto"
+    ],
+    "dondeConseguir": [
+      "supermercado",
+      "tienda-naturista",
+      "mercado-público"
+    ],
+    "cultivoLocal": true,
+    "endemicaPanama": false,
+    "notaRegional": "Ampliamente disponible en supermercados y tiendas naturistas. Cultivado experimentalmente en Boquete. Marcas importadas en todos los supermercados."
+  },
+  "cultivoCasero": {
+    "dificultad": "moderada",
+    "apta": true,
+    "maceta": true,
+    "luz": "semisombra",
+    "agua": "moderado",
+    "suelo": "Ácido, bien drenado, rico en materia orgánica, pH 4.5-6.0",
+    "clima": "Se adapta en zonas altas de Panamá (Boquete, Volcán) con semisombra y humedad alta. En tierras bajas el calor excesivo reduce calidad.",
+    "notaCultivo": "Arbusto perenne. Cosechar brotes jóvenes. Sensible a cal en el suelo.",
+    "tiempoACosecha": "Continuo desde el primer año"
+  },
+  "partesUsadas": [
+    {
+      "parte": "hoja",
+      "nota": "Hojas jóvenes no fermentadas. La no fermentación preserva las catequinas."
+    }
+  ],
+  "resumen": "Las catequinas del té verde (especialmente EGCG) reducen la presión arterial, mejoran el perfil lipídico y protegen el endotelio vascular. Metaanálisis múltiples avalan su efecto hipotensor y antiaterosclerótico con consumo habitual de 3-5 tazas diarias.",
+  "usoTradicionalHistorico": {
+    "culturas": [
+      {
+        "cultura": "China antigua",
+        "uso": "Tónico cardiovascular, digestivo y estimulante",
+        "periodo": "Siglo VIII d.C."
+      }
+    ],
+    "primerasMencionesHistoricas": "Lu Yu — El Clásico del Té (760 d.C.)",
+    "usoIndigenaRegional": "Usado en Panamá principalmente como bebida antioxidante y para control de peso"
+  },
+  "nivelEvidenciaGlobal": "A",
+  "fuentePrimaria": {
+    "institucion": "EMA",
+    "tipo": "monografía",
+    "titulo": "Community herbal monograph on Camellia sinensis (L.) Kuntze, non fermentatum folium. EMA/HMPC/283630/2012",
+    "año": 2013,
+    "url": "https://www.ema.europa.eu/en/documents/herbal-monograph/final-community-herbal-monograph-camellia-sinensis-l-kuntze-non-fermentatum-folium_en.pdf"
+  },
+  "grupoTerapeutico": [
+    "hipotensora",
+    "hipolipemiante",
+    "antioxidante",
+    "cardioprotectora"
+  ],
+  "propiedades": [
+    {
+      "nombre": "Hipotensora y cardioprotectora",
+      "nivelEvidencia": "fuerte",
+      "mecanismoAccion": "EGCG aumenta la biodisponibilidad de óxido nítrico endotelial, reduce la oxidación de LDL e inhibe la conversión de angiotensina I a II. Mejora la elasticidad arterial.",
+      "referencia": "Khalesi S et al. Eur J Nutr. 2014;53(6):1299-1311. DOI: 10.1007/s00394-014-0720-1. PMID: 24861099"
+    }
+  ],
+  "fotoquimica": [
+    {
+      "compuesto": "EGCG (epigalocatequina galato)",
+      "grupo": "catequina",
+      "accion": "Antioxidante potente, hipotensora, inhibidora de LDL oxidada",
+      "concentracion": "50-60% de catequinas totales (5-10% en hoja seca)"
+    },
+    {
+      "compuesto": "Cafeína",
+      "grupo": "xantina",
+      "accion": "Estimulante del SNC — puede elevar presión en dosis altas",
+      "concentracion": "2-4% en hoja seca"
+    }
+  ],
+  "dolencias": [
+    {
+      "nombre": "Hipertensión arterial leve y dislipidemia",
+      "categoria": "cardiovascular",
+      "nivelEvidencia": "fuerte",
+      "dosis": "3-5 tazas/día de infusión o 250-500 mg/día de extracto (EGCG 50-200 mg)",
+      "duracion": "8-12 semanas",
+      "referencia": "Khalesi S et al. DOI: 10.1007/s00394-014-0720-1. PMID: 24861099"
+    }
+  ],
+  "sistemas": [
+    "cardiovascular",
+    "nervioso",
+    "digestivo"
+  ],
+  "modoEII": {
+    "aptaEnBrote": false,
+    "notaBrote": "La cafeína puede aumentar la motilidad intestinal y empeorar la diarrea en brote. Las catequinas en dosis altas pueden ser irritantes. Usar versión descafeinada con precaución.",
+    "aptaEnMantenimiento": true,
+    "notaMantenimiento": "El té verde descafeinado es excelente en remisión por sus propiedades antioxidantes y antiinflamatorias sistémicas.",
+    "mecanismoEII": "EGCG inhibe NF-κB y reduce producción de citoquinas proinflamatorias. La cafeína contrarresta parte de este beneficio en brote.",
+    "referenciaEII": "Sin ECA específicos en EII; extrapolado de efectos antiinflamatorios generales"
+  },
+  "modoCeliaquiaGluten": {
+    "libreDeGluten": true,
+    "nota": "Libre de gluten. Verificar bolsas de té (algunos adhesivos pueden contener gluten).",
+    "indicacionEspecifica": "Seguro y beneficioso en celiaquía por sus propiedades antioxidantes"
+  },
+  "usos": {
+    "interno": [
+      "Hipertensión",
+      "dislipidemia",
+      "prevención cardiovascular",
+      "antioxidante general"
+    ],
+    "externo": [
+      "Compresas para ojos cansados",
+      "mascarillas faciales"
+    ],
+    "culinario": [
+      "Infusión diaria",
+      "matcha en cocina"
+    ]
+  },
+  "preparacion": [
+    {
+      "forma": "infusión",
+      "instrucciones": "Verter agua caliente (no hirviendo) sobre las hojas. Tapar y reposar. Colar.",
+      "cantidadPlanta": "2-3 g (1 cucharadita)",
+      "temperatura": "75-85°C",
+      "tiempoPreparacion": "2-3 minutos",
+      "dosis": "3-5 tazas al día",
+      "duracionMaxima": "Uso continuo seguro",
+      "notaPreparacion": "No sobrepasar 3 minutos para evitar extraer demasiada cafeína y taninos amargos. Evitar con leche para maximizar absorción de catequinas."
+    }
+  ],
+  "contraindicaciones": [
+    {
+      "condicion": "Ansiedad severa o insomnio",
+      "gravedad": "precaución",
+      "justificacion": "Cafeína puede exacerbar"
+    },
+    {
+      "condicion": "Embarazo (más de 2 tazas/día)",
+      "gravedad": "precaución",
+      "justificacion": "Exceso de cafeína se asocia a bajo peso al nacer"
+    }
+  ],
+  "interaccionesMedicamentosas": [
+    {
+      "medicamento": "Anticoagulantes (warfarina)",
+      "tipo": "precaución",
+      "mecanismo": "Las catequinas pueden inhibir levemente la agregación plaquetaria",
+      "gravedad": "leve"
+    },
+    {
+      "medicamento": "Hierro no hémico",
+      "tipo": "antagonismo",
+      "mecanismo": "Las catequinas reducen la absorción de hierro — tomar el té alejado de comidas ricas en hierro",
+      "gravedad": "leve"
+    }
+  ],
+  "embarazoLactancia": {
+    "embarazo": "precaución",
+    "lactancia": "precaución",
+    "pediatria": "No recomendado en menores de 6 años. Limitar cafeína en niños.",
+    "justificacion": "Moderar cafeína. Máximo 2 tazas/día en embarazo."
+  },
+  "compatibilidadPlantas": {
+    "sinergicas": [
+      {
+        "plantaId": "ajo",
+        "plantaNom": "Ajo",
+        "motivo": "Sinergia antioxidante y cardioprotectora"
+      },
+      {
+        "plantaId": "espino-blanco",
+        "plantaNom": "Espino blanco",
+        "motivo": "Efecto vascular y antioxidante combinado"
+      }
+    ],
+    "incompatibles": []
+  },
+  "infusionesRelacionadas": [],
+  "emoji": "🍵",
+  "etiquetas": [
+    "cardiovascular",
+    "antioxidante",
+    "hipotensora",
+    "nivel-A",
+    "ema",
+    "cultivable-panama",
+    "libre-gluten",
+    "disponible-panama"
+  ],
+  "fuentes": [
+    {
+      "autor": "European Medicines Agency",
+      "titulo": "Community herbal monograph on Camellia sinensis (L.) Kuntze, non fermentatum folium. EMA/HMPC/283630/2012",
+      "publicacion": "EMA",
+      "año": 2013,
+      "doi": "",
+      "pmid": "",
+      "tipo": "monografía-EMA",
+      "nivelEvidencia": "A",
+      "idioma": "en"
+    },
+    {
+      "autor": "Khalesi S et al.",
+      "titulo": "Green tea catechins and blood pressure: a systematic review and meta-analysis of randomised controlled trials",
+      "publicacion": "European Journal of Nutrition",
+      "año": 2014,
+      "volumen": "53(6)",
+      "paginas": "1299-1311",
+      "doi": "10.1007/s00394-014-0720-1",
+      "pmid": "24861099",
+      "tipo": "metaanalisis",
+      "nivelEvidencia": "A",
+      "idioma": "en"
+    }
+  ],
+  "advertencia": "Moderar en personas sensibles a la cafeína. Los extractos concentrados pueden ser hepatotóxicos en dosis altas. No superar 800 mg/día de EGCG.",
+  "disclaimer": "Esta información es educativa y no sustituye el diagnóstico ni el tratamiento médico profesional."
+}

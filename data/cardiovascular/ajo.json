@@ -1,0 +1,300 @@
+{
+  "id": "ajo",
+  "versionFicha": "2.0",
+  "estadoFicha": "publicada",
+  "fechaCreacion": "2026-04-15",
+  "fechaRevision": "2026-04-15",
+  "nombreComun": "Ajo",
+  "nombresAlternativos": [
+    {
+      "nombre": "Garlic",
+      "idioma": "en",
+      "region": "Internacional"
+    },
+    {
+      "nombre": "Ajo común",
+      "idioma": "es",
+      "region": "Panamá"
+    }
+  ],
+  "nombreCientifico": "Allium sativum L.",
+  "sinonimiasCientificas": [],
+  "familia": "Amaryllidaceae",
+  "orden": "Asparagales",
+  "clase": "Liliopsida",
+  "regionOrigen": [
+    "Asia Central"
+  ],
+  "habitatNatural": "Cultivos en regiones templadas y subtropicales",
+  "disponibilidadPanama": {
+    "disponible": true,
+    "nombreLocal": "Ajo",
+    "formaComercial": [
+      "fresca",
+      "cápsula",
+      "extracto",
+      "polvo"
+    ],
+    "dondeConseguir": [
+      "mercado-público",
+      "supermercado",
+      "tienda-naturista",
+      "farmacia"
+    ],
+    "cultivoLocal": true,
+    "endemicaPanama": false,
+    "notaRegional": "Muy común en mercados y supermercados. Extractos en iHerb y farmacias de Ciudad de Panamá. Cultivable en zonas altas de Chiriquí."
+  },
+  "cultivoCasero": {
+    "dificultad": "facil",
+    "apta": true,
+    "maceta": true,
+    "luz": "pleno-sol",
+    "agua": "moderado",
+    "suelo": "Fértil, bien drenado, rico en materia orgánica",
+    "clima": "Adaptación al clima tropical panameño; mejor en temporada seca y zonas altas",
+    "notaCultivo": "Plantar dientes en maceta o suelo. Cosechar cuando hojas amarilleen. Controlar hongos en lluvias.",
+    "tiempoACosecha": "4-6 meses"
+  },
+  "partesUsadas": [
+    {
+      "parte": "bulbo",
+      "nota": "Fresco, seco o como extracto envejecido (sin olor)"
+    }
+  ],
+  "resumen": "El bulbo de Allium sativum reduce la presión arterial, el colesterol LDL y la agregación plaquetaria mediante compuestos organosulfurados. La alicina se forma al triturar el diente fresco; el extracto envejecido (S-alilcisteína) es más estable y sin olor.",
+  "usoTradicionalHistorico": {
+    "culturas": [
+      {
+        "cultura": "Antigua egipcia, griega y china",
+        "uso": "Cardiovascular, antiinfeccioso, tonificante",
+        "periodo": "3000 a.C. — presente"
+      }
+    ],
+    "primerasMencionesHistoricas": "Papiro Ebers (1550 a.C.)",
+    "usoIndigenaRegional": "Ampliamente usado en Panamá como condimento y remedio para circulación e hipertensión"
+  },
+  "nivelEvidenciaGlobal": "A",
+  "fuentePrimaria": {
+    "institucion": "EMA",
+    "tipo": "monografía",
+    "titulo": "European Union herbal monograph on Allium sativum L., bulbus. EMA/HMPC/7685/2013",
+    "año": 2016,
+    "url": "https://www.ema.europa.eu/en/documents/herbal-monograph/final-european-union-herbal-monograph-allium-sativum-l-bulbus_en.pdf"
+  },
+  "grupoTerapeutico": [
+    "hipotensora",
+    "hipolipemiante",
+    "antiagregante",
+    "antimicrobiana",
+    "antioxidante"
+  ],
+  "propiedades": [
+    {
+      "nombre": "Hipotensora",
+      "nivelEvidencia": "fuerte",
+      "mecanismoAccion": "S-alilcisteína inhibe la ACE y aumenta producción de H2S y óxido nítrico endógeno, relajando músculo liso vascular. Efecto demostrado en hipertensos con reducción de 8-10 mmHg sistólica.",
+      "referencia": "Wang HP et al. J Clin Hypertens. 2015;17(3):223-231. DOI: 10.1111/jch.12473. PMID: 25588003"
+    },
+    {
+      "nombre": "Hipolipemiante",
+      "nivelEvidencia": "fuerte",
+      "mecanismoAccion": "Inhibe HMG-CoA reductasa hepática y aumenta excreción de ácidos biliares, reduciendo LDL y triglicéridos.",
+      "referencia": "Ried K et al. Nutr Rev. 2013;71(5):282-299. DOI: 10.1111/nure.12012. PMID: 23590705"
+    }
+  ],
+  "fotoquimica": [
+    {
+      "compuesto": "Alicina (allicina)",
+      "grupo": "organosulfurado",
+      "accion": "Hipotensora, antimicrobiana, antiagregante — se forma al triturar el diente fresco",
+      "concentracion": "0.5-1% en bulbo fresco triturado"
+    },
+    {
+      "compuesto": "S-alilcisteína (SAC)",
+      "grupo": "aminoácido azufrado",
+      "accion": "Antioxidante, hipotensora, hipolipemiante — presente en extracto envejecido",
+      "concentracion": "0.1-0.5% en extracto envejecido"
+    }
+  ],
+  "dolencias": [
+    {
+      "nombre": "Hipertensión arterial leve-moderada",
+      "categoria": "cardiovascular",
+      "nivelEvidencia": "fuerte",
+      "dosis": "600-1200 mg/día de extracto envejecido, o 2-3 dientes frescos/día",
+      "duracion": "8-12 semanas",
+      "referencia": "Wang HP et al. DOI: 10.1111/jch.12473. PMID: 25588003"
+    },
+    {
+      "nombre": "Hipercolesterolemia leve",
+      "categoria": "cardiovascular",
+      "nivelEvidencia": "fuerte",
+      "dosis": "300-1000 mg/día de extracto envejecido",
+      "duracion": "12 semanas",
+      "referencia": "Ried K et al. DOI: 10.1111/nure.12012. PMID: 23590705"
+    }
+  ],
+  "sistemas": [
+    "cardiovascular",
+    "inmunológico",
+    "digestivo"
+  ],
+  "modoEII": {
+    "aptaEnBrote": false,
+    "notaBrote": "El ajo crudo puede irritar la mucosa intestinal inflamada y empeorar la diarrea en brote activo. Evitar en brote. El extracto envejecido (sin aloína) es mejor tolerado pero se recomienda precaución.",
+    "aptaEnMantenimiento": true,
+    "notaMantenimiento": "El ajo cocido o el extracto envejecido son bien tolerados en remisión. Beneficioso para reducir riesgo cardiovascular asociado a EII crónica.",
+    "mecanismoEII": "Efecto antiinflamatorio sistémico vía S-alilcisteína. El ajo crudo puede irritar la mucosa localmente.",
+    "referenciaEII": "Sin ECA específicos en EII; recomendación basada en tolerancia clínica"
+  },
+  "modoCeliaquiaGluten": {
+    "libreDeGluten": true,
+    "nota": "Bulbo puro libre de gluten. Verificar excipientes en cápsulas comerciales.",
+    "indicacionEspecifica": "Seguro y beneficioso en celiaquía para soporte cardiovascular e inmunológico"
+  },
+  "usos": {
+    "interno": [
+      "Hipertensión",
+      "hipercolesterolemia",
+      "aterosclerosis",
+      "infecciones recurrentes"
+    ],
+    "externo": [
+      "Cataplasma para verrugas",
+      "aceite para otitis (diluido)"
+    ],
+    "culinario": [
+      "Condimento universal en cocina panameña"
+    ]
+  },
+  "preparacion": [
+    {
+      "forma": "extracto-seco",
+      "instrucciones": "Cápsulas de extracto envejecido de ajo (sin olor). Tomar con comidas.",
+      "cantidadPlanta": "600-1200 mg",
+      "dosis": "1-2 veces al día",
+      "duracionMaxima": "Uso prolongado seguro",
+      "notaPreparacion": "Para activar la alicina en ajo fresco: triturar o machacar el diente y dejar reposar 10 minutos antes de consumir."
+    },
+    {
+      "forma": "culinario",
+      "instrucciones": "Incorporar 1-3 dientes de ajo fresco machacado diariamente en la alimentación.",
+      "cantidadPlanta": "1-3 dientes (3-9 g)",
+      "dosis": "Diario",
+      "duracionMaxima": "Indefinida",
+      "notaPreparacion": "El cocinado destruye parcialmente la alicina pero conserva otros compuestos beneficiosos."
+    }
+  ],
+  "contraindicaciones": [
+    {
+      "condicion": "Cirugía programada",
+      "gravedad": "precaución",
+      "justificacion": "Suspender 7-10 días antes por efecto antiagregante plaquetario"
+    },
+    {
+      "condicion": "Trastornos hemorrágicos",
+      "gravedad": "relativa",
+      "justificacion": "Efecto antiagregante puede aumentar riesgo de sangrado"
+    }
+  ],
+  "interaccionesMedicamentosas": [
+    {
+      "medicamento": "Anticoagulantes (warfarina, DOACs)",
+      "tipo": "potenciación",
+      "mecanismo": "Inhibición plaquetaria aditiva — aumenta riesgo de sangrado",
+      "gravedad": "moderada"
+    },
+    {
+      "medicamento": "Antihipertensivos",
+      "tipo": "potenciación",
+      "mecanismo": "Efecto hipotensor aditivo",
+      "gravedad": "leve"
+    },
+    {
+      "medicamento": "Saquinavir (antirretroviral)",
+      "tipo": "antagonismo",
+      "mecanismo": "Puede reducir los niveles plasmáticos de saquinavir",
+      "gravedad": "moderada"
+    }
+  ],
+  "embarazoLactancia": {
+    "embarazo": "segura",
+    "lactancia": "segura",
+    "pediatria": "Seguro como alimento desde 6 meses. Suplementos: mayores de 6 años.",
+    "justificacion": "Uso culinario seguro. Suplementos concentrados: precaución en embarazo."
+  },
+  "compatibilidadPlantas": {
+    "sinergicas": [
+      {
+        "plantaId": "espino-blanco",
+        "plantaNom": "Espino blanco",
+        "motivo": "Sinergia hipotensora y cardioprotectora"
+      },
+      {
+        "plantaId": "hibisco",
+        "plantaNom": "Hibisco",
+        "motivo": "Efecto hipotensor e hipolipemiante combinado"
+      },
+      {
+        "plantaId": "olivo",
+        "plantaNom": "Olivo",
+        "motivo": "Potenciación del efecto hipotensor e hipolipemiante"
+      }
+    ],
+    "incompatibles": []
+  },
+  "infusionesRelacionadas": [],
+  "emoji": "🧄",
+  "etiquetas": [
+    "cardiovascular",
+    "hipotensora",
+    "hipolipemiante",
+    "nivel-A",
+    "ema",
+    "cultivable-panama",
+    "libre-gluten",
+    "disponible-panama"
+  ],
+  "fuentes": [
+    {
+      "autor": "European Medicines Agency",
+      "titulo": "European Union herbal monograph on Allium sativum L., bulbus. EMA/HMPC/7685/2013",
+      "publicacion": "EMA",
+      "año": 2016,
+      "doi": "",
+      "pmid": "",
+      "tipo": "monografía-EMA",
+      "nivelEvidencia": "A",
+      "idioma": "en"
+    },
+    {
+      "autor": "Wang HP et al.",
+      "titulo": "Effect of Garlic on Blood Pressure: A Meta-Analysis",
+      "publicacion": "Journal of Clinical Hypertension",
+      "año": 2015,
+      "volumen": "17(3)",
+      "paginas": "223-231",
+      "doi": "10.1111/jch.12473",
+      "pmid": "25588003",
+      "tipo": "metaanalisis",
+      "nivelEvidencia": "A",
+      "idioma": "en"
+    },
+    {
+      "autor": "Ried K, Toben C, Fakler P",
+      "titulo": "Effect of garlic on serum lipids: an updated meta-analysis",
+      "publicacion": "Nutrition Reviews",
+      "año": 2013,
+      "volumen": "71(5)",
+      "paginas": "282-299",
+      "doi": "10.1111/nure.12012",
+      "pmid": "23590705",
+      "tipo": "metaanalisis",
+      "nivelEvidencia": "A",
+      "idioma": "en"
+    }
+  ],
+  "advertencia": "Suspender 7-10 días antes de cirugía. El ajo crudo puede causar irritación gástrica. Evitar en brote activo de EII.",
+  "disclaimer": "Esta información es educativa y no sustituye el diagnóstico ni el tratamiento médico profesional."
+}
