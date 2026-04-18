@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#1a3d2a">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<title>NathuraVitae — Recetas Detox</title>
+<link rel="manifest" href="../manifest.json">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --v1:#1a3d2a; --v2:#245c3e; --v3:#2e8b5a; --v4:#4aab7f; --v5:#8dd4b0;
+  --vp:#eaf6f0; --vm:#c0e8d4; --vt:#8dd4b0;
+  --crema:#f8f5ee; --crema2:#ede8dc; --crema3:#e2dace;
+  --amb:#9a6010; --ambp:#fdf2e0; --ambm:#f0cc88;
+  --tx:#1a1a16; --tx2:#44443c; --tx3:#8a8878;
+  --borde:rgba(26,61,42,0.10);
+  /* Detox palette */
+  --d1:#006d4e; /* digestivo */
+  --d2:#8b5e00; /* hepático */
+  --d3:#1a5276; /* antioxidante */
+  --d4:#6a1a6e; /* energético */
+  --d5:#2e6b6b; /* drenante */
+  --d6:#5c3d11; /* tropical */
+  --d1p:#e8f8f3; --d2p:#fef5e0; --d3p:#e8f0f8;
+  --d4p:#f8e8f8; --d5p:#e8f5f5; --d6p:#fdf2e0;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:'DM Sans',sans-serif;
+  background:var(--crema);
+  color:var(--tx);
+  min-height:100vh;
+  padding-bottom:80px;
+  -webkit-font-smoothing:antialiased
+}
+
+/* ── STATUS + TOPBAR ── */
+.status-spacer{height:env(safe-area-inset-top,0px);background:var(--v1)}
+.topbar{
+  background:var(--v1);
+  padding:12px 20px 14px;
+  display:flex;align-items:center;justify-content:space-between;
+  position:sticky;top:0;z-index:40
+}
+.topbar-brand{display:flex;align-items:center;gap:10px}
+.topbar-back{
+  width:34px;height:34px;border-radius:50%;
+  background:rgba(255,255,255,.1);border:none;
+  display:flex;align-items:center;justify-content:center;
+  cursor:pointer;color:white;font-size:18px;
+  text-decoration:none;transition:background .15s
+}
+.topbar-back:hover{background:rgba(255,255,255,.18)}
+.topbar-leaf{
+  width:34px;height:34px;border-radius:50%;
+  background:rgba(255,255,255,.1);
+  display:flex;align-items:center;justify-content:center;
+  border:1px solid rgba(255,255,255,.15)
+}
+.topbar-nom{
+  font-family:'Playfair Display',serif;
+  font-size:20px;color:white;font-weight:600
+}
+.topbar-nom span{font-style:italic;font-weight:400;color:var(--vt)}
+
+/* ── HERO ── */
+.hero{
+  background:var(--v1);
+  padding:4px 24px 44px;
+  position:relative;overflow:hidden
+}
+.hero::after{
+  content:'';
+  position:absolute;bottom:0;left:0;right:0;height:40px;
+  background:linear-gradient(to bottom, transparent, var(--crema));
+  pointer-events:none
+}
+.hero-deco{
+  position:absolute;right:-20px;top:-10px;
+  font-size:200px;opacity:.04;line-height:1;
+  pointer-events:none;transform:rotate(10deg)
+}
+.hero-eyebrow{
+  font-size:10px;font-weight:500;
+  color:var(--vt);letter-spacing:2.5px;
+  text-transform:uppercase;margin-bottom:10px;
+  display:flex;align-items:center;gap:6px
+}
+.hero-eyebrow::before{content:'';width:20px;height:1px;background:var(--vt);opacity:.6}
+.hero-titulo{
+  font-family:'Playfair Display',serif;
+  font-size:28px;font-weight:700;line-height:1.2;
+  color:white;margin-bottom:10px
+}
+.hero-titulo em{color:var(--vt);font-style:italic;font-weight:400}
+.hero-sub{
+  font-size:13px;line-height:1.7;
+  color:rgba(255,255,255,.65);
+  max-width:320px;margin-bottom:18px
+}
+.hero-disclaimer{
+  display:inline-flex;align-items:center;gap:6px;
+  background:rgba(255,255,255,.07);
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:20px;padding:6px 14px;
+  font-size:10px;color:rgba(255,255,255,.55);
+  letter-spacing:.5px
+}
+
+/* ── FILTROS / TABS ── */
+.tabs-wrap{
+  padding:20px 16px 0;
+  overflow-x:auto;scrollbar-width:none;
+  display:flex;gap:8px
+}
+.tab{
+  flex-shrink:0;
+  border-radius:20px;padding:7px 14px;
+  font-size:11px;font-weight:500;
+  border:1.5px solid var(--crema3);
+  background:white;color:var(--tx3);
+  cursor:pointer;transition:all .2s;
+  white-space:nowrap
+}
+.tab.activo, .tab:active{
+  background:var(--v1);color:white;border-color:var(--v1)
+}
+
+/* ── SECCION TITULO ── */
+.sec-titulo{
+  padding:24px 20px 10px;
+  display:flex;align-items:baseline;gap:10px
+}
+.sec-titulo h2{
+  font-family:'Playfair Display',serif;
+  font-size:18px;color:var(--v1)
+}
+.sec-titulo .lin{flex:1;height:1px;background:var(--crema3)}
+
+/* ── RECETA CARD ── */
+.recetas-lista{
+  padding:0 16px;
+  display:flex;flex-direction:column;gap:16px
+}
+
+.receta-card{
+  background:white;
+  border-radius:22px;
+  border:1.5px solid var(--crema3);
+  overflow:hidden;
+  box-shadow:0 2px 16px rgba(26,61,42,.06);
+  transition:transform .2s
+}
+.receta-card:active{transform:scale(.985)}
+
+/* Header de la receta */
+.receta-header{
+  padding:18px 18px 14px;
+  position:relative
+}
+.receta-cat-badge{
+  display:inline-flex;align-items:center;gap:5px;
+  border-radius:20px;padding:4px 10px;
+  font-size:9px;font-weight:600;
+  letter-spacing:1px;text-transform:uppercase;
+  margin-bottom:10px
+}
+.receta-titulo{
+  font-family:'Playfair Display',serif;
+  font-size:20px;font-weight:700;line-height:1.2;
+  margin-bottom:6px
+}
+.receta-tagline{
+  font-size:12px;color:var(--tx3);line-height:1.5;
+  margin-bottom:12px
+}
+.receta-meta{
+  display:flex;gap:12px
+}
+.receta-meta-item{
+  display:flex;align-items:center;gap:4px;
+  font-size:10px;color:var(--tx3);font-weight:500
+}
+.receta-meta-item span{font-size:13px}
+
+/* Divider */
+.receta-div{height:1px;background:var(--crema2);margin:0 18px}
+
+/* Cuerpo expandible */
+.receta-body{
+  padding:14px 18px 18px;
+  display:none
+}
+.receta-card.abierta .receta-body{display:block}
+.receta-card.abierta .toggle-icon{transform:rotate(180deg)}
+
+/* Toggle btn */
+.toggle-btn{
+  width:100%;
+  background:none;border:none;
+  padding:12px 18px;
+  display:flex;align-items:center;justify-content:space-between;
+  cursor:pointer;font-size:12px;color:var(--tx3);font-weight:500;
+  font-family:'DM Sans',sans-serif
+}
+.toggle-icon{transition:transform .25s;font-size:16px;color:var(--tx3)}
+
+/* Ingredientes */
+.ingredientes-titulo{
+  font-size:10px;font-weight:600;letter-spacing:1.5px;
+  text-transform:uppercase;color:var(--tx3);
+  margin-bottom:10px
+}
+.ingredientes-lista{
+  list-style:none;
+  display:flex;flex-direction:column;gap:6px;
+  margin-bottom:16px
+}
+.ingredientes-lista li{
+  display:flex;align-items:flex-start;gap:8px;
+  font-size:12px;color:var(--tx2);line-height:1.5
+}
+.ing-dot{
+  width:6px;height:6px;border-radius:50%;
+  flex-shrink:0;margin-top:5px
+}
+
+/* Instrucciones */
+.instrucciones-titulo{
+  font-size:10px;font-weight:600;letter-spacing:1.5px;
+  text-transform:uppercase;color:var(--tx3);
+  margin-bottom:10px
+}
+.paso{
+  display:flex;gap:10px;margin-bottom:8px;align-items:flex-start
+}
+.paso-num{
+  width:20px;height:20px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-size:9px;font-weight:700;flex-shrink:0;
+  color:white
+}
+.paso-texto{font-size:12px;color:var(--tx2);line-height:1.6;padding-top:1px}
+
+/* Efectos terapéuticos */
+.efectos-wrap{
+  background:var(--vp);
+  border-radius:14px;padding:14px;
+  margin:14px 0
+}
+.efectos-titulo{
+  font-size:10px;font-weight:600;letter-spacing:1.5px;
+  text-transform:uppercase;color:var(--v2);
+  margin-bottom:10px
+}
+.efecto-item{
+  display:flex;align-items:flex-start;gap:8px;
+  margin-bottom:7px;font-size:11px;color:var(--tx2);line-height:1.5
+}
+.efecto-item:last-child{margin-bottom:0}
+.efecto-icon{font-size:14px;flex-shrink:0}
+
+/* Consejo hipocrático */
+.consejo-hipocratico{
+  background:var(--v1);
+  border-radius:12px;padding:12px 14px;
+  margin:12px 0;
+  font-family:'Playfair Display',serif;
+  font-style:italic;
+  font-size:12px;line-height:1.6;
+  color:rgba(255,255,255,.85)
+}
+
+/* Plantas vinculadas */
+.plantas-vinculadas{
+  display:flex;flex-wrap:wrap;gap:6px;
+  margin:10px 0 0
+}
+.planta-chip{
+  font-size:10px;font-weight:500;
+  background:var(--vp);color:var(--v2);
+  border:1px solid var(--vm);
+  border-radius:10px;padding:4px 10px;
+  text-decoration:none;
+  transition:background .15s
+}
+.planta-chip:active{background:var(--vm)}
+
+/* Precauciones */
+.precaucion{
+  display:flex;align-items:flex-start;gap:6px;
+  font-size:10px;color:var(--amb);
+  background:var(--ambp);border-radius:10px;
+  padding:8px 10px;margin-top:10px
+}
+.precaucion-icon{font-size:13px;flex-shrink:0}
+
+/* ── COLORES POR CATEGORÍA ── */
+.cat-digestivo .receta-cat-badge{background:#e8f8f3;color:var(--d1)}
+.cat-digestivo .receta-titulo{color:var(--d1)}
+.cat-digestivo .ing-dot{background:var(--d1)}
+.cat-digestivo .paso-num{background:var(--d1)}
+
+.cat-hepatico .receta-cat-badge{background:#fef5e0;color:var(--d2)}
+.cat-hepatico .receta-titulo{color:var(--d2)}
+.cat-hepatico .ing-dot{background:var(--d2)}
+.cat-hepatico .paso-num{background:var(--d2)}
+
+.cat-antioxidante .receta-cat-badge{background:#e8f0f8;color:var(--d3)}
+.cat-antioxidante .receta-titulo{color:var(--d3)}
+.cat-antioxidante .ing-dot{background:var(--d3)}
+.cat-antioxidante .paso-num{background:var(--d3)}
+
+.cat-energetico .receta-cat-badge{background:#f8e8f8;color:var(--d4)}
+.cat-energetico .receta-titulo{color:var(--d4)}
+.cat-energetico .ing-dot{background:var(--d4)}
+.cat-energetico .paso-num{background:var(--d4)}
+
+.cat-drenante .receta-cat-badge{background:#e8f5f5;color:var(--d5)}
+.cat-drenante .receta-titulo{color:var(--d5)}
+.cat-drenante .ing-dot{background:var(--d5)}
+.cat-drenante .paso-num{background:var(--d5)}
+
+.cat-tropical .receta-cat-badge{background:#fdf2e0;color:var(--d6)}
+.cat-tropical .receta-titulo{color:var(--d6)}
+.cat-tropical .ing-dot{background:var(--d6)}
+.cat-tropical .paso-num{background:var(--d6)}
+
+/* ── DISCLAIMER ── */
+.disclaimer-final{
+  margin:20px 16px 0;
+  background:var(--crema2);border-radius:14px;
+  padding:14px 16px;
+  font-size:10px;color:var(--tx3);line-height:1.7;
+  text-align:center
+}
+
+/* ── NAV INFERIOR ── */
+.bottom-nav{
+  position:fixed;bottom:0;left:0;right:0;
+  background:white;
+  border-top:1px solid var(--crema3);
+  padding:8px 0 calc(8px + env(safe-area-inset-bottom,0px));
+  display:flex;justify-content:space-around;
+  z-index:40
+}
+.nav-item{
+  display:flex;flex-direction:column;align-items:center;
+  gap:2px;text-decoration:none;
+  font-size:10px;color:var(--tx3);
+  font-weight:400;min-width:52px
+}
+.nav-item.activo{color:var(--v3);font-weight:500}
+.nav-icon{font-size:20px}
+
+/* ── ANIMACIONES ── */
+@keyframes fadeUp{
+  from{opacity:0;transform:translateY(14px)}
+  to{opacity:1;transform:translateY(0)}
+}
+.receta-card{animation:fadeUp .35s ease both}
+.receta-card:nth-child(1){animation-delay:.04s}
+.receta-card:nth-child(2){animation-delay:.08s}
+.receta-card:nth-child(3){animation-delay:.12s}
+.receta-card:nth-child(4){animation-delay:.16s}
+.receta-card:nth-child(5){animation-delay:.20s}
+.receta-card:nth-child(6){animation-delay:.24s}
+.receta-card:nth-child(7){animation-delay:.28s}
+.receta-card:nth-child(8){animation-delay:.32s}
+.receta-card:nth-child(9){animation-delay:.36s}
+.receta-card:nth-child(10){animation-delay:.40s}
+</style>
+</head>
+<body>
+
+<div class="status-spacer"></div>
+
+<!-- TOPBAR -->
+<div class="topbar">
+  <div class="topbar-brand">
+    <a href="alimentos-medicina.html" class="topbar-back">←</a>
+    <div class="topbar-leaf">🧪</div>
+    <div class="topbar-nom">Recetas <span>Detox</span></div>
+  </div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-deco">🌿</div>
+  <div class="hero-eyebrow">Fitoterapia aplicada</div>
+  <div class="hero-titulo">Jugos, batidos y<br>tés <em>con propósito</em></div>
+  <div class="hero-sub">
+    No se trata de "limpiar toxinas" — se trata de apoyar lo que el cuerpo ya hace: hígado, intestino, riñones y sistema linfático trabajan sin parar. Estas recetas los potencian.
+  </div>
+  <div class="hero-disclaimer">⚕️ Apoyo nutricional — no reemplaza tratamiento médico</div>
+</div>
+
+<!-- FILTROS -->
+<div class="tabs-wrap">
+  <div class="tab activo" onclick="filtrar('todos', this)">Todas (10)</div>
+  <div class="tab" onclick="filtrar('digestivo', this)">🌱 Digestivo</div>
+  <div class="tab" onclick="filtrar('hepatico', this)">🟡 Hepático</div>
+  <div class="tab" onclick="filtrar('antioxidante', this)">🛡️ Antioxidante</div>
+  <div class="tab" onclick="filtrar('energetico', this)">⚡ Energético</div>
+  <div class="tab" onclick="filtrar('drenante', this)">💧 Drenante</div>
+  <div class="tab" onclick="filtrar('tropical', this)">🌴 Tropical</div>
+</div>
+
+<!-- SECCIÓN DIGESTIVO -->
+<div class="sec-titulo" data-grupo="digestivo">
+  <h2>🌱 Detox Digestivo</h2>
+  <div class="lin"></div>
+</div>
+
+<div class="recetas-lista" id="lista-recetas">
+
+  <!-- RECETA 1: Smoothie digestivo antiinflamatorio -->
+  <div class="receta-card cat-digestivo" data-cat="digestivo">
+    <div class="receta-header">
+      <div class="receta-cat-badge">🌱 Digestivo</div>
+      <div class="receta-titulo">Smoothie Digestivo & Antiinflamatorio</div>
+      <div class="receta-tagline">Protege la mucosa intestinal, reduce gases y favorece el tránsito suave</div>
+      <div class="receta-meta">
+        <div class="receta-meta-item"><span>⏱️</span> 5 min</div>
+        <div class="receta-meta-item"><span>🥤</span> 1 porción</div>
+        <div class="receta-meta-item"><span>💪</span> EII-friendly</div>
+      </div>
+    </div>
+    <div class="receta-div"></div>
+    <button class="toggle-btn" onclick="toggleReceta(this)">
+      Ver receta completa <span class="toggle-icon">▾</span>
+    </button>
+    <div class="receta-body">
+      <div class="ingredientes-titulo">Ingredientes</div>
+      <ul class="ingredientes-lista">
+        <li><div class="ing-dot"></div>1 plátano maduro (grande)</li>
+        <li><div class="ing-dot"></div>1 taza de papaya fresca troceada</li>
+        <li><div class="ing-dot"></div>10–12 hojas de menta piperita fresca</li>
+        <li><div class="ing-dot"></div>1 cdta de semillas de lino molidas (linaza)</li>
+        <li><div class="ing-dot"></div>1 cm de jengibre fresco rallado</li>
+        <li><div class="ing-dot"></div>200 ml de agua de coco o agua natural</li>
+        <li><div class="ing-dot"></div>Hielo al gusto</li>
+      </ul>
+      <div class="instrucciones-titulo">Preparación</div>
+      <div class="paso"><div class="paso-num">1</div><div class="paso-texto">Moler las semillas de lino en licuadora o mortero hasta obtener polvo fino.</div></div>
+      <div class="paso"><div class="paso-num">2</div><div class="paso-texto">Licuar todos los ingredientes a máxima potencia hasta obtener una mezcla homogénea.</div></div>
+      <div class="paso"><div class="paso-num">3</div><div class="paso-texto">Servir inmediatamente. No guardar — el lino molido se oxida rápido.</div></div>
+      <div class="efectos-wrap">
+        <div class="efectos-titulo">Efectos terapéuticos</div>
+        <div class="efecto-item"><div class="efecto-icon">🌿</div>Menta piperita protege y relaja la mucosa intestinal — confirmado por EMA</div>
+        <div class="efecto-item"><div class="efecto-icon">🍌</div>Plátano: prebiótico natural, recubre mucosa con pectina</div>
+        <div class="efecto-item"><div class="efecto-icon">🌱</div>Lino molido: fibra soluble que nutre la microbiota y regula tránsito</div>
+        <div class="efecto-item"><div class="efecto-icon">🫚</div>Jengibre: antiemético y antiinflamatorio intestinal (nivel A, OMS)</div>
+        <div class="efecto-item"><div class="efecto-icon">🥥</div>Agua de coco: electrolitos naturales — ideal post-diarrea</div>
+      </div>
+      <div class="consejo-hipocratico">"El intestino es el segundo cerebro. Cuando lo cuidas, todo lo demás mejora."</div>
+      <div class="plantas-vinculadas">
+        <a href="ficha-planta.html?id=menta-piperita" class="planta-chip">🌿 Menta piperita</a>
+        <a href="ficha-planta.html?id=jengibre" class="planta-chip">🫚 Jengibre</a>
+      </div>
+      <div class="precaucion"><div class="precaucion-icon">⚠️</div>En brote activo de EII: omitir jengibre crudo y usar agua natural en lugar de coco si hay diarrea severa.</div>
+    </div>
+  </div>
+
+  <!-- RECETA 2: Té digestivo triple -->
+  <div class="receta-card cat-digestivo" data-cat="digestivo">
+    <div class="receta-header">
+      <div class="receta-cat-badge">🌱 Digestivo</div>
+      <div class="receta-titulo">Té Triple Digestivo Panameño</div>
+      <div class="receta-tagline">Manzanilla + menta + jengibre: la combinación ancestral para el estómago</div>
+      <div class="receta-meta">
+        <div class="receta-meta-item"><span>⏱️</span> 12 min</div>
+        <div class="receta-meta-item"><span>☕</span> 2 tazas</div>
+        <div class="receta-meta-item"><span>🌙</span> Ideal noche</div>
+      </div>
+    </div>
+    <div class="receta-div"></div>
+    <button class="toggle-btn" onclick="toggleReceta(this)">
+      Ver receta completa <span class="toggle-icon">▾</span>
+    </button>
+    <div class="receta-body">
+      <div class="ingredientes-titulo">Ingredientes</div>
+      <ul class="ingredientes-lista">
+        <li><div class="ing-dot"></div>2 g de flores de manzanilla seca (1 cucharadita)</li>
+        <li><div class="ing-dot"></div>5–6 hojas de menta piperita fresca</li>
+        <li><div class="ing-dot"></div>2 rodajas de jengibre fresco (3 mm cada una)</li>
+        <li><div class="ing-dot"></div>400 ml de agua</li>
+        <li><div class="ing-dot"></div>Miel de abeja panameña al gusto (opcional)</li>
+        <li><div class="ing-dot"></div>Unas gotas de limón (opcional)</li>
+      </ul>
+      <div class="instrucciones-titulo">Preparación</div>
+      <div class="paso"><div class="paso-num">1</div><div class="paso-texto">Hervir el agua. Bajar a fuego mínimo y añadir el jengibre. Infundir tapado 5 minutos.</div></div>
+      <div class="paso"><div class="paso-num">2</div><div class="paso-texto">Apagar el fuego. Añadir manzanilla y menta. Tapar y reposar 7 minutos. El tapado es clave — preserva los aceites esenciales de la menta.</div></div>
+      <div class="paso"><div class="paso-num">3</div><div class="paso-texto">Colar, endulzar con miel y servir caliente. Ideal 30 minutos después de cenar.</div></div>
+      <div class="efectos-wrap">
+        <div class="efectos-titulo">Efectos terapéuticos</div>
+        <div class="efecto-item"><div class="efecto-icon">🌼</div>Manzanilla: antiinflamatoria intestinal, espasmolítica, ansiolítica (nivel A EMA)</div>
+        <div class="efecto-item"><div class="efecto-icon">🌿</div>Menta: relaja músculo liso intestinal, alivia cólicos y SII (nivel A EMA)</div>
+        <div class="efecto-item"><div class="efecto-icon">🫚</div>Jengibre: carminativo, reduce náuseas y facilita digestión de grasas</div>
+        <div class="efecto-item"><div class="efecto-icon">🍯</div>Miel panameña: prebiótica y antimicrobiana local</div>
+      </div>
+      <div class="consejo-hipocratico">"La cena ligera y el té de hierbas son más valiosos que cualquier digestivo de farmacia."</div>
+      <div class="plantas-vinculadas">
+        <a href="ficha-planta.html?id=manzanilla" class="planta-chip">🌼 Manzanilla</a>
+        <a href="ficha-planta.html?id=menta-piperita" class="planta-chip">🌿 Menta piperita</a>
+        <a href="ficha-planta.html?id=jengibre" class="planta-chip">🫚 Jengibre</a>
+      </div>
+      <div class="precaucion"><div class="precaucion-icon">⚠️</div>Evitar la menta si hay reflujo gastroesofágico severo — relaja el esfínter esofágico inferior.</div>
+    </div>
+  </div>
+
+  <!-- RECETA 3: Agua de sábila y aloe -->
+  <div class="receta-card cat-digestivo" data-cat="digestivo">
+    <div class="receta-header">
+      <div class="receta-cat-badge">🌱 Digestivo</div>
+      <div class="receta-titulo">Agua de Sábila con Papaya y Jengibre</div>
+      <div class="receta-tagline">La bebida más popular en el campo panameño para el estómago delicado</div>
+      <div class="receta-meta">
+        <div class="receta-meta-item"><span>⏱️</span> 8 min</div>
+        <div class="receta-meta-item"><span>🥤</span> 1–2 porciones</div>
+        <div class="receta-meta-item"><span>🌅</span> Ideal ayunas</div>
+      </div>
+    </div>
+    <div class="receta-div"></div>
+    <button class="toggle-btn" onclick="toggleReceta(this)">
+      Ver receta completa <span class="toggle-icon">▾</span>
+    </button>
+    <div class="receta-body">
+      <div class="ingredientes-titulo">Ingredientes</div>
+      <ul class="ingredientes-lista">
+        <li><div class="ing-dot"></div>2 cdas de gel de sábila fresco (sin látex amarillo)</li>
+        <li><div class="ing-dot"></div>½ taza de papaya fresca (60 g)</li>
+        <li><div class="ing-dot"></div>1 cm de jengibre fresco</li>
+        <li><div class="ing-dot"></div>200 ml de agua de coco</li>
+        <li><div class="ing-dot"></div>Jugo de ½ limón verde panameño</li>
+        <li><div class="ing-dot"></div>1 cdta de miel (opcional)</li>
+      </ul>
+      <div class="instrucciones-titulo">Preparación</div>
+      <div class="paso"><div class="paso-num">1</div><div class="paso-texto">Cortar una hoja de sábila longitudinalmente. Extraer el gel transparente con cuchara. Desechar el látex amarillo que bordea la hoja — es laxante fuerte.</div></div>
+      <div class="paso"><div class="paso-num">2</div><div class="paso-texto">Licuar el gel con la papaya, jengibre, agua de coco y limón.</div></div>
+      <div class="paso"><div class="paso-num">3</div><div class="paso-texto">Tomar en ayunas, 30 minutos antes del desayuno. No guardar más de 24h en nevera.</div></div>
+      <div class="efectos-wrap">
+        <div class="efectos-titulo">Efectos terapéuticos</div>
+        <div class="efecto-item"><div class="efecto-icon">🌵</div>Gel de sábila: protege y regenera mucosa gástrica e intestinal (EMA avala)</div>
+        <div class="efecto-item"><div class="efecto-icon">🍈</div>Papaya: enzimas proteolíticas (papaína) que facilitan la digestión de proteínas</div>
+        <div class="efecto-item"><div class="efecto-icon">🍋</div>Limón: estimula bilis y secreción gástrica. Vitamina C antioxidante</div>
+        <div class="efecto-item"><div class="efecto-icon">🫚</div>Jengibre: procinético — acelera el vaciado gástrico</div>
+      </div>
+      <div class="consejo-hipocratico">"La sábila que crece en el patio de tu casa es más medicina que mucho frasco de farmacia."</div>
+      <div class="plantas-vinculadas">
+        <a href="ficha-planta.html?id=aloe-vera" class="planta-chip">🌵 Sábila</a>
+        <a href="ficha-planta.html?id=jengibre" class="planta-chip">🫚 Jengibre</a>
+      </div>
+      <div class="precaucion"><div class="precaucion-icon">⚠️</div>Solo el gel transparente — el látex amarillo (aloína) es laxante fuerte y puede causar cólicos. Contraindicado en embarazo y menores de 12 años.</div>
+    </div>
+  </div>
+
+  <!-- RECETA 4: Batido verde hepático -->
+  <div class="receta-card cat-hepatico" data-cat="hepatico">
+    <div class="receta-header">
+      <div class="receta-cat-badge">🟡 Hepático</div>
+      <div class="receta-titulo">Batido Verde Detox Hepático</div>
+      <div class="receta-tagline">Apoya las fases 1 y 2 del detox hepático con el poder de la cúrcuma y el limón</div>
+      <div class="receta-meta">
+        <div class="receta-meta-item"><span>⏱️</span> 5 min</div>
+        <div class="receta-meta-item"><span>🥤</span> 1 porción</div>
+        <div class="receta-meta-item"><span>🌅</span> Mejor mañana</div>
+      </div>
+    </div>
+    <div class="receta-div"></div>
+    <button class="toggle-btn" onclick="toggleReceta(this)">
+      Ver receta completa <span class="toggle-icon">▾</span>
+    </button>
+    <div class="receta-body">
+      <div class="ingredientes-titulo">Ingredientes</div>
+      <ul class="ingredientes-lista">
+        <li><div class="ing-dot"></div>1 taza de piña fresca (120 g)</li>
+        <li><div class="ing-dot"></div>½ pepino mediano con piel</li>
+        <li><div class="ing-dot"></div>1 hoja grande de espinaca o acelga</li>
+        <li><div class="ing-dot"></div>½ cdta de cúrcuma (yuquilla) en polvo</li>
+        <li><div class="ing-dot"></div>1 cm de jengibre fresco</li>
+        <li><div class="ing-dot"></div>Jugo de ½ limón verde</li>
+        <li><div class="ing-dot"></div>200 ml de agua de coco</li>
+        <li><div class="ing-dot"></div>Pizca generosa de pimienta negra molida (INDISPENSABLE)</li>
+      </ul>
+      <div class="instrucciones-titulo">Preparación</div>
+      <div class="paso"><div class="paso-num">1</div><div class="paso-texto">Licuar todos los ingredientes a máxima potencia 60 segundos.</div></div>
+      <div class="paso"><div class="paso-num">2</div><div class="paso-texto">Agregar la pimienta negra AL FINAL, revolver. La pimienta aumenta la absorción de curcumina 2000%. No omitir.</div></div>
+      <div class="paso"><div class="paso-num">3</div><div class="paso-texto">Tomar inmediatamente. Puede teñir dientes o ropa — normal por la cúrcuma.</div></div>
+      <div class="efectos-wrap">
+        <div class="efectos-titulo">Efectos terapéuticos</div>
+        <div class="efecto-item"><div class="efecto-icon">🟡</div>Cúrcuma + pimienta: antiinflamatorio hepático potente, activa fase 2 de detox hepático (glucuronidación)</div>
+        <div class="efecto-item"><div class="efecto-icon">🍍</div>Piña: bromelina reduce inflamación sistémica y mejora digestión proteica</div>
+        <div class="efecto-item"><div class="efecto-icon">🥒</div>Pepino: silício y agua — diurético suave, reduce carga renal</div>
+        <div class="efecto-item"><div class="efecto-icon">🥬</div>Espinaca: magnesio cofactor de enzimas hepáticas</div>
+        <div class="efecto-item"><div class="efecto-icon">🍋</div>Limón: limoneno activa enzimas glutatión-S-transferasa en hígado</div>
+      </div>
+      <div class="consejo-hipocratico">"La cúrcuma sin pimienta es como el sol sin calor. La piperina desbloquea todo su poder medicinal."</div>
+      <div class="plantas-vinculadas">
+        <a href="ficha-planta.html?id=curcuma" class="planta-chip">🟡 Cúrcuma</a>
+        <a href="ficha-planta.html?id=jengibre" class="planta-chip">🫚 Jengibre</a>
+      </div>
+      <div class="precaucion"><div class="precaucion-icon">⚠️</div>Cúrcuma en dosis altas contraindicada en cálculos biliares. En EII en brote: omitir espinaca cruda.</div>
+    </div>
+  </div>
+
+  <!-- RECETA 5: Leche dorada hepática -->
+  <div class="receta-card cat-hepatico" data-cat="hepatico">
+    <div class="receta-header">
+      <div class="receta-cat-badge">🟡 Hepático</div>
+      <div class="receta-titulo">Leche Dorada Antiinflamatoria</div>
+      <div class="receta-tagline">La Golden Milk ayurvédica adaptada con ingredientes panameños — para el hígado y el alma</div>
+      <div class="receta-meta">
+        <div class="receta-meta-item"><span>⏱️</span> 8 min</div>
+        <div class="receta-meta-item"><span>☕</span> 1 taza</div>
+        <div class="receta-meta-item"><span>🌙</span> Ideal noche</div>
+      </div>
+    </div>
+    <div class="receta-div"></div>
+    <button class="toggle-btn" onclick="toggleReceta(this)">
+      Ver receta completa <span class="toggle-icon">▾</span>
+    </button>
+    <div class="receta-body">
+      <div class="ingredientes-titulo">Ingredientes</div>
+      <ul class="ingredientes-lista">
+        <li><div class="ing-dot"></div>250 ml de leche vegetal (coco, avena o almendra)</li>
+        <li><div class="ing-dot"></div>1 cdta de cúrcuma en polvo (yuquilla fresca rallada: 1 cm)</li>
+        <li><div class="ing-dot"></div>½ cdta de jengibre en polvo (o 1 cm fresco rallado)</li>
+        <li><div class="ing-dot"></div>¼ cdta de canela en polvo</li>
+        <li><div class="ing-dot"></div>Pizca generosa de pimienta negra molida</li>
+        <li><div class="ing-dot"></div>1 cdta de aceite de coco virgen (mejora absorción)</li>
+        <li><div class="ing-dot"></div>1 cdta de miel de abeja (agregar fuera del fuego)</li>
+      </ul>
+      <div class="instrucciones-titulo">Preparación</div>
+      <div class="paso"><div class="paso-num">1</div><div class="paso-texto">Calentar la leche vegetal a fuego medio-bajo sin hervir.</div></div>
+      <div class="paso"><div class="paso-num">2</div><div class="paso-texto">Añadir cúrcuma, jengibre, canela, pimienta y aceite de coco. Revolver constantemente 5 minutos a fuego mínimo.</div></div>
+      <div class="paso"><div class="paso-num">3</div><div class="paso-texto">Apagar el fuego. Añadir la miel (nunca calentar la miel — se destruyen sus enzimas). Servir caliente.</div></div>
+      <div class="efectos-wrap">
+        <div class="efectos-titulo">Efectos terapéuticos</div>
+        <div class="efecto-item"><div class="efecto-icon">🟡</div>Cúrcuma: potente antiinflamatorio hepático, hepatoprotector</div>
+        <div class="efecto-item"><div class="efecto-icon">🫚</div>Jengibre + canela: efecto termogénico, mejora sensibilidad a insulina</div>
+        <div class="efecto-item"><div class="efecto-icon">🥥</div>Aceite de coco: facilita absorción de curcumina (liposoluble)</div>
+        <div class="efecto-item"><div class="efecto-icon">🍯</div>Miel: prebiótica y antimicrobiana — añadir siempre fría</div>
+        <div class="efecto-item"><div class="efecto-icon">🌙</div>Tomada por la noche: apoya la regeneración hepática nocturna (el hígado trabaja principalmente de 1–3 AM)</div>
+      </div>
+      <div class="consejo-hipocratico">"Que tu leche nocturna sea tu medicina. Tres cuartos de hora de sueño profundo valen más que cualquier suplemento."</div>
+      <div class="plantas-vinculadas">
+        <a href="ficha-planta.html?id=curcuma" class="planta-chip">🟡 Cúrcuma</a>
+        <a href="ficha-planta.html?id=jengibre" class="planta-chip">🫚 Jengibre</a>
+        <a href="ficha-planta.html?id=ashwagandha" class="planta-chip">🌿 Ashwagandha (variante)</a>
+      </div>
+      <div class="precaucion"><div class="precaucion-icon">⚠️</div>No calentar la miel por encima de 40°C. Usar leche vegetal sin azúcar para mejor efecto.</div>
+    </div>
+  </div>
+
+  <!-- RECETA 6: Jugo antioxidante inmuno -->
+  <div class="receta-card cat-antioxidante" data-cat="antioxidante">
+    <div class="receta-header">
+      <div class="receta-cat-badge">🛡️ Antioxidante</div>
+      <div class="receta-titulo">Jugo Antioxidante Inmuno-Tropical</div>
+      <div class="receta-tagline">Guanábana, moras y saril: el tríos antioxidante panameño más potente</div>
+      <div class="receta-meta">
+        <div class="receta-meta-item"><span>⏱️</span> 5 min</div>
+        <div class="receta-meta-item"><span>🥤</span> 1–2 porciones</div>
+        <div class="receta-meta-item"><span>🛡️</span> Inmuno-booster</div>
+      </div>
+    </div>
+    <div class="receta-div"></div>
+    <button class="toggle-btn" onclick="toggleReceta(this)">
+      Ver receta completa <span class="toggle-icon">▾</span>
+    </button>
+    <div class="receta-body">
+      <div class="ingredientes-titulo">Ingredientes</div>
+      <ul class="ingredientes-lista">
+        <li><div class="ing-dot"></div>½ taza de guanábana fresca (sin semillas)</li>
+        <li><div class="ing-dot"></div>½ taza de moras o fresas panameñas</li>
+        <li><div class="ing-dot"></div>3 cucharadas de cálices de saril (hibisco) secos</li>
+        <li><div class="ing-dot"></div>Jugo de 1 limón verde</li>
+        <li><div class="ing-dot"></div>200 ml de agua fría (o infusión fría de saril)</li>
+        <li><div class="ing-dot"></div>Stevia o miel al gusto</li>
+        <li><div class="ing-dot"></div>Hielo</li>
+      </ul>
+      <div class="instrucciones-titulo">Preparación</div>
+      <div class="paso"><div class="paso-num">1</div><div class="paso-texto">Preparar infusión de saril: hervir los cálices en 300 ml de agua 5 minutos. Dejar enfriar.</div></div>
+      <div class="paso"><div class="paso-num">2</div><div class="paso-texto">Licuar guanábana, moras y limón con la infusión de saril fría.</div></div>
+      <div class="paso"><div class="paso-num">3</div><div class="paso-texto">Colar si se desea textura más suave. Endulzar con stevia. Servir sobre hielo.</div></div>
+      <div class="efectos-wrap">
+        <div class="efectos-titulo">Efectos terapéuticos</div>
+        <div class="efecto-item"><div class="efecto-icon">🌺</div>Saril (hibisco): antocianinas con alto poder antioxidante + hipotensor (nivel A)</div>
+        <div class="efecto-item"><div class="efecto-icon">🍓</div>Moras: antocianinas y vitamina C — neutralizan radicales libres</div>
+        <div class="efecto-item"><div class="efecto-icon">🍈</div>Guanábana: acetogeninas y vitamina C — inmunomodulador local</div>
+        <div class="efecto-item"><div class="efecto-icon">🍋</div>Limón: vitamina C + limoneno — refuerza inmunidad y detox hepático</div>
+        <div class="efecto-item"><div class="efecto-icon">🛡️</div>Combinación: ORAC (capacidad antioxidante) muy elevada — protección celular real</div>
+      </div>
+      <div class="consejo-hipocratico">"El color rojo y morado en los alimentos es la señal que puso la naturaleza para indicar alto poder curativo."</div>
+      <div class="plantas-vinculadas">
+        <a href="ficha-planta.html?id=hibisco" class="planta-chip">🌺 Saril / Hibisco</a>
+      </div>
+      <div class="precaucion"><div class="precaucion-icon">⚠️</div>Saril sin azúcar para máximo efecto antioxidante. No combinar con antihipertensivos sin supervisión.</div>
+    </div>
+  </div>
+
+  <!-- RECETA 7: Tónico té verde matcha -->
+  <div class="receta-card cat-antioxidante" data-cat="antioxidante">
+    <div class="receta-header">
+      <div class="receta-cat-badge">🛡️ Antioxidante</div>
+      <div class="receta-titulo">Tónico Verde de Té con Menta y Limón</div>
+      <div class="receta-tagline">EGCG del té verde + vitamina C del limón = la combinación antioxidante más estudiada</div>
+      <div class="receta-meta">
+        <div class="receta-meta-item"><span>⏱️</span> 8 min</div>
+        <div class="receta-meta-item"><span>🫖</span> 2 tazas</div>
+        <div class="receta-meta-item"><span>☀️</span> Ideal mañana</div>
+      </div>
+    </div>
+    <div class="receta-div"></div>
+    <button class="toggle-btn" onclick="toggleReceta(this)">
+      Ver receta completa <span class="toggle-icon">▾</span>
+    </button>
+    <div class="receta-body">
+      <div class="ingredientes-titulo">Ingredientes</div>
+      <ul class="ingredientes-lista">
+        <li><div class="ing-dot"></div>2 cdtas de té verde suelto (6 g) — o 2 bolsitas</li>
+        <li><div class="ing-dot"></div>8–10 hojas de menta fresca</li>
+        <li><div class="ing-dot"></div>Jugo de 1 limón verde</li>
+        <li><div class="ing-dot"></div>1 rodaja de jengibre (2 mm)</li>
+        <li><div class="ing-dot"></div>400 ml de agua (NO hirviendo — máx 85°C)</li>
+        <li><div class="ing-dot"></div>Miel o stevia al gusto</li>
+        <li><div class="ing-dot"></div>Hielo para versión fría</li>
+      </ul>
+      <div class="instrucciones-titulo">Preparación</div>
+      <div class="paso"><div class="paso-num">1</div><div class="paso-texto">Calentar agua a 80–85°C (no hervir — el agua hirviendo destruye las catequinas del té verde).</div></div>
+      <div class="paso"><div class="paso-num">2</div><div class="paso-texto">Infundir el té con menta y jengibre tapado exactamente 2–3 minutos. Colar.</div></div>
+      <div class="paso"><div class="paso-num">3</div><div class="paso-texto">Añadir el limón DESPUÉS de colar — no calentar el limón para preservar la vitamina C. Servir caliente o sobre hielo.</div></div>
+      <div class="efectos-wrap">
+        <div class="efectos-titulo">Efectos terapéuticos</div>
+        <div class="efecto-item"><div class="efecto-icon">🍵</div>EGCG del té verde: el polifenol más estudiado en cardiología — reduce LDL oxidado</div>
+        <div class="efecto-item"><div class="efecto-icon">🍋</div>Vitamina C del limón: regenera vitamina E y potencia EGCG — sinergia comprobada</div>
+        <div class="efecto-item"><div class="efecto-icon">🌿</div>Menta: mejora absorción intestinal de catequinas + digestivo</div>
+        <div class="efecto-item"><div class="efecto-icon">🫚</div>Jengibre: añade efecto antiinflamatorio sistémico</div>
+        <div class="efecto-item"><div class="efecto-icon">☀️</div>Tomado por la mañana: aprovecha la ventana metabólica óptima para la absorción de catequinas</div>
+      </div>
+      <div class="consejo-hipocratico">"Las culturas que beben té verde diariamente viven más y enferman menos del corazón. El hábito vale más que la dosis."</div>
+      <div class="plantas-vinculadas">
+        <a href="ficha-planta.html?id=te-verde" class="planta-chip">🍵 Té verde</a>
+        <a href="ficha-planta.html?id=menta-piperita" class="planta-chip">🌿 Menta piperita</a>
+      </div>
+      <div class="precaucion"><div class="precaucion-icon">⚠️</div>NO tomar con leche — las proteínas lácteas se unen a las catequinas bloqueando su absorción. Limitar a 3 tazas/día si hay sensibilidad a la cafeína.</div>
+    </div>
+  </div>
+
+  <!-- RECETA 8: Jugo drenante tropical -->
+  <div class="receta-card cat-drenante" data-cat="drenante">
+    <div class="receta-header">
+      <div class="receta-cat-badge">💧 Drenante</div>
+      <div class="receta-titulo">Jugo Drenante Tropical Panameño</div>
+      <div class="receta-tagline">Sandía + pepino + saril: diurético natural para retención de líquidos</div>
+      <div class="receta-meta">
+        <div class="receta-meta-item"><span>⏱️</span> 5 min</div>
+        <div class="receta-meta-item"><span>🥤</span> 2 porciones</div>
+        <div class="receta-meta-item"><span>💧</span> Piernas pesadas</div>
+      </div>
+    </div>
+    <div class="receta-div"></div>
+    <button class="toggle-btn" onclick="toggleReceta(this)">
+      Ver receta completa <span class="toggle-icon">▾</span>
+    </button>
+    <div class="receta-body">
+      <div class="ingredientes-titulo">Ingredientes</div>
+      <ul class="ingredientes-lista">
+        <li><div class="ing-dot"></div>1 taza de sandía fresca sin semillas (150 g)</li>
+        <li><div class="ing-dot"></div>½ pepino mediano (con piel si es orgánico)</li>
+        <li><div class="ing-dot"></div>1 tallo de apio con hojas</li>
+        <li><div class="ing-dot"></div>3 cdas de cálices de saril seco (o ½ taza de infusión fría)</li>
+        <li><div class="ing-dot"></div>Jugo de 1 limón verde</li>
+        <li><div class="ing-dot"></div>Un puñado de perejil fresco (o cilantro)</li>
+        <li><div class="ing-dot"></div>200 ml de agua con gas o natural</li>
+      </ul>
+      <div class="instrucciones-titulo">Preparación</div>
+      <div class="paso"><div class="paso-num">1</div><div class="paso-texto">Preparar la infusión de saril y enfriar. Si tienes chicha de saril casera sin azúcar, úsala directamente.</div></div>
+      <div class="paso"><div class="paso-num">2</div><div class="paso-texto">Licuar sandía, pepino, apio y perejil con la infusión de saril y el limón.</div></div>
+      <div class="paso"><div class="paso-num">3</div><div class="paso-texto">Mezclar con agua con gas al servir para textura refrescante. Tomar frío, idealmente a media mañana.</div></div>
+      <div class="efectos-wrap">
+        <div class="efectos-titulo">Efectos terapéuticos</div>
+        <div class="efecto-item"><div class="efecto-icon">🍉</div>Sandía: 92% agua + citrulina que mejora circulación y reduce retención</div>
+        <div class="efecto-item"><div class="efecto-icon">🥒</div>Pepino: cucurbitacinas diuréticas, silicio para piel y uñas</div>
+        <div class="efecto-item"><div class="efecto-icon">🌺</div>Saril (hibisco): diurético natriurético documentado — elimina sodio</div>
+        <div class="efecto-item"><div class="efecto-icon">🥬</div>Apio: ftalidas que relajan músculo liso vascular + diurético suave</div>
+        <div class="efecto-item"><div class="efecto-icon">🌿</div>Perejil: flavonoides diuréticos potentes — apoya función renal</div>
+      </div>
+      <div class="consejo-hipocratico">"Las piernas pesadas al final del día son señal de que el cuerpo pide menos sal y más agua con plantas."</div>
+      <div class="plantas-vinculadas">
+        <a href="ficha-planta.html?id=hibisco" class="planta-chip">🌺 Saril / Hibisco</a>
+      </div>
+      <div class="precaucion"><div class="precaucion-icon">⚠️</div>No combinar con diuréticos farmacológicos sin supervisión. Personas con cálculos renales por oxalato: limitar perejil.</div>
+    </div>
+  </div>
+
+  <!-- RECETA 9: Chicha de saril medicinal -->
+  <div class="receta-card cat-drenante" data-cat="drenante">
+    <div class="receta-header">
+      <div class="receta-cat-badge">💧 Drenante</div>
+      <div class="receta-titulo">Chicha de Saril Medicinal (sin azúcar)</div>
+      <div class="receta-tagline">La bebida navideña de Panamá convertida en medicina cardiovascular real</div>
+      <div class="receta-meta">
+        <div class="receta-meta-item"><span>⏱️</span> 20 min</div>
+        <div class="receta-meta-item"><span>🫙</span> 1 litro</div>
+        <div class="receta-meta-item"><span>❤️</span> Cardiovascular</div>
+      </div>
+    </div>
+    <div class="receta-div"></div>
+    <button class="toggle-btn" onclick="toggleReceta(this)">
+      Ver receta completa <span class="toggle-icon">▾</span>
+    </button>
+    <div class="receta-body">
+      <div class="ingredientes-titulo">Ingredientes</div>
+      <ul class="ingredientes-lista">
+        <li><div class="ing-dot"></div>40 g (8–10 cdas) de cálices de saril seco</li>
+        <li><div class="ing-dot"></div>1 rama de canela</li>
+        <li><div class="ing-dot"></div>5–6 clavos de olor enteros</li>
+        <li><div class="ing-dot"></div>1 pedazo de jengibre fresco (2 cm)</li>
+        <li><div class="ing-dot"></div>1 litro de agua</li>
+        <li><div class="ing-dot"></div>Stevia al gusto (NO azúcar — anula el efecto hipotensor)</li>
+        <li><div class="ing-dot"></div>Hielo para servir</li>
+      </ul>
+      <div class="instrucciones-titulo">Preparación</div>
+      <div class="paso"><div class="paso-num">1</div><div class="paso-texto">Hervir el agua con la canela, clavo y jengibre 10 minutos.</div></div>
+      <div class="paso"><div class="paso-num">2</div><div class="paso-texto">Apagar el fuego. Añadir los cálices de saril. Tapar y dejar reposar 10 minutos.</div></div>
+      <div class="paso"><div class="paso-num">3</div><div class="paso-texto">Colar, enfriar y endulzar con stevia. Guardar en nevera hasta 3 días. Tomar 1–2 vasos/día.</div></div>
+      <div class="efectos-wrap">
+        <div class="efectos-titulo">Efectos terapéuticos</div>
+        <div class="efecto-item"><div class="efecto-icon">🌺</div>Saril: inhibidor de ACE natural — reduce presión arterial sistólica hasta 7 mmHg (metaanálisis 2022)</div>
+        <div class="efecto-item"><div class="efecto-icon">🧡</div>Canela: mejora sensibilidad a insulina, reduce glucemia postprandial</div>
+        <div class="efecto-item"><div class="efecto-icon">🟤</div>Clavo: antioxidante ORAC altísimo — uno de los más altos de cualquier alimento</div>
+        <div class="efecto-item"><div class="efecto-icon">🫚</div>Jengibre: antiinflamatorio cardiovascular + antiagregante leve</div>
+        <div class="efecto-item"><div class="efecto-icon">🇵🇦</div>Esta receta convierte una tradición navideña panameña en un tónico cardiovascular diario</div>
+      </div>
+      <div class="consejo-hipocratico">"Lo que en Panamá se toma en Navidad, en Egipto se toma como karkadé todos los días. Ambos tienen razón."</div>
+      <div class="plantas-vinculadas">
+        <a href="ficha-planta.html?id=hibisco" class="planta-chip">🌺 Saril / Hibisco</a>
+        <a href="ficha-planta.html?id=jengibre" class="planta-chip">🫚 Jengibre</a>
+      </div>
+      <div class="precaucion"><div class="precaucion-icon">⚠️</div>SIN azúcar para efecto medicinal. No combinar con antihipertensivos sin supervisión. Evitar en hipotensión grave.</div>
+    </div>
+  </div>
+
+  <!-- RECETA 10: Infusión antigripal campesina -->
+  <div class="receta-card cat-tropical" data-cat="tropical">
+    <div class="receta-header">
+      <div class="receta-cat-badge">🌴 Tropical Panameño</div>
+      <div class="receta-titulo">Infusión Antigripal Campesina</div>
+      <div class="receta-tagline">Mozote + manzanilla + jengibre + limón + miel: el remedio del campo panameño con respaldo científico</div>
+      <div class="receta-meta">
+        <div class="receta-meta-item"><span>⏱️</span> 15 min</div>
+        <div class="receta-meta-item"><span>☕</span> 2 tazas</div>
+        <div class="receta-meta-item"><span>🤒</span> Resfriados</div>
+      </div>
+    </div>
+    <div class="receta-div"></div>
+    <button class="toggle-btn" onclick="toggleReceta(this)">
+      Ver receta completa <span class="toggle-icon">▾</span>
+    </button>
+    <div class="receta-body">
+      <div class="ingredientes-titulo">Ingredientes</div>
+      <ul class="ingredientes-lista">
+        <li><div class="ing-dot"></div>10 g de hojas frescas de mozote (Bidens pilosa) — solo de zona limpia</li>
+        <li><div class="ing-dot"></div>2 g de flores de manzanilla seca</li>
+        <li><div class="ing-dot"></div>2 rodajas de jengibre fresco</li>
+        <li><div class="ing-dot"></div>2 dientes de ajo machacados (añadir 10 min antes de servir)</li>
+        <li><div class="ing-dot"></div>Jugo de 1 limón verde panameño</li>
+        <li><div class="ing-dot"></div>1 cdta de miel de abeja (al servir)</li>
+        <li><div class="ing-dot"></div>500 ml de agua</li>
+      </ul>
+      <div class="instrucciones-titulo">Preparación</div>
+      <div class="paso"><div class="paso-num">1</div><div class="paso-texto">Lavar bien el mozote. Hervir el agua con jengibre 5 minutos.</div></div>
+      <div class="paso"><div class="paso-num">2</div><div class="paso-texto">Apagar. Añadir mozote, manzanilla y ajo machacado. Tapar 10 minutos.</div></div>
+      <div class="paso"><div class="paso-num">3</div><div class="paso-texto">Colar. Añadir limón y miel fuera del fuego. Tomar caliente, 3 veces/día a los primeros síntomas.</div></div>
+      <div class="efectos-wrap">
+        <div class="efectos-titulo">Efectos terapéuticos</div>
+        <div class="efecto-item"><div class="efecto-icon">🌿</div>Mozote (B. pilosa): antiinflamatorio, antimicrobiano, validado por TRAMIL para infecciones respiratorias</div>
+        <div class="efecto-item"><div class="efecto-icon">🌼</div>Manzanilla: antiinflamatoria de mucosas + ansiolítica — ideal para resfriados con nerviosismo</div>
+        <div class="efecto-item"><div class="efecto-icon">🧄</div>Ajo: alicina antimicrobiana — se activa machacando y esperando 10 min</div>
+        <div class="efecto-item"><div class="efecto-icon">🫚</div>Jengibre: antiviral e inmunoestimulante (interferon)</div>
+        <div class="efecto-item"><div class="efecto-icon">🍋</div>Limón: vitamina C potencia respuesta inmune + sabor agradable</div>
+      </div>
+      <div class="consejo-hipocratico">"El remedio más poderoso no siempre viene de la farmacia. A veces crece como maleza en el patio de tu casa."</div>
+      <div class="plantas-vinculadas">
+        <a href="ficha-planta.html?id=bidens-pilosa" class="planta-chip">🌿 Mozote</a>
+        <a href="ficha-planta.html?id=manzanilla" class="planta-chip">🌼 Manzanilla</a>
+        <a href="ficha-planta.html?id=ajo" class="planta-chip">🧄 Ajo</a>
+        <a href="ficha-planta.html?id=jengibre" class="planta-chip">🫚 Jengibre</a>
+      </div>
+      <div class="precaucion"><div class="precaucion-icon">⚠️</div>Recolectar mozote SOLO de zonas alejadas de carreteras y pesticidas. Si los síntomas persisten más de 3 días, consultar médico. No reemplazar tratamiento antiviral en gripe severa.</div>
+    </div>
+  </div>
+
+</div><!-- /recetas-lista -->
+
+<!-- DISCLAIMER FINAL -->
+<div class="disclaimer-final">
+  🌿 Estas recetas son apoyo nutricional con base en fitoterapia documentada.<br>
+  No reemplazan el diagnóstico médico ni el tratamiento farmacológico.<br>
+  <strong>El término "detox" aquí significa apoyo fisiológico a los órganos de eliminación</strong> — no limpieza mágica.
+</div>
+
+<!-- NAV INFERIOR -->
+<nav class="bottom-nav">
+  <a href="../index.html" class="nav-item">
+    <span class="nav-icon">🏠</span>Inicio
+  </a>
+  <a href="herbologia-indice.html" class="nav-item">
+    <span class="nav-icon">🌿</span>Plantas
+  </a>
+  <a href="explorador-sintoma.html" class="nav-item">
+    <span class="nav-icon">🔍</span>Síntomas
+  </a>
+  <a href="alimentos-medicina.html" class="nav-item activo">
+    <span class="nav-icon">🍽️</span>Alimentos
+  </a>
+  <a href="mindfulness-audio.html" class="nav-item">
+    <span class="nav-icon">🧘</span>Mente
+  </a>
+</nav>
+
+<script>
+// Toggle receta individual
+function toggleReceta(btn) {
+  const card = btn.closest('.receta-card');
+  card.classList.toggle('abierta');
+}
+
+// Filtro por categoría
+function filtrar(cat, tabEl) {
+  // Actualizar tabs
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('activo'));
+  tabEl.classList.add('activo');
+
+  // Mostrar/ocultar recetas
+  const cards = document.querySelectorAll('.receta-card');
+  const secTitulos = document.querySelectorAll('.sec-titulo');
+
+  cards.forEach(card => {
+    if (cat === 'todos' || card.dataset.cat === cat) {
+      card.style.display = '';
+    } else {
+      card.style.display = 'none';
+      card.classList.remove('abierta');
+    }
+  });
+
+  // Mostrar/ocultar títulos de sección
+  secTitulos.forEach(sec => {
+    if (cat === 'todos') {
+      sec.style.display = '';
+    } else if (sec.dataset.grupo && sec.dataset.grupo !== cat) {
+      sec.style.display = 'none';
+    } else {
+      sec.style.display = '';
+    }
+  });
+}
+</script>
+
+</body>
+</html>

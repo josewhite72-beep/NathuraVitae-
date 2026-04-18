@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nathura — Ficha de planta</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --verde-oscuro: #1a4a35;
+    --verde-medio: #2d7a5a;
+    --verde-claro: #4aab7f;
+    --verde-palido: #e8f5ef;
+    --verde-mint: #c8ead8;
+    --crema: #faf8f3;
+    --crema-oscura: #f0ece0;
+    --texto: #1c1c1a;
+    --texto-suave: #4a4a46;
+    --texto-tenue: #8a8a84;
+    --morado-suave: #6b5b95;
+    --morado-palido: #f0edf8;
+    --ambar: #c47a1e;
+    --ambar-palido: #fef3e2;
+    --rojo-suave: #b84444;
+    --rojo-palido: #fdeaea;
+    --borde: rgba(44, 90, 60, 0.12);
+    --sombra: 0 2px 20px rgba(26, 74, 53, 0.08);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--crema);
+    color: var(--texto);
+    min-height: 100vh;
+    padding-bottom: 3rem;
+  }
+
+  /* Cabecera de la app */
+  .app-bar {
+    background: var(--verde-oscuro);
+    padding: 14px 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  .app-bar-back {
+    width: 32px; height: 32px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.12);
+    display: flex; align-items: center; justify-content: center;
+    cursor: pointer;
+    border: none;
+    color: white;
+  }
+  .app-bar-title {
+    font-family: 'Lora', serif;
+    font-size: 17px;
+    color: white;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+  }
+  .app-bar-leaf {
+    margin-left: auto;
+    opacity: 0.5;
+  }
+
+  /* Hero de la planta */
+  .hero {
+    background: var(--verde-oscuro);
+    padding: 0 20px 32px;
+    position: relative;
+  }
+  .hero::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 32px;
+    background: var(--crema);
+    border-radius: 32px 32px 0 0;
+  }
+  .planta-icono {
+    width: 88px; height: 88px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 42px;
+    margin-bottom: 16px;
+    border: 1.5px solid rgba(255,255,255,0.2);
+  }
+  .nombre-comun {
+    font-family: 'Lora', serif;
+    font-size: 32px;
+    font-weight: 500;
+    color: white;
+    line-height: 1.15;
+  }
+  .nombre-cientifico {
+    font-family: 'Lora', serif;
+    font-style: italic;
+    font-size: 15px;
+    color: rgba(255,255,255,0.65);
+    margin-top: 4px;
+    margin-bottom: 16px;
+  }
+  .hero-tags {
+    display: flex; flex-wrap: wrap; gap: 6px;
+  }
+  .hero-tag {
+    font-size: 11px;
+    padding: 4px 10px;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.15);
+    color: rgba(255,255,255,0.85);
+    border: 0.5px solid rgba(255,255,255,0.2);
+    letter-spacing: 0.3px;
+  }
+
+  /* Contenido principal */
+  .contenido {
+    padding: 8px 16px 0;
+  }
+
+  /* Resumen */
+  .resumen-card {
+    background: var(--verde-palido);
+    border-radius: 14px;
+    padding: 18px;
+    border: 1px solid var(--verde-mint);
+    margin-bottom: 20px;
+  }
+  .resumen-texto {
+    font-family: 'Lora', serif;
+    font-size: 15px;
+    line-height: 1.7;
+    color: var(--verde-oscuro);
+    font-style: italic;
+  }
+
+  /* Sección genérica */
+  .seccion {
+    margin-bottom: 24px;
+  }
+  .seccion-titulo {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--verde-medio);
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .seccion-titulo::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--borde);
+  }
+
+  /* Propiedades */
+  .prop-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .prop-chip {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 7px 12px;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 400;
+    border: 1px solid;
+  }
+  .prop-chip.fuerte { background: var(--verde-palido); border-color: var(--verde-claro); color: var(--verde-oscuro); }
+  .prop-chip.moderado { background: #f0f8f0; border-color: #a8d5b0; color: #2a5c3a; }
+  .prop-chip.preliminar { background: var(--ambar-palido); border-color: #e8c080; color: var(--ambar); }
+  .prop-chip.tradicional { background: var(--crema-oscura); border-color: #c8c0a0; color: #6a6050; }
+  .prop-dot { width: 7px; height: 7px; border-radius: 50%; background: currentColor; opacity: 0.6; flex-shrink: 0; }
+
+  /* Dolencias — índice */
+  .dolencia-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .dolencia-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 14px;
+    background: var(--crema-oscura);
+    border-radius: 10px;
+    border: 1px solid var(--borde);
+  }
+  .dolencia-nombre { font-size: 14px; color: var(--texto); }
+  .dolencia-cat {
+    font-size: 10px;
+    color: var(--texto-tenue);
+    background: white;
+    padding: 2px 8px;
+    border-radius: 8px;
+    border: 1px solid var(--borde);
+    margin-left: auto;
+    margin-right: 8px;
+  }
+  .evid-badge {
+    font-size: 10px;
+    padding: 2px 7px;
+    border-radius: 6px;
+    white-space: nowrap;
+  }
+  .evid-fuerte { background: var(--verde-palido); color: var(--verde-oscuro); }
+  .evid-moderado { background: #e8f4e8; color: #2a5c3a; }
+  .evid-preliminar { background: var(--ambar-palido); color: var(--ambar); }
+  .evid-tradicional { background: var(--crema-oscura); color: #6a6050; }
+
+  /* Preparación — tabs */
+  .tabs {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 14px;
+    background: var(--crema-oscura);
+    border-radius: 10px;
+    padding: 4px;
+  }
+  .tab-btn {
+    flex: 1;
+    padding: 8px 4px;
+    border: none;
+    border-radius: 7px;
+    font-size: 12px;
+    font-family: 'DM Sans', sans-serif;
+    cursor: pointer;
+    background: transparent;
+    color: var(--texto-suave);
+    transition: all 0.2s;
+    font-weight: 400;
+  }
+  .tab-btn.activo {
+    background: var(--verde-oscuro);
+    color: white;
+    font-weight: 500;
+  }
+  .prep-card {
+    background: white;
+    border-radius: 12px;
+    padding: 16px;
+    border: 1px solid var(--borde);
+    display: none;
+  }
+  .prep-card.visible { display: block; }
+  .prep-instrucciones {
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--texto-suave);
+    margin-bottom: 12px;
+  }
+  .prep-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .prep-meta-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 13px;
+  }
+  .prep-meta-label {
+    font-weight: 500;
+    color: var(--verde-medio);
+    min-width: 60px;
+    flex-shrink: 0;
+  }
+  .prep-meta-val { color: var(--texto-suave); }
+
+  /* Contraindicaciones */
+  .advertencia-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .advertencia-item {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    background: var(--rojo-palido);
+    border-radius: 10px;
+    padding: 10px 12px;
+    border: 1px solid #f0c0c0;
+    font-size: 13px;
+    line-height: 1.5;
+    color: var(--rojo-suave);
+  }
+  .adv-icon { font-size: 15px; flex-shrink: 0; margin-top: 1px; }
+
+  /* Embarazo badge */
+  .embarazo-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 14px;
+    border-radius: 10px;
+    background: var(--ambar-palido);
+    border: 1px solid #e8c080;
+    font-size: 13px;
+    color: #7a5010;
+    margin-bottom: 20px;
+  }
+
+  /* Interacciones */
+  .interaccion-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .interaccion-item {
+    display: flex;
+    gap: 10px;
+    padding: 9px 12px;
+    background: var(--morado-palido);
+    border-radius: 9px;
+    border: 1px solid #d8d0f0;
+    font-size: 13px;
+    line-height: 1.5;
+    color: var(--morado-suave);
+  }
+
+  /* Principios activos */
+  .activos-lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .activo-tag {
+    font-size: 12px;
+    padding: 5px 11px;
+    border-radius: 20px;
+    background: white;
+    border: 1px solid var(--borde);
+    color: var(--texto-suave);
+    font-style: italic;
+  }
+
+  /* Fuentes */
+  .fuente-item {
+    padding: 12px 14px;
+    background: white;
+    border-radius: 10px;
+    border: 1px solid var(--borde);
+    margin-bottom: 8px;
+  }
+  .fuente-tipo {
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: var(--verde-medio);
+    margin-bottom: 3px;
+  }
+  .fuente-titulo {
+    font-size: 13px;
+    line-height: 1.4;
+    color: var(--texto);
+    margin-bottom: 2px;
+  }
+  .fuente-autor {
+    font-size: 11px;
+    color: var(--texto-tenue);
+  }
+
+  /* Disclaimer final */
+  .disclaimer {
+    margin: 24px 16px 0;
+    padding: 14px 16px;
+    background: var(--crema-oscura);
+    border-radius: 12px;
+    border: 1px solid var(--borde);
+    font-size: 12px;
+    line-height: 1.6;
+    color: var(--texto-tenue);
+    text-align: center;
+  }
+
+  /* Plantas relacionadas (mini-chips) */
+  .relac-row {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .relac-chip {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 12px;
+    background: var(--verde-palido);
+    border-radius: 10px;
+    border: 1px solid var(--verde-mint);
+    font-size: 12px;
+    color: var(--verde-oscuro);
+    cursor: pointer;
+    text-decoration: none;
+  }
+</style>
+</head>
+<body>
+
+<div class="app-bar">
+  <button class="app-bar-back" onclick="history.back()">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round">
+      <path d="M15 18l-6-6 6-6"/>
+    </svg>
+  </button>
+  <span class="app-bar-title">Herbología</span>
+  <svg class="app-bar-leaf" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round">
+    <path d="M11 20A7 7 0 0 1 4 13c0-6 7-12 7-12s7 6 7 12a7 7 0 0 1-7 7z"/>
+  </svg>
+</div>
+
+<div class="hero">
+  <div class="planta-icono">🌼</div>
+  <div class="nombre-comun">Manzanilla</div>
+  <div class="nombre-cientifico">Matricaria chamomilla L. · Asteraceae</div>
+  <div class="hero-tags">
+    <span class="hero-tag">Flor</span>
+    <span class="hero-tag">Digestiva</span>
+    <span class="hero-tag">Calmante</span>
+    <span class="hero-tag">Apta EII</span>
+    <span class="hero-tag">OMS ✓</span>
+    <span class="hero-tag">EMA ✓</span>
+  </div>
+</div>
+
+<div class="contenido">
+
+  <div class="resumen-card">
+    <div class="resumen-texto">
+      "Una de las plantas medicinales más estudiadas del mundo. Sus flores poseen propiedades antiinflamatorias, antiespasmódicas y calmantes respaldadas por numerosos estudios clínicos."
+    </div>
+  </div>
+
+  <!-- PROPIEDADES -->
+  <div class="seccion">
+    <div class="seccion-titulo">Propiedades</div>
+    <div class="prop-grid">
+      <div class="prop-chip fuerte"><span class="prop-dot"></span>Antiinflamatoria</div>
+      <div class="prop-chip fuerte"><span class="prop-dot"></span>Antiespasmódica</div>
+      <div class="prop-chip moderado"><span class="prop-dot"></span>Ansiolítica leve</div>
+      <div class="prop-chip moderado"><span class="prop-dot"></span>Cicatrizante</div>
+      <div class="prop-chip preliminar"><span class="prop-dot"></span>Antimicrobiana</div>
+    </div>
+    <div style="display:flex;gap:12px;margin-top:10px;flex-wrap:wrap">
+      <span style="font-size:11px;color:var(--texto-tenue);display:flex;align-items:center;gap:4px">
+        <span style="width:8px;height:8px;border-radius:50%;background:var(--verde-claro);display:inline-block"></span>Fuerte
+      </span>
+      <span style="font-size:11px;color:var(--texto-tenue);display:flex;align-items:center;gap:4px">
+        <span style="width:8px;height:8px;border-radius:50%;background:#a8d5b0;display:inline-block"></span>Moderado
+      </span>
+      <span style="font-size:11px;color:var(--texto-tenue);display:flex;align-items:center;gap:4px">
+        <span style="width:8px;height:8px;border-radius:50%;background:#e8c080;display:inline-block"></span>Preliminar
+      </span>
+    </div>
+  </div>
+
+  <!-- DOLENCIAS -->
+  <div class="seccion">
+    <div class="seccion-titulo">Indicada para</div>
+    <div class="dolencia-lista">
+      <div class="dolencia-item">
+        <span class="dolencia-nombre">Colitis leve</span>
+        <span class="dolencia-cat">digestivo</span>
+        <span class="evid-badge evid-moderado">moderado</span>
+      </div>
+      <div class="dolencia-item">
+        <span class="dolencia-nombre">Gastritis</span>
+        <span class="dolencia-cat">digestivo</span>
+        <span class="evid-badge evid-moderado">moderado</span>
+      </div>
+      <div class="dolencia-item">
+        <span class="dolencia-nombre">Síndrome de intestino irritable</span>
+        <span class="dolencia-cat">digestivo</span>
+        <span class="evid-badge evid-moderado">moderado</span>
+      </div>
+      <div class="dolencia-item">
+        <span class="dolencia-nombre">Insomnio leve</span>
+        <span class="dolencia-cat">nervioso</span>
+        <span class="evid-badge evid-moderado">moderado</span>
+      </div>
+      <div class="dolencia-item">
+        <span class="dolencia-nombre">Ansiedad leve</span>
+        <span class="dolencia-cat">nervioso</span>
+        <span class="evid-badge evid-moderado">moderado</span>
+      </div>
+      <div class="dolencia-item">
+        <span class="dolencia-nombre">Cólicos menstruales</span>
+        <span class="dolencia-cat">hormonal</span>
+        <span class="evid-badge evid-moderado">moderado</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- PREPARACIÓN -->
+  <div class="seccion">
+    <div class="seccion-titulo">Preparación</div>
+    <div class="tabs">
+      <button class="tab-btn activo" onclick="mostrarPrep(0, this)">Infusión</button>
+      <button class="tab-btn" onclick="mostrarPrep(1, this)">Tintura</button>
+      <button class="tab-btn" onclick="mostrarPrep(2, this)">Cataplasma</button>
+    </div>
+    <div class="prep-card visible" id="prep-0">
+      <div class="prep-instrucciones">
+        Verter 150 ml de agua hirviendo sobre 3 g de flores secas (aprox. 1 cucharada colmada). Tapar y dejar reposar 10 minutos. Colar antes de beber.
+      </div>
+      <div class="prep-meta">
+        <div class="prep-meta-item">
+          <span class="prep-meta-label">Dosis</span>
+          <span class="prep-meta-val">3 tazas al día, preferiblemente entre comidas</span>
+        </div>
+        <div class="prep-meta-item">
+          <span class="prep-meta-label">Duración</span>
+          <span class="prep-meta-val">Hasta 4–6 semanas; consultar si persisten los síntomas</span>
+        </div>
+      </div>
+    </div>
+    <div class="prep-card" id="prep-1">
+      <div class="prep-instrucciones">
+        Tintura 1:5 en alcohol de 45°. Diluir 20–30 gotas en medio vaso de agua, 3 veces al día.
+      </div>
+      <div class="prep-meta">
+        <div class="prep-meta-item">
+          <span class="prep-meta-label">Dosis</span>
+          <span class="prep-meta-val">20–30 gotas × 3 veces al día</span>
+        </div>
+      </div>
+    </div>
+    <div class="prep-card" id="prep-2">
+      <div class="prep-instrucciones">
+        Flores secas remojadas en agua caliente, escurridas y aplicadas directamente sobre la zona afectada, cubiertas con un paño limpio.
+      </div>
+      <div class="prep-meta">
+        <div class="prep-meta-item">
+          <span class="prep-meta-label">Dosis</span>
+          <span class="prep-meta-val">1–2 aplicaciones diarias de 15–20 minutos</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- EMBARAZO / LACTANCIA -->
+  <div class="embarazo-row">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#c47a1e" stroke-width="2" stroke-linecap="round">
+      <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+      <line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/>
+    </svg>
+    <span><strong>Embarazo y lactancia:</strong> Usar con precaución. Evitar dosis elevadas durante el embarazo.</span>
+  </div>
+
+  <!-- CONTRAINDICACIONES -->
+  <div class="seccion">
+    <div class="seccion-titulo">Contraindicaciones</div>
+    <div class="advertencia-lista">
+      <div class="advertencia-item">
+        <span class="adv-icon">⚠</span>
+        Alergia conocida a plantas de la familia Asteraceae (ambrosía, árnica, caléndula).
+      </div>
+      <div class="advertencia-item">
+        <span class="adv-icon">⚠</span>
+        No usar aceite esencial puro sin diluir en niños menores de 3 años.
+      </div>
+      <div class="advertencia-item">
+        <span class="adv-icon">⚠</span>
+        Evitar dosis altas durante el embarazo (posible efecto uterotónico en dosis muy elevadas).
+      </div>
+    </div>
+  </div>
+
+  <!-- INTERACCIONES -->
+  <div class="seccion">
+    <div class="seccion-titulo">Interacciones medicamentosas</div>
+    <div class="interaccion-lista">
+      <div class="interaccion-item">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="flex-shrink:0;margin-top:2px"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2v-4M9 21H5a2 2 0 0 1-2-2v-4m0 0h18"/></svg>
+        <span>Anticoagulantes orales (warfarina): puede potenciar el efecto. Monitorizar.</span>
+      </div>
+      <div class="interaccion-item">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="flex-shrink:0;margin-top:2px"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2v-4M9 21H5a2 2 0 0 1-2-2v-4m0 0h18"/></svg>
+        <span>Benzodiazepinas y sedantes: puede potenciar la sedación.</span>
+      </div>
+      <div class="interaccion-item">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="flex-shrink:0;margin-top:2px"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2v-4M9 21H5a2 2 0 0 1-2-2v-4m0 0h18"/></svg>
+        <span>Ciclosporina: posible reducción de niveles plasmáticos.</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- PRINCIPIOS ACTIVOS -->
+  <div class="seccion">
+    <div class="seccion-titulo">Principios activos</div>
+    <div class="activos-lista">
+      <span class="activo-tag">alfa-bisabolol</span>
+      <span class="activo-tag">camazuleno</span>
+      <span class="activo-tag">apigenina</span>
+      <span class="activo-tag">luteolina</span>
+      <span class="activo-tag">quercetina</span>
+      <span class="activo-tag">ácido clorogénico</span>
+      <span class="activo-tag">herniarina</span>
+      <span class="activo-tag">mucílagos</span>
+    </div>
+  </div>
+
+  <!-- INFUSIONES RELACIONADAS -->
+  <div class="seccion">
+    <div class="seccion-titulo">Infusiones con esta planta</div>
+    <div class="relac-row">
+      <a class="relac-chip" href="#">🍵 Digestiva clásica</a>
+      <a class="relac-chip" href="#">🌙 Relajante nocturna</a>
+      <a class="relac-chip" href="#">🌿 Mezcla anti-colitis</a>
+    </div>
+  </div>
+
+  <!-- FUENTES -->
+  <div class="seccion">
+    <div class="seccion-titulo">Fuentes</div>
+    <div class="fuente-item">
+      <div class="fuente-tipo">Monografía OMS</div>
+      <div class="fuente-titulo">WHO Monographs on Selected Medicinal Plants — Flos Chamomillae</div>
+      <div class="fuente-autor">Organización Mundial de la Salud · 1999</div>
+    </div>
+    <div class="fuente-item">
+      <div class="fuente-tipo">Monografía EMA</div>
+      <div class="fuente-titulo">Assessment report on Matricaria recutita L., flos</div>
+      <div class="fuente-autor">European Medicines Agency · 2015</div>
+    </div>
+    <div class="fuente-item">
+      <div class="fuente-tipo">Revisión sistemática</div>
+      <div class="fuente-titulo">Chamomile: A herbal medicine of the past with bright future</div>
+      <div class="fuente-autor">Srivastava JK, Shankar E, Gupta S · Molecular Medicine Reports · 2010</div>
+    </div>
+  </div>
+
+</div>
+
+<div class="disclaimer">
+  ⚕ Esta información es de carácter educativo y no reemplaza el diagnóstico ni el tratamiento médico profesional. Consulte a su médico antes de iniciar cualquier terapia herbal, especialmente si toma medicamentos o tiene condiciones de salud preexistentes.
+</div>
+
+<script>
+function mostrarPrep(idx, btn) {
+  document.querySelectorAll('.prep-card').forEach((c, i) => {
+    c.classList.toggle('visible', i === idx);
+  });
+  document.querySelectorAll('.tab-btn').forEach((b, i) => {
+    b.classList.toggle('activo', i === idx);
+  });
+}
+</script>
+</body>
+</html>

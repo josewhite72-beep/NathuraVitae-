@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#1a3d2a">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<title>NathuraVitae</title>
+<link rel="manifest" href="manifest.json">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --v1:#1a3d2a; --v2:#245c3e; --v3:#2e8b5a; --v4:#4aab7f; --v5:#8dd4b0;
+  --vp:#eaf6f0; --vm:#c0e8d4; --vt:#8dd4b0;
+  --mora1:#2e1f5e; --mora2:#4a3480; --morap:#f0edf8; --morat:#b8a8ec;
+  --crema:#f8f5ee; --crema2:#ede8dc; --crema3:#e2dace;
+  --amb:#9a6010; --ambp:#fdf2e0; --ambm:#f0cc88;
+  --tx:#1a1a16; --tx2:#44443c; --tx3:#8a8878;
+  --borde:rgba(26,61,42,0.10);
+  --r:16px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Outfit',sans-serif;
+  background:var(--crema);
+  color:var(--tx);
+  min-height:100vh;
+  padding-bottom:80px; /* nav height */
+  -webkit-font-smoothing:antialiased
+}
+
+/* ═══ STATUS BAR SPACER ═══ */
+.status-spacer{height:env(safe-area-inset-top,0px);background:var(--v1)}
+
+/* ═══ TOP BAR ═══ */
+.topbar{
+  background:var(--v1);
+  padding:12px 20px 14px;
+  display:flex;align-items:center;justify-content:space-between;
+  position:sticky;top:0;z-index:40
+}
+.topbar-brand{display:flex;align-items:center;gap:10px}
+.topbar-leaf{
+  width:34px;height:34px;border-radius:50%;
+  background:rgba(255,255,255,.1);
+  display:flex;align-items:center;justify-content:center;
+  border:1px solid rgba(255,255,255,.15)
+}
+.topbar-nom{
+  font-family:'Playfair Display',serif;
+  font-size:20px;color:white;font-weight:500;letter-spacing:.2px
+}
+.topbar-nom span{font-style:italic;font-weight:400;color:var(--vt)}
+.topbar-actions{display:flex;gap:8px}
+.topbar-btn{
+  width:34px;height:34px;border-radius:50%;
+  background:rgba(255,255,255,.1);border:none;
+  display:flex;align-items:center;justify-content:center;
+  cursor:pointer;transition:background .15s
+}
+.topbar-btn:hover{background:rgba(255,255,255,.18)}
+
+/* ═══ HERO ═══ */
+.hero{
+  background:var(--v1);
+  padding:4px 24px 40px;
+  position:relative;overflow:hidden
+}
+/* decoración botánica de fondo */
+.hero-deco{
+  position:absolute;right:-20px;top:-20px;
+  font-size:200px;opacity:.04;line-height:1;
+  pointer-events:none;user-select:none;
+  transform:rotate(15deg)
+}
+.hero-deco2{
+  position:absolute;left:-30px;bottom:-40px;
+  font-size:140px;opacity:.035;line-height:1;
+  pointer-events:none;user-select:none;
+  transform:rotate(-20deg)
+}
+.hero-greeting{
+  font-size:12px;letter-spacing:1.5px;text-transform:uppercase;
+  color:rgba(255,255,255,.38);font-weight:300;margin-bottom:8px
+}
+.hero-title{
+  font-family:'Playfair Display',serif;
+  font-size:32px;color:white;font-weight:500;
+  line-height:1.18;margin-bottom:8px
+}
+.hero-title em{font-style:italic;color:var(--vt);font-weight:400}
+.hero-sub{
+  font-size:13px;color:rgba(255,255,255,.5);
+  line-height:1.65;font-weight:300;margin-bottom:22px;
+  max-width:260px
+}
+
+/* planta del día chip */
+.planta-dia-chip{
+  display:inline-flex;align-items:center;gap:8px;
+  background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.15);
+  border-radius:20px;padding:8px 14px;cursor:pointer;transition:background .2s
+}
+.planta-dia-chip:hover{background:rgba(255,255,255,.16)}
+.pdc-ico{font-size:18px}
+.pdc-label{font-size:11px;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:.8px;margin-bottom:1px}
+.pdc-nom{font-family:'Playfair Display',serif;font-size:15px;color:white;font-weight:400}
+
+/* buscador hero */
+.hero-search{
+  margin-top:20px;position:relative
+}
+.hero-search-input{
+  width:100%;padding:14px 16px 14px 46px;
+  border-radius:14px;border:none;
+  background:rgba(255,255,255,.13);
+  color:white;font-size:15px;
+  font-family:'Outfit',sans-serif;font-weight:300;
+  outline:none;transition:background .2s
+}
+.hero-search-input::placeholder{color:rgba(255,255,255,.35)}
+.hero-search-input:focus{background:rgba(255,255,255,.2)}
+.hero-search-ico{
+  position:absolute;left:15px;top:50%;transform:translateY(-50%);
+  pointer-events:none;opacity:.4
+}
+
+/* curva de separación */
+.curve{display:block;width:100%;margin-top:-1px}
+
+/* ═══ MÓDULOS PRINCIPALES ═══ */
+.modulos{padding:20px 16px 0}
+.modulos-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+
+.mod-card{
+  border-radius:18px;padding:18px 16px;
+  cursor:pointer;position:relative;overflow:hidden;
+  transition:transform .2s,box-shadow .2s;
+  border:1px solid transparent;
+  min-height:140px;display:flex;flex-direction:column;justify-content:space-between
+}
+.mod-card:hover{transform:translateY(-2px);box-shadow:0 8px 32px rgba(0,0,0,.08)}
+.mod-card:active{transform:scale(.98)}
+
+/* colores por módulo */
+.mod-herb{background:#eaf6f0;border-color:#c0e8d4}
+.mod-sint{background:var(--v1);border-color:rgba(255,255,255,.08)}
+.mod-mind{background:#f0edf8;border-color:#d4c8f5}
+.mod-infus{background:#fdf2e0;border-color:#f0cc88}
+.mod-recet{background:#fce8e8;border-color:#f0b8b8}
+
+/* card wide — ocupa 2 columnas */
+.mod-card-wide{grid-column:span 2}
+
+.mod-ico{font-size:28px;margin-bottom:8px;display:block;line-height:1}
+.mod-nom{
+  font-family:'Playfair Display',serif;
+  font-size:17px;font-weight:500;line-height:1.2;margin-bottom:4px
+}
+.mod-sub{font-size:11px;font-weight:300;line-height:1.45}
+.mod-badge{
+  display:inline-flex;align-items:center;gap:4px;
+  font-size:10px;padding:3px 9px;border-radius:10px;
+  font-weight:500;margin-top:8px;border:1px solid;
+  align-self:flex-start
+}
+.mod-arrow{
+  position:absolute;bottom:14px;right:14px;
+  opacity:.2;transition:opacity .2s
+}
+.mod-card:hover .mod-arrow{opacity:.5}
+
+/* colores de texto por módulo */
+.mod-herb .mod-nom{color:var(--v1)}
+.mod-herb .mod-sub{color:#3a7050}
+.mod-herb .mod-badge{background:#c0e8d4;color:var(--v1);border-color:#8dd4b0}
+
+.mod-sint .mod-nom{color:white}
+.mod-sint .mod-sub{color:rgba(255,255,255,.55)}
+.mod-sint .mod-badge{background:rgba(255,255,255,.12);color:rgba(255,255,255,.8);border-color:rgba(255,255,255,.15)}
+
+.mod-mind .mod-nom{color:#2e1f5e}
+.mod-mind .mod-sub{color:#6b52a8}
+.mod-mind .mod-badge{background:#d4c8f5;color:#2e1f5e;border-color:#b8a8ec}
+
+.mod-infus .mod-nom{color:#633808}
+.mod-infus .mod-sub{color:#9a6010}
+.mod-infus .mod-badge{background:#f0cc88;color:#633808;border-color:#e0aa50}
+
+.mod-recet .mod-nom{color:#7a2020}
+.mod-recet .mod-sub{color:#a83838}
+.mod-recet .mod-badge{background:#f0b8b8;color:#7a2020;border-color:#e09090}
+
+/* deco interno de la card de síntomas */
+.mod-sint-deco{
+  position:absolute;right:-8px;top:-8px;
+  font-size:80px;opacity:.06;line-height:1;
+  pointer-events:none;transform:rotate(10deg)
+}
+
+/* ═══ ACCESO RÁPIDO EII ═══ */
+.eii-banner{
+  margin:20px 16px 0;
+  background:var(--v1);border-radius:18px;
+  padding:18px;display:flex;gap:14px;align-items:flex-start;
+  cursor:pointer;transition:opacity .2s;position:relative;overflow:hidden
+}
+.eii-banner:hover{opacity:.92}
+.eii-deco{position:absolute;right:-10px;bottom:-20px;font-size:100px;opacity:.05;transform:rotate(-10deg)}
+.eii-ico{
+  width:46px;height:46px;border-radius:14px;flex-shrink:0;
+  background:rgba(255,255,255,.1);
+  display:flex;align-items:center;justify-content:center;font-size:22px
+}
+.eii-texto{flex:1}
+.eii-label{font-size:10px;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,.4);margin-bottom:4px}
+.eii-title{font-family:'Playfair Display',serif;font-size:17px;color:white;font-weight:400;margin-bottom:4px}
+.eii-sub{font-size:12px;color:rgba(255,255,255,.5);line-height:1.5;font-weight:300}
+.eii-chips{display:flex;gap:6px;margin-top:10px;flex-wrap:wrap}
+.eii-chip{
+  font-size:10px;padding:3px 10px;border-radius:10px;
+  background:rgba(255,255,255,.1);color:rgba(255,255,255,.7);
+  border:1px solid rgba(255,255,255,.12);font-weight:400
+}
+
+/* ═══ PLANTA DEL DÍA (card grande) ═══ */
+.planta-dia-card{
+  margin:20px 16px 0;
+  border-radius:18px;overflow:hidden;
+  border:1px solid var(--borde);
+  background:white;cursor:pointer;
+  transition:transform .2s,box-shadow .2s
+}
+.planta-dia-card:hover{transform:translateY(-2px);box-shadow:0 8px 32px rgba(26,61,42,.08)}
+.pdc-head{
+  background:var(--v1);padding:16px 18px;
+  display:flex;align-items:center;gap:10px
+}
+.pdc-head-label{font-size:10px;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,.4);margin-bottom:3px}
+.pdc-head-nom{font-family:'Playfair Display',serif;font-size:20px;color:white;font-weight:400}
+.pdc-head-ci{font-style:italic;font-size:12px;color:rgba(255,255,255,.45);margin-top:2px}
+.pdc-head-ico{font-size:44px;margin-left:auto;flex-shrink:0}
+.pdc-body{padding:16px 18px}
+.pdc-resumen{font-size:13px;color:var(--tx2);line-height:1.7;font-weight:300;margin-bottom:14px}
+.pdc-props{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px}
+.pdc-prop{
+  font-size:11px;padding:4px 10px;border-radius:10px;
+  background:var(--vp);color:var(--v2);border:1px solid var(--vm);font-weight:500
+}
+.pdc-prop.fuerte{background:var(--vp);border-color:var(--vt)}
+.pdc-prop.moderado{background:#f0f8e8;color:#2c5e1a;border-color:#a8d890}
+.pdc-footer{
+  display:flex;align-items:center;justify-content:space-between;
+  border-top:1px solid var(--borde);padding-top:12px
+}
+.pdc-footer-eii{display:flex;align-items:center;gap:5px;font-size:11px;color:var(--v2);font-weight:500}
+.pdc-footer-link{font-size:12px;color:var(--v3);font-weight:500;display:flex;align-items:center;gap:4px}
+
+/* ═══ SECCIÓN GENÉRICA ═══ */
+.seccion{padding:20px 16px 0}
+.sec-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px}
+.sec-title{font-family:'Playfair Display',serif;font-size:20px;font-weight:500;color:var(--tx)}
+.sec-ver-todo{font-size:12px;color:var(--v3);font-weight:500;cursor:pointer}
+
+/* ═══ INFUSIONES PREVIEW ═══ */
+.infusiones-scroll{display:flex;gap:10px;overflow-x:auto;padding-bottom:4px;-webkit-overflow-scrolling:touch}
+.infusiones-scroll::-webkit-scrollbar{display:none}
+.infus-card{
+  flex-shrink:0;width:150px;border-radius:14px;
+  padding:14px 12px;
+  background:var(--ambp);border:1px solid var(--ambm);cursor:pointer;
+  transition:transform .18s
+}
+.infus-card:hover{transform:translateY(-2px)}
+.infus-ico{font-size:24px;margin-bottom:8px}
+.infus-nom{font-size:13px;font-weight:500;color:#633808;margin-bottom:3px;line-height:1.3}
+.infus-plantas{font-size:10px;color:var(--amb);line-height:1.4;font-weight:300}
+.infus-badge{
+  display:inline-block;margin-top:8px;
+  font-size:10px;padding:2px 8px;border-radius:8px;
+  background:#f0cc88;color:#633808;border:1px solid #e0aa50;font-weight:500
+}
+
+/* ═══ RECETAS PREVIEW ═══ */
+.recetas-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.receta-chip{
+  padding:12px 10px;border-radius:12px;
+  background:white;border:1px solid var(--borde);
+  cursor:pointer;transition:all .18s;
+  display:flex;flex-direction:column;gap:4px
+}
+.receta-chip:hover{border-color:#f0b8b8;background:#fdf0f0}
+.receta-ico{font-size:20px}
+.receta-nom{font-size:12px;font-weight:500;color:var(--tx);line-height:1.3}
+.receta-tag{
+  display:inline-block;font-size:10px;padding:2px 7px;
+  border-radius:7px;background:#fce8e8;color:#8a2828;
+  border:1px solid #f0b0b0;font-weight:500;align-self:flex-start
+}
+
+/* ═══ MINDFULNESS PREVIEW ═══ */
+.mindful-preview{
+  border-radius:18px;overflow:hidden;
+  border:1px solid #d4c8f5;cursor:pointer;
+  transition:transform .2s,box-shadow .2s
+}
+.mindful-preview:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(46,31,94,.1)}
+.mindful-head{
+  background:var(--mora1);padding:18px;
+  display:flex;align-items:center;gap:14px
+}
+.mindful-head-ico{font-size:36px}
+.mindful-head-txt{}
+.mindful-head-nom{font-family:'Playfair Display',serif;font-size:20px;color:white;font-weight:400;margin-bottom:4px}
+.mindful-head-sub{font-size:12px;color:rgba(255,255,255,.5);line-height:1.5;font-weight:300}
+.mindful-tecnicas-row{
+  display:flex;background:white;border-top:1px solid #d4c8f5
+}
+.mindful-tec-item{
+  flex:1;padding:12px 8px;text-align:center;
+  border-right:1px solid #e8e0f8;cursor:pointer;
+  transition:background .15s
+}
+.mindful-tec-item:last-child{border-right:none}
+.mindful-tec-item:hover{background:var(--morap)}
+.mindful-tec-ico{font-size:20px;margin-bottom:4px}
+.mindful-tec-nom{font-size:11px;color:var(--mora2);font-weight:500;line-height:1.3}
+
+/* ═══ BOTTOM NAV ═══ */
+.bottom-nav{
+  position:fixed;bottom:0;left:0;right:0;
+  background:white;border-top:1px solid var(--borde);
+  display:flex;padding:10px 0 calc(10px + env(safe-area-inset-bottom,0px));
+  z-index:50;box-shadow:0 -4px 20px rgba(0,0,0,.06)
+}
+.nav-item{
+  flex:1;display:flex;flex-direction:column;align-items:center;gap:3px;
+  cursor:pointer;transition:color .18s;border:none;background:none;
+  font-family:'Outfit',sans-serif
+}
+.nav-ico{font-size:22px;line-height:1}
+.nav-lbl{font-size:10px;font-weight:400;color:var(--tx3)}
+.nav-item.act .nav-lbl{color:var(--v2);font-weight:500}
+.nav-indicator{
+  width:20px;height:3px;border-radius:2px;
+  background:transparent;margin-bottom:2px;transition:background .18s
+}
+.nav-item.act .nav-indicator{background:var(--v2)}
+
+/* ═══ ANIMACIONES ═══ */
+@keyframes fadeUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+.hero{animation:fadeUp .4s ease both}
+.modulos{animation:fadeUp .4s ease .08s both}
+.eii-banner{animation:fadeUp .4s ease .14s both}
+.planta-dia-card{animation:fadeUp .4s ease .18s both}
+.seccion{animation:fadeUp .4s ease .22s both}
+
+/* ═══ NOTIFICACIÓN TOAST ═══ */
+.toast{
+  position:fixed;bottom:86px;left:50%;transform:translateX(-50%) translateY(20px);
+  background:var(--v1);color:white;padding:10px 20px;border-radius:20px;
+  font-size:13px;opacity:0;transition:all .3s;pointer-events:none;
+  white-space:nowrap;z-index:100;font-weight:300
+}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+</style>
+</head>
+<body>
+
+<div class="status-spacer"></div>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="topbar-brand">
+    <div class="topbar-leaf">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round">
+        <path d="M11 20A7 7 0 0 1 4 13c0-6 7-12 7-12s7 6 7 12a7 7 0 0 1-7 7z"/>
+        <path d="M11 20v-8"/>
+      </svg>
+    </div>
+    <div class="topbar-nom">Nathura<span>Vitae</span></div>
+  </div>
+  <div class="topbar-actions">
+    <button class="topbar-btn" title="Buscar" onclick="focusBusqueda()">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    </button>
+    <button class="topbar-btn" title="Acerca de" onclick="mostrarToast('NathuraVitae v1.0 · Medicina natural con evidencia')">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+    </button>
+  </div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-deco">🌿</div>
+  <div class="hero-deco2">🌼</div>
+  <div class="hero-greeting" id="saludo">Buen día</div>
+  <div class="hero-title">La naturaleza<br>tiene una <em>respuesta</em></div>
+  <div class="hero-sub">Plantas medicinales, infusiones y bienestar con respaldo científico.</div>
+
+  <div class="planta-dia-chip" onclick="irA('herbologia-indice.html')">
+    <span class="pdc-ico">🌼</span>
+    <div>
+      <div class="pdc-label">Planta del día</div>
+      <div class="pdc-nom">Manzanilla</div>
+    </div>
+  </div>
+
+  <div class="hero-search">
+    <svg class="hero-search-ico" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    <input id="searchGlobal" class="hero-search-input" type="text"
+      placeholder="Buscar planta, dolencia, técnica…"
+      oninput="busquedaGlobal(this.value)"
+      onfocus="this.placeholder='Ej: colitis, manzanilla, insomnio…'">
+  </div>
+</div>
+<svg class="curve" viewBox="0 0 390 28" preserveAspectRatio="none" fill="#f8f5ee">
+  <path d="M0,28 L0,18 Q97.5,0 195,14 Q292.5,28 390,14 L390,28 Z"/>
+</svg>
+
+<!-- MÓDULOS PRINCIPALES -->
+<div class="modulos">
+  <div class="modulos-grid">
+
+    <!-- Herbología -->
+    <div class="mod-card mod-herb" onclick="irA('herbologia-indice.html')">
+      <div>
+        <span class="mod-ico">🌿</span>
+        <div class="mod-nom">Herbología</div>
+        <div class="mod-sub">15 plantas · índice A–Z · por dolencia</div>
+        <span class="mod-badge">OMS · EMA</span>
+      </div>
+      <svg class="mod-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--v2)" stroke-width="2" stroke-linecap="round"><path d="M9 18l6-6-6-6"/></svg>
+    </div>
+
+    <!-- Explorador síntomas -->
+    <div class="mod-card mod-sint" onclick="irA('explorador-sintoma.html')">
+      <div class="mod-sint-deco">🩺</div>
+      <div>
+        <span class="mod-ico">🩺</span>
+        <div class="mod-nom">Por síntoma</div>
+        <div class="mod-sub">Ruta natural guiada completa</div>
+        <span class="mod-badge">Modo EII</span>
+      </div>
+      <svg class="mod-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.5)" stroke-width="2" stroke-linecap="round"><path d="M9 18l6-6-6-6"/></svg>
+    </div>
+
+    <!-- Mindfulness — ancho completo -->
+    <div class="mod-card mod-mind mod-card-wide" onclick="irA('mindfulness-audio.html')">
+      <div style="display:flex;align-items:flex-start;justify-content:space-between">
+        <div>
+          <span class="mod-ico">🧘</span>
+          <div class="mod-nom">Zona Mindfulness</div>
+          <div class="mod-sub">6 técnicas · temporizador · ambientes sonoros · binaural</div>
+          <span class="mod-badge">Offline · Web Audio</span>
+        </div>
+        <div style="font-size:48px;opacity:.15;margin-top:-4px">🫁</div>
+      </div>
+      <svg class="mod-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--mora2)" stroke-width="2" stroke-linecap="round"><path d="M9 18l6-6-6-6"/></svg>
+    </div>
+
+    <!-- Infusiones -->
+    <div class="mod-card mod-infus" onclick="irA('infusiones.html')">
+      <div>
+        <span class="mod-ico">🍵</span>
+        <div class="mod-nom">Infusiones</div>
+        <div class="mod-sub">Mezclas · compatibilidad · EII</div>
+        <span class="mod-badge">Próximamente</span>
+      </div>
+      <svg class="mod-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#9a6010" stroke-width="2" stroke-linecap="round"><path d="M9 18l6-6-6-6"/></svg>
+    </div>
+
+    <!-- Recetas -->
+    <div class="mod-card mod-recet" onclick="irA('recetas.html')">
+      <div>
+        <span class="mod-ico">🍽️</span>
+        <div class="mod-nom">Recetas</div>
+        <div class="mod-sub">Sin gluten · keto · EII</div>
+        <span class="mod-badge">Próximamente</span>
+      </div>
+      <svg class="mod-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#a83838" stroke-width="2" stroke-linecap="round"><path d="M9 18l6-6-6-6"/></svg>
+    </div>
+
+  </div>
+</div>
+
+<!-- ACCESO RÁPIDO EII -->
+<div class="eii-banner" onclick="irA('explorador-sintoma.html')">
+  <div class="eii-deco">🌿</div>
+  <div class="eii-ico">🫁</div>
+  <div class="eii-texto">
+    <div class="eii-label">Acceso rápido</div>
+    <div class="eii-title">Modo EII / Colitis</div>
+    <div class="eii-sub">Recomendaciones ajustadas para enfermedad inflamatoria intestinal — brote y mantenimiento</div>
+    <div class="eii-chips">
+      <span class="eii-chip">Brote activo</span>
+      <span class="eii-chip">Mantenimiento</span>
+      <span class="eii-chip">Sin gluten</span>
+      <span class="eii-chip">Celiaquía</span>
+    </div>
+  </div>
+</div>
+
+<!-- PLANTA DEL DÍA -->
+<div class="seccion">
+  <div class="sec-header">
+    <div class="sec-title">Planta del día</div>
+    <div class="sec-ver-todo" onclick="irA('herbologia-indice.html')">Ver todas →</div>
+  </div>
+  <div class="planta-dia-card" onclick="irA('ficha-planta.html')">
+    <div class="pdc-head">
+      <div>
+        <div class="pdc-head-label">Hoy destacamos</div>
+        <div class="pdc-head-nom">Manzanilla</div>
+        <div class="pdc-head-ci">Matricaria chamomilla L.</div>
+      </div>
+      <div class="pdc-head-ico">🌼</div>
+    </div>
+    <div class="pdc-body">
+      <div class="pdc-resumen">
+        Una de las plantas medicinales más estudiadas del mundo. Sus flores poseen propiedades antiinflamatorias, antiespasmódicas y calmantes con amplio respaldo de la OMS y la EMA.
+      </div>
+      <div class="pdc-props">
+        <span class="pdc-prop fuerte">Antiinflamatoria</span>
+        <span class="pdc-prop fuerte">Antiespasmódica</span>
+        <span class="pdc-prop moderado">Ansiolítica</span>
+        <span class="pdc-prop moderado">Cicatrizante</span>
+      </div>
+      <div class="pdc-footer">
+        <div class="pdc-footer-eii">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg>
+          Segura en brote EII
+        </div>
+        <div class="pdc-footer-link">
+          Ver ficha completa
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M9 18l6-6-6-6"/></svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- INFUSIONES PREVIEW -->
+<div class="seccion">
+  <div class="sec-header">
+    <div class="sec-title">Infusiones sugeridas</div>
+    <div class="sec-ver-todo" onclick="mostrarToast('Módulo de infusiones — próximamente')">Ver todas →</div>
+  </div>
+  <div class="infusiones-scroll">
+    <div class="infus-card" onclick="mostrarToast('Digestiva clásica — próximamente')">
+      <div class="infus-ico">🍵</div>
+      <div class="infus-nom">Digestiva clásica</div>
+      <div class="infus-plantas">Manzanilla · Hinojo · Melisa</div>
+      <span class="infus-badge">✓ EII brote</span>
+    </div>
+    <div class="infus-card" onclick="mostrarToast('Relajante nocturna — próximamente')">
+      <div class="infus-ico">🌙</div>
+      <div class="infus-nom">Relajante nocturna</div>
+      <div class="infus-plantas">Valeriana · Pasiflora · Melisa</div>
+      <span class="infus-badge">Insomnio</span>
+    </div>
+    <div class="infus-card" onclick="mostrarToast('Anti-colitis — próximamente')">
+      <div class="infus-ico">🌿</div>
+      <div class="infus-nom">Anti-colitis</div>
+      <div class="infus-plantas">Manzanilla · Hinojo · Regaliz DGL</div>
+      <span class="infus-badge">✓ EII brote</span>
+    </div>
+    <div class="infus-card" onclick="mostrarToast('Leche dorada — próximamente')">
+      <div class="infus-ico">🟡</div>
+      <div class="infus-nom">Leche dorada</div>
+      <div class="infus-plantas">Cúrcuma · Ashwagandha · Canela</div>
+      <span class="infus-badge">Mantenimiento</span>
+    </div>
+    <div class="infus-card" onclick="mostrarToast('Antigripal — próximamente')">
+      <div class="infus-ico">🫐</div>
+      <div class="infus-nom">Antigripal</div>
+      <div class="infus-plantas">Saúco · Tomillo · Jengibre</div>
+      <span class="infus-badge">Respiratorio</span>
+    </div>
+  </div>
+</div>
+
+<!-- MINDFULNESS PREVIEW -->
+<div class="seccion">
+  <div class="sec-header">
+    <div class="sec-title">Zona Mindfulness</div>
+    <div class="sec-ver-todo" onclick="irA('mindfulness-audio.html')">Entrar →</div>
+  </div>
+  <div class="mindful-preview" onclick="irA('mindfulness-audio.html')">
+    <div class="mindful-head">
+      <div class="mindful-head-ico">🧘</div>
+      <div class="mindful-head-txt">
+        <div class="mindful-head-nom">Técnicas de bienestar</div>
+        <div class="mindful-head-sub">Con temporizador guiado · ambientes sonoros · binaural 432 Hz</div>
+      </div>
+    </div>
+    <div class="mindful-tecnicas-row">
+      <div class="mindful-tec-item" onclick="event.stopPropagation();irA('mindfulness-audio.html')">
+        <div class="mindful-tec-ico">🫁</div>
+        <div class="mindful-tec-nom">Resp. 4-7-8</div>
+      </div>
+      <div class="mindful-tec-item" onclick="event.stopPropagation();irA('mindfulness-audio.html')">
+        <div class="mindful-tec-ico">💚</div>
+        <div class="mindful-tec-nom">Coherencia cardíaca</div>
+      </div>
+      <div class="mindful-tec-item" onclick="event.stopPropagation();irA('mindfulness-audio.html')">
+        <div class="mindful-tec-ico">🤲</div>
+        <div class="mindful-tec-nom">Body scan</div>
+      </div>
+      <div class="mindful-tec-item" onclick="event.stopPropagation();irA('mindfulness-audio.html')">
+        <div class="mindful-tec-ico">🧠</div>
+        <div class="mindful-tec-nom">Binaural</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- RECETAS PREVIEW -->
+<div class="seccion">
+  <div class="sec-header">
+    <div class="sec-title">Recetas especiales</div>
+    <div class="sec-ver-todo" onclick="mostrarToast('Módulo de recetas — próximamente')">Ver todas →</div>
+  </div>
+  <div class="recetas-grid">
+    <div class="receta-chip" onclick="mostrarToast('Recetas sin gluten — próximamente')">
+      <span class="receta-ico">🌾</span>
+      <div class="receta-nom">Sin gluten</div>
+      <span class="receta-tag">Celiaquía</span>
+    </div>
+    <div class="receta-chip" onclick="mostrarToast('Recetas keto — próximamente')">
+      <span class="receta-ico">🥑</span>
+      <div class="receta-nom">Keto</div>
+      <span class="receta-tag">Bajo en carbs</span>
+    </div>
+    <div class="receta-chip" onclick="mostrarToast('Dieta en brote EII — próximamente')">
+      <span class="receta-ico">🍚</span>
+      <div class="receta-nom">Dieta en brote</div>
+      <span class="receta-tag">EII activo</span>
+    </div>
+    <div class="receta-chip" onclick="mostrarToast('Recetas de mantenimiento EII — próximamente')">
+      <span class="receta-ico">🥗</span>
+      <div class="receta-nom">Mantenimiento EII</div>
+      <span class="receta-tag">Antiinflamatoria</span>
+    </div>
+    <div class="receta-chip" onclick="mostrarToast('Batidos medicinales — próximamente')">
+      <span class="receta-ico">🥤</span>
+      <div class="receta-nom">Batidos medicinales</div>
+      <span class="receta-tag">Detox · verde</span>
+    </div>
+    <div class="receta-chip" onclick="mostrarToast('Recetas para celiaquía — próximamente')">
+      <span class="receta-ico">🫓</span>
+      <div class="receta-nom">Panadería sin gluten</div>
+      <span class="receta-tag">Sin TACC</span>
+    </div>
+  </div>
+</div>
+
+<!-- BOTTOM NAV -->
+<nav class="bottom-nav">
+  <button class="nav-item act" onclick="navActivo(this,'index.html')">
+    <div class="nav-indicator"></div>
+    <span class="nav-ico">🏠</span>
+    <span class="nav-lbl">Inicio</span>
+  </button>
+  <button class="nav-item" onclick="navActivo(this,'herbologia-indice.html')">
+    <div class="nav-indicator"></div>
+    <span class="nav-ico">🌿</span>
+    <span class="nav-lbl">Hierbas</span>
+  </button>
+  <button class="nav-item" onclick="navActivo(this,'explorador-sintoma.html')">
+    <div class="nav-indicator"></div>
+    <span class="nav-ico">🩺</span>
+    <span class="nav-lbl">Síntomas</span>
+  </button>
+  <button class="nav-item" onclick="navActivo(this,'mindfulness-audio.html')">
+    <div class="nav-indicator"></div>
+    <span class="nav-ico">🧘</span>
+    <span class="nav-lbl">Mindful</span>
+  </button>
+  <button class="nav-item" onclick="navActivo(this,'busqueda.html')">
+    <div class="nav-indicator"></div>
+    <span class="nav-ico">🔍</span>
+    <span class="nav-lbl">Buscar</span>
+  </button>
+</nav>
+
+<!-- TOAST -->
+<div class="toast" id="toast"></div>
+
+<script>
+/* ── SALUDO DINÁMICO ── */
+(function(){
+  const h = new Date().getHours();
+  const s = h < 12 ? 'Buenos días' : h < 19 ? 'Buenas tardes' : 'Buenas noches';
+  document.getElementById('saludo').textContent = s;
+})();
+
+/* ── NAVEGACIÓN ── */
+function irA(url) {
+  // En PWA real: window.location.href = url
+  // Demo: toast informativo
+  const nombres = {
+    'herbologia-indice.html':'Índice de Herbología',
+    'explorador-sintoma.html':'Explorador por síntoma',
+    'mindfulness-audio.html':'Zona Mindfulness',
+    'ficha-planta.html':'Ficha — Manzanilla',
+    'infusiones.html':'Infusiones (próximamente)',
+    'recetas.html':'Recetas especiales (próximamente)'
+  };
+  const nom = nombres[url] || url;
+  mostrarToast('Navegando a: ' + nom);
+  // Descomentar en producción:
+  // window.location.href = url;
+}
+
+function navActivo(btn, url) {
+  document.querySelectorAll('.nav-item').forEach(b => b.classList.remove('act'));
+  btn.classList.add('act');
+  irA(url);
+}
+
+function focusBusqueda() {
+  const inp = document.getElementById('searchGlobal');
+  inp.focus();
+  inp.scrollIntoView({behavior:'smooth', block:'center'});
+}
+
+/* ── BÚSQUEDA GLOBAL (demo) ── */
+const BUSQUEDA_INDEX = [
+  {nom:'Manzanilla', tipo:'planta', url:'ficha-planta.html'},
+  {nom:'Jengibre', tipo:'planta', url:'herbologia-indice.html'},
+  {nom:'Hinojo', tipo:'planta', url:'herbologia-indice.html'},
+  {nom:'Cúrcuma', tipo:'planta', url:'herbologia-indice.html'},
+  {nom:'Valeriana', tipo:'planta', url:'herbologia-indice.html'},
+  {nom:'Pasiflora', tipo:'planta', url:'herbologia-indice.html'},
+  {nom:'Colitis', tipo:'dolencia', url:'explorador-sintoma.html'},
+  {nom:'Ansiedad', tipo:'dolencia', url:'explorador-sintoma.html'},
+  {nom:'Insomnio', tipo:'dolencia', url:'explorador-sintoma.html'},
+  {nom:'Respiración 4-7-8', tipo:'técnica', url:'mindfulness-audio.html'},
+  {nom:'Body scan', tipo:'técnica', url:'mindfulness-audio.html'},
+  {nom:'Coherencia cardíaca', tipo:'técnica', url:'mindfulness-audio.html'},
+];
+
+function busquedaGlobal(v) {
+  if (!v || v.length < 2) return;
+  const resultados = BUSQUEDA_INDEX.filter(x =>
+    x.nom.toLowerCase().includes(v.toLowerCase())
+  );
+  if (resultados.length) {
+    mostrarToast('→ ' + resultados.map(r => r.nom).slice(0,3).join(', '));
+  }
+}
+
+/* ── TOAST ── */
+let toastTimer = null;
+function mostrarToast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  if (toastTimer) clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => t.classList.remove('show'), 2800);
+}
+</script>
+</body>
+</html>

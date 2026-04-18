@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#1a3d2a">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<title>NathuraVitae — Alimentos Medicina</title>
+<link rel="manifest" href="../manifest.json">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --v1:#1a3d2a; --v2:#245c3e; --v3:#2e8b5a; --v4:#4aab7f; --v5:#8dd4b0;
+  --vp:#eaf6f0; --vm:#c0e8d4; --vt:#8dd4b0;
+  --mora1:#2e1f5e; --mora2:#4a3480; --morap:#f0edf8; --morat:#b8a8ec;
+  --crema:#f8f5ee; --crema2:#ede8dc; --crema3:#e2dace;
+  --amb:#9a6010; --ambp:#fdf2e0; --ambm:#f0cc88;
+  --tx:#1a1a16; --tx2:#44443c; --tx3:#8a8878;
+  --borde:rgba(26,61,42,0.10);
+  --r:16px;
+  --am-gold:#c8821a; --am-gold2:#e6a832; --am-earth:#6b3e1c;
+  --am-sage:#4a7c59; --am-bg:#faf7f0;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Outfit',sans-serif;
+  background:var(--am-bg);
+  color:var(--tx);
+  min-height:100vh;
+  padding-bottom:80px;
+  -webkit-font-smoothing:antialiased
+}
+
+/* STATUS + TOPBAR */
+.status-spacer{height:env(safe-area-inset-top,0px);background:var(--v1)}
+.topbar{
+  background:var(--v1);
+  padding:12px 20px 14px;
+  display:flex;align-items:center;justify-content:space-between;
+  position:sticky;top:0;z-index:40
+}
+.topbar-brand{display:flex;align-items:center;gap:10px}
+.topbar-leaf{
+  width:34px;height:34px;border-radius:50%;
+  background:rgba(255,255,255,.1);
+  display:flex;align-items:center;justify-content:center;
+  border:1px solid rgba(255,255,255,.15)
+}
+.topbar-nom{
+  font-family:'Playfair Display',serif;
+  font-size:20px;color:white;font-weight:500
+}
+.topbar-nom span{font-style:italic;color:var(--vt)}
+.topbar-back{
+  width:34px;height:34px;border-radius:50%;
+  background:rgba(255,255,255,.1);border:none;
+  display:flex;align-items:center;justify-content:center;
+  cursor:pointer;color:white;font-size:18px;
+  text-decoration:none;transition:background .15s
+}
+.topbar-back:hover{background:rgba(255,255,255,.18)}
+
+/* HERO FILOSÓFICO */
+.hero-am{
+  background:var(--v1);
+  padding:4px 24px 48px;
+  position:relative;overflow:hidden
+}
+.hero-deco-am{
+  position:absolute;right:-10px;top:-10px;
+  font-size:180px;opacity:.04;line-height:1;
+  pointer-events:none;transform:rotate(10deg)
+}
+.hero-deco2-am{
+  position:absolute;left:-20px;bottom:-30px;
+  font-size:120px;opacity:.03;
+  pointer-events:none
+}
+.hero-eyebrow{
+  font-size:11px;font-weight:500;
+  color:var(--vt);letter-spacing:2px;
+  text-transform:uppercase;
+  margin-bottom:12px;opacity:.9
+}
+.hero-cita{
+  font-family:'Playfair Display',serif;
+  font-size:22px;line-height:1.45;
+  color:white;font-style:italic;
+  margin-bottom:8px
+}
+.hero-cita span{color:var(--am-gold2)}
+.hero-autor{
+  font-size:12px;color:rgba(255,255,255,.5);
+  letter-spacing:1px;text-transform:uppercase
+}
+.hero-desc{
+  margin-top:20px;
+  font-size:14px;line-height:1.7;
+  color:rgba(255,255,255,.75);
+  max-width:340px
+}
+
+/* PILL CONTADOR */
+.am-stats{
+  display:flex;gap:12px;
+  padding:20px 20px 0;
+  overflow-x:auto;
+  scrollbar-width:none
+}
+.am-stat-pill{
+  flex-shrink:0;
+  background:white;
+  border:1.5px solid var(--crema3);
+  border-radius:40px;
+  padding:10px 18px;
+  display:flex;align-items:center;gap:8px
+}
+.am-stat-num{
+  font-family:'Playfair Display',serif;
+  font-size:22px;font-weight:700;
+  color:var(--am-gold)
+}
+.am-stat-label{
+  font-size:11px;color:var(--tx3);
+  line-height:1.3;max-width:60px
+}
+
+/* SECCIÓN TÍTULO */
+.seccion-titulo{
+  padding:28px 20px 12px;
+  display:flex;align-items:baseline;gap:10px
+}
+.seccion-titulo h2{
+  font-family:'Playfair Display',serif;
+  font-size:19px;color:var(--v1)
+}
+.seccion-titulo .linea{
+  flex:1;height:1px;background:var(--crema3)
+}
+
+/* TARJETAS DE PLANTAS ALIMENTO-MEDICINA */
+.plantas-grid{
+  padding:0 16px;
+  display:grid;
+  gap:14px
+}
+
+.planta-card{
+  background:white;
+  border-radius:20px;
+  overflow:hidden;
+  border:1.5px solid var(--crema3);
+  box-shadow:0 2px 12px rgba(26,61,42,.05);
+  transition:transform .2s, box-shadow .2s
+}
+.planta-card:active{transform:scale(.985)}
+
+.planta-card-header{
+  padding:18px 18px 0;
+  display:flex;align-items:flex-start;justify-content:space-between;gap:12px
+}
+.planta-emoji-wrap{
+  width:56px;height:56px;
+  border-radius:16px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:28px;flex-shrink:0
+}
+.planta-card-meta{flex:1}
+.planta-nombre-local{
+  font-size:11px;font-weight:500;
+  color:var(--am-gold);letter-spacing:1.5px;
+  text-transform:uppercase;margin-bottom:2px
+}
+.planta-nombre-cientifico{
+  font-family:'Playfair Display',serif;
+  font-style:italic;
+  font-size:13px;color:var(--tx3);
+  margin-bottom:4px
+}
+.planta-titulo{
+  font-family:'Playfair Display',serif;
+  font-size:19px;font-weight:700;
+  color:var(--v1);line-height:1.2
+}
+
+/* TAGS dosis culinaria vs medicinal */
+.dosis-tags{
+  display:flex;gap:6px;
+  margin-top:12px;flex-wrap:wrap
+}
+.dosis-tag{
+  font-size:10px;font-weight:500;
+  border-radius:20px;padding:4px 10px;
+  letter-spacing:.3px
+}
+.tag-culinaria{background:var(--ambp);color:var(--amb);border:1px solid var(--ambm)}
+.tag-medicinal{background:var(--vp);color:var(--v2);border:1px solid var(--vm)}
+.tag-panama{background:#fff0f3;color:#b0203a;border:1px solid #f0b8c4}
+
+/* SEPARADOR VISUAL */
+.card-divider{
+  height:1px;background:var(--crema2);
+  margin:14px 18px
+}
+
+/* CUERPO DE LA TARJETA */
+.planta-card-body{
+  padding:0 18px 18px
+}
+
+/* FRASE FILOSÓFICA por planta */
+.planta-frase{
+  font-family:'Playfair Display',serif;
+  font-size:14px;font-style:italic;
+  color:var(--tx2);line-height:1.6;
+  border-left:3px solid var(--am-gold2);
+  padding-left:12px;
+  margin-bottom:14px
+}
+
+/* DOS COLUMNAS: culinario vs medicinal */
+.dual-uso{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+  margin-bottom:14px
+}
+.dual-col{
+  border-radius:12px;
+  padding:12px
+}
+.dual-col.culinario{background:var(--ambp)}
+.dual-col.medicinal{background:var(--vp)}
+.dual-col-titulo{
+  font-size:10px;font-weight:600;
+  letter-spacing:1px;text-transform:uppercase;
+  margin-bottom:6px;opacity:.7
+}
+.dual-col.culinario .dual-col-titulo{color:var(--amb)}
+.dual-col.medicinal .dual-col-titulo{color:var(--v2)}
+.dual-col-icon{font-size:18px;margin-bottom:4px}
+.dual-col-texto{
+  font-size:12px;line-height:1.5;
+  color:var(--tx2)
+}
+
+/* DOSIS COMPARATIVA */
+.dosis-compare{
+  background:var(--crema2);
+  border-radius:12px;
+  padding:12px 14px;
+  margin-bottom:12px
+}
+.dosis-compare-titulo{
+  font-size:10px;font-weight:600;
+  letter-spacing:1px;text-transform:uppercase;
+  color:var(--tx3);margin-bottom:8px
+}
+.dosis-row{
+  display:flex;align-items:center;gap:8px;
+  margin-bottom:4px
+}
+.dosis-row:last-child{margin-bottom:0}
+.dosis-dot{
+  width:8px;height:8px;border-radius:50%;flex-shrink:0
+}
+.dosis-dot.cul{background:var(--am-gold)}
+.dosis-dot.med{background:var(--v3)}
+.dosis-row-text{font-size:12px;color:var(--tx2);line-height:1.4}
+.dosis-row-text strong{color:var(--tx);font-weight:500}
+
+/* CTA ficha completa */
+.btn-ficha{
+  display:flex;align-items:center;justify-content:space-between;
+  background:var(--v1);color:white;
+  border-radius:12px;padding:11px 16px;
+  text-decoration:none;font-size:13px;font-weight:500;
+  transition:background .15s
+}
+.btn-ficha:active{background:var(--v2)}
+.btn-ficha-arrow{font-size:16px;opacity:.7}
+
+/* BANNER HIPÓCRATES */
+.banner-hipocrates{
+  margin:24px 16px 8px;
+  background:linear-gradient(135deg, var(--v1) 0%, var(--am-earth) 100%);
+  border-radius:20px;
+  padding:24px 22px;
+  position:relative;overflow:hidden
+}
+.banner-hipocrates::before{
+  content:'🌿';
+  position:absolute;right:-10px;top:-10px;
+  font-size:120px;opacity:.06;
+  transform:rotate(20deg)
+}
+.banner-hip-label{
+  font-size:10px;font-weight:500;
+  color:var(--am-gold2);letter-spacing:2px;
+  text-transform:uppercase;margin-bottom:8px
+}
+.banner-hip-cita{
+  font-family:'Playfair Display',serif;
+  font-size:16px;font-style:italic;
+  color:white;line-height:1.6;margin-bottom:8px
+}
+.banner-hip-autor{
+  font-size:11px;color:rgba(255,255,255,.5);
+  letter-spacing:1px
+}
+
+/* SECCIÓN RECETAS RÁPIDAS */
+.recetas-scroll{
+  padding:0 16px;
+  display:flex;gap:12px;
+  overflow-x:auto;
+  scrollbar-width:none
+}
+.receta-card{
+  flex-shrink:0;width:200px;
+  background:white;
+  border-radius:16px;
+  border:1.5px solid var(--crema3);
+  padding:16px;
+  position:relative;overflow:hidden
+}
+.receta-emoji{font-size:32px;margin-bottom:8px;display:block}
+.receta-nombre{
+  font-family:'Playfair Display',serif;
+  font-size:15px;font-weight:600;
+  color:var(--v1);margin-bottom:4px;line-height:1.3
+}
+.receta-desc{
+  font-size:11px;color:var(--tx3);line-height:1.5;
+  margin-bottom:10px
+}
+.receta-plantas{
+  display:flex;gap:4px;flex-wrap:wrap
+}
+.receta-planta-tag{
+  font-size:9px;
+  background:var(--vp);color:var(--v2);
+  border-radius:8px;padding:2px 7px;
+  font-weight:500
+}
+
+/* FILOSOFÍA EXPANDIDA */
+.filosofia-card{
+  margin:8px 16px 0;
+  background:white;
+  border-radius:20px;
+  border:1.5px solid var(--crema3);
+  padding:22px 20px;
+}
+.filosofia-titulo{
+  font-family:'Playfair Display',serif;
+  font-size:17px;color:var(--v1);
+  margin-bottom:12px
+}
+.filosofia-texto{
+  font-size:13px;line-height:1.8;
+  color:var(--tx2)
+}
+.filosofia-texto p{margin-bottom:10px}
+.filosofia-texto p:last-child{margin-bottom:0}
+
+/* DISCLAIMER */
+.disclaimer-am{
+  margin:20px 16px 0;
+  padding:14px 16px;
+  background:var(--crema2);
+  border-radius:12px;
+  font-size:11px;color:var(--tx3);line-height:1.6;
+  text-align:center
+}
+
+/* NAVEGACIÓN INFERIOR */
+.bottom-nav{
+  position:fixed;bottom:0;left:0;right:0;
+  background:white;
+  border-top:1px solid var(--crema3);
+  padding:8px 0 calc(8px + env(safe-area-inset-bottom,0px));
+  display:flex;justify-content:space-around;
+  z-index:40
+}
+.nav-item{
+  display:flex;flex-direction:column;align-items:center;
+  gap:2px;text-decoration:none;
+  font-size:10px;color:var(--tx3);
+  font-weight:400;transition:color .15s;
+  min-width:52px
+}
+.nav-item.activo{color:var(--v3);font-weight:500}
+.nav-icon{font-size:20px}
+
+/* Colores por planta */
+.color-ajo .planta-emoji-wrap{background:#fff8e0}
+.color-curcuma .planta-emoji-wrap{background:#fff3d0}
+.color-jengibre .planta-emoji-wrap{background:#fff0e8}
+.color-hibisco .planta-emoji-wrap{background:#fff0f3}
+.color-te-verde .planta-emoji-wrap{background:#f0f8f0}
+.color-manzanilla .planta-emoji-wrap{background:#fffbe0}
+.color-bidens .planta-emoji-wrap{background:#f0f5f0}
+.color-aloe .planta-emoji-wrap{background:#e8f5ee}
+
+/* Animación de entrada */
+@keyframes fadeUp {
+  from{opacity:0;transform:translateY(16px)}
+  to{opacity:1;transform:translateY(0)}
+}
+.planta-card{animation:fadeUp .4s ease both}
+.planta-card:nth-child(1){animation-delay:.05s}
+.planta-card:nth-child(2){animation-delay:.10s}
+.planta-card:nth-child(3){animation-delay:.15s}
+.planta-card:nth-child(4){animation-delay:.20s}
+.planta-card:nth-child(5){animation-delay:.25s}
+.planta-card:nth-child(6){animation-delay:.30s}
+.planta-card:nth-child(7){animation-delay:.35s}
+.planta-card:nth-child(8){animation-delay:.40s}
+</style>
+</head>
+<body>
+
+<div class="status-spacer"></div>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="topbar-brand">
+    <a href="../index.html" class="topbar-back">←</a>
+    <div class="topbar-leaf">🌿</div>
+    <div class="topbar-nom">Nathura<span>Vitae</span></div>
+  </div>
+</div>
+
+<!-- HERO FILOSÓFICO -->
+<div class="hero-am">
+  <div class="hero-deco-am">🌾</div>
+  <div class="hero-deco2-am">🍯</div>
+  <div class="hero-eyebrow">Sabiduría milenaria</div>
+  <div class="hero-cita">
+    "Que tu alimento sea<br>tu <span>medicina</span>, y que tu<br>medicina sea tu alimento"
+  </div>
+  <div class="hero-autor">— Hipócrates, ~400 a.C.</div>
+  <div class="hero-desc">
+    Estas plantas viven en tu cocina y en tu botiquín al mismo tiempo.
+    Aquí la dosis culinaria y la dosis medicinal, lado a lado.
+  </div>
+</div>
+
+<!-- ESTADÍSTICAS RÁPIDAS -->
+<div class="am-stats">
+  <div class="am-stat-pill">
+    <div class="am-stat-num">8</div>
+    <div class="am-stat-label">alimentos medicina</div>
+  </div>
+  <div class="am-stat-pill">
+    <div class="am-stat-num">5000</div>
+    <div class="am-stat-label">años de uso</div>
+  </div>
+  <div class="am-stat-pill">
+    <div class="am-stat-num">A–B</div>
+    <div class="am-stat-label">nivel evidencia</div>
+  </div>
+  <div class="am-stat-pill">
+    <div class="am-stat-num">🇵🇦</div>
+    <div class="am-stat-label">todos en Panamá</div>
+  </div>
+</div>
+
+<!-- PLANTAS -->
+<div class="seccion-titulo">
+  <h2>Los 8 alimentos medicina</h2>
+  <div class="linea"></div>
+</div>
+
+<div class="plantas-grid">
+
+  <!-- 1. AJO -->
+  <div class="planta-card color-ajo">
+    <div class="planta-card-header">
+      <div>
+        <div class="planta-nombre-local">🧄 Ajo</div>
+        <div class="planta-nombre-cientifico">Allium sativum L.</div>
+        <div class="planta-titulo">El guardián del corazón</div>
+      </div>
+      <div class="planta-emoji-wrap">🧄</div>
+    </div>
+    <div class="dosis-tags">
+      <span class="dosis-tag tag-culinaria">🍳 Condimento diario</span>
+      <span class="dosis-tag tag-medicinal">💊 Hipotensor</span>
+      <span class="dosis-tag tag-panama">🇵🇦 Mercados locales</span>
+    </div>
+    <div class="card-divider"></div>
+    <div class="planta-card-body">
+      <div class="planta-frase">"Un diente de ajo al día mantiene al médico de la hipertensión a raya"</div>
+      <div class="dual-uso">
+        <div class="dual-col culinario">
+          <div class="dual-col-icon">🍳</div>
+          <div class="dual-col-titulo">Culinario</div>
+          <div class="dual-col-texto">Sofrito, encurtidos, marinadas. Base de la cocina panameña.</div>
+        </div>
+        <div class="dual-col medicinal">
+          <div class="dual-col-icon">💚</div>
+          <div class="dual-col-titulo">Medicinal</div>
+          <div class="dual-col-texto">Hipertensión leve, colesterol, aterosclerosis. Nivel evidencia A.</div>
+        </div>
+      </div>
+      <div class="dosis-compare">
+        <div class="dosis-compare-titulo">Dosis culinaria vs. medicinal</div>
+        <div class="dosis-row">
+          <div class="dosis-dot cul"></div>
+          <div class="dosis-row-text"><strong>Cocina:</strong> 1-3 dientes/día en comidas</div>
+        </div>
+        <div class="dosis-row">
+          <div class="dosis-dot med"></div>
+          <div class="dosis-row-text"><strong>Medicinal:</strong> 600-1200 mg extracto envejecido/día — o machacar y esperar 10 min antes de consumir crudo</div>
+        </div>
+      </div>
+      <a href="ficha-planta.html?id=ajo" class="btn-ficha">
+        Ver ficha completa
+        <span class="btn-ficha-arrow">→</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- 2. CÚRCUMA -->
+  <div class="planta-card color-curcuma">
+    <div class="planta-card-header">
+      <div>
+        <div class="planta-nombre-local">🟡 Yuquilla / Cúrcuma</div>
+        <div class="planta-nombre-cientifico">Curcuma longa L.</div>
+        <div class="planta-titulo">El oro antiinflamatorio</div>
+      </div>
+      <div class="planta-emoji-wrap">🟡</div>
+    </div>
+    <div class="dosis-tags">
+      <span class="dosis-tag tag-culinaria">🍳 Curry y arroces</span>
+      <span class="dosis-tag tag-medicinal">💊 Antiinflamatorio</span>
+      <span class="dosis-tag tag-panama">🇵🇦 Mercados como yuquilla</span>
+    </div>
+    <div class="card-divider"></div>
+    <div class="planta-card-body">
+      <div class="planta-frase">"Sin pimienta negra, la cúrcuma es apenas un colorante. Con ella, es medicina"</div>
+      <div class="dual-uso">
+        <div class="dual-col culinario">
+          <div class="dual-col-icon">🍛</div>
+          <div class="dual-col-titulo">Culinario</div>
+          <div class="dual-col-texto">Arroces, curries, leche dorada. Colorante natural sin rival.</div>
+        </div>
+        <div class="dual-col medicinal">
+          <div class="dual-col-icon">💚</div>
+          <div class="dual-col-titulo">Medicinal</div>
+          <div class="dual-col-texto">EII en remisión, artritis, inflamación sistémica. Nivel A.</div>
+        </div>
+      </div>
+      <div class="dosis-compare">
+        <div class="dosis-compare-titulo">Dosis culinaria vs. medicinal</div>
+        <div class="dosis-row">
+          <div class="dosis-dot cul"></div>
+          <div class="dosis-row-text"><strong>Cocina:</strong> 1 cdta/día en leche dorada con pimienta negra</div>
+        </div>
+        <div class="dosis-row">
+          <div class="dosis-dot med"></div>
+          <div class="dosis-row-text"><strong>Medicinal:</strong> 500-1000 mg extracto 95% curcuminoides + piperina, 2-3×/día</div>
+        </div>
+      </div>
+      <a href="ficha-planta.html?id=curcuma" class="btn-ficha">
+        Ver ficha completa
+        <span class="btn-ficha-arrow">→</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- 3. JENGIBRE -->
+  <div class="planta-card color-jengibre">
+    <div class="planta-card-header">
+      <div>
+        <div class="planta-nombre-local">🫚 Jengibre</div>
+        <div class="planta-nombre-cientifico">Zingiber officinale Roscoe</div>
+        <div class="planta-titulo">La medicina universal</div>
+      </div>
+      <div class="planta-emoji-wrap">🫚</div>
+    </div>
+    <div class="dosis-tags">
+      <span class="dosis-tag tag-culinaria">🍳 Marinadas y bebidas</span>
+      <span class="dosis-tag tag-medicinal">💊 Antináuseas nivel A</span>
+      <span class="dosis-tag tag-panama">🇵🇦 En todos los mercados</span>
+    </div>
+    <div class="card-divider"></div>
+    <div class="planta-card-body">
+      <div class="planta-frase">"Confucio nunca comía sin jengibre. Tenía razón durante 2500 años"</div>
+      <div class="dual-uso">
+        <div class="dual-col culinario">
+          <div class="dual-col-icon">🍵</div>
+          <div class="dual-col-titulo">Culinario</div>
+          <div class="dual-col-texto">Té, marinadas, repostería. Ceviche panameño. Chicha de jengibre.</div>
+        </div>
+        <div class="dual-col medicinal">
+          <div class="dual-col-icon">💚</div>
+          <div class="dual-col-titulo">Medicinal</div>
+          <div class="dual-col-texto">Náuseas embarazo, quimio, digestión, antiinflamatorio. Nivel A.</div>
+        </div>
+      </div>
+      <div class="dosis-compare">
+        <div class="dosis-compare-titulo">Dosis culinaria vs. medicinal</div>
+        <div class="dosis-row">
+          <div class="dosis-dot cul"></div>
+          <div class="dosis-row-text"><strong>Cocina:</strong> Trozo fresco de 2-3 cm rallado en té o recetas</div>
+        </div>
+        <div class="dosis-row">
+          <div class="dosis-dot med"></div>
+          <div class="dosis-row-text"><strong>Medicinal:</strong> 250 mg extracto seco, 4×/día (náuseas embarazo) — OMS avalado</div>
+        </div>
+      </div>
+      <a href="ficha-planta.html?id=jengibre" class="btn-ficha">
+        Ver ficha completa
+        <span class="btn-ficha-arrow">→</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- 4. HIBISCO / SARIL -->
+  <div class="planta-card color-hibisco">
+    <div class="planta-card-header">
+      <div>
+        <div class="planta-nombre-local">🌺 Saril / Flor de Jamaica</div>
+        <div class="planta-nombre-cientifico">Hibiscus sabdariffa L.</div>
+        <div class="planta-titulo">La chicha que baja la presión</div>
+      </div>
+      <div class="planta-emoji-wrap">🌺</div>
+    </div>
+    <div class="dosis-tags">
+      <span class="dosis-tag tag-culinaria">🎄 Chicha navideña</span>
+      <span class="dosis-tag tag-medicinal">💊 Hipotensor nivel A</span>
+      <span class="dosis-tag tag-panama">🇵🇦 Ícono panameño</span>
+    </div>
+    <div class="card-divider"></div>
+    <div class="planta-card-body">
+      <div class="planta-frase">"Lo que en Panamá es chicha de saril, en Egipto es karkadé, y en ambos lugares baja la presión"</div>
+      <div class="dual-uso">
+        <div class="dual-col culinario">
+          <div class="dual-col-icon">🥤</div>
+          <div class="dual-col-titulo">Culinario</div>
+          <div class="dual-col-texto">Chicha de saril, mermeladas, salsas agridulces. Navidad panameña.</div>
+        </div>
+        <div class="dual-col medicinal">
+          <div class="dual-col-icon">💚</div>
+          <div class="dual-col-titulo">Medicinal</div>
+          <div class="dual-col-texto">Hipertensión leve-moderada, diurético, dislipidemia. Nivel A.</div>
+        </div>
+      </div>
+      <div class="dosis-compare">
+        <div class="dosis-compare-titulo">Dosis culinaria vs. medicinal</div>
+        <div class="dosis-row">
+          <div class="dosis-dot cul"></div>
+          <div class="dosis-row-text"><strong>Cocina:</strong> Chicha de saril tradicional con canela y clavo (sin azúcar para efecto medicinal)</div>
+        </div>
+        <div class="dosis-row">
+          <div class="dosis-dot med"></div>
+          <div class="dosis-row-text"><strong>Medicinal:</strong> 9-10 g cálices secos en 500 ml agua, 2 tazas/día — reduce 7 mmHg sistólica</div>
+        </div>
+      </div>
+      <a href="ficha-planta.html?id=hibisco" class="btn-ficha">
+        Ver ficha completa
+        <span class="btn-ficha-arrow">→</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- 5. TÉ VERDE -->
+  <div class="planta-card color-te-verde">
+    <div class="planta-card-header">
+      <div>
+        <div class="planta-nombre-local">🍵 Té verde</div>
+        <div class="planta-nombre-cientifico">Camellia sinensis (L.) Kuntze</div>
+        <div class="planta-titulo">La bebida de los centenarios</div>
+      </div>
+      <div class="planta-emoji-wrap">🍵</div>
+    </div>
+    <div class="dosis-tags">
+      <span class="dosis-tag tag-culinaria">☕ Bebida diaria</span>
+      <span class="dosis-tag tag-medicinal">💊 Cardioprotector</span>
+      <span class="dosis-tag tag-panama">🇵🇦 Todos los supermercados</span>
+    </div>
+    <div class="card-divider"></div>
+    <div class="planta-card-body">
+      <div class="planta-frase">"Las poblaciones que beben 5 tazas de té verde al día viven más y enferman menos del corazón"</div>
+      <div class="dual-uso">
+        <div class="dual-col culinario">
+          <div class="dual-col-icon">🫖</div>
+          <div class="dual-col-titulo">Culinario</div>
+          <div class="dual-col-texto">Infusión caliente o fría, matcha en repostería, helados y batidos.</div>
+        </div>
+        <div class="dual-col medicinal">
+          <div class="dual-col-icon">💚</div>
+          <div class="dual-col-titulo">Medicinal</div>
+          <div class="dual-col-texto">Hipertensión, dislipidemia, prevención cardiovascular. Nivel A.</div>
+        </div>
+      </div>
+      <div class="dosis-compare">
+        <div class="dosis-compare-titulo">Dosis culinaria vs. medicinal</div>
+        <div class="dosis-row">
+          <div class="dosis-dot cul"></div>
+          <div class="dosis-row-text"><strong>Cocina:</strong> 2-3 tazas/día, agua a 80°C, 2-3 min de infusión</div>
+        </div>
+        <div class="dosis-row">
+          <div class="dosis-dot med"></div>
+          <div class="dosis-row-text"><strong>Medicinal:</strong> 3-5 tazas/día o 250-500 mg extracto EGCG. Sin leche para maximizar absorción.</div>
+        </div>
+      </div>
+      <a href="ficha-planta.html?id=te-verde" class="btn-ficha">
+        Ver ficha completa
+        <span class="btn-ficha-arrow">→</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- 6. MANZANILLA -->
+  <div class="planta-card color-manzanilla">
+    <div class="planta-card-header">
+      <div>
+        <div class="planta-nombre-local">🌼 Manzanilla</div>
+        <div class="planta-nombre-cientifico">Matricaria chamomilla L.</div>
+        <div class="planta-titulo">El té de las abuelas panameñas</div>
+      </div>
+      <div class="planta-emoji-wrap">🌼</div>
+    </div>
+    <div class="dosis-tags">
+      <span class="dosis-tag tag-culinaria">🍵 Infusión cotidiana</span>
+      <span class="dosis-tag tag-medicinal">💊 Antiinflamatoria</span>
+      <span class="dosis-tag tag-panama">🇵🇦 Tradición panameña</span>
+    </div>
+    <div class="card-divider"></div>
+    <div class="planta-card-body">
+      <div class="planta-frase">"La manzanilla es la planta que une la cocina, la farmacia y el abrazo de la abuela"</div>
+      <div class="dual-uso">
+        <div class="dual-col culinario">
+          <div class="dual-col-icon">🫖</div>
+          <div class="dual-col-titulo">Culinario</div>
+          <div class="dual-col-texto">Té digestivo postcomida. Infusión nocturna relajante. Sorbete de manzanilla.</div>
+        </div>
+        <div class="dual-col medicinal">
+          <div class="dual-col-icon">💚</div>
+          <div class="dual-col-titulo">Medicinal</div>
+          <div class="dual-col-texto">Gastritis, cólicos, ansiedad leve, EII leve. Nivel A (EMA).</div>
+        </div>
+      </div>
+      <div class="dosis-compare">
+        <div class="dosis-compare-titulo">Dosis culinaria vs. medicinal</div>
+        <div class="dosis-row">
+          <div class="dosis-dot cul"></div>
+          <div class="dosis-row-text"><strong>Cocina:</strong> 1 bolsita o 1 cdta de flores secas en agua caliente</div>
+        </div>
+        <div class="dosis-row">
+          <div class="dosis-dot med"></div>
+          <div class="dosis-row-text"><strong>Medicinal:</strong> 3 g flores secas, infusión tapada 10 min, 3-4×/día entre comidas</div>
+        </div>
+      </div>
+      <a href="ficha-planta.html?id=manzanilla" class="btn-ficha">
+        Ver ficha completa
+        <span class="btn-ficha-arrow">→</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- 7. BIDENS PILOSA / MOZOTE -->
+  <div class="planta-card color-bidens">
+    <div class="planta-card-header">
+      <div>
+        <div class="planta-nombre-local">🌿 Mozote / Aceitilla</div>
+        <div class="planta-nombre-cientifico">Bidens pilosa L.</div>
+        <div class="planta-titulo">La maleza que es medicina</div>
+      </div>
+      <div class="planta-emoji-wrap">🌿</div>
+    </div>
+    <div class="dosis-tags">
+      <span class="dosis-tag tag-culinaria">🥗 Verdura indígena</span>
+      <span class="dosis-tag tag-medicinal">💊 Antiinflamatorio</span>
+      <span class="dosis-tag tag-panama">🇵🇦 Gratis en todo Panamá</span>
+    </div>
+    <div class="card-divider"></div>
+    <div class="planta-card-body">
+      <div class="planta-frase">"La planta medicinal más accesible de Panamá crece como maleza en tu jardín sin que lo sepas"</div>
+      <div class="dual-uso">
+        <div class="dual-col culinario">
+          <div class="dual-col-icon">🥬</div>
+          <div class="dual-col-titulo">Culinario</div>
+          <div class="dual-col-texto">Hojas jóvenes cocidas como verdura en sopas. Uso en comunidades Ngäbe y Emberá.</div>
+        </div>
+        <div class="dual-col medicinal">
+          <div class="dual-col-icon">💚</div>
+          <div class="dual-col-titulo">Medicinal</div>
+          <div class="dual-col-texto">Resfriados, heridas, antiinflamatorio, EII brote leve. TRAMIL.</div>
+        </div>
+      </div>
+      <div class="dosis-compare">
+        <div class="dosis-compare-titulo">Dosis culinaria vs. medicinal</div>
+        <div class="dosis-row">
+          <div class="dosis-dot cul"></div>
+          <div class="dosis-row-text"><strong>Cocina:</strong> Hojas jóvenes hervidas 5 min como cualquier verdura de hoja</div>
+        </div>
+        <div class="dosis-row">
+          <div class="dosis-dot med"></div>
+          <div class="dosis-row-text"><strong>Medicinal:</strong> 10-15 g planta fresca en 1L agua, 3-4 tazas/día. Solo de zonas no contaminadas.</div>
+        </div>
+      </div>
+      <a href="ficha-planta.html?id=bidens-pilosa" class="btn-ficha">
+        Ver ficha completa
+        <span class="btn-ficha-arrow">→</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- 8. ALOE VERA / SÁBILA -->
+  <div class="planta-card color-aloe">
+    <div class="planta-card-header">
+      <div>
+        <div class="planta-nombre-local">🌵 Sábila / Zábila</div>
+        <div class="planta-nombre-cientifico">Aloe vera (L.) Burm.f.</div>
+        <div class="planta-titulo">La planta de cada hogar panameño</div>
+      </div>
+      <div class="planta-emoji-wrap">🌵</div>
+    </div>
+    <div class="dosis-tags">
+      <span class="dosis-tag tag-culinaria">🥤 Batidos y aguas</span>
+      <span class="dosis-tag tag-medicinal">💊 Protector de mucosa</span>
+      <span class="dosis-tag tag-panama">🇵🇦 En casi todo hogar</span>
+    </div>
+    <div class="card-divider"></div>
+    <div class="planta-card-body">
+      <div class="planta-frase">"Casi todo hogar panameño tiene una sábila en el patio. Pocos saben que también es medicina digestiva documentada"</div>
+      <div class="dual-uso">
+        <div class="dual-col culinario">
+          <div class="dual-col-icon">🥤</div>
+          <div class="dual-col-titulo">Culinario</div>
+          <div class="dual-col-texto">Gel en batidos y aguas frescas. Ingrediente en bebidas funcionales.</div>
+        </div>
+        <div class="dual-col medicinal">
+          <div class="dual-col-icon">💚</div>
+          <div class="dual-col-titulo">Medicinal</div>
+          <div class="dual-col-texto">Colitis ulcerosa, SII, gastritis, quemaduras. EMA avalado.</div>
+        </div>
+      </div>
+      <div class="dosis-compare">
+        <div class="dosis-compare-titulo">Dosis culinaria vs. medicinal</div>
+        <div class="dosis-row">
+          <div class="dosis-dot cul"></div>
+          <div class="dosis-row-text"><strong>Cocina:</strong> 2 cdas de gel puro en batido de frutas — sabor neutro</div>
+        </div>
+        <div class="dosis-row">
+          <div class="dosis-dot med"></div>
+          <div class="dosis-row-text"><strong>Medicinal:</strong> 100 ml de gel puro (sin látex amarillo) 2×/día en ayunas — 4 semanas</div>
+        </div>
+      </div>
+      <a href="ficha-planta.html?id=aloe-vera" class="btn-ficha">
+        Ver ficha completa
+        <span class="btn-ficha-arrow">→</span>
+      </a>
+    </div>
+  </div>
+
+</div><!-- /plantas-grid -->
+
+<!-- BANNER HIPÓCRATES -->
+<div class="banner-hipocrates">
+  <div class="banner-hip-label">El origen de la idea</div>
+  <div class="banner-hip-cita">
+    "Deja que el alimento sea tu medicina y la medicina sea tu alimento. La naturaleza es la mejor médica de todas."
+  </div>
+  <div class="banner-hip-autor">— Hipócrates de Cos (~460–370 a.C.)</div>
+</div>
+
+<!-- RECETAS RÁPIDAS -->
+<div class="seccion-titulo" style="margin-top:24px">
+  <h2>Recetas medicinales</h2>
+  <div class="linea"></div>
+</div>
+
+<div class="recetas-scroll">
+
+  <div class="receta-card">
+    <span class="receta-emoji">🥛</span>
+    <div class="receta-nombre">Leche dorada antiinflamatoria</div>
+    <div class="receta-desc">Leche vegetal + cúrcuma + jengibre + pimienta negra + miel. Para EII en remisión.</div>
+    <div class="receta-plantas">
+      <span class="receta-planta-tag">🟡 Cúrcuma</span>
+      <span class="receta-planta-tag">🫚 Jengibre</span>
+    </div>
+  </div>
+
+  <div class="receta-card">
+    <span class="receta-emoji">🌺</span>
+    <div class="receta-nombre">Chicha de saril medicinal</div>
+    <div class="receta-desc">Saril + canela + clavo SIN azúcar (stevia). Hipotensora. Bebida navideña panameña con propósito.</div>
+    <div class="receta-plantas">
+      <span class="receta-planta-tag">🌺 Saril</span>
+    </div>
+  </div>
+
+  <div class="receta-card">
+    <span class="receta-emoji">🧄</span>
+    <div class="receta-nombre">Tónico cardiovascular panameño</div>
+    <div class="receta-desc">Ajo machacado + hibisco + té verde en infusión fría. Para hipertensión leve y colesterol.</div>
+    <div class="receta-plantas">
+      <span class="receta-planta-tag">🧄 Ajo</span>
+      <span class="receta-planta-tag">🌺 Saril</span>
+      <span class="receta-planta-tag">🍵 Té verde</span>
+    </div>
+  </div>
+
+  <div class="receta-card">
+    <span class="receta-emoji">🌵</span>
+    <div class="receta-nombre">Batido digestivo de sábila</div>
+    <div class="receta-desc">Gel de sábila + papaya + jengibre + agua de coco. Para gastritis y SII.</div>
+    <div class="receta-plantas">
+      <span class="receta-planta-tag">🌵 Sábila</span>
+      <span class="receta-planta-tag">🫚 Jengibre</span>
+    </div>
+  </div>
+
+  <div class="receta-card">
+    <span class="receta-emoji">🌿</span>
+    <div class="receta-nombre">Infusión antigripal panameña</div>
+    <div class="receta-desc">Mozote + manzanilla + jengibre + limón + miel. Tradicional de campo panameño.</div>
+    <div class="receta-plantas">
+      <span class="receta-planta-tag">🌿 Mozote</span>
+      <span class="receta-planta-tag">🌼 Manzanilla</span>
+      <span class="receta-planta-tag">🫚 Jengibre</span>
+    </div>
+  </div>
+
+</div>
+
+<!-- FILOSOFÍA EXPANDIDA -->
+<div class="seccion-titulo" style="margin-top:24px">
+  <h2>La idea detrás del módulo</h2>
+  <div class="linea"></div>
+</div>
+
+<div class="filosofia-card">
+  <div class="filosofia-titulo">Cuando el alimento y la medicina son lo mismo</div>
+  <div class="filosofia-texto">
+    <p>La separación entre "comida" y "medicamento" es moderna y, en muchos casos, artificial. Culturas milenarias no distinguían entre alimentarse y curarse: el ajo era condimento y corazón protegido, el jengibre era sabor y náusea aliviada.</p>
+    <p>Las 8 plantas de este módulo tienen algo en común: todas aparecen en la cocina panameña cotidiana, y todas tienen monografías oficiales (EMA, OMS, NCCIH) que documentan su eficacia clínica. No son remedios de fe — son ingredientes culinarios con ensayos clínicos controlados.</p>
+    <p>La diferencia entre la dosis culinaria y la dosis medicinal es a veces solo de cantidad. En otros casos, como la sábila, la diferencia está en la parte de la planta: el gel es medicina, el látex amarillo es otra cosa. Conocer esa diferencia es el objetivo de este módulo.</p>
+  </div>
+</div>
+
+<!-- DISCLAIMER -->
+<div class="disclaimer-am">
+  🌿 Esta información es educativa y no sustituye el diagnóstico ni el tratamiento médico profesional.
+  Las plantas aquí descritas son alimentos de uso tradicional con respaldo científico,
+  no medicamentos aprobados para patologías específicas.
+</div>
+
+<!-- NAVEGACIÓN INFERIOR -->
+<nav class="bottom-nav">
+  <a href="../index.html" class="nav-item">
+    <span class="nav-icon">🏠</span>Inicio
+  </a>
+  <a href="herbologia-indice.html" class="nav-item">
+    <span class="nav-icon">🌿</span>Plantas
+  </a>
+  <a href="explorador-sintoma.html" class="nav-item">
+    <span class="nav-icon">🔍</span>Síntomas
+  </a>
+  <a href="alimentos-medicina.html" class="nav-item activo">
+    <span class="nav-icon">🍽️</span>Alimentos
+  </a>
+  <a href="mindfulness-audio.html" class="nav-item">
+    <span class="nav-icon">🧘</span>Mente
+  </a>
+</nav>
+
+</body>
+</html>

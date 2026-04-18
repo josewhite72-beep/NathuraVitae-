@@ -1,0 +1,689 @@
+[
+  {
+    "id": "manzanilla",
+    "nombreComun": "Manzanilla",
+    "nombresAlternativos": ["camomila", "manzanilla alemana"],
+    "nombreCientifico": "Matricaria chamomilla L.",
+    "familia": "Asteraceae",
+    "origen": "Europa y Asia occidental",
+    "partesUsadas": ["flor"],
+    "resumen": "Una de las plantas medicinales más estudiadas del mundo. Sus flores poseen propiedades antiinflamatorias, antiespasmódicas y calmantes con amplio respaldo científico.",
+    "propiedades": [
+      { "nombre": "antiinflamatoria", "nivelEvidencia": "fuerte" },
+      { "nombre": "antiespasmódica", "nivelEvidencia": "fuerte" },
+      { "nombre": "ansiolítica leve", "nivelEvidencia": "moderado" },
+      { "nombre": "cicatrizante", "nivelEvidencia": "moderado" }
+    ],
+    "dolencias": [
+      { "nombre": "colitis leve", "categoria": "digestivo", "nivelEvidencia": "moderado" },
+      { "nombre": "gastritis", "categoria": "digestivo", "nivelEvidencia": "moderado" },
+      { "nombre": "síndrome de intestino irritable", "categoria": "digestivo", "nivelEvidencia": "moderado" },
+      { "nombre": "insomnio leve", "categoria": "nervioso", "nivelEvidencia": "moderado" },
+      { "nombre": "ansiedad leve", "categoria": "nervioso", "nivelEvidencia": "moderado" },
+      { "nombre": "cólicos menstruales", "categoria": "hormonal", "nivelEvidencia": "moderado" }
+    ],
+    "sistemas": ["digestivo", "nervioso", "hormonal"],
+    "modoEII": {
+      "aptaEnBrote": true,
+      "notaBrote": "Segura en brote leve. Puede ayudar a calmar espasmos y reducir inflamación intestinal leve. Evitar en brote severo.",
+      "aptaEnMantenimiento": true,
+      "notaMantenimiento": "Excelente para mantenimiento diario. Contribuye a reducir la inflamación crónica de bajo grado."
+    },
+    "preparacion": [
+      { "forma": "infusión", "instrucciones": "3 g de flores secas en 150 ml de agua hirviendo. Tapar 10 min. Colar.", "dosis": "3 tazas/día", "duracion": "Hasta 6 semanas continuas" },
+      { "forma": "tintura", "instrucciones": "20-30 gotas diluidas en agua, 3 veces al día.", "dosis": "20-30 gotas × 3/día" }
+    ],
+    "contraindicaciones": ["Alergia a Asteraceae (ambrosía, árnica, caléndula)", "Evitar aceite esencial puro en menores de 3 años"],
+    "interaccionesMedicamentosas": ["Anticoagulantes: puede potenciar el efecto", "Benzodiazepinas: puede potenciar la sedación"],
+    "embarazoLactancia": "precaución",
+    "principiosActivos": ["alfa-bisabolol", "camazuleno", "apigenina", "luteolina"],
+    "infusionesRelacionadas": ["digestiva-clasica", "relajante-nocturna", "anti-colitis"],
+    "mindfulnessRelacionado": ["respiracion-4-7-8", "body-scan"],
+    "emoji": "🌼",
+    "etiquetas": ["digestiva", "calmante", "antiinflamatoria", "apta-eii", "nervina"],
+    "fuentes": [
+      { "autor": "OMS", "titulo": "WHO Monographs — Flos Chamomillae", "año": 1999, "tipo": "monografía-OMS" },
+      { "autor": "EMA", "titulo": "Assessment report on Matricaria recutita L.", "año": 2015, "tipo": "monografía-EMA" }
+    ],
+    "fechaRevision": "2026-04-01"
+  },
+  {
+    "id": "jengibre",
+    "nombreComun": "Jengibre",
+    "nombresAlternativos": ["ajengibre", "kión"],
+    "nombreCientifico": "Zingiber officinale Roscoe",
+    "familia": "Zingiberaceae",
+    "origen": "Asia tropical",
+    "partesUsadas": ["rizoma"],
+    "resumen": "Raíz con potentes propiedades antiinflamatorias, antináuseas y digestivas. Uno de los alimentos-medicina más respaldados por la investigación científica moderna.",
+    "propiedades": [
+      { "nombre": "antiinflamatoria", "nivelEvidencia": "fuerte" },
+      { "nombre": "antináuseas", "nivelEvidencia": "fuerte" },
+      { "nombre": "digestiva", "nivelEvidencia": "fuerte" },
+      { "nombre": "analgésica leve", "nivelEvidencia": "moderado" },
+      { "nombre": "antioxidante", "nivelEvidencia": "moderado" }
+    ],
+    "dolencias": [
+      { "nombre": "náuseas y vómitos", "categoria": "digestivo", "nivelEvidencia": "fuerte" },
+      { "nombre": "dispepsia", "categoria": "digestivo", "nivelEvidencia": "fuerte" },
+      { "nombre": "gases y flatulencia", "categoria": "digestivo", "nivelEvidencia": "moderado" },
+      { "nombre": "dolor articular", "categoria": "musculoesquelético", "nivelEvidencia": "moderado" },
+      { "nombre": "inflamación intestinal", "categoria": "digestivo", "nivelEvidencia": "moderado" }
+    ],
+    "sistemas": ["digestivo", "musculoesquelético", "inmunológico"],
+    "modoEII": {
+      "aptaEnBrote": false,
+      "notaBrote": "Evitar en brote activo: puede irritar la mucosa inflamada por su picante natural (gingeroles).",
+      "aptaEnMantenimiento": true,
+      "notaMantenimiento": "Muy útil en mantenimiento por su acción antiinflamatoria sistémica. Usar en dosis moderadas."
+    },
+    "preparacion": [
+      { "forma": "infusión", "instrucciones": "Hervir 1-2 g de rizoma fresco rallado en 200 ml de agua durante 5 min. Colar y beber caliente.", "dosis": "2-3 tazas/día", "duracion": "Sin límite si se tolera bien" },
+      { "forma": "decocción", "instrucciones": "5 g de raíz seca en 300 ml de agua. Hervir 10 min. Colar.", "dosis": "2 veces/día" }
+    ],
+    "contraindicaciones": ["Cálculos biliares (puede estimular producción de bilis)", "Dosis altas en trastornos de coagulación", "Precaución con dosis >4 g/día en embarazo"],
+    "interaccionesMedicamentosas": ["Anticoagulantes (warfarina, heparina): puede potenciar el efecto", "Antidiabéticos: puede potenciar el efecto hipoglucemiante"],
+    "embarazoLactancia": "precaución",
+    "principiosActivos": ["gingeroles", "shogaoles", "paradoles", "zingerona"],
+    "infusionesRelacionadas": ["digestiva-picante", "anti-nauseas", "antiinflamatoria-raices"],
+    "mindfulnessRelacionado": ["coherencia-cardiaca"],
+    "emoji": "🫚",
+    "etiquetas": ["digestiva", "antiinflamatoria", "antináuseas", "especiada", "mantenimiento-eii"],
+    "fuentes": [
+      { "autor": "OMS", "titulo": "WHO Monographs — Rhizoma Zingiberis", "año": 1999, "tipo": "monografía-OMS" },
+      { "autor": "EMA", "titulo": "Community herbal monograph on Zingiber officinale", "año": 2012, "tipo": "monografía-EMA" }
+    ],
+    "fechaRevision": "2026-04-01"
+  },
+  {
+    "id": "hinojo",
+    "nombreComun": "Hinojo",
+    "nombresAlternativos": ["fennel", "hinojo dulce"],
+    "nombreCientifico": "Foeniculum vulgare Mill.",
+    "familia": "Apiaceae",
+    "origen": "Mediterráneo",
+    "partesUsadas": ["semilla", "fruto"],
+    "resumen": "Planta aromática con destacada acción carminativa y antiespasmódica. Especialmente eficaz para aliviar gases, distensión abdominal y cólicos, incluso en bebés.",
+    "propiedades": [
+      { "nombre": "carminativa", "nivelEvidencia": "fuerte" },
+      { "nombre": "antiespasmódica", "nivelEvidencia": "fuerte" },
+      { "nombre": "digestiva", "nivelEvidencia": "fuerte" },
+      { "nombre": "galactogoga leve", "nivelEvidencia": "moderado" }
+    ],
+    "dolencias": [
+      { "nombre": "gases y flatulencia", "categoria": "digestivo", "nivelEvidencia": "fuerte" },
+      { "nombre": "distensión abdominal", "categoria": "digestivo", "nivelEvidencia": "fuerte" },
+      { "nombre": "cólicos", "categoria": "digestivo", "nivelEvidencia": "moderado" },
+      { "nombre": "síndrome de intestino irritable", "categoria": "digestivo", "nivelEvidencia": "moderado" }
+    ],
+    "sistemas": ["digestivo"],
+    "modoEII": {
+      "aptaEnBrote": true,
+      "notaBrote": "Segura y útil en brote: alivia los espasmos y la distensión sin irritar la mucosa.",
+      "aptaEnMantenimiento": true,
+      "notaMantenimiento": "Ideal para uso diario en mantenimiento. Excelente combinada con manzanilla."
+    },
+    "preparacion": [
+      { "forma": "infusión", "instrucciones": "Machacar ligeramente 1 cucharadita de semillas. Infusionar en 200 ml de agua hirviendo 10 min. Colar.", "dosis": "3 tazas/día después de las comidas", "duracion": "Sin restricción" }
+    ],
+    "contraindicaciones": ["Alergia a Apiaceae (apio, zanahoria, perejil)", "No usar aceite esencial en niños menores de 5 años", "Evitar en embarazo (propiedades estrogénicas leves)"],
+    "interaccionesMedicamentosas": ["Ciprofloxacino: puede reducir su absorción"],
+    "embarazoLactancia": "precaución",
+    "principiosActivos": ["anetol", "fenchona", "estragol", "flavonoides"],
+    "infusionesRelacionadas": ["digestiva-clasica", "anti-gases", "anti-colitis"],
+    "mindfulnessRelacionado": [],
+    "emoji": "🌱",
+    "etiquetas": ["carminativa", "digestiva", "apta-eii", "apta-brote", "antiespasmodica"],
+    "fuentes": [
+      { "autor": "EMA", "titulo": "Community herbal monograph on Foeniculum vulgare", "año": 2008, "tipo": "monografía-EMA" },
+      { "autor": "OMS", "titulo": "WHO Monographs — Fructus Foeniculi", "año": 1999, "tipo": "monografía-OMS" }
+    ],
+    "fechaRevision": "2026-04-01"
+  },
+  {
+    "id": "curcuma",
+    "nombreComun": "Cúrcuma",
+    "nombresAlternativos": ["azafrán de la India", "turmeric"],
+    "nombreCientifico": "Curcuma longa L.",
+    "familia": "Zingiberaceae",
+    "origen": "Sur y sureste asiático",
+    "partesUsadas": ["rizoma"],
+    "resumen": "Potente antiinflamatoria natural cuyo principio activo, la curcumina, ha demostrado en estudios clínicos beneficios significativos para la enfermedad inflamatoria intestinal y la artritis.",
+    "propiedades": [
+      { "nombre": "antiinflamatoria", "nivelEvidencia": "fuerte" },
+      { "nombre": "antioxidante", "nivelEvidencia": "fuerte" },
+      { "nombre": "colagoga", "nivelEvidencia": "moderado" },
+      { "nombre": "hepatoprotectora", "nivelEvidencia": "moderado" },
+      { "nombre": "antidepresiva leve", "nivelEvidencia": "preliminar" }
+    ],
+    "dolencias": [
+      { "nombre": "enfermedad inflamatoria intestinal", "categoria": "digestivo", "nivelEvidencia": "moderado" },
+      { "nombre": "colitis ulcerosa", "categoria": "digestivo", "nivelEvidencia": "moderado" },
+      { "nombre": "artritis", "categoria": "musculoesquelético", "nivelEvidencia": "moderado" },
+      { "nombre": "dispepsia", "categoria": "digestivo", "nivelEvidencia": "moderado" },
+      { "nombre": "inflamación sistémica", "categoria": "general", "nivelEvidencia": "moderado" }
+    ],
+    "sistemas": ["digestivo", "musculoesquelético", "inmunológico"],
+    "modoEII": {
+      "aptaEnBrote": false,
+      "notaBrote": "Con precaución en brote activo: la curcumina puede ser beneficiosa pero la forma en polvo puede irritar. Preferir extracto estandarizado.",
+      "aptaEnMantenimiento": true,
+      "notaMantenimiento": "Excelente para mantenimiento de EII. Estudios muestran reducción de recaídas en colitis ulcerosa. Siempre combinar con pimienta negra (aumenta absorción 2000%)."
+    },
+    "preparacion": [
+      { "forma": "infusión", "instrucciones": "1 cucharadita de cúrcuma en polvo + pizca de pimienta negra + leche vegetal caliente. Mezclar bien. ('Leche dorada')", "dosis": "1-2 tazas/día", "duracion": "Uso continuado recomendado" },
+      { "forma": "polvo", "instrucciones": "500-1000 mg de extracto estandarizado (95% curcuminoides) con pimienta negra.", "dosis": "2-3 veces/día con alimentos" }
+    ],
+    "contraindicaciones": ["Cálculos biliares u obstrucción biliar", "Dosis altas en embarazo (puede estimular contracciones)", "Precaución en sangrado activo (anticoagulante leve)"],
+    "interaccionesMedicamentosas": ["Anticoagulantes: potencia el efecto", "Antidiabéticos: puede potenciar el efecto hipoglucemiante", "Medicamentos metabolizados por CYP450"],
+    "embarazoLactancia": "precaución",
+    "principiosActivos": ["curcumina", "bisdesmetoxicurcumina", "desmetoxicurcumina", "aceite esencial"],
+    "infusionesRelacionadas": ["leche-dorada", "antiinflamatoria-raices"],
+    "mindfulnessRelacionado": ["body-scan"],
+    "emoji": "🟡",
+    "etiquetas": ["antiinflamatoria", "antioxidante", "eii", "artritis", "mantenimiento-eii", "superalimento"],
+    "fuentes": [
+      { "autor": "Hanai H et al.", "titulo": "Curcumin maintenance therapy for ulcerative colitis", "año": 2006, "tipo": "estudio-clínico" },
+      { "autor": "EMA", "titulo": "Assessment report on Curcuma longa L.", "año": 2018, "tipo": "monografía-EMA" }
+    ],
+    "fechaRevision": "2026-04-01"
+  },
+  {
+    "id": "aloe-vera",
+    "nombreComun": "Aloe vera",
+    "nombresAlternativos": ["sábila", "aloe", "acíbar"],
+    "nombreCientifico": "Aloe vera (L.) Burm.f.",
+    "familia": "Asphodelaceae",
+    "origen": "Península Arábiga; cultivada en todo el mundo",
+    "partesUsadas": ["hoja", "gel interno"],
+    "resumen": "El gel interno de las hojas de aloe vera es un demulcente que recubre y protege la mucosa intestinal. Ampliamente estudiado para colitis y síndrome de intestino irritable.",
+    "propiedades": [
+      { "nombre": "demulcente (protector mucosa)", "nivelEvidencia": "fuerte" },
+      { "nombre": "antiinflamatoria", "nivelEvidencia": "moderado" },
+      { "nombre": "cicatrizante", "nivelEvidencia": "moderado" },
+      { "nombre": "laxante suave (látex)", "nivelEvidencia": "fuerte", "nota": "Solo el látex, NO el gel" }
+    ],
+    "dolencias": [
+      { "nombre": "colitis ulcerosa leve-moderada", "categoria": "digestivo", "nivelEvidencia": "moderado" },
+      { "nombre": "síndrome de intestino irritable", "categoria": "digestivo", "nivelEvidencia": "moderado" },
+      { "nombre": "estreñimiento (látex)", "categoria": "digestivo", "nivelEvidencia": "fuerte" },
+      { "nombre": "quemaduras y heridas", "categoria": "dermatológico", "nivelEvidencia": "fuerte" }
+    ],
+    "sistemas": ["digestivo", "dermatológico"],
+    "modoEII": {
+      "aptaEnBrote": true,
+      "notaBrote": "El gel (NO el látex) es suave y protector de la mucosa. Un estudio de 2004 mostró mejoría en colitis ulcerosa activa con gel de aloe. Usar gel puro, sin aloína.",
+      "aptaEnMantenimiento": true,
+      "notaMantenimiento": "Excelente para mantenimiento. Ayuda a mantener la integridad de la mucosa intestinal."
+    },
+    "preparacion": [
+      { "forma": "jugo", "instrucciones": "30-50 ml de gel puro (sin aloína/látex) en ayunas. Puede mezclarse con jugo de frutas.", "dosis": "30-50 ml en ayunas, 1-2 veces/día", "duracion": "Ciclos de 4 semanas con descanso de 1 semana" }
+    ],
+    "contraindicaciones": ["No usar látex (parte amarilla) en embarazo, niños, EII activa severa", "No ingerir gel de cultivo propio sin desamargar correctamente", "Evitar en caso de obstrucción intestinal"],
+    "interaccionesMedicamentosas": ["Diuréticos: el látex puede aumentar pérdida de potasio", "Digoxina: el látex puede potenciar toxicidad", "Antidiabéticos: puede potenciar efecto"],
+    "embarazoLactancia": "contraindicada",
+    "principiosActivos": ["acemanano", "aloína (látex)", "antraquinonas", "polisacáridos", "vitaminas C, E"],
+    "infusionesRelacionadas": ["gel-digestivo"],
+    "mindfulnessRelacionado": [],
+    "emoji": "🌵",
+    "etiquetas": ["demulcente", "protector-mucosa", "apta-eii", "cicatrizante", "piel"],
+    "fuentes": [
+      { "autor": "Langmead L et al.", "titulo": "Randomized trial of oral aloe vera gel for active ulcerative colitis", "año": 2004, "tipo": "estudio-clínico" },
+      { "autor": "EMA", "titulo": "Community herbal monograph on Aloe vera", "año": 2013, "tipo": "monografía-EMA" }
+    ],
+    "fechaRevision": "2026-04-01"
+  },
+  {
+    "id": "regaliz",
+    "nombreComun": "Regaliz DGL",
+    "nombresAlternativos": ["orozuz", "licorice", "palo dulce"],
+    "nombreCientifico": "Glycyrrhiza glabra L.",
+    "familia": "Fabaceae",
+    "origen": "Sur de Europa y Asia occidental",
+    "partesUsadas": ["raíz"],
+    "resumen": "El regaliz desglicoricínico (DGL) —sin glicirricina— protege la mucosa gástrica e intestinal sin efectos secundarios sobre la presión arterial. Una de las mejores opciones para gastritis y úlceras.",
+    "propiedades": [
+      { "nombre": "protector de mucosa gástrica", "nivelEvidencia": "fuerte" },
+      { "nombre": "antiinflamatoria", "nivelEvidencia": "moderado" },
+      { "nombre": "antiespasmódica", "nivelEvidencia": "moderado" },
+      { "nombre": "expectorante", "nivelEvidencia": "moderado" }
+    ],
+    "dolencias": [
+      { "nombre": "gastritis", "categoria": "digestivo", "nivelEvidencia": "fuerte" },
+      { "nombre": "úlcera gástrica", "categoria": "digestivo", "nivelEvidencia": "moderado" },
+      { "nombre": "reflujo gastroesofágico", "categoria": "digestivo", "nivelEvidencia": "moderado" },
+      { "nombre": "tos y bronquitis", "categoria": "respiratorio", "nivelEvidencia": "moderado" }
+    ],
+    "sistemas": ["digestivo", "respiratorio"],
+    "modoEII": {
+      "aptaEnBrote": true,
+      "notaBrote": "La forma DGL (sin glicirricina) es segura y puede aliviar la inflamación de la mucosa. Preferir tabletas masticables DGL.",
+      "aptaEnMantenimiento": true,
+      "notaMantenimiento": "Útil para proteger la mucosa en fase de mantenimiento. Usar forma DGL para uso prolongado."
+    },
+    "preparacion": [
+      { "forma": "decocción", "instrucciones": "2-4 g de raíz seca en 250 ml de agua. Hervir 15 min. Colar. Solo forma DGL para uso prolongado.", "dosis": "3 tazas/día antes de comidas", "duracion": "Máximo 4-6 semanas (forma no-DGL). DGL: uso prolongado seguro" }
+    ],
+    "contraindicaciones": ["La forma completa (con glicirricina): hipertensión, enfermedad renal, embarazo", "Usar SIEMPRE la forma DGL para uso prolongado o cardíacos"],
+    "interaccionesMedicamentosas": ["Antihipertensivos: la forma completa puede antagonizar el efecto", "Corticosteroides: puede potenciar efectos secundarios"],
+    "embarazoLactancia": "contraindicada",
+    "principiosActivos": ["glicirricina (evitar forma completa)", "ácido glicirrético", "flavonoides", "isoflavonas"],
+    "infusionesRelacionadas": ["protectora-gastrica", "tos-respiratoria"],
+    "mindfulnessRelacionado": [],
+    "emoji": "🟤",
+    "etiquetas": ["gastroprotectora", "antiinflamatoria", "dgl", "apta-eii", "mucosa"],
+    "fuentes": [
+      { "autor": "OMS", "titulo": "WHO Monographs — Radix Glycyrrhizae", "año": 1999, "tipo": "monografía-OMS" },
+      { "autor": "EMA", "titulo": "Community herbal monograph on Glycyrrhiza glabra", "año": 2012, "tipo": "monografía-EMA" }
+    ],
+    "fechaRevision": "2026-04-01"
+  },
+  {
+    "id": "valeriana",
+    "nombreComun": "Valeriana",
+    "nombresAlternativos": ["hierba de los gatos", "amantilla"],
+    "nombreCientifico": "Valeriana officinalis L.",
+    "familia": "Caprifoliaceae",
+    "origen": "Europa y Asia",
+    "partesUsadas": ["raíz", "rizoma"],
+    "resumen": "La raíz de valeriana es la planta sedante e hipnótica más estudiada en fitoterapia europea. Con aval de la EMA para el insomnio leve y la ansiedad, es una alternativa natural a los hipnóticos suaves.",
+    "propiedades": [
+      { "nombre": "sedante leve", "nivelEvidencia": "fuerte" },
+      { "nombre": "hipnótica", "nivelEvidencia": "fuerte" },
+      { "nombre": "ansiolítica", "nivelEvidencia": "moderado" },
+      { "nombre": "antiespasmódica", "nivelEvidencia": "moderado" }
+    ],
+    "dolencias": [
+      { "nombre": "insomnio leve a moderado", "categoria": "nervioso", "nivelEvidencia": "fuerte" },
+      { "nombre": "ansiedad", "categoria": "nervioso", "nivelEvidencia": "moderado" },
+      { "nombre": "nerviosismo y tensión", "categoria": "nervioso", "nivelEvidencia": "moderado" },
+      { "nombre": "espasmos musculares", "categoria": "musculoesquelético", "nivelEvidencia": "moderado" }
+    ],
+    "sistemas": ["nervioso", "musculoesquelético"],
+    "modoEII": {
+      "aptaEnBrote": true,
+      "notaBrote": "Segura en brote. Puede ayudar a manejar el estrés asociado al brote, que frecuentemente empeora la EII.",
+      "aptaEnMantenimiento": true,
+      "notaMantenimiento": "Muy útil para manejar el componente ansioso y el insomnio asociado a la EII crónica."
+    },
+    "preparacion": [
+      { "forma": "infusión", "instrucciones": "2-3 g de raíz seca en 150 ml de agua hirviendo. Infusionar 10-15 min tapado. Colar.", "dosis": "1 taza 30-60 min antes de dormir", "duracion": "Hasta 4 semanas continuas" },
+      { "forma": "tintura", "instrucciones": "Tintura 1:5. 1-3 ml en agua, 3 veces al día (o 5-10 ml antes de dormir).", "dosis": "1-3 ml × 3/día" }
+    ],
+    "contraindicaciones": ["Evitar conducción o maquinaria hasta conocer la respuesta individual", "No combinar con alcohol o hipnóticos"],
+    "interaccionesMedicamentosas": ["Benzodiazepinas y sedantes: potencia la sedación", "Alcohol: potencia el efecto depresor del SNC", "Barbitúricos: potencia el efecto"],
+    "embarazoLactancia": "contraindicada",
+    "principiosActivos": ["ácido valérico", "valeranona", "isovalerato de bornilo", "flavonoides", "lignanos"],
+    "infusionesRelacionadas": ["relajante-nocturna", "calma-total"],
+    "mindfulnessRelacionado": ["respiracion-4-7-8", "body-scan"],
+    "emoji": "🌸",
+    "etiquetas": ["sedante", "insomnio", "ansiedad", "nervina", "nocturna"],
+    "fuentes": [
+      { "autor": "EMA", "titulo": "Community herbal monograph on Valeriana officinalis", "año": 2016, "tipo": "monografía-EMA" },
+      { "autor": "Bent S et al.", "titulo": "Valerian for sleep: a systematic review and meta-analysis", "año": 2006, "tipo": "revisión-sistemática" }
+    ],
+    "fechaRevision": "2026-04-01"
+  },
+  {
+    "id": "pasiflora",
+    "nombreComun": "Pasiflora",
+    "nombresAlternativos": ["flor de la pasión", "maracuyá silvestre", "pasionaria"],
+    "nombreCientifico": "Passiflora incarnata L.",
+    "familia": "Passifloraceae",
+    "origen": "América del Norte y Central",
+    "partesUsadas": ["hoja", "tallo", "flor"],
+    "resumen": "Planta americana con reconocidas propiedades ansiolíticas y sedantes suaves. La EMA la recomienda para el alivio del nerviosismo y el insomnio leve. Muy bien tolerada incluso durante el día.",
+    "propiedades": [
+      { "nombre": "ansiolítica", "nivelEvidencia": "fuerte" },
+      { "nombre": "sedante suave", "nivelEvidencia": "fuerte" },
+      { "nombre": "antiespasmódica", "nivelEvidencia": "moderado" },
+      { "nombre": "hipnótica leve", "nivelEvidencia": "moderado" }
+    ],
+    "dolencias": [
+      { "nombre": "ansiedad leve a moderada", "categoria": "nervioso", "nivelEvidencia": "fuerte" },
+      { "nombre": "insomnio leve", "categoria": "nervioso", "nivelEvidencia": "moderado" },
+      { "nombre": "nerviosismo y tensión", "categoria": "nervioso", "nivelEvidencia": "fuerte" },
+      { "nombre": "palpitaciones funcionales", "categoria": "cardiovascular", "nivelEvidencia": "preliminar" }
+    ],
+    "sistemas": ["nervioso", "cardiovascular"],
+    "modoEII": {
+      "aptaEnBrote": true,
+      "notaBrote": "Excelente en brote: ayuda a controlar la ansiedad y el estrés que disparan los brotes de EII.",
+      "aptaEnMantenimiento": true,
+      "notaMantenimiento": "Ideal para el mantenimiento del bienestar emocional en pacientes con EII crónica."
+    },
+    "preparacion": [
+      { "forma": "infusión", "instrucciones": "2 g de planta seca en 150 ml de agua hirviendo. Infusionar 10 min tapado. Colar.", "dosis": "2-3 tazas/día o 1 taza antes de dormir", "duracion": "Sin restricción de tiempo establecida" }
+    ],
+    "contraindicaciones": ["Evitar dosis altas durante el embarazo", "Precaución al conducir (sedación leve)"],
+    "interaccionesMedicamentosas": ["Ansiolíticos y sedantes: puede potenciar el efecto", "Anticoagulantes: con precaución"],
+    "embarazoLactancia": "precaución",
+    "principiosActivos": ["crisina", "vitexina", "orientina", "isovitexina", "maltol"],
+    "infusionesRelacionadas": ["relajante-diurna", "calma-total", "relajante-nocturna"],
+    "mindfulnessRelacionado": ["respiracion-4-7-8", "coherencia-cardiaca"],
+    "emoji": "🌺",
+    "etiquetas": ["ansiolítica", "sedante-suave", "diurna", "estrés", "nervina"],
+    "fuentes": [
+      { "autor": "EMA", "titulo": "Community herbal monograph on Passiflora incarnata", "año": 2014, "tipo": "monografía-EMA" },
+      { "autor": "Akhondzadeh S et al.", "titulo": "Passionflower in the treatment of generalized anxiety", "año": 2001, "tipo": "estudio-clínico" }
+    ],
+    "fechaRevision": "2026-04-01"
+  },
+  {
+    "id": "melisa",
+    "nombreComun": "Melisa",
+    "nombresAlternativos": ["toronjil", "bálsamo de limón", "hierba de limón"],
+    "nombreCientifico": "Melissa officinalis L.",
+    "familia": "Lamiaceae",
+    "origen": "Mediterráneo oriental",
+    "partesUsadas": ["hoja"],
+    "resumen": "Hierba aromática con doble acción: calmante del sistema nervioso y digestiva. Especialmente valiosa cuando el estrés se manifiesta en el aparato digestivo (colon irritable de origen nervioso).",
+    "propiedades": [
+      { "nombre": "ansiolítica", "nivelEvidencia": "moderado" },
+      { "nombre": "antiespasmódica digestiva", "nivelEvidencia": "fuerte" },
+      { "nombre": "carminativa", "nivelEvidencia": "fuerte" },
+      { "nombre": "antiviral (herpes labial)", "nivelEvidencia": "moderado" }
+    ],
+    "dolencias": [
+      { "nombre": "colon irritable de origen nervioso", "categoria": "digestivo", "nivelEvidencia": "moderado" },
+      { "nombre": "ansiedad con síntomas digestivos", "categoria": "nervioso", "nivelEvidencia": "moderado" },
+      { "nombre": "gases y distensión", "categoria": "digestivo", "nivelEvidencia": "fuerte" },
+      { "nombre": "insomnio leve", "categoria": "nervioso", "nivelEvidencia": "moderado" }
+    ],
+    "sistemas": ["nervioso", "digestivo"],
+    "modoEII": {
+      "aptaEnBrote": true,
+      "notaBrote": "Muy segura en brote. Ayuda a calmar los espasmos y la conexión intestino-cerebro que agrava el brote.",
+      "aptaEnMantenimiento": true,
+      "notaMantenimiento": "Ideal para el mantenimiento de la EII con componente ansioso o estrés asociado."
+    },
+    "preparacion": [
+      { "forma": "infusión", "instrucciones": "2-3 g de hojas frescas o secas en 200 ml de agua hirviendo. Tapar 10 min. Colar.", "dosis": "3 tazas/día o 1 taza antes de dormir", "duracion": "Sin restricción establecida" }
+    ],
+    "contraindicaciones": ["Precaución en hipotiroidismo (puede reducir función tiroidea en dosis altas)"],
+    "interaccionesMedicamentosas": ["Sedantes y ansiolíticos: potenciación", "Medicamentos para el tiroides: precaución"],
+    "embarazoLactancia": "precaución",
+    "principiosActivos": ["ácido rosmarínico", "ácido caféico", "flavonoides", "aceite esencial (citral, linalol)"],
+    "infusionesRelacionadas": ["digestiva-nerviosa", "relajante-diurna", "anti-gases"],
+    "mindfulnessRelacionado": ["respiracion-4-7-8", "body-scan"],
+    "emoji": "🍋",
+    "etiquetas": ["calmante", "digestiva", "carminativa", "apta-eii", "estrés-digestivo"],
+    "fuentes": [
+      { "autor": "EMA", "titulo": "Community herbal monograph on Melissa officinalis", "año": 2013, "tipo": "monografía-EMA" },
+      { "autor": "Cases J et al.", "titulo": "Pilot trial of Melissa officinalis for the treatment of anxiety disorders", "año": 2011, "tipo": "estudio-clínico" }
+    ],
+    "fechaRevision": "2026-04-01"
+  },
+  {
+    "id": "ashwagandha",
+    "nombreComun": "Ashwagandha",
+    "nombresAlternativos": ["ginseng indio", "withania", "cereza de invierno"],
+    "nombreCientifico": "Withania somnifera (L.) Dunal",
+    "familia": "Solanaceae",
+    "origen": "India, Norte de África",
+    "partesUsadas": ["raíz"],
+    "resumen": "Adaptógeno de la medicina ayurvédica con creciente respaldo científico. Reduce el cortisol, mejora la respuesta al estrés crónico y favorece la calidad del sueño sin producir sedación excesiva.",
+    "propiedades": [
+      { "nombre": "adaptógena", "nivelEvidencia": "fuerte" },
+      { "nombre": "ansiolítica", "nivelEvidencia": "fuerte" },
+      { "nombre": "hipnótica leve", "nivelEvidencia": "moderado" },
+      { "nombre": "antiinflamatoria", "nivelEvidencia": "moderado" },
+      { "nombre": "inmunomoduladora", "nivelEvidencia": "moderado" }
+    ],
+    "dolencias": [
+      { "nombre": "estrés crónico", "categoria": "nervioso", "nivelEvidencia": "fuerte" },
+      { "nombre": "ansiedad", "categoria": "nervioso", "nivelEvidencia": "fuerte" },
+      { "nombre": "fatiga crónica", "categoria": "general", "nivelEvidencia": "moderado" },
+      { "nombre": "insomnio", "categoria": "nervioso", "nivelEvidencia": "moderado" }
+    ],
+    "sistemas": ["nervioso", "inmunológico", "general"],
+    "modoEII": {
+      "aptaEnBrote": false,
+      "notaBrote": "Evitar en brote activo: como inmunomodulador puede alterar la respuesta inflamatoria de forma impredecible.",
+      "aptaEnMantenimiento": true,
+      "notaMantenimiento": "Útil en mantenimiento para reducir el estrés crónico, que es un disparador clave de brotes en EII."
+    },
+    "preparacion": [
+      { "forma": "polvo", "instrucciones": "1/2 a 1 cucharadita de polvo de raíz en leche caliente (leche dorada de ashwagandha). Puede endulzar con miel.", "dosis": "300-600 mg de extracto estandarizado o 1 cucharadita de polvo, 1-2 veces/día", "duracion": "Ciclos de 8-12 semanas con descanso de 4 semanas" }
+    ],
+    "contraindicaciones": ["Embarazo (puede estimular contracciones)", "Enfermedades autoinmunes activas (estimula el sistema inmune)", "Hipertiroidismo"],
+    "interaccionesMedicamentosas": ["Inmunosupresores: puede reducir su eficacia", "Sedantes: potenciación", "Medicamentos tiroideos: puede alterar niveles"],
+    "embarazoLactancia": "contraindicada",
+    "principiosActivos": ["withanólidos", "alcaloides", "sitoindósidos", "glicoproteínas"],
+    "infusionesRelacionadas": ["leche-dorada", "adaptogena"],
+    "mindfulnessRelacionado": ["coherencia-cardiaca", "body-scan"],
+    "emoji": "🌰",
+    "etiquetas": ["adaptógeno", "antiestres", "ayurveda", "mantenimiento-eii", "energía"],
+    "fuentes": [
+      { "autor": "Chandrasekhar K et al.", "titulo": "A prospective, randomized double-blind study of ashwagandha root in stress and anxiety", "año": 2012, "tipo": "estudio-clínico" },
+      { "autor": "Pratte MA et al.", "titulo": "An alternative treatment for anxiety: A systematic review of human trial results", "año": 2014, "tipo": "revisión-sistemática" }
+    ],
+    "fechaRevision": "2026-04-01"
+  },
+  {
+    "id": "sauco",
+    "nombreComun": "Saúco",
+    "nombresAlternativos": ["elder", "flor de saúco", "sanguino"],
+    "nombreCientifico": "Sambucus nigra L.",
+    "familia": "Adoxaceae",
+    "origen": "Europa y Asia occidental",
+    "partesUsadas": ["flor", "fruto"],
+    "resumen": "Las flores y bayas de saúco son los mejores aliados naturales frente a resfriados y gripe. Los estudios muestran reducción de la duración y severidad de los síntomas gripales en 2-4 días.",
+    "propiedades": [
+      { "nombre": "antiviral", "nivelEvidencia": "fuerte" },
+      { "nombre": "inmunoestimulante", "nivelEvidencia": "fuerte" },
+      { "nombre": "diaforética (sudorífica)", "nivelEvidencia": "moderado" },
+      { "nombre": "expectorante", "nivelEvidencia": "moderado" },
+      { "nombre": "antioxidante", "nivelEvidencia": "fuerte" }
+    ],
+    "dolencias": [
+      { "nombre": "resfriado común", "categoria": "respiratorio", "nivelEvidencia": "fuerte" },
+      { "nombre": "gripe (influenza)", "categoria": "respiratorio", "nivelEvidencia": "fuerte" },
+      { "nombre": "sinusitis", "categoria": "respiratorio", "nivelEvidencia": "moderado" },
+      { "nombre": "fiebre", "categoria": "general", "nivelEvidencia": "moderado" }
+    ],
+    "sistemas": ["respiratorio", "inmunológico"],
+    "modoEII": {
+      "aptaEnBrote": false,
+      "notaBrote": "Evitar en brote activo: estimula el sistema inmune, lo que puede exacerbar la inflamación en EII.",
+      "aptaEnMantenimiento": true,
+      "notaMantenimiento": "Segura en mantenimiento para prevención de infecciones respiratorias. Usar en periodos cortos."
+    },
+    "preparacion": [
+      { "forma": "infusión", "instrucciones": "2-4 g de flores secas en 200 ml de agua hirviendo. Infusionar 15 min. Colar. Las bayas requieren cocción (no comer crudas).", "dosis": "3-4 tazas/día durante la gripe o resfriado", "duracion": "5-7 días durante el proceso agudo" }
+    ],
+    "contraindicaciones": ["No consumir bayas crudas (tóxicas)", "Evitar en embarazo (diaforético)", "Enfermedades autoinmunes: estimula el sistema inmune"],
+    "interaccionesMedicamentosas": ["Inmunosupresores: puede reducir su eficacia", "Diuréticos: efecto aditivo"],
+    "embarazoLactancia": "contraindicada",
+    "principiosActivos": ["antocianinas", "flavonoides (rutina, quercetina)", "sambunigrina (solo en bayas crudas)", "vitamina C"],
+    "infusionesRelacionadas": ["antigripal", "respiratoria-clasica"],
+    "mindfulnessRelacionado": [],
+    "emoji": "🫐",
+    "etiquetas": ["antiviral", "gripe", "respiratoria", "inmunoestimulante", "bayas"],
+    "fuentes": [
+      { "autor": "Zakay-Rones Z et al.", "titulo": "Randomized study of the efficacy and safety of oral elderberry in influenza", "año": 2004, "tipo": "estudio-clínico" },
+      { "autor": "Hawkins J et al.", "titulo": "Black elderberry reduces cold duration in air-travellers", "año": 2019, "tipo": "estudio-clínico" }
+    ],
+    "fechaRevision": "2026-04-01"
+  },
+  {
+    "id": "tomillo",
+    "nombreComun": "Tomillo",
+    "nombresAlternativos": ["tomillo común", "thyme"],
+    "nombreCientifico": "Thymus vulgaris L.",
+    "familia": "Lamiaceae",
+    "origen": "Mediterráneo occidental",
+    "partesUsadas": ["hoja", "flor"],
+    "resumen": "Poderoso antiséptico respiratorio natural. La EMA lo avala para el tratamiento sintomático de la tos, la bronquitis y las infecciones respiratorias leves. Uno de los expectorantes herbales más eficaces.",
+    "propiedades": [
+      { "nombre": "expectorante", "nivelEvidencia": "fuerte" },
+      { "nombre": "antimicrobiana", "nivelEvidencia": "fuerte" },
+      { "nombre": "antitusiva", "nivelEvidencia": "fuerte" },
+      { "nombre": "antiespasmódica bronquial", "nivelEvidencia": "moderado" }
+    ],
+    "dolencias": [
+      { "nombre": "tos seca y productiva", "categoria": "respiratorio", "nivelEvidencia": "fuerte" },
+      { "nombre": "bronquitis", "categoria": "respiratorio", "nivelEvidencia": "fuerte" },
+      { "nombre": "faringitis", "categoria": "respiratorio", "nivelEvidencia": "moderado" },
+      { "nombre": "infecciones respiratorias", "categoria": "respiratorio", "nivelEvidencia": "moderado" }
+    ],
+    "sistemas": ["respiratorio"],
+    "modoEII": {
+      "aptaEnBrote": true,
+      "notaBrote": "Segura para uso respiratorio en brote. No tiene acción directa sobre el intestino.",
+      "aptaEnMantenimiento": true,
+      "notaMantenimiento": "Segura para uso esporádico en procesos respiratorios."
+    },
+    "preparacion": [
+      { "forma": "infusión", "instrucciones": "1.5 g de planta seca en 200 ml de agua hirviendo. Tapar 10 min. Colar. Añadir miel si se desea.", "dosis": "3-4 tazas/día", "duracion": "Durante el proceso respiratorio (5-10 días)" }
+    ],
+    "contraindicaciones": ["Alergia a Lamiaceae (salvia, menta, orégano)", "El aceite esencial puro es irritante: no ingerir sin diluir"],
+    "interaccionesMedicamentosas": ["Anticoagulantes: el aceite esencial en dosis altas puede potenciar"],
+    "embarazoLactancia": "precaución",
+    "principiosActivos": ["timol", "carvacrol", "flavonoides", "ácido rosmarínico"],
+    "infusionesRelacionadas": ["respiratoria-clasica", "tos-tomillo-miel"],
+    "mindfulnessRelacionado": [],
+    "emoji": "🌿",
+    "etiquetas": ["expectorante", "respiratoria", "tos", "antiséptica", "bronquitis"],
+    "fuentes": [
+      { "autor": "EMA", "titulo": "Community herbal monograph on Thymus vulgaris", "año": 2013, "tipo": "monografía-EMA" },
+      { "autor": "Kemmerich B et al.", "titulo": "Efficacy and tolerability of a fluid extract combination of thyme herb and ivy leaves", "año": 2006, "tipo": "estudio-clínico" }
+    ],
+    "fechaRevision": "2026-04-01"
+  },
+  {
+    "id": "eucalipto",
+    "nombreComun": "Eucalipto",
+    "nombresAlternativos": ["eucalyptus", "árbol de la fiebre"],
+    "nombreCientifico": "Eucalyptus globulus Labill.",
+    "familia": "Myrtaceae",
+    "origen": "Australia; ampliamente cultivado en Europa y América",
+    "partesUsadas": ["hoja"],
+    "resumen": "Las hojas de eucalipto son el descongestionante respiratorio natural más reconocido. El cineol (eucaliptol) tiene eficacia demostrada en sinusitis, bronquitis y rinitis alérgica.",
+    "propiedades": [
+      { "nombre": "descongestionante", "nivelEvidencia": "fuerte" },
+      { "nombre": "expectorante", "nivelEvidencia": "fuerte" },
+      { "nombre": "antiséptica", "nivelEvidencia": "fuerte" },
+      { "nombre": "antiinflamatoria bronquial", "nivelEvidencia": "moderado" }
+    ],
+    "dolencias": [
+      { "nombre": "congestión nasal y sinusitis", "categoria": "respiratorio", "nivelEvidencia": "fuerte" },
+      { "nombre": "bronquitis", "categoria": "respiratorio", "nivelEvidencia": "fuerte" },
+      { "nombre": "resfriado común", "categoria": "respiratorio", "nivelEvidencia": "moderado" },
+      { "nombre": "rinitis", "categoria": "respiratorio", "nivelEvidencia": "moderado" }
+    ],
+    "sistemas": ["respiratorio"],
+    "modoEII": {
+      "aptaEnBrote": true,
+      "notaBrote": "Segura en brote para uso respiratorio (inhalación). Uso interno limitado.",
+      "aptaEnMantenimiento": true,
+      "notaMantenimiento": "Uso esporádico para procesos respiratorios. No indicada para EII directamente."
+    },
+    "preparacion": [
+      { "forma": "infusión", "instrucciones": "2 g de hojas secas en 200 ml de agua. Infusionar 10 min tapado. Colar. También usar vapor: verter infusión en recipiente e inhalar con toalla sobre la cabeza.", "dosis": "2-3 tazas/día o inhalaciones 2-3 veces/día", "duracion": "Durante el proceso respiratorio (máx. 10 días)" }
+    ],
+    "contraindicaciones": ["NO usar aceite esencial en niños menores de 2 años (riesgo de broncoespasmo)", "No aplicar aceite puro cerca de la nariz de bebés", "Hepatopatías graves"],
+    "interaccionesMedicamentosas": ["Puede acelerar el metabolismo de algunos fármacos (inducción CYP450)"],
+    "embarazoLactancia": "precaución",
+    "principiosActivos": ["1,8-cineol (eucaliptol)", "alfa-pineno", "globulol", "flavonoides"],
+    "infusionesRelacionadas": ["respiratoria-clasica", "antigripal"],
+    "mindfulnessRelacionado": [],
+    "emoji": "🌲",
+    "etiquetas": ["descongestionante", "respiratoria", "sinusitis", "inhalación", "antiséptica"],
+    "fuentes": [
+      { "autor": "EMA", "titulo": "Community herbal monograph on Eucalyptus globulus", "año": 2013, "tipo": "monografía-EMA" },
+      { "autor": "Ghazanfari G et al.", "titulo": "Effects of Eucalyptus globulus on immune system", "año": 2014, "tipo": "estudio-clínico" }
+    ],
+    "fechaRevision": "2026-04-01"
+  },
+  {
+    "id": "equinacea",
+    "nombreComun": "Equinácea",
+    "nombresAlternativos": ["echinacea", "equinácea purpúrea"],
+    "nombreCientifico": "Echinacea purpurea (L.) Moench",
+    "familia": "Asteraceae",
+    "origen": "América del Norte",
+    "partesUsadas": ["raíz", "planta aérea"],
+    "resumen": "La planta inmunoestimulante más vendida en Europa y América. Los metaanálisis confirman que reduce la incidencia de resfriados en un 35% y acorta su duración cuando se toma al inicio de los síntomas.",
+    "propiedades": [
+      { "nombre": "inmunoestimulante", "nivelEvidencia": "fuerte" },
+      { "nombre": "antiviral", "nivelEvidencia": "fuerte" },
+      { "nombre": "antiinflamatoria", "nivelEvidencia": "moderado" },
+      { "nombre": "cicatrizante", "nivelEvidencia": "moderado" }
+    ],
+    "dolencias": [
+      { "nombre": "resfriado y gripe (prevención)", "categoria": "respiratorio", "nivelEvidencia": "fuerte" },
+      { "nombre": "infecciones respiratorias recurrentes", "categoria": "respiratorio", "nivelEvidencia": "fuerte" },
+      { "nombre": "infecciones urinarias recurrentes", "categoria": "urinario", "nivelEvidencia": "moderado" }
+    ],
+    "sistemas": ["inmunológico", "respiratorio"],
+    "modoEII": {
+      "aptaEnBrote": false,
+      "notaBrote": "CONTRAINDICADA en brote activo de EII: estimula el sistema inmune y puede exacerbar la inflamación autoinmune.",
+      "aptaEnMantenimiento": false,
+      "notaMantenimiento": "No recomendada en EII. Usar solo para infecciones respiratorias agudas y en ciclos cortos, consultando al médico."
+    },
+    "preparacion": [
+      { "forma": "infusión", "instrucciones": "1-2 g de planta seca en 200 ml de agua hirviendo. Infusionar 10 min. Colar.", "dosis": "3 tazas/día al inicio de los síntomas", "duracion": "Máximo 10-14 días seguidos. Descanso de igual duración." }
+    ],
+    "contraindicaciones": ["Enfermedades autoinmunes (lupus, EII, esclerosis múltiple)", "Alergia a Asteraceae", "Inmunosupresión farmacológica", "Embarazo: evitar en primer trimestre"],
+    "interaccionesMedicamentosas": ["Inmunosupresores (ciclosporina, corticosteroides): antagonismo", "Metotrexato: precaución"],
+    "embarazoLactancia": "precaución",
+    "principiosActivos": ["alquilamidas", "polisacáridos", "glicoproteínas", "ácido chicórico"],
+    "infusionesRelacionadas": ["antigripal", "inmune-clasica"],
+    "mindfulnessRelacionado": [],
+    "emoji": "💜",
+    "etiquetas": ["inmunoestimulante", "antiviral", "gripe", "resfriado", "corto-plazo"],
+    "fuentes": [
+      { "autor": "Shah SA et al.", "titulo": "Evaluation of Echinacea for the prevention and treatment of the common cold", "año": 2007, "tipo": "revisión-sistemática" },
+      { "autor": "EMA", "titulo": "Community herbal monograph on Echinacea purpurea", "año": 2015, "tipo": "monografía-EMA" }
+    ],
+    "fechaRevision": "2026-04-01"
+  },
+  {
+    "id": "ajo",
+    "nombreComun": "Ajo",
+    "nombresAlternativos": ["ajocomún", "garlic"],
+    "nombreCientifico": "Allium sativum L.",
+    "familia": "Amaryllidaceae",
+    "origen": "Asia Central",
+    "partesUsadas": ["bulbo"],
+    "resumen": "Uno de los alimentos medicinales más antiguos y estudiados. El ajo posee propiedades antimicrobianas, cardiovasculares e inmunoestimulantes con sólido respaldo en estudios clínicos.",
+    "propiedades": [
+      { "nombre": "antimicrobiana", "nivelEvidencia": "fuerte" },
+      { "nombre": "inmunoestimulante", "nivelEvidencia": "fuerte" },
+      { "nombre": "hipotensora leve", "nivelEvidencia": "moderado" },
+      { "nombre": "hipolipemiante", "nivelEvidencia": "moderado" },
+      { "nombre": "antifúngica", "nivelEvidencia": "moderado" }
+    ],
+    "dolencias": [
+      { "nombre": "infecciones respiratorias", "categoria": "respiratorio", "nivelEvidencia": "moderado" },
+      { "nombre": "hipertensión leve", "categoria": "cardiovascular", "nivelEvidencia": "moderado" },
+      { "nombre": "colesterol elevado", "categoria": "cardiovascular", "nivelEvidencia": "moderado" },
+      { "nombre": "infecciones intestinales (coadyuvante)", "categoria": "digestivo", "nivelEvidencia": "preliminar" }
+    ],
+    "sistemas": ["inmunológico", "cardiovascular", "respiratorio"],
+    "modoEII": {
+      "aptaEnBrote": false,
+      "notaBrote": "Evitar en brote activo: puede irritar la mucosa intestinal inflamada, especialmente el ajo crudo.",
+      "aptaEnMantenimiento": true,
+      "notaMantenimiento": "Bien tolerado en mantenimiento cuando se usa cocinado. El ajo negro fermentado tiene menos efectos irritantes."
+    },
+    "preparacion": [
+      { "forma": "decocción", "instrucciones": "2-3 dientes de ajo machacados en 200 ml de agua. Hervir 5 min. Colar. Tomar caliente.", "dosis": "1-2 tazas/día", "duracion": "Durante el proceso infeccioso o preventivo (no más de 2-3 semanas)" }
+    ],
+    "contraindicaciones": ["Reflujo gastroesofágico severo (puede agravar)", "Precaución antes de cirugía (anticoagulante leve)", "Colon irritable con hipersensibilidad a fructanos (FODMAP alto)"],
+    "interaccionesMedicamentosas": ["Anticoagulantes (warfarina): potencia el efecto", "Antihipertensivos: puede potenciar la bajada de tensión", "Antirretrovirales: puede reducir niveles plasmáticos"],
+    "embarazoLactancia": "precaución",
+    "principiosActivos": ["alicina", "ajoeno", "sulfuros de dialilo", "quercetina", "selenio"],
+    "infusionesRelacionadas": ["antigripal", "cardiovascular-clasica"],
+    "mindfulnessRelacionado": [],
+    "emoji": "🧄",
+    "etiquetas": ["antimicrobiana", "cardiovascular", "inmune", "antiinflamatoria", "alimento-medicinal"],
+    "fuentes": [
+      { "autor": "OMS", "titulo": "WHO Monographs — Bulbus Allii Sativi", "año": 1999, "tipo": "monografía-OMS" },
+      { "autor": "Ried K", "titulo": "Garlic lowers blood pressure in hypertensive individuals", "año": 2016, "tipo": "revisión-sistemática" }
+    ],
+    "fechaRevision": "2026-04-01"
+  }
+]

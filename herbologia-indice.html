@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>NathuraVitae — Herbología</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Nunito:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --v1:#14372a; --v2:#1f5c42; --v3:#2e8b5a; --v4:#52b880;
+  --vp:#edf7f1; --vm:#c3e8d0; --vt:#8dd4ac;
+  --crema:#f9f6ef; --crema2:#f0ebe0; --crema3:#e4ddd0;
+  --tx:#1a1a17; --tx2:#484842; --tx3:#8a8880;
+  --amb:#b8720e; --ambp:#fdf1e0; --ambm:#f0c878;
+  --mora:#5e4d8c; --morap:#eeebf8; --moram:#c8c0e8;
+  --roj:#a83838; --rojp:#fce8e8;
+  --azul:#1e5490; --azulp:#e6eef8;
+  --borde:rgba(20,55,42,0.10);
+  --sombra:0 2px 24px rgba(20,55,42,0.07);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Nunito',sans-serif;background:var(--crema);color:var(--tx);min-height:100vh;padding-bottom:40px}
+
+/* ─── APP BAR ─── */
+.appbar{
+  background:var(--v1);padding:14px 20px;
+  display:flex;align-items:center;gap:12px;
+  position:sticky;top:0;z-index:30
+}
+.appbar-back{width:32px;height:32px;border-radius:50%;background:rgba(255,255,255,.12);
+  display:flex;align-items:center;justify-content:center;border:none;cursor:pointer}
+.appbar-title{font-family:'Playfair Display',serif;font-size:18px;color:white;font-weight:400;letter-spacing:.3px}
+.appbar-count{margin-left:auto;font-size:12px;color:rgba(255,255,255,.6);font-weight:300}
+
+/* ─── HERO ─── */
+.hero{background:var(--v1);padding:6px 20px 30px;position:relative}
+.hero-eyebrow{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;
+  color:rgba(255,255,255,.45);margin-bottom:8px;font-weight:400}
+.hero-title{font-family:'Playfair Display',serif;font-size:30px;color:white;
+  font-weight:600;line-height:1.18;margin-bottom:6px}
+.hero-title em{font-style:italic;font-weight:400;color:var(--vt)}
+.hero-sub{font-size:13px;color:rgba(255,255,255,.55);line-height:1.55;font-weight:300}
+.hero-deco{position:absolute;right:16px;top:16px;opacity:.06;
+  font-size:96px;line-height:1;pointer-events:none;user-select:none}
+
+/* search */
+.search-wrap{margin:16px 20px 0;position:relative}
+.search-input{
+  width:100%;padding:12px 16px 12px 44px;
+  border-radius:12px;border:none;
+  background:rgba(255,255,255,.13);
+  color:white;font-size:14px;font-family:'Nunito',sans-serif;
+  font-weight:400;outline:none;transition:background .2s
+}
+.search-input::placeholder{color:rgba(255,255,255,.38)}
+.search-input:focus{background:rgba(255,255,255,.2)}
+.search-ico{position:absolute;left:14px;top:50%;transform:translateY(-50%);
+  pointer-events:none;opacity:.45}
+.clear-btn{position:absolute;right:12px;top:50%;transform:translateY(-50%);
+  background:none;border:none;color:rgba(255,255,255,.5);cursor:pointer;
+  font-size:18px;line-height:1;display:none}
+
+/* wave */
+.wave{display:block;width:100%;margin-top:-1px}
+
+/* ─── MODO SWITCH (tabs) ─── */
+.modo-tabs{display:flex;gap:4px;margin:0 16px 16px;
+  background:var(--crema2);border-radius:12px;padding:4px;border:1px solid var(--borde)}
+.modo-tab{flex:1;padding:9px 6px;border:none;border-radius:9px;
+  font-family:'Nunito',sans-serif;font-size:13px;font-weight:500;
+  cursor:pointer;background:transparent;color:var(--tx3);transition:all .2s;
+  display:flex;align-items:center;justify-content:center;gap:6px}
+.modo-tab.act{background:var(--v1);color:white;box-shadow:0 1px 6px rgba(20,55,42,.18)}
+
+/* ─── PANEL A-Z ─── */
+/* sticky alphabet rail */
+.alfa-rail{
+  position:sticky;top:60px;z-index:20;
+  background:var(--crema);
+  padding:10px 16px 8px;
+  border-bottom:1px solid var(--borde);
+  display:flex;flex-wrap:wrap;gap:4px
+}
+.alfa-btn{
+  width:28px;height:28px;border-radius:7px;border:none;
+  font-size:12px;font-weight:600;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;
+  background:transparent;color:var(--tx3);transition:all .15s;font-family:'Nunito',sans-serif
+}
+.alfa-btn.tiene{color:var(--v2);background:var(--vp)}
+.alfa-btn.activo{background:var(--v1);color:white;transform:scale(1.05)}
+.alfa-btn.vacio{opacity:.3;cursor:default}
+
+/* letra separador */
+.letra-sep{
+  padding:20px 20px 8px;
+  font-family:'Playfair Display',serif;
+  font-size:28px;color:var(--v1);font-weight:600;
+  display:flex;align-items:center;gap:12px
+}
+.letra-sep::after{content:'';flex:1;height:1px;background:var(--vm)}
+
+/* plant cards */
+.plantas-lista{padding:0 16px}
+.planta-card{
+  display:flex;align-items:flex-start;gap:14px;
+  padding:14px 0;border-bottom:1px solid var(--borde);
+  cursor:pointer;transition:all .18s;position:relative
+}
+.planta-card:last-child{border-bottom:none}
+.planta-card:hover .card-inner{transform:translateX(3px)}
+.card-inner{display:flex;align-items:flex-start;gap:14px;flex:1;transition:transform .18s}
+.p-ico{
+  width:46px;height:46px;border-radius:12px;flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;
+  font-size:22px;background:var(--vp);border:1px solid var(--vm)
+}
+.p-info{flex:1;min-width:0}
+.p-nom{font-size:15px;font-weight:600;color:var(--tx);line-height:1.2;margin-bottom:2px}
+.p-ci{font-family:'Playfair Display',serif;font-style:italic;font-size:12px;
+  color:var(--tx3);margin-bottom:6px}
+.p-tags{display:flex;flex-wrap:wrap;gap:4px}
+.p-tag{font-size:10px;padding:2px 8px;border-radius:8px;font-weight:500;
+  white-space:nowrap;border:1px solid}
+.t-digestivo{background:var(--vp);color:var(--v2);border-color:var(--vm)}
+.t-nervioso{background:var(--morap);color:var(--mora);border-color:var(--moram)}
+.t-respiratorio{background:var(--azulp);color:var(--azul);border-color:#b0c8ec}
+.t-hormonal{background:#fdf0f8;color:#9e4075;border-color:#e8b8d4}
+.t-musculoesqueletico{background:var(--ambp);color:var(--amb);border-color:var(--ambm)}
+.t-inmunologico{background:#f0f8e8;color:#3c6818;border-color:#b8dc90}
+.t-cardiovascular{background:var(--rojp);color:var(--roj);border-color:#f0b8b8}
+.t-general{background:var(--crema2);color:var(--tx2);border-color:var(--crema3)}
+.t-dermatologico{background:#fff8e8;color:#7a5c10;border-color:#e8d090}
+.evid-pill{
+  display:flex;align-items:center;gap:4px;
+  font-size:10px;padding:3px 8px;border-radius:8px;font-weight:600
+}
+.ef{background:var(--vp);color:var(--v2);border:1px solid var(--vm)}
+.em{background:#f0f8e8;color:#3c6818;border:1px solid #b8dc90}
+.ep{background:var(--ambp);color:var(--amb);border:1px solid var(--ambm)}
+.evid-dot{width:6px;height:6px;border-radius:50%}
+.ef .evid-dot{background:var(--v3)}
+.em .evid-dot{background:#78b840}
+.ep .evid-dot{background:var(--ambm)}
+.p-chevron{
+  flex-shrink:0;margin-top:12px;opacity:.25;
+  transition:opacity .18s
+}
+.planta-card:hover .p-chevron{opacity:.6}
+
+/* eii badge */
+.eii-ok{
+  display:inline-flex;align-items:center;gap:3px;
+  font-size:9px;padding:2px 6px;border-radius:6px;
+  background:#e0f5e8;color:var(--v2);border:1px solid var(--vt);
+  font-weight:600;letter-spacing:.3px
+}
+.eii-no{
+  display:inline-flex;align-items:center;gap:3px;
+  font-size:9px;padding:2px 6px;border-radius:6px;
+  background:var(--rojp);color:var(--roj);border:1px solid #f0b8b8;
+  font-weight:600;letter-spacing:.3px
+}
+
+/* ─── PANEL DOLENCIAS ─── */
+.dolencias-wrap{padding:0 16px}
+.dolencia-grupo{margin-bottom:24px}
+.dol-grupo-title{
+  font-size:10px;letter-spacing:.9px;text-transform:uppercase;
+  color:var(--v2);font-weight:600;
+  margin-bottom:10px;padding-top:16px;
+  display:flex;align-items:center;gap:8px
+}
+.dol-grupo-title::after{content:'';flex:1;height:1px;background:var(--vm)}
+.dol-btn{
+  width:100%;display:flex;align-items:center;gap:12px;
+  padding:12px 14px;margin-bottom:6px;
+  background:white;border-radius:12px;border:1px solid var(--borde);
+  cursor:pointer;text-align:left;font-family:'Nunito',sans-serif;
+  transition:all .18s;box-shadow:var(--sombra)
+}
+.dol-btn:hover{border-color:var(--vt);background:var(--vp)}
+.dol-btn.sel{border-color:var(--v2);background:var(--vp);box-shadow:0 0 0 1px var(--v2)}
+.dol-ico{
+  width:38px;height:38px;border-radius:10px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:18px;flex-shrink:0
+}
+.dol-nom{font-size:14px;font-weight:600;color:var(--tx);line-height:1.2}
+.dol-count{font-size:11px;color:var(--tx3);margin-top:1px}
+.dol-arrow{margin-left:auto;opacity:.3;flex-shrink:0}
+
+/* resultado filtrado por dolencia */
+.dol-resultado{
+  margin:0 16px 24px;
+  background:var(--vp);border-radius:14px;
+  border:1px solid var(--vm);padding:16px;
+  display:none
+}
+.dol-resultado.visible{display:block}
+.dol-res-title{
+  font-family:'Playfair Display',serif;font-size:16px;
+  color:var(--v1);margin-bottom:14px;
+  display:flex;align-items:center;gap:8px
+}
+.dol-res-list{}
+.dol-plant-row{
+  display:flex;align-items:center;gap:12px;
+  padding:10px 12px;border-radius:10px;
+  background:white;border:1px solid var(--borde);
+  margin-bottom:7px;cursor:pointer;transition:background .15s
+}
+.dol-plant-row:hover{background:var(--vp)}
+.dol-plant-ico{font-size:20px}
+.dol-plant-nom{font-size:14px;font-weight:600;color:var(--tx);flex:1}
+.dol-plant-evid{font-size:10px;font-weight:600;
+  padding:2px 8px;border-radius:7px}
+.dol-plant-nota{font-size:11px;color:var(--tx3);margin-top:2px}
+
+/* ─── EMPTY / NO RESULTS ─── */
+.sin-resultados{
+  padding:40px 20px;text-align:center;display:none
+}
+.sin-resultados.visible{display:block}
+.sin-ico{font-size:40px;margin-bottom:12px}
+.sin-txt{font-size:14px;color:var(--tx3);line-height:1.6}
+
+/* ─── STATS BAR ─── */
+.stats-bar{
+  display:flex;gap:0;margin:0 16px 16px;
+  background:white;border-radius:12px;border:1px solid var(--borde);
+  overflow:hidden
+}
+.stat-item{flex:1;padding:12px 8px;text-align:center;border-right:1px solid var(--borde)}
+.stat-item:last-child{border-right:none}
+.stat-num{font-family:'Playfair Display',serif;font-size:22px;color:var(--v1);font-weight:600}
+.stat-lbl{font-size:10px;color:var(--tx3);margin-top:2px;font-weight:400;letter-spacing:.3px}
+
+/* ─── FADE-IN ─── */
+@keyframes fadeUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+.planta-card,.dol-btn{animation:fadeUp .3s ease both}
+</style>
+</head>
+<body>
+
+<!-- APP BAR -->
+<div class="appbar">
+  <button class="appbar-back">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round"><path d="M15 18l-6-6 6-6"/></svg>
+  </button>
+  <span class="appbar-title">Herbología</span>
+  <span class="appbar-count" id="totalCount">15 plantas</span>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-deco">🌿</div>
+  <div class="hero-eyebrow">NathuraVitae · Catálogo</div>
+  <div class="hero-title">Plantas <em>medicinales</em></div>
+  <div class="hero-sub">Fichas con respaldo científico OMS · EMA · estudios clínicos</div>
+  <div class="search-wrap">
+    <svg class="search-ico" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    <input class="search-input" id="searchInput" type="text" placeholder="Buscar planta, propiedad o uso…" oninput="onSearch(this.value)">
+    <button class="clear-btn" id="clearBtn" onclick="clearSearch()">×</button>
+  </div>
+</div>
+<svg class="wave" viewBox="0 0 390 20" preserveAspectRatio="none" fill="#f9f6ef">
+  <path d="M0,20 L0,10 Q97.5,0 195,10 Q292.5,20 390,10 L390,20 Z"/>
+</svg>
+
+<!-- STATS -->
+<div class="stats-bar">
+  <div class="stat-item"><div class="stat-num">15</div><div class="stat-lbl">Plantas</div></div>
+  <div class="stat-item"><div class="stat-num">8</div><div class="stat-lbl">Sistemas</div></div>
+  <div class="stat-item"><div class="stat-num">28</div><div class="stat-lbl">Dolencias</div></div>
+  <div class="stat-item"><div class="stat-num">12</div><div class="stat-lbl">Fuentes OMS/EMA</div></div>
+</div>
+
+<!-- MODO TABS -->
+<div class="modo-tabs">
+  <button class="modo-tab act" id="tabAZ" onclick="setModo('az')">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+    Índice A–Z
+  </button>
+  <button class="modo-tab" id="tabDol" onclick="setModo('dolencia')">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+    Por dolencia
+  </button>
+</div>
+
+<!-- PANEL A-Z -->
+<div id="panelAZ">
+  <div class="alfa-rail" id="alfaRail"></div>
+  <div id="plantasContainer"></div>
+  <div class="sin-resultados" id="sinResultados">
+    <div class="sin-ico">🔍</div>
+    <div class="sin-txt">No se encontraron plantas.<br>Intenta con otro término.</div>
+  </div>
+</div>
+
+<!-- PANEL DOLENCIAS -->
+<div id="panelDol" style="display:none">
+  <div class="dol-resultado" id="dolResultado"></div>
+  <div class="dolencias-wrap" id="dolenciasContainer"></div>
+</div>
+
+<script>
+/* ══════════════════════════════════════
+   DATOS
+══════════════════════════════════════ */
+const PLANTAS = [
+  {
+    id:"aloe-vera", nom:"Aloe vera", ci:"Aloe vera (L.) Burm.f.",
+    familia:"Asphodelaceae", emoji:"🌵",
+    partes:["hoja","gel interno"],
+    resumen:"El gel interno protege y regenera la mucosa intestinal. Estudiado en colitis ulcerosa.",
+    sistemas:["digestivo","dermatológico"],
+    dolencias:[
+      {nom:"Colitis ulcerosa leve",cat:"digestivo",evid:"moderado"},
+      {nom:"Síndrome de intestino irritable",cat:"digestivo",evid:"moderado"},
+      {nom:"Estreñimiento (látex)",cat:"digestivo",evid:"fuerte"},
+      {nom:"Quemaduras y heridas",cat:"dermatológico",evid:"fuerte"}
+    ],
+    propPrincipal:"Demulcente · protector de mucosa",
+    evidPrincipal:"moderado",
+    eiiSegura:true, noEIIBrote:false,
+    etiquetas:["demulcente","mucosa","piel","apta-eii"],
+    fuentes:["EMA 2013","Langmead et al. 2004"]
+  },
+  {
+    id:"ajo", nom:"Ajo", ci:"Allium sativum L.",
+    familia:"Amaryllidaceae", emoji:"🧄",
+    partes:["bulbo"],
+    resumen:"Alimento medicinal con actividad antimicrobiana, cardiovascular e inmunoestimulante de alto respaldo científico.",
+    sistemas:["inmunológico","cardiovascular","respiratorio"],
+    dolencias:[
+      {nom:"Infecciones respiratorias",cat:"respiratorio",evid:"moderado"},
+      {nom:"Hipertensión leve",cat:"cardiovascular",evid:"moderado"},
+      {nom:"Colesterol elevado",cat:"cardiovascular",evid:"moderado"},
+      {nom:"Defensas bajas",cat:"inmunológico",evid:"moderado"}
+    ],
+    propPrincipal:"Antimicrobiana · inmunoestimulante",
+    evidPrincipal:"fuerte",
+    eiiSegura:true, noEIIBrote:true,
+    etiquetas:["antimicrobiana","cardiovascular","inmune"],
+    fuentes:["OMS 1999","Ried K 2016"]
+  },
+  {
+    id:"ashwagandha", nom:"Ashwagandha", ci:"Withania somnifera (L.) Dunal",
+    familia:"Solanaceae", emoji:"🌰",
+    partes:["raíz"],
+    resumen:"Adaptógeno ayurvédico con sólido respaldo científico para el estrés crónico, la ansiedad y la fatiga.",
+    sistemas:["nervioso","inmunológico","general"],
+    dolencias:[
+      {nom:"Estrés crónico",cat:"nervioso",evid:"fuerte"},
+      {nom:"Ansiedad",cat:"nervioso",evid:"fuerte"},
+      {nom:"Fatiga crónica",cat:"general",evid:"moderado"},
+      {nom:"Insomnio",cat:"nervioso",evid:"moderado"}
+    ],
+    propPrincipal:"Adaptógena · ansiolítica",
+    evidPrincipal:"fuerte",
+    eiiSegura:true, noEIIBrote:true,
+    etiquetas:["adaptógeno","antiestres","ayurveda"],
+    fuentes:["Chandrasekhar et al. 2012","Pratte et al. 2014"]
+  },
+  {
+    id:"curcuma", nom:"Cúrcuma", ci:"Curcuma longa L.",
+    familia:"Zingiberaceae", emoji:"🟡",
+    partes:["rizoma"],
+    resumen:"La curcumina es uno de los antiinflamatorios naturales más potentes y estudiados, con ensayos clínicos en EII y artritis.",
+    sistemas:["digestivo","musculoesquelético","inmunológico"],
+    dolencias:[
+      {nom:"Enfermedad inflamatoria intestinal",cat:"digestivo",evid:"moderado"},
+      {nom:"Colitis ulcerosa",cat:"digestivo",evid:"moderado"},
+      {nom:"Artritis",cat:"musculoesquelético",evid:"moderado"},
+      {nom:"Dispepsia",cat:"digestivo",evid:"moderado"}
+    ],
+    propPrincipal:"Antiinflamatoria · antioxidante",
+    evidPrincipal:"fuerte",
+    eiiSegura:true, noEIIBrote:true,
+    etiquetas:["antiinflamatoria","eii","artritis","superalimento"],
+    fuentes:["EMA 2018","Hanai H et al. 2006"]
+  },
+  {
+    id:"equinacea", nom:"Equinácea", ci:"Echinacea purpurea (L.) Moench",
+    familia:"Asteraceae", emoji:"💜",
+    partes:["raíz","planta aérea"],
+    resumen:"La planta inmunoestimulante más vendida en Europa. Reduce la incidencia de resfriados en un 35% y acorta su duración.",
+    sistemas:["inmunológico","respiratorio"],
+    dolencias:[
+      {nom:"Resfriado y gripe",cat:"respiratorio",evid:"fuerte"},
+      {nom:"Infecciones respiratorias recurrentes",cat:"respiratorio",evid:"fuerte"},
+      {nom:"Defensas bajas",cat:"inmunológico",evid:"fuerte"}
+    ],
+    propPrincipal:"Inmunoestimulante · antiviral",
+    evidPrincipal:"fuerte",
+    eiiSegura:false, noEIIBrote:true,
+    etiquetas:["inmunoestimulante","antiviral","gripe"],
+    fuentes:["EMA 2015","Shah SA et al. 2007"]
+  },
+  {
+    id:"eucalipto", nom:"Eucalipto", ci:"Eucalyptus globulus Labill.",
+    familia:"Myrtaceae", emoji:"🌲",
+    partes:["hoja"],
+    resumen:"El cineol del eucalipto es el descongestionante natural más eficaz para las vías respiratorias superiores, con aval de la EMA.",
+    sistemas:["respiratorio"],
+    dolencias:[
+      {nom:"Congestión nasal y sinusitis",cat:"respiratorio",evid:"fuerte"},
+      {nom:"Bronquitis",cat:"respiratorio",evid:"fuerte"},
+      {nom:"Resfriado común",cat:"respiratorio",evid:"moderado"}
+    ],
+    propPrincipal:"Descongestionante · expectorante",
+    evidPrincipal:"fuerte",
+    eiiSegura:true, noEIIBrote:false,
+    etiquetas:["descongestionante","respiratoria","sinusitis"],
+    fuentes:["EMA 2013"]
+  },
+  {
+    id:"hinojo", nom:"Hinojo", ci:"Foeniculum vulgare Mill.",
+    familia:"Apiaceae", emoji:"🌱",
+    partes:["semilla","fruto"],
+    resumen:"La planta carminativa por excelencia. Muy eficaz para gases, distensión abdominal y cólicos. Segura en brote de EII.",
+    sistemas:["digestivo"],
+    dolencias:[
+      {nom:"Gases y flatulencia",cat:"digestivo",evid:"fuerte"},
+      {nom:"Distensión abdominal",cat:"digestivo",evid:"fuerte"},
+      {nom:"Cólicos",cat:"digestivo",evid:"moderado"},
+      {nom:"Síndrome de intestino irritable",cat:"digestivo",evid:"moderado"}
+    ],
+    propPrincipal:"Carminativa · antiespasmódica",
+    evidPrincipal:"fuerte",
+    eiiSegura:true, noEIIBrote:false,
+    etiquetas:["carminativa","digestiva","apta-eii","apta-brote"],
+    fuentes:["EMA 2008","OMS 1999"]
+  },
+  {
+    id:"jengibre", nom:"Jengibre", ci:"Zingiber officinale Roscoe",
+    familia:"Zingiberaceae", emoji:"🫚",
+    partes:["rizoma"],
+    resumen:"Raíz con potentes propiedades antiinflamatorias y antináuseas. Uno de los remedios más respaldados por la ciencia moderna.",
+    sistemas:["digestivo","musculoesquelético","inmunológico"],
+    dolencias:[
+      {nom:"Náuseas y vómitos",cat:"digestivo",evid:"fuerte"},
+      {nom:"Dispepsia",cat:"digestivo",evid:"fuerte"},
+      {nom:"Gases y flatulencia",cat:"digestivo",evid:"moderado"},
+      {nom:"Dolor articular",cat:"musculoesquelético",evid:"moderado"}
+    ],
+    propPrincipal:"Antiinflamatoria · antináuseas",
+    evidPrincipal:"fuerte",
+    eiiSegura:true, noEIIBrote:true,
+    etiquetas:["digestiva","antiinflamatoria","antináuseas"],
+    fuentes:["OMS 1999","EMA 2012"]
+  },
+  {
+    id:"manzanilla", nom:"Manzanilla", ci:"Matricaria chamomilla L.",
+    familia:"Asteraceae", emoji:"🌼",
+    partes:["flor"],
+    resumen:"Una de las plantas más estudiadas del mundo. Antiinflamatoria, antiespasmódica y calmante con amplio respaldo científico.",
+    sistemas:["digestivo","nervioso","hormonal"],
+    dolencias:[
+      {nom:"Colitis leve",cat:"digestivo",evid:"moderado"},
+      {nom:"Gastritis",cat:"digestivo",evid:"moderado"},
+      {nom:"Síndrome de intestino irritable",cat:"digestivo",evid:"moderado"},
+      {nom:"Insomnio leve",cat:"nervioso",evid:"moderado"},
+      {nom:"Ansiedad leve",cat:"nervioso",evid:"moderado"},
+      {nom:"Cólicos menstruales",cat:"hormonal",evid:"moderado"}
+    ],
+    propPrincipal:"Antiinflamatoria · antiespasmódica",
+    evidPrincipal:"fuerte",
+    eiiSegura:true, noEIIBrote:false,
+    etiquetas:["digestiva","calmante","apta-eii","nervina"],
+    fuentes:["OMS 1999","EMA 2015"]
+  },
+  {
+    id:"melisa", nom:"Melisa", ci:"Melissa officinalis L.",
+    familia:"Lamiaceae", emoji:"🍋",
+    partes:["hoja"],
+    resumen:"Doble acción: calmante del sistema nervioso y antiespasmódica digestiva. Ideal cuando el estrés se manifiesta en el intestino.",
+    sistemas:["nervioso","digestivo"],
+    dolencias:[
+      {nom:"Colon irritable de origen nervioso",cat:"digestivo",evid:"moderado"},
+      {nom:"Ansiedad con síntomas digestivos",cat:"nervioso",evid:"moderado"},
+      {nom:"Gases y distensión",cat:"digestivo",evid:"fuerte"},
+      {nom:"Insomnio leve",cat:"nervioso",evid:"moderado"}
+    ],
+    propPrincipal:"Ansiolítica · antiespasmódica digestiva",
+    evidPrincipal:"moderado",
+    eiiSegura:true, noEIIBrote:false,
+    etiquetas:["calmante","digestiva","apta-eii","estrés-digestivo"],
+    fuentes:["EMA 2013","Cases J et al. 2011"]
+  },
+  {
+    id:"pasiflora", nom:"Pasiflora", ci:"Passiflora incarnata L.",
+    familia:"Passifloraceae", emoji:"🌺",
+    partes:["hoja","tallo","flor"],
+    resumen:"Ansiolítica suave de origen americano avalada por la EMA. Muy bien tolerada incluso de día, sin somnolencia excesiva.",
+    sistemas:["nervioso","cardiovascular"],
+    dolencias:[
+      {nom:"Ansiedad leve a moderada",cat:"nervioso",evid:"fuerte"},
+      {nom:"Insomnio leve",cat:"nervioso",evid:"moderado"},
+      {nom:"Nerviosismo y tensión",cat:"nervioso",evid:"fuerte"},
+      {nom:"Palpitaciones funcionales",cat:"cardiovascular",evid:"preliminar"}
+    ],
+    propPrincipal:"Ansiolítica · sedante suave",
+    evidPrincipal:"fuerte",
+    eiiSegura:true, noEIIBrote:false,
+    etiquetas:["ansiolítica","sedante-suave","diurna","estrés"],
+    fuentes:["EMA 2014","Akhondzadeh et al. 2001"]
+  },
+  {
+    id:"regaliz", nom:"Regaliz DGL", ci:"Glycyrrhiza glabra L.",
+    familia:"Fabaceae", emoji:"🟤",
+    partes:["raíz"],
+    resumen:"El regaliz desglicoricínico (DGL) protege la mucosa gástrica sin elevar la presión arterial. Referencia en gastritis y úlceras.",
+    sistemas:["digestivo","respiratorio"],
+    dolencias:[
+      {nom:"Gastritis",cat:"digestivo",evid:"fuerte"},
+      {nom:"Úlcera gástrica",cat:"digestivo",evid:"moderado"},
+      {nom:"Reflujo gastroesofágico",cat:"digestivo",evid:"moderado"},
+      {nom:"Tos y bronquitis",cat:"respiratorio",evid:"moderado"}
+    ],
+    propPrincipal:"Gastroprotectora · antiinflamatoria",
+    evidPrincipal:"fuerte",
+    eiiSegura:true, noEIIBrote:false,
+    etiquetas:["gastroprotectora","mucosa","dgl","apta-eii"],
+    fuentes:["OMS 1999","EMA 2012"]
+  },
+  {
+    id:"sauco", nom:"Saúco", ci:"Sambucus nigra L.",
+    familia:"Adoxaceae", emoji:"🫐",
+    partes:["flor","fruto"],
+    resumen:"Las flores y bayas de saúco reducen la duración de la gripe 2-4 días según metaanálisis. El mejor antiviral natural disponible.",
+    sistemas:["respiratorio","inmunológico"],
+    dolencias:[
+      {nom:"Resfriado común",cat:"respiratorio",evid:"fuerte"},
+      {nom:"Gripe (influenza)",cat:"respiratorio",evid:"fuerte"},
+      {nom:"Sinusitis",cat:"respiratorio",evid:"moderado"},
+      {nom:"Fiebre",cat:"general",evid:"moderado"}
+    ],
+    propPrincipal:"Antiviral · inmunoestimulante",
+    evidPrincipal:"fuerte",
+    eiiSegura:false, noEIIBrote:true,
+    etiquetas:["antiviral","gripe","respiratoria","bayas"],
+    fuentes:["Zakay-Rones et al. 2004","Hawkins et al. 2019"]
+  },
+  {
+    id:"tomillo", nom:"Tomillo", ci:"Thymus vulgaris L.",
+    familia:"Lamiaceae", emoji:"🌿",
+    partes:["hoja","flor"],
+    resumen:"Expectorante y antiséptico respiratorio natural con aval de la EMA. Eficaz en tos, bronquitis y faringitis.",
+    sistemas:["respiratorio"],
+    dolencias:[
+      {nom:"Tos seca y productiva",cat:"respiratorio",evid:"fuerte"},
+      {nom:"Bronquitis",cat:"respiratorio",evid:"fuerte"},
+      {nom:"Faringitis",cat:"respiratorio",evid:"moderado"},
+      {nom:"Infecciones respiratorias",cat:"respiratorio",evid:"moderado"}
+    ],
+    propPrincipal:"Expectorante · antimicrobiana",
+    evidPrincipal:"fuerte",
+    eiiSegura:true, noEIIBrote:false,
+    etiquetas:["expectorante","tos","bronquitis","antiséptica"],
+    fuentes:["EMA 2013","Kemmerich et al. 2006"]
+  },
+  {
+    id:"valeriana", nom:"Valeriana", ci:"Valeriana officinalis L.",
+    familia:"Caprifoliaceae", emoji:"🌸",
+    partes:["raíz","rizoma"],
+    resumen:"La planta sedante e hipnótica más estudiada en fitoterapia europea. Avalada por la EMA para insomnio leve y ansiedad.",
+    sistemas:["nervioso","musculoesquelético"],
+    dolencias:[
+      {nom:"Insomnio leve a moderado",cat:"nervioso",evid:"fuerte"},
+      {nom:"Ansiedad",cat:"nervioso",evid:"moderado"},
+      {nom:"Nerviosismo y tensión",cat:"nervioso",evid:"moderado"},
+      {nom:"Espasmos musculares",cat:"musculoesquelético",evid:"moderado"}
+    ],
+    propPrincipal:"Sedante · hipnótica",
+    evidPrincipal:"fuerte",
+    eiiSegura:true, noEIIBrote:false,
+    etiquetas:["sedante","insomnio","ansiedad","nervina"],
+    fuentes:["EMA 2016","Bent S et al. 2006"]
+  }
+];
+
+/* ══════════════════════════════════════
+   DOLENCIAS AGRUPADAS
+══════════════════════════════════════ */
+const DOLENCIAS_GRUPOS = {
+  "Digestivo": {
+    ico:"🫁", color:"t-digestivo",
+    bg:"#edf7f1", iconBg:"#c3e8d0",
+    items:[
+      {nom:"Colitis / inflamación intestinal", emoji:"🔥"},
+      {nom:"Gastritis y acidez",               emoji:"🤢"},
+      {nom:"Gases y flatulencia",               emoji:"💨"},
+      {nom:"Síndrome de intestino irritable",   emoji:"〰️"},
+      {nom:"Náuseas y vómitos",                 emoji:"🌀"},
+      {nom:"Úlcera gástrica / reflujo",         emoji:"⚗️"}
+    ]
+  },
+  "Sistema nervioso": {
+    ico:"🧠", color:"t-nervioso",
+    bg:"#eeebf8", iconBg:"#c8c0e8",
+    items:[
+      {nom:"Ansiedad / nerviosismo",  emoji:"😰"},
+      {nom:"Insomnio",               emoji:"🌙"},
+      {nom:"Estrés crónico",         emoji:"🧠"},
+      {nom:"Fatiga y agotamiento",   emoji:"😴"}
+    ]
+  },
+  "Respiratorio": {
+    ico:"🫁", color:"t-respiratorio",
+    bg:"#e6eef8", iconBg:"#b0c8ec",
+    items:[
+      {nom:"Tos y bronquitis",           emoji:"🤧"},
+      {nom:"Congestión y sinusitis",     emoji:"👃"},
+      {nom:"Gripe y resfriado",          emoji:"🤒"},
+      {nom:"Infecciones respiratorias",  emoji:"🦠"}
+    ]
+  },
+  "Inmunológico": {
+    ico:"🛡️", color:"t-inmunologico",
+    bg:"#f0f8e8", iconBg:"#b8dc90",
+    items:[
+      {nom:"Defensas bajas",           emoji:"🛡️"},
+      {nom:"Infecciones recurrentes",  emoji:"🔄"}
+    ]
+  },
+  "Musculoesquelético": {
+    ico:"💪", color:"t-musculoesqueletico",
+    bg:"#fdf1e0", iconBg:"#f0c878",
+    items:[
+      {nom:"Dolor articular",       emoji:"🦴"},
+      {nom:"Espasmos musculares",   emoji:"💪"},
+      {nom:"Inflamación articular", emoji:"🔥"}
+    ]
+  },
+  "Hormonal / femenino": {
+    ico:"🌸", color:"t-hormonal",
+    bg:"#fdf0f8", iconBg:"#e8b8d4",
+    items:[
+      {nom:"Cólicos menstruales", emoji:"🌸"}
+    ]
+  },
+  "Cardiovascular": {
+    ico:"❤️", color:"t-cardiovascular",
+    bg:"#fce8e8", iconBg:"#f0b8b8",
+    items:[
+      {nom:"Hipertensión leve",    emoji:"💓"},
+      {nom:"Colesterol elevado",   emoji:"🩸"},
+      {nom:"Palpitaciones leves",  emoji:"💗"}
+    ]
+  },
+  "Piel": {
+    ico:"✨", color:"t-dermatologico",
+    bg:"#fff8e8", iconBg:"#e8d090",
+    items:[
+      {nom:"Quemaduras y heridas", emoji:"🩹"},
+      {nom:"Eccema y dermatitis",  emoji:"✨"}
+    ]
+  }
+};
+
+/* mapa dolencia → plantas */
+const DOL_MAP = {
+  "Colitis / inflamación intestinal": ["manzanilla","hinojo","aloe-vera","curcuma","regaliz"],
+  "Gastritis y acidez":               ["regaliz","manzanilla","aloe-vera"],
+  "Gases y flatulencia":              ["hinojo","melisa","manzanilla","jengibre"],
+  "Síndrome de intestino irritable":  ["manzanilla","hinojo","melisa","aloe-vera"],
+  "Náuseas y vómitos":                ["jengibre","manzanilla"],
+  "Úlcera gástrica / reflujo":        ["regaliz","aloe-vera","manzanilla"],
+  "Ansiedad / nerviosismo":           ["pasiflora","valeriana","melisa","ashwagandha"],
+  "Insomnio":                         ["valeriana","pasiflora","melisa"],
+  "Estrés crónico":                   ["ashwagandha","pasiflora","melisa","valeriana"],
+  "Fatiga y agotamiento":             ["ashwagandha","jengibre"],
+  "Tos y bronquitis":                 ["tomillo","eucalipto","regaliz"],
+  "Congestión y sinusitis":           ["eucalipto","tomillo"],
+  "Gripe y resfriado":                ["sauco","tomillo","ajo","eucalipto"],
+  "Infecciones respiratorias":        ["tomillo","equinacea","ajo","sauco"],
+  "Defensas bajas":                   ["equinacea","sauco","ajo"],
+  "Infecciones recurrentes":          ["equinacea","ajo"],
+  "Dolor articular":                  ["jengibre","curcuma"],
+  "Espasmos musculares":              ["valeriana","manzanilla"],
+  "Inflamación articular":            ["curcuma","jengibre"],
+  "Cólicos menstruales":              ["manzanilla","pasiflora"],
+  "Hipertensión leve":                ["ajo"],
+  "Colesterol elevado":               ["ajo"],
+  "Palpitaciones leves":              ["pasiflora","valeriana"],
+  "Quemaduras y heridas":             ["aloe-vera","manzanilla"],
+  "Eccema y dermatitis":              ["manzanilla","aloe-vera"]
+};
+
+/* ══════════════════════════════════════
+   ESTADO
+══════════════════════════════════════ */
+let modo = 'az';
+let letraActiva = null;
+let busq = '';
+
+/* ══════════════════════════════════════
+   INIT
+══════════════════════════════════════ */
+document.addEventListener('DOMContentLoaded', () => {
+  renderAlfaRail();
+  renderPlantasAZ(PLANTAS);
+  renderDolencias();
+});
+
+/* ══════════════════════════════════════
+   A-Z
+══════════════════════════════════════ */
+function letrasConPlanta() {
+  return new Set(PLANTAS.map(p => p.nom[0].toUpperCase()));
+}
+
+function renderAlfaRail() {
+  const rail = document.getElementById('alfaRail');
+  rail.innerHTML = '';
+  const conPlanta = letrasConPlanta();
+  'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').forEach(l => {
+    const btn = document.createElement('button');
+    btn.className = 'alfa-btn ' + (conPlanta.has(l) ? 'tiene' : 'vacio');
+    btn.textContent = l;
+    if (conPlanta.has(l)) {
+      btn.onclick = () => filtrarLetra(l, btn);
+    }
+    rail.appendChild(btn);
+  });
+}
+
+function filtrarLetra(letra, btn) {
+  const todos = document.querySelectorAll('.alfa-btn');
+  todos.forEach(b => b.classList.remove('activo'));
+  if (letraActiva === letra) {
+    letraActiva = null;
+    renderPlantasAZ(filtradas());
+    return;
+  }
+  letraActiva = letra;
+  btn.classList.add('activo');
+  renderPlantasAZ(filtradas());
+  // scroll suave al grupo
+  setTimeout(() => {
+    const sep = document.querySelector('[data-letra="'+letra+'"]');
+    if (sep) sep.scrollIntoView({behavior:'smooth', block:'start'});
+  }, 80);
+}
+
+function filtradas() {
+  return PLANTAS.filter(p => {
+    const letra = !letraActiva || p.nom[0].toUpperCase() === letraActiva;
+    const texto = !busq || [p.nom,p.ci,p.propPrincipal,...p.etiquetas]
+      .join(' ').toLowerCase().includes(busq.toLowerCase());
+    return letra && texto;
+  });
+}
+
+function renderPlantasAZ(lista) {
+  const cont = document.getElementById('plantasContainer');
+  const sinRes = document.getElementById('sinResultados');
+  cont.innerHTML = '';
+
+  if (!lista.length) {
+    sinRes.classList.add('visible');
+    return;
+  }
+  sinRes.classList.remove('visible');
+
+  // agrupar por letra
+  const grupos = {};
+  lista.forEach(p => {
+    const l = p.nom[0].toUpperCase();
+    if (!grupos[l]) grupos[l] = [];
+    grupos[l].push(p);
+  });
+
+  Object.keys(grupos).sort().forEach(l => {
+    const sep = document.createElement('div');
+    sep.className = 'letra-sep';
+    sep.dataset.letra = l;
+    sep.textContent = l;
+    cont.appendChild(sep);
+
+    const wrap = document.createElement('div');
+    wrap.className = 'plantas-lista';
+    grupos[l].forEach((p, i) => {
+      wrap.appendChild(crearCardPlanta(p, i));
+    });
+    cont.appendChild(wrap);
+  });
+}
+
+function crearCardPlanta(p, i) {
+  const card = document.createElement('div');
+  card.className = 'planta-card';
+  card.style.animationDelay = (i * 40) + 'ms';
+  card.onclick = () => abrirFicha(p.id);
+
+  // sistemas → tags
+  const tagsHTML = p.sistemas.map(s =>
+    `<span class="p-tag t-${s.replace(/[óé]/g, c => c==='ó'?'o':'e').replace(/í/g,'i').replace(/\s+/g,'-')}">${s}</span>`
+  ).join('') +
+  (p.eiiSegura
+    ? '<span class="eii-ok">✓ EII</span>'
+    : '<span class="eii-no">✗ EII</span>');
+
+  const evidCls = {fuerte:'ef',moderado:'em',preliminar:'ep'}[p.evidPrincipal] || 'em';
+
+  card.innerHTML = `
+    <div class="card-inner">
+      <div class="p-ico">${p.emoji}</div>
+      <div class="p-info">
+        <div class="p-nom">${p.nom}</div>
+        <div class="p-ci">${p.ci}</div>
+        <div class="p-tags">
+          ${tagsHTML}
+          <span class="evid-pill ${evidCls}">
+            <span class="evid-dot"></span>
+            ${p.evidPrincipal}
+          </span>
+        </div>
+        <div style="font-size:12px;color:var(--tx3);margin-top:6px;line-height:1.4">${p.propPrincipal}</div>
+      </div>
+    </div>
+    <svg class="p-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--v2)" stroke-width="2" stroke-linecap="round"><path d="M9 18l6-6-6-6"/></svg>`;
+  return card;
+}
+
+/* ══════════════════════════════════════
+   BÚSQUEDA
+══════════════════════════════════════ */
+function onSearch(val) {
+  busq = val;
+  letraActiva = null;
+  document.querySelectorAll('.alfa-btn').forEach(b => b.classList.remove('activo'));
+  document.getElementById('clearBtn').style.display = val ? 'block' : 'none';
+
+  if (modo === 'az') renderPlantasAZ(filtradas());
+}
+
+function clearSearch() {
+  const inp = document.getElementById('searchInput');
+  inp.value = '';
+  busq = '';
+  document.getElementById('clearBtn').style.display = 'none';
+  inp.focus();
+  if (modo === 'az') renderPlantasAZ(filtradas());
+}
+
+/* ══════════════════════════════════════
+   DOLENCIAS
+══════════════════════════════════════ */
+function renderDolencias() {
+  const cont = document.getElementById('dolenciasContainer');
+  cont.innerHTML = '';
+  Object.entries(DOLENCIAS_GRUPOS).forEach(([grupo, data]) => {
+    const g = document.createElement('div');
+    g.className = 'dolencia-grupo';
+
+    const title = document.createElement('div');
+    title.className = 'dol-grupo-title';
+    title.textContent = grupo;
+    g.appendChild(title);
+
+    data.items.forEach(item => {
+      const plantas = (DOL_MAP[item.nom] || []);
+      const btn = document.createElement('button');
+      btn.className = 'dol-btn';
+      btn.style.setProperty('--dol-bg', data.bg);
+      btn.innerHTML = `
+        <div class="dol-ico" style="background:${data.iconBg}">${item.emoji}</div>
+        <div style="flex:1;text-align:left">
+          <div class="dol-nom">${item.nom}</div>
+          <div class="dol-count">${plantas.length} planta${plantas.length!==1?'s':''} disponible${plantas.length!==1?'s':''}</div>
+        </div>
+        <svg class="dol-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--v2)" stroke-width="2" stroke-linecap="round"><path d="M9 18l6-6-6-6"/></svg>`;
+      btn.onclick = () => mostrarPlantasDolencia(item.nom, data, btn);
+      g.appendChild(btn);
+    });
+    cont.appendChild(g);
+  });
+}
+
+function mostrarPlantasDolencia(dolNom, data, btnSel) {
+  // toggle
+  const activo = btnSel.classList.contains('sel');
+  document.querySelectorAll('.dol-btn').forEach(b => b.classList.remove('sel'));
+  const res = document.getElementById('dolResultado');
+  if (activo) { res.classList.remove('visible'); return; }
+
+  btnSel.classList.add('sel');
+  const ids = DOL_MAP[dolNom] || [];
+  const plantas = ids.map(id => PLANTAS.find(p => p.id === id)).filter(Boolean);
+
+  const evidOrd = {fuerte:0,moderado:1,preliminar:2};
+  plantas.sort((a,b) => (evidOrd[a.evidPrincipal]||2)-(evidOrd[b.evidPrincipal]||2));
+
+  const rows = plantas.map(p => {
+    const evidCls = {fuerte:'ef',moderado:'em',preliminar:'ep'}[p.evidPrincipal]||'em';
+    const eiiTag = p.eiiSegura
+      ? '<span class="eii-ok">✓ EII</span>'
+      : '<span class="eii-no">✗ EII</span>';
+    return `
+      <div class="dol-plant-row" onclick="abrirFicha('${p.id}')">
+        <span class="dol-plant-ico">${p.emoji}</span>
+        <div style="flex:1">
+          <div class="dol-plant-nom">${p.nom}</div>
+          <div class="dol-plant-nota">${p.ci}</div>
+        </div>
+        <div style="display:flex;flex-direction:column;align-items:flex-end;gap:4px">
+          <span class="dol-plant-evid evid-pill ${evidCls}" style="font-size:10px;padding:2px 8px;border-radius:7px">
+            <span class="evid-dot"></span>${p.evidPrincipal}
+          </span>
+          ${eiiTag}
+        </div>
+      </div>`;
+  }).join('');
+
+  res.innerHTML = `
+    <div class="dol-res-title">
+      <span>${data.ico || '🌿'}</span>
+      ${dolNom}
+    </div>
+    <div class="dol-res-list">${rows || '<div style="color:var(--tx3);font-size:13px">Sin plantas registradas aún.</div>'}</div>`;
+
+  res.classList.add('visible');
+  res.scrollIntoView({behavior:'smooth', block:'start'});
+}
+
+/* ══════════════════════════════════════
+   MODO
+══════════════════════════════════════ */
+function setModo(m) {
+  modo = m;
+  document.getElementById('tabAZ').classList.toggle('act', m==='az');
+  document.getElementById('tabDol').classList.toggle('act', m==='dolencia');
+  document.getElementById('panelAZ').style.display  = m==='az' ? 'block' : 'none';
+  document.getElementById('panelDol').style.display = m==='dolencia' ? 'block' : 'none';
+  document.getElementById('alfaRail').style.display = m==='az' ? 'flex' : 'none';
+}
+
+/* ══════════════════════════════════════
+   ABRIR FICHA
+══════════════════════════════════════ */
+function abrirFicha(id) {
+  // En la app real navega a ficha-planta.html?id=ID
+  // Por ahora: alert de demostración
+  const p = PLANTAS.find(x => x.id === id);
+  if (!p) return;
+  alert(`📋 Ficha de ${p.nom}\n${p.ci}\n\n${p.resumen}\n\n(Enlace a ficha completa — próximamente)`);
+}
+</script>
+</body>
+</html>

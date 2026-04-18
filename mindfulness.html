@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>NathuraVitae — Zona Mindfulness</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --mora1:#2e1f5e; --mora2:#4a3480; --mora3:#6b52a8;
+  --morap:#f2effe; --moram:#d4c8f5; --morat:#b8a8ec;
+  --v1:#1a3d2e; --v2:#2d6647; --vp:#eaf5ef; --vm:#b8dfc8;
+  --crema:#f7f4ee; --crema2:#ede8dc; --crema3:#e0d8c8;
+  --tx:#1a1816; --tx2:#46433c; --tx3:#8a8478;
+  --amb:#9a6010; --ambp:#fdf2e0; --ambm:#f0cc88;
+  --azul:#1a4a80; --azulp:#e8f0fa;
+  --roj:#8a2828; --rojp:#fce8e8;
+  --borde:rgba(46,31,94,0.08);
+  --borde-v:rgba(26,61,46,0.10);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Jost',sans-serif;background:var(--crema);color:var(--tx);min-height:100vh;padding-bottom:48px}
+
+/* ── APP BAR ── */
+.appbar{background:var(--mora1);padding:14px 20px;display:flex;align-items:center;gap:12px;position:sticky;top:0;z-index:30}
+.appbar-back{width:32px;height:32px;border-radius:50%;background:rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;border:none;cursor:pointer}
+.appbar-title{font-family:'Cormorant Garamond',serif;font-size:20px;color:white;font-weight:300;letter-spacing:.5px}
+.appbar-badge{margin-left:auto;font-size:11px;color:rgba(255,255,255,.45);letter-spacing:.5px;font-weight:300}
+
+/* ── HERO ── */
+.hero{background:var(--mora1);padding:8px 24px 36px;position:relative;overflow:hidden}
+.hero-orb{position:absolute;width:260px;height:260px;border-radius:50%;background:rgba(107,82,168,.18);right:-60px;top:-80px;pointer-events:none}
+.hero-orb2{position:absolute;width:160px;height:160px;border-radius:50%;background:rgba(107,82,168,.1);left:-40px;bottom:-60px;pointer-events:none}
+.hero-eye{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.35);font-weight:300;margin-bottom:10px}
+.hero-title{font-family:'Cormorant Garamond',serif;font-size:36px;color:white;font-weight:300;line-height:1.15;margin-bottom:8px}
+.hero-title em{font-style:italic;color:var(--morat)}
+.hero-sub{font-size:13px;color:rgba(255,255,255,.48);line-height:1.65;font-weight:300;max-width:280px}
+.wave{display:block;width:100%;margin-top:-1px}
+
+/* ── FILTRO POR SÍNTOMA ── */
+.filtro-wrap{padding:16px 20px 4px}
+.filtro-label{font-size:10px;letter-spacing:1px;text-transform:uppercase;color:var(--mora2);font-weight:500;margin-bottom:10px}
+.filtro-chips{display:flex;gap:6px;flex-wrap:wrap}
+.fchip{font-size:12px;padding:6px 14px;border-radius:20px;border:1px solid var(--moram);background:white;color:var(--mora2);cursor:pointer;transition:all .2s;font-family:'Jost',sans-serif;font-weight:400}
+.fchip:hover{background:var(--morap);border-color:var(--mora3)}
+.fchip.act{background:var(--mora2);color:white;border-color:var(--mora2)}
+
+/* ── GRID DE TÉCNICAS ── */
+.tecnicas-wrap{padding:16px 16px 0}
+.sec-title{font-size:10px;letter-spacing:1px;text-transform:uppercase;color:var(--mora2);font-weight:500;margin-bottom:12px;display:flex;align-items:center;gap:8px}
+.sec-title::after{content:'';flex:1;height:1px;background:var(--moram)}
+
+.tec-card{
+  background:white;border-radius:18px;border:1px solid var(--borde);
+  margin-bottom:12px;overflow:hidden;cursor:pointer;
+  transition:box-shadow .2s, transform .2s;
+  box-shadow:0 2px 16px rgba(46,31,94,.05)
+}
+.tec-card:hover{box-shadow:0 4px 24px rgba(46,31,94,.1);transform:translateY(-1px)}
+.tec-card.abierto{border-color:var(--mora3)}
+
+.tec-head{display:flex;align-items:center;gap:14px;padding:16px}
+.tec-ico-wrap{
+  width:52px;height:52px;border-radius:14px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:26px;flex-shrink:0
+}
+.tec-info{flex:1}
+.tec-nom{font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:400;color:var(--tx);line-height:1.2;margin-bottom:3px}
+.tec-sub{font-size:12px;color:var(--tx3);line-height:1.4;font-weight:300}
+.tec-badges{display:flex;gap:5px;margin-top:6px;flex-wrap:wrap}
+.tec-badge{font-size:10px;padding:2px 8px;border-radius:8px;border:1px solid;font-weight:500}
+.tec-dur{background:var(--morap);color:var(--mora2);border-color:var(--moram)}
+.tec-nivel{background:var(--vp);color:var(--v2);border-color:var(--vm)}
+.tec-sin{background:var(--ambp);color:var(--amb);border-color:var(--ambm)}
+.tec-chevron{flex-shrink:0;transition:transform .3s;opacity:.3}
+.tec-card.abierto .tec-chevron{transform:rotate(180deg);opacity:.7}
+
+/* panel expandido */
+.tec-body{display:none;padding:0 16px 20px;border-top:1px solid var(--borde)}
+.tec-card.abierto .tec-body{display:block}
+.tec-desc{font-size:13px;color:var(--tx2);line-height:1.7;margin:14px 0;font-weight:300}
+
+/* pasos */
+.pasos-title{font-size:10px;letter-spacing:.8px;text-transform:uppercase;color:var(--mora2);font-weight:500;margin-bottom:10px}
+.pasos-list{display:flex;flex-direction:column;gap:0}
+.paso-item{display:flex;gap:12px;padding:12px 0;border-bottom:1px solid var(--borde);position:relative}
+.paso-item:last-child{border-bottom:none}
+.paso-num{
+  width:28px;height:28px;border-radius:50%;flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;
+  font-size:12px;font-weight:500;background:var(--morap);color:var(--mora2);
+  border:1px solid var(--moram)
+}
+.paso-txt{font-size:13px;color:var(--tx2);line-height:1.6;padding-top:4px;font-weight:300}
+.paso-duracion{display:inline-block;margin-top:4px;font-size:11px;color:var(--mora3);font-weight:500}
+
+/* ── TEMPORIZADOR ── */
+.timer-wrap{
+  margin:16px 0 0;background:var(--mora1);border-radius:16px;
+  padding:20px;display:flex;flex-direction:column;align-items:center
+}
+.timer-circulo{
+  position:relative;width:140px;height:140px;margin-bottom:16px
+}
+.timer-svg{width:140px;height:140px;transform:rotate(-90deg)}
+.timer-bg{fill:none;stroke:rgba(255,255,255,.08);stroke-width:6}
+.timer-arco{fill:none;stroke:var(--morat);stroke-width:6;stroke-linecap:round;
+  stroke-dasharray:376;stroke-dashoffset:376;transition:stroke-dashoffset .5s ease}
+.timer-num{
+  position:absolute;inset:0;display:flex;flex-direction:column;
+  align-items:center;justify-content:center
+}
+.timer-mm-ss{font-family:'Cormorant Garamond',serif;font-size:34px;color:white;font-weight:300;line-height:1}
+.timer-label-fase{font-size:11px;color:rgba(255,255,255,.5);margin-top:4px;letter-spacing:.5px}
+.timer-controles{display:flex;gap:10px;align-items:center;margin-bottom:14px}
+.timer-btn{
+  width:48px;height:48px;border-radius:50%;border:none;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;
+  font-size:20px;transition:all .15s;font-family:'Jost',sans-serif
+}
+.timer-btn-play{background:white;color:var(--mora1)}
+.timer-btn-play:hover{background:var(--morap)}
+.timer-btn-sec{background:rgba(255,255,255,.12);color:white}
+.timer-btn-sec:hover{background:rgba(255,255,255,.2)}
+.timer-duracion-row{display:flex;gap:6px}
+.timer-dur-btn{
+  padding:5px 12px;border-radius:10px;border:1px solid rgba(255,255,255,.2);
+  background:transparent;color:rgba(255,255,255,.6);font-size:12px;
+  cursor:pointer;font-family:'Jost',sans-serif;transition:all .15s
+}
+.timer-dur-btn.sel{background:rgba(255,255,255,.15);color:white;border-color:rgba(255,255,255,.4)}
+.timer-fase-bar{
+  width:100%;margin-top:12px;display:flex;gap:4px;justify-content:center
+}
+.fase-dot{
+  height:4px;flex:1;border-radius:2px;background:rgba(255,255,255,.15);
+  max-width:40px;transition:background .3s
+}
+.fase-dot.act{background:var(--morat)}
+
+/* ── BENEFICIOS ── */
+.beneficios-row{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}
+.benef-pill{font-size:11px;padding:4px 10px;border-radius:20px;background:var(--vp);color:var(--v2);border:1px solid var(--vm)}
+
+/* ── SESIÓN GUIADA en curso ── */
+.sesion-activa{
+  position:fixed;inset:0;background:var(--mora1);z-index:100;
+  display:none;flex-direction:column;align-items:center;justify-content:center;
+  padding:32px 24px
+}
+.sesion-activa.visible{display:flex}
+.sesion-cerrar{
+  position:absolute;top:18px;right:18px;background:rgba(255,255,255,.12);
+  border:none;color:white;width:36px;height:36px;border-radius:50%;
+  cursor:pointer;font-size:18px;display:flex;align-items:center;justify-content:center
+}
+.sesion-tec-nom{font-family:'Cormorant Garamond',serif;font-size:14px;color:rgba(255,255,255,.4);letter-spacing:1px;text-transform:uppercase;margin-bottom:20px;font-weight:300}
+.sesion-fase-nom{font-family:'Cormorant Garamond',serif;font-size:40px;color:white;font-weight:300;margin-bottom:6px;text-align:center}
+.sesion-fase-inst{font-size:14px;color:rgba(255,255,255,.55);text-align:center;line-height:1.6;max-width:260px;font-weight:300;margin-bottom:32px}
+/* círculo animado */
+.sesion-orb-wrap{position:relative;width:180px;height:180px;margin-bottom:40px}
+.sesion-orb{
+  width:180px;height:180px;border-radius:50%;
+  background:rgba(107,82,168,.25);border:1.5px solid rgba(107,82,168,.3);
+  display:flex;align-items:center;justify-content:center;
+  transition:transform 1s ease;
+}
+.sesion-orb.expand{transform:scale(1.3)}
+.sesion-orb.hold{transform:scale(1.3)}
+.sesion-orb.shrink{transform:scale(1)}
+.sesion-orb-num{font-family:'Cormorant Garamond',serif;font-size:72px;color:white;font-weight:300;line-height:1}
+.sesion-ciclos{font-size:13px;color:rgba(255,255,255,.4);margin-bottom:20px;letter-spacing:.5px}
+.sesion-stop{
+  padding:12px 32px;border-radius:30px;border:1px solid rgba(255,255,255,.25);
+  background:transparent;color:rgba(255,255,255,.7);font-size:14px;
+  cursor:pointer;font-family:'Jost',sans-serif;letter-spacing:.3px
+}
+
+/* ── DISCLAIMER ── */
+.disclaimer{
+  margin:24px 16px 0;padding:12px 16px;
+  background:var(--crema2);border-radius:12px;
+  border:1px solid var(--borde);font-size:11px;
+  color:var(--tx3);line-height:1.6;text-align:center;font-weight:300
+}
+
+/* ── ANIMS ── */
+@keyframes fadeUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.tec-card{animation:fadeUp .35s ease both}
+@keyframes pulso{0%,100%{opacity:.4}50%{opacity:1}}
+</style>
+</head>
+<body>
+
+<!-- APP BAR -->
+<div class="appbar">
+  <button class="appbar-back">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round"><path d="M15 18l-6-6 6-6"/></svg>
+  </button>
+  <span class="appbar-title">Zona Mindfulness</span>
+  <span class="appbar-badge">NathuraVitae</span>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-orb"></div>
+  <div class="hero-orb2"></div>
+  <div class="hero-eye">Bienestar · Consciencia</div>
+  <div class="hero-title">Respira.<br><em>Regresa</em> a ti.</div>
+  <div class="hero-sub">Técnicas validadas por la ciencia para calmar la mente, el cuerpo y el sistema digestivo.</div>
+</div>
+<svg class="wave" viewBox="0 0 390 20" preserveAspectRatio="none" fill="#f7f4ee">
+  <path d="M0,20 L0,10 Q97.5,0 195,10 Q292.5,20 390,10 L390,20 Z"/>
+</svg>
+
+<!-- FILTRO -->
+<div class="filtro-wrap">
+  <div class="filtro-label">Filtrar por síntoma</div>
+  <div class="filtro-chips">
+    <button class="fchip act" data-filtro="todo" onclick="filtrar('todo',this)">Todas</button>
+    <button class="fchip" data-filtro="ansiedad" onclick="filtrar('ansiedad',this)">Ansiedad</button>
+    <button class="fchip" data-filtro="insomnio" onclick="filtrar('insomnio',this)">Insomnio</button>
+    <button class="fchip" data-filtro="estres" onclick="filtrar('estres',this)">Estrés</button>
+    <button class="fchip" data-filtro="digestivo" onclick="filtrar('digestivo',this)">Digestivo</button>
+    <button class="fchip" data-filtro="dolor" onclick="filtrar('dolor',this)">Dolor</button>
+    <button class="fchip" data-filtro="energia" onclick="filtrar('energia',this)">Energía</button>
+  </div>
+</div>
+
+<!-- TÉCNICAS -->
+<div class="tecnicas-wrap">
+  <div class="sec-title">Técnicas disponibles</div>
+  <div id="tecnicasContainer"></div>
+</div>
+
+<!-- SESIÓN GUIADA (overlay) -->
+<div class="sesion-activa" id="sesionActiva">
+  <button class="sesion-cerrar" onclick="cerrarSesion()">×</button>
+  <div class="sesion-tec-nom" id="sesNom">—</div>
+  <div class="sesion-orb-wrap">
+    <div class="sesion-orb" id="sesOrb">
+      <div class="sesion-orb-num" id="sesCuenta">—</div>
+    </div>
+  </div>
+  <div class="sesion-fase-nom" id="sesFaseNom">Prepárate</div>
+  <div class="sesion-fase-inst" id="sesFaseInst">Siéntate cómodamente y cierra los ojos</div>
+  <div class="sesion-ciclos" id="sesCiclos"></div>
+  <button class="sesion-stop" onclick="cerrarSesion()">Finalizar sesión</button>
+</div>
+
+<div class="disclaimer">
+  🧘 Estas técnicas son complementarias y no reemplazan el tratamiento médico o psicológico.<br>
+  Si experimentas malestar intenso, consulta a un profesional de salud mental.
+</div>
+
+<script>
+/* ══════════════════════════════════
+   DATOS DE TÉCNICAS
+══════════════════════════════════ */
+const TECNICAS = [
+  {
+    id:"resp-478",
+    nom:"Respiración 4-7-8",
+    emoji:"🫁",
+    color:"#eaf5ef", iconColor:"#b8dfc8",
+    sub:"Activa el sistema nervioso parasimpático en segundos",
+    duracion:"5 min",
+    durMin:5,
+    nivel:"Principiante",
+    sintomas:["ansiedad","insomnio","estres","digestivo"],
+    desc:"Desarrollada por el Dr. Andrew Weil basándose en el pranayama yóguico. Inhalar 4 segundos, retener 7 y exhalar 8 activa el nervio vago y reduce el cortisol de forma inmediata. Ideal antes de dormir o en momentos de ansiedad aguda.",
+    beneficios:["Reduce la ansiedad","Facilita el sueño","Baja la presión arterial","Calma el sistema digestivo"],
+    pasos:[
+      {txt:"Siéntate o túmbate en posición cómoda. Coloca la lengua detrás de los dientes superiores.", dur:""},
+      {txt:"Exhala completamente por la boca con un sonido suave.", dur:""},
+      {txt:"Cierra la boca e inhala silenciosamente por la nariz.", dur:"4 segundos"},
+      {txt:"Retén el aire.", dur:"7 segundos"},
+      {txt:"Exhala completamente por la boca con sonido suave.", dur:"8 segundos"},
+      {txt:"Repite el ciclo. Comienza con 4 ciclos y aumenta hasta 8 con la práctica.", dur:""}
+    ],
+    fases:[
+      {nom:"Inhala",inst:"Respira lento por la nariz",dur:4,accion:"expand"},
+      {nom:"Retén",inst:"Mantén el aire con calma",dur:7,accion:"hold"},
+      {nom:"Exhala",inst:"Suelta el aire lentamente",dur:8,accion:"shrink"}
+    ],
+    ciclosTotales:4
+  },
+  {
+    id:"coherencia",
+    nom:"Coherencia cardíaca",
+    emoji:"💚",
+    color:"#eaf5ef", iconColor:"#b8dfc8",
+    sub:"5 respiraciones por minuto · regula el eje intestino-cerebro",
+    duracion:"5 min",
+    durMin:5,
+    nivel:"Principiante",
+    sintomas:["ansiedad","estres","digestivo"],
+    desc:"La coherencia cardíaca se basa en respirar a exactamente 5 ciclos por minuto (inhalar 5s + exhalar 5s). Este ritmo sincroniza el corazón, el cerebro y el intestino, reduciendo el cortisol hasta un 23% según estudios del HeartMath Institute. Ideal 3 veces al día: al levantarse, al mediodía y al acostarse.",
+    beneficios:["Reduce el cortisol","Mejora la variabilidad cardíaca","Regula el eje intestino-cerebro","Reduce la inflamación sistémica"],
+    pasos:[
+      {txt:"Siéntate con la espalda recta. Puedes cerrar los ojos o fijar la mirada suavemente.", dur:""},
+      {txt:"Lleva la atención al centro del pecho, como si respiraras desde el corazón.", dur:""},
+      {txt:"Inhala suave y profundamente por la nariz.", dur:"5 segundos"},
+      {txt:"Exhala suave y completamente por la nariz o la boca.", dur:"5 segundos"},
+      {txt:"Mantén este ritmo constante durante 5 minutos. Con la práctica lo notarás de forma natural.", dur:"5 minutos"}
+    ],
+    fases:[
+      {nom:"Inhala",inst:"Desde el corazón, lento",dur:5,accion:"expand"},
+      {nom:"Exhala",inst:"Suelta suavemente",dur:5,accion:"shrink"}
+    ],
+    ciclosTotales:15
+  },
+  {
+    id:"body-scan",
+    nom:"Body scan",
+    emoji:"🤲",
+    color:"#f2effe", iconColor:"#d4c8f5",
+    sub:"Escaneo corporal progresivo · libera tensión acumulada",
+    duracion:"15 min",
+    durMin:15,
+    nivel:"Intermedio",
+    sintomas:["dolor","insomnio","estres","ansiedad","digestivo"],
+    desc:"El body scan es la técnica central del programa MBSR (Mindfulness-Based Stress Reduction) de Jon Kabat-Zinn. Consiste en recorrer el cuerpo con la atención de forma sistemática, observando sin juzgar las sensaciones. Reduce el dolor crónico, mejora el sueño y es especialmente útil cuando el dolor o la tensión se manifiesta en el abdomen.",
+    beneficios:["Alivia el dolor crónico","Mejora el sueño profundo","Reduce la tensión muscular","Calma el dolor abdominal funcional"],
+    pasos:[
+      {txt:"Túmbate boca arriba en un lugar cómodo. Cierra los ojos. Respira profundo 3 veces.", dur:""},
+      {txt:"Lleva la atención a los pies. Observa cualquier sensación: temperatura, hormigueo, peso. Sin juzgar.", dur:"1-2 min"},
+      {txt:"Sube lentamente por las piernas, rodillas, muslos, pelvis y abdomen.", dur:"3-4 min"},
+      {txt:"Continúa por el pecho, espalda, hombros y brazos hasta las manos.", dur:"3-4 min"},
+      {txt:"Sube por el cuello, rostro y coronilla. Observa la cara: frente, ojos, mandíbula, labios.", dur:"2-3 min"},
+      {txt:"Termina con una visión global del cuerpo entero como una unidad. Respira 5 veces profundo.", dur:"2 min"}
+    ],
+    fases:[
+      {nom:"Pies y piernas",inst:"Observa las sensaciones sin juzgar",dur:120,accion:"expand"},
+      {nom:"Abdomen",inst:"Respira hacia el vientre",dur:90,accion:"hold"},
+      {nom:"Pecho y brazos",inst:"Nota el ritmo del corazón",dur:90,accion:"hold"},
+      {nom:"Cara y cabeza",inst:"Suelta la tensión del rostro",dur:90,accion:"shrink"}
+    ],
+    ciclosTotales:1
+  },
+  {
+    id:"resp-diafragmatica",
+    nom:"Respiración diafragmática",
+    emoji:"🌬️",
+    color:"#eaf5ef", iconColor:"#b8dfc8",
+    sub:"Respiración abdominal profunda · base de toda práctica",
+    duracion:"5-10 min",
+    durMin:7,
+    nivel:"Principiante",
+    sintomas:["ansiedad","estres","digestivo","dolor"],
+    desc:"La respiración diafragmática es el fundamento de todas las técnicas de regulación del sistema nervioso. Activar el diafragma en lugar de la zona torácica maximiza el intercambio de oxígeno y activa el nervio vago, que inerva directamente el intestino. Es la primera técnica que aprender.",
+    beneficios:["Reduce la frecuencia cardíaca","Activa el nervio vago","Mejora la digestión","Base para técnicas avanzadas"],
+    pasos:[
+      {txt:"Coloca una mano sobre el pecho y otra sobre el abdomen.", dur:""},
+      {txt:"Inhala por la nariz: la mano del abdomen debe subir, la del pecho permanece quieta.", dur:"4-6 segundos"},
+      {txt:"Exhala por la boca fruncida (como si soplaras una vela): el abdomen baja.", dur:"6-8 segundos"},
+      {txt:"La exhalación siempre más larga que la inhalación. Eso activa el freno parasimpático.", dur:""},
+      {txt:"Practica 5-10 minutos. Puedes hacerlo sentado, tumbado o incluso caminando.", dur:"5-10 min"}
+    ],
+    fases:[
+      {nom:"Inhala",inst:"Abdomen sube, pecho quieto",dur:5,accion:"expand"},
+      {nom:"Exhala",inst:"Abdomen baja, labios fruncidos",dur:7,accion:"shrink"}
+    ],
+    ciclosTotales:20
+  },
+  {
+    id:"resp-nadi",
+    nom:"Nadi Shodhana",
+    emoji:"☀️",
+    color:"#fdf2e0", iconColor:"#f0cc88",
+    sub:"Respiración por fosas nasales alternadas · energía equilibrada",
+    duracion:"5-10 min",
+    durMin:7,
+    nivel:"Intermedio",
+    sintomas:["energia","estres","ansiedad"],
+    desc:"Técnica pranayama del yoga clásico que alterna la respiración por cada fosa nasal. Los estudios muestran que activa de forma equilibrada ambos hemisferios cerebrales, reduce la presión arterial y aumenta la energía mental sin estimulantes. Ideal por la mañana o antes de trabajo intelectual.",
+    beneficios:["Equilibra los hemisferios cerebrales","Aumenta la energía mental","Reduce la presión arterial","Mejora la concentración"],
+    pasos:[
+      {txt:"Siéntate con la espalda recta. Coloca la mano derecha: pulgar sobre fosa nasal derecha, anular sobre la izquierda.", dur:""},
+      {txt:"Cierra la fosa derecha con el pulgar. Exhala completamente por la izquierda.", dur:""},
+      {txt:"Inhala por la fosa nasal izquierda.", dur:"4 segundos"},
+      {txt:"Cierra ambas fosas. Retén brevemente.", dur:"2 segundos"},
+      {txt:"Abre la fosa derecha, cierra la izquierda. Exhala por la derecha.", dur:"4 segundos"},
+      {txt:"Inhala por la derecha, cierra ambas, exhala por la izquierda. Eso es 1 ciclo.", dur:""},
+      {txt:"Repite 5-10 ciclos. Termina siempre exhalando por la fosa izquierda.", dur:""}
+    ],
+    fases:[
+      {nom:"Inhala ←",inst:"Por fosa nasal izquierda",dur:4,accion:"expand"},
+      {nom:"Retén",inst:"Cierra ambas suavemente",dur:2,accion:"hold"},
+      {nom:"Exhala →",inst:"Por fosa nasal derecha",dur:4,accion:"shrink"},
+      {nom:"Inhala →",inst:"Por fosa nasal derecha",dur:4,accion:"expand"},
+      {nom:"Retén",inst:"Cierra ambas suavemente",dur:2,accion:"hold"},
+      {nom:"Exhala ←",inst:"Por fosa nasal izquierda",dur:4,accion:"shrink"}
+    ],
+    ciclosTotales:5
+  },
+  {
+    id:"meditacion-gratitud",
+    nom:"Meditación de gratitud",
+    emoji:"🌿",
+    color:"#f2effe", iconColor:"#d4c8f5",
+    sub:"Reorienta el sistema nervioso hacia el bienestar",
+    duracion:"10 min",
+    durMin:10,
+    nivel:"Principiante",
+    sintomas:["estres","ansiedad","insomnio","energia"],
+    desc:"La práctica de la gratitud activa el córtex prefrontal y libera dopamina y serotonina. Estudios de la Universidad de California muestran que 5 minutos de gratitud diaria reducen el cortisol y mejoran la calidad del sueño. Especialmente útil en el contexto de enfermedades crónicas como la EII.",
+    beneficios:["Libera dopamina y serotonina","Reduce el cortisol","Mejora el sueño","Fortalece la resiliencia"],
+    pasos:[
+      {txt:"Siéntate cómodamente. Cierra los ojos. Respira 5 veces profundo para llegar al presente.", dur:"1 min"},
+      {txt:"Piensa en 3 cosas por las que estás agradecido hoy. Pueden ser pequeñas: un café, la luz del sol, tu cuerpo funcionando.", dur:"2 min"},
+      {txt:"Para cada una, visualiza la escena con detalle. Déjate sentir la emoción en el pecho.", dur:"3 min"},
+      {txt:"Agradece tu cuerpo: sus órganos, su resistencia, lo que sí funciona bien incluso cuando algo duele.", dur:"2 min"},
+      {txt:"Termina con la frase mental: 'Hay suficiente bien en mi vida para seguir adelante'. Respira 5 veces.", dur:"2 min"}
+    ],
+    fases:[
+      {nom:"Centrar",inst:"Respira y llega al presente",dur:60,accion:"expand"},
+      {nom:"Gratitud",inst:"3 cosas por las que estás agradecido",dur:180,accion:"hold"},
+      {nom:"Tu cuerpo",inst:"Agradece lo que sí funciona",dur:120,accion:"hold"},
+      {nom:"Integrar",inst:"Cierra con calma",dur:60,accion:"shrink"}
+    ],
+    ciclosTotales:1
+  }
+];
+
+/* ══════════════════════════════════
+   RENDER
+══════════════════════════════════ */
+let filtroActivo = 'todo';
+let timerInterval = null;
+let sesionInterval = null;
+let sesionData = null;
+let faseIdx = 0;
+let cicloActual = 0;
+let segundoFase = 0;
+
+function renderTecnicas(lista) {
+  const cont = document.getElementById('tecnicasContainer');
+  cont.innerHTML = '';
+  lista.forEach((t, i) => {
+    const card = document.createElement('div');
+    card.className = 'tec-card';
+    card.id = 'card-' + t.id;
+    card.style.animationDelay = (i * 60) + 'ms';
+
+    const sinTagsHTML = t.sintomas.map(s =>
+      `<span class="tec-badge tec-sin">${s}</span>`
+    ).join('');
+
+    card.innerHTML = `
+      <div class="tec-head" onclick="toggleCard('${t.id}')">
+        <div class="tec-ico-wrap" style="background:${t.color}">
+          <span style="font-size:26px">${t.emoji}</span>
+        </div>
+        <div class="tec-info">
+          <div class="tec-nom">${t.nom}</div>
+          <div class="tec-sub">${t.sub}</div>
+          <div class="tec-badges">
+            <span class="tec-badge tec-dur">⏱ ${t.duracion}</span>
+            <span class="tec-badge tec-nivel">${t.nivel}</span>
+            ${sinTagsHTML}
+          </div>
+        </div>
+        <svg class="tec-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--mora2)" stroke-width="2" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
+      </div>
+      <div class="tec-body">
+        <div class="tec-desc">${t.desc}</div>
+
+        <div class="pasos-title">Cómo practicarla</div>
+        <div class="pasos-list">
+          ${t.pasos.map((p, idx) => `
+            <div class="paso-item">
+              <div class="paso-num">${idx + 1}</div>
+              <div class="paso-txt">
+                ${p.txt}
+                ${p.dur ? `<span class="paso-duracion">⏱ ${p.dur}</span>` : ''}
+              </div>
+            </div>`).join('')}
+        </div>
+
+        <div class="beneficios-row">
+          ${t.beneficios.map(b => `<span class="benef-pill">${b}</span>`).join('')}
+        </div>
+
+        <!-- TEMPORIZADOR -->
+        <div class="timer-wrap">
+          <div class="timer-circulo">
+            <svg class="timer-svg" viewBox="0 0 140 140">
+              <circle class="timer-bg" cx="70" cy="70" r="60"/>
+              <circle class="timer-arco" id="arco-${t.id}" cx="70" cy="70" r="60"/>
+            </svg>
+            <div class="timer-num">
+              <div class="timer-mm-ss" id="timer-${t.id}">
+                ${String(t.durMin).padStart(2,'0')}:00
+              </div>
+              <div class="timer-label-fase" id="fase-${t.id}">listo</div>
+            </div>
+          </div>
+          <div class="timer-controles">
+            <button class="timer-btn timer-btn-sec" title="Reiniciar" onclick="resetTimer('${t.id}',${t.durMin})">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
+            </button>
+            <button class="timer-btn timer-btn-play" id="play-${t.id}" onclick="iniciarSesion('${t.id}')">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--mora1)"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            </button>
+            <button class="timer-btn timer-btn-sec" title="Sesión guiada" onclick="iniciarSesion('${t.id}')">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+            </button>
+          </div>
+          <div class="timer-duracion-row">
+            <button class="timer-dur-btn ${t.durMin===5?'sel':''}" onclick="setDur('${t.id}',5,this)">5 min</button>
+            <button class="timer-dur-btn ${t.durMin===10?'sel':''}" onclick="setDur('${t.id}',10,this)">10 min</button>
+            <button class="timer-dur-btn ${t.durMin===15?'sel':''}" onclick="setDur('${t.id}',15,this)">15 min</button>
+            <button class="timer-dur-btn ${t.durMin===20?'sel':''}" onclick="setDur('${t.id}',20,this)">20 min</button>
+          </div>
+          <div class="timer-fase-bar" id="fasebar-${t.id}">
+            ${t.fases.map((_,fi)=>`<div class="fase-dot" id="fd-${t.id}-${fi}"></div>`).join('')}
+          </div>
+        </div>
+      </div>`;
+    cont.appendChild(card);
+  });
+}
+
+/* ══════════════════════════════════
+   FILTRO
+══════════════════════════════════ */
+function filtrar(f, btn) {
+  filtroActivo = f;
+  document.querySelectorAll('.fchip').forEach(b => b.classList.remove('act'));
+  btn.classList.add('act');
+  const lista = f === 'todo' ? TECNICAS : TECNICAS.filter(t => t.sintomas.includes(f));
+  renderTecnicas(lista);
+}
+
+/* ══════════════════════════════════
+   TOGGLE CARD
+══════════════════════════════════ */
+function toggleCard(id) {
+  const card = document.getElementById('card-' + id);
+  const wasOpen = card.classList.contains('abierto');
+  document.querySelectorAll('.tec-card').forEach(c => c.classList.remove('abierto'));
+  if (!wasOpen) {
+    card.classList.add('abierto');
+    setTimeout(() => card.scrollIntoView({behavior:'smooth', block:'nearest'}), 80);
+  }
+}
+
+/* ══════════════════════════════════
+   TIMER SIMPLE
+══════════════════════════════════ */
+const timers = {};
+
+function setDur(id, min, btn) {
+  if (timers[id] && timers[id].running) return;
+  const dur = document.getElementById('timer-' + id);
+  dur.textContent = String(min).padStart(2,'0') + ':00';
+  timers[id] = { total: min * 60, restante: min * 60, running: false };
+  btn.closest('.timer-duracion-row').querySelectorAll('.timer-dur-btn').forEach(b => b.classList.remove('sel'));
+  btn.classList.add('sel');
+  setArco(id, 1);
+  document.getElementById('fase-' + id).textContent = 'listo';
+}
+
+function setArco(id, frac) {
+  const circ = 2 * Math.PI * 60;
+  const arco = document.getElementById('arco-' + id);
+  if (arco) arco.style.strokeDashoffset = circ * (1 - frac);
+}
+
+function resetTimer(id, durMin) {
+  if (timers[id] && timers[id].interval) clearInterval(timers[id].interval);
+  timers[id] = { total: durMin * 60, restante: durMin * 60, running: false };
+  const dur = document.getElementById('timer-' + id);
+  if (dur) dur.textContent = String(durMin).padStart(2,'0') + ':00';
+  document.getElementById('fase-' + id).textContent = 'listo';
+  setArco(id, 1);
+  const playBtn = document.getElementById('play-' + id);
+  if (playBtn) playBtn.innerHTML = '<svg width="20" height="20" viewBox="0 0 24 24" fill="var(--mora1)"><polygon points="5 3 19 12 5 21 5 3"/></svg>';
+}
+
+/* ══════════════════════════════════
+   SESIÓN GUIADA
+══════════════════════════════════ */
+function iniciarSesion(id) {
+  const t = TECNICAS.find(x => x.id === id);
+  if (!t) return;
+  sesionData = t;
+  faseIdx = 0;
+  cicloActual = 0;
+  segundoFase = 0;
+  document.getElementById('sesNom').textContent = t.nom.toUpperCase();
+  document.getElementById('sesionActiva').classList.add('visible');
+  document.body.style.overflow = 'hidden';
+  arrancarFase();
+}
+
+function arrancarFase() {
+  if (!sesionData) return;
+  const fases = sesionData.fases;
+  if (faseIdx >= fases.length) {
+    faseIdx = 0;
+    cicloActual++;
+    if (cicloActual >= sesionData.ciclosTotales) { cerrarSesion(); return; }
+  }
+  const fase = fases[faseIdx];
+  segundoFase = fase.dur;
+
+  document.getElementById('sesFaseNom').textContent = fase.nom;
+  document.getElementById('sesFaseInst').textContent = fase.inst;
+  document.getElementById('sesCiclos').textContent =
+    sesionData.ciclosTotales > 1
+      ? `Ciclo ${cicloActual + 1} de ${sesionData.ciclosTotales}`
+      : '';
+
+  // orb animación
+  const orb = document.getElementById('sesOrb');
+  orb.className = 'sesion-orb ' + (fase.accion || '');
+
+  if (sesionInterval) clearInterval(sesionInterval);
+  actualizarCuenta(segundoFase, fase);
+  sesionInterval = setInterval(() => {
+    segundoFase--;
+    actualizarCuenta(segundoFase, fase);
+    if (segundoFase <= 0) {
+      clearInterval(sesionInterval);
+      faseIdx++;
+      setTimeout(arrancarFase, 300);
+    }
+  }, 1000);
+}
+
+function actualizarCuenta(seg, fase) {
+  const el = document.getElementById('sesCuenta');
+  if (fase.dur <= 15) {
+    el.textContent = seg > 0 ? seg : '';
+  } else {
+    const m = Math.floor(seg / 60);
+    const s = seg % 60;
+    el.textContent = m + ':' + String(s).padStart(2,'0');
+  }
+}
+
+function cerrarSesion() {
+  if (sesionInterval) clearInterval(sesionInterval);
+  document.getElementById('sesionActiva').classList.remove('visible');
+  document.body.style.overflow = '';
+  sesionData = null;
+}
+
+/* ══════════════════════════════════
+   INIT
+══════════════════════════════════ */
+renderTecnicas(TECNICAS);
+</script>
+</body>
+</html>

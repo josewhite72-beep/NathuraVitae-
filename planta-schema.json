@@ -1,0 +1,181 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Planta Medicinal",
+  "description": "Esquema base para fichas de plantas medicinales — Nathura App",
+  "type": "object",
+  "required": ["id", "nombreComun", "nombreCientifico", "resumen", "propiedades", "usos", "preparacion", "fuentes"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Slug único, ej: manzanilla, jengibre-comun",
+      "pattern": "^[a-z0-9-]+$"
+    },
+    "nombreComun": {
+      "type": "string",
+      "description": "Nombre popular en español"
+    },
+    "nombresAlternativos": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Otros nombres populares o regionales"
+    },
+    "nombreCientifico": {
+      "type": "string",
+      "description": "Binomio latino — Género especie"
+    },
+    "familia": {
+      "type": "string",
+      "description": "Familia botánica, ej: Asteraceae"
+    },
+    "origen": {
+      "type": "string",
+      "description": "Región de origen o distribución principal"
+    },
+    "partesUsadas": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["flor", "hoja", "raíz", "semilla", "corteza", "fruto", "tallo", "resina", "aceite esencial", "rizoma"]
+      }
+    },
+    "resumen": {
+      "type": "string",
+      "description": "Descripción breve (2-3 oraciones) apta para tarjeta de presentación"
+    },
+    "propiedades": {
+      "type": "array",
+      "description": "Propiedades farmacológicas o terapéuticas documentadas",
+      "items": {
+        "type": "object",
+        "required": ["nombre", "nivelEvidencia"],
+        "properties": {
+          "nombre": { "type": "string", "description": "ej: antiinflamatoria, antiespasmódica" },
+          "nivelEvidencia": {
+            "type": "string",
+            "enum": ["tradicional", "preliminar", "moderado", "fuerte"],
+            "description": "Nivel de respaldo científico"
+          },
+          "nota": { "type": "string" }
+        }
+      }
+    },
+    "dolencias": {
+      "type": "array",
+      "description": "Condiciones o dolencias en las que se usa — para el índice por dolencia",
+      "items": {
+        "type": "object",
+        "required": ["nombre", "categoria"],
+        "properties": {
+          "nombre": { "type": "string", "description": "ej: colitis leve, insomnio, náuseas" },
+          "categoria": {
+            "type": "string",
+            "enum": [
+              "digestivo", "respiratorio", "nervioso", "inmunológico",
+              "dermatológico", "musculoesquelético", "hormonal",
+              "cardiovascular", "urinario", "general"
+            ]
+          },
+          "nivelEvidencia": {
+            "type": "string",
+            "enum": ["tradicional", "preliminar", "moderado", "fuerte"]
+          }
+        }
+      }
+    },
+    "usos": {
+      "type": "object",
+      "description": "Usos según tipo de aplicación",
+      "properties": {
+        "interno": { "type": "array", "items": { "type": "string" } },
+        "externo": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "preparacion": {
+      "type": "array",
+      "description": "Formas de preparación con instrucciones",
+      "items": {
+        "type": "object",
+        "required": ["forma", "instrucciones"],
+        "properties": {
+          "forma": {
+            "type": "string",
+            "enum": ["infusión", "decocción", "tintura", "aceite", "cataplasma", "polvo", "cápsula", "jugo", "baño"]
+          },
+          "instrucciones": { "type": "string" },
+          "dosis": { "type": "string", "description": "ej: 1-3 tazas al día" },
+          "duracion": { "type": "string", "description": "ej: máximo 4 semanas seguidas" }
+        }
+      }
+    },
+    "contraindicaciones": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Situaciones en que NO se recomienda su uso"
+    },
+    "interaccionesMedicamentosas": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Medicamentos con los que puede interactuar"
+    },
+    "embarazoLactancia": {
+      "type": "string",
+      "enum": ["segura", "precaución", "contraindicada", "sin-datos"],
+      "description": "Clasificación de seguridad en embarazo/lactancia"
+    },
+    "principiosActivos": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Compuestos activos principales, ej: azuleno, apigenina"
+    },
+    "infusionesRelacionadas": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "IDs de infusiones o mezclas que incluyen esta planta"
+    },
+    "recetasRelacionadas": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "IDs de recetas especiales relacionadas"
+    },
+    "imagen": {
+      "type": "object",
+      "properties": {
+        "url": { "type": "string" },
+        "alt": { "type": "string" },
+        "credito": { "type": "string" }
+      }
+    },
+    "fuentes": {
+      "type": "array",
+      "description": "Referencias científicas o institucionales",
+      "items": {
+        "type": "object",
+        "required": ["autor", "titulo"],
+        "properties": {
+          "autor": { "type": "string" },
+          "titulo": { "type": "string" },
+          "año": { "type": "integer" },
+          "url": { "type": "string" },
+          "tipo": {
+            "type": "string",
+            "enum": ["monografía-OMS", "monografía-EMA", "estudio-clínico", "revisión-sistemática", "libro", "base-datos"]
+          }
+        }
+      }
+    },
+    "advertencia": {
+      "type": "string",
+      "description": "Aviso específico de esta planta si aplica"
+    },
+    "fechaRevision": {
+      "type": "string",
+      "format": "date",
+      "description": "Última revisión del contenido"
+    },
+    "etiquetas": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Tags libres para búsqueda, ej: adaptógeno, nervina, amarga"
+    }
+  }
+}

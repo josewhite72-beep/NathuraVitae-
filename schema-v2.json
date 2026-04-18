@@ -1,0 +1,761 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "NathuraVitae — Planta Medicinal v2",
+  "description": "Schema documental ampliado con respaldo bibliográfico oficial, disponibilidad regional y compatibilidad entre plantas",
+  "version": "2.0.0",
+  "type": "object",
+  "required": [
+    "id", "nombreComun", "nombreCientifico", "familia",
+    "resumen", "nivelEvidenciaGlobal", "fuentePrimaria",
+    "propiedades", "dolencias", "preparacion", "fuentes"
+  ],
+
+  "properties": {
+
+    "id": {
+      "type": "string",
+      "description": "Slug único kebab-case, sin tildes ni espacios",
+      "pattern": "^[a-z0-9-]+$",
+      "examples": ["manzanilla", "aloe-vera", "hierba-de-sapo"]
+    },
+
+    "nombreComun": {
+      "type": "string",
+      "description": "Nombre popular principal en español"
+    },
+
+    "nombresAlternativos": {
+      "type": "array",
+      "description": "Otros nombres populares, regionales o en otros idiomas",
+      "items": {
+        "type": "object",
+        "properties": {
+          "nombre": { "type": "string" },
+          "idioma": { "type": "string", "description": "es / en / pt / fr / indigena" },
+          "region": { "type": "string", "description": "País o región donde se usa este nombre" }
+        }
+      },
+      "examples": [
+        [
+          { "nombre": "camomila", "idioma": "es", "region": "España" },
+          { "nombre": "chamomile", "idioma": "en", "region": "Global" },
+          { "nombre": "manzanilla alemana", "idioma": "es", "region": "Latinoamérica" }
+        ]
+      ]
+    },
+
+    "nombreCientifico": {
+      "type": "string",
+      "description": "Nombre binomial completo con autoridad taxonómica",
+      "examples": ["Matricaria chamomilla L.", "Aloe vera (L.) Burm.f."]
+    },
+
+    "sinonimiasCientificas": {
+      "type": "array",
+      "description": "Sinónimos taxonómicos aceptados o históricos",
+      "items": { "type": "string" },
+      "examples": [["Matricaria recutita L.", "Chamomilla recutita (L.) Rauschert"]]
+    },
+
+    "familia": {
+      "type": "string",
+      "description": "Familia botánica",
+      "examples": ["Asteraceae", "Lamiaceae", "Zingiberaceae"]
+    },
+
+    "orden": {
+      "type": "string",
+      "description": "Orden taxonómico",
+      "examples": ["Asterales", "Lamiales"]
+    },
+
+    "clase": {
+      "type": "string",
+      "description": "Clase taxonómica",
+      "examples": ["Magnoliopsida", "Liliopsida"]
+    },
+
+    "regionOrigen": {
+      "type": "array",
+      "description": "Regiones geográficas de origen natural",
+      "items": {
+        "type": "string",
+        "enum": [
+          "Europa", "Asia Central", "Asia Oriental", "Asia Meridional",
+          "Asia Occidental", "África", "América del Norte",
+          "América Central", "América del Sur", "Caribe",
+          "Panamá", "Mediterráneo", "Australia", "Cosmopolita"
+        ]
+      }
+    },
+
+    "habitatNatural": {
+      "type": "string",
+      "description": "Descripción del hábitat donde crece naturalmente"
+    },
+
+    "disponibilidadPanama": {
+      "type": "object",
+      "description": "Disponibilidad y acceso en Panamá",
+      "properties": {
+        "disponible": {
+          "type": "boolean",
+          "description": "Si se consigue en Panamá"
+        },
+        "nombreLocal": {
+          "type": "string",
+          "description": "Nombre con el que se conoce en Panamá"
+        },
+        "formaComercial": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["fresca", "seca", "tintura", "cápsula", "aceite-esencial", "gel", "crema", "té-empacado", "semilla"]
+          },
+          "description": "Formas en que se encuentra disponible"
+        },
+        "dondeConseguir": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["mercado-público", "farmacia", "tienda-naturista", "supermercado", "cultivo-propio", "mercado-indígena", "importación"]
+          }
+        },
+        "cultivoLocal": {
+          "type": "boolean",
+          "description": "Si se cultiva en Panamá"
+        },
+        "notaRegional": {
+          "type": "string",
+          "description": "Observación específica para el contexto panameño"
+        },
+        "endemicaPanama": {
+          "type": "boolean",
+          "description": "Si es especie endémica o nativa de Panamá"
+        }
+      }
+    },
+
+    "cultivoCasero": {
+      "type": "object",
+      "description": "Guía básica para cultivar en casa o jardín",
+      "properties": {
+        "dificultad": {
+          "type": "string",
+          "enum": ["muy-facil", "facil", "moderada", "dificil"],
+          "description": "Nivel de dificultad para cultivar"
+        },
+        "apta": {
+          "type": "boolean",
+          "description": "Si es apta para cultivo casero en clima tropical"
+        },
+        "maceta": {
+          "type": "boolean",
+          "description": "Si puede cultivarse en maceta"
+        },
+        "luz": {
+          "type": "string",
+          "enum": ["pleno-sol", "semisombra", "sombra", "interior"]
+        },
+        "agua": {
+          "type": "string",
+          "enum": ["poco", "moderado", "abundante"]
+        },
+        "suelo": {
+          "type": "string",
+          "description": "Tipo de suelo recomendado"
+        },
+        "clima": {
+          "type": "string",
+          "description": "Clima ideal para su desarrollo"
+        },
+        "notaCultivo": {
+          "type": "string",
+          "description": "Consejos prácticos de cultivo"
+        },
+        "tiempoACosecha": {
+          "type": "string",
+          "description": "Tiempo aproximado hasta la primera cosecha"
+        }
+      }
+    },
+
+    "partesUsadas": {
+      "type": "array",
+      "description": "Partes de la planta con uso medicinal documentado",
+      "items": {
+        "type": "object",
+        "properties": {
+          "parte": {
+            "type": "string",
+            "enum": [
+              "flor", "hoja", "raíz", "rizoma", "semilla", "corteza",
+              "fruto", "tallo", "resina", "látex", "aceite-esencial",
+              "bulbo", "tubérculo", "gema", "brote", "planta-entera"
+            ]
+          },
+          "nota": {
+            "type": "string",
+            "description": "Observación sobre el uso de esta parte específica"
+          }
+        }
+      }
+    },
+
+    "resumen": {
+      "type": "string",
+      "description": "Descripción breve (2-3 oraciones) para tarjeta de presentación"
+    },
+
+    "usoTradicionalHistorico": {
+      "type": "object",
+      "description": "Contexto histórico y cultural del uso medicinal",
+      "properties": {
+        "culturas": {
+          "type": "array",
+          "description": "Culturas que la han usado históricamente",
+          "items": {
+            "type": "object",
+            "properties": {
+              "cultura": { "type": "string" },
+              "uso": { "type": "string" },
+              "periodo": { "type": "string" }
+            }
+          }
+        },
+        "primerasMencionesHistoricas": {
+          "type": "string",
+          "description": "Primera documentación histórica conocida"
+        },
+        "usoIndigenaRegional": {
+          "type": "string",
+          "description": "Uso entre pueblos indígenas de Centroamérica o Panamá"
+        }
+      }
+    },
+
+    "nivelEvidenciaGlobal": {
+      "type": "string",
+      "enum": ["A", "B", "C", "D"],
+      "description": "A = Monografía OMS/EMA. B = Ensayos clínicos PubMed/Cochrane o TRAMIL. C = Estudios universitarios regionales. D = Uso etnobotánico documentado sin estudio clínico."
+    },
+
+    "fuentePrimaria": {
+      "type": "object",
+      "description": "Fuente institucional de mayor peso bibliográfico para esta planta",
+      "required": ["institucion", "tipo", "año"],
+      "properties": {
+        "institucion": {
+          "type": "string",
+          "enum": ["OMS", "EMA", "Kommission-E", "TRAMIL", "INDICASAT", "UP", "UTP", "UNACHI", "NIH", "Cochrane"]
+        },
+        "tipo": {
+          "type": "string",
+          "enum": ["monografía", "herbal-assessment", "comision-e-monografia", "validacion-tramil", "estudio-universitario", "revision-cochrane"]
+        },
+        "titulo": { "type": "string" },
+        "año": { "type": "integer" },
+        "url": { "type": "string", "format": "uri" },
+        "doi": { "type": "string" }
+      }
+    },
+
+    "grupoTerapeutico": {
+      "type": "array",
+      "description": "Clasificación por acción farmacológica principal",
+      "items": {
+        "type": "string",
+        "enum": [
+          "adaptógena", "amarga-digestiva", "ansiolítica", "antialérgica",
+          "antidiabética", "antiinflamatoria", "antimicrobiana", "antioxidante",
+          "antitusiva", "antiviral", "carminativa", "cicatrizante",
+          "colagoga", "demulcente", "depurativa", "diaforética",
+          "diurética", "emoliente", "estimulante-inmune", "expectorante",
+          "galactogoga", "hepatoprotectora", "hipnótica", "hipoglucemiante",
+          "hipotensora", "hormonal", "inmunomoduladora", "laxante",
+          "nervina", "neuroprotectora", "rubefaciente", "sedante",
+          "tónica", "vasoprotectora", "venotónica", "vulneraria"
+        ]
+      }
+    },
+
+    "propiedades": {
+      "type": "array",
+      "description": "Propiedades farmacológicas documentadas con nivel de evidencia",
+      "items": {
+        "type": "object",
+        "required": ["nombre", "nivelEvidencia"],
+        "properties": {
+          "nombre": { "type": "string" },
+          "nivelEvidencia": {
+            "type": "string",
+            "enum": ["fuerte", "moderado", "preliminar", "tradicional"],
+            "description": "fuerte = varios ECA · moderado = algunos estudios · preliminar = in vitro/animal · tradicional = etnobotánica"
+          },
+          "mecanismoAccion": {
+            "type": "string",
+            "description": "Mecanismo bioquímico principal que explica la propiedad"
+          },
+          "referencia": {
+            "type": "string",
+            "description": "Cita o DOI del estudio principal que sustenta esta propiedad"
+          }
+        }
+      }
+    },
+
+    "fotoquimica": {
+      "type": "array",
+      "description": "Principios activos con descripción de su mecanismo de acción",
+      "items": {
+        "type": "object",
+        "properties": {
+          "compuesto": { "type": "string", "description": "Nombre del principio activo" },
+          "grupo": {
+            "type": "string",
+            "enum": [
+              "flavonoide", "alcaloide", "terpenoide", "fenilpropanoide",
+              "tanino", "saponina", "glucósido", "aceite-esencial",
+              "polisacárido", "vitamina", "mineral", "ácido-graso",
+              "antraquinona", "cumarina", "lignano"
+            ]
+          },
+          "accion": {
+            "type": "string",
+            "description": "Acción principal de este compuesto en el organismo"
+          },
+          "concentracion": {
+            "type": "string",
+            "description": "Concentración aproximada en la planta (si se conoce)"
+          }
+        }
+      }
+    },
+
+    "dolencias": {
+      "type": "array",
+      "description": "Condiciones o dolencias donde está indicada, con evidencia",
+      "items": {
+        "type": "object",
+        "required": ["nombre", "categoria", "nivelEvidencia"],
+        "properties": {
+          "nombre": { "type": "string" },
+          "categoria": {
+            "type": "string",
+            "enum": [
+              "digestivo", "respiratorio", "nervioso", "inmunológico",
+              "dermatológico", "musculoesquelético", "hormonal",
+              "cardiovascular", "urinario", "metabólico", "hepático",
+              "oftalmológico", "general", "oncológico-complementario"
+            ]
+          },
+          "nivelEvidencia": {
+            "type": "string",
+            "enum": ["fuerte", "moderado", "preliminar", "tradicional"]
+          },
+          "dosis": {
+            "type": "string",
+            "description": "Dosis estudiada en los ensayos clínicos"
+          },
+          "duracion": {
+            "type": "string",
+            "description": "Duración del tratamiento estudiada"
+          },
+          "referencia": {
+            "type": "string",
+            "description": "DOI o cita del estudio principal"
+          }
+        }
+      }
+    },
+
+    "sistemas": {
+      "type": "array",
+      "description": "Sistemas del cuerpo que afecta (para filtros en la app)",
+      "items": {
+        "type": "string",
+        "enum": [
+          "digestivo", "nervioso", "respiratorio", "inmunológico",
+          "cardiovascular", "dermatológico", "hormonal",
+          "musculoesquelético", "urinario", "hepático",
+          "metabólico", "general"
+        ]
+      }
+    },
+
+    "modoEII": {
+      "type": "object",
+      "description": "Perfil específico para enfermedad inflamatoria intestinal",
+      "properties": {
+        "aptaEnBrote": { "type": "boolean" },
+        "notaBrote": { "type": "string" },
+        "aptaEnMantenimiento": { "type": "boolean" },
+        "notaMantenimiento": { "type": "string" },
+        "mecanismoEII": {
+          "type": "string",
+          "description": "Por qué mecanismo específico actúa en la EII"
+        },
+        "referenciaEII": {
+          "type": "string",
+          "description": "Estudio clínico específico en EII si existe"
+        }
+      }
+    },
+
+    "modoCeliaquiaGluten": {
+      "type": "object",
+      "description": "Perfil para celiaquía e intolerancia al gluten",
+      "properties": {
+        "libreDeGluten": { "type": "boolean" },
+        "nota": { "type": "string" },
+        "indicacionEspecifica": { "type": "string" }
+      }
+    },
+
+    "usos": {
+      "type": "object",
+      "description": "Usos clasificados por vía de administración",
+      "properties": {
+        "interno": { "type": "array", "items": { "type": "string" } },
+        "externo": { "type": "array", "items": { "type": "string" } },
+        "aromaterapia": { "type": "array", "items": { "type": "string" } },
+        "culinario": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+
+    "preparacion": {
+      "type": "array",
+      "description": "Formas de preparación con instrucciones precisas",
+      "items": {
+        "type": "object",
+        "required": ["forma", "instrucciones"],
+        "properties": {
+          "forma": {
+            "type": "string",
+            "enum": [
+              "infusión", "decocción", "tintura", "maceración",
+              "aceite-medicinal", "cataplasma", "polvo", "cápsula",
+              "jugo", "baño", "inhalación", "jarabe", "ungüento",
+              "extracto-seco", "gel", "crema"
+            ]
+          },
+          "instrucciones": { "type": "string" },
+          "cantidadPlanta": {
+            "type": "string",
+            "description": "Cantidad exacta de planta por preparación"
+          },
+          "temperatura": {
+            "type": "string",
+            "description": "Temperatura del agua o proceso"
+          },
+          "tiempoPreparacion": {
+            "type": "string",
+            "description": "Tiempo de reposo, maceración o cocción"
+          },
+          "dosis": {
+            "type": "string",
+            "description": "Dosis recomendada por toma y por día"
+          },
+          "duracionMaxima": {
+            "type": "string",
+            "description": "Duración máxima recomendada del tratamiento"
+          },
+          "notaPreparacion": {
+            "type": "string",
+            "description": "Consejos adicionales de preparación"
+          }
+        }
+      }
+    },
+
+    "contraindicaciones": {
+      "type": "array",
+      "description": "Situaciones donde NO está recomendada",
+      "items": {
+        "type": "object",
+        "properties": {
+          "condicion": { "type": "string" },
+          "gravedad": {
+            "type": "string",
+            "enum": ["absoluta", "relativa", "precaución"]
+          },
+          "justificacion": { "type": "string" }
+        }
+      }
+    },
+
+    "interaccionesMedicamentosas": {
+      "type": "array",
+      "description": "Interacciones con medicamentos documentadas",
+      "items": {
+        "type": "object",
+        "properties": {
+          "medicamento": { "type": "string" },
+          "tipo": {
+            "type": "string",
+            "enum": ["potenciación", "antagonismo", "alteración-metabolismo", "precaución"]
+          },
+          "mecanismo": { "type": "string" },
+          "gravedad": {
+            "type": "string",
+            "enum": ["grave", "moderada", "leve", "teórica"]
+          }
+        }
+      }
+    },
+
+    "embarazoLactancia": {
+      "type": "object",
+      "description": "Perfil de seguridad en embarazo y lactancia",
+      "properties": {
+        "embarazo": {
+          "type": "string",
+          "enum": ["segura", "precaución", "contraindicada", "sin-datos"]
+        },
+        "lactancia": {
+          "type": "string",
+          "enum": ["segura", "precaución", "contraindicada", "sin-datos"]
+        },
+        "pediatria": {
+          "type": "string",
+          "description": "Uso en niños: edad mínima y precauciones"
+        },
+        "justificacion": { "type": "string" }
+      }
+    },
+
+    "compatibilidadPlantas": {
+      "type": "object",
+      "description": "Sinergia e incompatibilidades con otras plantas",
+      "properties": {
+        "sinergicas": {
+          "type": "array",
+          "description": "Plantas que potencian su acción",
+          "items": {
+            "type": "object",
+            "properties": {
+              "plantaId": { "type": "string" },
+              "plantaNom": { "type": "string" },
+              "motivo": { "type": "string" }
+            }
+          }
+        },
+        "incompatibles": {
+          "type": "array",
+          "description": "Plantas con las que NO se debe combinar",
+          "items": {
+            "type": "object",
+            "properties": {
+              "plantaId": { "type": "string" },
+              "plantaNom": { "type": "string" },
+              "motivo": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+
+    "infusionesRelacionadas": {
+      "type": "array",
+      "description": "IDs de mezclas o infusiones que incluyen esta planta",
+      "items": { "type": "string" }
+    },
+
+    "recetasRelacionadas": {
+      "type": "array",
+      "description": "IDs de recetas especiales donde se usa esta planta",
+      "items": { "type": "string" }
+    },
+
+    "mindfulnessRelacionado": {
+      "type": "array",
+      "description": "IDs de técnicas mindfulness recomendadas junto a esta planta",
+      "items": { "type": "string" }
+    },
+
+    "veterinaria": {
+      "type": "object",
+      "description": "Uso veterinario si está documentado",
+      "properties": {
+        "documentado": { "type": "boolean" },
+        "animales": { "type": "array", "items": { "type": "string" } },
+        "usos": { "type": "array", "items": { "type": "string" } },
+        "precauciones": { "type": "string" }
+      }
+    },
+
+    "imagen": {
+      "type": "object",
+      "description": "Imagen de la planta para la ficha",
+      "properties": {
+        "url": { "type": "string" },
+        "urlMiniatura": { "type": "string" },
+        "alt": { "type": "string" },
+        "credito": { "type": "string" },
+        "licencia": {
+          "type": "string",
+          "enum": ["CC0", "CC-BY", "CC-BY-SA", "CC-BY-NC", "dominio-público", "propia"]
+        }
+      }
+    },
+
+    "emoji": {
+      "type": "string",
+      "description": "Emoji representativo para uso en la interfaz"
+    },
+
+    "notebooklmUrl": {
+      "type": "string",
+      "format": "uri",
+      "description": "URL al notebook de NotebookLM con los PDFs de monografías de esta planta"
+    },
+
+    "fuentes": {
+      "type": "array",
+      "description": "Referencias bibliográficas completas ordenadas por peso",
+      "items": {
+        "type": "object",
+        "required": ["autor", "titulo", "tipo"],
+        "properties": {
+          "autor": { "type": "string" },
+          "titulo": { "type": "string" },
+          "publicacion": { "type": "string" },
+          "año": { "type": "integer" },
+          "volumen": { "type": "string" },
+          "paginas": { "type": "string" },
+          "url": { "type": "string", "format": "uri" },
+          "doi": { "type": "string" },
+          "pmid": { "type": "string", "description": "PubMed ID si aplica" },
+          "isbn": { "type": "string" },
+          "tipo": {
+            "type": "string",
+            "enum": [
+              "monografía-OMS", "monografía-EMA", "comision-e",
+              "estudio-clinico-ECA", "revision-sistematica",
+              "metaanalisis", "estudio-observacional",
+              "validacion-tramil", "estudio-universitario",
+              "libro-referencia", "base-datos", "farmacopea"
+            ]
+          },
+          "nivelEvidencia": {
+            "type": "string",
+            "enum": ["A", "B", "C", "D"]
+          },
+          "idioma": {
+            "type": "string",
+            "enum": ["es", "en", "de", "fr", "pt"]
+          }
+        }
+      }
+    },
+
+    "advertencia": {
+      "type": "string",
+      "description": "Aviso de seguridad específico y destacado para esta planta"
+    },
+
+    "disclaimer": {
+      "type": "string",
+      "description": "Disclaimer personalizado si difiere del global de la app",
+      "default": "Esta información es educativa y no sustituye el diagnóstico ni el tratamiento médico profesional."
+    },
+
+    "etiquetas": {
+      "type": "array",
+      "description": "Tags libres para búsqueda full-text y filtros en la app",
+      "items": { "type": "string" }
+    },
+
+    "versionFicha": {
+      "type": "string",
+      "description": "Versión de esta ficha específica",
+      "default": "2.0"
+    },
+
+    "fechaCreacion": {
+      "type": "string",
+      "format": "date",
+      "description": "Fecha de creación de la ficha"
+    },
+
+    "fechaRevision": {
+      "type": "string",
+      "format": "date",
+      "description": "Fecha de última revisión y actualización"
+    },
+
+    "revisadoPor": {
+      "type": "string",
+      "description": "Nombre o identificador del revisor de la ficha"
+    },
+
+    "estadoFicha": {
+      "type": "string",
+      "enum": ["borrador", "revision", "publicada", "archivada"],
+      "description": "Estado editorial de la ficha",
+      "default": "borrador"
+    }
+  },
+
+  "definitions": {
+
+    "nivelEvidenciaEnum": {
+      "type": "string",
+      "enum": ["fuerte", "moderado", "preliminar", "tradicional"],
+      "description": "fuerte=varios ECA | moderado=algunos estudios | preliminar=in vitro | tradicional=etnobotánica"
+    },
+
+    "nivelBibliografico": {
+      "type": "string",
+      "enum": ["A", "B", "C", "D"],
+      "description": "A=OMS/EMA | B=PubMed/Cochrane/TRAMIL | C=Estudios universitarios regionales | D=Etnobotánica documentada"
+    }
+  },
+
+  "examples": [
+    {
+      "id": "manzanilla",
+      "nombreComun": "Manzanilla",
+      "nombresAlternativos": [
+        { "nombre": "camomila", "idioma": "es", "region": "España" },
+        { "nombre": "chamomile", "idioma": "en", "region": "Global" }
+      ],
+      "nombreCientifico": "Matricaria chamomilla L.",
+      "sinonimiasCientificas": ["Matricaria recutita L.", "Chamomilla recutita (L.) Rauschert"],
+      "familia": "Asteraceae",
+      "orden": "Asterales",
+      "regionOrigen": ["Europa", "Asia Occidental"],
+      "nivelEvidenciaGlobal": "A",
+      "fuentePrimaria": {
+        "institucion": "OMS",
+        "tipo": "monografía",
+        "titulo": "WHO Monographs on Selected Medicinal Plants — Flos Chamomillae",
+        "año": 1999,
+        "url": "https://apps.who.int/medicinedocs/en/d/Js2200e/"
+      },
+      "disponibilidadPanama": {
+        "disponible": true,
+        "nombreLocal": "manzanilla",
+        "formaComercial": ["seca", "té-empacado", "aceite-esencial"],
+        "dondeConseguir": ["farmacia", "supermercado", "tienda-naturista"],
+        "cultivoLocal": true,
+        "notaRegional": "Fácil de conseguir en toda la república. Se cultiva en jardines caseros."
+      },
+      "cultivoCasero": {
+        "dificultad": "moderada",
+        "apta": true,
+        "maceta": true,
+        "luz": "pleno-sol",
+        "agua": "moderado",
+        "suelo": "Bien drenado, ligeramente ácido a neutro",
+        "clima": "Prefiere climas frescos; en Panamá mejor en zonas altas (Boquete, Volcán)",
+        "notaCultivo": "En climas tropicales cálidos puede cultivarse en altitudes superiores a 1000 m. Sembrar en temporada seca.",
+        "tiempoACosecha": "60-90 días"
+      },
+      "estadoFicha": "publicada",
+      "versionFicha": "2.0",
+      "fechaCreacion": "2026-04-14",
+      "fechaRevision": "2026-04-14"
+    }
+  ]
+}

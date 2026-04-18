@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>NathuraVitae — Explorar por síntoma</title>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --v1: #1a4a35; --v2: #2d7a5a; --v3: #4aab7f;
+  --vp: #e8f5ef; --vm: #c8ead8; --vt: #a0d4b8;
+  --crema: #faf8f3; --crema2: #f0ece0; --crema3: #e8e0cc;
+  --tx: #1c1c1a; --tx2: #4a4a46; --tx3: #8a8a84;
+  --mora: #6b5b95; --morap: #f0edf8; --moram: #d8d0f0;
+  --amb: #c47a1e; --ambp: #fef3e2; --ambm: #f5d89a;
+  --roj: #b84444; --rojp: #fdeaea;
+  --azul: #2860a8; --azulp: #e8f0fb;
+  --borde: rgba(44,90,60,0.12);
+  --r: 14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'DM Sans',sans-serif;background:var(--crema);color:var(--tx);min-height:100vh}
+
+/* App bar */
+.appbar{background:var(--v1);padding:14px 20px 14px;display:flex;align-items:center;gap:10px;position:sticky;top:0;z-index:20}
+.appbar-ico{width:30px;height:30px;border-radius:50%;background:rgba(255,255,255,0.12);display:flex;align-items:center;justify-content:center;border:none;color:white;cursor:pointer;flex-shrink:0}
+.appbar-title{font-family:'Lora',serif;font-size:17px;color:white;font-weight:400}
+.appbar-badge{margin-left:auto;font-size:11px;padding:3px 9px;border-radius:10px;background:rgba(255,255,255,0.15);color:rgba(255,255,255,0.85)}
+
+/* Hero búsqueda */
+.hero{background:var(--v1);padding:0 20px 28px}
+.hero-title{font-family:'Lora',serif;font-size:24px;color:white;font-weight:500;line-height:1.25;margin-bottom:6px}
+.hero-sub{font-size:13px;color:rgba(255,255,255,0.6);margin-bottom:20px;line-height:1.5}
+.search-wrap{position:relative}
+.search-input{width:100%;padding:13px 16px 13px 44px;border-radius:12px;border:none;background:rgba(255,255,255,0.12);color:white;font-size:15px;font-family:'DM Sans',sans-serif;outline:none}
+.search-input::placeholder{color:rgba(255,255,255,0.45)}
+.search-input:focus{background:rgba(255,255,255,0.18)}
+.search-ico{position:absolute;left:14px;top:50%;transform:translateY(-50%);opacity:0.5}
+.wave{display:block;margin-top:-1px;width:100%}
+
+/* Toggle modo EII */
+.modo-eii-bar{margin:0 16px 16px;background:var(--ambp);border-radius:12px;border:1px solid var(--ambm);padding:10px 14px;display:flex;align-items:center;gap:10px}
+.modo-label{font-size:13px;color:var(--amb);flex:1;line-height:1.3}
+.modo-label b{display:block;font-weight:500;color:#8a5010;font-size:12px;margin-bottom:1px}
+.toggle{position:relative;width:38px;height:22px;flex-shrink:0}
+.toggle input{opacity:0;width:0;height:0;position:absolute}
+.slider{position:absolute;inset:0;border-radius:11px;background:var(--ambm);cursor:pointer;transition:.25s}
+.slider::after{content:'';position:absolute;left:3px;top:3px;width:16px;height:16px;border-radius:50%;background:white;transition:.25s}
+input:checked+.slider{background:var(--amb)}
+input:checked+.slider::after{transform:translateX(16px)}
+
+/* Síntomas grid */
+.seccion{padding:0 16px;margin-bottom:24px}
+.sec-title{font-size:11px;font-weight:500;letter-spacing:.8px;text-transform:uppercase;color:var(--v2);margin-bottom:12px;display:flex;align-items:center;gap:8px}
+.sec-title::after{content:'';flex:1;height:1px;background:var(--borde)}
+.sintomas-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.sintoma-btn{display:flex;align-items:center;gap:10px;padding:13px 12px;border-radius:12px;border:1px solid var(--borde);background:white;cursor:pointer;text-align:left;transition:all .18s;font-family:'DM Sans',sans-serif}
+.sintoma-btn:hover{border-color:var(--vt);background:var(--vp)}
+.sintoma-btn.sel{border-color:var(--v2);background:var(--vp);box-shadow:0 0 0 1px var(--v2)}
+.sin-ico{width:36px;height:36px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0}
+.sin-nom{font-size:13px;font-weight:500;color:var(--tx);line-height:1.2}
+.sin-cat{font-size:10px;color:var(--tx3);margin-top:2px}
+
+/* CTA buscar */
+.cta-buscar{margin:0 16px 20px;padding:14px 18px;background:var(--v1);border-radius:12px;border:none;width:calc(100% - 32px);display:flex;align-items:center;justify-content:center;gap:10px;cursor:pointer;font-family:'DM Sans',sans-serif;font-size:15px;font-weight:500;color:white;transition:opacity .15s}
+.cta-buscar:hover{opacity:.9}
+.cta-buscar:disabled{opacity:.4;cursor:default}
+
+/* Resultados */
+.resultados{padding:0 16px;margin-bottom:32px;display:none}
+.resultados.visible{display:block}
+.resultado-card{background:white;border-radius:16px;border:1px solid var(--borde);margin-bottom:16px;overflow:hidden}
+.result-head{padding:16px 16px 12px;border-bottom:1px solid var(--borde);display:flex;gap:12px;align-items:flex-start}
+.result-ico{font-size:28px;flex-shrink:0;margin-top:2px}
+.result-titulo{font-family:'Lora',serif;font-size:18px;font-weight:500;color:var(--v1);line-height:1.2}
+.result-sub{font-size:12px;color:var(--tx3);margin-top:3px}
+.result-body{padding:14px 16px}
+.result-sec{margin-bottom:14px}
+.result-sec-title{font-size:10px;font-weight:500;letter-spacing:.7px;text-transform:uppercase;margin-bottom:8px;display:flex;align-items:center;gap:6px}
+.tag-verde{background:var(--vp);color:var(--v1);border:1px solid var(--vm)}
+.tag-mora{background:var(--morap);color:var(--mora);border:1px solid var(--moram)}
+.tag-amb{background:var(--ambp);color:var(--amb);border:1px solid var(--ambm)}
+.tag-roj{background:var(--rojp);color:var(--roj);border:1px solid #f0c0c0}
+.tag-azul{background:var(--azulp);color:var(--azul);border:1px solid #b0c8f0}
+.result-sec-title.verde{color:var(--v2)}
+.result-sec-title.mora{color:var(--mora)}
+.result-sec-title.amb{color:var(--amb)}
+.result-sec-title.roj{color:var(--roj)}
+.result-sec-title.azul{color:var(--azul)}
+.pills-row{display:flex;flex-wrap:wrap;gap:6px}
+.pill{font-size:12px;padding:5px 11px;border-radius:20px;display:flex;align-items:center;gap:5px}
+.plant-chip{display:flex;align-items:center;gap:8px;padding:10px 12px;background:var(--crema2);border-radius:10px;border:1px solid var(--borde);margin-bottom:6px;cursor:pointer;transition:background .15s}
+.plant-chip:hover{background:var(--vp)}
+.plant-ico{font-size:16px}
+.plant-nom{font-size:14px;font-weight:500;color:var(--tx)}
+.plant-prop{font-size:11px;color:var(--tx3);margin-left:auto}
+.evid-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+.evid-fuerte{background:var(--v3)}
+.evid-moderado{background:#a0c878}
+.evid-preliminar{background:var(--ambm)}
+.aviso-brote{margin-top:10px;padding:10px 12px;background:var(--ambp);border-radius:9px;border:1px solid var(--ambm);font-size:12px;color:#8a5010;line-height:1.5;display:none}
+.aviso-brote.visible{display:block}
+.aviso-evitar{padding:10px 12px;background:var(--rojp);border-radius:9px;border:1px solid #f0c0c0;font-size:12px;color:var(--roj);line-height:1.5}
+.infusion-card{background:var(--ambp);border-radius:10px;border:1px solid var(--ambm);padding:12px 14px}
+.infusion-nom{font-size:14px;font-weight:500;color:#8a5010;margin-bottom:4px}
+.infusion-desc{font-size:12px;color:#a06820;line-height:1.5}
+.mindful-card{background:var(--morap);border-radius:10px;border:1px solid var(--moram);padding:12px 14px;display:flex;align-items:center;gap:10px;cursor:pointer}
+.mindful-nom{font-size:14px;font-weight:500;color:var(--mora)}
+.mindful-desc{font-size:12px;color:#8070b0;margin-top:2px}
+.alimentaria-card{background:var(--azulp);border-radius:10px;border:1px solid #b0c8f0;padding:12px 14px}
+.alim-nom{font-size:14px;font-weight:500;color:var(--azul);margin-bottom:4px}
+.alim-desc{font-size:12px;color:#4070b8;line-height:1.5}
+
+/* Disclaimer */
+.disclaimer{margin:0 16px 24px;padding:12px 14px;background:var(--crema2);border-radius:10px;border:1px solid var(--borde);font-size:11px;color:var(--tx3);line-height:1.6;text-align:center}
+</style>
+</head>
+<body>
+
+<div class="appbar">
+  <button class="appbar-ico">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round"><path d="M15 18l-6-6 6-6"/></svg>
+  </button>
+  <span class="appbar-title">Explorar por síntoma</span>
+  <span class="appbar-badge">NathuraVitae</span>
+</div>
+
+<div class="hero">
+  <div style="height:20px"></div>
+  <div class="hero-title">¿Qué estás<br>sintiendo?</div>
+  <div class="hero-sub">Selecciona tus síntomas y recibe una ruta natural completa</div>
+  <div class="search-wrap">
+    <svg class="search-ico" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    <input class="search-input" type="text" placeholder="Buscar síntoma…" id="busq" oninput="filtrarSintomas(this.value)">
+  </div>
+</div>
+<svg class="wave" viewBox="0 0 390 24" preserveAspectRatio="none" fill="#faf8f3"><path d="M0,24 L0,12 Q97.5,0 195,12 Q292.5,24 390,12 L390,24 Z"/></svg>
+
+<!-- Modo EII toggle -->
+<div class="modo-eii-bar">
+  <div class="modo-label">
+    <b>Modo EII / sensibilidad intestinal</b>
+    Activa para ver alertas específicas y ajustar recomendaciones
+  </div>
+  <label class="toggle">
+    <input type="checkbox" id="modoEII" onchange="actualizarModoEII()">
+    <span class="slider"></span>
+  </label>
+</div>
+
+<!-- Selector de síntomas -->
+<div class="seccion">
+  <div class="sec-title">Sistema digestivo</div>
+  <div class="sintomas-grid" id="grid-digestivo">
+    <button class="sintoma-btn" data-id="inflamacion-intestinal" data-cat="digestivo" onclick="toggleSintoma(this)">
+      <div class="sin-ico" style="background:#fdeaea">🔥</div>
+      <div><div class="sin-nom">Inflamación intestinal</div><div class="sin-cat">digestivo</div></div>
+    </button>
+    <button class="sintoma-btn" data-id="gases" data-cat="digestivo" onclick="toggleSintoma(this)">
+      <div class="sin-ico" style="background:#fef3e2">💨</div>
+      <div><div class="sin-nom">Gases y distensión</div><div class="sin-cat">digestivo</div></div>
+    </button>
+    <button class="sintoma-btn" data-id="gastritis" data-cat="digestivo" onclick="toggleSintoma(this)">
+      <div class="sin-ico" style="background:#fdeaea">🤢</div>
+      <div><div class="sin-nom">Gastritis / acidez</div><div class="sin-cat">digestivo</div></div>
+    </button>
+    <button class="sintoma-btn" data-id="nauseas" data-cat="digestivo" onclick="toggleSintoma(this)">
+      <div class="sin-ico" style="background:#e8f5ef">🌀</div>
+      <div><div class="sin-nom">Náuseas</div><div class="sin-cat">digestivo</div></div>
+    </button>
+    <button class="sintoma-btn" data-id="dolor-abdominal" data-cat="digestivo" onclick="toggleSintoma(this)">
+      <div class="sin-ico" style="background:#fdeaea">😣</div>
+      <div><div class="sin-nom">Dolor abdominal</div><div class="sin-cat">digestivo</div></div>
+    </button>
+    <button class="sintoma-btn" data-id="sii" data-cat="digestivo" onclick="toggleSintoma(this)">
+      <div class="sin-ico" style="background:#fef3e2">〰️</div>
+      <div><div class="sin-nom">Colon irritable</div><div class="sin-cat">digestivo</div></div>
+    </button>
+  </div>
+</div>
+
+<div class="seccion">
+  <div class="sec-title">Sistema nervioso</div>
+  <div class="sintomas-grid">
+    <button class="sintoma-btn" data-id="ansiedad" data-cat="nervioso" onclick="toggleSintoma(this)">
+      <div class="sin-ico" style="background:#f0edf8">😰</div>
+      <div><div class="sin-nom">Ansiedad / nervios</div><div class="sin-cat">nervioso</div></div>
+    </button>
+    <button class="sintoma-btn" data-id="insomnio" data-cat="nervioso" onclick="toggleSintoma(this)">
+      <div class="sin-ico" style="background:#f0edf8">🌙</div>
+      <div><div class="sin-nom">Insomnio</div><div class="sin-cat">nervioso</div></div>
+    </button>
+    <button class="sintoma-btn" data-id="estres" data-cat="nervioso" onclick="toggleSintoma(this)">
+      <div class="sin-ico" style="background:#f0edf8">🧠</div>
+      <div><div class="sin-nom">Estrés crónico</div><div class="sin-cat">nervioso</div></div>
+    </button>
+    <button class="sintoma-btn" data-id="fatiga" data-cat="general" onclick="toggleSintoma(this)">
+      <div class="sin-ico" style="background:#e8f0fb">😴</div>
+      <div><div class="sin-nom">Fatiga y agotamiento</div><div class="sin-cat">general</div></div>
+    </button>
+  </div>
+</div>
+
+<div class="seccion">
+  <div class="sec-title">Sistema respiratorio</div>
+  <div class="sintomas-grid">
+    <button class="sintoma-btn" data-id="tos" data-cat="respiratorio" onclick="toggleSintoma(this)">
+      <div class="sin-ico" style="background:#e8f5ef">🤧</div>
+      <div><div class="sin-nom">Tos / bronquitis</div><div class="sin-cat">respiratorio</div></div>
+    </button>
+    <button class="sintoma-btn" data-id="congestion" data-cat="respiratorio" onclick="toggleSintoma(this)">
+      <div class="sin-ico" style="background:#e8f5ef">👃</div>
+      <div><div class="sin-nom">Congestión nasal</div><div class="sin-cat">respiratorio</div></div>
+    </button>
+    <button class="sintoma-btn" data-id="gripe" data-cat="respiratorio" onclick="toggleSintoma(this)">
+      <div class="sin-ico" style="background:#fdeaea">🤒</div>
+      <div><div class="sin-nom">Gripe / resfriado</div><div class="sin-cat">respiratorio</div></div>
+    </button>
+    <button class="sintoma-btn" data-id="defensas" data-cat="inmunológico" onclick="toggleSintoma(this)">
+      <div class="sin-ico" style="background:#e8f0fb">🛡️</div>
+      <div><div class="sin-nom">Defensas bajas</div><div class="sin-cat">inmunológico</div></div>
+    </button>
+  </div>
+</div>
+
+<button class="cta-buscar" id="btnBuscar" disabled onclick="generarRuta()">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"><path d="M11 20A7 7 0 0 1 4 13c0-6 7-12 7-12s7 6 7 12a7 7 0 0 1-7 7z"/><circle cx="11" cy="11" r="3"/></svg>
+  Ver mi ruta natural
+</button>
+
+<!-- RESULTADOS -->
+<div class="resultados" id="resultados">
+  <div class="sec-title">Tu ruta natural personalizada</div>
+
+  <!-- Plantas -->
+  <div class="resultado-card">
+    <div class="result-head">
+      <div class="result-ico">🌿</div>
+      <div>
+        <div class="result-titulo">Plantas recomendadas</div>
+        <div class="result-sub" id="plantasSub">Ordenadas por nivel de evidencia</div>
+      </div>
+    </div>
+    <div class="result-body">
+      <div class="aviso-brote" id="avisoBrote">
+        ⚠️ <strong>Modo EII activo:</strong> Se excluyen plantas que pueden irritar en brote activo. Mostrando solo las seguras.
+      </div>
+      <div id="plantasLista" style="margin-top:10px"></div>
+    </div>
+  </div>
+
+  <!-- Infusión sugerida -->
+  <div class="resultado-card">
+    <div class="result-head">
+      <div class="result-ico">🍵</div>
+      <div>
+        <div class="result-titulo">Infusión sugerida</div>
+        <div class="result-sub">Mezcla de plantas compatible con tus síntomas</div>
+      </div>
+    </div>
+    <div class="result-body">
+      <div class="infusion-card">
+        <div class="infusion-nom" id="infusionNom">—</div>
+        <div class="infusion-desc" id="infusionDesc">—</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Qué evitar -->
+  <div class="resultado-card">
+    <div class="result-head">
+      <div class="result-ico">🚫</div>
+      <div>
+        <div class="result-titulo">Qué evitar</div>
+        <div class="result-sub">Para no empeorar los síntomas</div>
+      </div>
+    </div>
+    <div class="result-body">
+      <div class="aviso-evitar" id="evitarContenido">—</div>
+    </div>
+  </div>
+
+  <!-- Mindfulness -->
+  <div class="resultado-card">
+    <div class="result-head">
+      <div class="result-ico">🧘</div>
+      <div>
+        <div class="result-titulo">Técnica mindfulness</div>
+        <div class="result-sub">Recomendada para tus síntomas</div>
+      </div>
+    </div>
+    <div class="result-body">
+      <div class="mindful-card" id="mindfulCard" onclick="abrirMindful()">
+        <div style="font-size:28px" id="mindfulIco">🫁</div>
+        <div>
+          <div class="mindful-nom" id="mindfulNom">—</div>
+          <div class="mindful-desc" id="mindfulDesc">—</div>
+        </div>
+        <svg style="margin-left:auto;flex-shrink:0;opacity:.4" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 18l6-6-6-6"/></svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sugerencia alimentaria -->
+  <div class="resultado-card" id="cardAlimentaria">
+    <div class="result-head">
+      <div class="result-ico">🍽️</div>
+      <div>
+        <div class="result-titulo">Sugerencia alimentaria</div>
+        <div class="result-sub">Compatible con tus síntomas</div>
+      </div>
+    </div>
+    <div class="result-body">
+      <div class="alimentaria-card">
+        <div class="alim-nom" id="alimentariaNom">—</div>
+        <div class="alim-desc" id="alimentariaDesc">—</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="disclaimer">
+  ⚕ Esta información es educativa y no reemplaza el diagnóstico ni el tratamiento médico.<br>
+  Consulte a su médico antes de iniciar cualquier terapia, especialmente si usa medicamentos o tiene condiciones de salud crónicas.
+</div>
+
+<script>
+const PLANTAS = [
+  { id:"manzanilla", nom:"Manzanilla", ci:"Matricaria chamomilla", emoji:"🌼", evid:"fuerte",
+    sintomas:["inflamacion-intestinal","gases","gastritis","dolor-abdominal","sii","ansiedad","insomnio"],
+    prop:"Antiinflamatoria · antiespasmódica", eiiSegura:true, noEIIBrote:false,
+    nota:"Segura en brote. Calma espasmos y reduce inflamación leve." },
+  { id:"jengibre", nom:"Jengibre", ci:"Zingiber officinale", emoji:"🫚", evid:"fuerte",
+    sintomas:["nauseas","gases","dolor-abdominal","fatiga"],
+    prop:"Antiinflamatoria · antináuseas", eiiSegura:true, noEIIBrote:true,
+    nota:"Evitar en brote activo: puede irritar la mucosa inflamada." },
+  { id:"hinojo", nom:"Hinojo", ci:"Foeniculum vulgare", emoji:"🌱", evid:"fuerte",
+    sintomas:["gases","dolor-abdominal","sii","inflamacion-intestinal"],
+    prop:"Carminativa · antiespasmódica", eiiSegura:true, noEIIBrote:false,
+    nota:"Segura en brote. Alivia espasmos y distensión sin irritar." },
+  { id:"curcuma", nom:"Cúrcuma", ci:"Curcuma longa", emoji:"🟡", evid:"moderado",
+    sintomas:["inflamacion-intestinal","dolor-abdominal","fatiga"],
+    prop:"Antiinflamatoria sistémica", eiiSegura:true, noEIIBrote:true,
+    nota:"Preferir extracto estandarizado en brote. Combinar con pimienta." },
+  { id:"aloe-vera", nom:"Aloe vera (gel)", ci:"Aloe vera", emoji:"🌵", evid:"moderado",
+    sintomas:["inflamacion-intestinal","gastritis","sii"],
+    prop:"Protector de mucosa · demulcente", eiiSegura:true, noEIIBrote:false,
+    nota:"El gel (sin látex) es seguro y protector en brote activo." },
+  { id:"regaliz", nom:"Regaliz DGL", ci:"Glycyrrhiza glabra", emoji:"🟤", evid:"moderado",
+    sintomas:["gastritis","dolor-abdominal","inflamacion-intestinal","tos","congestion"],
+    prop:"Gastroprotectora · antiinflamatoria", eiiSegura:true, noEIIBrote:false,
+    nota:"Usar siempre forma DGL (sin glicirricina) en EII." },
+  { id:"valeriana", nom:"Valeriana", ci:"Valeriana officinalis", emoji:"🌸", evid:"fuerte",
+    sintomas:["insomnio","ansiedad","estres"],
+    prop:"Sedante · hipnótica", eiiSegura:true, noEIIBrote:false,
+    nota:"Segura en brote. Ayuda a manejar el estrés que agrava la EII." },
+  { id:"pasiflora", nom:"Pasiflora", ci:"Passiflora incarnata", emoji:"🌺", evid:"fuerte",
+    sintomas:["ansiedad","insomnio","estres","fatiga"],
+    prop:"Ansiolítica · sedante suave", eiiSegura:true, noEIIBrote:false,
+    nota:"Excelente en brote para controlar la ansiedad asociada." },
+  { id:"melisa", nom:"Melisa", ci:"Melissa officinalis", emoji:"🍋", evid:"moderado",
+    sintomas:["ansiedad","estres","sii","gases","insomnio"],
+    prop:"Calmante · antiespasmódica digestiva", eiiSegura:true, noEIIBrote:false,
+    nota:"Muy útil cuando el estrés se manifiesta en el intestino." },
+  { id:"ashwagandha", nom:"Ashwagandha", ci:"Withania somnifera", emoji:"🌰", evid:"fuerte",
+    sintomas:["estres","fatiga","ansiedad","insomnio"],
+    prop:"Adaptógena · ansiolítica", eiiSegura:true, noEIIBrote:true,
+    nota:"Evitar en brote activo. Muy útil en mantenimiento de EII." },
+  { id:"sauco", nom:"Saúco", ci:"Sambucus nigra", emoji:"🫐", evid:"fuerte",
+    sintomas:["gripe","defensas","tos","congestion"],
+    prop:"Antiviral · inmunoestimulante", eiiSegura:false, noEIIBrote:true,
+    nota:"Evitar en EII: estimula el sistema inmune y puede exacerbar brotes." },
+  { id:"tomillo", nom:"Tomillo", ci:"Thymus vulgaris", emoji:"🌿", evid:"fuerte",
+    sintomas:["tos","congestion","gripe"],
+    prop:"Expectorante · antimicrobiana", eiiSegura:true, noEIIBrote:false,
+    nota:"Seguro para uso respiratorio incluso en brote." },
+  { id:"eucalipto", nom:"Eucalipto", ci:"Eucalyptus globulus", emoji:"🌲", evid:"fuerte",
+    sintomas:["congestion","tos","gripe"],
+    prop:"Descongestionante · expectorante", eiiSegura:true, noEIIBrote:false,
+    nota:"Seguro por inhalación. Uso interno con precaución." },
+  { id:"equinacea", nom:"Equinácea", ci:"Echinacea purpurea", emoji:"💜", evid:"fuerte",
+    sintomas:["gripe","defensas"],
+    prop:"Inmunoestimulante · antiviral", eiiSegura:false, noEIIBrote:true,
+    nota:"CONTRAINDICADA en EII: estimula el sistema inmune." },
+  { id:"ajo", nom:"Ajo", ci:"Allium sativum", emoji:"🧄", evid:"moderado",
+    sintomas:["gripe","defensas","congestion"],
+    prop:"Antimicrobiana · inmunoestimulante", eiiSegura:true, noEIIBrote:true,
+    nota:"Evitar crudo en brote. Cocinado tolerable en mantenimiento." }
+];
+
+const RUTAS = {
+  "inflamacion-intestinal": {
+    infusion: { nom:"Infusión anti-colitis", desc:"Manzanilla (2g) + Hinojo (1g) + Regaliz DGL (1g). Agua 85°C, infusionar 12 min tapado. 3 tazas/día entre comidas." },
+    evitar:"Cafeína · alcohol · picantes · fibra insoluble en brote · AINE · lácteos si hay intolerancia asociada",
+    mindful:{ ico:"🫁", nom:"Respiración diafragmática", desc:"5 min de respiración profunda abdominal. Reduce el estrés que agrava la inflamación intestinal.", id:"resp-diafragmatica" },
+    alimentaria:{ nom:"Dieta baja en residuos (brote)", desc:"Alimentos cocidos y blandos: arroz blanco, pollo hervido, zanahoria cocida. Sin fibra cruda ni semillas. Sin gluten en caso de sensibilidad asociada." }
+  },
+  "gases": {
+    infusion:{ nom:"Digestiva carminativa", desc:"Hinojo (2g) + Melisa (1g) + Manzanilla (1g). Agua hirviendo, 10 min tapado. 1 taza tras cada comida." },
+    evitar:"Legumbres sin remojar · crucíferas crudas · bebidas carbonatadas · chicle · comer rápido · lactosa si hay intolerancia",
+    mindful:{ ico:"🧘", nom:"Postura de liberación de gases (yoga)", desc:"Postura del niño durante 3-5 min tras las comidas. Reduce la tensión abdominal y facilita el tránsito.", id:"yoga-gases" },
+    alimentaria:{ nom:"Alimentos carminativos", desc:"Semillas de hinojo masticadas tras las comidas · agua con jengibre y limón · menta en infusión · anís estrellado." }
+  },
+  "gastritis": {
+    infusion:{ nom:"Calmante gástrica", desc:"Regaliz DGL (2g) + Manzanilla (2g). Agua a 85°C, 15 min. 1 taza 20 min antes de cada comida." },
+    evitar:"Café · alcohol · AINE (ibuprofeno) · picantes · cítricos en exceso · ayunos prolongados · tabaco",
+    mindful:{ ico:"🫁", nom:"Respiración 4-7-8", desc:"Inhala 4s · aguanta 7s · exhala 8s. 4 ciclos antes de comer. Reduce el cortisol que estimula el ácido gástrico.", id:"resp-478" },
+    alimentaria:{ nom:"Dieta antiácida natural", desc:"Arroz integral · avena · manzana cocida · plátano maduro · kéfir si se tolera · agua alcalina. Evitar alimentos ultraprocesados." }
+  },
+  "nauseas": {
+    infusion:{ nom:"Antináuseas de jengibre", desc:"Jengibre fresco rallado (1 cm) en 200ml agua, hervir 5 min. Colar. Con unas gotas de limón y miel. A pequeños sorbos." },
+    evitar:"Olores fuertes · grasas · alimentos muy calientes · medicamentos con estómago vacío · movimiento brusco tras comer",
+    mindful:{ ico:"🌬️", nom:"Respiración por la nariz (olfato)", desc:"Inhala lento por la nariz · retén 3s · exhala muy lento por la boca. 6 ciclos. Activa el nervio vago y reduce las náuseas.", id:"resp-nariz" },
+    alimentaria:{ nom:"Alimentos para náuseas", desc:"Galletas de arroz o avena · jengibre confitado · caldo vegetal suave · manzana rallada · plátano. Comer porciones muy pequeñas y frecuentes." }
+  },
+  "dolor-abdominal": {
+    infusion:{ nom:"Antiespasmódica clásica", desc:"Manzanilla (2g) + Hinojo (1g) + Melisa (1g). 10 min tapado. 3 tazas/día. En brote preferir solo manzanilla e hinojo." },
+    evitar:"Alimentos flatulentos · fibra insoluble cruda · leche · café · estrés acumulado · comidas abundantes",
+    mindful:{ ico:"🤲", nom:"Body scan abdominal", desc:"Tumbado, lleva la atención al abdomen. Respira con el vientre 10 min. Reduce los espasmos de origen nervioso.", id:"body-scan" },
+    alimentaria:{ nom:"Alimentos antiespásticos", desc:"Caldo de huesos · arroz blanco · zanahoria cocida · manzana asada · plátano. Fraccionar en 5-6 comidas pequeñas." }
+  },
+  "sii": {
+    infusion:{ nom:"Digestiva-nerviosa para SII", desc:"Melisa (2g) + Hinojo (1g) + Manzanilla (1g). 12 min tapado. 3 tazas/día. Especialmente útil cuando el estrés desencadena los síntomas." },
+    evitar:"FODMAP altos (trigo, cebolla, ajo crudo, legumbres, lácteos) · cafeína · alcohol · estrés no manejado · alimentos ultraprocesados",
+    mindful:{ ico:"🧠", nom:"Coherencia cardíaca", desc:"5 inhalaciones y 5 exhalaciones por minuto durante 5 min. Regula el eje intestino-cerebro, clave en el SII.", id:"coherencia-cardiaca" },
+    alimentaria:{ nom:"Dieta baja en FODMAP (inicio)", desc:"Arroz · quinoa · pollo · pescado · calabacín · zanahoria · fresa · uva. Evitar trigo, cebolla, ajo, legumbres y lácteos inicialmente." }
+  },
+  "ansiedad": {
+    infusion:{ nom:"Calma total", desc:"Pasiflora (2g) + Melisa (1g) + Manzanilla (1g). 12 min tapado. 2-3 tazas/día. Ideal 1 taza al mediodía y 1 al atardecer." },
+    evitar:"Cafeína · alcohol · exceso de pantallas · noticias en bucle · azúcar refinada · privación de sueño",
+    mindful:{ ico:"🫁", nom:"Respiración 4-7-8", desc:"Inhala 4s · aguanta 7s · exhala 8s. 4 ciclos, 2-3 veces al día. Activa el sistema nervioso parasimpático.", id:"resp-478" },
+    alimentaria:{ nom:"Alimentos ansiolíticos naturales", desc:"Magnesio: espinacas, semillas de calabaza, chocolate negro >70% · Omega-3: nueces, sardinas · Triptófano: plátano, avena, huevos." }
+  },
+  "insomnio": {
+    infusion:{ nom:"Relajante nocturna", desc:"Valeriana (2g) + Pasiflora (1g) + Melisa (1g). Infusionar 15 min tapado. 1 taza grande 30-45 min antes de dormir." },
+    evitar:"Cafeína después de las 14h · pantallas 1h antes de dormir · alcohol · comidas abundantes nocturnas · siestas largas",
+    mindful:{ ico:"🌙", nom:"Body scan nocturno", desc:"Tumbado en la cama, escanea el cuerpo desde los pies hasta la cabeza durante 15-20 min. Favorece la relajación muscular y el sueño.", id:"body-scan" },
+    alimentaria:{ nom:"Alimentos pro-sueño", desc:"Kiwi (2 unidades 1h antes) · cereza · avena · almendras · leche tibia con miel · pavo. Cenar ligero al menos 2h antes de dormir." }
+  },
+  "estres": {
+    infusion:{ nom:"Adaptógena anti-estrés", desc:"Ashwagandha en polvo (1/2 cucharadita) + leche vegetal caliente + pizca de canela + miel. 'Leche dorada de la calma'. 1 taza/día." },
+    evitar:"Estimulantes · multitasking extremo · falta de rutinas de descanso · alcohol como sedante · aislamiento social",
+    mindful:{ ico:"💚", nom:"Coherencia cardíaca (5-5-5)", desc:"5 min · 5 inhalaciones/min · 5 exhalaciones/min. 3 veces al día (al levantarse, al mediodía, al acostarse). Reduce el cortisol crónico.", id:"coherencia-cardiaca" },
+    alimentaria:{ nom:"Dieta anti-estrés", desc:"Verduras de hoja verde · aguacate · nueces · salmón · cúrcuma · ajo negro · chocolate negro >70%. Reducir azúcar y ultraprocesados que elevan el cortisol." }
+  },
+  "fatiga": {
+    infusion:{ nom:"Energizante suave", desc:"Ashwagandha en polvo (1/2 cucharadita) + jengibre rallado (3 rodajas) + miel + agua caliente. 1 taza por la mañana." },
+    evitar:"Exceso de café (agota el cortisol) · azúcar en exceso · sedentarismo · desorden de horarios de sueño · alcohol",
+    mindful:{ ico:"☀️", nom:"Respiración energizante", desc:"Respiración por fosas nasales alternadas (Nadi Shodhana). 5-10 min por la mañana. Aumenta la energía sin estimulantes.", id:"resp-nadi" },
+    alimentaria:{ nom:"Alimentos energizantes naturales", desc:"Hierro: lentejas, espinacas, semillas de sésamo · Vitamina B12: huevos, pescado · Magnesio: semillas de calabaza · Adaptógenos: ashwagandha, maca." }
+  },
+  "tos": {
+    infusion:{ nom:"Expectorante de tomillo y miel", desc:"Tomillo seco (2g) en 200ml agua hirviendo, 15 min tapado. Colar. Añadir 1 cucharadita de miel cruda. 3-4 tazas/día." },
+    evitar:"Aire seco (humidificar) · lácteos en exceso · ambientes con humo · bebidas muy frías · tabaco · aire acondicionado directo",
+    mindful:{ ico:"🫁", nom:"Respiración diafragmática lenta", desc:"Respiración abdominal lenta y profunda 5 min, 3 veces al día. Relaja los bronquios y facilita la expectoración.", id:"resp-diafragmatica" },
+    alimentaria:{ nom:"Alimentos expectorantes", desc:"Miel cruda · jengibre · ajo · cebolla (cocinada) · rábano negro · limón · piña (bromelaína). Caldo vegetal caliente hidrata y suaviza la garganta." }
+  },
+  "congestion": {
+    infusion:{ nom:"Descongestiva de eucalipto", desc:"Eucalipto (2g) en 200ml agua hirviendo, 10 min tapado. Usar también como inhalación: cubrir la cabeza con toalla e inhalar el vapor." },
+    evitar:"Lácteos (espesantes de moco) · aire frío seco · ambiente con polvo o ácaros · tabaco · cambios bruscos de temperatura",
+    mindful:{ ico:"🌬️", nom:"Respiración nasal consciente", desc:"Tapona una fosa nasal e inhala lento por la otra. Alterna. 5 min. Descongestiona y mejora el flujo nasal.", id:"resp-nasal" },
+    alimentaria:{ nom:"Alimentos descongestionantes", desc:"Caldo caliente · jengibre · rábano picante · cebolla cocida · ajo · pimienta cayena (si se tolera) · vitamina C: kiwi, pimiento rojo." }
+  },
+  "gripe": {
+    infusion:{ nom:"Antigripal completa", desc:"Saúco (flores, 2g) + Tomillo (1g) + Jengibre fresco. Hervir 5 min, infusionar 10 min. Colar. Con miel y limón. 4 tazas/día." },
+    evitar:"Salir con frío sin protección · ejercicio intenso durante la gripe · azúcar (deprime el sistema inmune) · alcohol · tabaco · antipiréticos preventivos sin fiebre alta",
+    mindful:{ ico:"😴", nom:"Descanso consciente", desc:"Permitirse descansar sin culpa. Respiración lenta y profunda tumbado. El sueño es la mejor medicina en la gripe aguda.", id:"descanso-consciente" },
+    alimentaria:{ nom:"Protocolo alimentario antigripal", desc:"Caldo de huesos o vegetal caliente · vitamina C: kiwi, pimiento · zinc: semillas de calabaza · mucha agua caliente con limón · ayuno ligero las primeras 24h si hay fiebre." }
+  },
+  "defensas": {
+    infusion:{ nom:"Inmunoestimulante de saúco", desc:"Saúco (flores o bayas cocidas, 2g) + Ajo laminado (1 diente) + Jengibre (2 rodajas). Hervir 8 min. Colar. 1-2 tazas/día en temporada." },
+    evitar:"Estrés crónico sin manejo · falta de sueño · exceso de azúcar · sedentarismo · antibióticos innecesarios · déficit de vitamina D",
+    mindful:{ ico:"💚", nom:"Meditación de gratitud corporal", desc:"5 min en silencio, visualizando el sistema inmune como un ejército que te protege. Reduce el cortisol que deprime las defensas.", id:"meditacion-gratitud" },
+    alimentaria:{ nom:"Potenciadores del sistema inmune", desc:"Vitamina D: sol 20 min/día o suplemento · Zinc: semillas de calabaza, mariscos · Probióticos: yogur, kéfir, chucrut · Polifenoles: bayas, té verde, cúrcuma." }
+  }
+};
+
+let seleccionados = new Set();
+let modoEII = false;
+
+function toggleSintoma(btn) {
+  const id = btn.dataset.id;
+  if (seleccionados.has(id)) { seleccionados.delete(id); btn.classList.remove('sel'); }
+  else { seleccionados.add(id); btn.classList.add('sel'); }
+  document.getElementById('btnBuscar').disabled = seleccionados.size === 0;
+}
+
+function actualizarModoEII() {
+  modoEII = document.getElementById('modoEII').checked;
+}
+
+function filtrarSintomas(v) {
+  v = v.toLowerCase();
+  document.querySelectorAll('.sintoma-btn').forEach(b => {
+    const nom = b.querySelector('.sin-nom').textContent.toLowerCase();
+    b.style.display = (!v || nom.includes(v)) ? '' : 'none';
+  });
+}
+
+function generarRuta() {
+  const res = document.getElementById('resultados');
+  res.classList.add('visible');
+  res.scrollIntoView({ behavior:'smooth', block:'start' });
+
+  // Plantas relevantes
+  let plantasRel = PLANTAS.filter(p => {
+    const relevante = p.sintomas.some(s => seleccionados.has(s));
+    if (!relevante) return false;
+    if (modoEII && !p.eiiSegura) return false;
+    return true;
+  });
+
+  // Ordenar: fuerte primero, luego moderado
+  const ord = { fuerte: 0, moderado: 1, preliminar: 2 };
+  plantasRel.sort((a, b) => (ord[a.evid] || 2) - (ord[b.evid] || 2));
+  plantasRel = plantasRel.slice(0, 5);
+
+  const lista = document.getElementById('plantasLista');
+  lista.innerHTML = '';
+  plantasRel.forEach(p => {
+    const excluir = modoEII && p.noEIIBrote;
+    const chip = document.createElement('div');
+    chip.className = 'plant-chip';
+    chip.style.opacity = excluir ? '0.5' : '1';
+    chip.innerHTML = `
+      <span class="plant-ico">${p.emoji}</span>
+      <div style="flex:1">
+        <div class="plant-nom">${p.nom}</div>
+        <div style="font-size:11px;color:var(--tx3);font-style:italic">${p.ci}</div>
+        ${excluir ? `<div style="font-size:11px;color:var(--roj);margin-top:2px">⚠️ ${p.nota}</div>` : ''}
+        ${!excluir && modoEII && p.eiiSegura && p.nota ? `<div style="font-size:11px;color:var(--v2);margin-top:2px">✓ ${p.nota}</div>` : ''}
+      </div>
+      <div style="display:flex;align-items:center;gap:4px">
+        <div class="evid-dot evid-${p.evid}"></div>
+        <span class="plant-prop" style="font-size:10px;color:var(--tx3)">${p.evid}</span>
+      </div>`;
+    lista.appendChild(chip);
+  });
+
+  if (plantasRel.length === 0) {
+    lista.innerHTML = '<div style="color:var(--tx3);font-size:13px;padding:8px 0">No se encontraron plantas seguras para esta combinación de síntomas en modo EII.</div>';
+  }
+
+  document.getElementById('avisoBrote').classList.toggle('visible', modoEII);
+
+  // Infusión
+  let infNom = '—', infDesc = '—';
+  for (const s of seleccionados) {
+    if (RUTAS[s]) { infNom = RUTAS[s].infusion.nom; infDesc = RUTAS[s].infusion.desc; break; }
+  }
+  document.getElementById('infusionNom').textContent = infNom;
+  document.getElementById('infusionDesc').textContent = infDesc;
+
+  // Evitar
+  let evitar = [];
+  seleccionados.forEach(s => { if (RUTAS[s]) evitar.push(RUTAS[s].evitar); });
+  document.getElementById('evitarContenido').textContent = evitar.length ? [...new Set(evitar.join(' · ').split(' · '))].slice(0,6).join(' · ') : '—';
+
+  // Mindfulness
+  let mf = null;
+  for (const s of seleccionados) { if (RUTAS[s]) { mf = RUTAS[s].mindful; break; } }
+  if (mf) {
+    document.getElementById('mindfulIco').textContent = mf.ico;
+    document.getElementById('mindfulNom').textContent = mf.nom;
+    document.getElementById('mindfulDesc').textContent = mf.desc;
+  }
+
+  // Alimentaria
+  let al = null;
+  for (const s of seleccionados) { if (RUTAS[s]) { al = RUTAS[s].alimentaria; break; } }
+  if (al) {
+    document.getElementById('alimentariaNom').textContent = al.nom;
+    document.getElementById('alimentariaDesc').textContent = al.desc;
+  }
+}
+
+function abrirMindful() {
+  alert('Zona Mindfulness — próximamente con temporizador integrado y guía paso a paso.');
+}
+</script>
+</body>
+</html>

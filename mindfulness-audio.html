@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>NathuraVitae — Zona Mindfulness</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --mora1:#2e1f5e; --mora2:#4a3480; --mora3:#6b52a8;
+  --morap:#f2effe; --moram:#d4c8f5; --morat:#b8a8ec;
+  --v1:#1a3d2e; --v2:#2d6647; --vp:#eaf5ef; --vm:#b8dfc8;
+  --crema:#f7f4ee; --crema2:#ede8dc; --crema3:#e0d8c8;
+  --tx:#1a1816; --tx2:#46433c; --tx3:#8a8478;
+  --amb:#9a6010; --ambp:#fdf2e0; --ambm:#f0cc88;
+  --borde:rgba(46,31,94,0.08);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Jost',sans-serif;background:var(--crema);color:var(--tx);min-height:100vh;padding-bottom:48px}
+
+/* ── APP BAR ── */
+.appbar{background:var(--mora1);padding:14px 20px;display:flex;align-items:center;gap:12px;position:sticky;top:0;z-index:30}
+.appbar-back{width:32px;height:32px;border-radius:50%;background:rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;border:none;cursor:pointer}
+.appbar-title{font-family:'Cormorant Garamond',serif;font-size:20px;color:white;font-weight:300;letter-spacing:.5px}
+.appbar-badge{margin-left:auto;font-size:11px;color:rgba(255,255,255,.45);letter-spacing:.5px;font-weight:300}
+
+/* ── HERO ── */
+.hero{background:var(--mora1);padding:8px 24px 36px;position:relative;overflow:hidden}
+.hero-orb{position:absolute;width:260px;height:260px;border-radius:50%;background:rgba(107,82,168,.18);right:-60px;top:-80px;pointer-events:none}
+.hero-orb2{position:absolute;width:160px;height:160px;border-radius:50%;background:rgba(107,82,168,.1);left:-40px;bottom:-60px;pointer-events:none}
+.hero-eye{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.35);font-weight:300;margin-bottom:10px}
+.hero-title{font-family:'Cormorant Garamond',serif;font-size:36px;color:white;font-weight:300;line-height:1.15;margin-bottom:8px}
+.hero-title em{font-style:italic;color:var(--morat)}
+.hero-sub{font-size:13px;color:rgba(255,255,255,.48);line-height:1.65;font-weight:300;max-width:280px}
+.wave{display:block;width:100%;margin-top:-1px}
+
+/* ── FILTRO ── */
+.filtro-wrap{padding:16px 20px 4px}
+.filtro-label{font-size:10px;letter-spacing:1px;text-transform:uppercase;color:var(--mora2);font-weight:500;margin-bottom:10px}
+.filtro-chips{display:flex;gap:6px;flex-wrap:wrap}
+.fchip{font-size:12px;padding:6px 14px;border-radius:20px;border:1px solid var(--moram);background:white;color:var(--mora2);cursor:pointer;transition:all .2s;font-family:'Jost',sans-serif}
+.fchip:hover{background:var(--morap)}
+.fchip.act{background:var(--mora2);color:white;border-color:var(--mora2)}
+
+/* ── TÉCNICAS ── */
+.tecnicas-wrap{padding:16px 16px 0}
+.sec-title{font-size:10px;letter-spacing:1px;text-transform:uppercase;color:var(--mora2);font-weight:500;margin-bottom:12px;display:flex;align-items:center;gap:8px}
+.sec-title::after{content:'';flex:1;height:1px;background:var(--moram)}
+.tec-card{background:white;border-radius:18px;border:1px solid var(--borde);margin-bottom:12px;overflow:hidden;cursor:pointer;transition:box-shadow .2s,transform .2s;box-shadow:0 2px 16px rgba(46,31,94,.05)}
+.tec-card:hover{box-shadow:0 4px 24px rgba(46,31,94,.1);transform:translateY(-1px)}
+.tec-card.abierto{border-color:var(--mora3)}
+.tec-head{display:flex;align-items:center;gap:14px;padding:16px}
+.tec-ico-wrap{width:52px;height:52px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:26px;flex-shrink:0}
+.tec-info{flex:1}
+.tec-nom{font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:400;color:var(--tx);line-height:1.2;margin-bottom:3px}
+.tec-sub{font-size:12px;color:var(--tx3);line-height:1.4;font-weight:300}
+.tec-badges{display:flex;gap:5px;margin-top:6px;flex-wrap:wrap}
+.tec-badge{font-size:10px;padding:2px 8px;border-radius:8px;border:1px solid;font-weight:500}
+.tec-dur{background:var(--morap);color:var(--mora2);border-color:var(--moram)}
+.tec-nivel{background:var(--vp);color:var(--v2);border-color:var(--vm)}
+.tec-sin{background:var(--ambp);color:var(--amb);border-color:var(--ambm)}
+.tec-chevron{flex-shrink:0;transition:transform .3s;opacity:.3}
+.tec-card.abierto .tec-chevron{transform:rotate(180deg);opacity:.7}
+.tec-body{display:none;padding:0 16px 20px;border-top:1px solid var(--borde)}
+.tec-card.abierto .tec-body{display:block}
+.tec-desc{font-size:13px;color:var(--tx2);line-height:1.7;margin:14px 0;font-weight:300}
+.pasos-title{font-size:10px;letter-spacing:.8px;text-transform:uppercase;color:var(--mora2);font-weight:500;margin-bottom:10px}
+.paso-item{display:flex;gap:12px;padding:12px 0;border-bottom:1px solid var(--borde)}
+.paso-item:last-child{border-bottom:none}
+.paso-num{width:28px;height:28px;border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:500;background:var(--morap);color:var(--mora2);border:1px solid var(--moram)}
+.paso-txt{font-size:13px;color:var(--tx2);line-height:1.6;padding-top:4px;font-weight:300}
+.paso-duracion{display:inline-block;margin-top:4px;font-size:11px;color:var(--mora3);font-weight:500}
+.beneficios-row{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}
+.benef-pill{font-size:11px;padding:4px 10px;border-radius:20px;background:var(--vp);color:var(--v2);border:1px solid var(--vm)}
+
+/* ── TEMPORIZADOR ── */
+.timer-wrap{margin:16px 0 0;background:var(--mora1);border-radius:16px;padding:20px;display:flex;flex-direction:column;align-items:center}
+.timer-circulo{position:relative;width:140px;height:140px;margin-bottom:16px}
+.timer-svg{width:140px;height:140px;transform:rotate(-90deg)}
+.timer-bg{fill:none;stroke:rgba(255,255,255,.08);stroke-width:6}
+.timer-arco{fill:none;stroke:var(--morat);stroke-width:6;stroke-linecap:round;stroke-dasharray:377;stroke-dashoffset:377;transition:stroke-dashoffset .5s ease}
+.timer-num{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.timer-mm-ss{font-family:'Cormorant Garamond',serif;font-size:34px;color:white;font-weight:300;line-height:1}
+.timer-label-fase{font-size:11px;color:rgba(255,255,255,.5);margin-top:4px;letter-spacing:.5px}
+.timer-controles{display:flex;gap:10px;align-items:center;margin-bottom:14px}
+.timer-btn{width:48px;height:48px;border-radius:50%;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .15s;font-family:'Jost',sans-serif}
+.timer-btn-play{background:white;color:var(--mora1)}
+.timer-btn-play:hover{background:var(--morap)}
+.timer-btn-sec{background:rgba(255,255,255,.12);color:white}
+.timer-btn-sec:hover{background:rgba(255,255,255,.2)}
+.timer-duracion-row{display:flex;gap:6px;margin-bottom:14px}
+.timer-dur-btn{padding:5px 12px;border-radius:10px;border:1px solid rgba(255,255,255,.2);background:transparent;color:rgba(255,255,255,.6);font-size:12px;cursor:pointer;font-family:'Jost',sans-serif;transition:all .15s}
+.timer-dur-btn.sel{background:rgba(255,255,255,.15);color:white;border-color:rgba(255,255,255,.4)}
+
+/* ── SELECTOR DE AMBIENTE ── */
+.ambiente-label{font-size:10px;letter-spacing:.8px;text-transform:uppercase;color:rgba(255,255,255,.4);font-weight:500;margin-bottom:8px;align-self:flex-start}
+.ambiente-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;width:100%;margin-bottom:12px}
+.amb-btn{
+  display:flex;flex-direction:column;align-items:center;gap:4px;
+  padding:10px 6px;border-radius:12px;border:1px solid rgba(255,255,255,.12);
+  background:rgba(255,255,255,.06);cursor:pointer;transition:all .2s;
+  font-family:'Jost',sans-serif
+}
+.amb-btn:hover{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.25)}
+.amb-btn.act{background:rgba(184,168,236,.2);border-color:var(--morat)}
+.amb-btn.cargando{opacity:.5}
+.amb-ico{font-size:22px;line-height:1}
+.amb-nom{font-size:10px;color:rgba(255,255,255,.6);text-align:center;font-weight:300;line-height:1.2}
+.amb-btn.act .amb-nom{color:var(--morat)}
+.amb-status{font-size:9px;color:rgba(255,255,255,.3);margin-top:1px}
+.amb-btn.act .amb-status{color:rgba(184,168,236,.7)}
+
+/* volumen */
+.vol-row{display:flex;align-items:center;gap:10px;width:100%;margin-bottom:10px}
+.vol-ico{font-size:14px;opacity:.5;flex-shrink:0}
+.vol-slider{flex:1;-webkit-appearance:none;height:3px;border-radius:2px;background:rgba(255,255,255,.15);outline:none;cursor:pointer}
+.vol-slider::-webkit-slider-thumb{-webkit-appearance:none;width:16px;height:16px;border-radius:50%;background:var(--morat);cursor:pointer}
+
+/* estado offline badge */
+.offline-badge{
+  display:inline-flex;align-items:center;gap:4px;
+  font-size:10px;padding:3px 8px;border-radius:8px;
+  background:rgba(255,255,255,.08);color:rgba(255,255,255,.4);
+  border:1px solid rgba(255,255,255,.1);margin-bottom:10px;font-weight:300
+}
+
+/* ── SESIÓN GUIADA ── */
+.sesion-activa{position:fixed;inset:0;z-index:100;display:none;flex-direction:column;align-items:center;justify-content:center;padding:32px 24px;transition:background .8s}
+.sesion-activa.visible{display:flex}
+.sesion-bg{position:absolute;inset:0;background:var(--mora1);z-index:0}
+.sesion-content{position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;width:100%}
+.sesion-cerrar{position:absolute;top:18px;right:18px;z-index:2;background:rgba(255,255,255,.12);border:none;color:white;width:36px;height:36px;border-radius:50%;cursor:pointer;font-size:18px;display:flex;align-items:center;justify-content:center}
+.sesion-tec-nom{font-family:'Cormorant Garamond',serif;font-size:13px;color:rgba(255,255,255,.35);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:20px;font-weight:300}
+
+/* orbe animado */
+.sesion-orb-wrap{position:relative;width:180px;height:180px;margin-bottom:28px}
+.sesion-orb{width:180px;height:180px;border-radius:50%;background:rgba(107,82,168,.2);border:1.5px solid rgba(107,82,168,.3);display:flex;align-items:center;justify-content:center;transition:transform 1s ease}
+.sesion-orb.expand{transform:scale(1.28)}
+.sesion-orb.hold{transform:scale(1.28)}
+.sesion-orb.shrink{transform:scale(1)}
+.sesion-orb-num{font-family:'Cormorant Garamond',serif;font-size:72px;color:white;font-weight:300;line-height:1}
+.sesion-fase-nom{font-family:'Cormorant Garamond',serif;font-size:38px;color:white;font-weight:300;margin-bottom:6px;text-align:center}
+.sesion-fase-inst{font-size:13px;color:rgba(255,255,255,.5);text-align:center;line-height:1.6;max-width:260px;font-weight:300;margin-bottom:24px}
+.sesion-ciclos{font-size:12px;color:rgba(255,255,255,.3);margin-bottom:24px;letter-spacing:.5px}
+
+/* ambiente activo en sesión */
+.sesion-amb-info{
+  display:flex;align-items:center;gap:8px;margin-bottom:20px;
+  padding:8px 16px;border-radius:20px;
+  background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1)
+}
+.sesion-amb-ico{font-size:16px}
+.sesion-amb-nom{font-size:12px;color:rgba(255,255,255,.5);font-weight:300}
+.sesion-vol-mini{display:flex;align-items:center;gap:6px;margin-left:8px}
+.sesion-vol-slider{width:60px;-webkit-appearance:none;height:2px;border-radius:1px;background:rgba(255,255,255,.2);outline:none;cursor:pointer}
+.sesion-vol-slider::-webkit-slider-thumb{-webkit-appearance:none;width:12px;height:12px;border-radius:50%;background:var(--morat);cursor:pointer}
+
+.sesion-stop{padding:12px 32px;border-radius:30px;border:1px solid rgba(255,255,255,.2);background:transparent;color:rgba(255,255,255,.6);font-size:14px;cursor:pointer;font-family:'Jost',sans-serif;letter-spacing:.3px;margin-top:8px}
+
+/* ── DISCLAIMER ── */
+.disclaimer{margin:24px 16px 0;padding:12px 16px;background:var(--crema2);border-radius:12px;border:1px solid var(--borde);font-size:11px;color:var(--tx3);line-height:1.6;text-align:center;font-weight:300}
+
+@keyframes fadeUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.tec-card{animation:fadeUp .35s ease both}
+</style>
+</head>
+<body>
+
+<div class="appbar">
+  <button class="appbar-back">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round"><path d="M15 18l-6-6 6-6"/></svg>
+  </button>
+  <span class="appbar-title">Zona Mindfulness</span>
+  <span class="appbar-badge">NathuraVitae</span>
+</div>
+
+<div class="hero">
+  <div class="hero-orb"></div>
+  <div class="hero-orb2"></div>
+  <div class="hero-eye">Bienestar · Consciencia</div>
+  <div class="hero-title">Respira.<br><em>Regresa</em> a ti.</div>
+  <div class="hero-sub">Técnicas validadas por la ciencia para calmar la mente, el cuerpo y el sistema digestivo.</div>
+</div>
+<svg class="wave" viewBox="0 0 390 20" preserveAspectRatio="none" fill="#f7f4ee">
+  <path d="M0,20 L0,10 Q97.5,0 195,10 Q292.5,20 390,10 L390,20 Z"/>
+</svg>
+
+<!-- FILTRO -->
+<div class="filtro-wrap">
+  <div class="filtro-label">Filtrar por síntoma</div>
+  <div class="filtro-chips">
+    <button class="fchip act" onclick="filtrar('todo',this)">Todas</button>
+    <button class="fchip" onclick="filtrar('ansiedad',this)">Ansiedad</button>
+    <button class="fchip" onclick="filtrar('insomnio',this)">Insomnio</button>
+    <button class="fchip" onclick="filtrar('estres',this)">Estrés</button>
+    <button class="fchip" onclick="filtrar('digestivo',this)">Digestivo</button>
+    <button class="fchip" onclick="filtrar('dolor',this)">Dolor</button>
+    <button class="fchip" onclick="filtrar('energia',this)">Energía</button>
+  </div>
+</div>
+
+<!-- TÉCNICAS -->
+<div class="tecnicas-wrap">
+  <div class="sec-title">Técnicas disponibles</div>
+  <div id="tecnicasContainer"></div>
+</div>
+
+<!-- SESIÓN GUIADA -->
+<div class="sesion-activa" id="sesionActiva">
+  <div class="sesion-bg" id="sesBg"></div>
+  <button class="sesion-cerrar" onclick="cerrarSesion()">×</button>
+  <div class="sesion-content">
+    <div class="sesion-tec-nom" id="sesNom"></div>
+    <div class="sesion-amb-info" id="sesAmbInfo" style="display:none">
+      <span class="sesion-amb-ico" id="sesAmbIco"></span>
+      <span class="sesion-amb-nom" id="sesAmbNom"></span>
+      <div class="sesion-vol-mini">
+        <span style="font-size:12px;opacity:.4">🔈</span>
+        <input type="range" class="sesion-vol-slider" id="sesVolSlider" min="0" max="1" step="0.05" value="0.5" oninput="setSesionVol(this.value)">
+        <span style="font-size:12px;opacity:.4">🔊</span>
+      </div>
+    </div>
+    <div class="sesion-orb-wrap">
+      <div class="sesion-orb" id="sesOrb">
+        <div class="sesion-orb-num" id="sesCuenta"></div>
+      </div>
+    </div>
+    <div class="sesion-fase-nom" id="sesFaseNom">Prepárate</div>
+    <div class="sesion-fase-inst" id="sesFaseInst">Siéntate cómodamente y cierra los ojos</div>
+    <div class="sesion-ciclos" id="sesCiclos"></div>
+    <button class="sesion-stop" onclick="cerrarSesion()">Finalizar sesión</button>
+  </div>
+</div>
+
+<div class="disclaimer">
+  🧘 Estas técnicas son complementarias y no reemplazan el tratamiento médico o psicológico.<br>
+  Si experimentas malestar intenso, consulta a un profesional de salud mental.
+</div>
+
+<script>
+/* ═══════════════════════════════════════════
+   AMBIENTES SONOROS
+   Coloca tus archivos MP3 en la carpeta /audio/
+   relativa al HTML. Los sintéticos no necesitan
+   archivo — se generan con Web Audio API.
+═══════════════════════════════════════════ */
+const AMBIENTES = [
+  {
+    id:"ninguno",
+    nom:"Silencio",
+    ico:"🔇",
+    tipo:"ninguno",
+    sugerido:[]
+  },
+  {
+    id:"olas",
+    nom:"Olas del mar",
+    ico:"🌊",
+    tipo:"archivo",
+    src:"audio/olas-playa.mp3",  // ← descargar de Pixabay: "ocean waves beach relaxing"
+    loop:true,
+    sugerido:["resp-478","coherencia"]
+  },
+  {
+    id:"riachuelo",
+    nom:"Riachuelo",
+    ico:"🏞️",
+    tipo:"archivo",
+    src:"audio/riachuelo.mp3",   // ← descargar de Freesound: "forest stream flowing water"
+    loop:true,
+    sugerido:["body-scan","resp-diafragmatica"]
+  },
+  {
+    id:"pajaros",
+    nom:"Amanecer",
+    ico:"🐦",
+    tipo:"archivo",
+    src:"audio/pajaros-manana.mp3", // ← descargar de Freesound: "morning birds dawn chorus"
+    loop:true,
+    sugerido:["resp-nadi","meditacion-gratitud"]
+  },
+  {
+    id:"lluvia",
+    nom:"Lluvia suave",
+    ico:"🌧️",
+    tipo:"archivo",
+    src:"audio/lluvia-suave.mp3",   // ← descargar de Pixabay: "gentle rain meditation"
+    loop:true,
+    sugerido:["body-scan","resp-diafragmatica"]
+  },
+  {
+    id:"cuencos",
+    nom:"Cuencos",
+    ico:"🎵",
+    tipo:"sintetico",
+    generador:"cuencos",
+    loop:true,
+    sugerido:["coherencia","meditacion-gratitud","body-scan"]
+  },
+  {
+    id:"binaural",
+    nom:"Binaural 432Hz",
+    ico:"🧠",
+    tipo:"sintetico",
+    generador:"binaural",
+    loop:true,
+    sugerido:["resp-478","body-scan","insomnio"]
+  }
+];
+
+/* ═══════════════════════════════════════════
+   TÉCNICAS
+═══════════════════════════════════════════ */
+const TECNICAS = [
+  {
+    id:"resp-478", nom:"Respiración 4-7-8", emoji:"🫁",
+    color:"#eaf5ef", iconColor:"#b8dfc8",
+    sub:"Activa el sistema nervioso parasimpático en segundos",
+    duracion:"5 min", durMin:5, nivel:"Principiante",
+    sintomas:["ansiedad","insomnio","estres","digestivo"],
+    ambienteSugerido:"olas",
+    desc:"Desarrollada por el Dr. Andrew Weil basándose en el pranayama yóguico. Inhalar 4s, retener 7s y exhalar 8s activa el nervio vago y reduce el cortisol de forma inmediata.",
+    beneficios:["Reduce la ansiedad","Facilita el sueño","Baja la presión arterial","Calma el sistema digestivo"],
+    pasos:[
+      {txt:"Siéntate o túmbate cómodamente. Coloca la lengua detrás de los dientes superiores.",dur:""},
+      {txt:"Exhala completamente por la boca con un sonido suave.",dur:""},
+      {txt:"Cierra la boca e inhala silenciosamente por la nariz.",dur:"4 segundos"},
+      {txt:"Retén el aire.",dur:"7 segundos"},
+      {txt:"Exhala completamente por la boca con sonido suave.",dur:"8 segundos"},
+      {txt:"Repite. Comienza con 4 ciclos y aumenta hasta 8 con la práctica.",dur:""}
+    ],
+    fases:[
+      {nom:"Inhala",inst:"Respira lento por la nariz",dur:4,accion:"expand"},
+      {nom:"Retén",inst:"Mantén el aire con calma",dur:7,accion:"hold"},
+      {nom:"Exhala",inst:"Suelta el aire lentamente",dur:8,accion:"shrink"}
+    ],
+    ciclosTotales:4
+  },
+  {
+    id:"coherencia", nom:"Coherencia cardíaca", emoji:"💚",
+    color:"#eaf5ef", iconColor:"#b8dfc8",
+    sub:"5 respiraciones por minuto · regula el eje intestino-cerebro",
+    duracion:"5 min", durMin:5, nivel:"Principiante",
+    sintomas:["ansiedad","estres","digestivo"],
+    ambienteSugerido:"cuencos",
+    desc:"Respirar a exactamente 5 ciclos por minuto sincroniza el corazón, el cerebro y el intestino, reduciendo el cortisol hasta un 23% según estudios del HeartMath Institute.",
+    beneficios:["Reduce el cortisol","Mejora la variabilidad cardíaca","Regula el eje intestino-cerebro","Reduce la inflamación sistémica"],
+    pasos:[
+      {txt:"Siéntate con la espalda recta. Lleva la atención al centro del pecho.",dur:""},
+      {txt:"Inhala suave y profundamente por la nariz.",dur:"5 segundos"},
+      {txt:"Exhala suave y completamente.",dur:"5 segundos"},
+      {txt:"Mantén este ritmo constante durante 5 minutos.",dur:"5 minutos"}
+    ],
+    fases:[
+      {nom:"Inhala",inst:"Desde el corazón, lento",dur:5,accion:"expand"},
+      {nom:"Exhala",inst:"Suelta suavemente",dur:5,accion:"shrink"}
+    ],
+    ciclosTotales:15
+  },
+  {
+    id:"body-scan", nom:"Body scan", emoji:"🤲",
+    color:"#f2effe", iconColor:"#d4c8f5",
+    sub:"Escaneo corporal progresivo · libera tensión acumulada",
+    duracion:"15 min", durMin:15, nivel:"Intermedio",
+    sintomas:["dolor","insomnio","estres","ansiedad","digestivo"],
+    ambienteSugerido:"lluvia",
+    desc:"Técnica central del programa MBSR de Jon Kabat-Zinn. Recorre el cuerpo con la atención de forma sistemática, observando sin juzgar. Reduce el dolor crónico y mejora el sueño.",
+    beneficios:["Alivia el dolor crónico","Mejora el sueño profundo","Reduce la tensión muscular","Calma el dolor abdominal funcional"],
+    pasos:[
+      {txt:"Túmbate boca arriba. Cierra los ojos. Respira profundo 3 veces.",dur:""},
+      {txt:"Lleva la atención a los pies. Observa sensaciones sin juzgar.",dur:"1-2 min"},
+      {txt:"Sube por piernas, pelvis y abdomen.",dur:"3-4 min"},
+      {txt:"Continúa por pecho, espalda, hombros, brazos y manos.",dur:"3-4 min"},
+      {txt:"Cuello, rostro y coronilla.",dur:"2-3 min"},
+      {txt:"Visión global del cuerpo entero. Respira 5 veces profundo.",dur:"2 min"}
+    ],
+    fases:[
+      {nom:"Pies y piernas",inst:"Observa sin juzgar",dur:120,accion:"expand"},
+      {nom:"Abdomen",inst:"Respira hacia el vientre",dur:90,accion:"hold"},
+      {nom:"Pecho y brazos",inst:"Nota el ritmo del corazón",dur:90,accion:"hold"},
+      {nom:"Cara y cabeza",inst:"Suelta la tensión del rostro",dur:90,accion:"shrink"}
+    ],
+    ciclosTotales:1
+  },
+  {
+    id:"resp-diafragmatica", nom:"Respiración diafragmática", emoji:"🌬️",
+    color:"#eaf5ef", iconColor:"#b8dfc8",
+    sub:"Base de toda práctica · activa el nervio vago",
+    duracion:"5-10 min", durMin:7, nivel:"Principiante",
+    sintomas:["ansiedad","estres","digestivo","dolor"],
+    ambienteSugerido:"riachuelo",
+    desc:"Activar el diafragma maximiza el intercambio de oxígeno y activa el nervio vago, que inerva directamente el intestino. Es el fundamento de todas las técnicas de regulación.",
+    beneficios:["Reduce la frecuencia cardíaca","Activa el nervio vago","Mejora la digestión","Base para técnicas avanzadas"],
+    pasos:[
+      {txt:"Coloca una mano sobre el pecho y otra sobre el abdomen.",dur:""},
+      {txt:"Inhala: la mano del abdomen sube, la del pecho permanece quieta.",dur:"4-6 segundos"},
+      {txt:"Exhala por la boca fruncida: el abdomen baja.",dur:"6-8 segundos"},
+      {txt:"La exhalación siempre más larga que la inhalación.",dur:"5-10 min"}
+    ],
+    fases:[
+      {nom:"Inhala",inst:"Abdomen sube, pecho quieto",dur:5,accion:"expand"},
+      {nom:"Exhala",inst:"Abdomen baja, labios fruncidos",dur:7,accion:"shrink"}
+    ],
+    ciclosTotales:20
+  },
+  {
+    id:"resp-nadi", nom:"Nadi Shodhana", emoji:"☀️",
+    color:"#fdf2e0", iconColor:"#f0cc88",
+    sub:"Fosas nasales alternadas · energía equilibrada",
+    duracion:"5-10 min", durMin:7, nivel:"Intermedio",
+    sintomas:["energia","estres","ansiedad"],
+    ambienteSugerido:"pajaros",
+    desc:"Técnica pranayama que alterna la respiración por cada fosa nasal. Activa de forma equilibrada ambos hemisferios cerebrales y aumenta la energía mental sin estimulantes.",
+    beneficios:["Equilibra los hemisferios cerebrales","Aumenta la energía mental","Reduce la presión arterial","Mejora la concentración"],
+    pasos:[
+      {txt:"Mano derecha: pulgar sobre fosa derecha, anular sobre la izquierda.",dur:""},
+      {txt:"Cierra la fosa derecha. Exhala por la izquierda.",dur:""},
+      {txt:"Inhala por la izquierda.",dur:"4 segundos"},
+      {txt:"Cierra ambas. Retén brevemente.",dur:"2 segundos"},
+      {txt:"Exhala por la derecha.",dur:"4 segundos"},
+      {txt:"Inhala por la derecha. Retén. Exhala por la izquierda. Eso es 1 ciclo.",dur:""}
+    ],
+    fases:[
+      {nom:"Inhala ←",inst:"Por fosa nasal izquierda",dur:4,accion:"expand"},
+      {nom:"Retén",inst:"Cierra ambas",dur:2,accion:"hold"},
+      {nom:"Exhala →",inst:"Por fosa nasal derecha",dur:4,accion:"shrink"},
+      {nom:"Inhala →",inst:"Por fosa nasal derecha",dur:4,accion:"expand"},
+      {nom:"Retén",inst:"Cierra ambas",dur:2,accion:"hold"},
+      {nom:"Exhala ←",inst:"Por fosa nasal izquierda",dur:4,accion:"shrink"}
+    ],
+    ciclosTotales:5
+  },
+  {
+    id:"meditacion-gratitud", nom:"Meditación de gratitud", emoji:"🌿",
+    color:"#f2effe", iconColor:"#d4c8f5",
+    sub:"Reorienta el sistema nervioso hacia el bienestar",
+    duracion:"10 min", durMin:10, nivel:"Principiante",
+    sintomas:["estres","ansiedad","insomnio","energia"],
+    ambienteSugerido:"cuencos",
+    desc:"La gratitud activa el córtex prefrontal y libera dopamina y serotonina. Estudios de la Universidad de California muestran que 5 minutos diarios reducen el cortisol y mejoran el sueño.",
+    beneficios:["Libera dopamina y serotonina","Reduce el cortisol","Mejora el sueño","Fortalece la resiliencia"],
+    pasos:[
+      {txt:"Siéntate cómodamente. Respira 5 veces profundo.",dur:"1 min"},
+      {txt:"Piensa en 3 cosas por las que estás agradecido hoy.",dur:"2 min"},
+      {txt:"Visualiza cada una con detalle. Siente la emoción en el pecho.",dur:"3 min"},
+      {txt:"Agradece tu cuerpo: su resistencia, lo que sí funciona bien.",dur:"2 min"},
+      {txt:"Termina con la frase: 'Hay suficiente bien en mi vida'. Respira 5 veces.",dur:"2 min"}
+    ],
+    fases:[
+      {nom:"Centrar",inst:"Llega al presente",dur:60,accion:"expand"},
+      {nom:"Gratitud",inst:"3 cosas que agradeces",dur:180,accion:"hold"},
+      {nom:"Tu cuerpo",inst:"Agradece lo que funciona",dur:120,accion:"hold"},
+      {nom:"Integrar",inst:"Cierra con calma",dur:60,accion:"shrink"}
+    ],
+    ciclosTotales:1
+  }
+];
+
+/* ═══════════════════════════════════════════
+   MOTOR DE AUDIO
+═══════════════════════════════════════════ */
+let audioCtx = null;
+let audioEl  = null;      // HTMLAudioElement para archivos MP3
+let synthNodes = [];      // nodos Web Audio API activos
+let volGain  = null;      // GainNode maestro
+let ambienteActivo = "ninguno";
+let volActual = 0.5;
+
+function getAudioCtx() {
+  if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+  return audioCtx;
+}
+
+/* Detener todo audio en curso */
+function detenerAudio() {
+  // archivo
+  if (audioEl) {
+    audioEl.pause();
+    audioEl.src = '';
+    audioEl = null;
+  }
+  // sintético
+  synthNodes.forEach(n => { try { n.stop(); } catch(e){} });
+  synthNodes = [];
+  if (volGain) { try { volGain.disconnect(); } catch(e){} volGain = null; }
+  ambienteActivo = "ninguno";
+}
+
+/* Iniciar ambiente */
+function iniciarAmbiente(id, vol) {
+  detenerAudio();
+  if (id === "ninguno") return;
+
+  const amb = AMBIENTES.find(a => a.id === id);
+  if (!amb) return;
+  ambienteActivo = id;
+  volActual = vol;
+
+  if (amb.tipo === "archivo") {
+    audioEl = new Audio(amb.src);
+    audioEl.loop = true;
+    audioEl.volume = vol;
+    audioEl.play().catch(() => {
+      /* archivo no encontrado — muestra aviso suave */
+      mostrarAvisoArchivo(amb);
+    });
+
+  } else if (amb.tipo === "sintetico") {
+    const ctx = getAudioCtx();
+    if (ctx.state === 'suspended') ctx.resume();
+
+    volGain = ctx.createGain();
+    volGain.gain.value = vol;
+    volGain.connect(ctx.destination);
+
+    if (amb.generador === "cuencos") {
+      generarCuencos(ctx, volGain);
+    } else if (amb.generador === "binaural") {
+      generarBinaural(ctx, volGain);
+    }
+  }
+}
+
+/* Ajustar volumen sin interrumpir */
+function ajustarVolumen(vol) {
+  volActual = vol;
+  if (audioEl) audioEl.volume = vol;
+  if (volGain) volGain.gain.setTargetAtTime(vol, getAudioCtx().currentTime, 0.05);
+}
+
+/* ── Generadores sintéticos ── */
+
+function generarCuencos(ctx, master) {
+  /* Tono base + armónicos que simulan cuenco tibetano */
+  const freqs = [432, 528, 639];   // frecuencias de cuencos
+  freqs.forEach((freq, i) => {
+    const osc = ctx.createOscillator();
+    const gain = ctx.createGain();
+    const lfo = ctx.createOscillator();
+    const lfoGain = ctx.createGain();
+
+    osc.type = 'sine';
+    osc.frequency.value = freq;
+
+    // LFO para trémolo suave (simula golpe de cuenco que decae y reaparece)
+    lfo.type = 'sine';
+    lfo.frequency.value = 0.08 + i * 0.03;  // ciclo muy lento
+    lfoGain.gain.value = 0.25;
+    lfo.connect(lfoGain);
+    lfoGain.connect(gain.gain);
+
+    gain.gain.value = 0.18 / (i + 1);  // armónicos más suaves
+    osc.connect(gain);
+    gain.connect(master);
+    osc.start();
+    lfo.start();
+
+    synthNodes.push(osc, lfo);
+  });
+
+  /* Ruido de fondo muy tenue (sala de meditación) */
+  const bufferSize = ctx.sampleRate * 2;
+  const buffer = ctx.createBuffer(1, bufferSize, ctx.sampleRate);
+  const data = buffer.getChannelData(0);
+  for (let i = 0; i < bufferSize; i++) data[i] = (Math.random() * 2 - 1) * 0.004;
+  const noiseSource = ctx.createBufferSource();
+  noiseSource.buffer = buffer;
+  noiseSource.loop = true;
+  const noiseGain = ctx.createGain();
+  noiseGain.gain.value = 0.06;
+  noiseSource.connect(noiseGain);
+  noiseGain.connect(master);
+  noiseSource.start();
+  synthNodes.push(noiseSource);
+}
+
+function generarBinaural(ctx, master) {
+  /* Binaural: oído izquierdo 432 Hz, oído derecho 440 Hz → diferencia 8 Hz (onda alfa) */
+  const merger = ctx.createChannelMerger(2);
+  merger.connect(master);
+
+  const freqBase = 432;
+  const beat = 8;  // Hz de diferencia → rango alfa (relajación)
+
+  [0, 1].forEach(ch => {
+    const osc = ctx.createOscillator();
+    const g = ctx.createGain();
+    osc.type = 'sine';
+    osc.frequency.value = ch === 0 ? freqBase : freqBase + beat;
+    g.gain.value = 0.28;
+    osc.connect(g);
+    g.connect(merger, 0, ch);
+    osc.start();
+    synthNodes.push(osc);
+  });
+
+  /* Nota: binaural funciona mejor con auriculares */
+  console.info('Binaural activo: usa auriculares para el efecto completo');
+}
+
+function mostrarAvisoArchivo(amb) {
+  const aviso = document.getElementById('aviso-archivo');
+  if (aviso) {
+    aviso.textContent = `⚠️ Archivo "${amb.src}" no encontrado. Colócalo en la carpeta /audio/. El resto de la sesión continúa sin música.`;
+    aviso.style.display = 'block';
+    setTimeout(() => aviso.style.display = 'none', 6000);
+  }
+  ambienteActivo = "ninguno";
+  // quita el botón activo
+  document.querySelectorAll('.amb-btn').forEach(b => b.classList.remove('act'));
+  document.querySelector('[data-amb="ninguno"]').classList.add('act');
+}
+
+/* ═══════════════════════════════════════════
+   RENDER DE TÉCNICAS
+═══════════════════════════════════════════ */
+function renderTecnicas(lista) {
+  const cont = document.getElementById('tecnicasContainer');
+  cont.innerHTML = '';
+  lista.forEach((t, i) => {
+    const card = document.createElement('div');
+    card.className = 'tec-card';
+    card.id = 'card-' + t.id;
+    card.style.animationDelay = (i * 60) + 'ms';
+
+    const badgesSin = t.sintomas.map(s =>
+      `<span class="tec-badge tec-sin">${s}</span>`).join('');
+
+    card.innerHTML = `
+      <div class="tec-head" onclick="toggleCard('${t.id}')">
+        <div class="tec-ico-wrap" style="background:${t.color}">
+          <span style="font-size:26px">${t.emoji}</span>
+        </div>
+        <div class="tec-info">
+          <div class="tec-nom">${t.nom}</div>
+          <div class="tec-sub">${t.sub}</div>
+          <div class="tec-badges">
+            <span class="tec-badge tec-dur">⏱ ${t.duracion}</span>
+            <span class="tec-badge tec-nivel">${t.nivel}</span>
+            ${badgesSin}
+          </div>
+        </div>
+        <svg class="tec-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--mora2)" stroke-width="2" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
+      </div>
+      <div class="tec-body">
+        <div class="tec-desc">${t.desc}</div>
+        <div class="pasos-title">Cómo practicarla</div>
+        <div class="pasos-list">
+          ${t.pasos.map((p,idx)=>`
+            <div class="paso-item">
+              <div class="paso-num">${idx+1}</div>
+              <div class="paso-txt">${p.txt}${p.dur?`<br><span class="paso-duracion">⏱ ${p.dur}</span>`:''}</div>
+            </div>`).join('')}
+        </div>
+        <div class="beneficios-row">
+          ${t.beneficios.map(b=>`<span class="benef-pill">${b}</span>`).join('')}
+        </div>
+
+        <!-- TEMPORIZADOR + SELECTOR AMBIENTE -->
+        <div class="timer-wrap">
+
+          <!-- Ambiente -->
+          <div class="ambiente-label">Ambiente sonoro</div>
+          <div class="offline-badge">
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 6l5 5a7 7 0 0 1 9.9 0L21 6M1 1l22 22"/></svg>
+            Offline tras primera carga
+          </div>
+          <div class="ambiente-grid">
+            ${AMBIENTES.map(a=>`
+              <button class="amb-btn ${a.id===t.ambienteSugerido?'act':''}"
+                data-amb="${a.id}" data-tec="${t.id}"
+                onclick="seleccionarAmbiente('${a.id}','${t.id}',this)">
+                <span class="amb-ico">${a.ico}</span>
+                <span class="amb-nom">${a.nom}</span>
+                <span class="amb-status">${a.tipo==='sintetico'?'sintético':a.tipo==='archivo'?'archivo':'—'}</span>
+              </button>`).join('')}
+          </div>
+
+          <!-- Control de volumen -->
+          <div class="vol-row">
+            <span class="vol-ico">🔈</span>
+            <input type="range" class="vol-slider" id="vol-${t.id}"
+              min="0" max="1" step="0.05" value="0.5"
+              oninput="ajustarVolumenCard('${t.id}',this.value)">
+            <span class="vol-ico">🔊</span>
+          </div>
+
+          <!-- Aviso archivo no encontrado -->
+          <div id="aviso-archivo" style="display:none;font-size:11px;color:#f0cc88;text-align:center;margin-bottom:8px;line-height:1.5"></div>
+
+          <!-- Círculo temporizador -->
+          <div class="timer-circulo">
+            <svg class="timer-svg" viewBox="0 0 140 140">
+              <circle class="timer-bg" cx="70" cy="70" r="60"/>
+              <circle class="timer-arco" id="arco-${t.id}" cx="70" cy="70" r="60"/>
+            </svg>
+            <div class="timer-num">
+              <div class="timer-mm-ss" id="timer-${t.id}">${String(t.durMin).padStart(2,'0')}:00</div>
+              <div class="timer-label-fase" id="fase-${t.id}">listo</div>
+            </div>
+          </div>
+
+          <div class="timer-controles">
+            <button class="timer-btn timer-btn-sec" title="Reiniciar" onclick="resetTimer('${t.id}',${t.durMin})">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
+            </button>
+            <button class="timer-btn timer-btn-play" onclick="iniciarSesion('${t.id}')">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--mora1)"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            </button>
+            <button class="timer-btn timer-btn-sec" title="Vista completa" onclick="iniciarSesion('${t.id}')">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9l6 6M15 9l-6 6"/></svg>
+            </button>
+          </div>
+
+          <div class="timer-duracion-row">
+            ${[5,10,15,20].map(m=>`
+              <button class="timer-dur-btn ${m===t.durMin?'sel':''}"
+                onclick="setDur('${t.id}',${m},this)">${m} min</button>`).join('')}
+          </div>
+
+        </div>
+      </div>`;
+    cont.appendChild(card);
+  });
+}
+
+/* ═══════════════════════════════════════════
+   AMBIENTE POR TARJETA
+═══════════════════════════════════════════ */
+const ambientePorTec = {};  // id_tecnica → id_ambiente seleccionado
+
+function seleccionarAmbiente(ambId, tecId, btn) {
+  ambientePorTec[tecId] = ambId;
+  btn.closest('.ambiente-grid').querySelectorAll('.amb-btn')
+    .forEach(b => b.classList.remove('act'));
+  btn.classList.add('act');
+}
+
+function ajustarVolumenCard(tecId, val) {
+  // solo ajusta si esta técnica está en sesión activa
+  ajustarVolumen(parseFloat(val));
+}
+
+/* ═══════════════════════════════════════════
+   FILTRO
+═══════════════════════════════════════════ */
+function filtrar(f, btn) {
+  document.querySelectorAll('.fchip').forEach(b => b.classList.remove('act'));
+  btn.classList.add('act');
+  const lista = f==='todo' ? TECNICAS : TECNICAS.filter(t=>t.sintomas.includes(f));
+  renderTecnicas(lista);
+}
+
+/* ═══════════════════════════════════════════
+   TOGGLE CARD
+═══════════════════════════════════════════ */
+function toggleCard(id) {
+  const card = document.getElementById('card-'+id);
+  const wasOpen = card.classList.contains('abierto');
+  document.querySelectorAll('.tec-card').forEach(c=>c.classList.remove('abierto'));
+  if (!wasOpen) {
+    card.classList.add('abierto');
+    setTimeout(()=>card.scrollIntoView({behavior:'smooth',block:'nearest'}),80);
+  }
+}
+
+/* ═══════════════════════════════════════════
+   TIMER SIMPLE
+═══════════════════════════════════════════ */
+const timers = {};
+
+function setDur(id, min, btn) {
+  if (timers[id]?.running) return;
+  timers[id] = { total:min*60, restante:min*60, running:false };
+  document.getElementById('timer-'+id).textContent = String(min).padStart(2,'0')+':00';
+  document.getElementById('fase-'+id).textContent = 'listo';
+  setArco(id, 1);
+  btn.closest('.timer-duracion-row').querySelectorAll('.timer-dur-btn')
+    .forEach(b=>b.classList.remove('sel'));
+  btn.classList.add('sel');
+}
+
+function setArco(id, frac) {
+  const arco = document.getElementById('arco-'+id);
+  if (arco) arco.style.strokeDashoffset = 377*(1-frac);
+}
+
+function resetTimer(id, durMin) {
+  if (timers[id]?.interval) clearInterval(timers[id].interval);
+  timers[id] = { total:durMin*60, restante:durMin*60, running:false };
+  document.getElementById('timer-'+id).textContent = String(durMin).padStart(2,'0')+':00';
+  document.getElementById('fase-'+id).textContent = 'listo';
+  setArco(id, 1);
+}
+
+/* ═══════════════════════════════════════════
+   SESIÓN GUIADA
+═══════════════════════════════════════════ */
+let sesionData = null;
+let sesionInterval = null;
+let faseIdx = 0;
+let cicloActual = 0;
+let segundoFase = 0;
+
+function iniciarSesion(tecId) {
+  const t = TECNICAS.find(x=>x.id===tecId);
+  if (!t) return;
+
+  // desbloquear AudioContext (requiere gesto de usuario)
+  if (audioCtx && audioCtx.state==='suspended') audioCtx.resume();
+
+  sesionData = t;
+  faseIdx = 0; cicloActual = 0; segundoFase = 0;
+
+  document.getElementById('sesNom').textContent = t.nom.toUpperCase();
+  document.getElementById('sesionActiva').classList.add('visible');
+  document.body.style.overflow = 'hidden';
+
+  // ambiente
+  const ambId = ambientePorTec[tecId] || t.ambienteSugerido || 'ninguno';
+  const amb = AMBIENTES.find(a=>a.id===ambId);
+  const volInicial = parseFloat(document.getElementById('vol-'+tecId)?.value || 0.5);
+
+  if (amb && ambId !== 'ninguno') {
+    document.getElementById('sesAmbInfo').style.display = 'flex';
+    document.getElementById('sesAmbIco').textContent = amb.ico;
+    document.getElementById('sesAmbNom').textContent = amb.nom;
+    document.getElementById('sesVolSlider').value = volInicial;
+    iniciarAmbiente(ambId, volInicial);
+  } else {
+    document.getElementById('sesAmbInfo').style.display = 'none';
+    detenerAudio();
+  }
+
+  arrancarFase();
+}
+
+function arrancarFase() {
+  if (!sesionData) return;
+  const fases = sesionData.fases;
+
+  if (faseIdx >= fases.length) {
+    faseIdx = 0;
+    cicloActual++;
+    if (cicloActual >= sesionData.ciclosTotales) { cerrarSesion(); return; }
+  }
+
+  const fase = fases[faseIdx];
+  segundoFase = fase.dur;
+
+  document.getElementById('sesFaseNom').textContent = fase.nom;
+  document.getElementById('sesFaseInst').textContent = fase.inst;
+  document.getElementById('sesCiclos').textContent =
+    sesionData.ciclosTotales > 1
+      ? `Ciclo ${cicloActual+1} de ${sesionData.ciclosTotales}`
+      : '';
+
+  const orb = document.getElementById('sesOrb');
+  orb.className = 'sesion-orb ' + (fase.accion||'');
+
+  if (sesionInterval) clearInterval(sesionInterval);
+  actualizarCuenta(segundoFase, fase);
+
+  sesionInterval = setInterval(()=>{
+    segundoFase--;
+    actualizarCuenta(segundoFase, fase);
+    if (segundoFase<=0) {
+      clearInterval(sesionInterval);
+      faseIdx++;
+      setTimeout(arrancarFase, 300);
+    }
+  }, 1000);
+}
+
+function actualizarCuenta(seg, fase) {
+  const el = document.getElementById('sesCuenta');
+  if (fase.dur <= 15) {
+    el.textContent = seg > 0 ? seg : '';
+  } else {
+    const m = Math.floor(seg/60);
+    const s = seg%60;
+    el.textContent = m + ':' + String(s).padStart(2,'0');
+  }
+}
+
+function cerrarSesion() {
+  if (sesionInterval) clearInterval(sesionInterval);
+  detenerAudio();
+  document.getElementById('sesionActiva').classList.remove('visible');
+  document.body.style.overflow = '';
+  sesionData = null;
+}
+
+function setSesionVol(val) {
+  ajustarVolumen(parseFloat(val));
+}
+
+/* ═══════════════════════════════════════════
+   INIT
+═══════════════════════════════════════════ */
+renderTecnicas(TECNICAS);
+
+// Pre-seleccionar ambiente sugerido por cada técnica
+TECNICAS.forEach(t => { ambientePorTec[t.id] = t.ambienteSugerido || 'ninguno'; });
+</script>
+</body>
+</html>
