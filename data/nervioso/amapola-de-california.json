@@ -1,0 +1,235 @@
+{
+  "id": "amapola-de-california",
+  "versionFicha": "2.0",
+  "estadoFicha": "publicada",
+  "fechaCreacion": "2026-04-15",
+  "fechaRevision": "2026-04-15",
+  "nombreComun": "Amapola de California",
+  "nombresAlternativos": [
+    {
+      "nombre": "California poppy",
+      "idioma": "en",
+      "region": "Norteamérica"
+    },
+    {
+      "nombre": "Golden poppy",
+      "idioma": "en",
+      "region": "California"
+    }
+  ],
+  "nombreCientifico": "Eschscholzia californica Cham.",
+  "sinonimiasCientificas": [],
+  "familia": "Papaveraceae",
+  "orden": "Ranunculales",
+  "clase": "Magnoliopsida",
+  "regionOrigen": [
+    "América del Norte — California, México"
+  ],
+  "habitatNatural": "Praderas, suelos arenosos y bordes de caminos en climas mediterráneos y áridos",
+  "disponibilidadPanama": {
+    "disponible": true,
+    "nombreLocal": "Amapola de California",
+    "formaComercial": [
+      "cápsula",
+      "tintura",
+      "té-empacado"
+    ],
+    "dondeConseguir": [
+      "tienda-naturista",
+      "importación"
+    ],
+    "cultivoLocal": true,
+    "endemicaPanama": false,
+    "notaRegional": "Disponible como suplemento importado en tiendas naturistas. Cultivable como planta ornamental en zonas secas de Panamá. Flores anaranjadas muy decorativas."
+  },
+  "cultivoCasero": {
+    "dificultad": "facil",
+    "apta": true,
+    "maceta": true,
+    "luz": "pleno-sol",
+    "agua": "moderado",
+    "suelo": "Arenoso y bien drenado, tolera suelos pobres",
+    "clima": "Buena adaptación en temporada seca panameña. En temporada lluviosa puede ser problemática por exceso de humedad.",
+    "notaCultivo": "Anual de floración rápida. Sembrar directamente en suelo. Sensible a trasplante. La flor se cierra de noche.",
+    "tiempoACosecha": "2-3 meses para floración"
+  },
+  "partesUsadas": [
+    {
+      "parte": "parte-aérea",
+      "nota": "Herba en floración (no contiene opiáceos — diferente a Papaver somniferum)"
+    }
+  ],
+  "resumen": "Eschscholzia californica es un sedante suave NO adictivo con monografía EMA para estrés e insomnio leve. A pesar de ser de la familia Papaveraceae, no contiene morfina ni opiáceos. Sus alcaloides (protopina, californidina) modulan GABA sin dependencia.",
+  "usoTradicionalHistorico": {
+    "culturas": [
+      {
+        "cultura": "Nativos americanos (californianos)",
+        "uso": "Sedante, analgésico dental y para el sueño",
+        "periodo": "Precolombino"
+      }
+    ],
+    "primerasMencionesHistoricas": "Adoptada en medicina ecléctica norteamericana en el siglo XIX",
+    "usoIndigenaRegional": "No tradicional en Panamá. Cultivada como ornamental."
+  },
+  "nivelEvidenciaGlobal": "B",
+  "fuentePrimaria": {
+    "institucion": "EMA",
+    "tipo": "monografía",
+    "titulo": "European Union herbal monograph on Eschscholzia californica Cham., herba. EMA/HMPC/680372/2013",
+    "año": 2015,
+    "url": "https://www.ema.europa.eu/en/documents/herbal-monograph/final-european-union-herbal-monograph-eschscholzia-californica-cham-herba_en.pdf"
+  },
+  "grupoTerapeutico": [
+    "sedante",
+    "hipnótica",
+    "ansiolítica",
+    "analgésica leve"
+  ],
+  "propiedades": [
+    {
+      "nombre": "Sedante suave y ansiolítico no adictivo",
+      "nivelEvidencia": "fuerte",
+      "mecanismoAccion": "Alcaloides isoquinolínicos (protopina, californidina, eschscholtzina) actúan como agonistas de receptores GABA-A y modulan canales de calcio dependientes de voltaje en neuronas. Sin afinidad por receptores opiáceos mu — NO adictivos.",
+      "referencia": "EMA/HMPC/680372/2013"
+    }
+  ],
+  "fotoquimica": [
+    {
+      "compuesto": "Protopina",
+      "grupo": "alcaloide isoquinolínico",
+      "accion": "Sedante, modulador GABA-A, sin efecto opioide",
+      "concentracion": "Variable en parte aérea"
+    },
+    {
+      "compuesto": "Californidina y eschscholtzina",
+      "grupo": "alcaloide isoquinolínico",
+      "accion": "Ansiolítica, sedante suave",
+      "concentracion": "Variable"
+    }
+  ],
+  "dolencias": [
+    {
+      "nombre": "Estrés mental leve e insomnio",
+      "categoria": "nervioso",
+      "nivelEvidencia": "fuerte",
+      "dosis": "480-600 mg de parte aérea seca",
+      "duracion": "Hasta 4 semanas",
+      "referencia": "EMA/HMPC/680372/2013"
+    }
+  ],
+  "sistemas": [
+    "nervioso"
+  ],
+  "modoEII": {
+    "aptaEnBrote": false,
+    "notaBrote": "Sin indicación en brote activo. Los alcaloides isoquinolínicos pueden tener efecto sobre la motilidad intestinal.",
+    "aptaEnMantenimiento": true,
+    "notaMantenimiento": "Útil para insomnio y ansiedad en EII en remisión. Sin riesgo de adicción — ventaja importante en EII crónica.",
+    "mecanismoEII": "Efecto GABAérgico sin impacto inflamatorio intestinal documentado",
+    "referenciaEII": "Sin estudios específicos en EII"
+  },
+  "modoCeliaquiaGluten": {
+    "libreDeGluten": true,
+    "nota": "Libre de gluten",
+    "indicacionEspecifica": "Segura en celiaquía"
+  },
+  "usos": {
+    "interno": [
+      "Insomnio leve",
+      "estrés",
+      "ansiedad",
+      "nerviosismo",
+      "dolor leve"
+    ],
+    "externo": [],
+    "culinario": []
+  },
+  "preparacion": [
+    {
+      "forma": "infusión",
+      "instrucciones": "Infundir 480-600 mg de parte aérea seca en 150-200 ml agua caliente. Tapar y reposar.",
+      "cantidadPlanta": "480-600 mg",
+      "temperatura": "90°C",
+      "tiempoPreparacion": "10-15 minutos",
+      "dosis": "1-2 veces al día. Para insomnio: 1 taza 30-60 minutos antes de dormir.",
+      "duracionMaxima": "4 semanas continuas",
+      "notaPreparacion": "NO confundir con Papaver somniferum (amapola del opio). La amapola de California es completamente legal y sin riesgo de adicción."
+    }
+  ],
+  "contraindicaciones": [
+    {
+      "condicion": "Embarazo",
+      "gravedad": "precaución",
+      "justificacion": "Los alcaloides isoquinolínicos tienen efecto espasmódico teórico sobre músculo uterino"
+    },
+    {
+      "condicion": "Confusión con Papaver somniferum",
+      "gravedad": "precaución",
+      "justificacion": "Son plantas diferentes — la amapola de California NO contiene opiáceos"
+    }
+  ],
+  "interaccionesMedicamentosas": [
+    {
+      "medicamento": "Sedantes, hipnóticos y benzodiacepinas",
+      "tipo": "potenciación",
+      "mecanismo": "Efecto GABAérgico aditivo",
+      "gravedad": "moderada"
+    },
+    {
+      "medicamento": "IMAO",
+      "tipo": "precaución",
+      "mecanismo": "Posible interacción por metabolismo hepático de alcaloides",
+      "gravedad": "leve"
+    }
+  ],
+  "embarazoLactancia": {
+    "embarazo": "precaución",
+    "lactancia": "precaución",
+    "pediatria": "No recomendado en menores de 18 años según EMA",
+    "justificacion": "Datos insuficientes. Efecto espasmódico teórico en embarazo."
+  },
+  "compatibilidadPlantas": {
+    "sinergicas": [
+      {
+        "plantaId": "lupulo",
+        "plantaNom": "Lúpulo",
+        "motivo": "Sinergia sedante para insomnio — ambos modulan GABA sin adicción"
+      },
+      {
+        "plantaId": "escutelaria",
+        "plantaNom": "Escutelaria",
+        "motivo": "Triple combinación sedante no adictiva clásica en fitoterapia norteamericana"
+      }
+    ],
+    "incompatibles": []
+  },
+  "infusionesRelacionadas": [],
+  "emoji": "🌺",
+  "etiquetas": [
+    "sedante",
+    "hipnotica",
+    "ansiolitica",
+    "nervioso",
+    "nivel-B",
+    "ema",
+    "cultivable-panama",
+    "libre-gluten",
+    "disponible-panama",
+    "no-adictiva"
+  ],
+  "fuentes": [
+    {
+      "autor": "European Medicines Agency",
+      "titulo": "European Union herbal monograph on Eschscholzia californica Cham., herba. EMA/HMPC/680372/2013",
+      "publicacion": "EMA",
+      "año": 2015,
+      "doi": "",
+      "pmid": "",
+      "tipo": "monografía-EMA",
+      "nivelEvidencia": "B",
+      "idioma": "en"
+    }
+  ],
+  "advertencia": "NO es la amapola del opio — no contiene opiáceos. Puede causar somnolencia. No conducir.",
+  "disclaimer": "Esta información es educativa y no sustituye el diagnóstico ni el tratamiento médico profesional."
+}

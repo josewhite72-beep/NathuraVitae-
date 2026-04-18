@@ -1,0 +1,270 @@
+{
+  "id": "griffonia",
+  "versionFicha": "2.0",
+  "estadoFicha": "publicada",
+  "fechaCreacion": "2026-04-15",
+  "fechaRevision": "2026-04-15",
+  "nombreComun": "Griffonia",
+  "nombresAlternativos": [
+    {
+      "nombre": "Griffonia simplicifolia",
+      "idioma": "la",
+      "region": ""
+    },
+    {
+      "nombre": "5-HTP plant",
+      "idioma": "en",
+      "region": "África Occidental"
+    }
+  ],
+  "nombreCientifico": "Griffonia simplicifolia (DC.) Baill.",
+  "sinonimiasCientificas": [
+    "Bandeiraea simplicifolia Benth."
+  ],
+  "familia": "Fabaceae",
+  "orden": "Fabales",
+  "clase": "Magnoliopsida",
+  "regionOrigen": [
+    "África Occidental (Ghana, Costa de Marfil)"
+  ],
+  "habitatNatural": "Bosques y sabanas tropicales. Liana trepadora de hasta 3 m.",
+  "disponibilidadPanama": {
+    "disponible": true,
+    "nombreLocal": "Griffonia / 5-HTP",
+    "formaComercial": [
+      "cápsula",
+      "extracto"
+    ],
+    "dondeConseguir": [
+      "tienda-naturista",
+      "importación"
+    ],
+    "cultivoLocal": false,
+    "endemicaPanama": false,
+    "notaRegional": "Disponible como suplemento 5-HTP en tiendas naturistas de Ciudad de Panamá. Importado."
+  },
+  "cultivoCasero": {
+    "dificultad": "moderada",
+    "apta": false,
+    "maceta": false,
+    "luz": "pleno-sol",
+    "agua": "moderado",
+    "suelo": "Bien drenado y fértil",
+    "clima": "Clima tropical compatible pero planta poco común en Panamá",
+    "notaCultivo": "No recomendado — disponible como suplemento importado",
+    "tiempoACosecha": "Varios años"
+  },
+  "partesUsadas": [
+    {
+      "parte": "semilla",
+      "nota": "Extracto de semilla estandarizado en 5-HTP (5-hidroxitriptófano). Normalmente 98-99% de pureza."
+    }
+  ],
+  "resumen": "Griffonia simplicifolia es la fuente natural más concentrada de 5-HTP (5-hidroxitriptófano), precursor directo de la serotonina. Con evidencia clínica para depresión, insomnio, migraña y fibromialgia. La interacción con antidepresivos serotoninérgicos es la advertencia más crítica — riesgo de síndrome serotoninérgico grave.",
+  "usoTradicionalHistorico": {
+    "culturas": [
+      {
+        "cultura": "Medicina tradicional africana (Ghana)",
+        "uso": "Afrodisíaco y tónico",
+        "periodo": "Tradicional"
+      }
+    ],
+    "primerasMencionesHistoricas": "Uso moderno basado en contenido en 5-HTP descubierto en los años 1970",
+    "usoIndigenaRegional": "No documentado en Panamá"
+  },
+  "nivelEvidenciaGlobal": "B",
+  "fuentePrimaria": {
+    "institucion": "PubMed — Revisión clínica",
+    "tipo": "revision",
+    "titulo": "5-Hydroxytryptophan: a clinically-effective serotonin precursor. Altern Med Rev. 1998",
+    "año": 1998,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/9727088/"
+  },
+  "grupoTerapeutico": [
+    "antidepresiva",
+    "ansiolítica",
+    "hipnótica",
+    "analgésica"
+  ],
+  "propiedades": [
+    {
+      "nombre": "Precursor de serotonina — efecto antidepresivo y ansiolítico",
+      "nivelEvidencia": "fuerte",
+      "mecanismoAccion": "El 5-HTP cruza la barrera hematoencefálica (a diferencia del triptófano) y es convertido directamente en serotonina por la L-aminoácido aromático descarboxilasa (DOPA descarboxilasa). Aumenta serotonina en SNC sin necesidad de cofactores adicionales.",
+      "referencia": "Birdsall TC. Altern Med Rev. 1998;3(4):271-280. PMID: 9727088"
+    }
+  ],
+  "fotoquimica": [
+    {
+      "compuesto": "5-Hidroxitriptófano (5-HTP)",
+      "grupo": "aminoácido",
+      "accion": "Precursor directo de serotonina y melatonina",
+      "concentracion": "Hasta 20% en semillas; 98-99% en extracto purificado"
+    }
+  ],
+  "dolencias": [
+    {
+      "nombre": "Depresión leve-moderada",
+      "categoria": "nervioso",
+      "nivelEvidencia": "moderado",
+      "dosis": "100-300 mg/día en 2-3 tomas",
+      "duracion": "4-8 semanas",
+      "referencia": "Birdsall TC. PMID: 9727088"
+    },
+    {
+      "nombre": "Insomnio y trastorno del sueño",
+      "categoria": "nervioso",
+      "nivelEvidencia": "moderado",
+      "dosis": "100-300 mg antes de dormir",
+      "duracion": "4-8 semanas",
+      "referencia": "Birdsall TC. PMID: 9727088"
+    },
+    {
+      "nombre": "Migraña (profilaxis)",
+      "categoria": "nervioso",
+      "nivelEvidencia": "moderado",
+      "dosis": "600 mg/día",
+      "duracion": "6 meses",
+      "referencia": "Titus F et al. Cephalalgia. 1986;6(3):161-7. PMID: 3527533"
+    }
+  ],
+  "sistemas": [
+    "nervioso"
+  ],
+  "modoEII": {
+    "aptaEnBrote": false,
+    "notaBrote": "Sin indicación específica en brote activo de EII.",
+    "aptaEnMantenimiento": true,
+    "notaMantenimiento": "Puede ser útil en remisión para el componente depresivo y ansioso de la EII crónica. La serotonina intestinal también puede mejorar la motilidad.",
+    "mecanismoEII": "El 5-HTP aumenta serotonina tanto en SNC como en el sistema nervioso entérico (95% de serotonina corporal está en intestino). Puede mejorar motilidad y bienestar.",
+    "referenciaEII": "Sin ECA en EII; plausibilidad por papel de serotonina entérica"
+  },
+  "modoCeliaquiaGluten": {
+    "libreDeGluten": true,
+    "nota": "Libre de gluten. Extracto purificado sin contaminantes.",
+    "indicacionEspecifica": "Segura en celiaquía"
+  },
+  "usos": {
+    "interno": [
+      "Depresión leve-moderada",
+      "insomnio",
+      "migraña (profilaxis)",
+      "fibromialgia",
+      "bulimia nerviosa"
+    ],
+    "externo": [],
+    "culinario": []
+  },
+  "preparacion": [
+    {
+      "forma": "extracto-seco",
+      "instrucciones": "Cápsulas de 5-HTP. Tomar con las comidas para reducir náuseas. Empezar con dosis bajas.",
+      "cantidadPlanta": "50 mg por toma — iniciar con 50 mg/día",
+      "dosis": "Aumentar gradualmente hasta 100-300 mg/día según tolerancia",
+      "duracionMaxima": "8 semanas. Evaluar con médico antes de continuar.",
+      "notaPreparacion": "CRÍTICO: nunca combinar con ISRS, IMAO o IRSN sin supervisión médica — riesgo grave de síndrome serotoninérgico."
+    }
+  ],
+  "contraindicaciones": [
+    {
+      "condicion": "Tratamiento con ISRS (fluoxetina, sertralina), IMAO o IRSN",
+      "gravedad": "absoluta",
+      "justificacion": "Riesgo de síndrome serotoninérgico — potencialmente fatal: hipertermia, rigidez muscular, convulsiones"
+    },
+    {
+      "condicion": "Triptanos (sumatriptán, rizatriptán)",
+      "gravedad": "absoluta",
+      "justificacion": "Riesgo de síndrome serotoninérgico por mecanismo complementario"
+    },
+    {
+      "condicion": "Embarazo y lactancia",
+      "gravedad": "contraindicada",
+      "justificacion": "Sin datos de seguridad. El 5-HTP puede afectar el desarrollo neurológico fetal."
+    }
+  ],
+  "interaccionesMedicamentosas": [
+    {
+      "medicamento": "Antidepresivos serotoninérgicos (TODOS)",
+      "tipo": "potenciación",
+      "mecanismo": "Aumento excesivo y peligroso de serotonina — síndrome serotoninérgico",
+      "gravedad": "grave"
+    },
+    {
+      "medicamento": "Tramadol",
+      "tipo": "potenciación",
+      "mecanismo": "Tramadol es serotononinérgico — riesgo de síndrome serotoninérgico",
+      "gravedad": "grave"
+    },
+    {
+      "medicamento": "Carbidopa",
+      "tipo": "precaución",
+      "mecanismo": "Puede aumentar conversión periférica de 5-HTP a serotonina causando náuseas y diarrea severas",
+      "gravedad": "moderada"
+    }
+  ],
+  "embarazoLactancia": {
+    "embarazo": "contraindicada",
+    "lactancia": "contraindicada",
+    "pediatria": "No recomendado en menores de 18 años sin supervisión neurológica",
+    "justificacion": "Sin datos de seguridad. Potencial impacto en neurodesarrollo."
+  },
+  "compatibilidadPlantas": {
+    "sinergicas": [
+      {
+        "plantaId": "azafran",
+        "plantaNom": "Azafrán",
+        "motivo": "Sinergia antidepresiva — combinar con supervisión médica y dosis reducidas de ambos"
+      },
+      {
+        "plantaId": "ashwagandha",
+        "plantaNom": "Ashwagandha",
+        "motivo": "Efecto ansiolítico complementario por mecanismo diferente (GABA vs serotonina)"
+      }
+    ],
+    "incompatibles": [
+      {
+        "plantaId": "rodiola",
+        "plantaNom": "Rodiola",
+        "motivo": "Rodiola inhibe MAO — combinación con 5-HTP aumenta riesgo de exceso serotoninérgico. Usar con precaución."
+      }
+    ]
+  },
+  "infusionesRelacionadas": [],
+  "emoji": "🌱",
+  "etiquetas": [
+    "antidepresiva",
+    "ansiolitica",
+    "nervioso",
+    "nivel-B",
+    "disponible-panama",
+    "libre-gluten"
+  ],
+  "fuentes": [
+    {
+      "autor": "Birdsall TC",
+      "titulo": "5-Hydroxytryptophan: a clinically-effective serotonin precursor",
+      "publicacion": "Alternative Medicine Review",
+      "año": 1998,
+      "volumen": "3(4)",
+      "paginas": "271-280",
+      "pmid": "9727088",
+      "tipo": "revision",
+      "nivelEvidencia": "B",
+      "idioma": "en"
+    },
+    {
+      "autor": "Titus F, Dávalos A, Alom J, Codina A",
+      "titulo": "5-Hydroxytryptophan versus methysergide in the prophylaxis of migraine. Randomized clinical trial",
+      "publicacion": "Cephalalgia",
+      "año": 1986,
+      "volumen": "6(3)",
+      "paginas": "161-167",
+      "pmid": "3527533",
+      "tipo": "estudio-clinico-ECA",
+      "nivelEvidencia": "B",
+      "idioma": "en"
+    }
+  ],
+  "advertencia": "RIESGO GRAVE: síndrome serotoninérgico con antidepresivos, tramadol o triptanos. Consultar médico SIEMPRE antes de usar.",
+  "disclaimer": "Esta información es educativa y no sustituye el diagnóstico ni el tratamiento médico profesional."
+}

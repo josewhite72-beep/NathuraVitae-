@@ -1,0 +1,133 @@
+{
+  "id": "pasiflora",
+  "versionFicha": "2.0",
+  "estadoFicha": "publicada",
+  "fechaCreacion": "2026-04-16",
+  "fechaRevision": "2026-04-16",
+  "nombreComun": "Pasiflora",
+  "nombresAlternativos": [
+    "Flor de la pasión",
+    "Passionflower"
+  ],
+  "nombreCientifico": "Passiflora incarnata L.",
+  "sinonimiasCientificas": [
+    "Passiflora kerii Spreng."
+  ],
+  "familia": "Passifloraceae",
+  "orden": "Malpighiales",
+  "clase": "Magnoliopsida",
+  "regionOrigen": "América",
+  "habitatNatural": "Zonas templadas y subtropicales",
+  "disponibilidadPanama": {
+    "disponible": true,
+    "nombreLocal": "Pasiflora, Flor de la pasión",
+    "formaComercial": "Hojas secas, tintura, cápsulas",
+    "dondeConseguir": "Herbolarios, tiendas naturales, farmacias",
+    "cultivoLocal": true,
+    "endemicaPanama": false,
+    "notaRegional": "Trepadora ornamental cultivable en Panamá. Disponible en farmacias y tiendas naturistas."
+  },
+  "cultivoCasero": {
+    "dificultad": "facil",
+    "apta": true,
+    "maceta": true,
+    "luz": "pleno-sol",
+    "agua": "moderado",
+    "suelo": "Bien drenado",
+    "clima": "Adaptación razonable en Panamá",
+    "notaCultivo": "Trepadora con flores espectaculares.",
+    "tiempoACosecha": "Continuo desde el primer año"
+  },
+  "partesUsadas": [
+    "Partes aéreas (hojas, tallos, flores) secas"
+  ],
+  "resumen": "Ansiolítico suave con mayor nivel de evidencia clínica entre los botánicos para ansiedad. EMA avala. La vitexina actúa sobre receptores GABA-A sin sedación diurna marcada. Puede usarse durante el día.",
+  "usoTradicionalHistorico": "Calmante para ansiedad y nerviosismo.",
+  "nivelEvidenciaGlobal": "B",
+  "fuentePrimaria": "EMA/HMPC/669740/2013 — Passiflorae herba",
+  "grupoTerapeutico": "Ansiolítico, sedante suave",
+  "propiedades": "Ansiolítico, sedante suave",
+  "fotoquimica": "Vitexina, isovitexina, crisín (flavonoides)",
+  "dolencias": [
+    "Ansiedad leve",
+    "Insomnio ocasional",
+    "Tensión nerviosa"
+  ],
+  "sistemas": [
+    "Nervioso"
+  ],
+  "modoEII": {
+    "aptaEnBrote": true,
+    "notaBrote": "Segura ocasionalmente en brote. Evitar alcohol en tinturas si hay irritación gástrica. Preferir cápsulas.",
+    "aptaEnMantenimiento": true,
+    "notaMantenimiento": "Excelente para ansiedad crónica en EII en remisión. Sin somnolencia diurna — puede usarse durante el día.",
+    "mecanismoEII": "La reducción de ansiedad reduce el impacto del eje intestino-cerebro en la actividad de la EII.",
+    "referenciaEII": "Sin efectos adversos GI significativos. PMID: 33352740"
+  },
+  "modoCeliaquiaGluten": {
+    "libreDeGluten": true,
+    "nota": "Hierba libre. Verificar excipientes en cápsulas.",
+    "indicacionEspecifica": "Seguro en celiaquía. Sin somnolencia diurna."
+  },
+  "usos": {
+    "interno": true,
+    "externo": false,
+    "culinario": false
+  },
+  "preparacion": "Cápsulas de extracto estandarizado 200-400 mg, 2-3 veces/día (ansiedad) o 1 dosis antes de dormir (insomnio). O infusión de 2-4 g herba en 200 ml agua caliente tapado 10 min.",
+  "contraindicaciones": "Alergia a Passifloraceae. Niños <12 años sin supervisión.",
+  "interaccionesMedicamentosas": "Potencia sedantes del SNC. Posible con CYP450. Precaución con warfarina.",
+  "embarazoLactancia": "No recomendado en embarazo (posible efecto uterino). Evitar en lactancia.",
+  "compatibilidadPlantas": {
+    "sinergicas": [
+      {
+        "plantaId": "valeriana",
+        "plantaNom": "Valeriana",
+        "motivo": "Pasiflora (ansiolítica diurna) + valeriana (hipnótica nocturna) — combinación ideal"
+      },
+      {
+        "plantaId": "lupulo",
+        "plantaNom": "Lúpulo",
+        "motivo": "Triple sedante no adictivo con respaldo clínico"
+      }
+    ],
+    "incompatibles": []
+  },
+  "infusionesRelacionadas": [],
+  "emoji": "🌸",
+  "etiquetas": [
+    "calmante",
+    "ansiedad",
+    "nivel-B",
+    "ema",
+    "cultivable-panama",
+    "disponible-panama",
+    "libre-gluten"
+  ],
+  "fuentes": [
+    {
+      "autor": "EMA",
+      "titulo": "European Union herbal monograph on Passiflora incarnata L., herba. EMA/HMPC/669740/2013",
+      "publicacion": "European Medicines Agency",
+      "año": "2014",
+      "doi": "",
+      "pmid": "",
+      "tipo": "Monografía",
+      "nivelEvidencia": "B",
+      "idioma": "en"
+    },
+    {
+      "autor": "Miroddi M et al.",
+      "titulo": "Passiflora incarnata in Neuropsychiatric Disorders—A Systematic Review",
+      "publicacion": "Journal of Ethnopharmacology",
+      "año": "2013",
+      "doi": "",
+      "pmid": "33352740",
+      "tipo": "Revisión Sistemática",
+      "nivelEvidencia": "B",
+      "idioma": "en"
+    }
+  ],
+  "advertencia": "Contraindicada en embarazo. Puede potenciar otros sedantes. Sin somnolencia diurna significativa.",
+  "disclaimer": "Esta información es educativa y no sustituye el diagnóstico ni el tratamiento médico profesional."
+}

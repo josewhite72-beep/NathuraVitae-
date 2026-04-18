@@ -1,0 +1,286 @@
+{
+  "id": "centella",
+  "versionFicha": "2.0",
+  "estadoFicha": "publicada",
+  "fechaCreacion": "2026-04-14",
+  "nombreComun": "Centella asiática",
+  "nombresAlternativos": [
+    {
+      "nombre": "Gotu kola",
+      "idioma": "hi",
+      "region": "India"
+    },
+    {
+      "nombre": "Pegaga",
+      "idioma": "ms",
+      "region": "Malasia"
+    },
+    {
+      "nombre": "Hoja de tigre",
+      "idioma": "es",
+      "region": "Latinoamérica"
+    }
+  ],
+  "nombreCientifico": "Centella asiatica (L.) Urb.",
+  "sinonimiasCientificas": [
+    "Hydrocotyle asiatica L.",
+    "Centella coriacea Nannf."
+  ],
+  "familia": "Apiaceae",
+  "regionOrigen": [
+    "Asia tropical (India, China, Indonesia)",
+    "Madagascar",
+    "África"
+  ],
+  "habitatNatural": "Humedales, arrozales, bordes de caminos húmedos, climas cálidos",
+  "disponibilidadPanama": {
+    "disponible": true,
+    "nombreLocal": "Centella / Gotu kola",
+    "formaComercial": [
+      "fresca",
+      "seca",
+      "cápsula",
+      "tintura",
+      "crema"
+    ],
+    "dondeConseguir": [
+      "tienda-naturista",
+      "cultivo-propio"
+    ],
+    "cultivoLocal": true,
+    "endemicaPanama": false,
+    "notaRegional": "Se cultiva en macetas en zonas húmedas de Panamá. Disponible fresca en algunos mercados orgánicos."
+  },
+  "cultivoCasero": {
+    "dificultad": "facil",
+    "apta": true,
+    "maceta": true,
+    "luz": "semisombra",
+    "agua": "abundante",
+    "suelo": "Húmedo, rico en materia orgánica, pH 5.5-7.0",
+    "clima": "Crece muy bien en el clima tropical húmedo panameño. Requiere humedad constante y semisombra.",
+    "notaCultivo": "Se propaga por estolones. Cubre rápidamente el suelo. Cosechar hojas cada 2-3 meses.",
+    "tiempoACosecha": "2-3 meses desde plantación"
+  },
+  "partesUsadas": [
+    {
+      "parte": "hoja",
+      "nota": "Hojas y tallos, ricos en triterpenos (asiaticósido, madecasósido)"
+    }
+  ],
+  "resumen": "Ansiolítico leve y nootrópico, con evidencia moderada para mejorar la memoria, reducir la ansiedad y promover la neurogénesis. También útil para cicatrización y venotonía. Nivel de evidencia B.",
+  "usoTradicionalHistorico": {
+    "culturas": [
+      {
+        "cultura": "Ayurveda",
+        "uso": "Medhya rasayana (rejuvenecedor mental), ansiedad, heridas",
+        "periodo": "Antigüedad"
+      },
+      {
+        "cultura": "Medicina tradicional china",
+        "uso": "Traumatismos, estrés, heridas",
+        "periodo": "Antigüedad"
+      }
+    ],
+    "primerasMencionesHistoricas": "Sushruta Samhita (siglo II a.C.)",
+    "usoIndigenaRegional": "Sin uso indígena documentado en Panamá; adoptada como planta medicinal de cultivo fácil."
+  },
+  "nivelEvidenciaGlobal": "B",
+  "fuentePrimaria": {
+    "institucion": "EMA",
+    "tipo": "monografía",
+    "titulo": "Community herbal monograph on Centella asiatica (L.) Urb., herba",
+    "año": 2014,
+    "url": "https://www.ema.europa.eu/en/documents/herbal-monograph/final-community-herbal-monograph-centella-asiatica-l-urb-herba_en.pdf"
+  },
+  "grupoTerapeutico": [
+    "ansiolítica",
+    "nootrópica",
+    "cicatrizante",
+    "venotónica",
+    "neuroprotectora"
+  ],
+  "propiedades": [
+    {
+      "nombre": "Reducción de la ansiedad y mejora del estado de ánimo",
+      "nivelEvidencia": "moderado",
+      "mecanismoAccion": "Los triterpenos (asiaticósido) modulan la actividad serotoninérgica y GABAérgica en la amígdala y el hipocampo, reduciendo la respuesta al estrés y mejorando la neurogénesis",
+      "referencia": "Wijeweera P, et al. J Ethnopharmacol. 2015;164:281-287. DOI: 10.1016/j.jep.2015.02.006"
+    },
+    {
+      "nombre": "Mejora de la memoria y función cognitiva",
+      "nivelEvidencia": "moderado",
+      "mecanismoAccion": "Aumenta la ramificación dendrítica en el hipocampo y mejora la plasticidad sináptica mediante la activación de la vía ERK/CREB",
+      "referencia": "Puttarak P, et al. Evid Based Complement Alternat Med. 2017;2017:1398438. DOI: 10.1155/2017/1398438"
+    }
+  ],
+  "fotoquimica": [
+    {
+      "compuesto": "Asiaticósido",
+      "grupo": "triterpeno",
+      "accion": "Ansiolítico, neuroprotector, cicatrizante",
+      "concentracion": "0.5-1.5% en hoja seca"
+    },
+    {
+      "compuesto": "Madecasósido",
+      "grupo": "triterpeno",
+      "accion": "Cicatrizante, antiinflamatorio",
+      "concentracion": "0.2-1%"
+    }
+  ],
+  "dolencias": [
+    {
+      "nombre": "Ansiedad leve a moderada",
+      "categoria": "nervioso",
+      "nivelEvidencia": "moderado",
+      "dosis": "Extracto seco estandarizado (10-15% triterpenos) 300-600 mg/día, o infusión de 2-3 g de hoja seca 2-3 veces al día",
+      "duracion": "4-8 semanas",
+      "referencia": "Wijeweera P, et al. J Ethnopharmacol. 2015;164:281-287. PMID: 25660381"
+    },
+    {
+      "nombre": "Deterioro cognitivo leve",
+      "categoria": "nervioso",
+      "nivelEvidencia": "preliminar",
+      "dosis": "Extracto 500 mg 2 veces al día",
+      "duracion": "12 semanas",
+      "referencia": "Puttarak P, et al. Evid Based Complement Alternat Med. 2017;2017:1398438. PMID: 28250775"
+    }
+  ],
+  "sistemas": [
+    "nervioso",
+    "dermatológico",
+    "cardiovascular"
+  ],
+  "modoEII": {
+    "aptaEnBrote": true,
+    "notaBrote": "Puede usarse en brote leve para ansiedad, sin interacciones negativas",
+    "aptaEnMantenimiento": true,
+    "notaMantenimiento": "Segura en remisión; puede mejorar la ansiedad y la fatiga mental",
+    "mecanismoEII": "No actúa sobre inflamación intestinal",
+    "referenciaEII": "Sin estudios específicos; perfil favorable."
+  },
+  "modoCeliaquiaGluten": {
+    "libreDeGluten": true,
+    "nota": "Hoja pura y extractos son libres de gluten",
+    "indicacionEspecifica": "Segura para celíacos"
+  },
+  "usos": {
+    "interno": [
+      "Ansiedad",
+      "Deterioro cognitivo",
+      "Insuficiencia venosa",
+      "Fatiga mental"
+    ],
+    "externo": [
+      "Heridas",
+      "Úlceras de pierna",
+      "Cicatrices",
+      "Estrías"
+    ],
+    "culinario": [
+      "Ensaladas (en pequeñas cantidades, sabor amargo)"
+    ]
+  },
+  "preparacion": [
+    {
+      "forma": "infusión",
+      "instrucciones": "Verter agua caliente sobre las hojas secas o frescas picadas, tapar y reposar.",
+      "cantidadPlanta": "2-3 g de hoja seca (o 5-6 hojas frescas)",
+      "temperatura": "90-95°C",
+      "tiempoPreparacion": "10 minutos",
+      "dosis": "1 taza 2-3 veces al día",
+      "duracionMaxima": "4 semanas continuas",
+      "notaPreparacion": "Sabor amargo; puede mezclarse con menta o stevia."
+    }
+  ],
+  "contraindicaciones": [
+    {
+      "condicion": "Embarazo y lactancia",
+      "gravedad": "absoluta",
+      "justificacion": "Posible efecto abortivo y uterotónico (dosis altas)"
+    },
+    {
+      "condicion": "Hepatopatía activa",
+      "gravedad": "relativa",
+      "justificacion": "Casos aislados de hepatotoxicidad con dosis altas prolongadas"
+    }
+  ],
+  "interaccionesMedicamentosas": [
+    {
+      "medicamento": "Sedantes (benzodiazepinas)",
+      "tipo": "potenciación",
+      "mecanismo": "Efecto sedante aditivo",
+      "gravedad": "leve"
+    },
+    {
+      "medicamento": "Hepatotóxicos (paracetamol en altas dosis)",
+      "tipo": "precaución",
+      "mecanismo": "Posible interacción hepática",
+      "gravedad": "teórica"
+    }
+  ],
+  "embarazoLactancia": {
+    "embarazo": "contraindicada",
+    "lactancia": "contraindicada",
+    "pediatria": "No recomendada en menores de 12 años",
+    "justificacion": "Falta de estudios de seguridad; posible efecto uterotónico."
+  },
+  "compatibilidadPlantas": {
+    "sinergicas": [
+      {
+        "plantaId": "bacopa",
+        "plantaNom": "Bacopa monnieri",
+        "motivo": "Sinergia nootrópica y ansiolítica"
+      },
+      {
+        "plantaId": "ginkgo",
+        "plantaNom": "Ginkgo biloba",
+        "motivo": "Potenciación de la circulación cerebral y memoria"
+      }
+    ],
+    "incompatibles": []
+  },
+  "infusionesRelacionadas": [],
+  "emoji": "🍃",
+  "etiquetas": [
+    "ansiolítica",
+    "nootrópica",
+    "nivel-B",
+    "ema",
+    "disponible-panama",
+    "cultivable-panama",
+    "apta-eii",
+    "libre-gluten"
+  ],
+  "fuentes": [
+    {
+      "autor": "EMA/HMPC",
+      "titulo": "Community herbal monograph on Centella asiatica (L.) Urb., herba",
+      "publicacion": "European Medicines Agency",
+      "año": 2014,
+      "volumen": "EMA/HMPC/175584/2012",
+      "paginas": "1-11",
+      "doi": "N/A",
+      "pmid": "N/A",
+      "tipo": "monografía-EMA",
+      "nivelEvidencia": "B",
+      "idioma": "en"
+    },
+    {
+      "autor": "Wijeweera P, Arnason JT, Trudeau V, et al.",
+      "titulo": "Effect of Centella asiatica on anxiety and depression in healthy volunteers: a randomized, double-blind, placebo-controlled study",
+      "publicacion": "Journal of Ethnopharmacology",
+      "año": 2015,
+      "volumen": "164",
+      "paginas": "281-287",
+      "doi": "10.1016/j.jep.2015.02.006",
+      "pmid": "25660381",
+      "tipo": "estudio-clinico-ECA",
+      "nivelEvidencia": "B",
+      "idioma": "en"
+    }
+  ],
+  "advertencia": "Evitar en embarazo. Puede causar somnolencia leve. Dosis altas prolongadas (>6 meses) pueden causar hepatotoxicidad rara.",
+  "disclaimer": "Esta información es educativa y no sustituye el diagnóstico ni el tratamiento médico profesional.",
+  "fechaRevision": "2026-04-15"
+}

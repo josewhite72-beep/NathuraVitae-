@@ -1,0 +1,237 @@
+{
+  "id": "lupulo",
+  "versionFicha": "2.0",
+  "estadoFicha": "publicada",
+  "fechaCreacion": "2026-04-15",
+  "fechaRevision": "2026-04-15",
+  "nombreComun": "Lúpulo",
+  "nombresAlternativos": [
+    {
+      "nombre": "Hops",
+      "idioma": "en",
+      "region": "Europa/Internacional"
+    },
+    {
+      "nombre": "Hop",
+      "idioma": "en",
+      "region": ""
+    }
+  ],
+  "nombreCientifico": "Humulus lupulus L.",
+  "sinonimiasCientificas": [],
+  "familia": "Cannabaceae",
+  "orden": "Rosales",
+  "clase": "Magnoliopsida",
+  "regionOrigen": [
+    "Europa",
+    "Asia Occidental"
+  ],
+  "habitatNatural": "Setos, bordes de bosques y cultivos en climas templados húmedos",
+  "disponibilidadPanama": {
+    "disponible": true,
+    "nombreLocal": "Lúpulo",
+    "formaComercial": [
+      "cápsula",
+      "té-empacado",
+      "extracto"
+    ],
+    "dondeConseguir": [
+      "tienda-naturista",
+      "farmacia",
+      "importación"
+    ],
+    "cultivoLocal": true,
+    "endemicaPanama": false,
+    "notaRegional": "Disponible como suplemento en cápsulas en tiendas naturistas. Los granos de lúpulo para elaborar cerveza artesanal están disponibles en Ciudad de Panamá. Cultivable en zonas altas."
+  },
+  "cultivoCasero": {
+    "dificultad": "moderada",
+    "apta": true,
+    "maceta": true,
+    "luz": "pleno-sol",
+    "agua": "moderado",
+    "suelo": "Bien drenado y fértil, pH 6.0-7.5",
+    "clima": "Buena adaptación al clima tropical en semisombra o zonas altas de Panamá. En tierras bajas, proteger del calor intenso.",
+    "notaCultivo": "Planta trepadora — necesita soporte vertical de 3-4 m. Cosechar conos florales maduros (estrobilos).",
+    "tiempoACosecha": "Primer año para conos"
+  },
+  "partesUsadas": [
+    {
+      "parte": "flor",
+      "nota": "Conos florales femeninos maduros (strobiles/estrobilos). Ricos en acidos amargos y 2-metil-3-buten-2-ol."
+    }
+  ],
+  "resumen": "Humulus lupulus tiene monografía EMA para insomnio y estrés leve. Los ácidos amargos (humulona) y el 2-metil-3-buten-2-ol (metabolito) modulan receptores GABA-A produciendo sedación suave. La combinación con valeriana es la más estudiada clínicamente.",
+  "usoTradicionalHistorico": {
+    "culturas": [
+      {
+        "cultura": "Europea medieval",
+        "uso": "Sedante, digestivo y conservante de cerveza",
+        "periodo": "Siglo VIII — presente"
+      }
+    ],
+    "primerasMencionesHistoricas": "Documentado en herbarios alemanes del siglo XII. Base de la cerveza alemana desde el siglo VIII.",
+    "usoIndigenaRegional": "No tradicional en Panamá. Conocido por la elaboración de cerveza artesanal en expansión en Panamá."
+  },
+  "nivelEvidenciaGlobal": "B",
+  "fuentePrimaria": {
+    "institucion": "EMA",
+    "tipo": "monografía",
+    "titulo": "Community herbal monograph on Humulus lupulus L., flos (Revision 1). EMA/HMPC/682384/2013",
+    "año": 2014,
+    "url": "https://www.ema.europa.eu/en/documents/herbal-monograph/final-community-herbal-monograph-humulus-lupulus-l-flos-revision-1_en.pdf"
+  },
+  "grupoTerapeutico": [
+    "sedante",
+    "hipnótica",
+    "ansiolítica"
+  ],
+  "propiedades": [
+    {
+      "nombre": "Sedante suave y facilita el sueño",
+      "nivelEvidencia": "fuerte",
+      "mecanismoAccion": "Los ácidos amargos (humulona, lupulona) modulan receptores GABA-A aumentando la frecuencia de apertura del canal de cloro. El 2-metil-3-buten-2-ol (metabolito del mirceno) tiene efecto sedante similar al pentobarbital a nivel central.",
+      "referencia": "EMA/HMPC/682384/2013"
+    }
+  ],
+  "fotoquimica": [
+    {
+      "compuesto": "Ácidos alfa (humulona y sus análogos)",
+      "grupo": "terpenoide",
+      "accion": "Sedante suave, modulador GABA-A",
+      "concentracion": "2-12% en conos secos"
+    },
+    {
+      "compuesto": "2-metil-3-buten-2-ol (metabolito del mirceno)",
+      "grupo": "alcohol terpenoide",
+      "accion": "Sedante central",
+      "concentracion": "Formado por oxidación post-cosecha"
+    }
+  ],
+  "dolencias": [
+    {
+      "nombre": "Estrés mental leve y dificultad para iniciar el sueño",
+      "categoria": "nervioso",
+      "nivelEvidencia": "fuerte",
+      "dosis": "500-1000 mg de conos secos en infusión, o extracto equivalente",
+      "duracion": "Hasta 4 semanas",
+      "referencia": "EMA/HMPC/682384/2013"
+    }
+  ],
+  "sistemas": [
+    "nervioso"
+  ],
+  "modoEII": {
+    "aptaEnBrote": false,
+    "notaBrote": "Sin indicación en brote. Puede usarse para insomnio si no hay contraindicación específica.",
+    "aptaEnMantenimiento": true,
+    "notaMantenimiento": "Útil para mejorar el sueño en EII en remisión — el sueño deficiente agrava la inflamación crónica.",
+    "mecanismoEII": "Efecto GABAérgico local sin impacto inflamatorio sistémico",
+    "referenciaEII": "Sin estudios específicos en EII"
+  },
+  "modoCeliaquiaGluten": {
+    "libreDeGluten": true,
+    "nota": "Los conos puros son libres de gluten. Verificar productos elaborados.",
+    "indicacionEspecifica": "Seguro en celiaquía"
+  },
+  "usos": {
+    "interno": [
+      "Insomnio leve",
+      "estrés mental",
+      "nerviosismo",
+      "ansiedad leve"
+    ],
+    "externo": [
+      "Almohada de lúpulo para aromaterapia sedante"
+    ],
+    "culinario": [
+      "En cerveza artesanal (no terapéutico)"
+    ]
+  },
+  "preparacion": [
+    {
+      "forma": "infusión",
+      "instrucciones": "Infundir 500-1000 mg de conos secos en 150-200 ml agua caliente. Tapar y reposar.",
+      "cantidadPlanta": "500-1000 mg",
+      "temperatura": "90°C",
+      "tiempoPreparacion": "10-15 minutos",
+      "dosis": "1-2 veces al día. Para insomnio: 1 taza 30-60 minutos antes de dormir.",
+      "duracionMaxima": "4 semanas continuas",
+      "notaPreparacion": "Conos de lúpulo se degradan rápidamente — usar conos frescos o secos recientemente. Almacenar en frío y sin luz."
+    }
+  ],
+  "contraindicaciones": [
+    {
+      "condicion": "Embarazo",
+      "gravedad": "precaución",
+      "justificacion": "Actividad estrogénica leve teórica — datos limitados"
+    },
+    {
+      "condicion": "Depresión grave",
+      "gravedad": "relativa",
+      "justificacion": "El efecto sedante puede empeorar el estado de ánimo en depresión severa"
+    }
+  ],
+  "interaccionesMedicamentosas": [
+    {
+      "medicamento": "Sedantes, hipnóticos y benzodiacepinas",
+      "tipo": "potenciación",
+      "mecanismo": "Efecto aditivo sobre el SNC",
+      "gravedad": "moderada"
+    },
+    {
+      "medicamento": "Alcohol",
+      "tipo": "potenciación",
+      "mecanismo": "Potenciación del efecto depresor del SNC",
+      "gravedad": "moderada"
+    }
+  ],
+  "embarazoLactancia": {
+    "embarazo": "precaución",
+    "lactancia": "precaución",
+    "pediatria": "No recomendado en menores de 18 años según EMA",
+    "justificacion": "Actividad estrogénica leve teórica. Datos limitados en embarazo."
+  },
+  "compatibilidadPlantas": {
+    "sinergicas": [
+      {
+        "plantaId": "escutelaria",
+        "plantaNom": "Escutelaria",
+        "motivo": "Sinergia sedante para ansiedad e insomnio — combinación clásica americana"
+      },
+      {
+        "plantaId": "amapola-de-california",
+        "plantaNom": "Amapola de California",
+        "motivo": "Triple sedante no adictivo para insomnio leve"
+      }
+    ],
+    "incompatibles": []
+  },
+  "infusionesRelacionadas": [],
+  "emoji": "🌿",
+  "etiquetas": [
+    "sedante",
+    "hipnotica",
+    "nervioso",
+    "nivel-B",
+    "ema",
+    "cultivable-panama",
+    "libre-gluten",
+    "disponible-panama"
+  ],
+  "fuentes": [
+    {
+      "autor": "European Medicines Agency",
+      "titulo": "Community herbal monograph on Humulus lupulus L., flos (Revision 1). EMA/HMPC/682384/2013",
+      "publicacion": "EMA",
+      "año": 2014,
+      "doi": "",
+      "pmid": "",
+      "tipo": "monografía-EMA",
+      "nivelEvidencia": "B",
+      "idioma": "en"
+    }
+  ],
+  "advertencia": "Puede causar somnolencia. No conducir después de tomar. No combinar con alcohol o sedantes.",
+  "disclaimer": "Esta información es educativa y no sustituye el diagnóstico ni el tratamiento médico profesional."
+}

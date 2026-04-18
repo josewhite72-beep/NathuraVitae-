@@ -1,0 +1,247 @@
+{
+  "id": "damiana",
+  "versionFicha": "2.0",
+  "estadoFicha": "publicada",
+  "fechaCreacion": "2026-04-15",
+  "fechaRevision": "2026-04-15",
+  "nombreComun": "Damiana",
+  "nombresAlternativos": [
+    {
+      "nombre": "Turnera diffusa",
+      "idioma": "la",
+      "region": ""
+    },
+    {
+      "nombre": "Damiana leaf",
+      "idioma": "en",
+      "region": "Internacional"
+    }
+  ],
+  "nombreCientifico": "Turnera diffusa Willd.",
+  "sinonimiasCientificas": [
+    "Turnera aphrodisiaca L."
+  ],
+  "familia": "Passifloraceae",
+  "orden": "Malpighiales",
+  "clase": "Magnoliopsida",
+  "regionOrigen": [
+    "América Central",
+    "México",
+    "Caribe",
+    "América del Sur"
+  ],
+  "habitatNatural": "Zonas áridas y semiáridas tropicales y subtropicales. Suelos pobres y bien drenados.",
+  "disponibilidadPanama": {
+    "disponible": true,
+    "nombreLocal": "Damiana",
+    "formaComercial": [
+      "seca",
+      "cápsula",
+      "tintura",
+      "té-empacado"
+    ],
+    "dondeConseguir": [
+      "tienda-naturista",
+      "mercado-público",
+      "cultivo-propio"
+    ],
+    "cultivoLocal": true,
+    "endemicaPanama": false,
+    "notaRegional": "Disponible seca en mercados rurales y tiendas naturistas. Cultivada en huertos caseros en Panamá. Planta de América Central con uso regional."
+  },
+  "cultivoCasero": {
+    "dificultad": "facil",
+    "apta": true,
+    "maceta": true,
+    "luz": "pleno-sol",
+    "agua": "moderado",
+    "suelo": "Arenoso, bien drenado y pobre en nutrientes",
+    "clima": "Excelente adaptación al clima tropical panameño cálido y seco",
+    "notaCultivo": "Arbusto resistente a sequía. Cosechar hojas y sumidades floridas. Aroma agradable.",
+    "tiempoACosecha": "Continuo desde 4-6 meses"
+  },
+  "partesUsadas": [
+    {
+      "parte": "hoja",
+      "nota": "Hojas y sumidades floridas secas"
+    }
+  ],
+  "resumen": "Turnera diffusa se usa tradicionalmente como tónico nervioso, afrodisíaco leve y para aliviar ansiedad y fatiga. Planta nativa de América Central con uso documentado en México, el Caribe y Panamá. Nivel de evidencia C — bien establecido como uso tradicional.",
+  "usoTradicionalHistorico": {
+    "culturas": [
+      {
+        "cultura": "Maya y azteca",
+        "uso": "Afrodisíaco, tónico y antidepresivo suave",
+        "periodo": "Precolombino"
+      },
+      {
+        "cultura": "Medicina popular centroamericana y caribeña",
+        "uso": "Fatiga, ansiedad, libido",
+        "periodo": "Siglo XVI — presente"
+      }
+    ],
+    "primerasMencionesHistoricas": "Documentada en farmacopeas mexicanas del siglo XIX. Uso precolombino en rituales mayas.",
+    "usoIndigenaRegional": "Usada en Panamá y Centroamérica como tónico nervioso y afrodisíaco. Nombre local en Panamá: damiana."
+  },
+  "nivelEvidenciaGlobal": "C",
+  "fuentePrimaria": {
+    "institucion": "ESCOP",
+    "tipo": "monografía",
+    "titulo": "ESCOP Monographs: Turnerae diffusae herba (Damiana leaf)",
+    "año": 2003,
+    "url": "https://www.herbalgram.org/resources/commission-e-monographs/monograph-unapproved-herbs/damiana-leaf-and-herb/"
+  },
+  "grupoTerapeutico": [
+    "tónica nerviosa",
+    "afrodisíaca",
+    "ansiolítica leve",
+    "estimulante suave"
+  ],
+  "propiedades": [
+    {
+      "nombre": "Tónico nervioso y adaptógeno leve",
+      "nivelEvidencia": "tradicional",
+      "mecanismoAccion": "Flavonoides y arbutina ejercen efecto estimulante suave sobre el SNC. Los flavonoides tienen afinidad por receptores de progesterona, explicando parcialmente el efecto sobre libido.",
+      "referencia": "ESCOP Monographs 2003. Kumar S et al. Asian Pac J Trop Biomed. 2014;4(1):67-73. PMID: 25183103"
+    }
+  ],
+  "fotoquimica": [
+    {
+      "compuesto": "Flavonoides (pinocembrina, apigenina)",
+      "grupo": "flavonoide",
+      "accion": "Tónica nerviosa, afinidad por receptores de progesterona",
+      "concentracion": "Variable"
+    },
+    {
+      "compuesto": "Arbutina",
+      "grupo": "glucósido fenólico",
+      "accion": "Estimulante suave del SNC",
+      "concentracion": "Variable"
+    }
+  ],
+  "dolencias": [
+    {
+      "nombre": "Fatiga y ansiedad leve",
+      "categoria": "nervioso",
+      "nivelEvidencia": "tradicional",
+      "dosis": "2-4 g de hojas secas en infusión, 2-3 veces/día",
+      "duracion": "Según necesidad",
+      "referencia": "ESCOP 2003"
+    }
+  ],
+  "sistemas": [
+    "nervioso",
+    "reproductivo"
+  ],
+  "modoEII": {
+    "aptaEnBrote": false,
+    "notaBrote": "Sin indicación en brote. Estimulación suave del SNC sin impacto intestinal relevante.",
+    "aptaEnMantenimiento": true,
+    "notaMantenimiento": "Puede usarse en remisión para fatiga y ansiedad asociadas a la EII crónica.",
+    "mecanismoEII": "Estimulación suave del sistema nervioso sin impacto inflamatorio intestinal documentado",
+    "referenciaEII": "Sin estudios en EII"
+  },
+  "modoCeliaquiaGluten": {
+    "libreDeGluten": true,
+    "nota": "Libre de gluten",
+    "indicacionEspecifica": "Segura en celiaquía"
+  },
+  "usos": {
+    "interno": [
+      "Fatiga",
+      "ansiedad leve",
+      "libido baja",
+      "depresión leve"
+    ],
+    "externo": [],
+    "culinario": [
+      "Infusión como té de hierbas"
+    ]
+  },
+  "preparacion": [
+    {
+      "forma": "infusión",
+      "instrucciones": "Infundir 2-4 g de hojas secas en 200 ml agua caliente. Tapar y reposar. Colar.",
+      "cantidadPlanta": "2-4 g",
+      "temperatura": "90°C",
+      "tiempoPreparacion": "10 minutos",
+      "dosis": "2-3 veces al día",
+      "duracionMaxima": "Indefinida con moderación",
+      "notaPreparacion": "Aroma agradable, sabor ligeramente amargo y balsámico."
+    }
+  ],
+  "contraindicaciones": [
+    {
+      "condicion": "Embarazo",
+      "gravedad": "precaución",
+      "justificacion": "Afinidad por receptores de progesterona — datos insuficientes de seguridad"
+    },
+    {
+      "condicion": "Diabetes",
+      "gravedad": "precaución",
+      "justificacion": "Posible efecto hipoglucemiante leve"
+    }
+  ],
+  "interaccionesMedicamentosas": [
+    {
+      "medicamento": "Antidiabéticos orales",
+      "tipo": "potenciación",
+      "mecanismo": "Posible efecto hipoglucemiante leve",
+      "gravedad": "leve"
+    }
+  ],
+  "embarazoLactancia": {
+    "embarazo": "precaución",
+    "lactancia": "precaución",
+    "pediatria": "No recomendado en menores de 18 años",
+    "justificacion": "Datos insuficientes. Afinidad hormonal teórica."
+  },
+  "compatibilidadPlantas": {
+    "sinergicas": [
+      {
+        "plantaId": "maca",
+        "plantaNom": "Maca",
+        "motivo": "Sinergia tónica, energética y afrodisíaca — ambas plantas americanas con efecto en libido y energía"
+      }
+    ],
+    "incompatibles": []
+  },
+  "infusionesRelacionadas": [],
+  "emoji": "🌿",
+  "etiquetas": [
+    "tonica-nerviosa",
+    "afrodisiaca",
+    "nervioso",
+    "nivel-C",
+    "cultivable-panama",
+    "libre-gluten",
+    "disponible-panama"
+  ],
+  "fuentes": [
+    {
+      "autor": "European Scientific Cooperative on Phytotherapy",
+      "titulo": "ESCOP Monographs: Turnerae diffusae herba (Damiana leaf)",
+      "publicacion": "ESCOP",
+      "año": 2003,
+      "doi": "",
+      "pmid": "",
+      "tipo": "monografía",
+      "nivelEvidencia": "C",
+      "idioma": "en"
+    },
+    {
+      "autor": "Kumar S, Sharma A",
+      "titulo": "Anti-anxiety activity studies of various extracts of Turnera aphrodisiaca Ward",
+      "publicacion": "Asian Pacific Journal of Tropical Biomedicine",
+      "año": 2014,
+      "volumen": "4(1)",
+      "paginas": "67-73",
+      "pmid": "25183103",
+      "tipo": "estudio-clinico-preclinico",
+      "nivelEvidencia": "C",
+      "idioma": "en"
+    }
+  ],
+  "advertencia": "Precaución en diabetes por posible efecto hipoglucemiante. Precaución en embarazo.",
+  "disclaimer": "Esta información es educativa y no sustituye el diagnóstico ni el tratamiento médico profesional."
+}

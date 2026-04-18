@@ -1,0 +1,3575 @@
+[
+  {
+    "id": "ashwagandha",
+    "versionFicha": "2.0",
+    "estadoFicha": "publicada",
+    "fechaCreacion": "2026-04-14",
+    "nombreComun": "Ashwagandha",
+    "nombresAlternativos": [
+      {
+        "nombre": "Indian ginseng",
+        "idioma": "en",
+        "region": "Internacional"
+      },
+      {
+        "nombre": "Withania",
+        "idioma": "es",
+        "region": "Latinoamérica"
+      },
+      {
+        "nombre": "Baya de invierno",
+        "idioma": "es",
+        "region": "España"
+      }
+    ],
+    "nombreCientifico": "Withania somnifera (L.) Dunal",
+    "sinonimiasCientificas": [
+      "Physalis somnifera L."
+    ],
+    "familia": "Solanaceae",
+    "regionOrigen": [
+      "India",
+      "África del Norte",
+      "Mediterráneo oriental"
+    ],
+    "habitatNatural": "Regiones secas, suelos arenosos y bien drenados, climas cálidos",
+    "disponibilidadPanama": {
+      "disponible": true,
+      "nombreLocal": "Ashwagandha / Ginseng indio",
+      "formaComercial": [
+        "cápsula",
+        "polvo",
+        "tintura",
+        "extracto-seco"
+      ],
+      "dondeConseguir": [
+        "tienda-naturista",
+        "farmacia",
+        "importación"
+      ],
+      "cultivoLocal": false,
+      "endemicaPanama": false,
+      "notaRegional": "Producto importado en tiendas naturistas especializadas. No se cultiva localmente, pero podría adaptarse a zonas secas de Panamá (Azuero) con riego controlado."
+    },
+    "cultivoCasero": {
+      "dificultad": "moderada",
+      "apta": true,
+      "maceta": true,
+      "luz": "pleno-sol",
+      "agua": "poco",
+      "suelo": "Arenoso, bien drenado, pH 7.0-8.0, seco",
+      "clima": "Requiere clima seco y cálido. En Panamá, viable en zonas de Azuero y Pacífico seco con riego mínimo. Sensible al exceso de humedad.",
+      "notaCultivo": "Cultivo posible en maceta en tierras secas. Proteger de lluvias intensas. Cosechar raíz a los 6-8 meses.",
+      "tiempoACosecha": "6-8 meses desde semilla"
+    },
+    "partesUsadas": [
+      {
+        "parte": "raíz",
+        "nota": "Raíz seca, rica en withanólidos (withaferina A, withanona)"
+      }
+    ],
+    "resumen": "Adaptógeno con evidencia moderada para reducir el estrés, la ansiedad y mejorar la calidad del sueño. Modula el eje HPA y reduce el cortisol. Nivel de evidencia B según estudios clínicos.",
+    "usoTradicionalHistorico": {
+      "culturas": [
+        {
+          "cultura": "Ayurveda (India)",
+          "uso": "Rasayana (rejuvenecedor), ansiedad, insomnio, fatiga",
+          "periodo": "Antigüedad a presente"
+        }
+      ],
+      "primerasMencionesHistoricas": "Charaka Samhita y Sushruta Samhita (siglos II a.C. - II d.C.)",
+      "usoIndigenaRegional": "Sin uso indígena en Panamá; introducido como adaptógeno moderno."
+    },
+    "nivelEvidenciaGlobal": "B",
+    "fuentePrimaria": {
+      "institucion": "NIH / NCCIH",
+      "tipo": "monografía",
+      "titulo": "Ashwagandha: Fact Sheet for Health Professionals",
+      "año": 2020,
+      "url": "https://www.nccih.nih.gov/health/ashwagandha"
+    },
+    "grupoTerapeutico": [
+      "adaptógena",
+      "ansiolítica",
+      "sedante",
+      "antidepresiva-leve"
+    ],
+    "propiedades": [
+      {
+        "nombre": "Reducción del cortisol y del estrés percibido",
+        "nivelEvidencia": "moderado",
+        "mecanismoAccion": "Los withanólidos (withaferina A, withanona) modulan el eje hipotálamo-pituitario-adrenal (HPA), reduciendo la secreción de cortisol inducida por estrés y aumentando la expresión de receptores GABAérgicos en el hipocampo",
+        "referencia": "Chandrasekhar K, et al. Indian J Psychol Med. 2012;34(3):255-262. DOI: 10.4103/0253-7176.106022"
+      },
+      {
+        "nombre": "Mejora de la calidad del sueño",
+        "nivelEvidencia": "moderado",
+        "mecanismoAccion": "Aumento de la actividad GABAérgica y reducción de la fragmentación del sueño, con incremento del sueño de ondas lentas",
+        "referencia": "Langade D, et al. Cureus. 2019;11(9):e5797. DOI: 10.7759/cureus.5797"
+      }
+    ],
+    "fotoquimica": [
+      {
+        "compuesto": "Withaferina A",
+        "grupo": "withanólido (esteroide lactona)",
+        "accion": "Adaptógeno, antiinflamatorio, ansiolítico",
+        "concentracion": "0.1-0.5% en raíz seca"
+      },
+      {
+        "compuesto": "Withanona",
+        "grupo": "withanólido",
+        "accion": "Sedante, neuroprotector",
+        "concentracion": "0.05-0.2%"
+      }
+    ],
+    "dolencias": [
+      {
+        "nombre": "Estrés crónico y ansiedad generalizada",
+        "categoria": "nervioso",
+        "nivelEvidencia": "moderado",
+        "dosis": "Extracto de raíz estandarizado (2.5-5% withanólidos) 300-500 mg, 2 veces al día",
+        "duracion": "8 semanas",
+        "referencia": "Chandrasekhar K, et al. Indian J Psychol Med. 2012;34(3):255-262. PMID: 23439798"
+      },
+      {
+        "nombre": "Insomnio no reparador",
+        "categoria": "nervioso",
+        "nivelEvidencia": "moderado",
+        "dosis": "Extracto 300 mg 2 veces al día",
+        "duracion": "10 semanas",
+        "referencia": "Langade D, et al. Cureus. 2019;11(9):e5797. PMID: 31723576"
+      }
+    ],
+    "sistemas": [
+      "nervioso",
+      "inmunológico",
+      "endocrino"
+    ],
+    "modoEII": {
+      "aptaEnBrote": false,
+      "notaBrote": "Precaución en brote de EII; su efecto inmunomodulador podría teóricamente exacerbar la inflamación en casos autoinmunes",
+      "aptaEnMantenimiento": true,
+      "notaMantenimiento": "Puede usarse en remisión para manejar estrés y fatiga, bajo supervisión",
+      "mecanismoEII": "Sin estudios específicos; su efecto sobre el eje HPA podría ser beneficioso para el estrés asociado a EII",
+      "referenciaEII": "Sin ECA en EII; perfil de seguridad aceptable en remisión."
+    },
+    "modoCeliaquiaGluten": {
+      "libreDeGluten": true,
+      "nota": "Raíz pura y extractos son libres de gluten; verificar excipientes en cápsulas",
+      "indicacionEspecifica": "Segura para celíacos; útil para fatiga y ansiedad asociadas"
+    },
+    "usos": {
+      "interno": [
+        "Estrés",
+        "Ansiedad",
+        "Insomnio",
+        "Fatiga adrenal",
+        "Deterioro cognitivo leve"
+      ],
+      "externo": [
+        "No aplica"
+      ],
+      "culinario": [
+        "No aplica"
+      ]
+    },
+    "preparacion": [
+      {
+        "forma": "extracto-seco",
+        "instrucciones": "Cápsulas de extracto de raíz estandarizado en withanólidos. Tomar con alimentos para mejorar absorción.",
+        "cantidadPlanta": "300-500 mg de extracto (equivalente a 3-5 g de raíz)",
+        "temperatura": "N/A",
+        "tiempoPreparacion": "N/A",
+        "dosis": "2 veces al día",
+        "duracionMaxima": "3 meses, luego descanso de 2 semanas",
+        "notaPreparacion": "El efecto ansiolítico puede tardar 2-4 semanas. No usar por más de 6 meses sin supervisión."
+      }
+    ],
+    "contraindicaciones": [
+      {
+        "condicion": "Embarazo y lactancia",
+        "gravedad": "absoluta",
+        "justificacion": "Posible efecto abortivo y uterotónico; falta de seguridad"
+      },
+      {
+        "condicion": "Hipertiroidismo",
+        "gravedad": "relativa",
+        "justificacion": "Puede aumentar la hormona tiroidea"
+      },
+      {
+        "condicion": "Úlcera gástrica",
+        "gravedad": "relativa",
+        "justificacion": "Puede irritar mucosa en altas dosis"
+      }
+    ],
+    "interaccionesMedicamentosas": [
+      {
+        "medicamento": "Ansiolíticos (benzodiazepinas)",
+        "tipo": "potenciación",
+        "mecanismo": "Efecto sedante aditivo",
+        "gravedad": "moderada"
+      },
+      {
+        "medicamento": "Hipoglucemiantes (insulina, metformina)",
+        "tipo": "potenciación",
+        "mecanismo": "Reduce glucosa en sangre",
+        "gravedad": "moderada"
+      },
+      {
+        "medicamento": "Hormona tiroidea",
+        "tipo": "potenciación",
+        "mecanismo": "Aumenta niveles de T3/T4",
+        "gravedad": "moderada"
+      }
+    ],
+    "embarazoLactancia": {
+      "embarazo": "contraindicada",
+      "lactancia": "contraindicada",
+      "pediatria": "No recomendada en menores de 18 años",
+      "justificacion": "Falta de estudios de seguridad; efectos hormonales y uterotónicos."
+    },
+    "compatibilidadPlantas": {
+      "sinergicas": [
+        {
+          "plantaId": "rodiola",
+          "plantaNom": "Rhodiola rosea",
+          "motivo": "Potenciación adaptógena para estrés físico y mental"
+        },
+        {
+          "plantaId": "bacopa",
+          "plantaNom": "Bacopa monnieri",
+          "motivo": "Sinergia en mejora cognitiva y reducción de ansiedad"
+        }
+      ],
+      "incompatibles": []
+    },
+    "infusionesRelacionadas": [],
+    "emoji": "🌿",
+    "etiquetas": [
+      "adaptógena",
+      "ansiolítica",
+      "nivel-B",
+      "nccih",
+      "disponible-panama",
+      "importada",
+      "precaución-eii",
+      "libre-gluten"
+    ],
+    "fuentes": [
+      {
+        "autor": "Chandrasekhar K, Kapoor J, Anishetty S",
+        "titulo": "A prospective, randomized double-blind, placebo-controlled study of safety and efficacy of a high-concentration full-spectrum extract of ashwagandha root in reducing stress and anxiety in adults",
+        "publicacion": "Indian Journal of Psychological Medicine",
+        "año": 2012,
+        "volumen": "34(3)",
+        "paginas": "255-262",
+        "doi": "10.4103/0253-7176.106022",
+        "pmid": "23439798",
+        "tipo": "estudio-clinico-ECA",
+        "nivelEvidencia": "B",
+        "idioma": "en"
+      },
+      {
+        "autor": "Langade D, Kanchi S, Salve J, et al.",
+        "titulo": "Efficacy and safety of ashwagandha (Withania somnifera) root extract in insomnia and anxiety: a double-blind, randomized, placebo-controlled study",
+        "publicacion": "Cureus",
+        "año": 2019,
+        "volumen": "11(9)",
+        "paginas": "e5797",
+        "doi": "10.7759/cureus.5797",
+        "pmid": "31723576",
+        "tipo": "estudio-clinico-ECA",
+        "nivelEvidencia": "B",
+        "idioma": "en"
+      }
+    ],
+    "advertencia": "No usar en embarazo. Puede causar somnolencia; evitar conducir. Suspender 2 semanas antes de cirugía.",
+    "disclaimer": "Esta información es educativa y no sustituye el diagnóstico ni el tratamiento médico profesional.",
+    "fechaRevision": "2026-04-15"
+  },
+  {
+    "id": "rodiola",
+    "versionFicha": "2.0",
+    "estadoFicha": "publicada",
+    "fechaCreacion": "2026-04-14",
+    "nombreComun": "Rodiola rosada",
+    "nombresAlternativos": [
+      {
+        "nombre": "Rhodiola",
+        "idioma": "en",
+        "region": "Internacional"
+      },
+      {
+        "nombre": "Golden root",
+        "idioma": "en",
+        "region": "Europa"
+      },
+      {
+        "nombre": "Raíz de oro",
+        "idioma": "es",
+        "region": "Latinoamérica"
+      }
+    ],
+    "nombreCientifico": "Rhodiola rosea L.",
+    "sinonimiasCientificas": [
+      "Sedum roseum (L.) Scop."
+    ],
+    "familia": "Crassulaceae",
+    "regionOrigen": [
+      "Europa ártica",
+      "Asia septentrional",
+      "América del Norte"
+    ],
+    "habitatNatural": "Montañas, acantilados, suelos rocosos y pobres, climas fríos",
+    "disponibilidadPanama": {
+      "disponible": true,
+      "nombreLocal": "Rhodiola / Rodiola",
+      "formaComercial": [
+        "cápsula",
+        "extracto-seco",
+        "tintura"
+      ],
+      "dondeConseguir": [
+        "tienda-naturista",
+        "importación"
+      ],
+      "cultivoLocal": false,
+      "endemicaPanama": false,
+      "notaRegional": "Producto importado disponible en tiendas naturistas especializadas. No se cultiva localmente."
+    },
+    "cultivoCasero": {
+      "dificultad": "dificil",
+      "apta": false,
+      "maceta": false,
+      "luz": "pleno-sol",
+      "agua": "poco",
+      "suelo": "Rocoso, pobre, excelente drenaje, pH 5.0-7.0",
+      "clima": "Requiere inviernos fríos (hasta -30°C); no viable en Panamá.",
+      "notaCultivo": "No apta para cultivo tropical.",
+      "tiempoACosecha": "4-5 años para raíz"
+    },
+    "partesUsadas": [
+      {
+        "parte": "raíz",
+        "nota": "Rizoma y raíz secos, ricos en rosavina, salidrósido y tirosol"
+      }
+    ],
+    "resumen": "Adaptógeno con evidencia fuerte para reducir la fatiga mental y física, mejorar el rendimiento bajo estrés y aliviar la ansiedad leve. Nivel de evidencia B según EMA y metaanálisis.",
+    "usoTradicionalHistorico": {
+      "culturas": [
+        {
+          "cultura": "Medicina tradicional nórdica y rusa",
+          "uso": "Fatiga, falta de concentración, infecciones",
+          "periodo": "Siglo XVIII-presente"
+        }
+      ],
+      "primerasMencionesHistoricas": "Dioscórides (De Materia Medica) y textos vikingos",
+      "usoIndigenaRegional": "Sin uso en Panamá; popular como suplemento adaptógeno."
+    },
+    "nivelEvidenciaGlobal": "B",
+    "fuentePrimaria": {
+      "institucion": "EMA",
+      "tipo": "monografía",
+      "titulo": "Community herbal monograph on Rhodiola rosea L., rhizoma et radix",
+      "año": 2012,
+      "url": "https://www.ema.europa.eu/en/documents/herbal-monograph/final-community-herbal-monograph-rhodiola-rosea-l-rhizoma-et-radix_en.pdf"
+    },
+    "grupoTerapeutico": [
+      "adaptógena",
+      "antifatiga",
+      "ansiolítica",
+      "nootrópica"
+    ],
+    "propiedades": [
+      {
+        "nombre": "Reducción de la fatiga inducida por estrés",
+        "nivelEvidencia": "fuerte",
+        "mecanismoAccion": "Los compuestos fenilpropanoides (rosavina, salidrósido) modulan la liberación de monoaminas (serotonina, dopamina, noradrenalina) en el sistema límbico y protegen las mitocondrias del daño oxidativo, mejorando la resistencia al estrés",
+        "referencia": "Hung SK, et al. J Altern Complement Med. 2011;17(4):301-309. DOI: 10.1089/acm.2009.0711"
+      },
+      {
+        "nombre": "Efecto ansiolítico en trastornos adaptativos",
+        "nivelEvidencia": "moderado",
+        "mecanismoAccion": "Modulación del eje HPA con reducción de los niveles de cortisol en respuesta al estrés agudo",
+        "referencia": "Cropley M, et al. Phytother Res. 2015;29(12):1934-1939. DOI: 10.1002/ptr.5486"
+      }
+    ],
+    "fotoquimica": [
+      {
+        "compuesto": "Rosavina",
+        "grupo": "fenilpropanoide",
+        "accion": "Adaptógeno, antifatiga, neuroprotector",
+        "concentracion": "0.5-2% en raíz seca"
+      },
+      {
+        "compuesto": "Salidrósido (rodiolósido)",
+        "grupo": "fenilpropanoide",
+        "accion": "Antioxidante, ansiolítico",
+        "concentracion": "0.5-1.5%"
+      }
+    ],
+    "dolencias": [
+      {
+        "nombre": "Síndrome de fatiga crónica y estrés laboral",
+        "categoria": "nervioso",
+        "nivelEvidencia": "fuerte",
+        "dosis": "Extracto estandarizado (3% rosavina, 1% salidrósido) 200-400 mg/día",
+        "duracion": "4-8 semanas",
+        "referencia": "Olsson EM, et al. Planta Med. 2009;75(2):105-112. DOI: 10.1055/s-0028-1088346"
+      },
+      {
+        "nombre": "Deterioro cognitivo por estrés (memoria de trabajo)",
+        "categoria": "nervioso",
+        "nivelEvidencia": "moderado",
+        "dosis": "Extracto 200 mg 2 veces al día",
+        "duracion": "4 semanas",
+        "referencia": "Cropley M, et al. Phytother Res. 2015;29(12):1934-1939. PMID: 26502953"
+      }
+    ],
+    "sistemas": [
+      "nervioso",
+      "endocrino",
+      "inmunológico"
+    ],
+    "modoEII": {
+      "aptaEnBrote": false,
+      "notaBrote": "Precaución en brote activo; su efecto estimulante leve podría no ser adecuado",
+      "aptaEnMantenimiento": true,
+      "notaMantenimiento": "Puede usarse para combatir la fatiga asociada a la EII en remisión, sin evidencia de empeoramiento",
+      "mecanismoEII": "No actúa sobre inflamación intestinal; su uso es sintomático para fatiga",
+      "referenciaEII": "Sin estudios específicos; perfil de seguridad aceptable."
+    },
+    "modoCeliaquiaGluten": {
+      "libreDeGluten": true,
+      "nota": "Raíz pura y extractos son libres de gluten",
+      "indicacionEspecifica": "Segura para celíacos; útil para fatiga y estrés"
+    },
+    "usos": {
+      "interno": [
+        "Fatiga mental",
+        "Estrés laboral",
+        "Ansiedad leve",
+        "Burnout",
+        "Deterioro cognitivo leve"
+      ],
+      "externo": [
+        "No aplica"
+      ],
+      "culinario": [
+        "No aplica"
+      ]
+    },
+    "preparacion": [
+      {
+        "forma": "extracto-seco",
+        "instrucciones": "Cápsulas de extracto estandarizado en rosavina (3%) y salidrósido (1%). Tomar por la mañana para evitar insomnio.",
+        "cantidadPlanta": "200-400 mg de extracto",
+        "temperatura": "N/A",
+        "tiempoPreparacion": "N/A",
+        "dosis": "1 vez al día (por la mañana)",
+        "duracionMaxima": "8 semanas, luego descanso de 2 semanas",
+        "notaPreparacion": "No tomar por la tarde o noche por riesgo de insomnio."
+      }
+    ],
+    "contraindicaciones": [
+      {
+        "condicion": "Trastorno bipolar (fase maníaca)",
+        "gravedad": "absoluta",
+        "justificacion": "Puede desencadenar episodios maníacos por efecto estimulante"
+      },
+      {
+        "condicion": "Embarazo y lactancia",
+        "gravedad": "absoluta",
+        "justificacion": "Falta de seguridad"
+      }
+    ],
+    "interaccionesMedicamentosas": [
+      {
+        "medicamento": "Estimulantes del SNC (anfetaminas, cafeína)",
+        "tipo": "potenciación",
+        "mecanismo": "Efecto aditivo estimulante",
+        "gravedad": "moderada"
+      },
+      {
+        "medicamento": "Antidepresivos (ISRS, IMAO)",
+        "tipo": "precaución",
+        "mecanismo": "Posible síndrome serotoninérgico teórico",
+        "gravedad": "leve"
+      }
+    ],
+    "embarazoLactancia": {
+      "embarazo": "contraindicada",
+      "lactancia": "contraindicada",
+      "pediatria": "No recomendada en menores de 18 años",
+      "justificacion": "Falta de estudios de seguridad."
+    },
+    "compatibilidadPlantas": {
+      "sinergicas": [
+        {
+          "plantaId": "ashwagandha",
+          "plantaNom": "Ashwagandha",
+          "motivo": "Potenciación adaptógena: ashwagandha calma, rodiola activa; equilibran estrés"
+        },
+        {
+          "plantaId": "bacopa",
+          "plantaNom": "Bacopa monnieri",
+          "motivo": "Sinergia en mejora cognitiva y memoria"
+        }
+      ],
+      "incompatibles": []
+    },
+    "infusionesRelacionadas": [],
+    "emoji": "🌱",
+    "etiquetas": [
+      "adaptógena",
+      "antifatiga",
+      "nivel-B",
+      "ema",
+      "disponible-panama",
+      "importada",
+      "precaución-eii",
+      "libre-gluten"
+    ],
+    "fuentes": [
+      {
+        "autor": "EMA/HMPC",
+        "titulo": "Community herbal monograph on Rhodiola rosea L., rhizoma et radix",
+        "publicacion": "European Medicines Agency",
+        "año": 2012,
+        "volumen": "EMA/HMPC/102673/2011",
+        "paginas": "1-10",
+        "doi": "N/A",
+        "pmid": "N/A",
+        "tipo": "monografía-EMA",
+        "nivelEvidencia": "B",
+        "idioma": "en"
+      },
+      {
+        "autor": "Olsson EM, von Schéele B, Panossian AG",
+        "titulo": "A randomised, double-blind, placebo-controlled, parallel-group study of the standardised extract SHR-5 of the roots of Rhodiola rosea in the treatment of subjects with stress-related fatigue",
+        "publicacion": "Planta Medica",
+        "año": 2009,
+        "volumen": "75(2)",
+        "paginas": "105-112",
+        "doi": "10.1055/s-0028-1088346",
+        "pmid": "19016404",
+        "tipo": "estudio-clinico-ECA",
+        "nivelEvidencia": "B",
+        "idioma": "en"
+      }
+    ],
+    "advertencia": "Evitar por la noche. Puede causar insomnio o irritabilidad en personas sensibles. No usar en trastorno bipolar.",
+    "disclaimer": "Esta información es educativa y no sustituye el diagnóstico ni el tratamiento médico profesional.",
+    "fechaRevision": "2026-04-15"
+  },
+  {
+    "id": "escutelaria",
+    "versionFicha": "2.0",
+    "estadoFicha": "publicada",
+    "fechaCreacion": "2026-04-14",
+    "nombreComun": "Escutelaria",
+    "nombresAlternativos": [
+      {
+        "nombre": "Skullcap",
+        "idioma": "en",
+        "region": "Internacional"
+      },
+      {
+        "nombre": "Casco de virgen",
+        "idioma": "es",
+        "region": "Latinoamérica"
+      },
+      {
+        "nombre": "Escutelaria lateriflora",
+        "idioma": "la",
+        "region": "Científico"
+      }
+    ],
+    "nombreCientifico": "Scutellaria lateriflora L.",
+    "sinonimiasCientificas": [
+      "Scutellaria laterifolia L."
+    ],
+    "familia": "Lamiaceae",
+    "regionOrigen": [
+      "América del Norte"
+    ],
+    "habitatNatural": "Humedales, riberas de ríos, praderas húmedas",
+    "disponibilidadPanama": {
+      "disponible": true,
+      "nombreLocal": "Escutelaria / Skullcap",
+      "formaComercial": [
+        "seca",
+        "tintura",
+        "cápsula"
+      ],
+      "dondeConseguir": [
+        "tienda-naturista",
+        "importación"
+      ],
+      "cultivoLocal": false,
+      "endemicaPanama": false,
+      "notaRegional": "Producto importado disponible en tiendas naturistas especializadas. No se cultiva localmente."
+    },
+    "cultivoCasero": {
+      "dificultad": "moderada",
+      "apta": false,
+      "maceta": false,
+      "luz": "semisombra",
+      "agua": "abundante",
+      "suelo": "Húmedo, rico en materia orgánica, pH 6.0-7.0",
+      "clima": "Requiere humedad constante; podría crecer en zonas húmedas de Panamá (Bocas del Toro, Darién) pero no es común.",
+      "notaCultivo": "Cultivo experimental en zonas húmedas; no recomendado para cultivo doméstico.",
+      "tiempoACosecha": "2 años para sumidad"
+    },
+    "partesUsadas": [
+      {
+        "parte": "sumidad-florida",
+        "nota": "Parte aérea en floración, rica en flavonoides (baicalina, baicaleína) e iridoides"
+      }
+    ],
+    "resumen": "Ansiolítico y sedante leve, con uso tradicional en neurastenia, ansiedad e insomnio. Actúa como modulador GABAérgico sin producir dependencia. Nivel de evidencia B según monografías americanas.",
+    "usoTradicionalHistorico": {
+      "culturas": [
+        {
+          "cultura": "Nativos americanos",
+          "uso": "Sedante, tratamiento de nerviosismo e histeria",
+          "periodo": "Precolombino"
+        },
+        {
+          "cultura": "Medicina tradicional estadounidense (eclecticismo)",
+          "uso": "Neurastenia, ansiedad, corea",
+          "periodo": "Siglo XIX-XX"
+        }
+      ],
+      "primerasMencionesHistoricas": "King's American Dispensatory (1898)",
+      "usoIndigenaRegional": "Sin uso en Panamá; adoptada en fitoterapia moderna."
+    },
+    "nivelEvidenciaGlobal": "B",
+    "fuentePrimaria": {
+      "institucion": "American Herbal Pharmacopoeia",
+      "tipo": "monografía",
+      "titulo": "Skullcap (Scutellaria lateriflora) Monograph",
+      "año": 2005,
+      "url": "https://www.herbal-ahp.org/"
+    },
+    "grupoTerapeutico": [
+      "ansiolítica",
+      "sedante",
+      "antiespasmódica",
+      "nervina"
+    ],
+    "propiedades": [
+      {
+        "nombre": "Modulación de receptores GABA-A",
+        "nivelEvidencia": "moderado",
+        "mecanismoAccion": "Los flavonoides (baicalina, baicaleína) se unen a los receptores GABA-A en el sitio de las benzodiazepinas, aumentando la corriente de cloro y produciendo ansiolisis sin efectos sedantes intensos ni tolerancia significativa",
+        "referencia": "Awad R, et al. J Ethnopharmacol. 2003;89(1):141-146. DOI: 10.1016/s0378-8741(03)00268-5"
+      },
+      {
+        "nombre": "Efecto neuroprotector y antioxidante",
+        "nivelEvidencia": "preliminar",
+        "mecanismoAccion": "Los flavonoides reducen el estrés oxidativo en neuronas del hipocampo y protegen contra la excitotoxicidad",
+        "referencia": "Shang Y, et al. J Asian Nat Prod Res. 2013;15(2):188-196. DOI: 10.1080/10286020.2012.754881"
+      }
+    ],
+    "fotoquimica": [
+      {
+        "compuesto": "Baicalina",
+        "grupo": "flavonoide",
+        "accion": "Ansiolítico, modulador GABAérgico, antioxidante",
+        "concentracion": "0.5-1.5% en sumidad seca"
+      },
+      {
+        "compuesto": "Baicaleína",
+        "grupo": "flavonoide",
+        "accion": "Sedante, antiinflamatorio",
+        "concentracion": "0.2-0.8%"
+      }
+    ],
+    "dolencias": [
+      {
+        "nombre": "Ansiedad generalizada leve a moderada",
+        "categoria": "nervioso",
+        "nivelEvidencia": "moderado",
+        "dosis": "Infusión de 2-3 g de sumidad seca 3 veces al día, o tintura (1:5, 45% alcohol) 2-5 mL 3 veces al día",
+        "duracion": "4-8 semanas",
+        "referencia": "Wolfson P, et al. Altern Ther Health Med. 2003;9(2):74-78. PMID: 12652884"
+      },
+      {
+        "nombre": "Insomnio de conciliación (uso tradicional)",
+        "categoria": "nervioso",
+        "nivelEvidencia": "tradicional",
+        "dosis": "Infusión de 3 g 30-60 minutos antes de acostarse",
+        "duracion": "2-4 semanas",
+        "referencia": "EMA/OMS (uso tradicional)"
+      }
+    ],
+    "sistemas": [
+      "nervioso",
+      "digestivo"
+    ],
+    "modoEII": {
+      "aptaEnBrote": true,
+      "notaBrote": "Puede usarse para ansiedad asociada a brote leve, sin interacciones negativas conocidas",
+      "aptaEnMantenimiento": true,
+      "notaMantenimiento": "Segura para manejo de ansiedad crónica en remisión de EII",
+      "mecanismoEII": "No actúa sobre inflamación intestinal",
+      "referenciaEII": "Sin estudios específicos; perfil favorable."
+    },
+    "modoCeliaquiaGluten": {
+      "libreDeGluten": true,
+      "nota": "Sumidad pura y extractos son libres de gluten",
+      "indicacionEspecifica": "Segura para celíacos"
+    },
+    "usos": {
+      "interno": [
+        "Ansiedad",
+        "Insomnio",
+        "Nerviosismo",
+        "Espasmos nerviosos"
+      ],
+      "externo": [
+        "No aplica"
+      ],
+      "culinario": [
+        "No aplica"
+      ]
+    },
+    "preparacion": [
+      {
+        "forma": "infusión",
+        "instrucciones": "Verter agua caliente sobre la hierba seca, tapar y reposar.",
+        "cantidadPlanta": "2-3 g de sumidad seca",
+        "temperatura": "90-95°C",
+        "tiempoPreparacion": "10 minutos",
+        "dosis": "1 taza 3 veces al día",
+        "duracionMaxima": "4 semanas continuas",
+        "notaPreparacion": "Sabor amargo; puede mezclarse con menta o melisa."
+      }
+    ],
+    "contraindicaciones": [
+      {
+        "condicion": "Embarazo y lactancia",
+        "gravedad": "absoluta",
+        "justificacion": "Falta de seguridad; posible efecto uterotónico"
+      },
+      {
+        "condicion": "Hepatitis activa o insuficiencia hepática",
+        "gravedad": "relativa",
+        "justificacion": "Casos aislados de hepatotoxicidad con dosis altas (raro)"
+      }
+    ],
+    "interaccionesMedicamentosas": [
+      {
+        "medicamento": "Sedantes (benzodiazepinas, barbitúricos)",
+        "tipo": "potenciación",
+        "mecanismo": "Efecto aditivo sedante",
+        "gravedad": "moderada"
+      }
+    ],
+    "embarazoLactancia": {
+      "embarazo": "contraindicada",
+      "lactancia": "contraindicada",
+      "pediatria": "No recomendada en menores de 12 años",
+      "justificacion": "Falta de datos de seguridad."
+    },
+    "compatibilidadPlantas": {
+      "sinergicas": [
+        {
+          "plantaId": "pasiflora",
+          "plantaNom": "Pasiflora",
+          "motivo": "Potenciación ansiolítica con menor sedación"
+        },
+        {
+          "plantaId": "melisa",
+          "plantaNom": "Melisa",
+          "motivo": "Sinergia en ansiedad y espasmos nerviosos"
+        }
+      ],
+      "incompatibles": []
+    },
+    "infusionesRelacionadas": [],
+    "emoji": "🌸",
+    "etiquetas": [
+      "ansiolítica",
+      "sedante",
+      "nivel-B",
+      "ahp",
+      "disponible-panama",
+      "importada",
+      "apta-eii",
+      "libre-gluten"
+    ],
+    "fuentes": [
+      {
+        "autor": "Wolfson P, Hoffmann DL",
+        "titulo": "An investigation into the efficacy of Scutellaria lateriflora in healthy volunteers",
+        "publicacion": "Alternative Therapies in Health and Medicine",
+        "año": 2003,
+        "volumen": "9(2)",
+        "paginas": "74-78",
+        "doi": "N/A",
+        "pmid": "12652884",
+        "tipo": "estudio-clinico",
+        "nivelEvidencia": "B",
+        "idioma": "en"
+      },
+      {
+        "autor": "Awad R, Arnason JT, Trudeau V, et al.",
+        "titulo": "GABA-modulating activities of some herbal extracts used in traditional medicine for anxiety",
+        "publicacion": "Journal of Ethnopharmacology",
+        "año": 2003,
+        "volumen": "89(1)",
+        "paginas": "141-146",
+        "doi": "10.1016/s0378-8741(03)00268-5",
+        "pmid": "14522445",
+        "tipo": "estudio-clinico-preclinico",
+        "nivelEvidencia": "C",
+        "idioma": "en"
+      }
+    ],
+    "advertencia": "Raros casos de hepatotoxicidad con dosis muy altas; suspender si aparece ictericia o dolor abdominal.",
+    "disclaimer": "Esta información es educativa y no sustituye el diagnóstico ni el tratamiento médico profesional.",
+    "fechaRevision": "2026-04-15"
+  },
+  {
+    "id": "azafran",
+    "versionFicha": "2.0",
+    "estadoFicha": "publicada",
+    "fechaCreacion": "2026-04-14",
+    "nombreComun": "Azafrán",
+    "nombresAlternativos": [
+      {
+        "nombre": "Saffron",
+        "idioma": "en",
+        "region": "Internacional"
+      },
+      {
+        "nombre": "Azafrán verdadero",
+        "idioma": "es",
+        "region": "Latinoamérica"
+      }
+    ],
+    "nombreCientifico": "Crocus sativus L.",
+    "sinonimiasCientificas": [],
+    "familia": "Iridaceae",
+    "regionOrigen": [
+      "Asia Occidental (probablemente Grecia o Irán)"
+    ],
+    "habitatNatural": "Climas mediterráneos, suelos bien drenados, veranos secos e inviernos frescos",
+    "disponibilidadPanama": {
+      "disponible": true,
+      "nombreLocal": "Azafrán / Hebras de azafrán",
+      "formaComercial": [
+        "estigmas-secos",
+        "cápsula",
+        "extracto-seco"
+      ],
+      "dondeConseguir": [
+        "supermercado",
+        "tienda-naturista",
+        "importación"
+      ],
+      "cultivoLocal": false,
+      "endemicaPanama": false,
+      "notaRegional": "Hebras de azafrán culinario disponibles en supermercados (caras). Extractos en tiendas naturistas. No se cultiva localmente."
+    },
+    "cultivoCasero": {
+      "dificultad": "dificil",
+      "apta": false,
+      "maceta": false,
+      "luz": "pleno-sol",
+      "agua": "poco",
+      "suelo": "Arenoso, bien drenado, pH 6.0-8.0",
+      "clima": "Requiere verano seco y caluroso e invierno fresco (no tropical). No viable en Panamá.",
+      "notaCultivo": "No apto para clima tropical panameño.",
+      "tiempoACosecha": "2 años para flores"
+    },
+    "partesUsadas": [
+      {
+        "parte": "estigma",
+        "nota": "Estigmas de la flor (hebras), ricos en crocina, safranal y picrocrocina"
+      }
+    ],
+    "resumen": "Antidepresivo de evidencia moderada para depresión leve a moderada, comparable a fluoxetina en algunos estudios. También ansiolítico y mejora del sueño. Nivel de evidencia B.",
+    "usoTradicionalHistorico": {
+      "culturas": [
+        {
+          "cultura": "Medicina tradicional persa",
+          "uso": "Antidepresivo, digestivo, afrodisíaco",
+          "periodo": "Antigüedad"
+        },
+        {
+          "cultura": "Ayurveda",
+          "uso": "Tónico cerebral, tratamiento de melancolía",
+          "periodo": "Antigüedad"
+        }
+      ],
+      "primerasMencionesHistoricas": "Textos asirios (siglo VII a.C.) y Dioscórides",
+      "usoIndigenaRegional": "Sin uso en Panamá; empleado en cocina y como suplemento."
+    },
+    "nivelEvidenciaGlobal": "B",
+    "fuentePrimaria": {
+      "institucion": "NIH / NCCIH",
+      "tipo": "revisión",
+      "titulo": "Saffron for Depression: A Systematic Review",
+      "año": 2018,
+      "url": "https://www.nccih.nih.gov/research/research-results/saffron-for-depression-a-systematic-review"
+    },
+    "grupoTerapeutico": [
+      "antidepresiva",
+      "ansiolítica",
+      "neuroprotectora",
+      "antioxidante"
+    ],
+    "propiedades": [
+      {
+        "nombre": "Efecto antidepresivo (inhibición de recaptación de monoaminas)",
+        "nivelEvidencia": "moderado",
+        "mecanismoAccion": "La crocina y el safranal inhiben la recaptación de serotonina, noradrenalina y dopamina, y modulan los receptores NMDA, produciendo un efecto similar a los ISRS pero con menos efectos secundarios",
+        "referencia": "Hausenblas HA, et al. J Integr Med. 2015;13(4):231-240. DOI: 10.1016/S2095-4964(15)60176-5"
+      },
+      {
+        "nombre": "Reducción de la ansiedad",
+        "nivelEvidencia": "moderado",
+        "mecanismoAccion": "El safranal actúa como modulador positivo del receptor GABA-A y reduce los niveles de cortisol inducidos por estrés",
+        "referencia": "Mazidi M, et al. J Clin Pharm Ther. 2016;41(2):126-132. DOI: 10.1111/jcpt.12372"
+      }
+    ],
+    "fotoquimica": [
+      {
+        "compuesto": "Crocina",
+        "grupo": "carotenoide",
+        "accion": "Antidepresivo, antioxidante, neuroprotector",
+        "concentracion": "10-20% en estigma seco"
+      },
+      {
+        "compuesto": "Safranal",
+        "grupo": "monoterpeno",
+        "accion": "Ansiolítico, sedante, antioxidante",
+        "concentracion": "0.5-1.5%"
+      }
+    ],
+    "dolencias": [
+      {
+        "nombre": "Depresión mayor leve a moderada",
+        "categoria": "nervioso",
+        "nivelEvidencia": "moderado",
+        "dosis": "Extracto estandarizado en crocina (20-30 mg) 2 veces al día, o 30 mg de estigmas/día",
+        "duracion": "6-8 semanas",
+        "referencia": "Shahmansouri N, et al. J Affect Disord. 2014;163:28-33. DOI: 10.1016/j.jad.2014.03.035"
+      },
+      {
+        "nombre": "Ansiedad generalizada (coadyuvante)",
+        "categoria": "nervioso",
+        "nivelEvidencia": "preliminar",
+        "dosis": "Extracto 15 mg 2 veces al día",
+        "duracion": "6 semanas",
+        "referencia": "Mazidi M, et al. J Clin Pharm Ther. 2016;41(2):126-132. PMID: 26920445"
+      }
+    ],
+    "sistemas": [
+      "nervioso",
+      "digestivo",
+      "cardiovascular"
+    ],
+    "modoEII": {
+      "aptaEnBrote": false,
+      "notaBrote": "Precaución en brote activo; altas dosis (>1.5 g) pueden causar diarrea o molestias digestivas",
+      "aptaEnMantenimiento": true,
+      "notaMantenimiento": "Puede usarse en remisión para depresión y ansiedad, a dosis terapéuticas bajas (30 mg/día)",
+      "mecanismoEII": "No actúa sobre inflamación intestinal; dosis altas irritan mucosa",
+      "referenciaEII": "Sin estudios; se recomienda precaución por potencial efecto laxante a dosis altas."
+    },
+    "modoCeliaquiaGluten": {
+      "libreDeGluten": true,
+      "nota": "Estigmas puros son libres de gluten",
+      "indicacionEspecifica": "Segura para celíacos"
+    },
+    "usos": {
+      "interno": [
+        "Depresión",
+        "Ansiedad",
+        "SPM",
+        "Trastorno disfórico premenstrual",
+        "Deterioro cognitivo leve"
+      ],
+      "externo": [
+        "No aplica"
+      ],
+      "culinario": [
+        "Arroces, sopas, paella, repostería"
+      ]
+    },
+    "preparacion": [
+      {
+        "forma": "extracto-seco",
+        "instrucciones": "Cápsulas de extracto estandarizado en crocina. Tomar con alimentos.",
+        "cantidadPlanta": "15-30 mg de extracto (equivalente a 30-60 mg de estigmas)",
+        "temperatura": "N/A",
+        "tiempoPreparacion": "N/A",
+        "dosis": "2 veces al día",
+        "duracionMaxima": "8 semanas, luego evaluar",
+        "notaPreparacion": "El azafrán culinario en hebras es muy caro; preferir extractos estandarizados."
+      }
+    ],
+    "contraindicaciones": [
+      {
+        "condicion": "Embarazo (dosis altas >1 g/día)",
+        "gravedad": "absoluta",
+        "justificacion": "Efecto uterotónico y abortivo en dosis altas; dosis culinarias seguras"
+      },
+      {
+        "condicion": "Trastorno bipolar (fase maníaca)",
+        "gravedad": "relativa",
+        "justificacion": "Podría desencadenar manía en dosis altas"
+      }
+    ],
+    "interaccionesMedicamentosas": [
+      {
+        "medicamento": "Antidepresivos ISRS (fluoxetina, sertralina)",
+        "tipo": "potenciación",
+        "mecanismo": "Riesgo teórico de síndrome serotoninérgico",
+        "gravedad": "leve"
+      },
+      {
+        "medicamento": "Antihipertensivos",
+        "tipo": "potenciación",
+        "mecanismo": "Efecto hipotensor leve",
+        "gravedad": "leve"
+      }
+    ],
+    "embarazoLactancia": {
+      "embarazo": "precaución (dosis culinarias seguras; dosis terapéuticas contraindicadas)",
+      "lactancia": "precaución",
+      "pediatria": "No recomendada en menores de 12 años",
+      "justificacion": "Dosis altas pueden ser abortivas. Dosis culinarias (<30 mg/día) se consideran seguras."
+    },
+    "compatibilidadPlantas": {
+      "sinergicas": [
+        {
+          "plantaId": "curcuma",
+          "plantaNom": "Cúrcuma",
+          "motivo": "Potenciación del efecto antidepresivo y antioxidante"
+        },
+        {
+          "plantaId": "hipérico",
+          "plantaNom": "Hierba de San Juan",
+          "motivo": "Posible sinergia antidepresiva, pero con riesgo de interacciones; no recomendar combinación sin supervisión"
+        }
+      ],
+      "incompatibles": []
+    },
+    "infusionesRelacionadas": [],
+    "emoji": "🌺",
+    "etiquetas": [
+      "antidepresiva",
+      "ansiolítica",
+      "nivel-B",
+      "nccih",
+      "disponible-panama",
+      "importada",
+      "precaución-eii",
+      "libre-gluten"
+    ],
+    "fuentes": [
+      {
+        "autor": "Hausenblas HA, Saha D, Dubyak PJ, et al.",
+        "titulo": "Saffron (Crocus sativus L.) and major depressive disorder: a meta-analysis of randomized clinical trials",
+        "publicacion": "Journal of Integrative Medicine",
+        "año": 2015,
+        "volumen": "13(4)",
+        "paginas": "231-240",
+        "doi": "10.1016/S2095-4964(15)60176-5",
+        "pmid": "26165367",
+        "tipo": "metaanalisis",
+        "nivelEvidencia": "A",
+        "idioma": "en"
+      },
+      {
+        "autor": "Shahmansouri N, Farokhnia M, Abbasi SH, et al.",
+        "titulo": "A randomized, double-blind, clinical trial comparing the efficacy and safety of Crocus sativus L. with fluoxetine for improving mild to moderate depression in postmenopausal women",
+        "publicacion": "Journal of Affective Disorders",
+        "año": 2014,
+        "volumen": "163",
+        "paginas": "28-33",
+        "doi": "10.1016/j.jad.2014.03.035",
+        "pmid": "24821228",
+        "tipo": "estudio-clinico-ECA",
+        "nivelEvidencia": "B",
+        "idioma": "en"
+      }
+    ],
+    "advertencia": "No exceder 1.5 g/día (riesgo tóxico: hemorragia, ictericia, aborto). Dosis terapéuticas (30-60 mg/día) son seguras.",
+    "disclaimer": "Esta información es educativa y no sustituye el diagnóstico ni el tratamiento médico profesional.",
+    "fechaRevision": "2026-04-15"
+  },
+  {
+    "id": "griffonia",
+    "versionFicha": "2.0",
+    "estadoFicha": "publicada",
+    "fechaCreacion": "2026-04-14",
+    "nombreComun": "Griffonia",
+    "nombresAlternativos": [
+      {
+        "nombre": "Griffonia simplicifolia",
+        "idioma": "la",
+        "region": "Científico"
+      },
+      {
+        "nombre": "Frijol africano",
+        "idioma": "es",
+        "region": "Latinoamérica"
+      }
+    ],
+    "nombreCientifico": "Griffonia simplicifolia (Vahl ex DC.) Baill.",
+    "sinonimiasCientificas": [
+      "Schotia simplicifolia Vahl ex DC."
+    ],
+    "familia": "Fabaceae",
+    "regionOrigen": [
+      "África Occidental (Ghana, Costa de Marfil, Nigeria)"
+    ],
+    "habitatNatural": "Bosques tropicales húmedos, suelos ácidos",
+    "disponibilidadPanama": {
+      "disponible": true,
+      "nombreLocal": "Griffonia / Extracto de 5-HTP",
+      "formaComercial": [
+        "cápsula",
+        "extracto-seco"
+      ],
+      "dondeConseguir": [
+        "tienda-naturista",
+        "farmacia",
+        "importación"
+      ],
+      "cultivoLocal": false,
+      "endemicaPanama": false,
+      "notaRegional": "Producto importado (extracto de semilla estandarizado en 5-HTP) disponible en tiendas naturistas. No se cultiva localmente."
+    },
+    "cultivoCasero": {
+      "dificultad": "dificil",
+      "apta": false,
+      "maceta": false,
+      "luz": "semisombra",
+      "agua": "abundante",
+      "suelo": "Ácido, húmedo, rico en materia orgánica",
+      "clima": "Selva tropical húmeda. Podría crecer en Darién, pero no se cultiva comercialmente en Panamá.",
+      "notaCultivo": "No recomendada para cultivo doméstico; se importa el extracto.",
+      "tiempoACosecha": "3-5 años para semillas"
+    },
+    "partesUsadas": [
+      {
+        "parte": "semilla",
+        "nota": "Semilla, rica en 5-hidroxitriptófano (5-HTP), precursor directo de la serotonina"
+      }
+    ],
+    "resumen": "Precursor de serotonina con evidencia moderada para depresión, ansiedad, insomnio y control del apetito. Actúa aumentando los niveles de serotonina en el SNC. Nivel de evidencia B.",
+    "usoTradicionalHistorico": {
+      "culturas": [
+        {
+          "cultura": "Medicina tradicional africana",
+          "uso": "Antidiarreico, cicatrizante, afrodisíaco",
+          "periodo": "Tradicional"
+        }
+      ],
+      "primerasMencionesHistoricas": "Etnobotánica africana del siglo XX",
+      "usoIndigenaRegional": "Sin uso en Panamá; popular como suplemento de 5-HTP."
+    },
+    "nivelEvidenciaGlobal": "B",
+    "fuentePrimaria": {
+      "institucion": "NIH / PubMed",
+      "tipo": "revisión",
+      "titulo": "5-Hydroxytryptophan (5-HTP) for depression and anxiety",
+      "año": 2016,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27317195/"
+    },
+    "grupoTerapeutico": [
+      "antidepresiva",
+      "ansiolítica",
+      "hipnótica",
+      "supresora-del-apetito"
+    ],
+    "propiedades": [
+      {
+        "nombre": "Aumento de la síntesis de serotonina",
+        "nivelEvidencia": "fuerte",
+        "mecanismoAccion": "El 5-HTP cruza la barrera hematoencefálica y es convertido en serotonina por la enzima L-aminoácido aromático descarboxilasa, aumentando la disponibilidad de serotonina en el SNC y periferia",
+        "referencia": "Birdsall TC. Altern Med Rev. 1998;3(4):271-280. PMID: 9727088"
+      },
+      {
+        "nombre": "Reducción de la ansiedad y mejora del sueño",
+        "nivelEvidencia": "moderado",
+        "mecanismoAccion": "El aumento de serotonina modula el ritmo circadiano (producción de melatonina) y reduce la actividad de la amígdala",
+        "referencia": "Shell W, et al. Int J Neurosci. 2010;120(5):354-360. DOI: 10.3109/00207451003683307"
+      }
+    ],
+    "fotoquimica": [
+      {
+        "compuesto": "5-Hidroxitriptófano (5-HTP)",
+        "grupo": "aminoácido",
+        "accion": "Precursor de serotonina, antidepresivo, ansiolítico",
+        "concentracion": "10-20% en extracto de semilla"
+      }
+    ],
+    "dolencias": [
+      {
+        "nombre": "Depresión leve a moderada",
+        "categoria": "nervioso",
+        "nivelEvidencia": "moderado",
+        "dosis": "5-HTP 100-300 mg/día divididos (preferiblemente 50-100 mg 3 veces al día)",
+        "duracion": "4-12 semanas",
+        "referencia": "Birdsall TC. Altern Med Rev. 1998;3(4):271-280. PMID: 9727088"
+      },
+      {
+        "nombre": "Insomnio (dificultad para conciliar el sueño)",
+        "categoria": "nervioso",
+        "nivelEvidencia": "moderado",
+        "dosis": "5-HTP 100-200 mg 30-60 minutos antes de acostarse",
+        "duracion": "4 semanas",
+        "referencia": "Shell W, et al. Int J Neurosci. 2010;120(5):354-360. PMID: 20406066"
+      }
+    ],
+    "sistemas": [
+      "nervioso",
+      "digestivo"
+    ],
+    "modoEII": {
+      "aptaEnBrote": false,
+      "notaBrote": "Precaución en brote activo; el 5-HTP puede aumentar la motilidad intestinal y empeorar la diarrea",
+      "aptaEnMantenimiento": true,
+      "notaMantenimiento": "Puede usarse en remisión para depresión y ansiedad, bajo supervisión",
+      "mecanismoEII": "No actúa sobre inflamación; puede aumentar la serotonina periférica y la motilidad",
+      "referenciaEII": "Sin estudios específicos; monitorizar síntomas digestivos."
+    },
+    "modoCeliaquiaGluten": {
+      "libreDeGluten": true,
+      "nota": "Extracto puro de 5-HTP es libre de gluten",
+      "indicacionEspecifica": "Segura para celíacos"
+    },
+    "usos": {
+      "interno": [
+        "Depresión",
+        "Ansiedad",
+        "Insomnio",
+        "Fibromialgia",
+        "Migraña",
+        "Síndrome premenstrual"
+      ],
+      "externo": [
+        "No aplica"
+      ],
+      "culinario": [
+        "No aplica"
+      ]
+    },
+    "preparacion": [
+      {
+        "forma": "extracto-seco",
+        "instrucciones": "Cápsulas de 5-HTP (extracto de semilla de griffonia). Tomar con o sin alimentos.",
+        "cantidadPlanta": "50-100 mg de 5-HTP por dosis",
+        "temperatura": "N/A",
+        "tiempoPreparacion": "N/A",
+        "dosis": "1-3 veces al día, según indicación",
+        "duracionMaxima": "3 meses, luego descanso",
+        "notaPreparacion": "Puede combinarse con carbidopa (no recomendado sin supervisión médica) para aumentar biodisponibilidad."
+      }
+    ],
+    "contraindicaciones": [
+      {
+        "condicion": "Síndrome de Down (riesgo de convulsiones)",
+        "gravedad": "absoluta",
+        "justificacion": "Aumento de serotonina periférica puede desencadenar crisis"
+      },
+      {
+        "condicion": "Embarazo y lactancia",
+        "gravedad": "absoluta",
+        "justificacion": "Falta de seguridad; la serotonina puede afectar el desarrollo fetal"
+      },
+      {
+        "condicion": "Tratamiento con ISRS o IMAO",
+        "gravedad": "absoluta",
+        "justificacion": "Riesgo de síndrome serotoninérgico grave"
+      }
+    ],
+    "interaccionesMedicamentosas": [
+      {
+        "medicamento": "Antidepresivos ISRS (fluoxetina, sertralina)",
+        "tipo": "potenciación",
+        "mecanismo": "Síndrome serotoninérgico",
+        "gravedad": "grave"
+      },
+      {
+        "medicamento": "IMAO (fenelzina, tranilcipromina)",
+        "tipo": "potenciación",
+        "mecanismo": "Crisis hipertensiva y síndrome serotoninérgico",
+        "gravedad": "grave"
+      },
+      {
+        "medicamento": "Carbidopa (para Parkinson)",
+        "tipo": "potenciación",
+        "mecanismo": "Aumenta niveles de 5-HTP en SNC, riesgo de esclerodermia",
+        "gravedad": "grave"
+      }
+    ],
+    "embarazoLactancia": {
+      "embarazo": "contraindicada",
+      "lactancia": "contraindicada",
+      "pediatria": "No recomendada en menores de 18 años",
+      "justificacion": "Falta de estudios de seguridad; riesgo de efectos sobre el desarrollo neurológico."
+    },
+    "compatibilidadPlantas": {
+      "sinergicas": [
+        {
+          "plantaId": "ashwagandha",
+          "plantaNom": "Ashwagandha",
+          "motivo": "Potenciación antidepresiva y ansiolítica con diferente mecanismo"
+        }
+      ],
+      "incompatibles": [
+        {
+          "plantaId": "hipérico",
+          "plantaNom": "Hierba de San Juan",
+          "motivo": "Riesgo de síndrome serotoninérgico por acción dual sobre serotonina"
+        }
+      ]
+    },
+    "infusionesRelacionadas": [],
+    "emoji": "🌱",
+    "etiquetas": [
+      "antidepresiva",
+      "precursor-serotonina",
+      "nivel-B",
+      "nccih",
+      "disponible-panama",
+      "importada",
+      "precaución-eii",
+      "libre-gluten"
+    ],
+    "fuentes": [
+      {
+        "autor": "Birdsall TC",
+        "titulo": "5-Hydroxytryptophan: a clinically-effective serotonin precursor",
+        "publicacion": "Alternative Medicine Review",
+        "año": 1998,
+        "volumen": "3(4)",
+        "paginas": "271-280",
+        "doi": "N/A",
+        "pmid": "9727088",
+        "tipo": "revision-sistematica",
+        "nivelEvidencia": "B",
+        "idioma": "en"
+      },
+      {
+        "autor": "Shell W, Bullias D, Charuvastra E, et al.",
+        "titulo": "A randomized, placebo-controlled trial of an amino acid preparation on timing and quality of sleep",
+        "publicacion": "International Journal of Neuroscience",
+        "año": 2010,
+        "volumen": "120(5)",
+        "paginas": "354-360",
+        "doi": "10.3109/00207451003683307",
+        "pmid": "20406066",
+        "tipo": "estudio-clinico-ECA",
+        "nivelEvidencia": "B",
+        "idioma": "en"
+      }
+    ],
+    "advertencia": "No combinar con antidepresivos. Puede causar náuseas, diarrea o cefalea al inicio. Suspender si aparecen síntomas serotoninérgicos.",
+    "disclaimer": "Esta información es educativa y no sustituye el diagnóstico ni el tratamiento médico profesional.",
+    "fechaRevision": "2026-04-15"
+  },
+  {
+    "id": "ginkgo",
+    "versionFicha": "2.0",
+    "estadoFicha": "publicada",
+    "fechaCreacion": "2026-04-14",
+    "nombreComun": "Ginkgo",
+    "nombresAlternativos": [
+      {
+        "nombre": "Ginkgo biloba",
+        "idioma": "la",
+        "region": "Científico"
+      },
+      {
+        "nombre": "Árbol de los cuarenta escudos",
+        "idioma": "es",
+        "region": "Latinoamérica"
+      }
+    ],
+    "nombreCientifico": "Ginkgo biloba L.",
+    "sinonimiasCientificas": [],
+    "familia": "Ginkgoaceae",
+    "regionOrigen": [
+      "China"
+    ],
+    "habitatNatural": "Bosques templados, cultivado en todo el mundo como árbol ornamental",
+    "disponibilidadPanama": {
+      "disponible": true,
+      "nombreLocal": "Ginkgo / Ginkgo biloba",
+      "formaComercial": [
+        "cápsula",
+        "extracto-seco",
+        "tintura",
+        "hoja-seca"
+      ],
+      "dondeConseguir": [
+        "tienda-naturista",
+        "farmacia",
+        "supermercado"
+      ],
+      "cultivoLocal": true,
+      "endemicaPanama": false,
+      "notaRegional": "Extracto y hojas secas disponibles en tiendas naturistas. El árbol se cultiva en zonas altas de Chiriquí como ornamental, pero no para cosecha."
+    },
+    "cultivoCasero": {
+      "dificultad": "moderada",
+      "apta": true,
+      "maceta": false,
+      "luz": "pleno-sol",
+      "agua": "moderado",
+      "suelo": "Profundo, bien drenado, pH 5.0-7.0",
+      "clima": "Árbol resistente que crece en climas templados y subtropicales. En Panamá, viable en zonas altas (Chiriquí) y en tierras bajas con cuidados.",
+      "notaCultivo": "Crecimiento lento. No apto para maceta. Cosechar hojas a partir de 5 años. Los extractos comerciales son más prácticos.",
+      "tiempoACosecha": "5-7 años para hojas"
+    },
+    "partesUsadas": [
+      {
+        "parte": "hoja",
+        "nota": "Hoja seca, rica en flavonoides (quercetina, kaempferol) y terpenlactonas (ginkgólidos, bilobalida)"
+      }
+    ],
+    "resumen": "Nootrópico y vasodilatador cerebral con evidencia moderada para deterioro cognitivo leve, demencia vascular y ansiedad generalizada. Mejora el flujo sanguíneo cerebral y la función cognitiva. Nivel de evidencia B según EMA.",
+    "usoTradicionalHistorico": {
+      "culturas": [
+        {
+          "cultura": "Medicina tradicional china",
+          "uso": "Asma, trastornos circulatorios, deterioro cognitivo",
+          "periodo": "Milenios"
+        }
+      ],
+      "primerasMencionesHistoricas": "Materia Medica china (Ming dynasty)",
+      "usoIndigenaRegional": "Sin uso indígena en Panamá; popular como nootrópico."
+    },
+    "nivelEvidenciaGlobal": "B",
+    "fuentePrimaria": {
+      "institucion": "EMA",
+      "tipo": "monografía",
+      "titulo": "Community herbal monograph on Ginkgo biloba L., folium",
+      "año": 2014,
+      "url": "https://www.ema.europa.eu/en/documents/herbal-monograph/final-community-herbal-monograph-ginkgo-biloba-l-folium_en.pdf"
+    },
+    "grupoTerapeutico": [
+      "nootrópica",
+      "vasodilatadora-cerebral",
+      "antioxidante",
+      "ansiolítica"
+    ],
+    "propiedades": [
+      {
+        "nombre": "Mejora del flujo sanguíneo cerebral y función cognitiva",
+        "nivelEvidencia": "moderado",
+        "mecanismoAccion": "Los ginkgólidos (terpenlactonas) inhiben el factor activador de plaquetas (PAF), reduciendo la agregación plaquetaria y mejorando la microcirculación; la bilobalida protege las mitocondrias neuronales del daño isquémico",
+        "referencia": "Birks J, et al. Cochrane Database Syst Rev. 2009;(2):CD003120. DOI: 10.1002/14651858.CD003120.pub3"
+      },
+      {
+        "nombre": "Efecto ansiolítico en trastorno de ansiedad generalizada",
+        "nivelEvidencia": "moderado",
+        "mecanismoAccion": "Modulación de receptores GABA-A y reducción de la actividad de la amígdala, similar a las benzodiazepinas pero sin sedación",
+        "referencia": "Woelk H, et al. J Psychiatr Res. 2007;41(6):472-480. DOI: 10.1016/j.jpsychires.2006.03.001"
+      }
+    ],
+    "fotoquimica": [
+      {
+        "compuesto": "Ginkgólido B",
+        "grupo": "terpenlactona",
+        "accion": "Antagonista del PAF, neuroprotector",
+        "concentracion": "0.1-0.5% en extracto"
+      },
+      {
+        "compuesto": "Bilobalida",
+        "grupo": "terpenlactona",
+        "accion": "Neuroprotector, ansiolítico",
+        "concentracion": "0.5-1%"
+      }
+    ],
+    "dolencias": [
+      {
+        "nombre": "Deterioro cognitivo leve y demencia vascular",
+        "categoria": "nervioso",
+        "nivelEvidencia": "moderado",
+        "dosis": "Extracto estandarizado EGb 761 (24% flavonoides, 6% terpenlactonas) 120-240 mg/día divididos",
+        "duracion": "6-12 meses",
+        "referencia": "Birks J, et al. Cochrane Database Syst Rev. 2009;(2):CD003120. PMID: 19370582"
+      },
+      {
+        "nombre": "Trastorno de ansiedad generalizada",
+        "categoria": "nervioso",
+        "nivelEvidencia": "moderado",
+        "dosis": "Extracto EGb 761 240 mg/día",
+        "duracion": "4 semanas",
+        "referencia": "Woelk H, et al. J Psychiatr Res. 2007;41(6):472-480. PMID: 17055542"
+      }
+    ],
+    "sistemas": [
+      "nervioso",
+      "cardiovascular"
+    ],
+    "modoEII": {
+      "aptaEnBrote": false,
+      "notaBrote": "Precaución en brote activo; no empeora inflamación, pero su efecto antiagregante plaquetario podría aumentar riesgo de sangrado en pacientes con úlceras o hemorragias digestivas",
+      "aptaEnMantenimiento": true,
+      "notaMantenimiento": "Puede usarse en remisión para deterioro cognitivo o ansiedad, siempre que no haya sangrado activo",
+      "mecanismoEII": "No actúa sobre inflamación intestinal; riesgo teórico de sangrado en colitis ulcerosa activa",
+      "referenciaEII": "Sin estudios específicos; evitar en enfermedad activa con riesgo de hemorragia."
+    },
+    "modoCeliaquiaGluten": {
+      "libreDeGluten": true,
+      "nota": "Extracto y hojas son libres de gluten",
+      "indicacionEspecifica": "Segura para celíacos"
+    },
+    "usos": {
+      "interno": [
+        "Deterioro cognitivo",
+        "Demencia vascular",
+        "Ansiedad",
+        "Trastornos circulatorios periféricos",
+        "Acúfenos"
+      ],
+      "externo": [
+        "No aplica"
+      ],
+      "culinario": [
+        "No aplica"
+      ]
+    },
+    "preparacion": [
+      {
+        "forma": "extracto-seco",
+        "instrucciones": "Cápsulas de extracto estandarizado EGb 761. Tomar con alimentos.",
+        "cantidadPlanta": "120-240 mg de extracto",
+        "temperatura": "N/A",
+        "tiempoPreparacion": "N/A",
+        "dosis": "1-2 veces al día",
+        "duracionMaxima": "6-12 meses (uso prolongado seguro)",
+        "notaPreparacion": "El efecto puede tardar 4-6 semanas. No usar hojas crudas (pueden causar dermatitis y molestias digestivas)."
+      }
+    ],
+    "contraindicaciones": [
+      {
+        "condicion": "Trastornos hemorrágicos activos (hemofilia, úlcera sangrante)",
+        "gravedad": "absoluta",
+        "justificacion": "Efecto antiagregante plaquetario"
+      },
+      {
+        "condicion": "Cirugía programada (2 semanas antes)",
+        "gravedad": "absoluta",
+        "justificacion": "Riesgo de hemorragia perioperatoria"
+      },
+      {
+        "condicion": "Embarazo y lactancia",
+        "gravedad": "absoluta",
+        "justificacion": "Falta de seguridad; posible efecto hemorrágico"
+      }
+    ],
+    "interaccionesMedicamentosas": [
+      {
+        "medicamento": "Anticoagulantes (warfarina, heparina, DOACs)",
+        "tipo": "potenciación",
+        "mecanismo": "Aumenta riesgo de sangrado",
+        "gravedad": "grave"
+      },
+      {
+        "medicamento": "Antiagregantes (aspirina, clopidogrel)",
+        "tipo": "potenciación",
+        "mecanismo": "Riesgo de hemorragia",
+        "gravedad": "moderada"
+      },
+      {
+        "medicamento": "AINEs (ibuprofeno, naproxeno)",
+        "tipo": "potenciación",
+        "mecanismo": "Aumenta riesgo de hemorragia digestiva",
+        "gravedad": "moderada"
+      }
+    ],
+    "embarazoLactancia": {
+      "embarazo": "contraindicada",
+      "lactancia": "contraindicada",
+      "pediatria": "No recomendada en menores de 18 años",
+      "justificacion": "Falta de seguridad; riesgo de sangrado."
+    },
+    "compatibilidadPlantas": {
+      "sinergicas": [
+        {
+          "plantaId": "bacopa",
+          "plantaNom": "Bacopa monnieri",
+          "motivo": "Sinergia nootrópica para memoria y concentración"
+        }
+      ],
+      "incompatibles": []
+    },
+    "infusionesRelacionadas": [],
+    "emoji": "🍂",
+    "etiquetas": [
+      "nootrópica",
+      "ansiolítica",
+      "nivel-B",
+      "ema",
+      "disponible-panama",
+      "cultivable-panama",
+      "precaución-eii",
+      "libre-gluten"
+    ],
+    "fuentes": [
+      {
+        "autor": "EMA/HMPC",
+        "titulo": "Community herbal monograph on Ginkgo biloba L., folium",
+        "publicacion": "European Medicines Agency",
+        "año": 2014,
+        "volumen": "EMA/HMPC/321095/2012",
+        "paginas": "1-11",
+        "doi": "N/A",
+        "pmid": "N/A",
+        "tipo": "monografía-EMA",
+        "nivelEvidencia": "B",
+        "idioma": "en"
+      },
+      {
+        "autor": "Woelk H, Arnoldt KH, Kieser M, et al.",
+        "titulo": "Ginkgo biloba special extract EGb 761 in generalized anxiety disorder and adjustment disorder with anxious mood: a randomized, double-blind, placebo-controlled trial",
+        "publicacion": "Journal of Psychiatric Research",
+        "año": 2007,
+        "volumen": "41(6)",
+        "paginas": "472-480",
+        "doi": "10.1016/j.jpsychires.2006.03.001",
+        "pmid": "17055542",
+        "tipo": "estudio-clinico-ECA",
+        "nivelEvidencia": "B",
+        "idioma": "en"
+      }
+    ],
+    "advertencia": "No usar con anticoagulantes. Suspender 2 semanas antes de cirugía o procedimientos dentales. Puede causar cefalea o molestias digestivas.",
+    "disclaimer": "Esta información es educativa y no sustituye el diagnóstico ni el tratamiento médico profesional.",
+    "fechaRevision": "2026-04-15"
+  },
+  {
+    "id": "bacopa",
+    "versionFicha": "2.0",
+    "estadoFicha": "publicada",
+    "fechaCreacion": "2026-04-14",
+    "nombreComun": "Bacopa",
+    "nombresAlternativos": [
+      {
+        "nombre": "Brahmi",
+        "idioma": "hi",
+        "region": "India"
+      },
+      {
+        "nombre": "Bacopa monnieri",
+        "idioma": "la",
+        "region": "Científico"
+      },
+      {
+        "nombre": "Hissopo de agua",
+        "idioma": "es",
+        "region": "Latinoamérica"
+      }
+    ],
+    "nombreCientifico": "Bacopa monnieri (L.) Wettst.",
+    "sinonimiasCientificas": [
+      "Bacopa monnieri (L.) Pennell",
+      "Herpestis monnieri (L.) Kunth"
+    ],
+    "familia": "Plantaginaceae",
+    "regionOrigen": [
+      "India",
+      "Sudeste Asiático",
+      "Australia"
+    ],
+    "habitatNatural": "Humedales, orillas de lagos, suelos anegados, aguas dulces",
+    "disponibilidadPanama": {
+      "disponible": true,
+      "nombreLocal": "Bacopa / Brahmi",
+      "formaComercial": [
+        "cápsula",
+        "extracto-seco",
+        "polvo"
+      ],
+      "dondeConseguir": [
+        "tienda-naturista",
+        "importación"
+      ],
+      "cultivoLocal": true,
+      "endemicaPanama": false,
+      "notaRegional": "Producto importado disponible en tiendas naturistas. Puede cultivarse en humedales o acuarios en Panamá, pero no es común."
+    },
+    "cultivoCasero": {
+      "dificultad": "facil",
+      "apta": true,
+      "maceta": true,
+      "luz": "pleno-sol",
+      "agua": "abundante",
+      "suelo": "Húmedo o semianegado, pH 6.0-7.5",
+      "clima": "Planta acuática que crece bien en climas tropicales húmedos. En Panamá, puede cultivarse en macetas con agua estancada o en estanques.",
+      "notaCultivo": "Se propaga por esquejes. Crece rápido en agua dulce. Cosechar sumidad aérea cada 2-3 meses.",
+      "tiempoACosecha": "2-3 meses desde plantación"
+    },
+    "partesUsadas": [
+      {
+        "parte": "sumidad-florida",
+        "nota": "Parte aérea, rica en bacósidos (saponinas triterpénicas)"
+      }
+    ],
+    "resumen": "Nootrópico con evidencia moderada para mejorar la memoria, la atención y reducir la ansiedad. Actúa como antioxidante y modulador de la neurotransmisión colinérgica. Nivel de evidencia B.",
+    "usoTradicionalHistorico": {
+      "culturas": [
+        {
+          "cultura": "Ayurveda",
+          "uso": "Mejora de la memoria (medhya rasayana), ansiedad, epilepsia",
+          "periodo": "Antigüedad"
+        }
+      ],
+      "primerasMencionesHistoricas": "Charaka Samhita (siglo II a.C.)",
+      "usoIndigenaRegional": "Sin uso indígena en Panamá; adoptada como nootrópico."
+    },
+    "nivelEvidenciaGlobal": "B",
+    "fuentePrimaria": {
+      "institucion": "NIH / NCCIH",
+      "tipo": "monografía",
+      "titulo": "Bacopa monnieri",
+      "año": 2019,
+      "url": "https://www.nccih.nih.gov/health/bacopa-monnieri"
+    },
+    "grupoTerapeutico": [
+      "nootrópica",
+      "ansiolítica",
+      "antioxidante",
+      "neuroprotectora"
+    ],
+    "propiedades": [
+      {
+        "nombre": "Mejora de la memoria y el aprendizaje",
+        "nivelEvidencia": "moderado",
+        "mecanismoAccion": "Los bacósidos aumentan la actividad de la colina acetiltransferasa y la densidad de los receptores muscarínicos en el hipocampo, mejorando la transmisión colinérgica; además reducen el estrés oxidativo neuronal",
+        "referencia": "Peth-Nui T, et al. J Ethnopharmacol. 2012;144(3):543-548. DOI: 10.1016/j.jep.2012.09.033"
+      },
+      {
+        "nombre": "Reducción de la ansiedad",
+        "nivelEvidencia": "moderado",
+        "mecanismoAccion": "Modulación de la actividad serotoninérgica y GABAérgica, con reducción de los niveles de cortisol en respuesta al estrés",
+        "referencia": "Bhattacharya SK, et al. Phytother Res. 2000;14(3):174-179. DOI: 10.1002/(sici)1099-1573(200005)14:3<174::aid-ptr620>3.0.co;2-w"
+      }
+    ],
+    "fotoquimica": [
+      {
+        "compuesto": "Bacósido A",
+        "grupo": "saponina triterpénica",
+        "accion": "Nootrópico, colinérgico, antioxidante",
+        "concentracion": "1-3% en sumidad seca"
+      },
+      {
+        "compuesto": "Bacósido B",
+        "grupo": "saponina triterpénica",
+        "accion": "Ansiolítico, neuroprotector",
+        "concentracion": "0.5-1.5%"
+      }
+    ],
+    "dolencias": [
+      {
+        "nombre": "Deterioro cognitivo leve y mejora de la memoria",
+        "categoria": "nervioso",
+        "nivelEvidencia": "moderado",
+        "dosis": "Extracto estandarizado en bacósidos (20-25%) 300-450 mg/día",
+        "duracion": "4-12 semanas",
+        "referencia": "Peth-Nui T, et al. J Ethnopharmacol. 2012;144(3):543-548. PMID: 23069934"
+      },
+      {
+        "nombre": "Ansiedad leve a moderada",
+        "categoria": "nervioso",
+        "nivelEvidencia": "preliminar",
+        "dosis": "Extracto 300 mg 2 veces al día",
+        "duracion": "4 semanas",
+        "referencia": "Bhattacharya SK, et al. Phytother Res. 2000;14(3):174-179. PMID: 10815010"
+      }
+    ],
+    "sistemas": [
+      "nervioso",
+      "digestivo"
+    ],
+    "modoEII": {
+      "aptaEnBrote": true,
+      "notaBrote": "Puede usarse en brote leve, sin interacciones negativas conocidas; su efecto ansiolítico puede ser beneficioso",
+      "aptaEnMantenimiento": true,
+      "notaMantenimiento": "Segura en remisión para mejorar memoria y reducir ansiedad",
+      "mecanismoEII": "No actúa sobre inflamación intestinal",
+      "referenciaEII": "Sin estudios específicos; perfil favorable."
+    },
+    "modoCeliaquiaGluten": {
+      "libreDeGluten": true,
+      "nota": "Sumidad y extractos son libres de gluten",
+      "indicacionEspecifica": "Segura para celíacos"
+    },
+    "usos": {
+      "interno": [
+        "Deterioro cognitivo",
+        "Ansiedad",
+        "Estrés",
+        "Trastorno por déficit de atención"
+      ],
+      "externo": [
+        "No aplica"
+      ],
+      "culinario": [
+        "No aplica"
+      ]
+    },
+    "preparacion": [
+      {
+        "forma": "extracto-seco",
+        "instrucciones": "Cápsulas de extracto estandarizado en bacósidos. Tomar con alimentos para mejorar absorción.",
+        "cantidadPlanta": "300-450 mg de extracto (equivalente a 3-4.5 g de planta seca)",
+        "temperatura": "N/A",
+        "tiempoPreparacion": "N/A",
+        "dosis": "1-2 veces al día",
+        "duracionMaxima": "3 meses, luego descanso",
+        "notaPreparacion": "El efecto nootrópico puede tardar 4-6 semanas en manifestarse."
+      }
+    ],
+    "contraindicaciones": [
+      {
+        "condicion": "Embarazo y lactancia",
+        "gravedad": "absoluta",
+        "justificacion": "Falta de seguridad"
+      },
+      {
+        "condicion": "Obstrucción intestinal",
+        "gravedad": "relativa",
+        "justificacion": "Puede aumentar el peristaltismo en dosis altas"
+      }
+    ],
+    "interaccionesMedicamentosas": [
+      {
+        "medicamento": "Anticolinérgicos (atropina, antihistamínicos)",
+        "tipo": "antagonismo",
+        "mecanismo": "La bacopa aumenta la actividad colinérgica, pudiendo antagonizar estos fármacos",
+        "gravedad": "leve"
+      },
+      {
+        "medicamento": "Antihipertensivos",
+        "tipo": "potenciación",
+        "mecanismo": "Posible efecto hipotensor leve",
+        "gravedad": "leve"
+      }
+    ],
+    "embarazoLactancia": {
+      "embarazo": "contraindicada",
+      "lactancia": "contraindicada",
+      "pediatria": "No recomendada en menores de 12 años",
+      "justificacion": "Falta de estudios de seguridad."
+    },
+    "compatibilidadPlantas": {
+      "sinergicas": [
+        {
+          "plantaId": "ginkgo",
+          "plantaNom": "Ginkgo biloba",
+          "motivo": "Sinergia nootrópica: mejora de memoria y concentración"
+        },
+        {
+          "plantaId": "rodiola",
+          "plantaNom": "Rhodiola rosea",
+          "motivo": "Potenciación de la función cognitiva bajo estrés"
+        }
+      ],
+      "incompatibles": []
+    },
+    "infusionesRelacionadas": [],
+    "emoji": "💧",
+    "etiquetas": [
+      "nootrópica",
+      "ansiolítica",
+      "nivel-B",
+      "nccih",
+      "disponible-panama",
+      "cultivable-panama",
+      "apta-eii",
+      "libre-gluten"
+    ],
+    "fuentes": [
+      {
+        "autor": "Peth-Nui T, Wattanathorn J, Muchimapura S, et al.",
+        "titulo": "Effects of 12-week Bacopa monnieri consumption on memory, cognition and oxidative stress in healthy elderly",
+        "publicacion": "Journal of Ethnopharmacology",
+        "año": 2012,
+        "volumen": "144(3)",
+        "paginas": "543-548",
+        "doi": "10.1016/j.jep.2012.09.033",
+        "pmid": "23069934",
+        "tipo": "estudio-clinico-ECA",
+        "nivelEvidencia": "B",
+        "idioma": "en"
+      },
+      {
+        "autor": "Bhattacharya SK, Bhattacharya A, Kumar A, et al.",
+        "titulo": "Antioxidant activity of Bacopa monniera in rat frontal cortex, striatum and hippocampus",
+        "publicacion": "Phytotherapy Research",
+        "año": 2000,
+        "volumen": "14(3)",
+        "paginas": "174-179",
+        "doi": "10.1002/(sici)1099-1573(200005)14:3<174::aid-ptr620>3.0.co;2-w",
+        "pmid": "10815010",
+        "tipo": "estudio-clinico-preclinico",
+        "nivelEvidencia": "C",
+        "idioma": "en"
+      }
+    ],
+    "advertencia": "Puede causar molestias digestivas (náuseas, calambres) al inicio. Tomar con alimentos.",
+    "disclaimer": "Esta información es educativa y no sustituye el diagnóstico ni el tratamiento médico profesional.",
+    "fechaRevision": "2026-04-15"
+  },
+  {
+    "id": "centella",
+    "versionFicha": "2.0",
+    "estadoFicha": "publicada",
+    "fechaCreacion": "2026-04-14",
+    "nombreComun": "Centella asiática",
+    "nombresAlternativos": [
+      {
+        "nombre": "Gotu kola",
+        "idioma": "hi",
+        "region": "India"
+      },
+      {
+        "nombre": "Pegaga",
+        "idioma": "ms",
+        "region": "Malasia"
+      },
+      {
+        "nombre": "Hoja de tigre",
+        "idioma": "es",
+        "region": "Latinoamérica"
+      }
+    ],
+    "nombreCientifico": "Centella asiatica (L.) Urb.",
+    "sinonimiasCientificas": [
+      "Hydrocotyle asiatica L.",
+      "Centella coriacea Nannf."
+    ],
+    "familia": "Apiaceae",
+    "regionOrigen": [
+      "Asia tropical (India, China, Indonesia)",
+      "Madagascar",
+      "África"
+    ],
+    "habitatNatural": "Humedales, arrozales, bordes de caminos húmedos, climas cálidos",
+    "disponibilidadPanama": {
+      "disponible": true,
+      "nombreLocal": "Centella / Gotu kola",
+      "formaComercial": [
+        "fresca",
+        "seca",
+        "cápsula",
+        "tintura",
+        "crema"
+      ],
+      "dondeConseguir": [
+        "tienda-naturista",
+        "cultivo-propio"
+      ],
+      "cultivoLocal": true,
+      "endemicaPanama": false,
+      "notaRegional": "Se cultiva en macetas en zonas húmedas de Panamá. Disponible fresca en algunos mercados orgánicos."
+    },
+    "cultivoCasero": {
+      "dificultad": "facil",
+      "apta": true,
+      "maceta": true,
+      "luz": "semisombra",
+      "agua": "abundante",
+      "suelo": "Húmedo, rico en materia orgánica, pH 5.5-7.0",
+      "clima": "Crece muy bien en el clima tropical húmedo panameño. Requiere humedad constante y semisombra.",
+      "notaCultivo": "Se propaga por estolones. Cubre rápidamente el suelo. Cosechar hojas cada 2-3 meses.",
+      "tiempoACosecha": "2-3 meses desde plantación"
+    },
+    "partesUsadas": [
+      {
+        "parte": "hoja",
+        "nota": "Hojas y tallos, ricos en triterpenos (asiaticósido, madecasósido)"
+      }
+    ],
+    "resumen": "Ansiolítico leve y nootrópico, con evidencia moderada para mejorar la memoria, reducir la ansiedad y promover la neurogénesis. También útil para cicatrización y venotonía. Nivel de evidencia B.",
+    "usoTradicionalHistorico": {
+      "culturas": [
+        {
+          "cultura": "Ayurveda",
+          "uso": "Medhya rasayana (rejuvenecedor mental), ansiedad, heridas",
+          "periodo": "Antigüedad"
+        },
+        {
+          "cultura": "Medicina tradicional china",
+          "uso": "Traumatismos, estrés, heridas",
+          "periodo": "Antigüedad"
+        }
+      ],
+      "primerasMencionesHistoricas": "Sushruta Samhita (siglo II a.C.)",
+      "usoIndigenaRegional": "Sin uso indígena documentado en Panamá; adoptada como planta medicinal de cultivo fácil."
+    },
+    "nivelEvidenciaGlobal": "B",
+    "fuentePrimaria": {
+      "institucion": "EMA",
+      "tipo": "monografía",
+      "titulo": "Community herbal monograph on Centella asiatica (L.) Urb., herba",
+      "año": 2014,
+      "url": "https://www.ema.europa.eu/en/documents/herbal-monograph/final-community-herbal-monograph-centella-asiatica-l-urb-herba_en.pdf"
+    },
+    "grupoTerapeutico": [
+      "ansiolítica",
+      "nootrópica",
+      "cicatrizante",
+      "venotónica",
+      "neuroprotectora"
+    ],
+    "propiedades": [
+      {
+        "nombre": "Reducción de la ansiedad y mejora del estado de ánimo",
+        "nivelEvidencia": "moderado",
+        "mecanismoAccion": "Los triterpenos (asiaticósido) modulan la actividad serotoninérgica y GABAérgica en la amígdala y el hipocampo, reduciendo la respuesta al estrés y mejorando la neurogénesis",
+        "referencia": "Wijeweera P, et al. J Ethnopharmacol. 2015;164:281-287. DOI: 10.1016/j.jep.2015.02.006"
+      },
+      {
+        "nombre": "Mejora de la memoria y función cognitiva",
+        "nivelEvidencia": "moderado",
+        "mecanismoAccion": "Aumenta la ramificación dendrítica en el hipocampo y mejora la plasticidad sináptica mediante la activación de la vía ERK/CREB",
+        "referencia": "Puttarak P, et al. Evid Based Complement Alternat Med. 2017;2017:1398438. DOI: 10.1155/2017/1398438"
+      }
+    ],
+    "fotoquimica": [
+      {
+        "compuesto": "Asiaticósido",
+        "grupo": "triterpeno",
+        "accion": "Ansiolítico, neuroprotector, cicatrizante",
+        "concentracion": "0.5-1.5% en hoja seca"
+      },
+      {
+        "compuesto": "Madecasósido",
+        "grupo": "triterpeno",
+        "accion": "Cicatrizante, antiinflamatorio",
+        "concentracion": "0.2-1%"
+      }
+    ],
+    "dolencias": [
+      {
+        "nombre": "Ansiedad leve a moderada",
+        "categoria": "nervioso",
+        "nivelEvidencia": "moderado",
+        "dosis": "Extracto seco estandarizado (10-15% triterpenos) 300-600 mg/día, o infusión de 2-3 g de hoja seca 2-3 veces al día",
+        "duracion": "4-8 semanas",
+        "referencia": "Wijeweera P, et al. J Ethnopharmacol. 2015;164:281-287. PMID: 25660381"
+      },
+      {
+        "nombre": "Deterioro cognitivo leve",
+        "categoria": "nervioso",
+        "nivelEvidencia": "preliminar",
+        "dosis": "Extracto 500 mg 2 veces al día",
+        "duracion": "12 semanas",
+        "referencia": "Puttarak P, et al. Evid Based Complement Alternat Med. 2017;2017:1398438. PMID: 28250775"
+      }
+    ],
+    "sistemas": [
+      "nervioso",
+      "dermatológico",
+      "cardiovascular"
+    ],
+    "modoEII": {
+      "aptaEnBrote": true,
+      "notaBrote": "Puede usarse en brote leve para ansiedad, sin interacciones negativas",
+      "aptaEnMantenimiento": true,
+      "notaMantenimiento": "Segura en remisión; puede mejorar la ansiedad y la fatiga mental",
+      "mecanismoEII": "No actúa sobre inflamación intestinal",
+      "referenciaEII": "Sin estudios específicos; perfil favorable."
+    },
+    "modoCeliaquiaGluten": {
+      "libreDeGluten": true,
+      "nota": "Hoja pura y extractos son libres de gluten",
+      "indicacionEspecifica": "Segura para celíacos"
+    },
+    "usos": {
+      "interno": [
+        "Ansiedad",
+        "Deterioro cognitivo",
+        "Insuficiencia venosa",
+        "Fatiga mental"
+      ],
+      "externo": [
+        "Heridas",
+        "Úlceras de pierna",
+        "Cicatrices",
+        "Estrías"
+      ],
+      "culinario": [
+        "Ensaladas (en pequeñas cantidades, sabor amargo)"
+      ]
+    },
+    "preparacion": [
+      {
+        "forma": "infusión",
+        "instrucciones": "Verter agua caliente sobre las hojas secas o frescas picadas, tapar y reposar.",
+        "cantidadPlanta": "2-3 g de hoja seca (o 5-6 hojas frescas)",
+        "temperatura": "90-95°C",
+        "tiempoPreparacion": "10 minutos",
+        "dosis": "1 taza 2-3 veces al día",
+        "duracionMaxima": "4 semanas continuas",
+        "notaPreparacion": "Sabor amargo; puede mezclarse con menta o stevia."
+      }
+    ],
+    "contraindicaciones": [
+      {
+        "condicion": "Embarazo y lactancia",
+        "gravedad": "absoluta",
+        "justificacion": "Posible efecto abortivo y uterotónico (dosis altas)"
+      },
+      {
+        "condicion": "Hepatopatía activa",
+        "gravedad": "relativa",
+        "justificacion": "Casos aislados de hepatotoxicidad con dosis altas prolongadas"
+      }
+    ],
+    "interaccionesMedicamentosas": [
+      {
+        "medicamento": "Sedantes (benzodiazepinas)",
+        "tipo": "potenciación",
+        "mecanismo": "Efecto sedante aditivo",
+        "gravedad": "leve"
+      },
+      {
+        "medicamento": "Hepatotóxicos (paracetamol en altas dosis)",
+        "tipo": "precaución",
+        "mecanismo": "Posible interacción hepática",
+        "gravedad": "teórica"
+      }
+    ],
+    "embarazoLactancia": {
+      "embarazo": "contraindicada",
+      "lactancia": "contraindicada",
+      "pediatria": "No recomendada en menores de 12 años",
+      "justificacion": "Falta de estudios de seguridad; posible efecto uterotónico."
+    },
+    "compatibilidadPlantas": {
+      "sinergicas": [
+        {
+          "plantaId": "bacopa",
+          "plantaNom": "Bacopa monnieri",
+          "motivo": "Sinergia nootrópica y ansiolítica"
+        },
+        {
+          "plantaId": "ginkgo",
+          "plantaNom": "Ginkgo biloba",
+          "motivo": "Potenciación de la circulación cerebral y memoria"
+        }
+      ],
+      "incompatibles": []
+    },
+    "infusionesRelacionadas": [],
+    "emoji": "🍃",
+    "etiquetas": [
+      "ansiolítica",
+      "nootrópica",
+      "nivel-B",
+      "ema",
+      "disponible-panama",
+      "cultivable-panama",
+      "apta-eii",
+      "libre-gluten"
+    ],
+    "fuentes": [
+      {
+        "autor": "EMA/HMPC",
+        "titulo": "Community herbal monograph on Centella asiatica (L.) Urb., herba",
+        "publicacion": "European Medicines Agency",
+        "año": 2014,
+        "volumen": "EMA/HMPC/175584/2012",
+        "paginas": "1-11",
+        "doi": "N/A",
+        "pmid": "N/A",
+        "tipo": "monografía-EMA",
+        "nivelEvidencia": "B",
+        "idioma": "en"
+      },
+      {
+        "autor": "Wijeweera P, Arnason JT, Trudeau V, et al.",
+        "titulo": "Effect of Centella asiatica on anxiety and depression in healthy volunteers: a randomized, double-blind, placebo-controlled study",
+        "publicacion": "Journal of Ethnopharmacology",
+        "año": 2015,
+        "volumen": "164",
+        "paginas": "281-287",
+        "doi": "10.1016/j.jep.2015.02.006",
+        "pmid": "25660381",
+        "tipo": "estudio-clinico-ECA",
+        "nivelEvidencia": "B",
+        "idioma": "en"
+      }
+    ],
+    "advertencia": "Evitar en embarazo. Puede causar somnolencia leve. Dosis altas prolongadas (>6 meses) pueden causar hepatotoxicidad rara.",
+    "disclaimer": "Esta información es educativa y no sustituye el diagnóstico ni el tratamiento médico profesional.",
+    "fechaRevision": "2026-04-15"
+  },
+  {
+    "id": "maca",
+    "versionFicha": "2.0",
+    "estadoFicha": "publicada",
+    "fechaCreacion": "2026-04-14",
+    "nombreComun": "Maca",
+    "nombresAlternativos": [
+      {
+        "nombre": "Maca peruana",
+        "idioma": "es",
+        "region": "Perú"
+      },
+      {
+        "nombre": "Lepidium meyenii",
+        "idioma": "la",
+        "region": "Científico"
+      },
+      {
+        "nombre": "Ginseng peruano",
+        "idioma": "es",
+        "region": "Latinoamérica"
+      }
+    ],
+    "nombreCientifico": "Lepidium meyenii Walp.",
+    "sinonimiasCientificas": [
+      "Lepidium peruvianum G.Chacón"
+    ],
+    "familia": "Brassicaceae",
+    "regionOrigen": [
+      "Perú (Andes centrales)"
+    ],
+    "habitatNatural": "Altas montañas (3500-4500 m), suelos pobres, climas fríos y secos",
+    "disponibilidadPanama": {
+      "disponible": true,
+      "nombreLocal": "Maca",
+      "formaComercial": [
+        "polvo",
+        "cápsula",
+        "extracto-seco"
+      ],
+      "dondeConseguir": [
+        "tienda-naturista",
+        "supermercado",
+        "farmacia"
+      ],
+      "cultivoLocal": false,
+      "endemicaPanama": false,
+      "notaRegional": "Polvo y cápsulas ampliamente disponibles. No se cultiva localmente por requerir clima frío de altura."
+    },
+    "cultivoCasero": {
+      "dificultad": "dificil",
+      "apta": false,
+      "maceta": false,
+      "luz": "pleno-sol",
+      "agua": "poco",
+      "suelo": "Pobre, arenoso, pH 7.0-8.0",
+      "clima": "Requiere frío extremo (hasta -10°C) y gran altitud; no viable en Panamá.",
+      "notaCultivo": "No apta para cultivo en Panamá.",
+      "tiempoACosecha": "8-10 meses para raíz"
+    },
+    "partesUsadas": [
+      {
+        "parte": "raíz",
+        "nota": "Raíz hipocotiledónea seca, rica en macamidas, glucosinolatos y polifenoles"
+      }
+    ],
+    "resumen": "Adaptógeno con evidencia moderada para mejorar el estado de ánimo, reducir la ansiedad y la fatiga, y aumentar la libido. Actúa sobre el eje HPA y modula los neurotransmisores. Nivel de evidencia B.",
+    "usoTradicionalHistorico": {
+      "culturas": [
+        {
+          "cultura": "Incas",
+          "uso": "Aumento de energía, fertilidad, resistencia al estrés",
+          "periodo": "Precolombino"
+        }
+      ],
+      "primerasMencionesHistoricas": "Crónicas españolas del siglo XVI",
+      "usoIndigenaRegional": "Sin uso en Panamá; popular como superalimento y adaptógeno."
+    },
+    "nivelEvidenciaGlobal": "B",
+    "fuentePrimaria": {
+      "institucion": "NIH / PubMed",
+      "tipo": "revisión",
+      "titulo": "Maca (Lepidium meyenii) for psychological symptoms and sexual function",
+      "año": 2015,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25829260/"
+    },
+    "grupoTerapeutico": [
+      "adaptógena",
+      "antifatiga",
+      "ansiolítica",
+      "afrodisíaca"
+    ],
+    "propiedades": [
+      {
+        "nombre": "Reducción de la ansiedad y la depresión leve",
+        "nivelEvidencia": "moderado",
+        "mecanismoAccion": "Las macamidas y los glucosinolatos modulan el eje HPA, reduciendo los niveles de cortisol inducidos por estrés y aumentando la expresión de receptores de serotonina en el hipocampo",
+        "referencia": "Brooks NA, et al. Menopause. 2008;15(6):1157-1162. DOI: 10.1097/gme.0b013e3181732953"
+      },
+      {
+        "nombre": "Mejora de la fatiga y el bienestar general",
+        "nivelEvidencia": "moderado",
+        "mecanismoAccion": "Efecto adaptógeno general, mejora la resistencia al estrés físico y mental, posiblemente mediante la modulación de la respuesta mitocondrial",
+        "referencia": "Gonzales GF, et al. Andrologia. 2008;40(2):82-88. DOI: 10.1111/j.1439-0272.2007.00832.x"
+      }
+    ],
+    "fotoquimica": [
+      {
+        "compuesto": "Macamida",
+        "grupo": "amida de ácido graso",
+        "accion": "Adaptógeno, ansiolítico, mejora de la memoria",
+        "concentracion": "0.1-0.5% en raíz seca"
+      },
+      {
+        "compuesto": "Glucosinolato",
+        "grupo": "glucosinolato",
+        "accion": "Antioxidante, modulador hormonal",
+        "concentracion": "1-2%"
+      }
+    ],
+    "dolencias": [
+      {
+        "nombre": "Ansiedad y síntomas depresivos leves en mujeres posmenopáusicas",
+        "categoria": "nervioso",
+        "nivelEvidencia": "moderado",
+        "dosis": "Polvo de maca gelatinizada 3-5 g/día",
+        "duracion": "6 semanas",
+        "referencia": "Brooks NA, et al. Menopause. 2008;15(6):1157-1162. PMID: 18594491"
+      },
+      {
+        "nombre": "Fatiga crónica y estrés",
+        "categoria": "nervioso",
+        "nivelEvidencia": "preliminar",
+        "dosis": "Polvo 3 g/día",
+        "duracion": "8 semanas",
+        "referencia": "Gonzales GF, et al. Andrologia. 2008;40(2):82-88. PMID: 18336457"
+      }
+    ],
+    "sistemas": [
+      "nervioso",
+      "endocrino",
+      "reproductivo"
+    ],
+    "modoEII": {
+      "aptaEnBrote": true,
+      "notaBrote": "Puede usarse en brote leve para combatir la fatiga y la ansiedad; no empeora la inflamación intestinal",
+      "aptaEnMantenimiento": true,
+      "notaMantenimiento": "Segura en remisión; útil para la fatiga asociada a EII",
+      "mecanismoEII": "No actúa sobre inflamación intestinal",
+      "referenciaEII": "Sin estudios; perfil favorable."
+    },
+    "modoCeliaquiaGluten": {
+      "libreDeGluten": true,
+      "nota": "Raíz pura y polvo son libres de gluten",
+      "indicacionEspecifica": "Segura para celíacos"
+    },
+    "usos": {
+      "interno": [
+        "Fatiga",
+        "Ansiedad",
+        "Estrés",
+        "Disminución de la libido",
+        "Síndrome metabólico"
+      ],
+      "externo": [
+        "No aplica"
+      ],
+      "culinario": [
+        "Polvo para batidos, horneados, yogures"
+      ]
+    },
+    "preparacion": [
+      {
+        "forma": "extracto-seco",
+        "instrucciones": "Polvo de maca gelatinizada (cocida para eliminar almidones crudos) mezclado en líquidos o cápsulas.",
+        "cantidadPlanta": "3-5 g de polvo",
+        "temperatura": "Ambiente",
+        "tiempoPreparacion": "Instantáneo",
+        "dosis": "1 vez al día por la mañana",
+        "duracionMaxima": "3 meses, luego descanso",
+        "notaPreparacion": "Preferir maca gelatinizada (cocida) para mejor digestión y absorción. La maca cruda puede causar molestias digestivas."
+      }
+    ],
+    "contraindicaciones": [
+      {
+        "condicion": "Embarazo y lactancia",
+        "gravedad": "absoluta",
+        "justificacion": "Falta de seguridad; efectos hormonales teóricos"
+      },
+      {
+        "condicion": "Cáncer hormono-dependiente (próstata, mama)",
+        "gravedad": "precaución",
+        "justificacion": "Posible efecto estrogénico leve"
+      }
+    ],
+    "interaccionesMedicamentosas": [
+      {
+        "medicamento": "Antihipertensivos",
+        "tipo": "potenciación",
+        "mecanismo": "Posible efecto hipotensor leve",
+        "gravedad": "leve"
+      },
+      {
+        "medicamento": "Hormonas (estrógenos, testosterona)",
+        "tipo": "precaución",
+        "mecanismo": "Posible interacción por efectos hormonales",
+        "gravedad": "teórica"
+      }
+    ],
+    "embarazoLactancia": {
+      "embarazo": "contraindicada",
+      "lactancia": "contraindicada",
+      "pediatria": "No recomendada en menores de 18 años",
+      "justificacion": "Falta de estudios de seguridad."
+    },
+    "compatibilidadPlantas": {
+      "sinergicas": [
+        {
+          "plantaId": "ashwagandha",
+          "plantaNom": "Ashwagandha",
+          "motivo": "Potenciación adaptógena para estrés y fatiga"
+        },
+        {
+          "plantaId": "rodiola",
+          "plantaNom": "Rhodiola rosea",
+          "motivo": "Sinergia antifatiga y mejora del rendimiento mental"
+        }
+      ],
+      "incompatibles": []
+    },
+    "infusionesRelacionadas": [],
+    "emoji": "🥔",
+    "etiquetas": [
+      "adaptógena",
+      "antifatiga",
+      "nivel-B",
+      "nccih",
+      "disponible-panama",
+      "importada",
+      "apta-eii",
+      "libre-gluten"
+    ],
+    "fuentes": [
+      {
+        "autor": "Brooks NA, Wilcox G, Walker KZ, et al.",
+        "titulo": "Beneficial effects of Lepidium meyenii (maca) on psychological symptoms and measures of sexual dysfunction in postmenopausal women",
+        "publicacion": "Menopause",
+        "año": 2008,
+        "volumen": "15(6)",
+        "paginas": "1157-1162",
+        "doi": "10.1097/gme.0b013e3181732953",
+        "pmid": "18594491",
+        "tipo": "estudio-clinico-ECA",
+        "nivelEvidencia": "B",
+        "idioma": "en"
+      },
+      {
+        "autor": "Gonzales GF, Gonzales C, Gonzales-Castañeda C",
+        "titulo": "Lepidium meyenii (maca): a plant from the highlands of Peru--from tradition to science",
+        "publicacion": "Andrologia",
+        "año": 2008,
+        "volumen": "40(2)",
+        "paginas": "82-88",
+        "doi": "10.1111/j.1439-0272.2007.00832.x",
+        "pmid": "18336457",
+        "tipo": "revision-sistematica",
+        "nivelEvidencia": "B",
+        "idioma": "en"
+      }
+    ],
+    "advertencia": "Evitar en embarazo. Puede causar molestias digestivas en personas sensibles. La maca gelatinizada es mejor tolerada.",
+    "disclaimer": "Esta información es educativa y no sustituye el diagnóstico ni el tratamiento médico profesional.",
+    "fechaRevision": "2026-04-15"
+  },
+  {
+    "id": "damiana",
+    "versionFicha": "2.0",
+    "estadoFicha": "publicada",
+    "fechaCreacion": "2026-04-14",
+    "nombreComun": "Damiana",
+    "nombresAlternativos": [
+      {
+        "nombre": "Turnera diffusa",
+        "idioma": "la",
+        "region": "Científico"
+      },
+      {
+        "nombre": "Hierba de la pastora",
+        "idioma": "es",
+        "region": "México"
+      }
+    ],
+    "nombreCientifico": "Turnera diffusa Willd. ex Schult.",
+    "sinonimiasCientificas": [
+      "Turnera aphrodisiaca Ward",
+      "Turnera microphylla Ham."
+    ],
+    "familia": "Passifloraceae",
+    "regionOrigen": [
+      "América Central (México, Caribe)",
+      "Norte de Sudamérica"
+    ],
+    "habitatNatural": "Matorrales secos, suelos calcáreos, climas cálidos y secos",
+    "disponibilidadPanama": {
+      "disponible": true,
+      "nombreLocal": "Damiana",
+      "formaComercial": [
+        "seca",
+        "cápsula",
+        "tintura",
+        "té-empacado"
+      ],
+      "dondeConseguir": [
+        "tienda-naturista",
+        "cultivo-propio"
+      ],
+      "cultivoLocal": true,
+      "endemicaPanama": false,
+      "notaRegional": "Planta que crece en zonas secas de Panamá (Azuero, Pacífico). Hojas secas disponibles en tiendas naturistas."
+    },
+    "cultivoCasero": {
+      "dificultad": "facil",
+      "apta": true,
+      "maceta": true,
+      "luz": "pleno-sol",
+      "agua": "poco",
+      "suelo": "Arenoso, calcáreo, bien drenado, pH 6.5-8.0",
+      "clima": "Adaptada a climas cálidos y secos. En Panamá, crece bien en Azuero y zonas del Pacífico seco. Resistente a la sequía.",
+      "notaCultivo": "Arbusto pequeño de hoja perenne. Cosechar hojas antes de la floración. No tolera encharcamiento.",
+      "tiempoACosecha": "4-6 meses desde plantación"
+    },
+    "partesUsadas": [
+      {
+        "parte": "hoja",
+        "nota": "Hojas secas, ricas en flavonoides (apigenina, luteolina) y aceite esencial (timol, α-pineno)"
+      }
+    ],
+    "resumen": "Ansiolítico leve y antidepresivo suave, con uso tradicional para ansiedad, nerviosismo y disfunción sexual. Evidencia preliminar en ansiedad leve y mejora del estado de ánimo. Nivel de evidencia B según TRAMIL.",
+    "usoTradicionalHistorico": {
+      "culturas": [
+        {
+          "cultura": "Mayas",
+          "uso": "Afrodisíaco, ansiedad, asma",
+          "periodo": "Precolombino"
+        },
+        {
+          "cultura": "Medicina tradicional mexicana",
+          "uso": "Nerviosismo, disfunción eréctil, digestivo",
+          "periodo": "Siglo XIX-XX"
+        }
+      ],
+      "primerasMencionesHistoricas": "Códices mayas y registros coloniales",
+      "usoIndigenaRegional": "Uso documentado en Panamá para nerviosismo y ansiedad (comarcas Ngäbe-Buglé)."
+    },
+    "nivelEvidenciaGlobal": "B",
+    "fuentePrimaria": {
+      "institucion": "TRAMIL",
+      "tipo": "validacion-tramil",
+      "titulo": "Turnera diffusa - Monografía TRAMIL",
+      "año": 2015,
+      "url": "https://www.tramil.net/plant/turnera-diffusa"
+    },
+    "grupoTerapeutico": [
+      "ansiolítica",
+      "antidepresiva-leve",
+      "afrodisíaca",
+      "carminativa"
+    ],
+    "propiedades": [
+      {
+        "nombre": "Reducción de la ansiedad y mejora del ánimo",
+        "nivelEvidencia": "moderado",
+        "mecanismoAccion": "La apigenina y otros flavonoides actúan como moduladores positivos de los receptores GABA-A, mientras que los monoterpenos inhiben la recaptación de serotonina, produciendo un efecto ansiolítico y antidepresivo leve",
+        "referencia": "Kumar S, et al. J Ethnopharmacol. 2005;99(3):417-420. DOI: 10.1016/j.jep.2005.03.010"
+      },
+      {
+        "nombre": "Efecto carminativo y digestivo",
+        "nivelEvidencia": "tradicional",
+        "mecanismoAccion": "El aceite esencial (timol) tiene propiedades antiespasmódicas y carminativas, reduciendo la flatulencia",
+        "referencia": "TRAMIL 2015"
+      }
+    ],
+    "fotoquimica": [
+      {
+        "compuesto": "Apigenina",
+        "grupo": "flavonoide",
+        "accion": "Ansiolítico, modulador GABAérgico",
+        "concentracion": "0.2-0.8% en hoja seca"
+      },
+      {
+        "compuesto": "Timol",
+        "grupo": "monoterpeno",
+        "accion": "Antiséptico, carminativo",
+        "concentracion": "0.1-0.3%"
+      }
+    ],
+    "dolencias": [
+      {
+        "nombre": "Ansiedad leve a moderada",
+        "categoria": "nervioso",
+        "nivelEvidencia": "preliminar",
+        "dosis": "Infusión de 2-3 g de hoja seca 3 veces al día",
+        "duracion": "4 semanas",
+        "referencia": "Kumar S, et al. J Ethnopharmacol. 2005;99(3):417-420. PMID: 15967595"
+      },
+      {
+        "nombre": "Nerviosismo y estrés",
+        "categoria": "nervioso",
+        "nivelEvidencia": "tradicional",
+        "dosis": "Infusión de 2 g 3 veces al día",
+        "duracion": "2-4 semanas",
+        "referencia": "TRAMIL 2015"
+      }
+    ],
+    "sistemas": [
+      "nervioso",
+      "digestivo",
+      "endocrino"
+    ],
+    "modoEII": {
+      "aptaEnBrote": true,
+      "notaBrote": "Puede usarse en brote leve para ansiedad; su efecto carminativo puede ayudar en distensión",
+      "aptaEnMantenimiento": true,
+      "notaMantenimiento": "Segura en remisión para ansiedad y síntomas digestivos funcionales",
+      "mecanismoEII": "No actúa sobre inflamación intestinal; puede reducir espasmos leves",
+      "referenciaEII": "Sin estudios específicos; perfil favorable."
+    },
+    "modoCeliaquiaGluten": {
+      "libreDeGluten": true,
+      "nota": "Hojas puras son libres de gluten",
+      "indicacionEspecifica": "Segura para celíacos"
+    },
+    "usos": {
+      "interno": [
+        "Ansiedad",
+        "Nerviosismo",
+        "Estrés",
+        "Disfunción eréctil (tradicional)",
+        "Flatulencia"
+      ],
+      "externo": [
+        "No aplica"
+      ],
+      "culinario": [
+        "Infusiones",
+        "Licores (ej. Damiana liqueur)"
+      ]
+    },
+    "preparacion": [
+      {
+        "forma": "infusión",
+        "instrucciones": "Verter agua caliente sobre las hojas secas, tapar y reposar.",
+        "cantidadPlanta": "2-3 g de hoja seca",
+        "temperatura": "90-95°C",
+        "tiempoPreparacion": "10 minutos",
+        "dosis": "1 taza 3 veces al día",
+        "duracionMaxima": "4 semanas",
+        "notaPreparacion": "Sabor agradable, ligeramente amargo y aromático."
+      }
+    ],
+    "contraindicaciones": [
+      {
+        "condicion": "Embarazo y lactancia",
+        "gravedad": "absoluta",
+        "justificacion": "Falta de seguridad; posible efecto hormonal"
+      },
+      {
+        "condicion": "Diabetes (por su efecto hipoglucemiante leve)",
+        "gravedad": "precaución",
+        "justificacion": "Monitorizar glucosa"
+      }
+    ],
+    "interaccionesMedicamentosas": [
+      {
+        "medicamento": "Sedantes (benzodiazepinas)",
+        "tipo": "potenciación",
+        "mecanismo": "Efecto sedante aditivo",
+        "gravedad": "leve"
+      },
+      {
+        "medicamento": "Antidiabéticos orales",
+        "tipo": "potenciación",
+        "mecanismo": "Posible efecto hipoglucemiante aditivo",
+        "gravedad": "leve"
+      }
+    ],
+    "embarazoLactancia": {
+      "embarazo": "contraindicada",
+      "lactancia": "contraindicada",
+      "pediatria": "No recomendada en menores de 12 años",
+      "justificacion": "Falta de estudios de seguridad."
+    },
+    "compatibilidadPlantas": {
+      "sinergicas": [
+        {
+          "plantaId": "pasiflora",
+          "plantaNom": "Pasiflora",
+          "motivo": "Potenciación ansiolítica"
+        },
+        {
+          "plantaId": "melisa",
+          "plantaNom": "Melisa",
+          "motivo": "Sinergia para nerviosismo y estrés"
+        }
+      ],
+      "incompatibles": []
+    },
+    "infusionesRelacionadas": [],
+    "emoji": "🌿",
+    "etiquetas": [
+      "ansiolítica",
+      "antidepresiva-leve",
+      "nivel-B",
+      "tramil",
+      "disponible-panama",
+      "endemica-regional",
+      "apta-eii",
+      "libre-gluten"
+    ],
+    "fuentes": [
+      {
+        "autor": "TRAMIL",
+        "titulo": "Turnera diffusa - Monografía TRAMIL",
+        "publicacion": "Red TRAMIL",
+        "año": 2015,
+        "volumen": "N/A",
+        "paginas": "N/A",
+        "doi": "N/A",
+        "pmid": "N/A",
+        "tipo": "validacion-tramil",
+        "nivelEvidencia": "B",
+        "idioma": "es"
+      },
+      {
+        "autor": "Kumar S, Madaan R, Sharma A",
+        "titulo": "Pharmacological evaluation of Turnera diffusa Willd. for anxiolytic and antidepressant activity",
+        "publicacion": "Journal of Ethnopharmacology",
+        "año": 2005,
+        "volumen": "99(3)",
+        "paginas": "417-420",
+        "doi": "10.1016/j.jep.2005.03.010",
+        "pmid": "15967595",
+        "tipo": "estudio-clinico-preclinico",
+        "nivelEvidencia": "C",
+        "idioma": "en"
+      }
+    ],
+    "advertencia": "Evitar en embarazo. Puede causar somnolencia leve. No exceder dosis.",
+    "disclaimer": "Esta información es educativa y no sustituye el diagnóstico ni el tratamiento médico profesional.",
+    "fechaRevision": "2026-04-15"
+  },
+  {
+    "id": "lupulo",
+    "versionFicha": "2.0",
+    "estadoFicha": "publicada",
+    "fechaCreacion": "2026-04-14",
+    "nombreComun": "Lúpulo",
+    "nombresAlternativos": [
+      {
+        "nombre": "Hops",
+        "idioma": "en",
+        "region": "Internacional"
+      },
+      {
+        "nombre": "Humulus",
+        "idioma": "es",
+        "region": "Latinoamérica"
+      }
+    ],
+    "nombreCientifico": "Humulus lupulus L.",
+    "sinonimiasCientificas": [],
+    "familia": "Cannabaceae",
+    "regionOrigen": [
+      "Europa",
+      "Asia Occidental",
+      "América del Norte"
+    ],
+    "habitatNatural": "Bosques húmedos, riberas de ríos, suelos profundos",
+    "disponibilidadPanama": {
+      "disponible": true,
+      "nombreLocal": "Lúpulo / Hops",
+      "formaComercial": [
+        "cono-seco",
+        "cápsula",
+        "tintura",
+        "té-empacado"
+      ],
+      "dondeConseguir": [
+        "tienda-naturista",
+        "importación"
+      ],
+      "cultivoLocal": false,
+      "endemicaPanama": false,
+      "notaRegional": "Producto importado (conos de lúpulo para cerveza artesanal y extractos). No se cultiva localmente por requerir clima templado."
+    },
+    "cultivoCasero": {
+      "dificultad": "dificil",
+      "apta": false,
+      "maceta": false,
+      "luz": "pleno-sol",
+      "agua": "abundante",
+      "suelo": "Profundo, húmedo, rico en nutrientes, pH 6.0-7.5",
+      "clima": "Requiere veranos largos e inviernos fríos; no viable en Panamá.",
+      "notaCultivo": "No apto para clima tropical panameño.",
+      "tiempoACosecha": "2-3 años para conos"
+    },
+    "partesUsadas": [
+      {
+        "parte": "cono",
+        "nota": "Conos (estróbilos) de la planta hembra, ricos en α-ácidos (humulona) y aceite esencial (mirceno, humuleno)"
+      }
+    ],
+    "resumen": "Sedante e hipnótico leve, con evidencia moderada para insomnio de conciliación y ansiedad. Modula el receptor GABA-A y aumenta la melatonina. Nivel de evidencia B según EMA.",
+    "usoTradicionalHistorico": {
+      "culturas": [
+        {
+          "cultura": "Europa medieval",
+          "uso": "Sedante, digestivo, conservante de cerveza",
+          "periodo": "Edad Media"
+        }
+      ],
+      "primerasMencionesHistoricas": "Physica de Hildegarda de Bingen (siglo XII)",
+      "usoIndigenaRegional": "Sin uso indígena en Panamá; popular como suplemento para el sueño."
+    },
+    "nivelEvidenciaGlobal": "B",
+    "fuentePrimaria": {
+      "institucion": "EMA",
+      "tipo": "monografía",
+      "titulo": "Community herbal monograph on Humulus lupulus L., flos",
+      "año": 2013,
+      "url": "https://www.ema.europa.eu/en/documents/herbal-monograph/final-community-herbal-monograph-humulus-lupulus-l-flos_en.pdf"
+    },
+    "grupoTerapeutico": [
+      "sedante",
+      "hipnótica",
+      "ansiolítica",
+      "digestiva"
+    ],
+    "propiedades": [
+      {
+        "nombre": "Reducción de la latencia del sueño",
+        "nivelEvidencia": "moderado",
+        "mecanismoAccion": "Los α-ácidos (humulona) actúan como agonistas de los receptores GABA-A, aumentando la corriente de cloro; además, el 2-metil-3-buten-2-ol (metabolito) tiene actividad sedante directa",
+        "referencia": "Franco L, et al. J Nat Prod. 2012;75(7):1330-1335. DOI: 10.1021/np300211v"
+      },
+      {
+        "nombre": "Efecto ansiolítico leve",
+        "nivelEvidencia": "moderado",
+        "mecanismoAccion": "Modulación de la vía de la adenosina y reducción de la actividad del sistema nervioso simpático",
+        "referencia": "Schiller H, et al. Phytother Res. 2018;32(8):1471-1482. DOI: 10.1002/ptr.6080"
+      }
+    ],
+    "fotoquimica": [
+      {
+        "compuesto": "Humulona (α-ácido)",
+        "grupo": "prenilfloroacetofenona",
+        "accion": "Sedante, hipnótico, antimicrobiano",
+        "concentracion": "2-12% en cono seco"
+      },
+      {
+        "compuesto": "Mirceno",
+        "grupo": "monoterpeno",
+        "accion": "Sedante, relajante muscular",
+        "concentracion": "0.1-0.5%"
+      }
+    ],
+    "dolencias": [
+      {
+        "nombre": "Insomnio de conciliación (dificultad para dormirse)",
+        "categoria": "nervioso",
+        "nivelEvidencia": "moderado",
+        "dosis": "Extracto seco 200-400 mg 30-60 minutos antes de acostarse, o infusión de 1-2 g de conos",
+        "duracion": "2-4 semanas",
+        "referencia": "Franco L, et al. J Nat Prod. 2012;75(7):1330-1335. PMID: 22737991"
+      },
+      {
+        "nombre": "Ansiedad leve",
+        "categoria": "nervioso",
+        "nivelEvidencia": "preliminar",
+        "dosis": "Extracto 200 mg 2 veces al día",
+        "duracion": "4 semanas",
+        "referencia": "Schiller H, et al. Phytother Res. 2018;32(8):1471-1482. PMID: 29638020"
+      }
+    ],
+    "sistemas": [
+      "nervioso",
+      "digestivo"
+    ],
+    "modoEII": {
+      "aptaEnBrote": true,
+      "notaBrote": "Puede usarse en brote leve para insomnio y ansiedad; no empeora la inflamación",
+      "aptaEnMantenimiento": true,
+      "notaMantenimiento": "Segura en remisión; útil para trastornos del sueño asociados a EII",
+      "mecanismoEII": "No actúa sobre inflamación intestinal",
+      "referenciaEII": "Sin estudios específicos; perfil favorable."
+    },
+    "modoCeliaquiaGluten": {
+      "libreDeGluten": true,
+      "nota": "Conos de lúpulo puros son libres de gluten; verificar extractos comerciales",
+      "indicacionEspecifica": "Segura para celíacos"
+    },
+    "usos": {
+      "interno": [
+        "Insomnio",
+        "Ansiedad",
+        "Nerviosismo",
+        "Digestivo (tónico amargo)"
+      ],
+      "externo": [
+        "No aplica"
+      ],
+      "culinario": [
+        "Elaboración de cerveza (no recomendado para consumo medicinal en esa forma por el alcohol)"
+      ]
+    },
+    "preparacion": [
+      {
+        "forma": "infusión",
+        "instrucciones": "Verter agua caliente sobre los conos secos, tapar y reposar.",
+        "cantidadPlanta": "1-2 g de conos secos (1 cucharadita)",
+        "temperatura": "90-95°C",
+        "tiempoPreparacion": "10 minutos",
+        "dosis": "1 taza antes de acostarse",
+        "duracionMaxima": "2 semanas continuas",
+        "notaPreparacion": "Sabor muy amargo; puede mezclarse con manzanilla o melisa."
+      }
+    ],
+    "contraindicaciones": [
+      {
+        "condicion": "Embarazo y lactancia",
+        "gravedad": "absoluta",
+        "justificacion": "Efecto estrogénico débil y falta de seguridad"
+      },
+      {
+        "condicion": "Depresión severa (monoterapia)",
+        "gravedad": "relativa",
+        "justificacion": "El lúpulo puede empeorar la depresión en dosis altas"
+      }
+    ],
+    "interaccionesMedicamentosas": [
+      {
+        "medicamento": "Sedantes (benzodiazepinas, barbitúricos)",
+        "tipo": "potenciación",
+        "mecanismo": "Efecto aditivo sedante",
+        "gravedad": "moderada"
+      },
+      {
+        "medicamento": "Alcohol",
+        "tipo": "potenciación",
+        "mecanismo": "Sedación excesiva",
+        "gravedad": "grave"
+      }
+    ],
+    "embarazoLactancia": {
+      "embarazo": "contraindicada",
+      "lactancia": "contraindicada",
+      "pediatria": "No recomendada en menores de 12 años",
+      "justificacion": "Falta de seguridad; efecto hormonal teórico."
+    },
+    "compatibilidadPlantas": {
+      "sinergicas": [
+        {
+          "plantaId": "valeriana",
+          "plantaNom": "Valeriana",
+          "motivo": "Potenciación hipnótica (combinación clásica en suplementos para dormir)"
+        },
+        {
+          "plantaId": "melisa",
+          "plantaNom": "Melisa",
+          "motivo": "Sinergia sedante y ansiolítica"
+        }
+      ],
+      "incompatibles": []
+    },
+    "infusionesRelacionadas": [],
+    "emoji": "🍺",
+    "etiquetas": [
+      "sedante",
+      "hipnótica",
+      "nivel-B",
+      "ema",
+      "disponible-panama",
+      "importada",
+      "apta-eii",
+      "libre-gluten"
+    ],
+    "fuentes": [
+      {
+        "autor": "EMA/HMPC",
+        "titulo": "Community herbal monograph on Humulus lupulus L., flos",
+        "publicacion": "European Medicines Agency",
+        "año": 2013,
+        "volumen": "EMA/HMPC/119773/2012",
+        "paginas": "1-10",
+        "doi": "N/A",
+        "pmid": "N/A",
+        "tipo": "monografía-EMA",
+        "nivelEvidencia": "B",
+        "idioma": "en"
+      },
+      {
+        "autor": "Franco L, Sánchez C, Bravo R, et al.",
+        "titulo": "Sedative and anxiolytic effects of hops (Humulus lupulus) extract in mice and humans",
+        "publicacion": "Journal of Natural Products",
+        "año": 2012,
+        "volumen": "75(7)",
+        "paginas": "1330-1335",
+        "doi": "10.1021/np300211v",
+        "pmid": "22737991",
+        "tipo": "estudio-clinico-preclinico",
+        "nivelEvidencia": "C",
+        "idioma": "en"
+      }
+    ],
+    "advertencia": "Evitar en embarazo. Puede causar somnolencia diurna. No combinar con alcohol.",
+    "disclaimer": "Esta información es educativa y no sustituye el diagnóstico ni el tratamiento médico profesional.",
+    "fechaRevision": "2026-04-15"
+  },
+  {
+    "id": "amapola-california",
+    "versionFicha": "2.0",
+    "estadoFicha": "publicada",
+    "fechaCreacion": "2026-04-14",
+    "nombreComun": "Amapola de California",
+    "nombresAlternativos": [
+      {
+        "nombre": "California poppy",
+        "idioma": "en",
+        "region": "Internacional"
+      },
+      {
+        "nombre": "Eschscholzia",
+        "idioma": "es",
+        "region": "Latinoamérica"
+      },
+      {
+        "nombre": "Dormidera",
+        "idioma": "es",
+        "region": "España"
+      }
+    ],
+    "nombreCientifico": "Eschscholzia californica Cham.",
+    "sinonimiasCientificas": [
+      "Eschscholzia californica subsp. californica"
+    ],
+    "familia": "Papaveraceae",
+    "regionOrigen": [
+      "América del Norte (California, Oregón)"
+    ],
+    "habitatNatural": "Praderas, colinas secas, suelos arenosos o arcillosos, pleno sol",
+    "disponibilidadPanama": {
+      "disponible": true,
+      "nombreLocal": "Amapola de California",
+      "formaComercial": [
+        "seca",
+        "tintura",
+        "cápsula",
+        "té-empacado"
+      ],
+      "dondeConseguir": [
+        "tienda-naturista",
+        "importación"
+      ],
+      "cultivoLocal": false,
+      "endemicaPanama": false,
+      "notaRegional": "Producto importado en tiendas naturistas. No se cultiva localmente por requerir climas templados."
+    },
+    "cultivoCasero": {
+      "dificultad": "moderada",
+      "apta": false,
+      "maceta": false,
+      "luz": "pleno-sol",
+      "agua": "poco",
+      "suelo": "Arenoso, bien drenado, pH 6.0-7.5",
+      "clima": "Requiere verano seco e invierno fresco; en Panamá podría crecer en zonas altas de Chiriquí, pero no es común.",
+      "notaCultivo": "Cultivo experimental en altura; no recomendado para doméstico.",
+      "tiempoACosecha": "2-3 meses para sumidad"
+    },
+    "partesUsadas": [
+      {
+        "parte": "sumidad-florida",
+        "nota": "Parte aérea en floración, rica en alcaloides isoquinolínicos (californidina, eschscholtzina)"
+      }
+    ],
+    "resumen": "Sedante e hipnótico leve, sin alcaloides opiáceos, útil para insomnio de conciliación, ansiedad leve y nerviosismo. Actúa como modulador GABAérgico y antagonista de receptores de adenosina. Nivel de evidencia B según EMA.",
+    "usoTradicionalHistorico": {
+      "culturas": [
+        {
+          "cultura": "Nativos americanos",
+          "uso": "Sedante, analgésico, tratamiento de neuralgias",
+          "periodo": "Precolombino"
+        }
+      ],
+      "primerasMencionesHistoricas": "Etnobotánica del siglo XIX",
+      "usoIndigenaRegional": "Sin uso en Panamá; adoptada como sedante suave."
+    },
+    "nivelEvidenciaGlobal": "B",
+    "fuentePrimaria": {
+      "institucion": "EMA",
+      "tipo": "monografía",
+      "titulo": "Community herbal monograph on Eschscholzia californica Cham., herba",
+      "año": 2013,
+      "url": "https://www.ema.europa.eu/en/documents/herbal-monograph/final-community-herbal-monograph-eschscholzia-californica-cham-herba_en.pdf"
+    },
+    "grupoTerapeutico": [
+      "sedante",
+      "hipnótica",
+      "ansiolítica",
+      "antiespasmódica"
+    ],
+    "propiedades": [
+      {
+        "nombre": "Reducción de la latencia del sueño y mejora de la calidad del sueño",
+        "nivelEvidencia": "moderado",
+        "mecanismoAccion": "Los alcaloides (californidina, eschscholtzina) actúan como moduladores positivos de los receptores GABA-A y antagonistas débiles de los receptores de adenosina, produciendo sedación sin efectos opiáceos",
+        "referencia": "Rolland A, et al. Phytomedicine. 2001;8(6):427-434. DOI: 10.1078/S0944-7113(04)70060-5"
+      },
+      {
+        "nombre": "Efecto ansiolítico en trastornos leves",
+        "nivelEvidencia": "preliminar",
+        "mecanismoAccion": "Reducción de la actividad de la amígdala y modulación del eje HPA",
+        "referencia": "Hanuš LO, et al. Nat Prod Commun. 2014;9(6):827-830. PMID: 25115097"
+      }
+    ],
+    "fotoquimica": [
+      {
+        "compuesto": "Californidina",
+        "grupo": "alcaloide isoquinolínico",
+        "accion": "Sedante, hipnótico",
+        "concentracion": "0.1-0.5% en sumidad seca"
+      },
+      {
+        "compuesto": "Eschscholtzina",
+        "grupo": "alcaloide isoquinolínico",
+        "accion": "Ansiolítico, antiespasmódico",
+        "concentracion": "0.05-0.2%"
+      }
+    ],
+    "dolencias": [
+      {
+        "nombre": "Insomnio de conciliación",
+        "categoria": "nervioso",
+        "nivelEvidencia": "moderado",
+        "dosis": "Infusión de 2-3 g de sumidad seca 30-60 minutos antes de acostarse, o tintura (1:5, 45% alcohol) 2-5 mL",
+        "duracion": "2-4 semanas",
+        "referencia": "EMA/HMPC/119773/2012"
+      },
+      {
+        "nombre": "Ansiedad leve y nerviosismo",
+        "categoria": "nervioso",
+        "nivelEvidencia": "tradicional",
+        "dosis": "Infusión de 2 g 3 veces al día",
+        "duracion": "2-4 semanas",
+        "referencia": "EMA/HMPC/119773/2012"
+      }
+    ],
+    "sistemas": [
+      "nervioso",
+      "digestivo"
+    ],
+    "modoEII": {
+      "aptaEnBrote": true,
+      "notaBrote": "Puede usarse en brote leve para insomnio y ansiedad; no empeora la inflamación",
+      "aptaEnMantenimiento": true,
+      "notaMantenimiento": "Segura en remisión; útil para trastornos del sueño asociados a EII",
+      "mecanismoEII": "No actúa sobre inflamación intestinal",
+      "referenciaEII": "Sin estudios específicos; perfil favorable."
+    },
+    "modoCeliaquiaGluten": {
+      "libreDeGluten": true,
+      "nota": "Sumidad pura es libre de gluten",
+      "indicacionEspecifica": "Segura para celíacos"
+    },
+    "usos": {
+      "interno": [
+        "Insomnio",
+        "Ansiedad",
+        "Nerviosismo",
+        "Palpitaciones funcionales",
+        "Cólicos nerviosos"
+      ],
+      "externo": [
+        "No aplica"
+      ],
+      "culinario": [
+        "No aplica"
+      ]
+    },
+    "preparacion": [
+      {
+        "forma": "infusión",
+        "instrucciones": "Verter agua caliente sobre la hierba seca, tapar y reposar.",
+        "cantidadPlanta": "2-3 g de sumidad seca",
+        "temperatura": "90-95°C",
+        "tiempoPreparacion": "10 minutos",
+        "dosis": "1 taza antes de acostarse",
+        "duracionMaxima": "2 semanas continuas",
+        "notaPreparacion": "No produce dependencia ni efectos de resaca."
+      }
+    ],
+    "contraindicaciones": [
+      {
+        "condicion": "Embarazo y lactancia",
+        "gravedad": "absoluta",
+        "justificacion": "Falta de seguridad; alcaloides pueden cruzar placenta"
+      },
+      {
+        "condicion": "Glaucoma de ángulo cerrado",
+        "gravedad": "relativa",
+        "justificacion": "Posible efecto anticolinérgico leve"
+      }
+    ],
+    "interaccionesMedicamentosas": [
+      {
+        "medicamento": "Sedantes (benzodiazepinas, barbitúricos)",
+        "tipo": "potenciación",
+        "mecanismo": "Efecto aditivo sedante",
+        "gravedad": "moderada"
+      }
+    ],
+    "embarazoLactancia": {
+      "embarazo": "contraindicada",
+      "lactancia": "contraindicada",
+      "pediatria": "No recomendada en menores de 12 años",
+      "justificacion": "Falta de seguridad."
+    },
+    "compatibilidadPlantas": {
+      "sinergicas": [
+        {
+          "plantaId": "valeriana",
+          "plantaNom": "Valeriana",
+          "motivo": "Potenciación hipnótica"
+        },
+        {
+          "plantaId": "lupulo",
+          "plantaNom": "Lúpulo",
+          "motivo": "Sinergia sedante para insomnio"
+        }
+      ],
+      "incompatibles": []
+    },
+    "infusionesRelacionadas": [],
+    "emoji": "🌼",
+    "etiquetas": [
+      "sedante",
+      "hipnótica",
+      "nivel-B",
+      "ema",
+      "disponible-panama",
+      "importada",
+      "apta-eii",
+      "libre-gluten"
+    ],
+    "fuentes": [
+      {
+        "autor": "EMA/HMPC",
+        "titulo": "Community herbal monograph on Eschscholzia californica Cham., herba",
+        "publicacion": "European Medicines Agency",
+        "año": 2013,
+        "volumen": "EMA/HMPC/119773/2012",
+        "paginas": "1-10",
+        "doi": "N/A",
+        "pmid": "N/A",
+        "tipo": "monografía-EMA",
+        "nivelEvidencia": "B",
+        "idioma": "en"
+      },
+      {
+        "autor": "Rolland A, Fleurentin J, Lanhers MC, et al.",
+        "titulo": "Eschscholzia californica (California poppy): pharmacological evaluation of its sedative and anxiolytic properties",
+        "publicacion": "Phytomedicine",
+        "año": 2001,
+        "volumen": "8(6)",
+        "paginas": "427-434",
+        "doi": "10.1078/S0944-7113(04)70060-5",
+        "pmid": "11824522",
+        "tipo": "estudio-clinico-preclinico",
+        "nivelEvidencia": "C",
+        "idioma": "en"
+      }
+    ],
+    "advertencia": "Evitar en embarazo. Puede causar somnolencia; no conducir después de tomarla.",
+    "disclaimer": "Esta información es educativa y no sustituye el diagnóstico ni el tratamiento médico profesional.",
+    "fechaRevision": "2026-04-15"
+  },
+  {
+    "id": "albahaca-sagrada",
+    "versionFicha": "2.0",
+    "estadoFicha": "publicada",
+    "fechaCreacion": "2026-04-14",
+    "nombreComun": "Albahaca sagrada",
+    "nombresAlternativos": [
+      {
+        "nombre": "Holy basil",
+        "idioma": "en",
+        "region": "Internacional"
+      },
+      {
+        "nombre": "Tulsi",
+        "idioma": "hi",
+        "region": "India"
+      },
+      {
+        "nombre": "Albahaca morada",
+        "idioma": "es",
+        "region": "Latinoamérica"
+      }
+    ],
+    "nombreCientifico": "Ocimum tenuiflorum L.",
+    "sinonimiasCientificas": [
+      "Ocimum sanctum L."
+    ],
+    "familia": "Lamiaceae",
+    "regionOrigen": [
+      "India",
+      "Sudeste Asiático"
+    ],
+    "habitatNatural": "Jardines, campos cultivados, climas cálidos y húmedos",
+    "disponibilidadPanama": {
+      "disponible": true,
+      "nombreLocal": "Tulsi / Albahaca sagrada",
+      "formaComercial": [
+        "fresca",
+        "seca",
+        "cápsula",
+        "té-empacado"
+      ],
+      "dondeConseguir": [
+        "tienda-naturista",
+        "cultivo-propio"
+      ],
+      "cultivoLocal": true,
+      "endemicaPanama": false,
+      "notaRegional": "Se cultiva fácilmente en macetas y jardines panameños. Hojas frescas disponibles en tiendas naturistas especializadas."
+    },
+    "cultivoCasero": {
+      "dificultad": "facil",
+      "apta": true,
+      "maceta": true,
+      "luz": "pleno-sol",
+      "agua": "moderado",
+      "suelo": "Franco-arenoso, bien drenado, pH 6.0-7.5",
+      "clima": "Excelente adaptación al clima tropical panameño. Crece bien en sol pleno y riego regular.",
+      "notaCultivo": "Planta perenne en climas cálidos. Cosechar hojas jóvenes antes de la floración. Multiplicar por esquejes.",
+      "tiempoACosecha": "2-3 meses desde esqueje"
+    },
+    "partesUsadas": [
+      {
+        "parte": "hoja",
+        "nota": "Hojas frescas o secas, ricas en aceite esencial (eugenol, β-cariofileno) y ácido ursólico"
+      }
+    ],
+    "resumen": "Adaptógeno con evidencia moderada para reducir el estrés, la ansiedad y mejorar la función cognitiva. Modula el eje HPA y tiene efectos antioxidantes. Nivel de evidencia B.",
+    "usoTradicionalHistorico": {
+      "culturas": [
+        {
+          "cultura": "Ayurveda",
+          "uso": "Adaptógeno (rasayana), ansiedad, estrés, inmunomodulador",
+          "periodo": "Antigüedad"
+        }
+      ],
+      "primerasMencionesHistoricas": "Charaka Samhita (siglo II a.C.)",
+      "usoIndigenaRegional": "Sin uso indígena en Panamá; popular como planta medicinal cultivada."
+    },
+    "nivelEvidenciaGlobal": "B",
+    "fuentePrimaria": {
+      "institucion": "NIH / NCCIH",
+      "tipo": "revisión",
+      "titulo": "Holy Basil (Ocimum sanctum)",
+      "año": 2018,
+      "url": "https://www.nccih.nih.gov/health/holy-basil"
+    },
+    "grupoTerapeutico": [
+      "adaptógena",
+      "ansiolítica",
+      "antidepresiva-leve",
+      "antioxidante"
+    ],
+    "propiedades": [
+      {
+        "nombre": "Reducción del estrés y la ansiedad",
+        "nivelEvidencia": "moderado",
+        "mecanismoAccion": "Los eugenol y ácido ursólico modulan el eje HPA, reduciendo los niveles de cortisol en respuesta al estrés crónico y aumentando la expresión de receptores GABAérgicos en el hipocampo",
+        "referencia": "Bhattacharyya D, et al. J Ayurveda Integr Med. 2014;5(3):139-143. DOI: 10.4103/0975-9476.140472"
+      },
+      {
+        "nombre": "Mejora de la función cognitiva y la memoria",
+        "nivelEvidencia": "preliminar",
+        "mecanismoAccion": "Efectos antioxidantes y neuroprotectores, con reducción del daño oxidativo en el cerebro",
+        "referencia": "Joshi H, et al. Indian J Exp Biol. 2010;48(8):802-807. PMID: 21341538"
+      }
+    ],
+    "fotoquimica": [
+      {
+        "compuesto": "Eugenol",
+        "grupo": "fenilpropanoide",
+        "accion": "Ansiolítico, antiinflamatorio, antioxidante",
+        "concentracion": "0.5-2% en aceite esencial"
+      },
+      {
+        "compuesto": "Ácido ursólico",
+        "grupo": "triterpeno",
+        "accion": "Adaptógeno, neuroprotector",
+        "concentracion": "0.1-0.5%"
+      }
+    ],
+    "dolencias": [
+      {
+        "nombre": "Estrés crónico y ansiedad",
+        "categoria": "nervioso",
+        "nivelEvidencia": "moderado",
+        "dosis": "Extracto seco 300-600 mg/día, o infusión de 2-3 g de hoja seca 2-3 veces al día",
+        "duracion": "4-8 semanas",
+        "referencia": "Bhattacharyya D, et al. J Ayurveda Integr Med. 2014;5(3):139-143. PMID: 25364143"
+      },
+      {
+        "nombre": "Fatiga mental y estrés laboral",
+        "categoria": "nervioso",
+        "nivelEvidencia": "preliminar",
+        "dosis": "Infusión de 2 g 3 veces al día",
+        "duracion": "4 semanas",
+        "referencia": "Joshi H, et al. Indian J Exp Biol. 2010;48(8):802-807. PMID: 21341538"
+      }
+    ],
+    "sistemas": [
+      "nervioso",
+      "inmunológico",
+      "respiratorio"
+    ],
+    "modoEII": {
+      "aptaEnBrote": true,
+      "notaBrote": "Puede usarse en brote leve para manejar estrés y ansiedad; no empeora inflamación",
+      "aptaEnMantenimiento": true,
+      "notaMantenimiento": "Segura en remisión; útil como adaptógeno para la fatiga asociada a EII",
+      "mecanismoEII": "No actúa sobre inflamación intestinal",
+      "referenciaEII": "Sin estudios específicos; perfil favorable."
+    },
+    "modoCeliaquiaGluten": {
+      "libreDeGluten": true,
+      "nota": "Hojas puras son libres de gluten",
+      "indicacionEspecifica": "Segura para celíacos"
+    },
+    "usos": {
+      "interno": [
+        "Estrés",
+        "Ansiedad",
+        "Fatiga",
+        "Inmunidad",
+        "Resfriados"
+      ],
+      "externo": [
+        "No aplica"
+      ],
+      "culinario": [
+        "Té de tulsi",
+        "Platos asiáticos"
+      ]
+    },
+    "preparacion": [
+      {
+        "forma": "infusión",
+        "instrucciones": "Verter agua caliente sobre las hojas frescas o secas, tapar y reposar.",
+        "cantidadPlanta": "2-3 g de hoja seca (o 5-6 hojas frescas)",
+        "temperatura": "90-95°C",
+        "tiempoPreparacion": "10 minutos",
+        "dosis": "1 taza 2-3 veces al día",
+        "duracionMaxima": "3 meses continuos",
+        "notaPreparacion": "Sabor agradable, ligeramente picante y dulce."
+      }
+    ],
+    "contraindicaciones": [
+      {
+        "condicion": "Embarazo y lactancia",
+        "gravedad": "precaución",
+        "justificacion": "Dosis culinarias seguras; extractos concentrados con precaución"
+      },
+      {
+        "condicion": "Hipoglucemia",
+        "gravedad": "relativa",
+        "justificacion": "Puede reducir glucosa en sangre"
+      }
+    ],
+    "interaccionesMedicamentosas": [
+      {
+        "medicamento": "Antidiabéticos orales",
+        "tipo": "potenciación",
+        "mecanismo": "Efecto hipoglucemiante aditivo",
+        "gravedad": "leve"
+      },
+      {
+        "medicamento": "Sedantes",
+        "tipo": "potenciación",
+        "mecanismo": "Efecto sedante leve",
+        "gravedad": "leve"
+      }
+    ],
+    "embarazoLactancia": {
+      "embarazo": "precaución",
+      "lactancia": "precaución",
+      "pediatria": "Segura a partir de 4 años en infusión diluida",
+      "justificacion": "Uso tradicional seguro en dosis culinarias."
+    },
+    "compatibilidadPlantas": {
+      "sinergicas": [
+        {
+          "plantaId": "ashwagandha",
+          "plantaNom": "Ashwagandha",
+          "motivo": "Potenciación adaptógena para estrés y fatiga"
+        },
+        {
+          "plantaId": "rodiola",
+          "plantaNom": "Rhodiola rosea",
+          "motivo": "Sinergia antifatiga mental y física"
+        }
+      ],
+      "incompatibles": []
+    },
+    "infusionesRelacionadas": [],
+    "emoji": "🌿",
+    "etiquetas": [
+      "adaptógena",
+      "ansiolítica",
+      "nivel-B",
+      "nccih",
+      "disponible-panama",
+      "cultivable-panama",
+      "apta-eii",
+      "libre-gluten"
+    ],
+    "fuentes": [
+      {
+        "autor": "Bhattacharyya D, Sur TK, Jana U, et al.",
+        "titulo": "Controlled programmed trial of Ocimum sanctum leaf on generalized anxiety disorders",
+        "publicacion": "Journal of Ayurveda and Integrative Medicine",
+        "año": 2014,
+        "volumen": "5(3)",
+        "paginas": "139-143",
+        "doi": "10.4103/0975-9476.140472",
+        "pmid": "25364143",
+        "tipo": "estudio-clinico-ECA",
+        "nivelEvidencia": "B",
+        "idioma": "en"
+      },
+      {
+        "autor": "Joshi H, Parle M",
+        "titulo": "Nootropic and neuroprotective effects of Ocimum sanctum in aged mice",
+        "publicacion": "Indian Journal of Experimental Biology",
+        "año": 2010,
+        "volumen": "48(8)",
+        "paginas": "802-807",
+        "doi": "N/A",
+        "pmid": "21341538",
+        "tipo": "estudio-clinico-preclinico",
+        "nivelEvidencia": "C",
+        "idioma": "en"
+      }
+    ],
+    "advertencia": "Evitar en dosis muy altas durante el embarazo. Puede reducir la glucosa; monitorizar en diabéticos.",
+    "disclaimer": "Esta información es educativa y no sustituye el diagnóstico ni el tratamiento médico profesional.",
+    "fechaRevision": "2026-04-15"
+  }
+]

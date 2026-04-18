@@ -1,0 +1,313 @@
+{
+  "id": "centella-asiatica",
+  "versionFicha": "2.0",
+  "estadoFicha": "publicada",
+  "fechaCreacion": "2026-04-15",
+  "fechaRevision": "2026-04-15",
+  "nombreComun": "Centella asiática",
+  "nombresAlternativos": [
+    {
+      "nombre": "Gotu kola",
+      "idioma": "en",
+      "region": "Asia"
+    },
+    {
+      "nombre": "Hierba del tigre",
+      "idioma": "es",
+      "region": "Asia"
+    },
+    {
+      "nombre": "Brahmi",
+      "idioma": "hi",
+      "region": "India (también nombre de Bacopa)"
+    }
+  ],
+  "nombreCientifico": "Centella asiatica (L.) Urb.",
+  "sinonimiasCientificas": [
+    "Hydrocotyle asiatica L.",
+    "Trisanthus cochinchinensis Lour."
+  ],
+  "familia": "Apiaceae",
+  "orden": "Apiales",
+  "clase": "Magnoliopsida",
+  "regionOrigen": [
+    "Asia tropical",
+    "Océano Índico",
+    "África"
+  ],
+  "habitatNatural": "Zonas húmedas, pantanos, bordes de caminos y suelos ricos en trópicos y subtrópicos",
+  "disponibilidadPanama": {
+    "disponible": true,
+    "nombreLocal": "Centella asiática / Gotu kola",
+    "formaComercial": [
+      "cápsula",
+      "té-empacado",
+      "extracto",
+      "crema-tópica"
+    ],
+    "dondeConseguir": [
+      "tienda-naturista",
+      "farmacia",
+      "importación"
+    ],
+    "cultivoLocal": true,
+    "endemicaPanama": false,
+    "notaRegional": "Suplemento importado disponible en tiendas naturistas. Cultivable en zonas húmedas de Panamá. La crema de centella es popular en farmacias para cicatrices y estrías."
+  },
+  "cultivoCasero": {
+    "dificultad": "facil",
+    "apta": true,
+    "maceta": true,
+    "luz": "semisombra",
+    "agua": "abundante",
+    "suelo": "Húmedo y rico en humus, tolera encharcamiento parcial",
+    "clima": "Excelente adaptación al clima tropical panameño húmedo. Crece vigorosamente.",
+    "notaCultivo": "Cubierta vegetal rastrera. Mantener humedad constante. Propagar por estolones. Cosechar hojas maduras regularmente.",
+    "tiempoACosecha": "Continuo desde 2-3 meses"
+  },
+  "partesUsadas": [
+    {
+      "parte": "parte-aérea",
+      "nota": "Herba seca o fresca. Para uso interno: extracto titulado (TECA: extracto titulado de centella asiática). Para uso externo: crema o gel con asiaticósidos."
+    }
+  ],
+  "resumen": "Centella asiatica es la planta venotónica y cicatrizante más usada en fitoterapia. Los asiaticósidos estimulan la síntesis de colágeno tipo I y III, mejoran la microcirculación y reducen la inflamación. La EMA avala su uso en insuficiencia venosa crónica y cicatrización. Adicionalmente tiene efectos ansiolíticos documentados.",
+  "usoTradicionalHistorico": {
+    "culturas": [
+      {
+        "cultura": "Ayurveda y Medicina Tradicional China",
+        "uso": "Cicatrizante, venotónica, tónico cerebral y longevidad",
+        "periodo": "Más de 3000 años"
+      },
+      {
+        "cultura": "Medicina popular africana",
+        "uso": "Heridas y lepra",
+        "periodo": "Tradicional"
+      }
+    ],
+    "primerasMencionesHistoricas": "Sushruta Samhita (~600 a.C.). Descrita por Dioscórides (siglo I d.C.) como Hydrocotyle.",
+    "usoIndigenaRegional": "No tradicional en Panamá. Cultivable y creciente en fitoterapia moderna panameña."
+  },
+  "nivelEvidenciaGlobal": "B",
+  "fuentePrimaria": {
+    "institucion": "EMA",
+    "tipo": "monografía",
+    "titulo": "European Union herbal monograph on Centella asiatica (L.) Urb., herba. EMA/HMPC/489142/2020 (Revision 1)",
+    "año": 2022,
+    "url": "https://www.ema.europa.eu/en/documents/herbal-monograph/european-union-herbal-monograph-centella-asiatica-l-urb-herba-revision-1_en.pdf"
+  },
+  "grupoTerapeutico": [
+    "venotónica",
+    "cicatrizante",
+    "nootrópica",
+    "ansiolítica"
+  ],
+  "propiedades": [
+    {
+      "nombre": "Venotónica y mejora microcirculación",
+      "nivelEvidencia": "fuerte",
+      "mecanismoAccion": "Asiaticósidos y madecassósidos estimulan síntesis de colágeno tipo I y III en fibroblastos, refuerzan paredes venosas, reducen permeabilidad capilar e inhiben metaloproteinasas (MMPs) que degradan la matriz extracelular.",
+      "referencia": "EMA/HMPC/489142/2020"
+    },
+    {
+      "nombre": "Ansiolítica",
+      "nivelEvidencia": "moderado",
+      "mecanismoAccion": "Asiaticósidos modulan receptores GABA-A (similar a benzodiacepinas pero sin dependencia) y reducen el reflejo de sobresalto acústico mediado por amígdala.",
+      "referencia": "Bradwejn J et al. J Clin Psychiatry. 2000;61(6):454-457. PMID: 10832498"
+    },
+    {
+      "nombre": "Cicatrizante y regeneradora",
+      "nivelEvidencia": "fuerte",
+      "mecanismoAccion": "Estimulación directa de fibroblastos para producción de colágeno y fibronectina. Aumento de angiogénesis local. Reducción de inflamación en la herida.",
+      "referencia": "EMA/HMPC/489142/2020"
+    }
+  ],
+  "fotoquimica": [
+    {
+      "compuesto": "Asiaticósido",
+      "grupo": "triterpenoide saponina",
+      "accion": "Estimulador de colágeno, cicatrizante",
+      "concentracion": "Hasta 40% en extracto TECA"
+    },
+    {
+      "compuesto": "Madecassósido",
+      "grupo": "triterpenoide saponina",
+      "accion": "Antiinflamatorio, cicatrizante complementario",
+      "concentracion": "Incluido en TECA"
+    },
+    {
+      "compuesto": "Ácido asiático y ácido madecásico",
+      "grupo": "triterpenoide",
+      "accion": "Antiinflamatorio, inhibidor de MMPs",
+      "concentracion": "Variable en herba seca"
+    }
+  ],
+  "dolencias": [
+    {
+      "nombre": "Insuficiencia venosa crónica (varices, piernas pesadas)",
+      "categoria": "cardiovascular",
+      "nivelEvidencia": "fuerte",
+      "dosis": "60-180 mg/día de extracto TECA titulado",
+      "duracion": "4-8 semanas",
+      "referencia": "EMA/HMPC/489142/2020"
+    },
+    {
+      "nombre": "Cicatrización de heridas y estrías (uso externo)",
+      "categoria": "dermatológico",
+      "nivelEvidencia": "fuerte",
+      "dosis": "Crema o gel con 1% asiaticósidos. Aplicar 2-3 veces/día.",
+      "duracion": "Hasta cicatrización completa",
+      "referencia": "EMA/HMPC/489142/2020"
+    },
+    {
+      "nombre": "Ansiedad generalizada leve",
+      "categoria": "nervioso",
+      "nivelEvidencia": "moderado",
+      "dosis": "300-680 mg de extracto estandarizado",
+      "duracion": "2-4 semanas",
+      "referencia": "Bradwejn J et al. PMID: 10832498"
+    }
+  ],
+  "sistemas": [
+    "nervioso",
+    "dermatológico",
+    "cardiovascular"
+  ],
+  "modoEII": {
+    "aptaEnBrote": false,
+    "notaBrote": "Sin indicación en brote activo. No interfiere negativamente.",
+    "aptaEnMantenimiento": true,
+    "notaMantenimiento": "Puede ser beneficiosa en remisión para mejorar integridad de la mucosa intestinal (síntesis de colágeno) y reducir la ansiedad asociada a la EII crónica.",
+    "mecanismoEII": "La estimulación de síntesis de colágeno podría favorecer la reparación de la mucosa intestinal dañada. El efecto ansiolítico reduce el componente de estrés.",
+    "referenciaEII": "Sin ECA específicos en EII"
+  },
+  "modoCeliaquiaGluten": {
+    "libreDeGluten": true,
+    "nota": "Libre de gluten. Verificar excipientes. Cremas tópicas: verificar.",
+    "indicacionEspecifica": "Segura en celiaquía. La estimulación de colágeno puede ayudar en la recuperación de la mucosa intestinal."
+  },
+  "usos": {
+    "interno": [
+      "Insuficiencia venosa",
+      "ansiedad leve",
+      "soporte cognitivo",
+      "cicatrización desde dentro"
+    ],
+    "externo": [
+      "Heridas y cicatrices",
+      "estrías",
+      "celulitis",
+      "varices (tópico complementario)"
+    ],
+    "culinario": [
+      "Hojas frescas en ensaladas y jugos en cocina asiática (Malaysia, Sri Lanka)"
+    ]
+  },
+  "preparacion": [
+    {
+      "forma": "extracto-seco",
+      "instrucciones": "Cápsulas de extracto TECA estandarizado. Tomar con alimentos.",
+      "cantidadPlanta": "60-90 mg por toma",
+      "dosis": "2-3 veces al día",
+      "duracionMaxima": "8 semanas continuas",
+      "notaPreparacion": "Para uso interno, preferir extracto TECA titulado (40% asiaticósido, 30% madecassósido, 30% ácidos libres)."
+    },
+    {
+      "forma": "cataplasma",
+      "instrucciones": "Crema o gel con 1% asiaticósidos. Aplicar sobre la zona limpia y seca. Cubrir si es herida abierta.",
+      "cantidadPlanta": "Crema 1% asiaticósidos",
+      "dosis": "2-3 aplicaciones/día",
+      "duracionMaxima": "Hasta cicatrización",
+      "notaPreparacion": "Para uso tópico en heridas, cicatrices y estrías. No aplicar en heridas infectadas sin evaluación médica."
+    }
+  ],
+  "contraindicaciones": [
+    {
+      "condicion": "Alergia a plantas de la familia Apiaceae (apio, zanahoria, perejil)",
+      "gravedad": "absoluta",
+      "justificacion": "Riesgo de reacción alérgica grave por sensibilización cruzada"
+    },
+    {
+      "condicion": "Hepatotoxicidad (uso prolongado en dosis altas)",
+      "gravedad": "relativa",
+      "justificacion": "Casos reportados de hepatotoxicidad con extractos no estandarizados en dosis altas. Controlar enzimas hepáticas."
+    }
+  ],
+  "interaccionesMedicamentosas": [
+    {
+      "medicamento": "Sedantes y ansiolíticos (benzodiacepinas)",
+      "tipo": "potenciación",
+      "mecanismo": "Efecto GABA-A aditivo",
+      "gravedad": "leve"
+    },
+    {
+      "medicamento": "Hepatotóxicos (paracetamol en dosis altas, estatinas)",
+      "tipo": "precaución",
+      "mecanismo": "Posible potenciación del daño hepático",
+      "gravedad": "leve"
+    }
+  ],
+  "embarazoLactancia": {
+    "embarazo": "precaución",
+    "lactancia": "precaución",
+    "pediatria": "No recomendado en menores de 18 años para uso interno. Uso tópico posible con precaución.",
+    "justificacion": "Datos insuficientes para uso sistémico en embarazo."
+  },
+  "compatibilidadPlantas": {
+    "sinergicas": [
+      {
+        "plantaId": "ginkgo-biloba",
+        "plantaNom": "Ginkgo biloba",
+        "motivo": "Sinergia circulatoria cerebral y periférica"
+      },
+      {
+        "plantaId": "bacopa-monnieri",
+        "plantaNom": "Bacopa monnieri",
+        "motivo": "Triple combinación nootrópica clásica ayurvédica"
+      }
+    ],
+    "incompatibles": []
+  },
+  "infusionesRelacionadas": [],
+  "emoji": "🌿",
+  "etiquetas": [
+    "venotonica",
+    "cicatrizante",
+    "ansiolítica",
+    "nervioso",
+    "cardiovascular",
+    "nivel-B",
+    "ema",
+    "cultivable-panama",
+    "libre-gluten",
+    "disponible-panama"
+  ],
+  "fuentes": [
+    {
+      "autor": "European Medicines Agency",
+      "titulo": "European Union herbal monograph on Centella asiatica (L.) Urb., herba. EMA/HMPC/489142/2020 Revision 1",
+      "publicacion": "EMA",
+      "año": 2022,
+      "doi": "",
+      "pmid": "",
+      "tipo": "monografía-EMA",
+      "nivelEvidencia": "B",
+      "idioma": "en"
+    },
+    {
+      "autor": "Bradwejn J, Zhou Y, Koszycki D, Shlik J",
+      "titulo": "A double-blind, placebo-controlled study on the effects of Gotu Kola (Centella asiatica) on acoustic startle response in healthy subjects",
+      "publicacion": "Journal of Clinical Psychiatry",
+      "año": 2000,
+      "volumen": "61(6)",
+      "paginas": "454-457",
+      "doi": "10.4088/JCP.v61n0608",
+      "pmid": "10832498",
+      "tipo": "estudio-clinico-ECA",
+      "nivelEvidencia": "B",
+      "idioma": "en"
+    }
+  ],
+  "advertencia": "Contraindicada en alergia a Apiaceae. Monitorizar función hepática en uso prolongado. No usar en embarazo.",
+  "disclaimer": "Esta información es educativa y no sustituye el diagnóstico ni el tratamiento médico profesional."
+}

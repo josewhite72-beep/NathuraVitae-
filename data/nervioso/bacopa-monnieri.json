@@ -1,0 +1,282 @@
+{
+  "id": "bacopa-monnieri",
+  "versionFicha": "2.0",
+  "estadoFicha": "publicada",
+  "fechaCreacion": "2026-04-15",
+  "fechaRevision": "2026-04-15",
+  "nombreComun": "Bacopa monnieri",
+  "nombresAlternativos": [
+    {
+      "nombre": "Brahmi",
+      "idioma": "en",
+      "region": "India"
+    },
+    {
+      "nombre": "Water hyssop",
+      "idioma": "en",
+      "region": "Internacional"
+    },
+    {
+      "nombre": "Hisopo de agua",
+      "idioma": "es",
+      "region": "Latinoamérica"
+    }
+  ],
+  "nombreCientifico": "Bacopa monnieri (L.) Wettst.",
+  "sinonimiasCientificas": [
+    "Herpestis monniera (L.) Kunth",
+    "Moniera monnieri (L.) A.Rich."
+  ],
+  "familia": "Plantaginaceae",
+  "orden": "Lamiales",
+  "clase": "Magnoliopsida",
+  "regionOrigen": [
+    "India",
+    "Asia tropical",
+    "Australia"
+  ],
+  "habitatNatural": "Zonas húmedas, pantanos, bordes de arrozales y suelos encharcados en climas tropicales",
+  "disponibilidadPanama": {
+    "disponible": true,
+    "nombreLocal": "Bacopa / Brahmi",
+    "formaComercial": [
+      "cápsula",
+      "extracto",
+      "polvo"
+    ],
+    "dondeConseguir": [
+      "tienda-naturista",
+      "importación"
+    ],
+    "cultivoLocal": true,
+    "endemicaPanama": false,
+    "notaRegional": "Suplemento importado disponible en tiendas naturistas. Cultivable en zonas húmedas y pantanosas de Panamá (Darién, Bocas del Toro, orillas de ríos). Planta acuática fácil de mantener en recipiente con agua."
+  },
+  "cultivoCasero": {
+    "dificultad": "facil",
+    "apta": true,
+    "maceta": true,
+    "luz": "semisombra",
+    "agua": "abundante",
+    "suelo": "Húmedo y rico en materia orgánica — tolera suelos encharcados",
+    "clima": "Excelente adaptación al clima tropical panameño húmedo. Crece bien en recipientes con agua.",
+    "notaCultivo": "Planta acuática o semiacuática. Mantener suelo constantemente húmedo o sumergida parcialmente. Cosechar partes aéreas. Fácil propagación por esquejes.",
+    "tiempoACosecha": "3-4 meses desde esqueje"
+  },
+  "partesUsadas": [
+    {
+      "parte": "parte-aérea",
+      "nota": "Herba seca estandarizada en bacosidos A+B (mínimo 20-55%)"
+    }
+  ],
+  "resumen": "Bacopa monnieri es el nootrópico ayurvédico mejor documentado científicamente. Los bacosidos mejoran memoria declarativa y velocidad de procesamiento cognitivo en adultos. Metaanálisis de ECA confirman eficacia a 12 semanas. Efecto ansiolítico adicional bien documentado.",
+  "usoTradicionalHistorico": {
+    "culturas": [
+      {
+        "cultura": "Ayurveda",
+        "uso": "Medhya Rasayana — rejuvenecedor de la mente. Mejora memoria, cognición y longevidad.",
+        "periodo": "Más de 3000 años"
+      }
+    ],
+    "primerasMencionesHistoricas": "Charaka Samhita (~300 d.C.) y Sushruta Samhita",
+    "usoIndigenaRegional": "No tradicional en Panamá. Introducido como suplemento nootrópico."
+  },
+  "nivelEvidenciaGlobal": "B",
+  "fuentePrimaria": {
+    "institucion": "PubMed — Revisión sistemática",
+    "tipo": "revision",
+    "titulo": "The cognitive-enhancing effects of Bacopa monnieri: a systematic review of randomized, controlled human clinical trials. J Altern Complement Med. 2012",
+    "año": 2012,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/22747190/"
+  },
+  "grupoTerapeutico": [
+    "nootrópica",
+    "ansiolítica",
+    "neuroprotectora",
+    "adaptógena"
+  ],
+  "propiedades": [
+    {
+      "nombre": "Mejora memoria y función cognitiva",
+      "nivelEvidencia": "fuerte",
+      "mecanismoAccion": "Bacosidos A y B modulan la actividad de quinasas neuronales (PKC), aumentan expresión de proteínas sinápticas (kinasina), inhiben acetilcolinesterasa e incrementan serotonina y dopamina en hipocampo. Reducen estrés oxidativo neuronal.",
+      "referencia": "Pase MP et al. J Altern Complement Med. 2012;18(7):647-652. DOI: 10.1089/acm.2011.0367. PMID: 22747190"
+    },
+    {
+      "nombre": "Ansiolítica",
+      "nivelEvidencia": "moderado",
+      "mecanismoAccion": "Modulación de receptores GABA-A y reducción de cortisol sérico en respuesta al estrés. Efecto comparado con lorazepam en modelos animales sin sedación.",
+      "referencia": "Bhattacharya SK, Ghosal S. Phytomedicine. 1998;5(2):77-82. DOI: 10.1016/S0944-7113(98)80001-9. PMID: 23195267"
+    }
+  ],
+  "fotoquimica": [
+    {
+      "compuesto": "Bacosido A",
+      "grupo": "triterpenoide saponina",
+      "accion": "Mejora transmisión sináptica, antioxidante neuronal",
+      "concentracion": "Hasta 55% en extracto estandarizado"
+    },
+    {
+      "compuesto": "Bacosido B",
+      "grupo": "triterpenoide saponina",
+      "accion": "Neuroprotector, modulador colinérgico",
+      "concentracion": "Incluido en fracción total de bacosidos"
+    },
+    {
+      "compuesto": "Bacosina",
+      "grupo": "triterpenoide",
+      "accion": "Anticonvulsivante leve, antioxidante",
+      "concentracion": "Variable"
+    }
+  ],
+  "dolencias": [
+    {
+      "nombre": "Mejora de memoria y aprendizaje en adultos",
+      "categoria": "nervioso",
+      "nivelEvidencia": "fuerte",
+      "dosis": "300-450 mg/día de extracto estandarizado (55% bacosidos)",
+      "duracion": "12 semanas mínimo",
+      "referencia": "Pase MP et al. DOI: 10.1089/acm.2011.0367. PMID: 22747190"
+    },
+    {
+      "nombre": "Ansiedad y estrés crónico",
+      "categoria": "nervioso",
+      "nivelEvidencia": "moderado",
+      "dosis": "300 mg/día",
+      "duracion": "8-12 semanas",
+      "referencia": "Bhattacharya SK et al. DOI: 10.1016/S0944-7113(98)80001-9. PMID: 23195267"
+    }
+  ],
+  "sistemas": [
+    "nervioso"
+  ],
+  "modoEII": {
+    "aptaEnBrote": false,
+    "notaBrote": "Sin datos específicos en EII. En brote activo priorizar medicación específica.",
+    "aptaEnMantenimiento": true,
+    "notaMantenimiento": "Puede usarse en remisión para soporte cognitivo. No interfiere con medicación EII habitual.",
+    "mecanismoEII": "Sin mecanismo directo sobre mucosa intestinal. Efecto ansiolítico puede ser beneficioso para reducir el componente de estrés que agrava la EII.",
+    "referenciaEII": "Sin estudios en EII"
+  },
+  "modoCeliaquiaGluten": {
+    "libreDeGluten": true,
+    "nota": "Libre de gluten. Verificar excipientes.",
+    "indicacionEspecifica": "Segura en celiaquía"
+  },
+  "usos": {
+    "interno": [
+      "Mejora de memoria",
+      "ansiedad y estrés",
+      "TDAH (coadyuvante)",
+      "epilepsia (coadyuvante)"
+    ],
+    "externo": [],
+    "culinario": [
+      "Hojas en ensaladas y sopas en cocina india (uso tradicional)"
+    ]
+  },
+  "preparacion": [
+    {
+      "forma": "extracto-seco",
+      "instrucciones": "Cápsulas de extracto estandarizado en bacosidos. Tomar con las comidas — mejora tolerancia digestiva.",
+      "cantidadPlanta": "300-450 mg de extracto",
+      "dosis": "1 vez al día con la comida principal",
+      "duracionMaxima": "12 semanas. Evaluar respuesta antes de continuar.",
+      "notaPreparacion": "El efecto cognitivo requiere al menos 4-6 semanas para manifestarse. Los primeros días puede haber náuseas leves — tomar siempre con comida."
+    }
+  ],
+  "contraindicaciones": [
+    {
+      "condicion": "Bradicardia o bloqueo cardíaco",
+      "gravedad": "precaución",
+      "justificacion": "Puede aumentar el tono colinérgico y reducir la frecuencia cardíaca"
+    },
+    {
+      "condicion": "Obstrucción intestinal",
+      "gravedad": "precaución",
+      "justificacion": "Puede aumentar motilidad gastrointestinal"
+    }
+  ],
+  "interaccionesMedicamentosas": [
+    {
+      "medicamento": "Anticolinérgicos (atropina, escopolamina)",
+      "tipo": "antagonismo",
+      "mecanismo": "La inhibición de acetilcolinesterasa antagoniza el efecto anticolinérgico",
+      "gravedad": "moderada"
+    },
+    {
+      "medicamento": "Sedantes y ansiolíticos",
+      "tipo": "potenciación",
+      "mecanismo": "Efecto ansiolítico aditivo",
+      "gravedad": "leve"
+    }
+  ],
+  "embarazoLactancia": {
+    "embarazo": "precaución",
+    "lactancia": "precaución",
+    "pediatria": "Uso en niños documentado en tradición ayurvédica pero sin ECA modernos. Precaución.",
+    "justificacion": "Datos insuficientes en embarazo y lactancia."
+  },
+  "compatibilidadPlantas": {
+    "sinergicas": [
+      {
+        "plantaId": "ginkgo-biloba",
+        "plantaNom": "Ginkgo biloba",
+        "motivo": "Sinergia cognitiva — ginkgo mejora circulación, bacopa mejora sinapsis"
+      },
+      {
+        "plantaId": "centella-asiatica",
+        "plantaNom": "Centella asiática",
+        "motivo": "Triple nootrópico: bacopa (memoria), centella (ansiedad/circulación), combinación clásica ayurvédica"
+      },
+      {
+        "plantaId": "ashwagandha",
+        "plantaNom": "Ashwagandha",
+        "motivo": "Sinergia adaptógena y ansiolítica"
+      }
+    ],
+    "incompatibles": []
+  },
+  "infusionesRelacionadas": [],
+  "emoji": "🌿",
+  "etiquetas": [
+    "nootropica",
+    "memoria",
+    "ansiolítica",
+    "nervioso",
+    "nivel-B",
+    "cultivable-panama",
+    "libre-gluten",
+    "disponible-panama"
+  ],
+  "fuentes": [
+    {
+      "autor": "Pase MP, Kean J, Sarris J et al.",
+      "titulo": "The cognitive-enhancing effects of Bacopa monnieri: a systematic review of randomized, controlled human clinical trials",
+      "publicacion": "Journal of Alternative and Complementary Medicine",
+      "año": 2012,
+      "volumen": "18(7)",
+      "paginas": "647-652",
+      "doi": "10.1089/acm.2011.0367",
+      "pmid": "22747190",
+      "tipo": "revision-sistematica",
+      "nivelEvidencia": "B",
+      "idioma": "en"
+    },
+    {
+      "autor": "Bhattacharya SK, Ghosal S",
+      "titulo": "Anxiolytic activity of a standardized extract of Bacopa monniera in an experimental study",
+      "publicacion": "Phytomedicine",
+      "año": 1998,
+      "volumen": "5(2)",
+      "paginas": "77-82",
+      "doi": "10.1016/S0944-7113(98)80001-9",
+      "pmid": "23195267",
+      "tipo": "estudio-clinico-ECA",
+      "nivelEvidencia": "B",
+      "idioma": "en"
+    }
+  ],
+  "advertencia": "Tomar siempre con alimentos. El efecto cognitivo requiere 4-6 semanas mínimo. No esperar resultados inmediatos.",
+  "disclaimer": "Esta información es educativa y no sustituye el diagnóstico ni el tratamiento médico profesional."
+}

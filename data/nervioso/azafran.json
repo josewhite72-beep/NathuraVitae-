@@ -1,0 +1,276 @@
+{
+  "id": "azafran",
+  "versionFicha": "2.0",
+  "estadoFicha": "publicada",
+  "fechaCreacion": "2026-04-15",
+  "fechaRevision": "2026-04-15",
+  "nombreComun": "Azafrán",
+  "nombresAlternativos": [
+    {
+      "nombre": "Saffron",
+      "idioma": "en",
+      "region": "Internacional"
+    },
+    {
+      "nombre": "Azafrán",
+      "idioma": "es",
+      "region": "Panamá"
+    }
+  ],
+  "nombreCientifico": "Crocus sativus L.",
+  "sinonimiasCientificas": [],
+  "familia": "Iridaceae",
+  "orden": "Asparagales",
+  "clase": "Liliopsida",
+  "regionOrigen": [
+    "Asia Occidental",
+    "Irán",
+    "Mediterráneo Oriental"
+  ],
+  "habitatNatural": "Cultivos en regiones mediterráneas y subtropicales. Requiere suelos bien drenados y estación seca marcada.",
+  "disponibilidadPanama": {
+    "disponible": true,
+    "nombreLocal": "Azafrán",
+    "formaComercial": [
+      "estigmas-secos",
+      "cápsula",
+      "extracto"
+    ],
+    "dondeConseguir": [
+      "supermercado",
+      "tienda-naturista",
+      "farmacia"
+    ],
+    "cultivoLocal": false,
+    "endemicaPanama": false,
+    "notaRegional": "Estigmas secos disponibles en supermercados como especia de lujo. Extractos medicinales en tiendas naturistas."
+  },
+  "cultivoCasero": {
+    "dificultad": "dificil",
+    "apta": false,
+    "maceta": true,
+    "luz": "pleno-sol",
+    "agua": "moderado",
+    "suelo": "Bien drenado, fértil, pH 6.5-7.5",
+    "clima": "Requiere dormancia en verano caluroso y lluvia en otoño — parcialmente compatible con clima panameño pero sin garantía de floración",
+    "notaCultivo": "Difícil en Panamá. El bulbo puede intentarse en maceta en zonas altas pero sin certeza de floración.",
+    "tiempoACosecha": "Otoño — 1 estigma por flor"
+  },
+  "partesUsadas": [
+    {
+      "parte": "estigma",
+      "nota": "Estigmas secos (hebras). Los estambres no tienen efecto medicinal."
+    }
+  ],
+  "resumen": "El azafrán (Crocus sativus) tiene evidencia clínica sólida como antidepresivo natural para depresión leve-moderada, comparable al fluoxetina en algunos ECA. Actúa modulando serotonina, dopamina y neuroprotección. Único alimento-especia con nivel de evidencia B como antidepresivo.",
+  "usoTradicionalHistorico": {
+    "culturas": [
+      {
+        "cultura": "Persa, árabe y mediterránea",
+        "uso": "Antidepresivo, afrodisíaco, analgésico",
+        "periodo": "Más de 3000 años"
+      },
+      {
+        "cultura": "Medicina islámica (Avicena)",
+        "uso": "Tristeza y melancolía",
+        "periodo": "Siglo XI d.C."
+      }
+    ],
+    "primerasMencionesHistoricas": "Textos hipocráticos y Avicena en el Canon de Medicina (1025 d.C.)",
+    "usoIndigenaRegional": "No tradicional en Panamá. Disponible como especia de alto valor."
+  },
+  "nivelEvidenciaGlobal": "B",
+  "fuentePrimaria": {
+    "institucion": "PubMed — Revisión sistemática",
+    "tipo": "revision",
+    "titulo": "Crocus sativus L.: A comprehensive review. Pharmacogn Mag. 2010",
+    "año": 2010,
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3249922/"
+  },
+  "grupoTerapeutico": [
+    "antidepresiva",
+    "ansiolítica",
+    "nootrópica",
+    "afrodisíaca"
+  ],
+  "propiedades": [
+    {
+      "nombre": "Antidepresiva",
+      "nivelEvidencia": "fuerte",
+      "mecanismoAccion": "Crocina y safranal inhiben la recaptación de serotonina, dopamina y norepinefrina (efecto triple similar a IRSN). La crocetina tiene efecto neuroprotector adicional contra el estrés oxidativo neuronal.",
+      "referencia": "Akhondzadeh S et al. BMC Complement Altern Med. 2005;5:7. DOI: 10.1186/1472-6882-5-7. PMID: 15707766"
+    }
+  ],
+  "fotoquimica": [
+    {
+      "compuesto": "Crocina",
+      "grupo": "carotenoide glucosídico",
+      "accion": "Antidepresiva, inhibidora de recaptación de monoaminas",
+      "concentracion": "Variable en estigmas (los coloran de amarillo)"
+    },
+    {
+      "compuesto": "Safranal",
+      "grupo": "terpenoide",
+      "accion": "Ansiolítica, sedante leve, antidepresiva",
+      "concentracion": "Variable — responsable del aroma del azafrán"
+    }
+  ],
+  "dolencias": [
+    {
+      "nombre": "Depresión leve-moderada",
+      "categoria": "nervioso",
+      "nivelEvidencia": "fuerte",
+      "dosis": "30 mg/día de extracto estandarizado en 2 tomas de 15 mg",
+      "duracion": "6-8 semanas",
+      "referencia": "Akhondzadeh S et al. DOI: 10.1186/1472-6882-5-7. PMID: 15707766"
+    },
+    {
+      "nombre": "Síndrome premenstrual (SPM) con componente emocional",
+      "categoria": "hormonal",
+      "nivelEvidencia": "moderado",
+      "dosis": "30 mg/día de extracto",
+      "duracion": "2 ciclos menstruales",
+      "referencia": "Agha-Hosseini M et al. BJOG. 2008;115(4):515-9. DOI: 10.1111/j.1471-0528.2007.01652.x. PMID: 18271890"
+    }
+  ],
+  "sistemas": [
+    "nervioso",
+    "hormonal"
+  ],
+  "modoEII": {
+    "aptaEnBrote": false,
+    "notaBrote": "Sin indicación específica en brote. Sin datos de seguridad en brote activo de EII.",
+    "aptaEnMantenimiento": true,
+    "notaMantenimiento": "Excelente para el componente depresivo y ansioso de la EII crónica en remisión. La depresión es comorbilidad frecuente en EII.",
+    "mecanismoEII": "Sin mecanismo directo sobre mucosa intestinal. El efecto antidepresivo mejora la calidad de vida global en EII crónica.",
+    "referenciaEII": "Sin estudios en EII"
+  },
+  "modoCeliaquiaGluten": {
+    "libreDeGluten": true,
+    "nota": "Libre de gluten. Como especia pura es completamente seguro.",
+    "indicacionEspecifica": "Seguro en celiaquía. Puede usarse culinariamente sin restricción."
+  },
+  "usos": {
+    "interno": [
+      "Depresión leve-moderada",
+      "ansiedad",
+      "síndrome premenstrual",
+      "soporte cognitivo"
+    ],
+    "externo": [],
+    "culinario": [
+      "Paellas y arroces",
+      "sopas y guisos",
+      "postres y repostería",
+      "leche de azafrán (bebida tradicional iraní)"
+    ]
+  },
+  "preparacion": [
+    {
+      "forma": "extracto-seco",
+      "instrucciones": "Cápsulas de extracto estandarizado. Para uso antidepresivo, dosis precisa necesaria.",
+      "cantidadPlanta": "15 mg de extracto por toma",
+      "dosis": "2 veces al día (30 mg total)",
+      "duracionMaxima": "8 semanas. Evaluar con profesional de salud mental.",
+      "notaPreparacion": "La cantidad culinaria es insuficiente para efecto antidepresivo — usar extracto estandarizado para uso terapéutico."
+    },
+    {
+      "forma": "infusión",
+      "instrucciones": "Infundir 5-10 hebras (estigmas) en 200 ml agua caliente. Solo uso cultural/aromático — dosis insuficiente para efecto clínico.",
+      "cantidadPlanta": "5-10 estigmas",
+      "temperatura": "80°C",
+      "tiempoPreparacion": "10 minutos",
+      "dosis": "1 taza",
+      "duracionMaxima": "Uso culinario indefinido",
+      "notaPreparacion": "Para efecto antidepresivo documentado, se requiere extracto estandarizado de 30 mg/día — no alcanzable con infusión casera."
+    }
+  ],
+  "contraindicaciones": [
+    {
+      "condicion": "Embarazo",
+      "gravedad": "absoluta",
+      "justificacion": "Efecto uterotónico en dosis altas (>5 g/día). Las dosis culinarias son seguras pero el extracto concentrado está contraindicado."
+    },
+    {
+      "condicion": "Trastorno bipolar",
+      "gravedad": "relativa",
+      "justificacion": "La estimulación monoaminérgica puede inducir fase hipomaníaca"
+    }
+  ],
+  "interaccionesMedicamentosas": [
+    {
+      "medicamento": "Antidepresivos ISRS (fluoxetina, sertralina, paroxetina)",
+      "tipo": "potenciación",
+      "mecanismo": "Inhibición de recaptación de serotonina aditiva — riesgo de síndrome serotoninérgico en dosis altas",
+      "gravedad": "moderada"
+    },
+    {
+      "medicamento": "Anticoagulantes",
+      "tipo": "precaución",
+      "mecanismo": "Posible efecto antiplaquetario leve",
+      "gravedad": "leve"
+    }
+  ],
+  "embarazoLactancia": {
+    "embarazo": "contraindicada",
+    "lactancia": "precaución",
+    "pediatria": "No recomendado en menores de 18 años sin supervisión",
+    "justificacion": "Efecto uterotónico documentado en dosis altas. Uso culinario seguro en embarazo."
+  },
+  "compatibilidadPlantas": {
+    "sinergicas": [
+      {
+        "plantaId": "griffonia",
+        "plantaNom": "Griffonia (5-HTP)",
+        "motivo": "Sinergia antidepresiva serotoninérgica — combinar con precaución y bajo supervisión médica"
+      },
+      {
+        "plantaId": "ashwagandha",
+        "plantaNom": "Ashwagandha",
+        "motivo": "Sinergia ansiolítica y neuroprotectora"
+      }
+    ],
+    "incompatibles": []
+  },
+  "infusionesRelacionadas": [],
+  "emoji": "🌸",
+  "etiquetas": [
+    "antidepresiva",
+    "ansiolitica",
+    "nervioso",
+    "nivel-B",
+    "disponible-panama",
+    "libre-gluten",
+    "superalimento"
+  ],
+  "fuentes": [
+    {
+      "autor": "Srivastava R et al.",
+      "titulo": "Crocus sativus L.: A comprehensive review",
+      "publicacion": "Pharmacognosia Magazine",
+      "año": 2010,
+      "volumen": "6(24)",
+      "paginas": "270-277",
+      "doi": "10.4103/0973-1296.71775",
+      "pmid": "22114551",
+      "tipo": "revision-sistematica",
+      "nivelEvidencia": "B",
+      "idioma": "en"
+    },
+    {
+      "autor": "Akhondzadeh S, Fallah-Pour H, Afkham K et al.",
+      "titulo": "Comparison of Crocus sativus L. and imipramine in the treatment of mild to moderate depression: a pilot double-blind randomized trial",
+      "publicacion": "BMC Complementary and Alternative Medicine",
+      "año": 2005,
+      "volumen": "5",
+      "paginas": "7",
+      "doi": "10.1186/1472-6882-5-7",
+      "pmid": "15707766",
+      "tipo": "estudio-clinico-ECA",
+      "nivelEvidencia": "B",
+      "idioma": "en"
+    }
+  ],
+  "advertencia": "Contraindicado en embarazo. No combinar con ISRS sin supervisión médica. Para efecto antidepresivo: usar extracto estandarizado 30 mg/día.",
+  "disclaimer": "Esta información es educativa y no sustituye el diagnóstico ni el tratamiento médico profesional."
+}

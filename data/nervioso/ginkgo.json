@@ -1,0 +1,273 @@
+{
+  "id": "ginkgo",
+  "versionFicha": "2.0",
+  "estadoFicha": "publicada",
+  "fechaCreacion": "2026-04-14",
+  "nombreComun": "Ginkgo",
+  "nombresAlternativos": [
+    {
+      "nombre": "Ginkgo biloba",
+      "idioma": "la",
+      "region": "Científico"
+    },
+    {
+      "nombre": "Árbol de los cuarenta escudos",
+      "idioma": "es",
+      "region": "Latinoamérica"
+    }
+  ],
+  "nombreCientifico": "Ginkgo biloba L.",
+  "sinonimiasCientificas": [],
+  "familia": "Ginkgoaceae",
+  "regionOrigen": [
+    "China"
+  ],
+  "habitatNatural": "Bosques templados, cultivado en todo el mundo como árbol ornamental",
+  "disponibilidadPanama": {
+    "disponible": true,
+    "nombreLocal": "Ginkgo / Ginkgo biloba",
+    "formaComercial": [
+      "cápsula",
+      "extracto-seco",
+      "tintura",
+      "hoja-seca"
+    ],
+    "dondeConseguir": [
+      "tienda-naturista",
+      "farmacia",
+      "supermercado"
+    ],
+    "cultivoLocal": true,
+    "endemicaPanama": false,
+    "notaRegional": "Extracto y hojas secas disponibles en tiendas naturistas. El árbol se cultiva en zonas altas de Chiriquí como ornamental, pero no para cosecha."
+  },
+  "cultivoCasero": {
+    "dificultad": "moderada",
+    "apta": true,
+    "maceta": false,
+    "luz": "pleno-sol",
+    "agua": "moderado",
+    "suelo": "Profundo, bien drenado, pH 5.0-7.0",
+    "clima": "Árbol resistente que crece en climas templados y subtropicales. En Panamá, viable en zonas altas (Chiriquí) y en tierras bajas con cuidados.",
+    "notaCultivo": "Crecimiento lento. No apto para maceta. Cosechar hojas a partir de 5 años. Los extractos comerciales son más prácticos.",
+    "tiempoACosecha": "5-7 años para hojas"
+  },
+  "partesUsadas": [
+    {
+      "parte": "hoja",
+      "nota": "Hoja seca, rica en flavonoides (quercetina, kaempferol) y terpenlactonas (ginkgólidos, bilobalida)"
+    }
+  ],
+  "resumen": "Nootrópico y vasodilatador cerebral con evidencia moderada para deterioro cognitivo leve, demencia vascular y ansiedad generalizada. Mejora el flujo sanguíneo cerebral y la función cognitiva. Nivel de evidencia B según EMA.",
+  "usoTradicionalHistorico": {
+    "culturas": [
+      {
+        "cultura": "Medicina tradicional china",
+        "uso": "Asma, trastornos circulatorios, deterioro cognitivo",
+        "periodo": "Milenios"
+      }
+    ],
+    "primerasMencionesHistoricas": "Materia Medica china (Ming dynasty)",
+    "usoIndigenaRegional": "Sin uso indígena en Panamá; popular como nootrópico."
+  },
+  "nivelEvidenciaGlobal": "B",
+  "fuentePrimaria": {
+    "institucion": "EMA",
+    "tipo": "monografía",
+    "titulo": "Community herbal monograph on Ginkgo biloba L., folium",
+    "año": 2014,
+    "url": "https://www.ema.europa.eu/en/documents/herbal-monograph/final-community-herbal-monograph-ginkgo-biloba-l-folium_en.pdf"
+  },
+  "grupoTerapeutico": [
+    "nootrópica",
+    "vasodilatadora-cerebral",
+    "antioxidante",
+    "ansiolítica"
+  ],
+  "propiedades": [
+    {
+      "nombre": "Mejora del flujo sanguíneo cerebral y función cognitiva",
+      "nivelEvidencia": "moderado",
+      "mecanismoAccion": "Los ginkgólidos (terpenlactonas) inhiben el factor activador de plaquetas (PAF), reduciendo la agregación plaquetaria y mejorando la microcirculación; la bilobalida protege las mitocondrias neuronales del daño isquémico",
+      "referencia": "Birks J, et al. Cochrane Database Syst Rev. 2009;(2):CD003120. DOI: 10.1002/14651858.CD003120.pub3"
+    },
+    {
+      "nombre": "Efecto ansiolítico en trastorno de ansiedad generalizada",
+      "nivelEvidencia": "moderado",
+      "mecanismoAccion": "Modulación de receptores GABA-A y reducción de la actividad de la amígdala, similar a las benzodiazepinas pero sin sedación",
+      "referencia": "Woelk H, et al. J Psychiatr Res. 2007;41(6):472-480. DOI: 10.1016/j.jpsychires.2006.03.001"
+    }
+  ],
+  "fotoquimica": [
+    {
+      "compuesto": "Ginkgólido B",
+      "grupo": "terpenlactona",
+      "accion": "Antagonista del PAF, neuroprotector",
+      "concentracion": "0.1-0.5% en extracto"
+    },
+    {
+      "compuesto": "Bilobalida",
+      "grupo": "terpenlactona",
+      "accion": "Neuroprotector, ansiolítico",
+      "concentracion": "0.5-1%"
+    }
+  ],
+  "dolencias": [
+    {
+      "nombre": "Deterioro cognitivo leve y demencia vascular",
+      "categoria": "nervioso",
+      "nivelEvidencia": "moderado",
+      "dosis": "Extracto estandarizado EGb 761 (24% flavonoides, 6% terpenlactonas) 120-240 mg/día divididos",
+      "duracion": "6-12 meses",
+      "referencia": "Birks J, et al. Cochrane Database Syst Rev. 2009;(2):CD003120. PMID: 19370582"
+    },
+    {
+      "nombre": "Trastorno de ansiedad generalizada",
+      "categoria": "nervioso",
+      "nivelEvidencia": "moderado",
+      "dosis": "Extracto EGb 761 240 mg/día",
+      "duracion": "4 semanas",
+      "referencia": "Woelk H, et al. J Psychiatr Res. 2007;41(6):472-480. PMID: 17055542"
+    }
+  ],
+  "sistemas": [
+    "nervioso",
+    "cardiovascular"
+  ],
+  "modoEII": {
+    "aptaEnBrote": false,
+    "notaBrote": "Precaución en brote activo; no empeora inflamación, pero su efecto antiagregante plaquetario podría aumentar riesgo de sangrado en pacientes con úlceras o hemorragias digestivas",
+    "aptaEnMantenimiento": true,
+    "notaMantenimiento": "Puede usarse en remisión para deterioro cognitivo o ansiedad, siempre que no haya sangrado activo",
+    "mecanismoEII": "No actúa sobre inflamación intestinal; riesgo teórico de sangrado en colitis ulcerosa activa",
+    "referenciaEII": "Sin estudios específicos; evitar en enfermedad activa con riesgo de hemorragia."
+  },
+  "modoCeliaquiaGluten": {
+    "libreDeGluten": true,
+    "nota": "Extracto y hojas son libres de gluten",
+    "indicacionEspecifica": "Segura para celíacos"
+  },
+  "usos": {
+    "interno": [
+      "Deterioro cognitivo",
+      "Demencia vascular",
+      "Ansiedad",
+      "Trastornos circulatorios periféricos",
+      "Acúfenos"
+    ],
+    "externo": [
+      "No aplica"
+    ],
+    "culinario": [
+      "No aplica"
+    ]
+  },
+  "preparacion": [
+    {
+      "forma": "extracto-seco",
+      "instrucciones": "Cápsulas de extracto estandarizado EGb 761. Tomar con alimentos.",
+      "cantidadPlanta": "120-240 mg de extracto",
+      "temperatura": "N/A",
+      "tiempoPreparacion": "N/A",
+      "dosis": "1-2 veces al día",
+      "duracionMaxima": "6-12 meses (uso prolongado seguro)",
+      "notaPreparacion": "El efecto puede tardar 4-6 semanas. No usar hojas crudas (pueden causar dermatitis y molestias digestivas)."
+    }
+  ],
+  "contraindicaciones": [
+    {
+      "condicion": "Trastornos hemorrágicos activos (hemofilia, úlcera sangrante)",
+      "gravedad": "absoluta",
+      "justificacion": "Efecto antiagregante plaquetario"
+    },
+    {
+      "condicion": "Cirugía programada (2 semanas antes)",
+      "gravedad": "absoluta",
+      "justificacion": "Riesgo de hemorragia perioperatoria"
+    },
+    {
+      "condicion": "Embarazo y lactancia",
+      "gravedad": "absoluta",
+      "justificacion": "Falta de seguridad; posible efecto hemorrágico"
+    }
+  ],
+  "interaccionesMedicamentosas": [
+    {
+      "medicamento": "Anticoagulantes (warfarina, heparina, DOACs)",
+      "tipo": "potenciación",
+      "mecanismo": "Aumenta riesgo de sangrado",
+      "gravedad": "grave"
+    },
+    {
+      "medicamento": "Antiagregantes (aspirina, clopidogrel)",
+      "tipo": "potenciación",
+      "mecanismo": "Riesgo de hemorragia",
+      "gravedad": "moderada"
+    },
+    {
+      "medicamento": "AINEs (ibuprofeno, naproxeno)",
+      "tipo": "potenciación",
+      "mecanismo": "Aumenta riesgo de hemorragia digestiva",
+      "gravedad": "moderada"
+    }
+  ],
+  "embarazoLactancia": {
+    "embarazo": "contraindicada",
+    "lactancia": "contraindicada",
+    "pediatria": "No recomendada en menores de 18 años",
+    "justificacion": "Falta de seguridad; riesgo de sangrado."
+  },
+  "compatibilidadPlantas": {
+    "sinergicas": [
+      {
+        "plantaId": "bacopa",
+        "plantaNom": "Bacopa monnieri",
+        "motivo": "Sinergia nootrópica para memoria y concentración"
+      }
+    ],
+    "incompatibles": []
+  },
+  "infusionesRelacionadas": [],
+  "emoji": "🍂",
+  "etiquetas": [
+    "nootrópica",
+    "ansiolítica",
+    "nivel-B",
+    "ema",
+    "disponible-panama",
+    "cultivable-panama",
+    "precaución-eii",
+    "libre-gluten"
+  ],
+  "fuentes": [
+    {
+      "autor": "EMA/HMPC",
+      "titulo": "Community herbal monograph on Ginkgo biloba L., folium",
+      "publicacion": "European Medicines Agency",
+      "año": 2014,
+      "volumen": "EMA/HMPC/321095/2012",
+      "paginas": "1-11",
+      "doi": "N/A",
+      "pmid": "N/A",
+      "tipo": "monografía-EMA",
+      "nivelEvidencia": "B",
+      "idioma": "en"
+    },
+    {
+      "autor": "Woelk H, Arnoldt KH, Kieser M, et al.",
+      "titulo": "Ginkgo biloba special extract EGb 761 in generalized anxiety disorder and adjustment disorder with anxious mood: a randomized, double-blind, placebo-controlled trial",
+      "publicacion": "Journal of Psychiatric Research",
+      "año": 2007,
+      "volumen": "41(6)",
+      "paginas": "472-480",
+      "doi": "10.1016/j.jpsychires.2006.03.001",
+      "pmid": "17055542",
+      "tipo": "estudio-clinico-ECA",
+      "nivelEvidencia": "B",
+      "idioma": "en"
+    }
+  ],
+  "advertencia": "No usar con anticoagulantes. Suspender 2 semanas antes de cirugía o procedimientos dentales. Puede causar cefalea o molestias digestivas.",
+  "disclaimer": "Esta información es educativa y no sustituye el diagnóstico ni el tratamiento médico profesional.",
+  "fechaRevision": "2026-04-15"
+}

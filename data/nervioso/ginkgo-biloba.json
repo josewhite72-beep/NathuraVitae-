@@ -1,0 +1,289 @@
+{
+  "id": "ginkgo-biloba",
+  "versionFicha": "2.0",
+  "estadoFicha": "publicada",
+  "fechaCreacion": "2026-04-15",
+  "fechaRevision": "2026-04-15",
+  "nombreComun": "Ginkgo biloba",
+  "nombresAlternativos": [
+    {
+      "nombre": "Ginkgo",
+      "idioma": "en",
+      "region": "Internacional"
+    },
+    {
+      "nombre": "Árbol de los 40 escudos",
+      "idioma": "es",
+      "region": "Europa"
+    },
+    {
+      "nombre": "Bái guǒ",
+      "idioma": "zh",
+      "region": "China"
+    }
+  ],
+  "nombreCientifico": "Ginkgo biloba L.",
+  "sinonimiasCientificas": [],
+  "familia": "Ginkgoaceae",
+  "orden": "Ginkgoales",
+  "clase": "Ginkgoopsida",
+  "regionOrigen": [
+    "China"
+  ],
+  "habitatNatural": "Bosques templados húmedos; fósil viviente — especie única superviviente de su género. Actualmente cultivado mundialmente.",
+  "disponibilidadPanama": {
+    "disponible": true,
+    "nombreLocal": "Ginkgo biloba",
+    "formaComercial": [
+      "cápsula",
+      "extracto",
+      "té-empacado"
+    ],
+    "dondeConseguir": [
+      "tienda-naturista",
+      "farmacia",
+      "importación"
+    ],
+    "cultivoLocal": false,
+    "endemicaPanama": false,
+    "notaRegional": "Disponible como extracto estandarizado EGb 761 en tiendas naturistas y farmacias de Ciudad de Panamá. Marcas como Ginkoba y Nature's Way disponibles por importación."
+  },
+  "cultivoCasero": {
+    "dificultad": "moderada",
+    "apta": true,
+    "maceta": true,
+    "luz": "pleno-sol",
+    "agua": "moderado",
+    "suelo": "Bien drenado, fértil, pH 5.5-7.0",
+    "clima": "Adaptable a zonas altas de Panamá (Boquete). En tierras bajas el calor excesivo puede limitarlo.",
+    "notaCultivo": "Árbol de crecimiento muy lento (ornamental). Para uso medicinal, preferir extracto importado. No realista para producción de hojas en Panamá.",
+    "tiempoACosecha": "Varios años para hojas medicinales — no recomendado para producción"
+  },
+  "partesUsadas": [
+    {
+      "parte": "hoja",
+      "nota": "Extracto estandarizado EGb 761: 24% flavonol glucósidos + 6% terpeno lactonas. No usar hojas frescas sin procesar — contienen ginkgólico ácido tóxico."
+    }
+  ],
+  "resumen": "El extracto EGb 761 de Ginkgo biloba mejora la circulación cerebral, reduce síntomas de deterioro cognitivo asociado a la edad y alivia tinnitus y vértigo de origen vascular. Actúa como vasodilatador, antioxidante neuronal y antiagregante plaquetario. Monografía EMA y metaanálisis avalan su uso.",
+  "usoTradicionalHistorico": {
+    "culturas": [
+      {
+        "cultura": "Medicina Tradicional China",
+        "uso": "Tónico pulmonar, circulatorio y cognitivo. Semillas usadas para tos y asma.",
+        "periodo": "Más de 2000 años"
+      }
+    ],
+    "primerasMencionesHistoricas": "Farmacopea china Ben Cao Pin Hui Jing Yao (1505 d.C.). Introducido en Europa en 1730.",
+    "usoIndigenaRegional": "No tradicional en Panamá. Introducido como suplemento cognitivo en el siglo XXI."
+  },
+  "nivelEvidenciaGlobal": "B",
+  "fuentePrimaria": {
+    "institucion": "EMA",
+    "tipo": "monografía",
+    "titulo": "European Union herbal monograph on Ginkgo biloba L., folium. EMA/HMPC/321232/2012",
+    "año": 2015,
+    "url": "https://www.ema.europa.eu/en/documents/herbal-monograph/final-european-union-herbal-monograph-ginkgo-biloba-l-folium_en.pdf"
+  },
+  "grupoTerapeutico": [
+    "nootrópica",
+    "vasodilatadora",
+    "antioxidante",
+    "antiagregante"
+  ],
+  "propiedades": [
+    {
+      "nombre": "Mejora circulación cerebral y función cognitiva",
+      "nivelEvidencia": "moderado",
+      "mecanismoAccion": "Flavonoides (quercetina, kaempferol) y terpenos (ginkgólidos A/B/C, bilobalida) antagonizan PAF (factor activador de plaquetas), mejoran microcirculación cerebral, reducen estrés oxidativo neuronal e inhiben apoptosis vía Bcl-2.",
+      "referencia": "Le Bars PD et al. JAMA. 1997;278(16):1327-1332. PMID: 9306471"
+    },
+    {
+      "nombre": "Antioxidante y neuroprotector",
+      "nivelEvidencia": "moderado",
+      "mecanismoAccion": "Los flavonoles neutralizan radicales libres y protegen membranas neuronales. Bilobalida protege mitocondrias y reduce excitotoxicidad por glutamato.",
+      "referencia": "EMA/HMPC/321232/2012"
+    }
+  ],
+  "fotoquimica": [
+    {
+      "compuesto": "Ginkgólidos A, B, C (terpeno lactonas)",
+      "grupo": "terpenoide",
+      "accion": "Antagonistas del PAF — antiagregante, vasodilatador",
+      "concentracion": "6% en extracto EGb 761"
+    },
+    {
+      "compuesto": "Bilobalida",
+      "grupo": "terpenoide",
+      "accion": "Neuroprotectora, antiapoptótica",
+      "concentracion": "Incluida en el 6% de terpeno lactonas"
+    },
+    {
+      "compuesto": "Flavonol glucósidos (quercetina, kaempferol, isorhamnetina)",
+      "grupo": "flavonoide",
+      "accion": "Antioxidante, vasodilatadora, antiinflamatoria",
+      "concentracion": "24% en extracto EGb 761"
+    }
+  ],
+  "dolencias": [
+    {
+      "nombre": "Deterioro cognitivo leve asociado a la edad y demencia",
+      "categoria": "nervioso",
+      "nivelEvidencia": "moderado",
+      "dosis": "120-240 mg/día de extracto EGb 761",
+      "duracion": "6-24 semanas",
+      "referencia": "Le Bars PD et al. JAMA. 1997;278(16):1327-32. PMID: 9306471"
+    },
+    {
+      "nombre": "Tinnitus y vértigo de origen vascular",
+      "categoria": "nervioso",
+      "nivelEvidencia": "moderado",
+      "dosis": "120-160 mg/día de extracto EGb 761",
+      "duracion": "12-24 semanas",
+      "referencia": "EMA/HMPC/321232/2012"
+    },
+    {
+      "nombre": "Claudicación intermitente (insuficiencia vascular periférica)",
+      "categoria": "cardiovascular",
+      "nivelEvidencia": "moderado",
+      "dosis": "120-160 mg/día",
+      "duracion": "6-12 semanas",
+      "referencia": "EMA/HMPC/321232/2012"
+    }
+  ],
+  "sistemas": [
+    "nervioso",
+    "cardiovascular"
+  ],
+  "modoEII": {
+    "aptaEnBrote": false,
+    "notaBrote": "Sin indicación en brote de EII. No hay datos en EII. El efecto antiagregante podría ser problemático en pacientes con rectorragia.",
+    "aptaEnMantenimiento": true,
+    "notaMantenimiento": "Puede usarse en remisión en pacientes con EII y deterioro cognitivo o comorbilidad vascular. Monitorizar si hay tendencia hemorrágica.",
+    "mecanismoEII": "Sin mecanismo directo sobre mucosa intestinal. El efecto antioxidante sistémico es neutral para la EII.",
+    "referenciaEII": "Sin estudios en EII"
+  },
+  "modoCeliaquiaGluten": {
+    "libreDeGluten": true,
+    "nota": "Libre de gluten. Verificar excipientes en cápsulas.",
+    "indicacionEspecifica": "Seguro en celiaquía"
+  },
+  "usos": {
+    "interno": [
+      "Deterioro cognitivo leve",
+      "tinnitus y vértigo",
+      "claudicación intermitente",
+      "ansiedad leve"
+    ],
+    "externo": [],
+    "culinario": []
+  },
+  "preparacion": [
+    {
+      "forma": "extracto-seco",
+      "instrucciones": "Cápsulas de extracto estandarizado EGb 761 (24% flavonol glucósidos, 6% terpeno lactonas). Tomar con las comidas.",
+      "cantidadPlanta": "60-120 mg de extracto por toma",
+      "dosis": "120-240 mg/día en 2-3 tomas",
+      "duracionMaxima": "6 meses continuos con revisión médica",
+      "notaPreparacion": "SOLO usar extracto estandarizado EGb 761. Las hojas frescas o infusiones sin procesar contienen ácido ginkgólico — potencialmente tóxico y alérgeno."
+    }
+  ],
+  "contraindicaciones": [
+    {
+      "condicion": "Trastornos hemorrágicos o cirugía programada",
+      "gravedad": "relativa",
+      "justificacion": "Efecto antiagregante plaquetario — suspender 2 semanas antes de cirugía"
+    },
+    {
+      "condicion": "Epilepsia",
+      "gravedad": "relativa",
+      "justificacion": "El ginkgotoxina (en dosis no estandarizadas) puede ser proconvulsivante"
+    },
+    {
+      "condicion": "Embarazo y lactancia",
+      "gravedad": "contraindicada",
+      "justificacion": "Datos insuficientes. Contraindicado por EMA."
+    }
+  ],
+  "interaccionesMedicamentosas": [
+    {
+      "medicamento": "Anticoagulantes (warfarina, DOACs) y antiplaquetarios (aspirina, clopidogrel)",
+      "tipo": "potenciación",
+      "mecanismo": "Inhibición plaquetaria aditiva vía antagonismo PAF — aumenta riesgo hemorrágico",
+      "gravedad": "moderada"
+    },
+    {
+      "medicamento": "Anticonvulsivantes",
+      "tipo": "antagonismo",
+      "mecanismo": "Puede reducir el umbral convulsivo",
+      "gravedad": "moderada"
+    },
+    {
+      "medicamento": "Inhibidores CYP2C9 y CYP3A4",
+      "tipo": "alteración-metabolismo",
+      "mecanismo": "El ginkgo puede inducir CYP3A4, alterando metabolismo de varios fármacos",
+      "gravedad": "leve"
+    }
+  ],
+  "embarazoLactancia": {
+    "embarazo": "contraindicada",
+    "lactancia": "contraindicada",
+    "pediatria": "No recomendado en menores de 18 años",
+    "justificacion": "Contraindicado por EMA. Datos insuficientes."
+  },
+  "compatibilidadPlantas": {
+    "sinergicas": [
+      {
+        "plantaId": "bacopa-monnieri",
+        "plantaNom": "Bacopa monnieri",
+        "motivo": "Sinergia nootrópica y de memoria — mecanismos complementarios"
+      },
+      {
+        "plantaId": "centella-asiatica",
+        "plantaNom": "Centella asiática",
+        "motivo": "Efecto circulatorio cerebral y neuroprotector combinado"
+      }
+    ],
+    "incompatibles": []
+  },
+  "infusionesRelacionadas": [],
+  "emoji": "🌳",
+  "etiquetas": [
+    "nootropica",
+    "cognitiva",
+    "nervioso",
+    "cardiovascular",
+    "nivel-B",
+    "ema",
+    "disponible-panama",
+    "libre-gluten"
+  ],
+  "fuentes": [
+    {
+      "autor": "European Medicines Agency",
+      "titulo": "European Union herbal monograph on Ginkgo biloba L., folium. EMA/HMPC/321232/2012",
+      "publicacion": "EMA",
+      "año": 2015,
+      "doi": "",
+      "pmid": "",
+      "tipo": "monografía-EMA",
+      "nivelEvidencia": "B",
+      "idioma": "en"
+    },
+    {
+      "autor": "Le Bars PD, Katz MM, Berman N et al.",
+      "titulo": "A placebo-controlled, double-blind, randomized trial of an extract of Ginkgo biloba for dementia",
+      "publicacion": "JAMA",
+      "año": 1997,
+      "volumen": "278(16)",
+      "paginas": "1327-1332",
+      "doi": "10.1001/jama.278.16.1327",
+      "pmid": "9306471",
+      "tipo": "estudio-clinico-ECA",
+      "nivelEvidencia": "B",
+      "idioma": "en"
+    }
+  ],
+  "advertencia": "Usar SOLO extracto estandarizado EGb 761. Suspender 2 semanas antes de cirugía. No combinar con anticoagulantes sin supervisión médica.",
+  "disclaimer": "Esta información es educativa y no sustituye el diagnóstico ni el tratamiento médico profesional."
+}

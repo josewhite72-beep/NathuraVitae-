@@ -1,0 +1,267 @@
+{
+  "id": "amapola-california",
+  "versionFicha": "2.0",
+  "estadoFicha": "publicada",
+  "fechaCreacion": "2026-04-14",
+  "nombreComun": "Amapola de California",
+  "nombresAlternativos": [
+    {
+      "nombre": "California poppy",
+      "idioma": "en",
+      "region": "Internacional"
+    },
+    {
+      "nombre": "Eschscholzia",
+      "idioma": "es",
+      "region": "Latinoamérica"
+    },
+    {
+      "nombre": "Dormidera",
+      "idioma": "es",
+      "region": "España"
+    }
+  ],
+  "nombreCientifico": "Eschscholzia californica Cham.",
+  "sinonimiasCientificas": [
+    "Eschscholzia californica subsp. californica"
+  ],
+  "familia": "Papaveraceae",
+  "regionOrigen": [
+    "América del Norte (California, Oregón)"
+  ],
+  "habitatNatural": "Praderas, colinas secas, suelos arenosos o arcillosos, pleno sol",
+  "disponibilidadPanama": {
+    "disponible": true,
+    "nombreLocal": "Amapola de California",
+    "formaComercial": [
+      "seca",
+      "tintura",
+      "cápsula",
+      "té-empacado"
+    ],
+    "dondeConseguir": [
+      "tienda-naturista",
+      "importación"
+    ],
+    "cultivoLocal": false,
+    "endemicaPanama": false,
+    "notaRegional": "Producto importado en tiendas naturistas. No se cultiva localmente por requerir climas templados."
+  },
+  "cultivoCasero": {
+    "dificultad": "moderada",
+    "apta": false,
+    "maceta": false,
+    "luz": "pleno-sol",
+    "agua": "poco",
+    "suelo": "Arenoso, bien drenado, pH 6.0-7.5",
+    "clima": "Requiere verano seco e invierno fresco; en Panamá podría crecer en zonas altas de Chiriquí, pero no es común.",
+    "notaCultivo": "Cultivo experimental en altura; no recomendado para doméstico.",
+    "tiempoACosecha": "2-3 meses para sumidad"
+  },
+  "partesUsadas": [
+    {
+      "parte": "sumidad-florida",
+      "nota": "Parte aérea en floración, rica en alcaloides isoquinolínicos (californidina, eschscholtzina)"
+    }
+  ],
+  "resumen": "Sedante e hipnótico leve, sin alcaloides opiáceos, útil para insomnio de conciliación, ansiedad leve y nerviosismo. Actúa como modulador GABAérgico y antagonista de receptores de adenosina. Nivel de evidencia B según EMA.",
+  "usoTradicionalHistorico": {
+    "culturas": [
+      {
+        "cultura": "Nativos americanos",
+        "uso": "Sedante, analgésico, tratamiento de neuralgias",
+        "periodo": "Precolombino"
+      }
+    ],
+    "primerasMencionesHistoricas": "Etnobotánica del siglo XIX",
+    "usoIndigenaRegional": "Sin uso en Panamá; adoptada como sedante suave."
+  },
+  "nivelEvidenciaGlobal": "B",
+  "fuentePrimaria": {
+    "institucion": "EMA",
+    "tipo": "monografía",
+    "titulo": "Community herbal monograph on Eschscholzia californica Cham., herba",
+    "año": 2013,
+    "url": "https://www.ema.europa.eu/en/documents/herbal-monograph/final-community-herbal-monograph-eschscholzia-californica-cham-herba_en.pdf"
+  },
+  "grupoTerapeutico": [
+    "sedante",
+    "hipnótica",
+    "ansiolítica",
+    "antiespasmódica"
+  ],
+  "propiedades": [
+    {
+      "nombre": "Reducción de la latencia del sueño y mejora de la calidad del sueño",
+      "nivelEvidencia": "moderado",
+      "mecanismoAccion": "Los alcaloides (californidina, eschscholtzina) actúan como moduladores positivos de los receptores GABA-A y antagonistas débiles de los receptores de adenosina, produciendo sedación sin efectos opiáceos",
+      "referencia": "Rolland A, et al. Phytomedicine. 2001;8(6):427-434. DOI: 10.1078/S0944-7113(04)70060-5"
+    },
+    {
+      "nombre": "Efecto ansiolítico en trastornos leves",
+      "nivelEvidencia": "preliminar",
+      "mecanismoAccion": "Reducción de la actividad de la amígdala y modulación del eje HPA",
+      "referencia": "Hanuš LO, et al. Nat Prod Commun. 2014;9(6):827-830. PMID: 25115097"
+    }
+  ],
+  "fotoquimica": [
+    {
+      "compuesto": "Californidina",
+      "grupo": "alcaloide isoquinolínico",
+      "accion": "Sedante, hipnótico",
+      "concentracion": "0.1-0.5% en sumidad seca"
+    },
+    {
+      "compuesto": "Eschscholtzina",
+      "grupo": "alcaloide isoquinolínico",
+      "accion": "Ansiolítico, antiespasmódico",
+      "concentracion": "0.05-0.2%"
+    }
+  ],
+  "dolencias": [
+    {
+      "nombre": "Insomnio de conciliación",
+      "categoria": "nervioso",
+      "nivelEvidencia": "moderado",
+      "dosis": "Infusión de 2-3 g de sumidad seca 30-60 minutos antes de acostarse, o tintura (1:5, 45% alcohol) 2-5 mL",
+      "duracion": "2-4 semanas",
+      "referencia": "EMA/HMPC/119773/2012"
+    },
+    {
+      "nombre": "Ansiedad leve y nerviosismo",
+      "categoria": "nervioso",
+      "nivelEvidencia": "tradicional",
+      "dosis": "Infusión de 2 g 3 veces al día",
+      "duracion": "2-4 semanas",
+      "referencia": "EMA/HMPC/119773/2012"
+    }
+  ],
+  "sistemas": [
+    "nervioso",
+    "digestivo"
+  ],
+  "modoEII": {
+    "aptaEnBrote": true,
+    "notaBrote": "Puede usarse en brote leve para insomnio y ansiedad; no empeora la inflamación",
+    "aptaEnMantenimiento": true,
+    "notaMantenimiento": "Segura en remisión; útil para trastornos del sueño asociados a EII",
+    "mecanismoEII": "No actúa sobre inflamación intestinal",
+    "referenciaEII": "Sin estudios específicos; perfil favorable."
+  },
+  "modoCeliaquiaGluten": {
+    "libreDeGluten": true,
+    "nota": "Sumidad pura es libre de gluten",
+    "indicacionEspecifica": "Segura para celíacos"
+  },
+  "usos": {
+    "interno": [
+      "Insomnio",
+      "Ansiedad",
+      "Nerviosismo",
+      "Palpitaciones funcionales",
+      "Cólicos nerviosos"
+    ],
+    "externo": [
+      "No aplica"
+    ],
+    "culinario": [
+      "No aplica"
+    ]
+  },
+  "preparacion": [
+    {
+      "forma": "infusión",
+      "instrucciones": "Verter agua caliente sobre la hierba seca, tapar y reposar.",
+      "cantidadPlanta": "2-3 g de sumidad seca",
+      "temperatura": "90-95°C",
+      "tiempoPreparacion": "10 minutos",
+      "dosis": "1 taza antes de acostarse",
+      "duracionMaxima": "2 semanas continuas",
+      "notaPreparacion": "No produce dependencia ni efectos de resaca."
+    }
+  ],
+  "contraindicaciones": [
+    {
+      "condicion": "Embarazo y lactancia",
+      "gravedad": "absoluta",
+      "justificacion": "Falta de seguridad; alcaloides pueden cruzar placenta"
+    },
+    {
+      "condicion": "Glaucoma de ángulo cerrado",
+      "gravedad": "relativa",
+      "justificacion": "Posible efecto anticolinérgico leve"
+    }
+  ],
+  "interaccionesMedicamentosas": [
+    {
+      "medicamento": "Sedantes (benzodiazepinas, barbitúricos)",
+      "tipo": "potenciación",
+      "mecanismo": "Efecto aditivo sedante",
+      "gravedad": "moderada"
+    }
+  ],
+  "embarazoLactancia": {
+    "embarazo": "contraindicada",
+    "lactancia": "contraindicada",
+    "pediatria": "No recomendada en menores de 12 años",
+    "justificacion": "Falta de seguridad."
+  },
+  "compatibilidadPlantas": {
+    "sinergicas": [
+      {
+        "plantaId": "valeriana",
+        "plantaNom": "Valeriana",
+        "motivo": "Potenciación hipnótica"
+      },
+      {
+        "plantaId": "lupulo",
+        "plantaNom": "Lúpulo",
+        "motivo": "Sinergia sedante para insomnio"
+      }
+    ],
+    "incompatibles": []
+  },
+  "infusionesRelacionadas": [],
+  "emoji": "🌼",
+  "etiquetas": [
+    "sedante",
+    "hipnótica",
+    "nivel-B",
+    "ema",
+    "disponible-panama",
+    "importada",
+    "apta-eii",
+    "libre-gluten"
+  ],
+  "fuentes": [
+    {
+      "autor": "EMA/HMPC",
+      "titulo": "Community herbal monograph on Eschscholzia californica Cham., herba",
+      "publicacion": "European Medicines Agency",
+      "año": 2013,
+      "volumen": "EMA/HMPC/119773/2012",
+      "paginas": "1-10",
+      "doi": "N/A",
+      "pmid": "N/A",
+      "tipo": "monografía-EMA",
+      "nivelEvidencia": "B",
+      "idioma": "en"
+    },
+    {
+      "autor": "Rolland A, Fleurentin J, Lanhers MC, et al.",
+      "titulo": "Eschscholzia californica (California poppy): pharmacological evaluation of its sedative and anxiolytic properties",
+      "publicacion": "Phytomedicine",
+      "año": 2001,
+      "volumen": "8(6)",
+      "paginas": "427-434",
+      "doi": "10.1078/S0944-7113(04)70060-5",
+      "pmid": "11824522",
+      "tipo": "estudio-clinico-preclinico",
+      "nivelEvidencia": "C",
+      "idioma": "en"
+    }
+  ],
+  "advertencia": "Evitar en embarazo. Puede causar somnolencia; no conducir después de tomarla.",
+  "disclaimer": "Esta información es educativa y no sustituye el diagnóstico ni el tratamiento médico profesional.",
+  "fechaRevision": "2026-04-15"
+}

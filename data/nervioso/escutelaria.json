@@ -1,0 +1,236 @@
+{
+  "id": "escutelaria",
+  "versionFicha": "2.0",
+  "estadoFicha": "publicada",
+  "fechaCreacion": "2026-04-15",
+  "fechaRevision": "2026-04-15",
+  "nombreComun": "Escutelaria",
+  "nombresAlternativos": [
+    {
+      "nombre": "Skullcap",
+      "idioma": "en",
+      "region": "Norteamérica"
+    },
+    {
+      "nombre": "Escutelaria americana",
+      "idioma": "es",
+      "region": ""
+    }
+  ],
+  "nombreCientifico": "Scutellaria lateriflora L.",
+  "sinonimiasCientificas": [],
+  "familia": "Lamiaceae",
+  "orden": "Lamiales",
+  "clase": "Magnoliopsida",
+  "regionOrigen": [
+    "América del Norte"
+  ],
+  "habitatNatural": "Humedales, bordes de arroyos y praderas húmedas",
+  "disponibilidadPanama": {
+    "disponible": true,
+    "nombreLocal": "Escutelaria / Skullcap",
+    "formaComercial": [
+      "cápsula",
+      "tintura",
+      "té-empacado"
+    ],
+    "dondeConseguir": [
+      "tienda-naturista",
+      "importación"
+    ],
+    "cultivoLocal": true,
+    "endemicaPanama": false,
+    "notaRegional": "Disponible como suplemento importado en tiendas naturistas. Cultivable en huertos húmedos de Panamá."
+  },
+  "cultivoCasero": {
+    "dificultad": "facil",
+    "apta": true,
+    "maceta": true,
+    "luz": "semisombra",
+    "agua": "abundante",
+    "suelo": "Húmedo y rico en materia orgánica",
+    "clima": "Buena adaptación al clima tropical panameño húmedo",
+    "notaCultivo": "Prefiere humedad constante; cosechar sumidades floridas",
+    "tiempoACosecha": "3-4 meses"
+  },
+  "partesUsadas": [
+    {
+      "parte": "parte-aérea",
+      "nota": "Herba en floración"
+    }
+  ],
+  "resumen": "Scutellaria lateriflora actúa como sedante nervioso suave, alivia ansiedad, insomnio y tensión muscular mediante flavonoides que modulan receptores GABA-A. Nivel de evidencia C — uso tradicional bien establecido.",
+  "usoTradicionalHistorico": {
+    "culturas": [
+      {
+        "cultura": "Nativos americanos y medicina ecléctica",
+        "uso": "Sedante nervioso y antiespasmódico",
+        "periodo": "Siglo XIX"
+      }
+    ],
+    "primerasMencionesHistoricas": "Farmacopeas americanas del siglo XIX",
+    "usoIndigenaRegional": "No tradicional en Panamá"
+  },
+  "nivelEvidenciaGlobal": "C",
+  "fuentePrimaria": {
+    "institucion": "Health Canada",
+    "tipo": "monografía",
+    "titulo": "Skullcap – Scutellaria lateriflora Monograph. Health Canada Natural Health Products",
+    "año": 2024,
+    "url": "https://webprod.hc-sc.gc.ca/nhpid-bdipsn/dbImages/mono_skullcap_english.pdf"
+  },
+  "grupoTerapeutico": [
+    "sedante",
+    "ansiolítica",
+    "antiespasmódica"
+  ],
+  "propiedades": [
+    {
+      "nombre": "Sedante nervioso suave",
+      "nivelEvidencia": "tradicional",
+      "mecanismoAccion": "Baicalina y escutelarina actúan como agonistas parciales de receptores GABA-A, reduciendo la excitabilidad neuronal. La baicalina también inhibe la captación de glutamato (excitatorio) en el SNC.",
+      "referencia": "Health Canada NHP Monograph 2024. Wolfson P, Hoffmann DL. Altern Ther Health Med. 2003;9(2):74-78. PMID: 12652886"
+    }
+  ],
+  "fotoquimica": [
+    {
+      "compuesto": "Baicalina",
+      "grupo": "flavonoide",
+      "accion": "Sedante, agonista GABA-A, neuroprotectora",
+      "concentracion": "Variable en herba"
+    },
+    {
+      "compuesto": "Escutelarina",
+      "grupo": "flavonoide",
+      "accion": "Ansiolítica, antiespasmódica",
+      "concentracion": "Variable"
+    }
+  ],
+  "dolencias": [
+    {
+      "nombre": "Ansiedad leve y nerviosismo",
+      "categoria": "nervioso",
+      "nivelEvidencia": "tradicional",
+      "dosis": "Equivalente a 1-2 g de herba seca en infusión o tintura 2-4 ml",
+      "duracion": "Según necesidad",
+      "referencia": "Health Canada 2024"
+    }
+  ],
+  "sistemas": [
+    "nervioso"
+  ],
+  "modoEII": {
+    "aptaEnBrote": false,
+    "notaBrote": "Sin datos en brote. Puede usarse para ansiedad asociada sin impacto sobre la inflamación intestinal.",
+    "aptaEnMantenimiento": true,
+    "notaMantenimiento": "Útil para manejar la ansiedad crónica asociada a la EII.",
+    "mecanismoEII": "Efecto GABAérgico sin impacto inmune significativo",
+    "referenciaEII": "Sin estudios específicos"
+  },
+  "modoCeliaquiaGluten": {
+    "libreDeGluten": true,
+    "nota": "Libre de gluten",
+    "indicacionEspecifica": "Segura en celiaquía"
+  },
+  "usos": {
+    "interno": [
+      "Ansiedad leve",
+      "insomnio",
+      "tensión nerviosa",
+      "espasmos musculares"
+    ],
+    "externo": [],
+    "culinario": []
+  },
+  "preparacion": [
+    {
+      "forma": "infusión",
+      "instrucciones": "Infundir 1-2 g de herba seca en 200 ml agua caliente. Tapar y reposar.",
+      "cantidadPlanta": "1-2 g",
+      "temperatura": "90°C",
+      "tiempoPreparacion": "10 minutos",
+      "dosis": "2-3 veces al día",
+      "duracionMaxima": "Indefinida con precaución",
+      "notaPreparacion": "Verificar autenticidad — adulteraciones con Teucrium sp. han causado hepatotoxicidad"
+    }
+  ],
+  "contraindicaciones": [
+    {
+      "condicion": "Embarazo",
+      "gravedad": "precaución",
+      "justificacion": "Datos limitados"
+    },
+    {
+      "condicion": "Adulteraciones con Teucrium sp.",
+      "gravedad": "relativa",
+      "justificacion": "Comprar de proveedores certificados — el género Teucrium es hepatotóxico"
+    }
+  ],
+  "interaccionesMedicamentosas": [
+    {
+      "medicamento": "Sedantes y benzodiacepinas",
+      "tipo": "potenciación",
+      "mecanismo": "Efecto GABA aditivo",
+      "gravedad": "moderada"
+    }
+  ],
+  "embarazoLactancia": {
+    "embarazo": "precaución",
+    "lactancia": "precaución",
+    "pediatria": "No recomendado en niños sin supervisión",
+    "justificacion": "Datos insuficientes"
+  },
+  "compatibilidadPlantas": {
+    "sinergicas": [
+      {
+        "plantaId": "lupulo",
+        "plantaNom": "Lúpulo",
+        "motivo": "Sinergia sedante para insomnio leve"
+      },
+      {
+        "plantaId": "amapola-de-california",
+        "plantaNom": "Amapola de California",
+        "motivo": "Efecto calmante combinado"
+      }
+    ],
+    "incompatibles": []
+  },
+  "infusionesRelacionadas": [],
+  "emoji": "🌿",
+  "etiquetas": [
+    "sedante",
+    "ansiolitica",
+    "nervioso",
+    "nivel-C",
+    "cultivable-panama",
+    "libre-gluten",
+    "disponible-panama"
+  ],
+  "fuentes": [
+    {
+      "autor": "Health Canada",
+      "titulo": "Skullcap – Scutellaria lateriflora Monograph",
+      "publicacion": "Natural Health Products Ingredients Database",
+      "año": 2024,
+      "doi": "",
+      "pmid": "",
+      "tipo": "monografía",
+      "nivelEvidencia": "C",
+      "idioma": "en"
+    },
+    {
+      "autor": "Wolfson P, Hoffmann DL",
+      "titulo": "An investigation into the efficacy of Scutellaria lateriflora in healthy volunteers",
+      "publicacion": "Alternative Therapies in Health and Medicine",
+      "año": 2003,
+      "volumen": "9(2)",
+      "paginas": "74-78",
+      "pmid": "12652886",
+      "tipo": "estudio-clinico-ECA",
+      "nivelEvidencia": "C",
+      "idioma": "en"
+    }
+  ],
+  "advertencia": "Comprar solo de fuentes certificadas — riesgo de adulteración con Teucrium (hepatotóxico). Evitar en embarazo.",
+  "disclaimer": "Esta información es educativa y no sustituye el diagnóstico ni el tratamiento médico profesional."
+}

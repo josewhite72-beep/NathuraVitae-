@@ -1,0 +1,274 @@
+{
+  "id": "bacopa",
+  "versionFicha": "2.0",
+  "estadoFicha": "publicada",
+  "fechaCreacion": "2026-04-14",
+  "nombreComun": "Bacopa",
+  "nombresAlternativos": [
+    {
+      "nombre": "Brahmi",
+      "idioma": "hi",
+      "region": "India"
+    },
+    {
+      "nombre": "Bacopa monnieri",
+      "idioma": "la",
+      "region": "Científico"
+    },
+    {
+      "nombre": "Hissopo de agua",
+      "idioma": "es",
+      "region": "Latinoamérica"
+    }
+  ],
+  "nombreCientifico": "Bacopa monnieri (L.) Wettst.",
+  "sinonimiasCientificas": [
+    "Bacopa monnieri (L.) Pennell",
+    "Herpestis monnieri (L.) Kunth"
+  ],
+  "familia": "Plantaginaceae",
+  "regionOrigen": [
+    "India",
+    "Sudeste Asiático",
+    "Australia"
+  ],
+  "habitatNatural": "Humedales, orillas de lagos, suelos anegados, aguas dulces",
+  "disponibilidadPanama": {
+    "disponible": true,
+    "nombreLocal": "Bacopa / Brahmi",
+    "formaComercial": [
+      "cápsula",
+      "extracto-seco",
+      "polvo"
+    ],
+    "dondeConseguir": [
+      "tienda-naturista",
+      "importación"
+    ],
+    "cultivoLocal": true,
+    "endemicaPanama": false,
+    "notaRegional": "Producto importado disponible en tiendas naturistas. Puede cultivarse en humedales o acuarios en Panamá, pero no es común."
+  },
+  "cultivoCasero": {
+    "dificultad": "facil",
+    "apta": true,
+    "maceta": true,
+    "luz": "pleno-sol",
+    "agua": "abundante",
+    "suelo": "Húmedo o semianegado, pH 6.0-7.5",
+    "clima": "Planta acuática que crece bien en climas tropicales húmedos. En Panamá, puede cultivarse en macetas con agua estancada o en estanques.",
+    "notaCultivo": "Se propaga por esquejes. Crece rápido en agua dulce. Cosechar sumidad aérea cada 2-3 meses.",
+    "tiempoACosecha": "2-3 meses desde plantación"
+  },
+  "partesUsadas": [
+    {
+      "parte": "sumidad-florida",
+      "nota": "Parte aérea, rica en bacósidos (saponinas triterpénicas)"
+    }
+  ],
+  "resumen": "Nootrópico con evidencia moderada para mejorar la memoria, la atención y reducir la ansiedad. Actúa como antioxidante y modulador de la neurotransmisión colinérgica. Nivel de evidencia B.",
+  "usoTradicionalHistorico": {
+    "culturas": [
+      {
+        "cultura": "Ayurveda",
+        "uso": "Mejora de la memoria (medhya rasayana), ansiedad, epilepsia",
+        "periodo": "Antigüedad"
+      }
+    ],
+    "primerasMencionesHistoricas": "Charaka Samhita (siglo II a.C.)",
+    "usoIndigenaRegional": "Sin uso indígena en Panamá; adoptada como nootrópico."
+  },
+  "nivelEvidenciaGlobal": "B",
+  "fuentePrimaria": {
+    "institucion": "NIH / NCCIH",
+    "tipo": "monografía",
+    "titulo": "Bacopa monnieri",
+    "año": 2019,
+    "url": "https://www.nccih.nih.gov/health/bacopa-monnieri"
+  },
+  "grupoTerapeutico": [
+    "nootrópica",
+    "ansiolítica",
+    "antioxidante",
+    "neuroprotectora"
+  ],
+  "propiedades": [
+    {
+      "nombre": "Mejora de la memoria y el aprendizaje",
+      "nivelEvidencia": "moderado",
+      "mecanismoAccion": "Los bacósidos aumentan la actividad de la colina acetiltransferasa y la densidad de los receptores muscarínicos en el hipocampo, mejorando la transmisión colinérgica; además reducen el estrés oxidativo neuronal",
+      "referencia": "Peth-Nui T, et al. J Ethnopharmacol. 2012;144(3):543-548. DOI: 10.1016/j.jep.2012.09.033"
+    },
+    {
+      "nombre": "Reducción de la ansiedad",
+      "nivelEvidencia": "moderado",
+      "mecanismoAccion": "Modulación de la actividad serotoninérgica y GABAérgica, con reducción de los niveles de cortisol en respuesta al estrés",
+      "referencia": "Bhattacharya SK, et al. Phytother Res. 2000;14(3):174-179. DOI: 10.1002/(sici)1099-1573(200005)14:3<174::aid-ptr620>3.0.co;2-w"
+    }
+  ],
+  "fotoquimica": [
+    {
+      "compuesto": "Bacósido A",
+      "grupo": "saponina triterpénica",
+      "accion": "Nootrópico, colinérgico, antioxidante",
+      "concentracion": "1-3% en sumidad seca"
+    },
+    {
+      "compuesto": "Bacósido B",
+      "grupo": "saponina triterpénica",
+      "accion": "Ansiolítico, neuroprotector",
+      "concentracion": "0.5-1.5%"
+    }
+  ],
+  "dolencias": [
+    {
+      "nombre": "Deterioro cognitivo leve y mejora de la memoria",
+      "categoria": "nervioso",
+      "nivelEvidencia": "moderado",
+      "dosis": "Extracto estandarizado en bacósidos (20-25%) 300-450 mg/día",
+      "duracion": "4-12 semanas",
+      "referencia": "Peth-Nui T, et al. J Ethnopharmacol. 2012;144(3):543-548. PMID: 23069934"
+    },
+    {
+      "nombre": "Ansiedad leve a moderada",
+      "categoria": "nervioso",
+      "nivelEvidencia": "preliminar",
+      "dosis": "Extracto 300 mg 2 veces al día",
+      "duracion": "4 semanas",
+      "referencia": "Bhattacharya SK, et al. Phytother Res. 2000;14(3):174-179. PMID: 10815010"
+    }
+  ],
+  "sistemas": [
+    "nervioso",
+    "digestivo"
+  ],
+  "modoEII": {
+    "aptaEnBrote": true,
+    "notaBrote": "Puede usarse en brote leve, sin interacciones negativas conocidas; su efecto ansiolítico puede ser beneficioso",
+    "aptaEnMantenimiento": true,
+    "notaMantenimiento": "Segura en remisión para mejorar memoria y reducir ansiedad",
+    "mecanismoEII": "No actúa sobre inflamación intestinal",
+    "referenciaEII": "Sin estudios específicos; perfil favorable."
+  },
+  "modoCeliaquiaGluten": {
+    "libreDeGluten": true,
+    "nota": "Sumidad y extractos son libres de gluten",
+    "indicacionEspecifica": "Segura para celíacos"
+  },
+  "usos": {
+    "interno": [
+      "Deterioro cognitivo",
+      "Ansiedad",
+      "Estrés",
+      "Trastorno por déficit de atención"
+    ],
+    "externo": [
+      "No aplica"
+    ],
+    "culinario": [
+      "No aplica"
+    ]
+  },
+  "preparacion": [
+    {
+      "forma": "extracto-seco",
+      "instrucciones": "Cápsulas de extracto estandarizado en bacósidos. Tomar con alimentos para mejorar absorción.",
+      "cantidadPlanta": "300-450 mg de extracto (equivalente a 3-4.5 g de planta seca)",
+      "temperatura": "N/A",
+      "tiempoPreparacion": "N/A",
+      "dosis": "1-2 veces al día",
+      "duracionMaxima": "3 meses, luego descanso",
+      "notaPreparacion": "El efecto nootrópico puede tardar 4-6 semanas en manifestarse."
+    }
+  ],
+  "contraindicaciones": [
+    {
+      "condicion": "Embarazo y lactancia",
+      "gravedad": "absoluta",
+      "justificacion": "Falta de seguridad"
+    },
+    {
+      "condicion": "Obstrucción intestinal",
+      "gravedad": "relativa",
+      "justificacion": "Puede aumentar el peristaltismo en dosis altas"
+    }
+  ],
+  "interaccionesMedicamentosas": [
+    {
+      "medicamento": "Anticolinérgicos (atropina, antihistamínicos)",
+      "tipo": "antagonismo",
+      "mecanismo": "La bacopa aumenta la actividad colinérgica, pudiendo antagonizar estos fármacos",
+      "gravedad": "leve"
+    },
+    {
+      "medicamento": "Antihipertensivos",
+      "tipo": "potenciación",
+      "mecanismo": "Posible efecto hipotensor leve",
+      "gravedad": "leve"
+    }
+  ],
+  "embarazoLactancia": {
+    "embarazo": "contraindicada",
+    "lactancia": "contraindicada",
+    "pediatria": "No recomendada en menores de 12 años",
+    "justificacion": "Falta de estudios de seguridad."
+  },
+  "compatibilidadPlantas": {
+    "sinergicas": [
+      {
+        "plantaId": "ginkgo",
+        "plantaNom": "Ginkgo biloba",
+        "motivo": "Sinergia nootrópica: mejora de memoria y concentración"
+      },
+      {
+        "plantaId": "rodiola",
+        "plantaNom": "Rhodiola rosea",
+        "motivo": "Potenciación de la función cognitiva bajo estrés"
+      }
+    ],
+    "incompatibles": []
+  },
+  "infusionesRelacionadas": [],
+  "emoji": "💧",
+  "etiquetas": [
+    "nootrópica",
+    "ansiolítica",
+    "nivel-B",
+    "nccih",
+    "disponible-panama",
+    "cultivable-panama",
+    "apta-eii",
+    "libre-gluten"
+  ],
+  "fuentes": [
+    {
+      "autor": "Peth-Nui T, Wattanathorn J, Muchimapura S, et al.",
+      "titulo": "Effects of 12-week Bacopa monnieri consumption on memory, cognition and oxidative stress in healthy elderly",
+      "publicacion": "Journal of Ethnopharmacology",
+      "año": 2012,
+      "volumen": "144(3)",
+      "paginas": "543-548",
+      "doi": "10.1016/j.jep.2012.09.033",
+      "pmid": "23069934",
+      "tipo": "estudio-clinico-ECA",
+      "nivelEvidencia": "B",
+      "idioma": "en"
+    },
+    {
+      "autor": "Bhattacharya SK, Bhattacharya A, Kumar A, et al.",
+      "titulo": "Antioxidant activity of Bacopa monniera in rat frontal cortex, striatum and hippocampus",
+      "publicacion": "Phytotherapy Research",
+      "año": 2000,
+      "volumen": "14(3)",
+      "paginas": "174-179",
+      "doi": "10.1002/(sici)1099-1573(200005)14:3<174::aid-ptr620>3.0.co;2-w",
+      "pmid": "10815010",
+      "tipo": "estudio-clinico-preclinico",
+      "nivelEvidencia": "C",
+      "idioma": "en"
+    }
+  ],
+  "advertencia": "Puede causar molestias digestivas (náuseas, calambres) al inicio. Tomar con alimentos.",
+  "disclaimer": "Esta información es educativa y no sustituye el diagnóstico ni el tratamiento médico profesional.",
+  "fechaRevision": "2026-04-15"
+}

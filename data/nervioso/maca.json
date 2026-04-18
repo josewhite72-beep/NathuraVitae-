@@ -1,0 +1,292 @@
+{
+  "id": "maca",
+  "versionFicha": "2.0",
+  "estadoFicha": "publicada",
+  "fechaCreacion": "2026-04-15",
+  "fechaRevision": "2026-04-15",
+  "nombreComun": "Maca",
+  "nombresAlternativos": [
+    {
+      "nombre": "Maca peruana",
+      "idioma": "es",
+      "region": "Panamá/Latinoamérica"
+    },
+    {
+      "nombre": "Peruvian ginseng",
+      "idioma": "en",
+      "region": "Internacional"
+    },
+    {
+      "nombre": "Lepidium meyenii",
+      "idioma": "la",
+      "region": "Científico"
+    }
+  ],
+  "nombreCientifico": "Lepidium meyenii Walp.",
+  "sinonimiasCientificas": [
+    "Lepidium peruvianum G.Chacón"
+  ],
+  "familia": "Brassicaceae",
+  "orden": "Brassicales",
+  "clase": "Magnoliopsida",
+  "regionOrigen": [
+    "Andes peruanos (Junín, Pasco)"
+  ],
+  "habitatNatural": "Altiplano andino a 3500-4500 m de altitud. Clima frío y ventoso. Suelos pobres y bien drenados.",
+  "disponibilidadPanama": {
+    "disponible": true,
+    "nombreLocal": "Maca / Maca peruana",
+    "formaComercial": [
+      "polvo",
+      "cápsula",
+      "extracto"
+    ],
+    "dondeConseguir": [
+      "tienda-naturista",
+      "supermercado",
+      "importación"
+    ],
+    "cultivoLocal": false,
+    "endemicaPanama": false,
+    "notaRegional": "Ampliamente disponible en polvo y cápsulas en tiendas naturistas y algunos supermercados de Panamá. Importada principalmente desde Perú."
+  },
+  "cultivoCasero": {
+    "dificultad": "dificil",
+    "apta": false,
+    "maceta": false,
+    "luz": "pleno-sol",
+    "agua": "poco",
+    "suelo": "Arenoso, bien drenado, pH 4.5-5.5",
+    "clima": "Requiere altitudes de 3500+ m y temperaturas de -5°C a 15°C. No viable en el clima tropical panameño bajo ninguna condición.",
+    "notaCultivo": "Imposible en Panamá. Depende exclusivamente de importación desde Perú.",
+    "tiempoACosecha": "No aplica"
+  },
+  "partesUsadas": [
+    {
+      "parte": "hipocótilo",
+      "nota": "Raíz (hipocótilo) seca en polvo o gelatinizada. La gelatinización mejora la digestibilidad y biodisponibilidad."
+    }
+  ],
+  "resumen": "La maca andina es un adaptógeno alimentario con evidencia para mejorar energía, función sexual y equilibrio hormonal sin alterar directamente los niveles de hormonas sexuales. Metaanálisis 2024 confirma eficacia en síntomas menopáusicos, libido y resistencia física. Única entre adaptógenos por su uso culinario directo.",
+  "usoTradicionalHistorico": {
+    "culturas": [
+      {
+        "cultura": "Incaica y andina precolombina",
+        "uso": "Alimento energético, fertilidad y resistencia de guerreros",
+        "periodo": "Más de 2000 años"
+      },
+      {
+        "cultura": "Cultura Chinchaycocha (Perú)",
+        "uso": "Ofrenda religiosa y alimento base en altiplano",
+        "periodo": "Cultura preincaica"
+      }
+    ],
+    "primerasMencionesHistoricas": "Cultivo preincaico documentado arqueológicamente en Junín (Perú). Primera descripción científica: Walpers (1843).",
+    "usoIndigenaRegional": "No tradicional en Panamá. Introducida como superalimento andino en el siglo XXI."
+  },
+  "nivelEvidenciaGlobal": "B",
+  "fuentePrimaria": {
+    "institucion": "PubMed — Revisión sistemática",
+    "tipo": "revision",
+    "titulo": "A comprehensive review of the effects of maca (Lepidium meyenii) on health and disease. Food Funct. 2024",
+    "año": 2024,
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10910417/"
+  },
+  "grupoTerapeutico": [
+    "adaptógena",
+    "energética",
+    "afrodisíaca",
+    "hormonal"
+  ],
+  "propiedades": [
+    {
+      "nombre": "Adaptógena y mejora energía y resistencia",
+      "nivelEvidencia": "moderado",
+      "mecanismoAccion": "Macamidas (N-benzil-alquiamidas) y glucosinolatos modulan el eje HPA reduciendo cortisol crónico y mejoran función mitocondrial. Las macamidas son exclusivas de la maca y no se encuentran en ninguna otra planta.",
+      "referencia": "del Carpio NU et al. Food Funct. 2024;15(5):2405-2424. DOI: 10.1039/d3fo04326f. PMC: 10910417"
+    },
+    {
+      "nombre": "Mejora libido y función sexual",
+      "nivelEvidencia": "moderado",
+      "mecanismoAccion": "Mecanismo no mediado por hormonas estrogénicas/androgénicas. Las macamidas actúan sobre el sistema nervioso autónomo y la función eréctil vía modulación de NO. Efecto en ambos sexos.",
+      "referencia": "Gonzales GF et al. Asian J Androl. 2001;3(4):301-303. PMID: 11753476"
+    },
+    {
+      "nombre": "Reducción de síntomas menopáusicos",
+      "nivelEvidencia": "moderado",
+      "mecanismoAccion": "No estrogénica directa. Modula receptores de estrógeno vía glucosinolatos y mejora el equilibrio de neurotransmisores (serotonina, dopamina) que median los sofocos.",
+      "referencia": "del Carpio NU et al. 2024. PMC: 10910417"
+    }
+  ],
+  "fotoquimica": [
+    {
+      "compuesto": "Macamidas (N-bencil alcamidas)",
+      "grupo": "alcamida",
+      "accion": "Adaptógena, afrodisíaca, moduladora del eje HPA. Exclusiva de Lepidium meyenii.",
+      "concentracion": "0.02-0.08% en hipocótilo seco"
+    },
+    {
+      "compuesto": "Glucosinolatos (glucotropaeolina)",
+      "grupo": "glucosinolato",
+      "accion": "Modulador hormonal, antiinflamatorio",
+      "concentracion": "Variable según ecotipo (amarillo, negro, rojo)"
+    },
+    {
+      "compuesto": "Macahidantoínas",
+      "grupo": "alcaloide",
+      "accion": "Adaptógena y energética complementaria",
+      "concentracion": "Variable"
+    }
+  ],
+  "dolencias": [
+    {
+      "nombre": "Disfunción sexual y libido baja (ambos sexos)",
+      "categoria": "reproductivo",
+      "nivelEvidencia": "moderado",
+      "dosis": "1.5-3 g/día de polvo o 500-1000 mg extracto",
+      "duracion": "6-12 semanas",
+      "referencia": "Gonzales GF et al. PMID: 11753476"
+    },
+    {
+      "nombre": "Síntomas menopáusicos (sofocos, irritabilidad)",
+      "categoria": "hormonal",
+      "nivelEvidencia": "moderado",
+      "dosis": "2-3.5 g/día de polvo gelatinizado",
+      "duracion": "6-12 semanas",
+      "referencia": "del Carpio NU et al. 2024. PMC: 10910417"
+    },
+    {
+      "nombre": "Fatiga crónica y bajo rendimiento físico",
+      "categoria": "general",
+      "nivelEvidencia": "moderado",
+      "dosis": "1.5-3 g/día en batidos o alimentos",
+      "duracion": "8-12 semanas",
+      "referencia": "del Carpio NU et al. 2024. PMC: 10910417"
+    }
+  ],
+  "sistemas": [
+    "nervioso",
+    "hormonal",
+    "reproductivo"
+  ],
+  "modoEII": {
+    "aptaEnBrote": false,
+    "notaBrote": "Sin datos en brote activo. No hay justificación para usarla en brote.",
+    "aptaEnMantenimiento": true,
+    "notaMantenimiento": "Puede usarse en remisión como adaptógeno para mejorar energía y calidad de vida en pacientes con EII crónica y fatiga asociada.",
+    "mecanismoEII": "Sin mecanismo directo sobre mucosa intestinal. La reducción del estrés crónico vía modulación HPA puede ser beneficiosa indirectamente.",
+    "referenciaEII": "Sin estudios en EII"
+  },
+  "modoCeliaquiaGluten": {
+    "libreDeGluten": true,
+    "nota": "Libre de gluten (familia Brassicaceae). Verificar trazas en procesamiento industrial.",
+    "indicacionEspecifica": "Segura en celiaquía. El polvo de maca puede usarse como sustituto energético y nutricional."
+  },
+  "usos": {
+    "interno": [
+      "Fatiga y bajo rendimiento",
+      "disfunción sexual",
+      "síntomas menopáusicos",
+      "equilibrio hormonal"
+    ],
+    "externo": [],
+    "culinario": [
+      "Polvo en batidos, smoothies, zumos",
+      "Incorporar en avena, yogur, repostería",
+      "Sabor ligeramente terroso y malteado"
+    ]
+  },
+  "preparacion": [
+    {
+      "forma": "polvo",
+      "instrucciones": "Mezclar 1.5-3 g (1 cucharadita) de polvo de maca gelatinizada en agua, leche vegetal, batido o yogur. No necesita cocción.",
+      "cantidadPlanta": "1.5-3 g de polvo gelatinizado",
+      "dosis": "1-2 veces al día",
+      "duracionMaxima": "12 semanas continuas. Descanso de 4 semanas.",
+      "notaPreparacion": "Preferir maca GELATINIZADA sobre polvo crudo — mejora digestibilidad y biodisponibilidad. El polvo crudo puede causar gases en algunos casos."
+    }
+  ],
+  "contraindicaciones": [
+    {
+      "condicion": "Cáncer hormono-dependiente (mama, útero, próstata)",
+      "gravedad": "precaución",
+      "justificacion": "Aunque la maca no tiene actividad estrogénica directa, la modulación hormonal es teóricamente relevante"
+    },
+    {
+      "condicion": "Hipertiroidismo",
+      "gravedad": "precaución",
+      "justificacion": "Los glucosinolatos pueden interferir teóricamente con la función tiroidea en dosis muy altas"
+    }
+  ],
+  "interaccionesMedicamentosas": [
+    {
+      "medicamento": "Tamoxifeno y otros moduladores de estrógenos",
+      "tipo": "precaución",
+      "mecanismo": "Interacción teórica por modulación de receptores estrogénicos",
+      "gravedad": "leve"
+    }
+  ],
+  "embarazoLactancia": {
+    "embarazo": "precaución",
+    "lactancia": "precaución",
+    "pediatria": "No recomendado en menores de 18 años sin supervisión médica",
+    "justificacion": "Datos insuficientes en embarazo y lactancia."
+  },
+  "compatibilidadPlantas": {
+    "sinergicas": [
+      {
+        "plantaId": "ashwagandha",
+        "plantaNom": "Ashwagandha",
+        "motivo": "Sinergia adaptógena — maca para energía y libido, ashwagandha para estrés y cortisol"
+      },
+      {
+        "plantaId": "rodiola",
+        "plantaNom": "Rodiola",
+        "motivo": "Triple adaptógeno: resistencia física (maca), estrés mental (rodiola)"
+      }
+    ],
+    "incompatibles": []
+  },
+  "infusionesRelacionadas": [],
+  "emoji": "🌱",
+  "etiquetas": [
+    "adaptogena",
+    "hormonal",
+    "energetica",
+    "nervioso",
+    "nivel-B",
+    "disponible-panama",
+    "importada",
+    "libre-gluten",
+    "superalimento"
+  ],
+  "fuentes": [
+    {
+      "autor": "del Carpio NU et al.",
+      "titulo": "A comprehensive review of the effects of maca (Lepidium meyenii) on health and disease",
+      "publicacion": "Food & Function",
+      "año": 2024,
+      "volumen": "15(5)",
+      "paginas": "2405-2424",
+      "doi": "10.1039/d3fo04326f",
+      "pmid": "38270563",
+      "tipo": "revision-sistematica",
+      "nivelEvidencia": "B",
+      "idioma": "en"
+    },
+    {
+      "autor": "Gonzales GF, Cordova A, Gonzales C et al.",
+      "titulo": "Lepidium meyenii (maca) improved semen parameters in adult men",
+      "publicacion": "Asian Journal of Andrology",
+      "año": 2001,
+      "volumen": "3(4)",
+      "paginas": "301-303",
+      "pmid": "11753476",
+      "tipo": "estudio-clinico-ECA",
+      "nivelEvidencia": "B",
+      "idioma": "en"
+    }
+  ],
+  "advertencia": "Usar preferiblemente maca gelatinizada. Precaución en cánceres hormono-dependientes.",
+  "disclaimer": "Esta información es educativa y no sustituye el diagnóstico ni el tratamiento médico profesional."
+}

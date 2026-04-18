@@ -1,0 +1,269 @@
+{
+  "id": "albahaca-sagrada",
+  "versionFicha": "2.0",
+  "estadoFicha": "publicada",
+  "fechaCreacion": "2026-04-15",
+  "fechaRevision": "2026-04-15",
+  "nombreComun": "Albahaca sagrada",
+  "nombresAlternativos": [
+    {
+      "nombre": "Tulsi",
+      "idioma": "hi",
+      "region": "India"
+    },
+    {
+      "nombre": "Holy basil",
+      "idioma": "en",
+      "region": "Internacional"
+    },
+    {
+      "nombre": "Kraphao",
+      "idioma": "th",
+      "region": "Tailandia"
+    }
+  ],
+  "nombreCientifico": "Ocimum tenuiflorum L.",
+  "sinonimiasCientificas": [
+    "Ocimum sanctum L."
+  ],
+  "familia": "Lamiaceae",
+  "orden": "Lamiales",
+  "clase": "Magnoliopsida",
+  "regionOrigen": [
+    "India",
+    "Asia tropical",
+    "Sudeste asiático"
+  ],
+  "habitatNatural": "Suelos fértiles en regiones tropicales y subtropicales. Cultivada como planta sagrada alrededor de templos.",
+  "disponibilidadPanama": {
+    "disponible": true,
+    "nombreLocal": "Albahaca sagrada / Tulsi",
+    "formaComercial": [
+      "fresca",
+      "seca",
+      "cápsula",
+      "té-empacado"
+    ],
+    "dondeConseguir": [
+      "mercado-público",
+      "tienda-naturista",
+      "cultivo-propio"
+    ],
+    "cultivoLocal": true,
+    "endemicaPanama": false,
+    "notaRegional": "Cultivada ampliamente en huertos caseros panameños. Se diferencia de la albahaca común (O. basilicum) por sus hojas más pequeñas y aroma más picante y clavo-like. Disponible fresca en mercados de productos asiáticos."
+  },
+  "cultivoCasero": {
+    "dificultad": "muy-facil",
+    "apta": true,
+    "maceta": true,
+    "luz": "pleno-sol",
+    "agua": "moderado",
+    "suelo": "Bien drenado y fértil",
+    "clima": "Excelente adaptación al clima tropical panameño cálido y húmedo",
+    "notaCultivo": "Planta perenne en trópico. Cosechar hojas y sumidades floridas. Resistente a plagas. Propagar por esquejes. Planta vigorizante en el huerto.",
+    "tiempoACosecha": "Continuo desde 2-3 meses"
+  },
+  "partesUsadas": [
+    {
+      "parte": "hoja",
+      "nota": "Hojas frescas o secas. Las hojas frescas son más potentes en principios activos volátiles."
+    }
+  ],
+  "resumen": "Ocimum tenuiflorum (tulsi) es el adaptógeno más cultivable en Panamá. Estudios clínicos documentan reducción de cortisol, mejora cognitiva y efecto ansiolítico. Se diferencia del tulsi común (O. basilicum) en su composición fitoquímica y actividad medicinal documentada.",
+  "usoTradicionalHistorico": {
+    "culturas": [
+      {
+        "cultura": "Hinduismo y Ayurveda",
+        "uso": "Planta sagrada (Vishnu-priya). Adaptógeno, tónico y antiinfeccioso.",
+        "periodo": "Más de 3000 años"
+      }
+    ],
+    "primerasMencionesHistoricas": "Charaka Samhita (~300 a.C.). Planta central en rituales vedas.",
+    "usoIndigenaRegional": "No tradicional en Panamá indígena. Adoptada por comunidades hindúes y como planta medicinal general."
+  },
+  "nivelEvidenciaGlobal": "B",
+  "fuentePrimaria": {
+    "institucion": "PubMed — Revisión sistemática",
+    "tipo": "revision",
+    "titulo": "The Clinical Efficacy and Safety of Tulsi in Humans: A Systematic Review. Evid Based Complement Alternat Med. 2017",
+    "año": 2017,
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5376420/"
+  },
+  "grupoTerapeutico": [
+    "adaptógena",
+    "ansiolítica",
+    "inmunomoduladora",
+    "antimicrobiana",
+    "antiinflamatoria"
+  ],
+  "propiedades": [
+    {
+      "nombre": "Adaptógena y reducción de estrés",
+      "nivelEvidencia": "moderado",
+      "mecanismoAccion": "Eugenol y ácido ursólico modulan el eje HPA reduciendo cortisol sérico. Los flavonoides (orientina, vicenina) tienen actividad ansiolítica vía modulación de receptores GABA-A. El ácido ursólico inhibe COX-2 y NF-κB.",
+      "referencia": "Jamshidi N, Cohen MM. Evid Based Complement Alternat Med. 2017;2017:9217567. DOI: 10.1155/2017/9217567. PMID: 28400848"
+    }
+  ],
+  "fotoquimica": [
+    {
+      "compuesto": "Eugenol",
+      "grupo": "fenilpropanoide",
+      "accion": "Antiinflamatorio, adaptógeno, antimicrobiano",
+      "concentracion": "Variable — componente principal del aceite esencial"
+    },
+    {
+      "compuesto": "Ácido ursólico",
+      "grupo": "triterpenoide",
+      "accion": "Adaptógeno, inhibidor de COX-2 y NF-κB",
+      "concentracion": "Variable"
+    },
+    {
+      "compuesto": "Orientina y vicenina",
+      "grupo": "flavonoide",
+      "accion": "Ansiolítica, antioxidante, radioprotectora",
+      "concentracion": "Variable"
+    }
+  ],
+  "dolencias": [
+    {
+      "nombre": "Estrés y ansiedad",
+      "categoria": "nervioso",
+      "nivelEvidencia": "moderado",
+      "dosis": "300-2000 mg/día de hojas secas o extracto equivalente",
+      "duracion": "4-8 semanas",
+      "referencia": "Jamshidi N et al. DOI: 10.1155/2017/9217567. PMID: 28400848"
+    },
+    {
+      "nombre": "Soporte inmunológico y antiinfeccioso general",
+      "categoria": "inmunológico",
+      "nivelEvidencia": "moderado",
+      "dosis": "2-3 tazas de infusión de hojas frescas al día",
+      "duracion": "Uso continuado",
+      "referencia": "Jamshidi N et al. PMID: 28400848"
+    }
+  ],
+  "sistemas": [
+    "nervioso",
+    "inmunológico",
+    "respiratorio"
+  ],
+  "modoEII": {
+    "aptaEnBrote": false,
+    "notaBrote": "Sin indicación específica en brote activo. El eugenol puede irritar mucosa sensible en grandes cantidades.",
+    "aptaEnMantenimiento": true,
+    "notaMantenimiento": "Excelente en remisión como adaptógeno de baja toxicidad. El eugenol tiene efecto antiinflamatorio que puede beneficiar indirectamente a la EII.",
+    "mecanismoEII": "La inhibición de NF-κB y COX-2 por ácido ursólico y eugenol tiene potencial antiinflamatorio intestinal en mantenimiento.",
+    "referenciaEII": "Sin ECA específicos en EII; plausibilidad por mecanismo antiinflamatorio"
+  },
+  "modoCeliaquiaGluten": {
+    "libreDeGluten": true,
+    "nota": "Libre de gluten. Planta pura sin contaminación.",
+    "indicacionEspecifica": "Segura y fácilmente cultivable en Panamá para celíacos."
+  },
+  "usos": {
+    "interno": [
+      "Estrés y ansiedad",
+      "soporte inmunológico",
+      "infecciones respiratorias leves",
+      "antiinflamatorio general"
+    ],
+    "externo": [
+      "Aceite esencial para aromaterapia relajante"
+    ],
+    "culinario": [
+      "Infusión como té de hierbas",
+      "hojas frescas en ensaladas y currys (cocina thai e india)"
+    ]
+  },
+  "preparacion": [
+    {
+      "forma": "infusión",
+      "instrucciones": "Infundir 2-3 g de hojas secas o 5-6 hojas frescas en 200 ml agua caliente. Tapar y reposar.",
+      "cantidadPlanta": "2-3 g secos o 5-6 hojas frescas",
+      "temperatura": "90°C",
+      "tiempoPreparacion": "5-10 minutos",
+      "dosis": "2-3 veces al día",
+      "duracionMaxima": "Uso continuo seguro a dosis culinarias",
+      "notaPreparacion": "Las hojas frescas tienen mayor concentración de principios activos. Cultivar en casa para uso diario."
+    }
+  ],
+  "contraindicaciones": [
+    {
+      "condicion": "Embarazo",
+      "gravedad": "precaución",
+      "justificacion": "Eugenol en altas dosis puede tener efecto sobre músculo uterino. Dosis culinarias seguras."
+    },
+    {
+      "condicion": "Terapia anticoagulante (dosis altas)",
+      "gravedad": "precaución",
+      "justificacion": "Eugenol tiene efecto antiagregante plaquetario leve"
+    }
+  ],
+  "interaccionesMedicamentosas": [
+    {
+      "medicamento": "Anticoagulantes (warfarina)",
+      "tipo": "precaución",
+      "mecanismo": "Posible efecto antiplaquetario leve por eugenol",
+      "gravedad": "leve"
+    },
+    {
+      "medicamento": "Barbitúricos y sedantes",
+      "tipo": "potenciación",
+      "mecanismo": "Efecto sedante leve aditivo",
+      "gravedad": "leve"
+    }
+  ],
+  "embarazoLactancia": {
+    "embarazo": "precaución",
+    "lactancia": "precaución",
+    "pediatria": "Segura en dosis culinarias desde los 5 años. Suplementos: precaución.",
+    "justificacion": "Dosis culinarias seguras. Extratos concentrados: precaución en embarazo."
+  },
+  "compatibilidadPlantas": {
+    "sinergicas": [
+      {
+        "plantaId": "ashwagandha",
+        "plantaNom": "Ashwagandha",
+        "motivo": "Sinergia adaptógena clásica ayurvédica — tulsi (sistema inmune/antiinflamatorio) + ashwagandha (estrés/sueño)"
+      },
+      {
+        "plantaId": "rodiola",
+        "plantaNom": "Rodiola",
+        "motivo": "Triple adaptógeno: tulsi (antiinflamatorio), rodiola (fatiga mental), ashwagandha (cortisol/sueño)"
+      }
+    ],
+    "incompatibles": []
+  },
+  "infusionesRelacionadas": [],
+  "emoji": "🌿",
+  "etiquetas": [
+    "adaptogena",
+    "ansiolitica",
+    "inmunomoduladora",
+    "nervioso",
+    "nivel-B",
+    "cultivable-panama",
+    "libre-gluten",
+    "disponible-panama",
+    "facil-cultivo",
+    "superalimento"
+  ],
+  "fuentes": [
+    {
+      "autor": "Jamshidi N, Cohen MM",
+      "titulo": "The Clinical Efficacy and Safety of Tulsi in Humans: A Systematic Review of the Literature",
+      "publicacion": "Evidence-Based Complementary and Alternative Medicine",
+      "año": 2017,
+      "volumen": "2017",
+      "paginas": "9217567",
+      "doi": "10.1155/2017/9217567",
+      "pmid": "28400848",
+      "tipo": "revision-sistematica",
+      "nivelEvidencia": "B",
+      "idioma": "en"
+    }
+  ],
+  "advertencia": "Cultivar fácilmente en Panamá. Precaución en embarazo con extractos concentrados.",
+  "disclaimer": "Esta información es educativa y no sustituye el diagnóstico ni el tratamiento médico profesional."
+}

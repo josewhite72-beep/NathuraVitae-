@@ -1,0 +1,295 @@
+{
+  "id": "ashwagandha",
+  "versionFicha": "2.0",
+  "estadoFicha": "publicada",
+  "fechaCreacion": "2026-04-15",
+  "fechaRevision": "2026-04-15",
+  "nombreComun": "Ashwagandha",
+  "nombresAlternativos": [
+    {
+      "nombre": "Withania",
+      "idioma": "en",
+      "region": "Internacional"
+    },
+    {
+      "nombre": "Ginseng indio",
+      "idioma": "es",
+      "region": "Panamá"
+    },
+    {
+      "nombre": "Winter cherry",
+      "idioma": "en",
+      "region": ""
+    }
+  ],
+  "nombreCientifico": "Withania somnifera (L.) Dunal",
+  "sinonimiasCientificas": [],
+  "familia": "Solanaceae",
+  "orden": "Solanales",
+  "clase": "Magnoliopsida",
+  "regionOrigen": [
+    "India",
+    "Asia Occidental",
+    "África"
+  ],
+  "habitatNatural": "Suelos secos, áridos y rocosos en regiones subtropicales y tropicales",
+  "disponibilidadPanama": {
+    "disponible": true,
+    "nombreLocal": "Ashwagandha",
+    "formaComercial": [
+      "cápsula",
+      "polvo",
+      "tintura",
+      "té-empacado"
+    ],
+    "dondeConseguir": [
+      "tienda-naturista",
+      "farmacia",
+      "importación"
+    ],
+    "cultivoLocal": false,
+    "endemicaPanama": false,
+    "notaRegional": "Disponible como suplemento importado en cápsulas y polvo en tiendas naturistas y farmacias de Ciudad de Panamá (iHerb, Vitamin Shoppe con envío)"
+  },
+  "cultivoCasero": {
+    "dificultad": "moderada",
+    "apta": true,
+    "maceta": true,
+    "luz": "pleno-sol",
+    "agua": "poco",
+    "suelo": "Bien drenado, arenoso y pobre en nutrientes",
+    "clima": "Buena adaptación al clima tropical panameño seco (24-32°C); sensible a exceso de humedad en lluvias intensas",
+    "notaCultivo": "Perenne de raíz; prefiere temporada seca; proteger de encharcamiento",
+    "tiempoACosecha": "6-8 meses para raíz"
+  },
+  "partesUsadas": [
+    {
+      "parte": "raíz",
+      "nota": "Raíz seca estandarizada en withanólidos (mínimo 5%). Extractos KSM-66 y Sensoril son los más estudiados."
+    }
+  ],
+  "resumen": "Withania somnifera es el adaptógeno ayurvédico más documentado científicamente. Reduce cortisol, mejora la resistencia al estrés y el sueño mediante modulación del eje HPA. Múltiples ECA confirman su eficacia en ansiedad crónica y fatiga.",
+  "usoTradicionalHistorico": {
+    "culturas": [
+      {
+        "cultura": "Ayurveda",
+        "uso": "Rasayana (rejuvenecedor). Fortalece sistema nervioso, mejora sueño y resistencia al estrés",
+        "periodo": "Más de 3000 años"
+      }
+    ],
+    "primerasMencionesHistoricas": "Charaka Samhita y Sushruta Samhita (~300 a.C.)",
+    "usoIndigenaRegional": "No tradicional en Panamá; introducido como suplemento adaptógeno"
+  },
+  "nivelEvidenciaGlobal": "B",
+  "fuentePrimaria": {
+    "institucion": "EMA",
+    "tipo": "herbal-assessment",
+    "titulo": "Assessment report on Withania somnifera (L.) Dunal, radix. EMA/HMPC/733313/2012",
+    "año": 2013,
+    "url": "https://www.ema.europa.eu/en/documents/herbal-report/final-assessment-report-withania-somnifera-l-dunal-radix_en.pdf"
+  },
+  "grupoTerapeutico": [
+    "adaptógena",
+    "ansiolítica",
+    "nootrópica",
+    "hipnótica"
+  ],
+  "propiedades": [
+    {
+      "nombre": "Reducción de estrés y cortisol (adaptógena)",
+      "nivelEvidencia": "fuerte",
+      "mecanismoAccion": "Withanólidos (withaferina A, withanólido D) modulan el eje hipotálamo-hipofisario-adrenal (HPA), reducen secreción de cortisol y DHEA-S, y activan receptores GABA-A en el SNC produciendo efecto ansiolítico sin sedación.",
+      "referencia": "Chandrasekhar K et al. Indian J Psychol Med. 2012;34(3):255-262. DOI: 10.4103/0253-7176.106022. PMID: 23439798"
+    },
+    {
+      "nombre": "Mejora del sueño",
+      "nivelEvidencia": "moderado",
+      "mecanismoAccion": "Trietilenglicol (TEG) en hojas actúa sobre el hipotálamo induciendo sueño. Los withanólidos también reducen el cortisol nocturno mejorando la arquitectura del sueño.",
+      "referencia": "Langade D et al. Cureus. 2019;11(9):e5797. DOI: 10.7759/cureus.5797. PMID: 31728244"
+    }
+  ],
+  "fotoquimica": [
+    {
+      "compuesto": "Withanólidos (withaferina A, withanólido D)",
+      "grupo": "esteroidal lactona",
+      "accion": "Adaptógena, ansiolítica, antiinflamatoria, neuroprotectora",
+      "concentracion": "1.5-5% en extracto estandarizado"
+    },
+    {
+      "compuesto": "Withanamidas",
+      "grupo": "alcaloide esteroidal",
+      "accion": "Neuroprotectora, antioxidante",
+      "concentracion": "Variable"
+    }
+  ],
+  "dolencias": [
+    {
+      "nombre": "Ansiedad y estrés crónico",
+      "categoria": "nervioso",
+      "nivelEvidencia": "fuerte",
+      "dosis": "300-600 mg/día de extracto estandarizado (5% withanólidos — KSM-66 o Sensoril)",
+      "duracion": "8-12 semanas",
+      "referencia": "Chandrasekhar K et al. DOI: 10.4103/0253-7176.106022. PMID: 23439798"
+    },
+    {
+      "nombre": "Insomnio crónico",
+      "categoria": "nervioso",
+      "nivelEvidencia": "moderado",
+      "dosis": "300 mg de extracto, 2 veces/día",
+      "duracion": "8 semanas",
+      "referencia": "Langade D et al. DOI: 10.7759/cureus.5797. PMID: 31728244"
+    }
+  ],
+  "sistemas": [
+    "nervioso",
+    "endocrino",
+    "inmunológico"
+  ],
+  "modoEII": {
+    "aptaEnBrote": false,
+    "notaBrote": "Sin datos específicos en brote activo. La modulación inmune puede ser dual. Priorizar medicación EII en brote.",
+    "aptaEnMantenimiento": true,
+    "notaMantenimiento": "MUY RECOMENDADA en remisión. El estrés crónico agrava la EII — la ashwagandha ayuda a romper ese ciclo reduciendo cortisol e inflamación sistémica.",
+    "mecanismoEII": "Reducción de cortisol reduce la permeabilidad intestinal aumentada por estrés. Efecto antiinflamatorio vía inhibición de NF-κB por withaferina A.",
+    "referenciaEII": "Sin ECA específicos en EII; evidencia extrapolada"
+  },
+  "modoCeliaquiaGluten": {
+    "libreDeGluten": true,
+    "nota": "Libre de gluten. Verificar excipientes en cápsulas.",
+    "indicacionEspecifica": "Segura en celiaquía. Útil para manejar el estrés asociado a la dieta estricta sin gluten."
+  },
+  "usos": {
+    "interno": [
+      "Estrés y ansiedad crónica",
+      "insomnio",
+      "fatiga",
+      "soporte cognitivo",
+      "deportistas (recuperación)"
+    ],
+    "externo": [],
+    "culinario": [
+      "Polvo en leche caliente — Golden Milk ayurvédico (con cúrcuma)"
+    ]
+  },
+  "preparacion": [
+    {
+      "forma": "extracto-seco",
+      "instrucciones": "Cápsulas de extracto estandarizado KSM-66 o Sensoril. Tomar con la cena por el efecto sobre el sueño.",
+      "cantidadPlanta": "300-600 mg de extracto",
+      "dosis": "1-2 veces al día, preferiblemente con la cena",
+      "duracionMaxima": "12 semanas continuas. Descanso de 4 semanas.",
+      "notaPreparacion": "El efecto adaptógeno requiere 2-4 semanas para manifestarse. No esperar resultados inmediatos."
+    }
+  ],
+  "contraindicaciones": [
+    {
+      "condicion": "Hipertiroidismo",
+      "gravedad": "relativa",
+      "justificacion": "Puede estimular la producción de hormonas tiroideas T3/T4"
+    },
+    {
+      "condicion": "Enfermedades autoinmunes activas",
+      "gravedad": "precaución",
+      "justificacion": "La modulación inmune puede ser bidireccional"
+    },
+    {
+      "condicion": "Embarazo",
+      "gravedad": "absoluta",
+      "justificacion": "Efecto uterotónico documentado en estudios animales"
+    }
+  ],
+  "interaccionesMedicamentosas": [
+    {
+      "medicamento": "Sedantes y benzodiacepinas",
+      "tipo": "potenciación",
+      "mecanismo": "Efecto GABAérgico aditivo",
+      "gravedad": "moderada"
+    },
+    {
+      "medicamento": "Hormonas tiroideas (levotiroxina)",
+      "tipo": "potenciación",
+      "mecanismo": "Puede aumentar niveles de T3/T4 — monitorizar TSH",
+      "gravedad": "moderada"
+    },
+    {
+      "medicamento": "Inmunosupresores",
+      "tipo": "precaución",
+      "mecanismo": "Posible modulación inmune bidireccional",
+      "gravedad": "leve"
+    }
+  ],
+  "embarazoLactancia": {
+    "embarazo": "contraindicada",
+    "lactancia": "precaución",
+    "pediatria": "No recomendado en menores de 18 años sin supervisión",
+    "justificacion": "Efecto uterotónico documentado. Sin datos de seguridad en embarazo."
+  },
+  "compatibilidadPlantas": {
+    "sinergicas": [
+      {
+        "plantaId": "rodiola",
+        "plantaNom": "Rodiola",
+        "motivo": "Sinergia adaptógena — ashwagandha (noche/cortisol) + rodiola (día/energía)"
+      },
+      {
+        "plantaId": "bacopa-monnieri",
+        "plantaNom": "Bacopa monnieri",
+        "motivo": "Potenciación nootrópica y ansiolítica"
+      }
+    ],
+    "incompatibles": []
+  },
+  "infusionesRelacionadas": [],
+  "emoji": "🌿",
+  "etiquetas": [
+    "adaptogena",
+    "ansiolitica",
+    "hipnotica",
+    "nervioso",
+    "nivel-B",
+    "ema",
+    "disponible-panama",
+    "libre-gluten"
+  ],
+  "fuentes": [
+    {
+      "autor": "European Medicines Agency",
+      "titulo": "Assessment report on Withania somnifera (L.) Dunal, radix. EMA/HMPC/733313/2012",
+      "publicacion": "EMA",
+      "año": 2013,
+      "doi": "",
+      "pmid": "",
+      "tipo": "herbal-assessment",
+      "nivelEvidencia": "B",
+      "idioma": "en"
+    },
+    {
+      "autor": "Chandrasekhar K, Kapoor J, Anishetty S",
+      "titulo": "A prospective, randomized double-blind, placebo-controlled study of safety and efficacy of a high-concentration full-spectrum extract of ashwagandha root in reducing stress and anxiety in adults",
+      "publicacion": "Indian Journal of Psychological Medicine",
+      "año": 2012,
+      "volumen": "34(3)",
+      "paginas": "255-262",
+      "doi": "10.4103/0253-7176.106022",
+      "pmid": "23439798",
+      "tipo": "estudio-clinico-ECA",
+      "nivelEvidencia": "B",
+      "idioma": "en"
+    },
+    {
+      "autor": "Langade D, Kanchi S, Salve J et al.",
+      "titulo": "Efficacy and safety of ashwagandha (Withania somnifera) root extract in insomnia and anxiety: A double-blind, randomized, placebo-controlled study",
+      "publicacion": "Cureus",
+      "año": 2019,
+      "volumen": "11(9)",
+      "paginas": "e5797",
+      "doi": "10.7759/cureus.5797",
+      "pmid": "31728244",
+      "tipo": "estudio-clinico-ECA",
+      "nivelEvidencia": "B",
+      "idioma": "en"
+    }
+  ],
+  "advertencia": "Contraindicada en embarazo. Puede aumentar hormonas tiroideas. Consultar médico si se toman sedantes o inmunosupresores.",
+  "disclaimer": "Esta información es educativa y no sustituye el diagnóstico ni el tratamiento médico profesional."
+}

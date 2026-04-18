@@ -1,0 +1,275 @@
+{
+  "id": "rodiola",
+  "versionFicha": "2.0",
+  "estadoFicha": "publicada",
+  "fechaCreacion": "2026-04-15",
+  "fechaRevision": "2026-04-15",
+  "nombreComun": "Rodiola",
+  "nombresAlternativos": [
+    {
+      "nombre": "Rhodiola rosea",
+      "idioma": "en",
+      "region": "Europa/Internacional"
+    },
+    {
+      "nombre": "Raíz ártica",
+      "idioma": "es",
+      "region": ""
+    },
+    {
+      "nombre": "Raíz de oro",
+      "idioma": "es",
+      "region": "Escandinavia"
+    }
+  ],
+  "nombreCientifico": "Rhodiola rosea L.",
+  "sinonimiasCientificas": [
+    "Sedum roseum (L.) Scop.",
+    "Sedum rhodiola DC."
+  ],
+  "familia": "Crassulaceae",
+  "orden": "Saxifragales",
+  "clase": "Magnoliopsida",
+  "regionOrigen": [
+    "Europa",
+    "Asia",
+    "Ártico",
+    "Siberia"
+  ],
+  "habitatNatural": "Regiones montañosas árticas y subárticas. Suelos rocosos bien drenados. Altitudes de 1000-5000 m.",
+  "disponibilidadPanama": {
+    "disponible": true,
+    "nombreLocal": "Rodiola / Rhodiola",
+    "formaComercial": [
+      "cápsula",
+      "extracto",
+      "polvo"
+    ],
+    "dondeConseguir": [
+      "tienda-naturista",
+      "farmacia",
+      "importación"
+    ],
+    "cultivoLocal": false,
+    "endemicaPanama": false,
+    "notaRegional": "Disponible como suplemento importado en tiendas naturistas de Ciudad de Panamá. iHerb con envío a Panamá."
+  },
+  "cultivoCasero": {
+    "dificultad": "dificil",
+    "apta": false,
+    "maceta": false,
+    "luz": "pleno-sol",
+    "agua": "moderado",
+    "suelo": "Bien drenado y rocoso, pH 5.5-7.0",
+    "clima": "No viable en clima tropical panameño. Requiere temperaturas de -10°C a 20°C y suelos rocosos de montaña.",
+    "notaCultivo": "Imposible en Panamá. Dependencia total de importación.",
+    "tiempoACosecha": "No aplica"
+  },
+  "partesUsadas": [
+    {
+      "parte": "rizoma y raíz",
+      "nota": "Extracto estandarizado en rosavinas (3%) y salidrósido (1%). Relación droga:extracto (DER) 1.5-5:1 en etanol 67-70%."
+    }
+  ],
+  "resumen": "Rhodiola rosea es el adaptógeno con mayor nivel de evidencia en la EMA (nivel A para uso tradicional bien establecido). Reduce la fatiga mental y física, mejora el rendimiento cognitivo bajo estrés y alivia el agotamiento crónico. Monografía EMA actualizada en 2024.",
+  "usoTradicionalHistorico": {
+    "culturas": [
+      {
+        "cultura": "Medicina tradicional rusa y escandinava",
+        "uso": "Resistencia al frío, fatiga y altitud",
+        "periodo": "Siglos XVII-XX"
+      },
+      {
+        "cultura": "Vikingos",
+        "uso": "Fortaleza y resistencia física",
+        "periodo": "Siglo VIII-XI"
+      }
+    ],
+    "primerasMencionesHistoricas": "Primera descripción científica: Carl von Linné (1755). Documentada en farmacopeas rusas desde el siglo XVIII.",
+    "usoIndigenaRegional": "No documentado en Panamá. Introducido como adaptógeno moderno."
+  },
+  "nivelEvidenciaGlobal": "A",
+  "fuentePrimaria": {
+    "institucion": "EMA",
+    "tipo": "monografía",
+    "titulo": "European Union herbal monograph on Rhodiola rosea L., rhizoma et radix (Revision 1). EMA/HMPC/24177/2023",
+    "año": 2024,
+    "url": "https://www.ema.europa.eu/en/documents/herbal-monograph/final-european-union-herbal-monograph-rhodiola-rosea-l-rhizoma-et-radix-revision-1_en.pdf"
+  },
+  "grupoTerapeutico": [
+    "adaptógena",
+    "antifatiga",
+    "nootrópica",
+    "antidepresiva leve"
+  ],
+  "propiedades": [
+    {
+      "nombre": "Antifatiga y antiestrés",
+      "nivelEvidencia": "fuerte",
+      "mecanismoAccion": "Rosavinas y salidrósido inhiben MAO-A y MAO-B aumentando serotonina, dopamina y norepinefrina en SNC. Modulan el eje HPA reduciendo cortisol y normalizando ACTH. Las rosavinas también aumentan la síntesis de ATP mitocondrial.",
+      "referencia": "EMA/HMPC/24177/2023"
+    },
+    {
+      "nombre": "Mejora del rendimiento cognitivo bajo estrés",
+      "nivelEvidencia": "fuerte",
+      "mecanismoAccion": "El salidrósido protege neuronas del estrés oxidativo y mejora la neurotransmisión dopaminérgica y serotoninérgica en el córtex prefrontal.",
+      "referencia": "Spasov AA et al. Phytomedicine. 2000;7(2):85-89. DOI: 10.1016/S0944-7113(00)80001-5. PMID: 10839209"
+    }
+  ],
+  "fotoquimica": [
+    {
+      "compuesto": "Rosavinas (rosavin, rosarin, rosin)",
+      "grupo": "fenilpropanoide",
+      "accion": "Adaptógena, inhibidora de MAO, antidepresiva",
+      "concentracion": "3% en extracto estandarizado"
+    },
+    {
+      "compuesto": "Salidrósido (p-tirosol glucósido)",
+      "grupo": "glucósido fenólico",
+      "accion": "Neuroprotectora, antifatiga, adaptógena",
+      "concentracion": "1% en extracto estandarizado"
+    }
+  ],
+  "dolencias": [
+    {
+      "nombre": "Fatiga mental y agotamiento por estrés",
+      "categoria": "nervioso",
+      "nivelEvidencia": "fuerte",
+      "dosis": "144-400 mg/día de extracto seco estandarizado (DER 1.5-5:1, etanol 67-70%)",
+      "duracion": "2-4 semanas",
+      "referencia": "EMA/HMPC/24177/2023"
+    },
+    {
+      "nombre": "Rendimiento cognitivo bajo estrés (estudiantes, médicos)",
+      "categoria": "nervioso",
+      "nivelEvidencia": "fuerte",
+      "dosis": "170-680 mg/día de extracto",
+      "duracion": "2-6 semanas",
+      "referencia": "Spasov AA et al. DOI: 10.1016/S0944-7113(00)80001-5. PMID: 10839209"
+    }
+  ],
+  "sistemas": [
+    "nervioso",
+    "endocrino"
+  ],
+  "modoEII": {
+    "aptaEnBrote": false,
+    "notaBrote": "Sin indicación en brote activo. En remisión, la reducción de estrés crónico es beneficiosa indirectamente.",
+    "aptaEnMantenimiento": true,
+    "notaMantenimiento": "Útil en remisión para manejar la fatiga crónica y el estrés asociados a la EII de larga evolución.",
+    "mecanismoEII": "La modulación del eje HPA y la reducción de cortisol pueden mejorar indirectamente la permeabilidad intestinal y el bienestar general.",
+    "referenciaEII": "Sin estudios específicos en EII"
+  },
+  "modoCeliaquiaGluten": {
+    "libreDeGluten": true,
+    "nota": "Libre de gluten. Verificar excipientes.",
+    "indicacionEspecifica": "Segura en celiaquía"
+  },
+  "usos": {
+    "interno": [
+      "Fatiga mental",
+      "agotamiento por estrés",
+      "rendimiento cognitivo",
+      "depresión leve"
+    ],
+    "externo": [],
+    "culinario": []
+  },
+  "preparacion": [
+    {
+      "forma": "extracto-seco",
+      "instrucciones": "Cápsulas de extracto estandarizado (3% rosavinas, 1% salidrósido). Tomar por la mañana — puede interferir con el sueño si se toma tarde.",
+      "cantidadPlanta": "144-200 mg de extracto por toma",
+      "dosis": "1-2 veces al día, preferiblemente por la mañana en ayunas",
+      "duracionMaxima": "2-4 semanas continuas según EMA",
+      "notaPreparacion": "Tomar siempre por la mañana o antes del mediodía. La estimulación serotoninérgica puede dificultar el sueño si se toma por la tarde."
+    }
+  ],
+  "contraindicaciones": [
+    {
+      "condicion": "Trastorno bipolar",
+      "gravedad": "relativa",
+      "justificacion": "La estimulación monoaminérgica puede inducir fase maníaca"
+    },
+    {
+      "condicion": "Embarazo y lactancia",
+      "gravedad": "contraindicada",
+      "justificacion": "Contraindicada por EMA por falta de datos"
+    }
+  ],
+  "interaccionesMedicamentosas": [
+    {
+      "medicamento": "Antidepresivos (ISRS, IMAO, IRSN)",
+      "tipo": "precaución",
+      "mecanismo": "Posible síndrome serotoninérgico por inhibición aditiva de MAO y aumento de serotonina",
+      "gravedad": "moderada"
+    },
+    {
+      "medicamento": "Anticoagulantes",
+      "tipo": "precaución",
+      "mecanismo": "Posible efecto antiplaquetario leve",
+      "gravedad": "leve"
+    }
+  ],
+  "embarazoLactancia": {
+    "embarazo": "contraindicada",
+    "lactancia": "contraindicada",
+    "pediatria": "No recomendada en menores de 18 años",
+    "justificacion": "Contraindicada por EMA. Sin datos de seguridad."
+  },
+  "compatibilidadPlantas": {
+    "sinergicas": [
+      {
+        "plantaId": "ashwagandha",
+        "plantaNom": "Ashwagandha",
+        "motivo": "Sinergia adaptógena complementaria: rodiola para el día (energía/foco), ashwagandha para la noche (cortisol/sueño)"
+      },
+      {
+        "plantaId": "maca",
+        "plantaNom": "Maca",
+        "motivo": "Efecto energético y de resistencia combinado"
+      }
+    ],
+    "incompatibles": []
+  },
+  "infusionesRelacionadas": [],
+  "emoji": "🌿",
+  "etiquetas": [
+    "adaptogena",
+    "antifatiga",
+    "nootropica",
+    "nervioso",
+    "nivel-A",
+    "ema",
+    "disponible-panama",
+    "libre-gluten"
+  ],
+  "fuentes": [
+    {
+      "autor": "European Medicines Agency",
+      "titulo": "European Union herbal monograph on Rhodiola rosea L., rhizoma et radix (Revision 1). EMA/HMPC/24177/2023",
+      "publicacion": "EMA",
+      "año": 2024,
+      "doi": "",
+      "pmid": "",
+      "tipo": "monografía-EMA",
+      "nivelEvidencia": "A",
+      "idioma": "en"
+    },
+    {
+      "autor": "Spasov AA, Wikman GK, Mandrikov VB et al.",
+      "titulo": "A double-blind, placebo-controlled pilot study of the stimulating and adaptogenic effect of Rhodiola rosea SHR-5 extract on the fatigue of students caused by stress during an examination period with a repeated low-dose regimen",
+      "publicacion": "Phytomedicine",
+      "año": 2000,
+      "volumen": "7(2)",
+      "paginas": "85-89",
+      "doi": "10.1016/S0944-7113(00)80001-5",
+      "pmid": "10839209",
+      "tipo": "estudio-clinico-ECA",
+      "nivelEvidencia": "A",
+      "idioma": "en"
+    }
+  ],
+  "advertencia": "Tomar solo por la mañana. No combinar con antidepresivos sin supervisión médica. Contraindicada en embarazo.",
+  "disclaimer": "Esta información es educativa y no sustituye el diagnóstico ni el tratamiento médico profesional."
+}

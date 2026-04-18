@@ -1,0 +1,129 @@
+{
+  "id": "valeriana",
+  "versionFicha": "2.0",
+  "estadoFicha": "publicada",
+  "fechaCreacion": "2026-04-16",
+  "fechaRevision": "2026-04-16",
+  "nombreComun": "Valeriana",
+  "nombresAlternativos": [
+    "Valerian"
+  ],
+  "nombreCientifico": "Valeriana officinalis L.",
+  "sinonimiasCientificas": [],
+  "familia": "Caprifoliaceae",
+  "orden": "Dipsacales",
+  "clase": "Magnoliopsida",
+  "regionOrigen": "Europa, Asia",
+  "habitatNatural": "Zonas húmedas templadas",
+  "disponibilidadPanama": {
+    "disponible": true,
+    "nombreLocal": "Valeriana",
+    "formaComercial": "Raíz seca, tintura, cápsulas",
+    "dondeConseguir": "Herbolarios, farmacias, tiendas naturales",
+    "cultivoLocal": false,
+    "endemicaPanama": false,
+    "notaRegional": "Sedante natural más vendido en farmacias panameñas. Importada."
+  },
+  "cultivoCasero": {
+    "dificultad": "dificil",
+    "apta": false,
+    "maceta": false,
+    "luz": "",
+    "agua": "",
+    "suelo": "",
+    "clima": "No viable en Panamá",
+    "notaCultivo": "No recomendado",
+    "tiempoACosecha": "No aplica"
+  },
+  "partesUsadas": [
+    "Raíz (rizoma y estolones) seca"
+  ],
+  "resumen": "Sedante botánico más usado en el mundo occidental. EMA avala para insomnio leve y tensión nerviosa. Los ácidos valerénicos actúan sobre receptores GABA-A sin riesgo de dependencia.",
+  "usoTradicionalHistorico": "Calmante natural para nerviosismo, estrés e insomnio.",
+  "nivelEvidenciaGlobal": "B",
+  "fuentePrimaria": "EMA/HMPC/143183/2010 — Valerianae radix",
+  "grupoTerapeutico": "Ansiolítico, sedante, hipnótico",
+  "propiedades": "Sedante, ansiolítico",
+  "fotoquimica": "Ácido valérico, valepotriatos",
+  "dolencias": [
+    "Insomnio leve",
+    "Ansiedad leve",
+    "Tensión nerviosa"
+  ],
+  "sistemas": [
+    "Nervioso"
+  ],
+  "modoEII": {
+    "aptaEnBrote": false,
+    "notaBrote": "Sin indicación en brote activo. La tintura alcohólica puede irritar la mucosa digestiva.",
+    "aptaEnMantenimiento": true,
+    "notaMantenimiento": "Útil en remisión para manejar el insomnio y la ansiedad crónica frecuentes en la EII. Usar cápsulas de extracto seco (no tintura).",
+    "mecanismoEII": "Reducción de ansiedad puede interrumpir el ciclo estrés-inflamación en EII.",
+    "referenciaEII": "Sin contraindicaciones específicas. EMA/HMPC/143183/2010"
+  },
+  "modoCeliaquiaGluten": {
+    "libreDeGluten": true,
+    "nota": "Raíz libre. Verificar excipientes en cápsulas.",
+    "indicacionEspecifica": "Seguro en celiaquía."
+  },
+  "usos": {
+    "interno": true,
+    "externo": false,
+    "culinario": false
+  },
+  "preparacion": "Cápsulas de extracto seco 300-600 mg, 30-60 min antes de dormir. O infusión de 2-3 g raíz seca en 200 ml agua caliente 10 min.",
+  "contraindicaciones": "Alergia a Caprifoliaceae. Insuficiencia hepática severa. Niños <12 años sin supervisión.",
+  "interaccionesMedicamentosas": "Potencia sedantes del SNC (benzodiacepinas, alcohol, opioides, antihistamínicos). Posible con CYP3A4.",
+  "embarazoLactancia": "No recomendado por falta de estudios. Valepotriatos: posible mutagenicidad teórica.",
+  "compatibilidadPlantas": {
+    "sinergicas": [
+      {
+        "plantaId": "lupulo",
+        "plantaNom": "Lúpulo",
+        "motivo": "Sinergia sedante clásica avalada por EMA"
+      },
+      {
+        "plantaId": "pasiflora",
+        "plantaNom": "Pasiflora",
+        "motivo": "Triple sedante no adictivo para insomnio con ansiedad"
+      }
+    ],
+    "incompatibles": []
+  },
+  "infusionesRelacionadas": [],
+  "emoji": "🌸",
+  "etiquetas": [
+    "calmante",
+    "insomnio",
+    "nivel-B",
+    "ema",
+    "disponible-panama",
+    "libre-gluten"
+  ],
+  "fuentes": [
+    {
+      "autor": "EMA",
+      "titulo": "Community herbal monograph on Valeriana officinalis L., radix. EMA/HMPC/143183/2010",
+      "publicacion": "European Medicines Agency",
+      "año": "2016",
+      "doi": "",
+      "pmid": "",
+      "tipo": "Monografía",
+      "nivelEvidencia": "B",
+      "idioma": "en"
+    },
+    {
+      "autor": "",
+      "titulo": "Standardized Extract of Valeriana officinalis Improves Overall Sleep Quality in Human Subjects with Sleep Complaints",
+      "publicacion": "",
+      "año": "",
+      "doi": "",
+      "pmid": "37905056",
+      "tipo": "Ensayo Clínico",
+      "nivelEvidencia": "B",
+      "idioma": "en"
+    }
+  ],
+  "advertencia": "No conducir tras dosis altas. No combinar con alcohol. Contraindicada en embarazo.",
+  "disclaimer": "Esta información es educativa y no sustituye el diagnóstico ni el tratamiento médico profesional."
+}
