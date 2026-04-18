@@ -1,0 +1,244 @@
+{
+  "id": "malvavisco",
+  "versionFicha": "2.0",
+  "estadoFicha": "publicada",
+  "fechaCreacion": "2026-04-15",
+  "fechaRevision": "2026-04-15",
+  "nombreComun": "Malvavisco",
+  "nombresAlternativos": [
+    {
+      "nombre": "Marshmallow",
+      "idioma": "en",
+      "region": "Europa"
+    },
+    {
+      "nombre": "Altea",
+      "idioma": "es",
+      "region": "Panamá/Latinoamérica"
+    },
+    {
+      "nombre": "Malva blanca",
+      "idioma": "es",
+      "region": "España"
+    }
+  ],
+  "nombreCientifico": "Althaea officinalis L.",
+  "sinonimiasCientificas": [
+    "Althaea taurinensis DC."
+  ],
+  "familia": "Malvaceae",
+  "orden": "Malvales",
+  "clase": "Magnoliopsida",
+  "regionOrigen": [
+    "Europa",
+    "Asia Occidental",
+    "Norte de África"
+  ],
+  "habitatNatural": "Zonas húmedas, bordes de ríos y suelos ricos en humedad",
+  "disponibilidadPanama": {
+    "disponible": true,
+    "nombreLocal": "Malvavisco / Altea",
+    "formaComercial": [
+      "raíz-seca",
+      "hoja-seca",
+      "té-empacado",
+      "jarabe"
+    ],
+    "dondeConseguir": [
+      "tienda-naturista",
+      "importación"
+    ],
+    "cultivoLocal": true,
+    "endemicaPanama": false,
+    "notaRegional": "Disponible como raíz seca en tiendas naturistas. Cultivable en zonas húmedas de Panamá."
+  },
+  "cultivoCasero": {
+    "dificultad": "moderada",
+    "apta": true,
+    "maceta": true,
+    "luz": "pleno-sol",
+    "agua": "abundante",
+    "suelo": "Húmedo, rico en materia orgánica",
+    "clima": "Adaptación al clima tropical húmedo de Panamá. Requiere humedad constante.",
+    "notaCultivo": "Perenne que prefiere suelos húmedos. Cosechar raíces en otoño del segundo año.",
+    "tiempoACosecha": "2-3 años para raíz"
+  },
+  "partesUsadas": [
+    {
+      "parte": "raíz",
+      "nota": "Raíz seca rica en mucílago (10-20%). IMPORTANTE: macerar en frío para preservar el mucílago — el calor lo degrada."
+    }
+  ],
+  "resumen": "Althaea officinalis es el demulcente respiratorio y digestivo por excelencia. Su mucílago forma una capa protectora sobre mucosas irritadas aliviando tos seca, faringitis y gastritis. EMA avala uso para irritación orofaríngea y tos seca.",
+  "usoTradicionalHistorico": {
+    "culturas": [
+      {
+        "cultura": "Grecia y Roma antiguas",
+        "uso": "Tos, dolor de garganta, heridas",
+        "periodo": "Antigüedad"
+      },
+      {
+        "cultura": "Medicina tradicional europea",
+        "uso": "Demulcente respiratorio y digestivo",
+        "periodo": "Edad Media — presente"
+      }
+    ],
+    "primerasMencionesHistoricas": "Dioscórides, De Materia Medica, siglo I d.C.",
+    "usoIndigenaRegional": "Adoptada en fitoterapia moderna panameña como demulcente"
+  },
+  "nivelEvidenciaGlobal": "B",
+  "fuentePrimaria": {
+    "institucion": "EMA",
+    "tipo": "monografía",
+    "titulo": "European Union herbal monograph on Althaea officinalis L., radix. EMA/HMPC/436679/2015",
+    "año": 2016,
+    "url": "https://www.ema.europa.eu/en/documents/herbal-monograph/final-european-union-herbal-monograph-althaea-officinalis-l-radix_en.pdf"
+  },
+  "grupoTerapeutico": [
+    "demulcente",
+    "antitusivo",
+    "protectora de mucosas",
+    "emoliente"
+  ],
+  "propiedades": [
+    {
+      "nombre": "Demulcente — protección de mucosas irritadas",
+      "nivelEvidencia": "fuerte",
+      "mecanismoAccion": "El mucílago (arabinogalactanos, ramnogalacturonano) forma un gel hidrofílico que recubre físicamente la mucosa faríngea, bronquial y gástrica, reduciendo la irritación mecánica y la tos refleja.",
+      "referencia": "EMA/HMPC/436679/2015"
+    }
+  ],
+  "fotoquimica": [
+    {
+      "compuesto": "Mucílago (arabinogalactanos, ramnogalacturonano)",
+      "grupo": "polisacárido",
+      "accion": "Demulcente, protector de mucosas, emoliente",
+      "concentracion": "10-20% en raíz seca"
+    }
+  ],
+  "dolencias": [
+    {
+      "nombre": "Tos seca e irritativa y faringitis",
+      "categoria": "respiratorio",
+      "nivelEvidencia": "fuerte",
+      "dosis": "Maceración fría: 15 g de raíz seca en 150 ml agua fría durante 1 hora. 3 veces/día.",
+      "duracion": "Hasta 1 semana",
+      "referencia": "EMA/HMPC/436679/2015"
+    },
+    {
+      "nombre": "Gastritis e irritación gástrica",
+      "categoria": "digestivo",
+      "nivelEvidencia": "moderado",
+      "dosis": "Misma preparación por vía oral",
+      "duracion": "4 semanas",
+      "referencia": "EMA/HMPC/436679/2015"
+    }
+  ],
+  "sistemas": [
+    "respiratorio",
+    "digestivo"
+  ],
+  "modoEII": {
+    "aptaEnBrote": true,
+    "notaBrote": "Segura y beneficiosa en brote. El mucílago puede proteger la mucosa intestinal inflamada y aliviar la irritación.",
+    "aptaEnMantenimiento": true,
+    "notaMantenimiento": "Excelente demulcente digestivo y respiratorio en remisión.",
+    "mecanismoEII": "La capa mucilaginosa puede proteger el epitelio intestinal inflamado. Sin efecto inmunoestimulante.",
+    "referenciaEII": "Sin ECA específicos en EII; perfil de seguridad favorable"
+  },
+  "modoCeliaquiaGluten": {
+    "libreDeGluten": true,
+    "nota": "Libre de gluten",
+    "indicacionEspecifica": "Segura en celiaquía. El mucílago puede aliviar la irritación intestinal residual."
+  },
+  "usos": {
+    "interno": [
+      "Tos seca",
+      "faringitis",
+      "gastritis",
+      "reflujo gastroesofágico",
+      "SII"
+    ],
+    "externo": [
+      "Compresas para heridas y quemaduras leves"
+    ],
+    "culinario": []
+  },
+  "preparacion": [
+    {
+      "forma": "macerado",
+      "instrucciones": "Maceración en frío: añadir 2-5 g de raíz troceada en 150 ml agua fría. Dejar reposar 30-60 minutos removiendo ocasionalmente. Colar. NO calentar.",
+      "cantidadPlanta": "2-5 g de raíz seca",
+      "temperatura": "Fría (ambiente)",
+      "tiempoPreparacion": "30-60 minutos de maceración",
+      "dosis": "3 veces al día",
+      "duracionMaxima": "1 semana para tos. 4 semanas para gastritis.",
+      "notaPreparacion": "CRÍTICO: usar agua FRÍA para preservar el mucílago. El calor degrada los polisacáridos activos. La maceración fría es la preparación estándar en la EMA."
+    }
+  ],
+  "contraindicaciones": [
+    {
+      "condicion": "Obstrucción intestinal",
+      "gravedad": "relativa",
+      "justificacion": "El mucílago puede hincharse y agravar una obstrucción"
+    }
+  ],
+  "interaccionesMedicamentosas": [
+    {
+      "medicamento": "Medicamentos orales (todos)",
+      "tipo": "alteración-metabolismo",
+      "mecanismo": "El mucílago puede retrasar la absorción intestinal de fármacos. Separar 1-2 horas.",
+      "gravedad": "moderada"
+    }
+  ],
+  "embarazoLactancia": {
+    "embarazo": "segura",
+    "lactancia": "segura",
+    "pediatria": "Segura a partir de 12 años. Uso externo sin restricción de edad.",
+    "justificacion": "Uso tradicional seguro. Mucílago no se absorbe sistémicamente."
+  },
+  "compatibilidadPlantas": {
+    "sinergicas": [
+      {
+        "plantaId": "gordolobo",
+        "plantaNom": "Gordolobo",
+        "motivo": "Doble demulcente para tos seca severa — combinación muy eficaz"
+      },
+      {
+        "plantaId": "tomillo",
+        "plantaNom": "Tomillo",
+        "motivo": "Tomillo (antiséptico/expectorante) + malvavisco (demulcente) — ideal para bronquitis con mucosa irritada"
+      }
+    ],
+    "incompatibles": []
+  },
+  "infusionesRelacionadas": [],
+  "emoji": "🌸",
+  "etiquetas": [
+    "demulcente",
+    "antitusiva",
+    "respiratorio",
+    "digestivo",
+    "nivel-B",
+    "ema",
+    "cultivable-panama",
+    "libre-gluten",
+    "disponible-panama",
+    "apta-eii"
+  ],
+  "fuentes": [
+    {
+      "autor": "European Medicines Agency",
+      "titulo": "European Union herbal monograph on Althaea officinalis L., radix. EMA/HMPC/436679/2015",
+      "publicacion": "EMA",
+      "año": 2016,
+      "doi": "",
+      "pmid": "",
+      "tipo": "monografía-EMA",
+      "nivelEvidencia": "B",
+      "idioma": "en"
+    }
+  ],
+  "advertencia": "Usar SIEMPRE maceración en frío — el calor destruye el mucílago. Separar de medicamentos orales 1-2 horas.",
+  "disclaimer": "Esta información es educativa y no sustituye el diagnóstico ni el tratamiento médico profesional."
+}

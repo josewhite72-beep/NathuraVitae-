@@ -1,0 +1,215 @@
+{
+  "id": "marrubio-blanco",
+  "versionFicha": "2.0",
+  "estadoFicha": "publicada",
+  "fechaCreacion": "2026-04-15",
+  "fechaRevision": "2026-04-15",
+  "nombreComun": "Marrubio blanco",
+  "nombresAlternativos": [
+    {
+      "nombre": "White horehound",
+      "idioma": "en",
+      "region": "Europa"
+    },
+    {
+      "nombre": "Marrubio",
+      "idioma": "es",
+      "region": "Panamá"
+    }
+  ],
+  "nombreCientifico": "Marrubium vulgare L.",
+  "sinonimiasCientificas": [],
+  "familia": "Lamiaceae",
+  "orden": "Lamiales",
+  "clase": "Magnoliopsida",
+  "regionOrigen": [
+    "Europa",
+    "Asia Occidental",
+    "Norte de África"
+  ],
+  "habitatNatural": "Suelos perturbados, bordes de caminos y zonas áridas",
+  "disponibilidadPanama": {
+    "disponible": true,
+    "nombreLocal": "Marrubio blanco",
+    "formaComercial": [
+      "seca",
+      "té-empacado"
+    ],
+    "dondeConseguir": [
+      "tienda-naturista",
+      "cultivo-propio"
+    ],
+    "cultivoLocal": true,
+    "endemicaPanama": false,
+    "notaRegional": "Cultivable en huertos secos de Panamá. Disponible como hierba seca en tiendas naturistas."
+  },
+  "cultivoCasero": {
+    "dificultad": "facil",
+    "apta": true,
+    "maceta": true,
+    "luz": "pleno-sol",
+    "agua": "poco",
+    "suelo": "Bien drenado, pobre y calcáreo, pH 6.5-8.0",
+    "clima": "Adaptación al clima tropical en zonas soleadas y secas. Resistente a sequía.",
+    "notaCultivo": "Planta perenne resistente. Cosechar sumidades floridas. Sabor muy amargo.",
+    "tiempoACosecha": "3-4 meses"
+  },
+  "partesUsadas": [
+    {
+      "parte": "parte-aérea",
+      "nota": "Herba en floración. Contiene marrubiina (mínimo 0.7% según Ph. Eur.)."
+    }
+  ],
+  "resumen": "Marrubium vulgare actúa como expectorante y mucolítico gracias a la marrubiina. EMA reconoce uso tradicional bien establecido para tos productiva. El sabor amargo intenso también estimula la secreción biliar y la digestión.",
+  "usoTradicionalHistorico": {
+    "culturas": [
+      {
+        "cultura": "Egipto antiguo y Grecia",
+        "uso": "Expectorante, antitusivo",
+        "periodo": "1500 a.C. — presente"
+      }
+    ],
+    "primerasMencionesHistoricas": "Papiro Ebers (1550 a.C.). Dioscórides.",
+    "usoIndigenaRegional": "Adoptado en medicina popular panameña para tos y bronquitis"
+  },
+  "nivelEvidenciaGlobal": "C",
+  "fuentePrimaria": {
+    "institucion": "EMA",
+    "tipo": "monografía",
+    "titulo": "Community herbal monograph on Marrubium vulgare L., herba (first version). EMA/HMPC/604271/2012",
+    "año": 2013,
+    "url": "https://www.ema.europa.eu/en/documents/herbal-monograph/final-community-herbal-monograph-marrubium-vulgare-l-herba-first-version_en.pdf"
+  },
+  "grupoTerapeutico": [
+    "expectorante",
+    "amargo digestivo",
+    "antiespasmódico"
+  ],
+  "propiedades": [
+    {
+      "nombre": "Expectorante y mucolítico",
+      "nivelEvidencia": "tradicional",
+      "mecanismoAccion": "La marrubiina estimula la secreción bronquial y reduce la viscosidad del moco. Efecto amargo mediado por receptores TAS2R en el sistema nervioso entérico que aumentan el reflejo de secreción bronquial.",
+      "referencia": "EMA/HMPC/604271/2012"
+    }
+  ],
+  "fotoquimica": [
+    {
+      "compuesto": "Marrubiina",
+      "grupo": "diterpeno lactónico",
+      "accion": "Expectorante, amargo, colagogo",
+      "concentracion": "Mínimo 0.7% en sumidad seca (Ph. Eur.)"
+    }
+  ],
+  "dolencias": [
+    {
+      "nombre": "Tos productiva asociada a resfriado",
+      "categoria": "respiratorio",
+      "nivelEvidencia": "tradicional",
+      "dosis": "1-2 g de herba seca en infusión, 3 veces/día",
+      "duracion": "Hasta 1 semana",
+      "referencia": "EMA/HMPC/604271/2012"
+    }
+  ],
+  "sistemas": [
+    "respiratorio",
+    "digestivo"
+  ],
+  "modoEII": {
+    "aptaEnBrote": false,
+    "notaBrote": "El efecto amargo estimulante puede empeorar la diarrea en brote activo.",
+    "aptaEnMantenimiento": true,
+    "notaMantenimiento": "Puede usarse en remisión para tos crónica bajo supervisión.",
+    "mecanismoEII": "Sin mecanismo directo sobre inflamación intestinal. El efecto amargo-colagogo puede ser problemático en brote.",
+    "referenciaEII": "Sin estudios específicos"
+  },
+  "modoCeliaquiaGluten": {
+    "libreDeGluten": true,
+    "nota": "Libre de gluten",
+    "indicacionEspecifica": "Segura en celiaquía"
+  },
+  "usos": {
+    "interno": [
+      "Tos productiva",
+      "bronquitis crónica",
+      "dispepsia biliar"
+    ],
+    "externo": [],
+    "culinario": [
+      "No — sabor extremadamente amargo"
+    ]
+  },
+  "preparacion": [
+    {
+      "forma": "infusión",
+      "instrucciones": "Infundir 1-2 g de sumidad seca en 200 ml agua caliente. Tapar y reposar.",
+      "cantidadPlanta": "1-2 g",
+      "temperatura": "90°C",
+      "tiempoPreparacion": "10 minutos",
+      "dosis": "3 veces al día",
+      "duracionMaxima": "1 semana",
+      "notaPreparacion": "Sabor amargo muy intenso — endulzar con miel."
+    }
+  ],
+  "contraindicaciones": [
+    {
+      "condicion": "Obstrucción biliar o úlcera péptica activa",
+      "gravedad": "absoluta",
+      "justificacion": "El efecto amargo-colagogo puede agravar estas condiciones"
+    },
+    {
+      "condicion": "Embarazo y lactancia",
+      "gravedad": "absoluta",
+      "justificacion": "Posible efecto uterotónico"
+    }
+  ],
+  "interaccionesMedicamentosas": [
+    {
+      "medicamento": "Antidiabéticos orales",
+      "tipo": "precaución",
+      "mecanismo": "Posible efecto hipoglucemiante leve",
+      "gravedad": "leve"
+    }
+  ],
+  "embarazoLactancia": {
+    "embarazo": "contraindicada",
+    "lactancia": "contraindicada",
+    "pediatria": "No recomendado en menores de 12 años",
+    "justificacion": "Posible efecto uterotónico. Datos insuficientes."
+  },
+  "compatibilidadPlantas": {
+    "sinergicas": [
+      {
+        "plantaId": "tomillo",
+        "plantaNom": "Tomillo",
+        "motivo": "Sinergia expectorante en bronquitis crónica con componente infeccioso"
+      }
+    ],
+    "incompatibles": []
+  },
+  "infusionesRelacionadas": [],
+  "emoji": "🌿",
+  "etiquetas": [
+    "expectorante",
+    "respiratorio",
+    "nivel-C",
+    "ema",
+    "cultivable-panama",
+    "libre-gluten"
+  ],
+  "fuentes": [
+    {
+      "autor": "European Medicines Agency",
+      "titulo": "Community herbal monograph on Marrubium vulgare L., herba. EMA/HMPC/604271/2012",
+      "publicacion": "EMA",
+      "año": 2013,
+      "doi": "",
+      "pmid": "",
+      "tipo": "monografía-EMA",
+      "nivelEvidencia": "C",
+      "idioma": "en"
+    }
+  ],
+  "advertencia": "No usar en embarazo ni obstrucción biliar. Sabor muy amargo — endulzar con miel.",
+  "disclaimer": "Esta información es educativa y no sustituye el diagnóstico ni el tratamiento médico profesional."
+}

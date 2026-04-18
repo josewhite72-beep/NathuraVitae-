@@ -1,0 +1,216 @@
+{
+  "id": "pino-silvestre",
+  "versionFicha": "2.0",
+  "estadoFicha": "publicada",
+  "fechaCreacion": "2026-04-15",
+  "fechaRevision": "2026-04-15",
+  "nombreComun": "Pino silvestre",
+  "nombresAlternativos": [
+    {
+      "nombre": "Scots pine",
+      "idioma": "en",
+      "region": "Europa"
+    },
+    {
+      "nombre": "Pino albar",
+      "idioma": "es",
+      "region": "España"
+    }
+  ],
+  "nombreCientifico": "Pinus sylvestris L.",
+  "sinonimiasCientificas": [
+    "Pinus sylvestris var. sylvestris"
+  ],
+  "familia": "Pinaceae",
+  "orden": "Pinales",
+  "clase": "Pinopsida",
+  "regionOrigen": [
+    "Europa",
+    "Asia Septentrional"
+  ],
+  "habitatNatural": "Bosques de coníferas boreales y templados en suelos arenosos y ácidos",
+  "disponibilidadPanama": {
+    "disponible": true,
+    "nombreLocal": "Pino / Aceite de pino",
+    "formaComercial": [
+      "aceite-esencial",
+      "brotes-secos",
+      "jarabe"
+    ],
+    "dondeConseguir": [
+      "tienda-naturista",
+      "farmacia",
+      "importación"
+    ],
+    "cultivoLocal": false,
+    "endemicaPanama": false,
+    "notaRegional": "Aceite esencial de pino disponible en tiendas naturistas. Los pinos nativos de Panamá (Pinus caribaea, P. oocarpa en Darién) tienen propiedades similares aunque no son la misma especie."
+  },
+  "cultivoCasero": {
+    "dificultad": "dificil",
+    "apta": false,
+    "maceta": false,
+    "luz": "pleno-sol",
+    "agua": "poco",
+    "suelo": "Arenoso y ácido, pH 5.0-6.5",
+    "clima": "Requiere climas fríos — no viable para P. sylvestris en Panamá. Los pinos panameños nativos son diferentes.",
+    "notaCultivo": "No recomendado para P. sylvestris. Los pinos tropicales panameños pueden usarse de forma similar pero con menos documentación.",
+    "tiempoACosecha": "No aplica"
+  },
+  "partesUsadas": [
+    {
+      "parte": "brotes",
+      "nota": "Yemas y brotes jóvenes. Aceite esencial de agujas y ramas."
+    }
+  ],
+  "resumen": "El aceite esencial de Pinus sylvestris, rico en α-pineno y β-pineno, actúa como expectorante y antiséptico respiratorio en bronquitis y sinusitis. EMA reconoce uso para tos. Principalmente se usa en inhalaciones.",
+  "usoTradicionalHistorico": {
+    "culturas": [
+      {
+        "cultura": "Medicina tradicional europea",
+        "uso": "Bronquitis, reumatismo, vaporizaciones",
+        "periodo": "Siglo XIX"
+      }
+    ],
+    "primerasMencionesHistoricas": "Farmacopeas europeas del siglo XIX",
+    "usoIndigenaRegional": "Los pinos panameños (P. caribaea) se usan de forma similar en algunas comunidades indígenas del Darién"
+  },
+  "nivelEvidenciaGlobal": "C",
+  "fuentePrimaria": {
+    "institucion": "EMA",
+    "tipo": "monografía",
+    "titulo": "European Union herbal monograph on Pinus sylvestris L., aetheroleum. EMA/HMPC/330755/2015",
+    "año": 2016,
+    "url": "https://www.ema.europa.eu/en/documents/herbal-monograph/final-european-union-herbal-monograph-pinus-sylvestris-l-aetheroleum_en.pdf"
+  },
+  "grupoTerapeutico": [
+    "expectorante",
+    "antiséptico respiratorio",
+    "broncodilatador suave"
+  ],
+  "propiedades": [
+    {
+      "nombre": "Expectorante y balsámico",
+      "nivelEvidencia": "tradicional",
+      "mecanismoAccion": "Los monoterpenos α-pineno y β-pineno tienen efecto balsámico e inhalatorio que estimula la secreción bronquial. El α-pineno tiene actividad antiinflamatoria vía inhibición de NF-κB in vitro.",
+      "referencia": "EMA/HMPC/330755/2015"
+    }
+  ],
+  "fotoquimica": [
+    {
+      "compuesto": "α-Pineno",
+      "grupo": "monoterpeno",
+      "accion": "Expectorante balsámico, antiinflamatorio leve",
+      "concentracion": "30-60% en aceite esencial"
+    },
+    {
+      "compuesto": "β-Pineno",
+      "grupo": "monoterpeno",
+      "accion": "Antiséptico, expectorante",
+      "concentracion": "10-30%"
+    }
+  ],
+  "dolencias": [
+    {
+      "nombre": "Tos y congestión bronquial",
+      "categoria": "respiratorio",
+      "nivelEvidencia": "tradicional",
+      "dosis": "Inhalación: 2-4 gotas aceite esencial en agua caliente",
+      "duracion": "Hasta 1 semana",
+      "referencia": "EMA/HMPC/330755/2015"
+    }
+  ],
+  "sistemas": [
+    "respiratorio",
+    "inmunológico"
+  ],
+  "modoEII": {
+    "aptaEnBrote": false,
+    "notaBrote": "Inhalación segura. Aceite esencial oral contraindicado en brote por posible irritación mucosa.",
+    "aptaEnMantenimiento": true,
+    "notaMantenimiento": "Inhalación segura para síntomas respiratorios en remisión",
+    "mecanismoEII": "Efecto local balsámico sin impacto sistémico en inhalación",
+    "referenciaEII": "Sin estudios específicos"
+  },
+  "modoCeliaquiaGluten": {
+    "libreDeGluten": true,
+    "nota": "Aceite esencial puro libre de gluten",
+    "indicacionEspecifica": "Seguro en celiaquía"
+  },
+  "usos": {
+    "interno": [
+      "Inhalaciones para tos y bronquitis"
+    ],
+    "externo": [
+      "Masaje muscular (diluido en aceite base)",
+      "Baños de vapor"
+    ],
+    "culinario": []
+  },
+  "preparacion": [
+    {
+      "forma": "inhalación",
+      "instrucciones": "Añadir 2-4 gotas de aceite esencial en agua caliente en recipiente. Cubrir cabeza con toalla e inhalar 5-10 minutos.",
+      "cantidadPlanta": "2-4 gotas de aceite esencial",
+      "temperatura": "60-70°C",
+      "tiempoPreparacion": "Inmediato",
+      "dosis": "2-3 veces al día",
+      "duracionMaxima": "1 semana",
+      "notaPreparacion": "No ingerir aceite esencial puro. Evitar en asma severa."
+    }
+  ],
+  "contraindicaciones": [
+    {
+      "condicion": "Asma bronquial severa",
+      "gravedad": "relativa",
+      "justificacion": "Los terpenos inhalados pueden desencadenar broncoespasmo"
+    },
+    {
+      "condicion": "Niños menores de 6 años (aceite esencial)",
+      "gravedad": "relativa",
+      "justificacion": "Posible irritación de vías respiratorias"
+    }
+  ],
+  "interaccionesMedicamentosas": [],
+  "embarazoLactancia": {
+    "embarazo": "precaución",
+    "lactancia": "precaución",
+    "pediatria": "Inhalación con precaución a partir de 6 años",
+    "justificacion": "Datos limitados"
+  },
+  "compatibilidadPlantas": {
+    "sinergicas": [
+      {
+        "plantaId": "eucalipto",
+        "plantaNom": "Eucalipto",
+        "motivo": "Sinergia expectorante y balsámica en inhalaciones para bronquitis y sinusitis"
+      }
+    ],
+    "incompatibles": []
+  },
+  "infusionesRelacionadas": [],
+  "emoji": "🌲",
+  "etiquetas": [
+    "expectorante",
+    "respiratorio",
+    "nivel-C",
+    "ema",
+    "libre-gluten",
+    "disponible-panama"
+  ],
+  "fuentes": [
+    {
+      "autor": "European Medicines Agency",
+      "titulo": "European Union herbal monograph on Pinus sylvestris L., aetheroleum. EMA/HMPC/330755/2015",
+      "publicacion": "EMA",
+      "año": 2016,
+      "doi": "",
+      "pmid": "",
+      "tipo": "monografía-EMA",
+      "nivelEvidencia": "C",
+      "idioma": "en"
+    }
+  ],
+  "advertencia": "Solo uso en inhalación. No ingerir aceite esencial puro. Evitar en asma severa.",
+  "disclaimer": "Esta información es educativa y no sustituye el diagnóstico ni el tratamiento médico profesional."
+}

@@ -1,0 +1,271 @@
+{
+  "id": "pelargonium-sidoides",
+  "versionFicha": "2.0",
+  "estadoFicha": "publicada",
+  "fechaCreacion": "2026-04-15",
+  "fechaRevision": "2026-04-15",
+  "nombreComun": "Pelargonium sidoides",
+  "nombresAlternativos": [
+    {
+      "nombre": "Umckaloabo",
+      "idioma": "zu",
+      "region": "Sudáfrica (Zulú)"
+    },
+    {
+      "nombre": "African geranium",
+      "idioma": "en",
+      "region": "Internacional"
+    },
+    {
+      "nombre": "Pelargonio",
+      "idioma": "es",
+      "region": "Panamá"
+    }
+  ],
+  "nombreCientifico": "Pelargonium sidoides DC.",
+  "sinonimiasCientificas": [
+    "Pelargonium reniforme Curt."
+  ],
+  "familia": "Geraniaceae",
+  "orden": "Geraniales",
+  "clase": "Magnoliopsida",
+  "regionOrigen": [
+    "Sudáfrica (regiones áridas y montañosas)"
+  ],
+  "habitatNatural": "Regiones áridas y montañosas de Sudáfrica. Suelos pobres y bien drenados.",
+  "disponibilidadPanama": {
+    "disponible": true,
+    "nombreLocal": "Pelargonium / Umckaloabo",
+    "formaComercial": [
+      "extracto-seco",
+      "gotas",
+      "cápsula"
+    ],
+    "dondeConseguir": [
+      "farmacia",
+      "tienda-naturista",
+      "importación"
+    ],
+    "cultivoLocal": false,
+    "endemicaPanama": false,
+    "notaRegional": "Disponible como extracto estandarizado EPs® 7630 en farmacias especializadas. Importado. Marcas: Umcka, Umckaloabo."
+  },
+  "cultivoCasero": {
+    "dificultad": "dificil",
+    "apta": false,
+    "maceta": false,
+    "luz": "pleno-sol",
+    "agua": "poco",
+    "suelo": "Arenoso y bien drenado, pH 6.0-7.5",
+    "clima": "Planta sudafricana de climas áridos — difícil en clima tropical panameño húmedo",
+    "notaCultivo": "No recomendado en Panamá. Depende de importación.",
+    "tiempoACosecha": "No aplica"
+  },
+  "partesUsadas": [
+    {
+      "parte": "raíz",
+      "nota": "Extracto hidroalcohólico de raíz. El extracto estandarizado EPs® 7630 es el único con evidencia clínica robusta. NO usar la planta sin procesar."
+    }
+  ],
+  "resumen": "Pelargonium sidoides tiene el nivel de evidencia más alto del grupo respiratorio — nivel A según EMA (monografía 2024, Revision 2). El extracto EPs® 7630 reduce duración y severidad de bronquitis aguda mediante actividad antiviral directa e inmunomodulación de la inmunidad innata. Referencia en fitoterapia respiratoria.",
+  "usoTradicionalHistorico": {
+    "culturas": [
+      {
+        "cultura": "Zulú y otras culturas sudafricanas",
+        "uso": "Infecciones respiratorias, tuberculosis (Umckaloabo)",
+        "periodo": "Tradicional"
+      },
+      {
+        "cultura": "Medicina occidental (introducción siglo XX)",
+        "uso": "Bronquitis aguda, resfriados",
+        "periodo": "Siglo XX — presente"
+      }
+    ],
+    "primerasMencionesHistoricas": "Uso indígena zulú documentado por Charles Stevens (1897). Introducido en medicina europea en los años 1970.",
+    "usoIndigenaRegional": "No tradicional en Panamá. Disponible como medicamento importado."
+  },
+  "nivelEvidenciaGlobal": "A",
+  "fuentePrimaria": {
+    "institucion": "EMA",
+    "tipo": "monografía",
+    "titulo": "European Union herbal monograph on Pelargonium sidoides DC and/or Pelargonium reniforme Curt., radix (Revision 2). EMA/HMPC/648100/2022",
+    "año": 2024,
+    "url": "https://www.ema.europa.eu/en/documents/herbal-monograph/final-european-union-herbal-monograph-pelargonium-sidoides-dc-pelargonium-reniforme-curt-radix-revision-2_en.pdf"
+  },
+  "grupoTerapeutico": [
+    "antiviral",
+    "inmunomoduladora",
+    "expectorante",
+    "antibronquítica"
+  ],
+  "propiedades": [
+    {
+      "nombre": "Antiviral e inmunomodulador de inmunidad innata",
+      "nivelEvidencia": "fuerte",
+      "mecanismoAccion": "El extracto EPs® 7630 inhibe la adhesión de virus (influenza, rinovirus, VSR) a las células epiteliales. Induce producción de IFN-β e IFN-γ en macrófagos. Las cumarinas (umbelliprenina) tienen actividad antibacteriana directa. Modula TNF-α sin sobreestimulación autoinmune.",
+      "referencia": "EMA/HMPC/648100/2022"
+    },
+    {
+      "nombre": "Reducción de duración de bronquitis aguda",
+      "nivelEvidencia": "fuerte",
+      "mecanismoAccion": "Múltiples ECA con EPs® 7630 demuestran reducción de 2-4 días en duración de bronquitis aguda vs placebo, con reducción significativa de síntomas (tos, esputo, dificultad respiratoria).",
+      "referencia": "Lizogub VG et al. Explore. 2007;3(6):573-584. DOI: 10.1016/j.explore.2007.09.007. PMID: 17980730"
+    }
+  ],
+  "fotoquimica": [
+    {
+      "compuesto": "Cumarinas (umbelliprenina, escopoletina)",
+      "grupo": "cumarina",
+      "accion": "Antibacteriana, antiprotozoaria, inmunomoduladora",
+      "concentracion": "Variable en extracto EPs® 7630"
+    },
+    {
+      "compuesto": "Proantocianidinas oligoméricas",
+      "grupo": "tanino condensado",
+      "accion": "Antiviral (inhibición de adhesión), antioxidante",
+      "concentracion": "Variable"
+    }
+  ],
+  "dolencias": [
+    {
+      "nombre": "Bronquitis aguda",
+      "categoria": "respiratorio",
+      "nivelEvidencia": "fuerte",
+      "dosis": "Extracto EPs® 7630: 30 gotas (adultos) o 20 gotas (6-12 años) 3 veces/día",
+      "duracion": "7-10 días",
+      "referencia": "EMA/HMPC/648100/2022"
+    },
+    {
+      "nombre": "Faringitis aguda y resfriado común",
+      "categoria": "respiratorio",
+      "nivelEvidencia": "fuerte",
+      "dosis": "30 gotas 3 veces/día (adultos)",
+      "duracion": "7 días",
+      "referencia": "Lizogub VG et al. DOI: 10.1016/j.explore.2007.09.007. PMID: 17980730"
+    }
+  ],
+  "sistemas": [
+    "respiratorio",
+    "inmunológico"
+  ],
+  "modoEII": {
+    "aptaEnBrote": true,
+    "notaBrote": "Segura y potencialmente beneficiosa para infecciones respiratorias intercurrentes en brote. La inmunomodulación de inmunidad innata (IFN) no agrava la autoinmunidad.",
+    "aptaEnMantenimiento": true,
+    "notaMantenimiento": "Excelente para infecciones respiratorias en pacientes con EII bajo inmunosupresión. El pelargonium no interfiere con inmunosupresores.",
+    "mecanismoEII": "Inmunomodulación de la inmunidad INNATA (IFN) sin activación de la respuesta adaptativa autoinmune — a diferencia de equinácea y astrágalo, más seguro en EII.",
+    "referenciaEII": "Sin ECA en EII; ventaja teórica sobre otros inmunoestimulantes por mecanismo innato"
+  },
+  "modoCeliaquiaGluten": {
+    "libreDeGluten": true,
+    "nota": "Extracto puro libre de gluten. Verificar excipientes en gotas o cápsulas.",
+    "indicacionEspecifica": "Seguro en celiaquía. La bronquitis es frecuente en celíacos con sistema inmune comprometido."
+  },
+  "usos": {
+    "interno": [
+      "Bronquitis aguda",
+      "resfriado y gripe",
+      "faringitis aguda",
+      "sinusitis aguda"
+    ],
+    "externo": [],
+    "culinario": []
+  },
+  "preparacion": [
+    {
+      "forma": "extracto-seco",
+      "instrucciones": "Extracto líquido EPs® 7630: diluir en agua o jugo y tomar antes de las comidas. Cápsulas: tomar con agua.",
+      "cantidadPlanta": "Extracto líquido: 30 gotas por toma (adultos); 20 gotas (6-12 años)",
+      "dosis": "3 veces al día antes de comidas",
+      "duracionMaxima": "10 días",
+      "notaPreparacion": "Usar SOLO extracto estandarizado EPs® 7630 — es el único con evidencia clínica robusta de nivel A. Los extractos genéricos no tienen la misma evidencia."
+    }
+  ],
+  "contraindicaciones": [
+    {
+      "condicion": "Hipersensibilidad a Geraniaceae",
+      "gravedad": "absoluta",
+      "justificacion": "Reacción alérgica"
+    },
+    {
+      "condicion": "Hepatopatía grave",
+      "gravedad": "relativa",
+      "justificacion": "Casos aislados de hepatotoxicidad reportados con uso prolongado y dosis altas"
+    }
+  ],
+  "interaccionesMedicamentosas": [
+    {
+      "medicamento": "Warfarina y anticoagulantes",
+      "tipo": "precaución",
+      "mecanismo": "Posible efecto antiagregante leve por cumarinas",
+      "gravedad": "leve"
+    },
+    {
+      "medicamento": "Inmunosupresores (ciclosporina, tacrolimus)",
+      "tipo": "precaución",
+      "mecanismo": "La inducción de IFN puede teóricamente interferir con inmunosupresión, aunque el riesgo es menor que con equinácea",
+      "gravedad": "leve"
+    }
+  ],
+  "embarazoLactancia": {
+    "embarazo": "precaución",
+    "lactancia": "precaución",
+    "pediatria": "Seguro a partir de 1 año en formulaciones pediátricas. Adultos: a partir de 12 años con la formulación estándar.",
+    "justificacion": "Datos limitados en embarazo. Formulaciones pediátricas disponibles y documentadas."
+  },
+  "compatibilidadPlantas": {
+    "sinergicas": [
+      {
+        "plantaId": "sauco",
+        "plantaNom": "Saúco",
+        "motivo": "Sinergia antigripal — saúco (diaforético + flores) + pelargonium (antiviral + bronquitis). Combinación muy eficaz en gripe con bronquitis"
+      },
+      {
+        "plantaId": "malvavisco",
+        "plantaNom": "Malvavisco",
+        "motivo": "Pelargonium (antiviral/antimicrobiano) + malvavisco (demulcente) — ideal para bronquitis aguda con mucosa muy irritada"
+      }
+    ],
+    "incompatibles": []
+  },
+  "infusionesRelacionadas": [],
+  "emoji": "🌿",
+  "etiquetas": [
+    "antiviral",
+    "inmunomoduladora",
+    "respiratorio",
+    "nivel-A",
+    "ema",
+    "libre-gluten",
+    "disponible-panama",
+    "apta-eii"
+  ],
+  "fuentes": [
+    {
+      "autor": "European Medicines Agency",
+      "titulo": "European Union herbal monograph on Pelargonium sidoides DC and/or Pelargonium reniforme Curt., radix (Revision 2). EMA/HMPC/648100/2022",
+      "publicacion": "EMA",
+      "año": 2024,
+      "doi": "",
+      "pmid": "",
+      "tipo": "monografía-EMA",
+      "nivelEvidencia": "A",
+      "idioma": "en"
+    },
+    {
+      "autor": "Lizogub VG, Riley DS, Heger M",
+      "titulo": "Efficacy of a pelargonium sidoides preparation in patients with the common cold: a randomized, double blind, placebo-controlled clinical trial",
+      "publicacion": "Explore",
+      "año": 2007,
+      "volumen": "3(6)",
+      "paginas": "573-584",
+      "doi": "10.1016/j.explore.2007.09.007",
+      "pmid": "17980730",
+      "tipo": "estudio-clinico-ECA",
+      "nivelEvidencia": "A",
+      "idioma": "en"
+    }
+  ],
+  "advertencia": "Usar SOLO extracto EPs® 7630 — la evidencia nivel A es específica de este extracto. Consultar médico si síntomas empeoran.",
+  "disclaimer": "Esta información es educativa y no sustituye el diagnóstico ni el tratamiento médico profesional."
+}

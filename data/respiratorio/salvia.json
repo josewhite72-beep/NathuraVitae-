@@ -1,0 +1,268 @@
+{
+  "id": "salvia",
+  "versionFicha": "2.0",
+  "estadoFicha": "publicada",
+  "fechaCreacion": "2026-04-15",
+  "fechaRevision": "2026-04-15",
+  "nombreComun": "Salvia",
+  "nombresAlternativos": [
+    {
+      "nombre": "Sage",
+      "idioma": "en",
+      "region": "Europa"
+    }
+  ],
+  "nombreCientifico": "Salvia officinalis L.",
+  "sinonimiasCientificas": [],
+  "familia": "Lamiaceae",
+  "orden": "Lamiales",
+  "clase": "Magnoliopsida",
+  "regionOrigen": [
+    "Mediterráneo"
+  ],
+  "habitatNatural": "Suelos secos y soleados en regiones mediterráneas",
+  "disponibilidadPanama": {
+    "disponible": true,
+    "nombreLocal": "Salvia",
+    "formaComercial": [
+      "fresca",
+      "seca",
+      "té-empacado"
+    ],
+    "dondeConseguir": [
+      "mercado-público",
+      "supermercado",
+      "tienda-naturista"
+    ],
+    "cultivoLocal": true,
+    "endemicaPanama": false,
+    "notaRegional": "Cultivada en huertos y disponible fresca en supermercados de Panamá."
+  },
+  "cultivoCasero": {
+    "dificultad": "facil",
+    "apta": true,
+    "maceta": true,
+    "luz": "pleno-sol",
+    "agua": "poco",
+    "suelo": "Bien drenado, pH 6.0-7.5",
+    "clima": "Adaptación razonable en zonas soleadas de Panamá. Sensible a exceso de humedad.",
+    "notaCultivo": "Cosechar hojas antes de floración. Resistente a sequía. Podar regularmente.",
+    "tiempoACosecha": "Continuo desde 3-4 meses"
+  },
+  "partesUsadas": [
+    {
+      "parte": "hoja",
+      "nota": "Hojas secas. ADVERTENCIA: no exceder dosis — la tuyona (20-40% del AE) es neurotóxica en dosis altas."
+    }
+  ],
+  "resumen": "Salvia officinalis tiene uso bien establecido por EMA para inflamaciones de boca y garganta gracias a sus propiedades antisépticas (aceite esencial) y antiinflamatorias (ácido rosmarínico). Adicionalmente avalada para reducción de sudoración excesiva en menopausia. La tuyona del aceite esencial es neurotóxica — no exceder dosis.",
+  "usoTradicionalHistorico": {
+    "culturas": [
+      {
+        "cultura": "Mediterránea",
+        "uso": "Salvia salvatrix — la planta salvadora. Antiséptico, digestivo, antisudorífico.",
+        "periodo": "Antigüedad"
+      }
+    ],
+    "primerasMencionesHistoricas": "Dioscórides, Plinio el Viejo. Escuela de Salerno (siglo XII).",
+    "usoIndigenaRegional": "Usada en Panamá para gargantas irritadas y enjuagues bucales"
+  },
+  "nivelEvidenciaGlobal": "B",
+  "fuentePrimaria": {
+    "institucion": "EMA",
+    "tipo": "monografía",
+    "titulo": "European Union herbal monograph on Salvia officinalis L., folium (Revision 1). EMA/HMPC/277152/2015",
+    "año": 2016,
+    "url": "https://www.ema.europa.eu/en/documents/herbal-monograph/final-european-union-herbal-monograph-salvia-officinalis-l-folium-revision-1_en.pdf"
+  },
+  "grupoTerapeutico": [
+    "antiséptica bucal",
+    "antiinflamatoria",
+    "antihidrótica",
+    "expectorante"
+  ],
+  "propiedades": [
+    {
+      "nombre": "Antiséptica e antiinflamatoria en orofaringe",
+      "nivelEvidencia": "fuerte",
+      "mecanismoAccion": "El aceite esencial (tuyona, cineol) tiene actividad bactericida contra estreptococos y estafilococos. El ácido rosmarínico inhibe COX-2 y reduce inflamación local en mucosa faríngea.",
+      "referencia": "EMA/HMPC/277152/2015"
+    },
+    {
+      "nombre": "Antihidrótica (reducción de sudoración en menopausia)",
+      "nivelEvidencia": "moderado",
+      "mecanismoAccion": "Antagonismo de receptores muscarínicos en glándulas sudoríparas. Los diterpenos actúan sobre el hipotálamo modulando la termorregulación.",
+      "referencia": "Bommer S et al. Adv Ther. 2011;28(6):490-500. DOI: 10.1007/s12325-011-0025-5. PMID: 21611892"
+    }
+  ],
+  "fotoquimica": [
+    {
+      "compuesto": "α-Tuyona",
+      "grupo": "monoterpeno cetónico",
+      "accion": "Antiséptico. NEUROTÓXICO en dosis altas — limitar uso",
+      "concentracion": "20-40% en aceite esencial"
+    },
+    {
+      "compuesto": "Ácido rosmarínico",
+      "grupo": "ácido fenólico",
+      "accion": "Antiinflamatorio, antioxidante",
+      "concentracion": "2-5% en hojas"
+    }
+  ],
+  "dolencias": [
+    {
+      "nombre": "Inflamación de boca y garganta (faringitis, estomatitis)",
+      "categoria": "respiratorio",
+      "nivelEvidencia": "fuerte",
+      "dosis": "Enjuague: 1-2 g en 100 ml agua, 3-4 veces/día",
+      "duracion": "Hasta 1 semana",
+      "referencia": "EMA/HMPC/277152/2015"
+    },
+    {
+      "nombre": "Sudoración excesiva en menopausia",
+      "categoria": "hormonal",
+      "nivelEvidencia": "moderado",
+      "dosis": "300 mg de extracto seco 2 veces/día",
+      "duracion": "4-8 semanas",
+      "referencia": "Bommer S et al. DOI: 10.1007/s12325-011-0025-5. PMID: 21611892"
+    }
+  ],
+  "sistemas": [
+    "respiratorio",
+    "hormonal",
+    "digestivo"
+  ],
+  "modoEII": {
+    "aptaEnBrote": false,
+    "notaBrote": "Precaución en brote — el aceite esencial con tuyona puede irritar mucosa gastrointestinal inflamada.",
+    "aptaEnMantenimiento": true,
+    "notaMantenimiento": "Uso culinario y enjuague bucal seguros en remisión.",
+    "mecanismoEII": "Efecto antiinflamatorio local vía ácido rosmarínico. Sin impacto sistémico relevante en dosis de infusión.",
+    "referenciaEII": "Sin estudios específicos"
+  },
+  "modoCeliaquiaGluten": {
+    "libreDeGluten": true,
+    "nota": "Libre de gluten",
+    "indicacionEspecifica": "Segura en celiaquía"
+  },
+  "usos": {
+    "interno": [
+      "Faringitis (enjuague)",
+      "estomatitis (enjuague)",
+      "sudoración menopaúsica",
+      "dispepsia leve"
+    ],
+    "externo": [
+      "Gárgaras",
+      "enjuagues bucales"
+    ],
+    "culinario": [
+      "Condimento en carnes, rellenos, salsas"
+    ]
+  },
+  "preparacion": [
+    {
+      "forma": "infusión",
+      "instrucciones": "Para uso orofaríngeo: infundir 1-2 g en 100 ml agua caliente. Para sudoración: infusión 2 g en 200 ml, 2-3 tazas/día.",
+      "cantidadPlanta": "1-2 g hojas secas",
+      "temperatura": "90°C",
+      "tiempoPreparacion": "10 minutos",
+      "dosis": "Para enjuague: 3-4 veces/día. Para sudoración: 2-3 tazas/día.",
+      "duracionMaxima": "1 semana en enjuague. 8 semanas para menopausia.",
+      "notaPreparacion": "ADVERTENCIA TUYONA: No ingerir aceite esencial puro. No exceder 2 semanas de uso oral continuo sin supervisión. Evitar en epilepsia."
+    }
+  ],
+  "contraindicaciones": [
+    {
+      "condicion": "Epilepsia",
+      "gravedad": "absoluta",
+      "justificacion": "La tuyona es proconvulsivante en dosis altas"
+    },
+    {
+      "condicion": "Embarazo y lactancia (extractos concentrados)",
+      "gravedad": "absoluta",
+      "justificacion": "La tuyona puede causar aborto y pasa a la leche. El uso culinario es seguro."
+    },
+    {
+      "condicion": "Insuficiencia hepática",
+      "gravedad": "relativa",
+      "justificacion": "Metabolismo hepático de tuyona puede verse comprometido"
+    }
+  ],
+  "interaccionesMedicamentosas": [
+    {
+      "medicamento": "Anticonvulsivantes",
+      "tipo": "antagonismo",
+      "mecanismo": "La tuyona puede reducir el umbral convulsivo",
+      "gravedad": "moderada"
+    },
+    {
+      "medicamento": "Antidiabéticos orales",
+      "tipo": "precaución",
+      "mecanismo": "La salvia puede reducir glucemia",
+      "gravedad": "leve"
+    }
+  ],
+  "embarazoLactancia": {
+    "embarazo": "contraindicada",
+    "lactancia": "contraindicada",
+    "pediatria": "No recomendada en menores de 12 años para uso oral",
+    "justificacion": "Tuyona: neurotóxica y abortiva en dosis altas"
+  },
+  "compatibilidadPlantas": {
+    "sinergicas": [
+      {
+        "plantaId": "tomillo",
+        "plantaNom": "Tomillo",
+        "motivo": "Sinergia antiséptica orofaríngea — combinación clásica para gárgaras"
+      },
+      {
+        "plantaId": "malvavisco",
+        "plantaNom": "Malvavisco",
+        "motivo": "Salvia (antiséptica) + malvavisco (demulcente) para irritación de garganta con infección"
+      }
+    ],
+    "incompatibles": []
+  },
+  "infusionesRelacionadas": [],
+  "emoji": "🌿",
+  "etiquetas": [
+    "antiseptica-bucal",
+    "antihidrotica",
+    "respiratorio",
+    "hormonal",
+    "nivel-B",
+    "ema",
+    "cultivable-panama",
+    "libre-gluten",
+    "disponible-panama"
+  ],
+  "fuentes": [
+    {
+      "autor": "European Medicines Agency",
+      "titulo": "European Union herbal monograph on Salvia officinalis L., folium (Revision 1). EMA/HMPC/277152/2015",
+      "publicacion": "EMA",
+      "año": 2016,
+      "doi": "",
+      "pmid": "",
+      "tipo": "monografía-EMA",
+      "nivelEvidencia": "B",
+      "idioma": "en"
+    },
+    {
+      "autor": "Bommer S, Klein P, Suter A",
+      "titulo": "First time proof of sage's tolerability and efficacy in menopausal women with hot flushes",
+      "publicacion": "Advances in Therapy",
+      "año": 2011,
+      "volumen": "28(6)",
+      "paginas": "490-500",
+      "doi": "10.1007/s12325-011-0025-5",
+      "pmid": "21611892",
+      "tipo": "estudio-clinico-ECA",
+      "nivelEvidencia": "B",
+      "idioma": "en"
+    }
+  ],
+  "advertencia": "Contraindicada en epilepsia. Tuyona neurotóxica en dosis altas. Uso culinario seguro. No usar en embarazo.",
+  "disclaimer": "Esta información es educativa y no sustituye el diagnóstico ni el tratamiento médico profesional."
+}

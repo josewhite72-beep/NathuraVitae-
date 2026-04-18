@@ -1,0 +1,250 @@
+{
+  "id": "gordolobo",
+  "versionFicha": "2.0",
+  "estadoFicha": "publicada",
+  "fechaCreacion": "2026-04-15",
+  "fechaRevision": "2026-04-15",
+  "nombreComun": "Gordolobo",
+  "nombresAlternativos": [
+    {
+      "nombre": "Mullein",
+      "idioma": "en",
+      "region": "Europa/Internacional"
+    },
+    {
+      "nombre": "Verbascum",
+      "idioma": "es",
+      "region": ""
+    },
+    {
+      "nombre": "Vela de lobo",
+      "idioma": "es",
+      "region": "España"
+    }
+  ],
+  "nombreCientifico": "Verbascum thapsus L.",
+  "sinonimiasCientificas": [
+    "Verbascum densiflorum Bertol.",
+    "Verbascum phlomoides L."
+  ],
+  "familia": "Scrophulariaceae",
+  "orden": "Lamiales",
+  "clase": "Magnoliopsida",
+  "regionOrigen": [
+    "Europa",
+    "Asia Occidental",
+    "Norte de África"
+  ],
+  "habitatNatural": "Terrenos baldíos, bordes de caminos y praderas secas y soleadas",
+  "disponibilidadPanama": {
+    "disponible": true,
+    "nombreLocal": "Gordolobo",
+    "formaComercial": [
+      "flor-seca",
+      "hoja-seca",
+      "té-empacado",
+      "aceite-otico"
+    ],
+    "dondeConseguir": [
+      "tienda-naturista",
+      "importación",
+      "cultivo-propio"
+    ],
+    "cultivoLocal": true,
+    "endemicaPanama": false,
+    "notaRegional": "Cultivable en huertos de Panamá. Flores secas disponibles en tiendas naturistas. El aceite de gordolobo para otitis está disponible en farmacias naturistas."
+  },
+  "cultivoCasero": {
+    "dificultad": "facil",
+    "apta": true,
+    "maceta": false,
+    "luz": "pleno-sol",
+    "agua": "moderado",
+    "suelo": "Arenoso, bien drenado, tolera suelos pobres",
+    "clima": "Adaptación razonable al clima tropical panameño en zonas soleadas. Sensible al encharcamiento.",
+    "notaCultivo": "Bienal — primer año roseta, segundo año espiga floral. Planta imponente de hasta 2 m. Cosechar flores amarillas.",
+    "tiempoACosecha": "Segundo año para flores"
+  },
+  "partesUsadas": [
+    {
+      "parte": "flor",
+      "nota": "Flores amarillas secas. Colar siempre la infusión para eliminar los pelos irritantes de la flor."
+    }
+  ],
+  "resumen": "Verbascum thapsus es un demulcente respiratorio clásico, avalado por EMA para tos seca e irritativa. Su mucílago y saponinas forman una película protectora sobre la mucosa faríngea y bronquial. También tiene uso tradicional como aceite para otitis.",
+  "usoTradicionalHistorico": {
+    "culturas": [
+      {
+        "cultura": "Grecia, Roma y Europa medieval",
+        "uso": "Tos, bronquitis, otitis",
+        "periodo": "Antigüedad — presente"
+      }
+    ],
+    "primerasMencionesHistoricas": "Dioscórides, De Materia Medica, siglo I d.C.",
+    "usoIndigenaRegional": "No tradicional en Panamá. Introducido como planta ornamental y medicinal."
+  },
+  "nivelEvidenciaGlobal": "B",
+  "fuentePrimaria": {
+    "institucion": "EMA",
+    "tipo": "monografía",
+    "titulo": "European Union herbal monograph on Verbascum thapsus L., V. densiflorum Bertol. and V. phlomoides L., flos. EMA/HMPC/611537/2016",
+    "año": 2018,
+    "url": "https://www.ema.europa.eu/en/documents/herbal-monograph/final-european-union-herbal-monograph-verbascum-thapsus-l-v-densiflorum-bertol-v-phlomoides-l-flos_en.pdf"
+  },
+  "grupoTerapeutico": [
+    "demulcente",
+    "antitusivo",
+    "antiinflamatoria de mucosas"
+  ],
+  "propiedades": [
+    {
+      "nombre": "Demulcente y antitusivo",
+      "nivelEvidencia": "fuerte",
+      "mecanismoAccion": "El mucílago y las saponinas forman una capa protectora sobre la mucosa respiratoria, reduciendo la irritación mecánica y el reflejo de tos. Los flavonoides (verbascósido, luteolina) tienen efecto antiinflamatorio local adicional.",
+      "referencia": "EMA/HMPC/611537/2016"
+    }
+  ],
+  "fotoquimica": [
+    {
+      "compuesto": "Mucílago",
+      "grupo": "polisacárido",
+      "accion": "Demulcente, protector de mucosas",
+      "concentracion": "3-6% en flores"
+    },
+    {
+      "compuesto": "Verbascósido (acteoside)",
+      "grupo": "fenilpropanoide",
+      "accion": "Antiinflamatorio, antioxidante, antimicrobiano",
+      "concentracion": "Variable en flores"
+    }
+  ],
+  "dolencias": [
+    {
+      "nombre": "Tos seca e irritativa",
+      "categoria": "respiratorio",
+      "nivelEvidencia": "fuerte",
+      "dosis": "1.5-2 g de flores secas en infusión bien colada, 3-4 veces/día",
+      "duracion": "Hasta 1 semana",
+      "referencia": "EMA/HMPC/611537/2016"
+    },
+    {
+      "nombre": "Otitis media (uso externo)",
+      "categoria": "respiratorio",
+      "nivelEvidencia": "tradicional",
+      "dosis": "Aceite de gordolobo (flores maceradas en aceite de oliva): 2-3 gotas en oído, 2 veces/día",
+      "duracion": "3-5 días",
+      "referencia": "EMA/HMPC/611537/2016"
+    }
+  ],
+  "sistemas": [
+    "respiratorio",
+    "dermatológico"
+  ],
+  "modoEII": {
+    "aptaEnBrote": true,
+    "notaBrote": "Segura para síntomas respiratorios en brote. Sin impacto sobre inflamación intestinal.",
+    "aptaEnMantenimiento": true,
+    "notaMantenimiento": "Útil para tos seca en remisión",
+    "mecanismoEII": "Efecto demulcente local sin impacto sistémico",
+    "referenciaEII": "Sin estudios específicos"
+  },
+  "modoCeliaquiaGluten": {
+    "libreDeGluten": true,
+    "nota": "Libre de gluten",
+    "indicacionEspecifica": "Segura en celiaquía"
+  },
+  "usos": {
+    "interno": [
+      "Tos seca",
+      "irritación faríngea",
+      "bronquitis leve"
+    ],
+    "externo": [
+      "Aceite para otitis (no usar si hay perforación timpánica)",
+      "Compresas para hemorroides"
+    ],
+    "culinario": []
+  },
+  "preparacion": [
+    {
+      "forma": "infusión",
+      "instrucciones": "Infundir 1.5-2 g de flores secas en 150 ml agua caliente. COLAR MUY BIEN con filtro fino para eliminar todos los pelos.",
+      "cantidadPlanta": "1.5-2 g flores secas",
+      "temperatura": "90°C",
+      "tiempoPreparacion": "10 minutos",
+      "dosis": "3-4 veces al día",
+      "duracionMaxima": "1 semana",
+      "notaPreparacion": "CRÍTICO: colar siempre con filtro muy fino — los pelos de la flor son irritantes para la mucosa faríngea."
+    },
+    {
+      "forma": "aceite",
+      "instrucciones": "Macerar flores secas en aceite de oliva durante 2-4 semanas al sol. Filtrar con gasa. Almacenar en frasco oscuro.",
+      "cantidadPlanta": "20 g flores en 100 ml aceite de oliva",
+      "dosis": "2-3 gotas en el oído afectado, 2 veces/día",
+      "duracionMaxima": "5 días",
+      "notaPreparacion": "NO usar si hay perforación del tímpano."
+    }
+  ],
+  "contraindicaciones": [
+    {
+      "condicion": "Perforación del tímpano (aceite ótico)",
+      "gravedad": "absoluta",
+      "justificacion": "Riesgo de infección interna del oído"
+    },
+    {
+      "condicion": "Alergia a Scrophulariaceae",
+      "gravedad": "relativa",
+      "justificacion": "Posible reacción alérgica"
+    }
+  ],
+  "interaccionesMedicamentosas": [],
+  "embarazoLactancia": {
+    "embarazo": "precaución",
+    "lactancia": "precaución",
+    "pediatria": "Infusión a partir de 12 años. Aceite ótico: consultar médico pediátrico.",
+    "justificacion": "Datos limitados"
+  },
+  "compatibilidadPlantas": {
+    "sinergicas": [
+      {
+        "plantaId": "malvavisco",
+        "plantaNom": "Malvavisco",
+        "motivo": "Doble demulcente — combinación muy eficaz para tos seca severa con mucosa muy irritada"
+      },
+      {
+        "plantaId": "tomillo",
+        "plantaNom": "Tomillo",
+        "motivo": "Gordolobo (demulcente) + tomillo (antiséptico) para tos con componente infeccioso"
+      }
+    ],
+    "incompatibles": []
+  },
+  "infusionesRelacionadas": [],
+  "emoji": "🌼",
+  "etiquetas": [
+    "demulcente",
+    "antitusiva",
+    "respiratorio",
+    "nivel-B",
+    "ema",
+    "cultivable-panama",
+    "libre-gluten",
+    "disponible-panama",
+    "apta-eii"
+  ],
+  "fuentes": [
+    {
+      "autor": "European Medicines Agency",
+      "titulo": "European Union herbal monograph on Verbascum thapsus L., V. densiflorum Bertol. and V. phlomoides L., flos. EMA/HMPC/611537/2016",
+      "publicacion": "EMA",
+      "año": 2018,
+      "doi": "",
+      "pmid": "",
+      "tipo": "monografía-EMA",
+      "nivelEvidencia": "B",
+      "idioma": "en"
+    }
+  ],
+  "advertencia": "COLAR BIEN la infusión para eliminar pelos irritantes. No usar aceite en perforación timpánica.",
+  "disclaimer": "Esta información es educativa y no sustituye el diagnóstico ni el tratamiento médico profesional."
+}

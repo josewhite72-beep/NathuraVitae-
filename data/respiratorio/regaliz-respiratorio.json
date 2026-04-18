@@ -1,0 +1,279 @@
+{
+  "id": "regaliz-respiratorio",
+  "versionFicha": "2.0",
+  "estadoFicha": "publicada",
+  "fechaCreacion": "2026-04-15",
+  "fechaRevision": "2026-04-15",
+  "nombreComun": "Regaliz (uso respiratorio)",
+  "nombresAlternativos": [
+    {
+      "nombre": "Liquorice",
+      "idioma": "en",
+      "region": "Europa"
+    },
+    {
+      "nombre": "Orozuz",
+      "idioma": "es",
+      "region": "Panamá/España"
+    },
+    {
+      "nombre": "Palo dulce",
+      "idioma": "es",
+      "region": "Centroamérica"
+    }
+  ],
+  "nombreCientifico": "Glycyrrhiza glabra L.",
+  "sinonimiasCientificas": [
+    "Glycyrrhiza inflata Bat.",
+    "Glycyrrhiza uralensis Fisch."
+  ],
+  "familia": "Fabaceae",
+  "orden": "Fabales",
+  "clase": "Magnoliopsida",
+  "regionOrigen": [
+    "Asia Occidental",
+    "Mediterráneo",
+    "China"
+  ],
+  "habitatNatural": "Riberas de ríos y llanuras aluviales. Suelos profundos, arcillosos. Clima continental templado.",
+  "disponibilidadPanama": {
+    "disponible": true,
+    "nombreLocal": "Regaliz / Orozuz / Palo dulce",
+    "formaComercial": [
+      "raíz-seca",
+      "polvo",
+      "cápsula",
+      "jarabe"
+    ],
+    "dondeConseguir": [
+      "tienda-naturista",
+      "farmacia",
+      "importación"
+    ],
+    "cultivoLocal": false,
+    "endemicaPanama": false,
+    "notaRegional": "Disponible como raíz seca y jarabes en tiendas naturistas de Ciudad de Panamá. El palo dulce (regaliz o plantas similares) tiene uso popular en Centroamérica para tos."
+  },
+  "cultivoCasero": {
+    "dificultad": "dificil",
+    "apta": false,
+    "maceta": false,
+    "luz": "pleno-sol",
+    "agua": "moderado",
+    "suelo": "Profundo, arcillo-limoso, pH 6.0-8.0",
+    "clima": "Requiere climas continentales con inviernos frescos. No viable en clima tropical panameño.",
+    "notaCultivo": "No recomendado en Panamá. Depende de importación.",
+    "tiempoACosecha": "No aplica"
+  },
+  "partesUsadas": [
+    {
+      "parte": "raíz",
+      "nota": "Raíz seca (NO la forma DGL). Para uso respiratorio se usa la raíz completa con glicirricina — diferente a la forma DGL del módulo digestivo."
+    }
+  ],
+  "resumen": "La raíz de regaliz es expectorante y demulcente para tos productiva, con respaldo de la EMA. La glicirricina tiene actividad similar a los corticoides reduciendo inflamación bronquial. ADVERTENCIA CRÍTICA: uso prolongado causa hipertensión, retención de sodio e hipopotasemia. Máximo 4-6 semanas/año.",
+  "usoTradicionalHistorico": {
+    "culturas": [
+      {
+        "cultura": "China antigua, Mediterráneo y Europa medieval",
+        "uso": "Expectorante, antitusivo, digestivo",
+        "periodo": "Más de 3000 años"
+      }
+    ],
+    "primerasMencionesHistoricas": "Papiro Ebers (1550 a.C.). Shen Nong Ben Cao Jing (China, siglo I a.C.)",
+    "usoIndigenaRegional": "El palo dulce se usa en Panamá y Centroamérica para tos e irritación de garganta"
+  },
+  "nivelEvidenciaGlobal": "B",
+  "fuentePrimaria": {
+    "institucion": "EMA",
+    "tipo": "monografía",
+    "titulo": "Community herbal monograph on Glycyrrhiza glabra L. and/or Glycyrrhiza inflata Bat. and/or Glycyrrhiza uralensis Fisch., radix. EMA/HMPC/571119/2010",
+    "año": 2012,
+    "url": "https://www.ema.europa.eu/en/documents/herbal-monograph/final-community-herbal-monograph-glycyrrhiza-glabra-l-andor-glycyrrhiza-inflata-bat-andor-glycyrrhiza-uralensis-fisch-radix-first-version_en.pdf"
+  },
+  "grupoTerapeutico": [
+    "expectorante",
+    "demulcente",
+    "antiinflamatoria bronquial",
+    "antiviral suave"
+  ],
+  "propiedades": [
+    {
+      "nombre": "Expectorante y antiinflamatorio bronquial",
+      "nivelEvidencia": "fuerte",
+      "mecanismoAccion": "La glicirricina inhibe la 11β-hidroxiesteroide deshidrogenasa (11β-HSD), aumentando la actividad local de cortisol endógeno y reduciendo la inflamación bronquial. Los flavonoides y saponoides aumentan la secreción de moco bronquial.",
+      "referencia": "EMA/HMPC/571119/2010"
+    }
+  ],
+  "fotoquimica": [
+    {
+      "compuesto": "Glicirricina (ácido glicirrícico)",
+      "grupo": "saponina triterpénica",
+      "accion": "Inhibidora 11β-HSD, antiinflamatoria, antiviral, expectorante. Causa hipertensión en uso prolongado.",
+      "concentracion": "2-15% en raíz seca"
+    },
+    {
+      "compuesto": "Flavonoides (liquiritigenina, glabridina)",
+      "grupo": "flavonoide",
+      "accion": "Expectorante, antibacteriano, antiulceroso",
+      "concentracion": "Variable"
+    }
+  ],
+  "dolencias": [
+    {
+      "nombre": "Tos productiva y bronquitis",
+      "categoria": "respiratorio",
+      "nivelEvidencia": "fuerte",
+      "dosis": "1.5-2 g de raíz seca en infusión, 2-4 veces/día",
+      "duracion": "Máximo 4 semanas (total máximo 6 semanas/año)",
+      "referencia": "EMA/HMPC/571119/2010"
+    },
+    {
+      "nombre": "Faringitis e irritación de garganta",
+      "categoria": "respiratorio",
+      "nivelEvidencia": "fuerte",
+      "dosis": "Gárgaras con infusión concentrada (2 g/100 ml), 3 veces/día",
+      "duracion": "5-7 días",
+      "referencia": "EMA/HMPC/571119/2010"
+    }
+  ],
+  "sistemas": [
+    "respiratorio",
+    "digestivo"
+  ],
+  "modoEII": {
+    "aptaEnBrote": false,
+    "notaBrote": "CONTRAINDICADA en brote activo. La glicirricina puede causar retención de sodio y agua empeorando el edema sistémico en EII severa.",
+    "aptaEnMantenimiento": false,
+    "notaMantenimiento": "No recomendada en EII por riesgo de hipertensión e hipopotasemia en uso crónico.",
+    "mecanismoEII": "El efecto mineralocorticoide de la glicirricina puede ser deletéreo en EII con compromiso sistémico",
+    "referenciaEII": "Sin estudios; contraindicación por efectos adversos cardiovasculares"
+  },
+  "modoCeliaquiaGluten": {
+    "libreDeGluten": true,
+    "nota": "Raíz pura libre de gluten. Verificar excipientes en jarabes.",
+    "indicacionEspecifica": "Segura en celiaquía con las mismas precauciones de hipertensión"
+  },
+  "usos": {
+    "interno": [
+      "Tos productiva",
+      "bronquitis",
+      "faringitis",
+      "laringitis"
+    ],
+    "externo": [
+      "Gárgaras"
+    ],
+    "culinario": [
+      "Confitería (bastones de regaliz)"
+    ]
+  },
+  "preparacion": [
+    {
+      "forma": "infusión",
+      "instrucciones": "Infundir 1.5-2 g de raíz seca troceada en 150 ml agua caliente. Tapar y reposar.",
+      "cantidadPlanta": "1.5-2 g raíz seca",
+      "temperatura": "90°C",
+      "tiempoPreparacion": "10-15 minutos",
+      "dosis": "2-4 veces al día",
+      "duracionMaxima": "4 semanas MÁXIMO. No superar 6 semanas/año. Monitorizar presión arterial.",
+      "notaPreparacion": "ADVERTENCIA: Monitorizar presión arterial semanalmente durante el uso. Cualquier elevación indica suspensión inmediata."
+    }
+  ],
+  "contraindicaciones": [
+    {
+      "condicion": "Hipertensión arterial",
+      "gravedad": "absoluta",
+      "justificacion": "La glicirricina inhibe 11β-HSD causando retención de sodio e hipertensión — riesgo grave"
+    },
+    {
+      "condicion": "Hipopotasemia",
+      "gravedad": "absoluta",
+      "justificacion": "Agrava la pérdida de potasio"
+    },
+    {
+      "condicion": "Insuficiencia renal o hepática grave",
+      "gravedad": "absoluta",
+      "justificacion": "Acumulación de metabolitos activos"
+    },
+    {
+      "condicion": "Embarazo y lactancia",
+      "gravedad": "contraindicada",
+      "justificacion": "Riesgo de hipertensión gestacional y parto prematuro"
+    }
+  ],
+  "interaccionesMedicamentosas": [
+    {
+      "medicamento": "Diuréticos (tiazidas, furosemida) — riesgo de hipopotasemia grave",
+      "tipo": "potenciación",
+      "mecanismo": "Pérdida de potasio aditiva — puede causar arritmias",
+      "gravedad": "grave"
+    },
+    {
+      "medicamento": "Digoxina y antiarrítmicos",
+      "tipo": "potenciación",
+      "mecanismo": "La hipopotasemia inducida potencia la toxicidad de la digoxina",
+      "gravedad": "grave"
+    },
+    {
+      "medicamento": "Corticosteroides",
+      "tipo": "potenciación",
+      "mecanismo": "Efecto mineralocorticoide aditivo",
+      "gravedad": "moderada"
+    },
+    {
+      "medicamento": "Antihipertensivos",
+      "tipo": "antagonismo",
+      "mecanismo": "El regaliz puede anular el efecto antihipertensivo",
+      "gravedad": "moderada"
+    }
+  ],
+  "embarazoLactancia": {
+    "embarazo": "contraindicada",
+    "lactancia": "contraindicada",
+    "pediatria": "No recomendado en menores de 12 años",
+    "justificacion": "Riesgo de efectos mineralocorticoides en desarrollo"
+  },
+  "compatibilidadPlantas": {
+    "sinergicas": [
+      {
+        "plantaId": "tomillo",
+        "plantaNom": "Tomillo",
+        "motivo": "Sinergia expectorante y antiséptica en bronquitis — tomillo cubre el componente infeccioso, regaliz el inflamatorio"
+      }
+    ],
+    "incompatibles": [
+      {
+        "plantaId": "regaliz-dgl",
+        "plantaNom": "Regaliz DGL (digestivo)",
+        "motivo": "Son la misma planta en formas diferentes — no combinar para evitar sobredosis de glicirricina"
+      }
+    ]
+  },
+  "infusionesRelacionadas": [],
+  "emoji": "🌱",
+  "etiquetas": [
+    "expectorante",
+    "respiratorio",
+    "nivel-B",
+    "ema",
+    "libre-gluten",
+    "disponible-panama",
+    "no-apta-eii"
+  ],
+  "fuentes": [
+    {
+      "autor": "European Medicines Agency",
+      "titulo": "Community herbal monograph on Glycyrrhiza glabra L. and/or Glycyrrhiza inflata Bat. and/or Glycyrrhiza uralensis Fisch., radix. EMA/HMPC/571119/2010",
+      "publicacion": "EMA",
+      "año": 2012,
+      "doi": "",
+      "pmid": "",
+      "tipo": "monografía-EMA",
+      "nivelEvidencia": "B",
+      "idioma": "en"
+    }
+  ],
+  "advertencia": "RIESGO DE HIPERTENSIÓN: monitorizar presión arterial. Máximo 4 semanas/año. Contraindicado en HTA, hipopotasemia e insuficiencia renal.",
+  "disclaimer": "Esta información es educativa y no sustituye el diagnóstico ni el tratamiento médico profesional."
+}

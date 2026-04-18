@@ -1,0 +1,231 @@
+{
+  "id": "tomillo",
+  "versionFicha": "2.0",
+  "estadoFicha": "publicada",
+  "fechaCreacion": "2026-04-15",
+  "fechaRevision": "2026-04-15",
+  "nombreComun": "Tomillo",
+  "nombresAlternativos": [
+    {
+      "nombre": "Thyme",
+      "idioma": "en",
+      "region": "Europa"
+    }
+  ],
+  "nombreCientifico": "Thymus vulgaris L.",
+  "sinonimiasCientificas": [
+    "Thymus zygis L."
+  ],
+  "familia": "Lamiaceae",
+  "orden": "Lamiales",
+  "clase": "Magnoliopsida",
+  "regionOrigen": [
+    "Mediterráneo",
+    "Europa meridional"
+  ],
+  "habitatNatural": "Suelos secos, soleados y calcáreos en regiones mediterráneas",
+  "disponibilidadPanama": {
+    "disponible": true,
+    "nombreLocal": "Tomillo",
+    "formaComercial": [
+      "fresca",
+      "seca",
+      "aceite-esencial",
+      "té-empacado"
+    ],
+    "dondeConseguir": [
+      "mercado-público",
+      "supermercado",
+      "tienda-naturista"
+    ],
+    "cultivoLocal": true,
+    "endemicaPanama": false,
+    "notaRegional": "Cultivado en huertos caseros y disponible fresco en supermercados de Panamá."
+  },
+  "cultivoCasero": {
+    "dificultad": "facil",
+    "apta": true,
+    "maceta": true,
+    "luz": "pleno-sol",
+    "agua": "poco",
+    "suelo": "Bien drenado, arenoso y pobre, pH 6.5-8.0",
+    "clima": "Adaptación al clima tropical panameño en zonas soleadas. Sensible al exceso de humedad — evitar encharcamiento.",
+    "notaCultivo": "Arbusto perenne. Resistente a sequía. Cosechar sumidades floridas.",
+    "tiempoACosecha": "Continuo desde 3-4 meses"
+  },
+  "partesUsadas": [
+    {
+      "parte": "parte-aérea",
+      "nota": "Herba en floración. Hojas ricas en aceite esencial (timol, carvacrol)."
+    }
+  ],
+  "resumen": "Thymus vulgaris es el expectorante y antiséptico respiratorio más usado en fitoterapia europea. El timol tiene potente actividad antimicrobiana y el cineol actúa como mucolítico. EMA reconoce uso bien establecido para tos productiva.",
+  "usoTradicionalHistorico": {
+    "culturas": [
+      {
+        "cultura": "Mediterránea antigua",
+        "uso": "Respiratorio, digestivo y antiséptico",
+        "periodo": "Antigüedad"
+      }
+    ],
+    "primerasMencionesHistoricas": "Dioscórides. Embalsamiento en Egipto antiguo.",
+    "usoIndigenaRegional": "Usado en Panamá como infusión para tos y resfriados"
+  },
+  "nivelEvidenciaGlobal": "B",
+  "fuentePrimaria": {
+    "institucion": "EMA",
+    "tipo": "monografía",
+    "titulo": "Community herbal monograph on Thymus vulgaris L. and Thymus zygis L., herba. EMA/HMPC/342332/2013",
+    "año": 2013,
+    "url": "https://www.ema.europa.eu/en/documents/herbal-monograph/final-community-herbal-monograph-thymus-vulgaris-l-and-thymus-zygis-l-herba_en.pdf"
+  },
+  "grupoTerapeutico": [
+    "expectorante",
+    "antiespasmódico",
+    "antiséptico respiratorio",
+    "antimicrobiano"
+  ],
+  "propiedades": [
+    {
+      "nombre": "Expectorante y mucolítico",
+      "nivelEvidencia": "fuerte",
+      "mecanismoAccion": "Timol y carvacrol estimulan la secreción bronquial y la actividad ciliar. El 1,8-cineol (secundario) actúa como mucolítico. Actividad antibacteriana directa sobre patógenos respiratorios.",
+      "referencia": "EMA/HMPC/342332/2013"
+    }
+  ],
+  "fotoquimica": [
+    {
+      "compuesto": "Timol",
+      "grupo": "fenol monoterpenoide",
+      "accion": "Antiséptico, expectorante, antimicrobiano",
+      "concentracion": "20-50% en aceite esencial"
+    },
+    {
+      "compuesto": "Carvacrol",
+      "grupo": "fenol monoterpenoide",
+      "accion": "Antimicrobiano, antioxidante",
+      "concentracion": "5-20% en aceite esencial"
+    }
+  ],
+  "dolencias": [
+    {
+      "nombre": "Tos productiva asociada a resfriado y bronquitis",
+      "categoria": "respiratorio",
+      "nivelEvidencia": "fuerte",
+      "dosis": "1-2 g de herba seca en infusión, 3 veces/día",
+      "duracion": "Hasta 1 semana",
+      "referencia": "EMA/HMPC/342332/2013"
+    }
+  ],
+  "sistemas": [
+    "respiratorio",
+    "digestivo"
+  ],
+  "modoEII": {
+    "aptaEnBrote": true,
+    "notaBrote": "Segura como expectorante. En dosis culinarias no irrita la mucosa intestinal.",
+    "aptaEnMantenimiento": true,
+    "notaMantenimiento": "Uso culinario continuo seguro en remisión.",
+    "mecanismoEII": "Efecto local mucolítico y antimicrobiano sin estimulación inflamatoria sistémica",
+    "referenciaEII": "Sin estudios específicos"
+  },
+  "modoCeliaquiaGluten": {
+    "libreDeGluten": true,
+    "nota": "Libre de gluten",
+    "indicacionEspecifica": "Seguro en celiaquía"
+  },
+  "usos": {
+    "interno": [
+      "Tos productiva",
+      "bronquitis",
+      "faringitis"
+    ],
+    "externo": [
+      "Gárgaras",
+      "vaporizaciones"
+    ],
+    "culinario": [
+      "Condimento universal en carnes, sopas y guisos"
+    ]
+  },
+  "preparacion": [
+    {
+      "forma": "infusión",
+      "instrucciones": "Infundir 1-2 g de herba seca en 150 ml agua caliente. Tapar y reposar.",
+      "cantidadPlanta": "1-2 g",
+      "temperatura": "90°C",
+      "tiempoPreparacion": "10 minutos",
+      "dosis": "3 veces al día",
+      "duracionMaxima": "1 semana",
+      "notaPreparacion": "Combinar con miel para potenciar efecto en tos. Para gárgaras usar infusión concentrada (5 g/100 ml)."
+    }
+  ],
+  "contraindicaciones": [
+    {
+      "condicion": "Alergia a Lamiaceae",
+      "gravedad": "absoluta",
+      "justificacion": "Reacción alérgica cruzada"
+    },
+    {
+      "condicion": "Lactancia (aceite esencial)",
+      "gravedad": "relativa",
+      "justificacion": "El timol pasa a la leche materna en dosis altas"
+    }
+  ],
+  "interaccionesMedicamentosas": [
+    {
+      "medicamento": "Anticoagulantes",
+      "tipo": "precaución",
+      "mecanismo": "Posible inhibición leve de CYP2C9 en dosis altas",
+      "gravedad": "leve"
+    }
+  ],
+  "embarazoLactancia": {
+    "embarazo": "precaución",
+    "lactancia": "precaución",
+    "pediatria": "Infusión a partir de 4 años (1/2 dosis). Aceite esencial oral no recomendado en menores de 12 años.",
+    "justificacion": "Dosis culinarias seguras. Extractos concentrados con precaución."
+  },
+  "compatibilidadPlantas": {
+    "sinergicas": [
+      {
+        "plantaId": "eucalipto",
+        "plantaNom": "Eucalipto",
+        "motivo": "Sinergia expectorante y antiséptica en bronquitis e infecciones respiratorias"
+      },
+      {
+        "plantaId": "malvavisco",
+        "plantaNom": "Malvavisco",
+        "motivo": "Sinergia expectorante (tomillo) + demulcente (malvavisco) para tos con irritación"
+      }
+    ],
+    "incompatibles": []
+  },
+  "infusionesRelacionadas": [],
+  "emoji": "🌿",
+  "etiquetas": [
+    "expectorante",
+    "antiseptica",
+    "respiratorio",
+    "nivel-B",
+    "ema",
+    "cultivable-panama",
+    "libre-gluten",
+    "disponible-panama"
+  ],
+  "fuentes": [
+    {
+      "autor": "European Medicines Agency",
+      "titulo": "Community herbal monograph on Thymus vulgaris L. and Thymus zygis L., herba. EMA/HMPC/342332/2013",
+      "publicacion": "EMA",
+      "año": 2013,
+      "doi": "",
+      "pmid": "",
+      "tipo": "monografía-EMA",
+      "nivelEvidencia": "B",
+      "idioma": "en"
+    }
+  ],
+  "advertencia": "Consultar médico si persisten síntomas más de 1 semana. Aceite esencial potente — no ingerir sin diluir.",
+  "disclaimer": "Esta información es educativa y no sustituye el diagnóstico ni el tratamiento médico profesional."
+}

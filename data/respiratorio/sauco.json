@@ -1,0 +1,252 @@
+{
+  "id": "sauco",
+  "versionFicha": "2.0",
+  "estadoFicha": "publicada",
+  "fechaCreacion": "2026-04-15",
+  "fechaRevision": "2026-04-15",
+  "nombreComun": "Saúco",
+  "nombresAlternativos": [
+    {
+      "nombre": "Elder",
+      "idioma": "en",
+      "region": "Europa/Internacional"
+    },
+    {
+      "nombre": "Elderflower",
+      "idioma": "en",
+      "region": ""
+    },
+    {
+      "nombre": "Saúco negro",
+      "idioma": "es",
+      "region": "Panamá"
+    }
+  ],
+  "nombreCientifico": "Sambucus nigra L.",
+  "sinonimiasCientificas": [
+    "Sambucus nigra subsp. nigra"
+  ],
+  "familia": "Adoxaceae",
+  "orden": "Dipsacales",
+  "clase": "Magnoliopsida",
+  "regionOrigen": [
+    "Europa",
+    "Asia Occidental",
+    "Norte de África"
+  ],
+  "habitatNatural": "Setos, bordes de bosques y zonas húmedas en climas templados",
+  "disponibilidadPanama": {
+    "disponible": true,
+    "nombreLocal": "Saúco / Flor de saúco",
+    "formaComercial": [
+      "flor-seca",
+      "baya-seca",
+      "jarabe",
+      "té-empacado"
+    ],
+    "dondeConseguir": [
+      "tienda-naturista",
+      "supermercado",
+      "cultivo-propio"
+    ],
+    "cultivoLocal": true,
+    "endemicaPanama": false,
+    "notaRegional": "Cultivable en zonas altas de Panamá (Boquete, Cerro Punta). Flores secas y jarabe de saúco disponibles en tiendas naturistas. El jarabe de saúco (elderberry syrup) es popular en farmacias naturistas."
+  },
+  "cultivoCasero": {
+    "dificultad": "moderada",
+    "apta": true,
+    "maceta": false,
+    "luz": "pleno-sol",
+    "agua": "moderado",
+    "suelo": "Profundo, húmedo y rico en nutrientes",
+    "clima": "Mejor en zonas altas de Panamá (<800 m). En tierras bajas el calor excesivo limita el desarrollo.",
+    "notaCultivo": "Arbusto de crecimiento rápido. Cosechar flores en plena floración. Las bayas deben cocinarse antes de consumir — crudas son tóxicas.",
+    "tiempoACosecha": "2-3 años para flores y bayas"
+  },
+  "partesUsadas": [
+    {
+      "parte": "flor",
+      "nota": "Flores blancas secas — ricas en flavonoides y mucílago. ADVERTENCIA: las bayas crudas contienen sambunigrina (glucósido cianogénico) — deben cocinarse."
+    }
+  ],
+  "resumen": "Sambucus nigra tiene monografía EMA para alivio de síntomas tempranos de resfriado. Las flores son diaforéticas y reducen fiebre. Las bayas cocidas tienen evidencia antiviral en gripe. El jarabe de saúco (elderberry) es uno de los suplementos antigripales más vendidos mundialmente.",
+  "usoTradicionalHistorico": {
+    "culturas": [
+      {
+        "cultura": "Europea — Hipócrates a presente",
+        "uso": "Diaforético, diurético, antigripal",
+        "periodo": "Siglo IV a.C. — presente"
+      }
+    ],
+    "primerasMencionesHistoricas": "Hipócrates y Dioscórides",
+    "usoIndigenaRegional": "No tradicional en Panamá. Introducido como suplemento antigripal."
+  },
+  "nivelEvidenciaGlobal": "B",
+  "fuentePrimaria": {
+    "institucion": "EMA",
+    "tipo": "monografía",
+    "titulo": "European Union herbal monograph on Sambucus nigra L., flos (Revision 1). EMA/HMPC/611512/2016",
+    "año": 2018,
+    "url": "https://www.ema.europa.eu/en/documents/herbal-monograph/final-european-union-herbal-monograph-sambucus-nigra-l-flos-revision-1_en.pdf"
+  },
+  "grupoTerapeutico": [
+    "diaforética",
+    "antigripal",
+    "expectorante",
+    "antiviral suave"
+  ],
+  "propiedades": [
+    {
+      "nombre": "Diaforético y alivio de síntomas de resfriado",
+      "nivelEvidencia": "fuerte",
+      "mecanismoAccion": "Los flavonoides (rutina, quercetina, kaempferol) estimulan las glándulas sudoríparas y tienen efecto antiinflamatorio periférico. Las antocianinas de las bayas inhiben la neuraminidasa viral inhibiendo la entrada del virus a la célula.",
+      "referencia": "EMA/HMPC/611512/2016"
+    }
+  ],
+  "fotoquimica": [
+    {
+      "compuesto": "Rutina y kaempferol glucósidos",
+      "grupo": "flavonoide",
+      "accion": "Diaforético, antiinflamatorio, capilaro-protector",
+      "concentracion": "Variable en flores"
+    },
+    {
+      "compuesto": "Antocianinas (bayas)",
+      "grupo": "antocianina",
+      "accion": "Antiviral (inhibidora de neuraminidasa), antioxidante",
+      "concentracion": "Variable en bayas"
+    }
+  ],
+  "dolencias": [
+    {
+      "nombre": "Síntomas tempranos de resfriado y gripe",
+      "categoria": "respiratorio",
+      "nivelEvidencia": "fuerte",
+      "dosis": "2-5 g de flores secas en infusión, 3 veces/día. Para bayas: jarabe estandarizado según producto.",
+      "duracion": "Hasta 1 semana",
+      "referencia": "EMA/HMPC/611512/2016"
+    }
+  ],
+  "sistemas": [
+    "respiratorio",
+    "inmunológico"
+  ],
+  "modoEII": {
+    "aptaEnBrote": true,
+    "notaBrote": "Segura para síntomas respiratorios en brote. Las flores no estimulan el sistema inmune de forma significativa.",
+    "aptaEnMantenimiento": true,
+    "notaMantenimiento": "Útil para resfriados en remisión. Sin interferencia con medicación EII.",
+    "mecanismoEII": "Efecto antiinflamatorio periférico suave sin estimulación inmune significativa",
+    "referenciaEII": "Sin estudios específicos"
+  },
+  "modoCeliaquiaGluten": {
+    "libreDeGluten": true,
+    "nota": "Flores y bayas cocidas libres de gluten. Verificar jarabes comerciales.",
+    "indicacionEspecifica": "Seguro en celiaquía"
+  },
+  "usos": {
+    "interno": [
+      "Resfriado y gripe (síntomas tempranos)",
+      "fiebre leve",
+      "sinusitis"
+    ],
+    "externo": [
+      "Compresas para conjuntivitis",
+      "lociones para piel"
+    ],
+    "culinario": [
+      "Jarabe de saúco",
+      "infusión de flores (limonada con flor de saúco)",
+      "mermeladas"
+    ]
+  },
+  "preparacion": [
+    {
+      "forma": "infusión",
+      "instrucciones": "Infundir 2-5 g de flores secas en 150 ml agua caliente. Tapar y reposar.",
+      "cantidadPlanta": "2-5 g flores secas",
+      "temperatura": "90°C",
+      "tiempoPreparacion": "10 minutos",
+      "dosis": "3 veces al día, tomando la infusión caliente para potenciar efecto diaforético",
+      "duracionMaxima": "1 semana",
+      "notaPreparacion": "Tomar caliente para favorecer la sudoración. NO usar bayas crudas — crudas son tóxicas. Las bayas deben cocinarse siempre."
+    }
+  ],
+  "contraindicaciones": [
+    {
+      "condicion": "Bayas crudas (toxicidad)",
+      "gravedad": "absoluta",
+      "justificacion": "Las bayas crudas contienen sambunigrina (cianuro) — siempre cocinar antes de consumir"
+    },
+    {
+      "condicion": "Hipersensibilidad a Adoxaceae",
+      "gravedad": "relativa",
+      "justificacion": "Posible reacción alérgica"
+    }
+  ],
+  "interaccionesMedicamentosas": [
+    {
+      "medicamento": "Diuréticos",
+      "tipo": "potenciación",
+      "mecanismo": "Efecto diurético leve aditivo",
+      "gravedad": "leve"
+    },
+    {
+      "medicamento": "Inmunosupresores",
+      "tipo": "precaución",
+      "mecanismo": "Las bayas tienen leve efecto inmunoestimulante — teóricamente relevante",
+      "gravedad": "leve"
+    }
+  ],
+  "embarazoLactancia": {
+    "embarazo": "precaución",
+    "lactancia": "precaución",
+    "pediatria": "Flores seguras a partir de 2 años en dosis reducidas. Bayas cocidas: a partir de 1 año.",
+    "justificacion": "Uso tradicional seguro. Datos limitados en embarazo."
+  },
+  "compatibilidadPlantas": {
+    "sinergicas": [
+      {
+        "plantaId": "pelargonium-sidoides",
+        "plantaNom": "Pelargonium sidoides",
+        "motivo": "Sinergia antigripal potente — saúco (diaforético + antiviral suave) + pelargonium (antiviral + inmunomodulador)"
+      },
+      {
+        "plantaId": "tomillo",
+        "plantaNom": "Tomillo",
+        "motivo": "Sinergia antiséptica y antigripal para resfriados con componente bronquial"
+      }
+    ],
+    "incompatibles": []
+  },
+  "infusionesRelacionadas": [],
+  "emoji": "🌸",
+  "etiquetas": [
+    "diaforetica",
+    "antigripal",
+    "antiviral",
+    "respiratorio",
+    "nivel-B",
+    "ema",
+    "cultivable-panama",
+    "libre-gluten",
+    "disponible-panama",
+    "apta-eii"
+  ],
+  "fuentes": [
+    {
+      "autor": "European Medicines Agency",
+      "titulo": "European Union herbal monograph on Sambucus nigra L., flos (Revision 1). EMA/HMPC/611512/2016",
+      "publicacion": "EMA",
+      "año": 2018,
+      "doi": "",
+      "pmid": "",
+      "tipo": "monografía-EMA",
+      "nivelEvidencia": "B",
+      "idioma": "en"
+    }
+  ],
+  "advertencia": "NUNCA consumir bayas crudas — cocinar siempre. Flores seguras.",
+  "disclaimer": "Esta información es educativa y no sustituye el diagnóstico ni el tratamiento médico profesional."
+}
