@@ -467,8 +467,7 @@ body{
       <div>
         <span class="mod-ico">🍵</span>
         <div class="mod-nom">Infusiones</div>
-        <div class="mod-sub">Mezclas · compatibilidad · EII</div>
-        <span class="mod-badge">Próximamente</span>
+        <div class="mod-sub">10 mezclas medicinales · EII</div>
       </div>
       <svg class="mod-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#9a6010" stroke-width="2" stroke-linecap="round"><path d="M9 18l6-6-6-6"/></svg>
     </div>
@@ -478,10 +477,40 @@ body{
       <div>
         <span class="mod-ico">🍽️</span>
         <div class="mod-nom">Recetas</div>
-        <div class="mod-sub">Sin gluten · keto · EII</div>
-        <span class="mod-badge">Próximamente</span>
+        <div class="mod-sub">Sin gluten · keto · brote EII</div>
       </div>
       <svg class="mod-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#a83838" stroke-width="2" stroke-linecap="round"><path d="M9 18l6-6-6-6"/></svg>
+    </div>
+
+
+    <!-- Remedios caseros -->
+    <div class="mod-card" style="background:linear-gradient(135deg,#eaf6f0,#d4eee3)" onclick="irA('remedios.html')">
+      <div>
+        <span class="mod-ico">🌱</span>
+        <div class="mod-nom">Remedios caseros</div>
+        <div class="mod-sub">30 preparaciones · 8 síntomas</div>
+      </div>
+      <svg class="mod-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--v2)" stroke-width="2" stroke-linecap="round"><path d="M9 18l6-6-6-6"/></svg>
+    </div>
+
+    <!-- Recetas complementarias -->
+    <div class="mod-card" style="background:linear-gradient(135deg,#f5f0ff,#e8dff8)" onclick="irA('recetas-complementarias.html')">
+      <div>
+        <span class="mod-ico">🥗</span>
+        <div class="mod-nom">Recetas complementarias</div>
+        <div class="mod-sub">30 recetas · celiaquía · keto · EII</div>
+      </div>
+      <svg class="mod-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6a3aa2" stroke-width="2" stroke-linecap="round"><path d="M9 18l6-6-6-6"/></svg>
+    </div>
+
+    <!-- Recursos y referencias -->
+    <div class="mod-card mod-card-wide" style="background:linear-gradient(135deg,#fff8e8,#fdecc8)" onclick="irA('recursos.html')">
+      <div>
+        <span class="mod-ico">📚</span>
+        <div class="mod-nom">Recursos y referencias</div>
+        <div class="mod-sub">OMS · EMA · PubMed · TRAMIL · apps botánicas</div>
+      </div>
+      <svg class="mod-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#8b5e00" stroke-width="2" stroke-linecap="round"><path d="M9 18l6-6-6-6"/></svg>
     </div>
 
   </div>
@@ -704,7 +733,10 @@ function irA(url) {
   const proximamente = [];
   const labels = {
     'infusiones.html':'Infusiones',
-    'recetas.html':'Recetas especiales'
+    'recetas.html':'Recetas especiales',
+    'remedios.html':'Remedios caseros',
+    'recetas-complementarias.html':'Recetas complementarias',
+    'recursos.html':'Recursos y referencias'
   };
   if (proximamente.includes(url)) {
     const nom = labels[url] || url;
