@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#1a3d2a">
+<title>NathuraVitae — Recetas Complementarias</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --v1:#1a3d2a;--v2:#245c3e;--v3:#2e8b5a;--v4:#4aab7f;--v5:#8dd4b0;
+  --vp:#eaf6f0;--vm:#c0e8d4;--vt:#8dd4b0;
+  --crema:#f8f5ee;--crema2:#ede8dc;--crema3:#e2dace;
+  --tx:#1a1a16;--tx2:#44443c;--tx3:#8a8878;
+  --amb:#9a6010;--ambp:#fdf2e0;
+  --c-sg:#1a5276;--c-keto:#6a1a6e;--c-eii:#006d4e;
+  --c-mant:#8b5e00;--c-bat:#2e6b6b;--c-pan:#5c3d11;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'DM Sans',sans-serif;background:var(--crema);color:var(--tx);padding-bottom:80px;-webkit-font-smoothing:antialiased}
+.status-spacer{height:env(safe-area-inset-top,0px);background:var(--v1)}
+.topbar{background:var(--v1);padding:12px 20px 14px;display:flex;align-items:center;gap:10px;position:sticky;top:0;z-index:40}
+.topbar-back{width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.1);border:none;display:flex;align-items:center;justify-content:center;cursor:pointer;color:white;font-size:18px;text-decoration:none}
+.topbar-icon{width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;font-size:16px}
+.topbar-nom{font-family:'Playfair Display',serif;font-size:19px;color:white;font-weight:600}
+.topbar-nom span{font-style:italic;font-weight:400;color:var(--vt)}
+
+.hero{background:var(--v1);padding:4px 24px 44px;position:relative;overflow:hidden}
+.hero::after{content:'';position:absolute;bottom:0;left:0;right:0;height:40px;background:linear-gradient(to bottom,transparent,var(--crema));pointer-events:none}
+.hero-deco{position:absolute;right:-20px;top:-10px;font-size:180px;opacity:.04;line-height:1;pointer-events:none}
+.hero-eyebrow{font-size:10px;font-weight:500;color:var(--vt);letter-spacing:2.5px;text-transform:uppercase;margin-bottom:10px;display:flex;align-items:center;gap:6px}
+.hero-eyebrow::before{content:'';width:20px;height:1px;background:var(--vt);opacity:.6}
+.hero-titulo{font-family:'Playfair Display',serif;font-size:26px;font-weight:700;line-height:1.2;color:white;margin-bottom:10px}
+.hero-titulo em{color:var(--vt);font-style:italic;font-weight:400}
+.hero-sub{font-size:12px;line-height:1.7;color:rgba(255,255,255,.65);max-width:320px}
+
+.tabs-wrap{padding:18px 16px 0;overflow-x:auto;scrollbar-width:none;display:flex;gap:8px}
+.tab{flex-shrink:0;border-radius:20px;padding:7px 14px;font-size:11px;font-weight:500;border:1.5px solid var(--crema3);background:white;color:var(--tx3);cursor:pointer;transition:all .2s;white-space:nowrap}
+.tab.activo{background:var(--v1);color:white;border-color:var(--v1)}
+
+.sec-titulo{padding:20px 20px 10px;display:flex;align-items:baseline;gap:10px}
+.sec-titulo h2{font-family:'Playfair Display',serif;font-size:17px;color:var(--v1)}
+.sec-titulo .lin{flex:1;height:1px;background:var(--crema3)}
+
+.lista{padding:0 16px;display:flex;flex-direction:column;gap:14px}
+
+.card{background:white;border-radius:20px;border:1.5px solid var(--crema3);overflow:hidden;box-shadow:0 2px 14px rgba(26,61,42,.06);animation:fadeUp .3s ease both}
+.card:nth-child(1){animation-delay:.03s}.card:nth-child(2){animation-delay:.06s}
+.card:nth-child(3){animation-delay:.09s}.card:nth-child(4){animation-delay:.12s}
+.card:nth-child(5){animation-delay:.15s}.card:nth-child(6){animation-delay:.18s}
+
+.card-header{padding:16px 16px 12px}
+.cat-badge{display:inline-flex;align-items:center;gap:5px;border-radius:20px;padding:4px 10px;font-size:9px;font-weight:600;letter-spacing:1px;text-transform:uppercase;margin-bottom:8px}
+.cat-sg{background:#e8f0f8;color:var(--c-sg)}
+.cat-keto{background:#f8e8f8;color:var(--c-keto)}
+.cat-eii{background:#e8f8f3;color:var(--c-eii)}
+.cat-mant{background:#fef5e0;color:var(--c-mant)}
+.cat-bat{background:#e8f5f5;color:var(--c-bat)}
+.cat-pan{background:#fdf2e0;color:var(--c-pan)}
+
+.card-titulo{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;line-height:1.2;margin-bottom:6px;color:var(--v1)}
+.card-tagline{font-size:11px;color:var(--tx3);line-height:1.5;margin-bottom:4px}
+.card-div{height:1px;background:var(--crema2);margin:0 16px}
+.toggle-btn{width:100%;background:none;border:none;padding:11px 16px;display:flex;align-items:center;justify-content:space-between;cursor:pointer;font-size:11px;color:var(--tx3);font-weight:500;font-family:'DM Sans',sans-serif}
+.toggle-icon{transition:transform .25s;font-size:15px}
+.card.abierta .toggle-icon{transform:rotate(180deg)}
+.card-body{padding:12px 16px 16px;display:none}
+.card.abierta .card-body{display:block}
+
+.sec-label{font-size:9px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--tx3);margin-bottom:8px}
+.ing-lista{list-style:none;display:flex;flex-direction:column;gap:5px;margin-bottom:14px}
+.ing-lista li{display:flex;align-items:flex-start;gap:8px;font-size:11px;color:var(--tx2);line-height:1.5}
+.ing-dot{width:5px;height:5px;border-radius:50%;background:var(--v3);flex-shrink:0;margin-top:5px}
+.paso{display:flex;gap:9px;margin-bottom:7px;align-items:flex-start}
+.paso-num{width:18px;height:18px;border-radius:50%;background:var(--v1);display:flex;align-items:center;justify-content:center;font-size:8px;font-weight:700;flex-shrink:0;color:white}
+.paso-texto{font-size:11px;color:var(--tx2);line-height:1.6;padding-top:1px}
+.beneficios-wrap{background:var(--vp);border-radius:12px;padding:12px;margin:12px 0}
+.beneficios-texto{font-size:10px;color:var(--tx2);line-height:1.7}
+.planta-chip{display:inline-flex;font-size:9px;font-weight:500;background:var(--vp);color:var(--v2);border:1px solid var(--vm);border-radius:8px;padding:3px 8px;margin:2px 2px 0 0}
+.precaucion{display:flex;align-items:flex-start;gap:6px;font-size:9px;color:var(--amb);background:var(--ambp);border-radius:8px;padding:7px 9px;margin-top:8px}
+
+.disclaimer{margin:18px 16px 0;background:var(--crema2);border-radius:12px;padding:12px 14px;font-size:10px;color:var(--tx3);line-height:1.7;text-align:center}
+.bottom-nav{position:fixed;bottom:0;left:0;right:0;background:white;border-top:1px solid var(--crema3);padding:8px 0 calc(8px + env(safe-area-inset-bottom,0px));display:flex;justify-content:space-around;z-index:40}
+.nav-item{display:flex;flex-direction:column;align-items:center;gap:2px;text-decoration:none;font-size:10px;color:var(--tx3);font-weight:400;min-width:52px}
+.nav-item.activo{color:var(--v3);font-weight:500}
+.nav-icon{font-size:20px}
+@keyframes fadeUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+</style>
+</head>
+<body>
+<div class="status-spacer"></div>
+<div class="topbar">
+  <a href="../index.html" class="topbar-back">←</a>
+  <div class="topbar-icon">🥗</div>
+  <div class="topbar-nom">Recetas <span>complementarias</span></div>
+</div>
+
+<div class="hero">
+  <div class="hero-deco">🥗</div>
+  <div class="hero-eyebrow">Nutrición terapéutica</div>
+  <div class="hero-titulo">Comer bien con <em>tu condición</em></div>
+  <div class="hero-sub">30 recetas para celiaquía, dieta keto, brote EII, mantenimiento, batidos y panadería sin gluten.</div>
+</div>
+
+<div class="tabs-wrap">
+  <div class="tab activo" onclick="filtrar('todos',this)">Todas (30)</div>
+  <div class="tab" onclick="filtrar('sg',this)">🌾 Sin gluten</div>
+  <div class="tab" onclick="filtrar('keto',this)">🥑 Keto</div>
+  <div class="tab" onclick="filtrar('eii',this)">💊 Brote EII</div>
+  <div class="tab" onclick="filtrar('mant',this)">🌿 Mantenimiento</div>
+  <div class="tab" onclick="filtrar('bat',this)">🥤 Batidos</div>
+  <div class="tab" onclick="filtrar('pan',this)">🍞 Panadería</div>
+</div>
+
+<!-- SIN GLUTEN -->
+<div class="sec-titulo"><h2>🌾 Sin gluten · Celiaquía</h2><div class="lin"></div></div>
+<div class="lista" id="lista">
+
+<div class="card" data-cat="sg">
+  <div class="card-header">
+    <div class="cat-badge cat-sg">🌾 Sin gluten · Celiaquía</div>
+    <div class="card-titulo">Tostadas Francesas de Pan Sin Gluten</div>
+    <div class="card-tagline">Desayuno nutritivo y fácil de digerir, ideal para celíacos</div>
+  </div>
+  <div class="card-div"></div>
+  <button class="toggle-btn" onclick="toggle(this)">Ver receta completa <span class="toggle-icon">▾</span></button>
+  <div class="card-body">
+    <div class="sec-label">Ingredientes</div>
+    <ul class="ing-lista">
+      <li><div class="ing-dot"></div>2 rebanadas de pan sin gluten</li>
+      <li><div class="ing-dot"></div>1 huevo</li>
+      <li><div class="ing-dot"></div>½ taza de leche vegetal sin gluten</li>
+      <li><div class="ing-dot"></div>1 cdta de canela en polvo</li>
+      <li><div class="ing-dot"></div>1 cda de miel</li>
+      <li><div class="ing-dot"></div>Aceite de coco para cocinar</li>
+    </ul>
+    <div class="sec-label">Preparación</div>
+    <div class="paso"><div class="paso-num">1</div><div class="paso-texto">Batir huevo con leche, canela y miel.</div></div>
+    <div class="paso"><div class="paso-num">2</div><div class="paso-texto">Remojar el pan en la mezcla 1 minuto por lado.</div></div>
+    <div class="paso"><div class="paso-num">3</div><div class="paso-texto">Cocinar en sartén con aceite de coco 2-3 min por lado.</div></div>
+    <div class="paso"><div class="paso-num">4</div><div class="paso-texto">Servir con frutas frescas.</div></div>
+    <div class="beneficios-wrap"><div class="beneficios-texto">✨ Desayuno nutritivo y fácil de digerir. La canela ayuda a regular la glucosa y aporta propiedades antiinflamatorias suaves.</div></div>
+    <div class="precaucion">⚠️ Verificar que el pan sea certificado sin gluten (sin TACC).</div>
+  </div>
+</div>
+
+<div class="card" data-cat="sg">
+  <div class="card-header">
+    <div class="cat-badge cat-sg">🌾 Sin gluten · Celiaquía</div>
+    <div class="card-titulo">Muffins de Zanahoria y Nueces Sin Gluten</div>
+    <div class="card-tagline">Ricos en fibra soluble y omega-3, aptos para celíacos</div>
+  </div>
+  <div class="card-div"></div>
+  <button class="toggle-btn" onclick="toggle(this)">Ver receta completa <span class="toggle-icon">▾</span></button>
+  <div class="card-body">
+    <ul class="ing-lista">
+      <li><div class="ing-dot"></div>1½ tazas de harina de arroz</li>
+      <li><div class="ing-dot"></div>2 zanahorias ralladas</li>
+      <li><div class="ing-dot"></div>½ taza de nueces picadas</li>
+      <li><div class="ing-dot"></div>2 huevos · ⅓ taza de aceite de oliva</li>
+      <li><div class="ing-dot"></div>1 cdta de polvo de hornear · canela al gusto</li>
+    </ul>
+    <div class="paso"><div class="paso-num">1</div><div class="paso-texto">Mezclar ingredientes secos.</div></div>
+    <div class="paso"><div class="paso-num">2</div><div class="paso-texto">Incorporar huevos, aceite y zanahoria rallada.</div></div>
+    <div class="paso"><div class="paso-num">3</div><div class="paso-texto">Agregar nueces y distribuir en moldes.</div></div>
+    <div class="paso"><div class="paso-num">4</div><div class="paso-texto">Hornear 180°C por 20 min.</div></div>
+    <div class="beneficios-wrap"><div class="beneficios-texto">✨ Fibra soluble de la zanahoria y omega-3 de las nueces. Ideal para merienda o desayuno sin gluten.</div></div>
+    <div class="precaucion">⚠️ Usar harina de arroz certificada sin gluten.</div>
+  </div>
+</div>
+
+<div class="card" data-cat="sg">
+  <div class="card-header">
+    <div class="cat-badge cat-sg">🌾 Sin gluten · Celiaquía</div>
+    <div class="card-titulo">Polenta Cremosa con Champiñones</div>
+    <div class="card-tagline">Plato principal nutritivo, naturalmente sin gluten y reconfortante</div>
+  </div>
+  <div class="card-div"></div>
+  <button class="toggle-btn" onclick="toggle(this)">Ver receta completa <span class="toggle-icon">▾</span></button>
+  <div class="card-body">
+    <ul class="ing-lista">
+      <li><div class="ing-dot"></div>1 taza de sémola de maíz (polenta)</li>
+      <li><div class="ing-dot"></div>4 tazas de caldo vegetal sin gluten</li>
+      <li><div class="ing-dot"></div>200g champiñones laminados</li>
+      <li><div class="ing-dot"></div>2 cdas de aceite de oliva · ajo · perejil fresco</li>
+    </ul>
+    <div class="paso"><div class="paso-num">1</div><div class="paso-texto">Cocinar polenta en caldo caliente 20 min removiendo constantemente.</div></div>
+    <div class="paso"><div class="paso-num">2</div><div class="paso-texto">Saltear champiñones con ajo y aceite.</div></div>
+    <div class="paso"><div class="paso-num">3</div><div class="paso-texto">Servir polenta cremosa con champiñones encima y perejil fresco.</div></div>
+    <div class="beneficios-wrap"><div class="beneficios-texto">✨ Naturalmente sin gluten. Los champiñones aportan betaGlucanos inmunomoduladores y vitamina D.</div></div>
+    <div class="precaucion">⚠️ Verificar que el caldo no contenga trazas de gluten.</div>
+  </div>
+</div>
+
+<div class="card" data-cat="sg">
+  <div class="card-header">
+    <div class="cat-badge cat-sg">🌾 Sin gluten · Celiaquía</div>
+    <div class="card-titulo">Crepes de Harina de Garbanzos con Espinaca</div>
+    <div class="card-tagline">Alto en proteínas vegetales, sin gluten y versátil</div>
+  </div>
+  <div class="card-div"></div>
+  <button class="toggle-btn" onclick="toggle(this)">Ver receta completa <span class="toggle-icon">▾</span></button>
+  <div class="card-body">
+    <ul class="ing-lista">
+      <li><div class="ing-dot"></div>1 taza de harina de garbanzos</li>
+      <li><div class="ing-dot"></div>1½ tazas de agua</li>
+      <li><div class="ing-dot"></div>100g espinaca cocida y picada</li>
+      <li><div class="ing-dot"></div>1 cda de aceite de oliva · sal y pimienta</li>
+    </ul>
+    <div class="paso"><div class="paso-num">1</div><div class="paso-texto">Licuar harina con agua hasta masa líquida homogénea. Reposar 10 min.</div></div>
+    <div class="paso"><div class="paso-num">2</div><div class="paso-texto">Incorporar espinaca picada y sazonar.</div></div>
+    <div class="paso"><div class="paso-num">3</div><div class="paso-texto">Cocinar en sartén antiadherente con aceite como crepes finos.</div></div>
+    <div class="beneficios-wrap"><div class="beneficios-texto">✨ Proteínas completas del garbanzo + hierro y folato de la espinaca. Excelente para celiaquía.</div></div>
+    <span class="planta-chip">🌿 Espinaca</span>
+  </div>
+</div>
+
+<div class="card" data-cat="sg">
+  <div class="card-header">
+    <div class="cat-badge cat-sg">🌾 Sin gluten · Celiaquía</div>
+    <div class="card-titulo">Bizcocho de Calabacín y Cacao Sin Gluten</div>
+    <div class="card-tagline">Merienda húmeda y nutritiva que oculta vegetales en postre</div>
+  </div>
+  <div class="card-div"></div>
+  <button class="toggle-btn" onclick="toggle(this)">Ver receta completa <span class="toggle-icon">▾</span></button>
+  <div class="card-body">
+    <ul class="ing-lista">
+      <li><div class="ing-dot"></div>2 tazas de harina sin gluten</li>
+      <li><div class="ing-dot"></div>1 calabacín mediano rallado y escurrido</li>
+      <li><div class="ing-dot"></div>⅓ taza de cacao en polvo sin gluten</li>
+      <li><div class="ing-dot"></div>2 huevos · ½ taza de aceite de coco</li>
+      <li><div class="ing-dot"></div>1 cdta de polvo de hornear</li>
+    </ul>
+    <div class="paso"><div class="paso-num">1</div><div class="paso-texto">Mezclar ingredientes secos.</div></div>
+    <div class="paso"><div class="paso-num">2</div><div class="paso-texto">Agregar huevos, aceite y calabacín bien escurrido.</div></div>
+    <div class="paso"><div class="paso-num">3</div><div class="paso-texto">Verter en molde engrasado y hornear 180°C por 35-40 min.</div></div>
+    <div class="beneficios-wrap"><div class="beneficios-texto">✨ El calabacín aporta hidratación y fibra suave. El cacao añade magnesio y polifenoles antioxidantes.</div></div>
+    <div class="precaucion">⚠️ Verificar que el cacao no tenga trazas de gluten.</div>
+  </div>
+</div>
+
+<!-- KETO -->
+<div class="sec-titulo"><h2>🥑 Keto · Bajo en carbohidratos</h2><div class="lin"></div></div>
+
+<div class="card" data-cat="keto">
+  <div class="card-header">
+    <div class="cat-badge cat-keto">🥑 Keto · Bajo en carbohidratos</div>
+    <div class="card-titulo">Pizza Keto con Base de Pollo</div>
+    <div class="card-tagline">Menos de 3g carbs netos, alto en proteínas, mantiene cetosis</div>
+  </div>
+  <div class="card-div"></div>
+  <button class="toggle-btn" onclick="toggle(this)">Ver receta completa <span class="toggle-icon">▾</span></button>
+  <div class="card-body">
+    <ul class="ing-lista">
+      <li><div class="ing-dot"></div>200g de pechuga de pollo molida</li>
+      <li><div class="ing-dot"></div>1 huevo · 100g de queso mozzarella rallado</li>
+      <li><div class="ing-dot"></div>Salsa de tomate sin azúcar</li>
+      <li><div class="ing-dot"></div>Vegetales bajos en carbs (pimientos, champiñones)</li>
+    </ul>
+    <div class="paso"><div class="paso-num">1</div><div class="paso-texto">Mezclar pollo molido, huevo y 50g de queso hasta masa compacta.</div></div>
+    <div class="paso"><div class="paso-num">2</div><div class="paso-texto">Extender en bandeja con papel antiadherente y hornear 200°C 15 min.</div></div>
+    <div class="paso"><div class="paso-num">3</div><div class="paso-texto">Agregar salsa, vegetales y queso restante. Gratinar 5 min.</div></div>
+    <div class="beneficios-wrap"><div class="beneficios-texto">✨ Base de proteína pura sin carbohidratos. Ideal para mantener cetosis sin sacrificar el placer de una pizza.</div></div>
+    <div class="precaucion">⚠️ Verificar tolerancia a lácteos. Adaptar vegetales según tolerancia individual.</div>
+  </div>
+</div>
+
+<div class="card" data-cat="keto">
+  <div class="card-header">
+    <div class="cat-badge cat-keto">🥑 Keto · Bajo en carbohidratos</div>
+    <div class="card-titulo">Wrap de Lechuga con Atún y Aguacate</div>
+    <div class="card-tagline">Menos de 5g carbs, rico en omega-3, rápido y fresco</div>
+  </div>
+  <div class="card-div"></div>
+  <button class="toggle-btn" onclick="toggle(this)">Ver receta completa <span class="toggle-icon">▾</span></button>
+  <div class="card-body">
+    <ul class="ing-lista">
+      <li><div class="ing-dot"></div>4 hojas grandes de lechuga romana</li>
+      <li><div class="ing-dot"></div>1 lata de atún en agua (escurrida)</li>
+      <li><div class="ing-dot"></div>½ aguacate maduro</li>
+      <li><div class="ing-dot"></div>1 cda de mayonesa casera · limón · sal y pimienta</li>
+    </ul>
+    <div class="paso"><div class="paso-num">1</div><div class="paso-texto">Mezclar atún escurrido con aguacate en cubos y mayonesa.</div></div>
+    <div class="paso"><div class="paso-num">2</div><div class="paso-texto">Sazonar con limón, sal y pimienta.</div></div>
+    <div class="paso"><div class="paso-num">3</div><div class="paso-texto">Rellenar hojas de lechuga y enrollar como wrap.</div></div>
+    <div class="beneficios-wrap"><div class="beneficios-texto">✨ Omega-3 del atún + grasas saludables del aguacate. Preparación en 5 minutos, sin cocción.</div></div>
+  </div>
+</div>
+
+<div class="card" data-cat="keto">
+  <div class="card-header">
+    <div class="cat-badge cat-keto">🥑 Keto · Bajo en carbohidratos</div>
+    <div class="card-titulo">Cloud Bread (Pan Nube) Keto</div>
+    <div class="card-tagline">Menos de 1g carbs por unidad, textura esponjosa y versátil</div>
+  </div>
+  <div class="card-div"></div>
+  <button class="toggle-btn" onclick="toggle(this)">Ver receta completa <span class="toggle-icon">▾</span></button>
+  <div class="card-body">
+    <ul class="ing-lista">
+      <li><div class="ing-dot"></div>3 huevos (separar claras y yemas)</li>
+      <li><div class="ing-dot"></div>100g de queso crema</li>
+      <li><div class="ing-dot"></div>¼ cdta de bicarbonato · pizca de sal</li>
+    </ul>
+    <div class="paso"><div class="paso-num">1</div><div class="paso-texto">Batir claras a punto de nieve firme con sal.</div></div>
+    <div class="paso"><div class="paso-num">2</div><div class="paso-texto">Mezclar yemas con queso crema y bicarbonato.</div></div>
+    <div class="paso"><div class="paso-num">3</div><div class="paso-texto">Incorporar suavemente claras a la mezcla en movimientos envolventes.</div></div>
+    <div class="paso"><div class="paso-num">4</div><div class="paso-texto">Hornear porciones a 150°C por 25 min hasta dorar.</div></div>
+    <div class="beneficios-wrap"><div class="beneficios-texto">✨ Pan sin harinas ni carbohidratos. Perfecto para reemplazar pan en dieta cetogénica.</div></div>
+  </div>
+</div>
+
+<div class="card" data-cat="keto">
+  <div class="card-header">
+    <div class="cat-badge cat-keto">🥑 Keto · Bajo en carbohidratos</div>
+    <div class="card-titulo">Chips de Queso Parmesano con Orégano</div>
+    <div class="card-tagline">Snack crujiente, 0g carbs, alto en calcio</div>
+  </div>
+  <div class="card-div"></div>
+  <button class="toggle-btn" onclick="toggle(this)">Ver receta completa <span class="toggle-icon">▾</span></button>
+  <div class="card-body">
+    <ul class="ing-lista">
+      <li><div class="ing-dot"></div>150g de queso parmesano rallado</li>
+      <li><div class="ing-dot"></div>1 cdta de orégano fresco o seco</li>
+      <li><div class="ing-dot"></div>Pimienta negra al gusto</li>
+    </ul>
+    <div class="paso"><div class="paso-num">1</div><div class="paso-texto">Formar montículos de queso en bandeja con papel antiadherente.</div></div>
+    <div class="paso"><div class="paso-num">2</div><div class="paso-texto">Espolvorear orégano y pimienta sobre cada montículo.</div></div>
+    <div class="paso"><div class="paso-num">3</div><div class="paso-texto">Hornear 180°C por 8-10 min hasta dorar. Dejar enfriar para que crujan.</div></div>
+    <div class="beneficios-wrap"><div class="beneficios-texto">✨ Cero carbohidratos. El orégano añade carvacrol y timol con propiedades antimicrobianas y antioxidantes.</div></div>
+    <span class="planta-chip">🌿 Orégano</span>
+  </div>
+</div>
+
+<div class="card" data-cat="keto">
+  <div class="card-header">
+    <div class="cat-badge cat-keto">🥑 Keto · Bajo en carbohidratos</div>
+    <div class="card-titulo">Pudín de Chía con Leche de Coco</div>
+    <div class="card-tagline">4g carbs netos, rico en fibra y omega-3, saciante</div>
+  </div>
+  <div class="card-div"></div>
+  <button class="toggle-btn" onclick="toggle(this)">Ver receta completa <span class="toggle-icon">▾</span></button>
+  <div class="card-body">
+    <ul class="ing-lista">
+      <li><div class="ing-dot"></div>3 cdas de semillas de chía</li>
+      <li><div class="ing-dot"></div>1 taza de leche de coco</li>
+      <li><div class="ing-dot"></div>½ cdta de extracto de vainilla</li>
+      <li><div class="ing-dot"></div>Stevia o eritritol al gusto</li>
+    </ul>
+    <div class="paso"><div class="paso-num">1</div><div class="paso-texto">Mezclar chía con leche de coco, vainilla y endulzante.</div></div>
+    <div class="paso"><div class="paso-num">2</div><div class="paso-texto">Remover bien y refrigerar mínimo 4 horas.</div></div>
+    <div class="paso"><div class="paso-num">3</div><div class="paso-texto">Servir frío, con frutos rojos si se tolera.</div></div>
+    <div class="beneficios-wrap"><div class="beneficios-texto">✨ Las semillas de chía forman gel que ralentiza absorción de glucosa. Ideal como desayuno o postre keto.</div></div>
+  </div>
+</div>
+
+<!-- BROTE EII -->
+<div class="sec-titulo"><h2>💊 Brote EII activo</h2><div class="lin"></div></div>
+
+<div class="card" data-cat="eii">
+  <div class="card-header">
+    <div class="cat-badge cat-eii">💊 Brote EII activo</div>
+    <div class="card-titulo">Puré de Patatas y Zanahoria</div>
+    <div class="card-tagline">Sin fibra insoluble, digestión fácil, aporta energía</div>
+  </div>
+  <div class="card-div"></div>
+  <button class="toggle-btn" onclick="toggle(this)">Ver receta completa <span class="toggle-icon">▾</span></button>
+  <div class="card-body">
+    <ul class="ing-lista">
+      <li><div class="ing-dot"></div>2 patatas medianas peladas</li>
+      <li><div class="ing-dot"></div>2 zanahorias peladas</li>
+      <li><div class="ing-dot"></div>1 cda de aceite de oliva · sal mínima</li>
+    </ul>
+    <div class="paso"><div class="paso-num">1</div><div class="paso-texto">Hervir patatas y zanahorias hasta muy tiernas (25 min).</div></div>
+    <div class="paso"><div class="paso-num">2</div><div class="paso-texto">Escurrir reservando un poco de agua de cocción.</div></div>
+    <div class="paso"><div class="paso-num">3</div><div class="paso-texto">Procesar hasta puré suave. Ajustar textura con agua reservada.</div></div>
+    <div class="beneficios-wrap"><div class="beneficios-texto">✨ Sin fibra insoluble ni irritantes. Aporta carbohidratos de fácil absorción y betacaroteno de la zanahoria.</div></div>
+    <div class="precaucion">⚠️ Servir sin piel ni semillas. Sal mínima en brote activo.</div>
+  </div>
+</div>
+
+<div class="card" data-cat="eii">
+  <div class="card-header">
+    <div class="cat-badge cat-eii">💊 Brote EII activo</div>
+    <div class="card-titulo">Merluza Cocida con Arroz Blanco</div>
+    <div class="card-tagline">Proteína magra, bajo en residuos, ideal en brote</div>
+  </div>
+  <div class="card-div"></div>
+  <button class="toggle-btn" onclick="toggle(this)">Ver receta completa <span class="toggle-icon">▾</span></button>
+  <div class="card-body">
+    <ul class="ing-lista">
+      <li><div class="ing-dot"></div>150g de filete de merluza sin espinas</li>
+      <li><div class="ing-dot"></div>½ taza de arroz blanco</li>
+      <li><div class="ing-dot"></div>1 zanahoria pequeña cocida · pizca de sal</li>
+    </ul>
+    <div class="paso"><div class="paso-num">1</div><div class="paso-texto">Cocinar arroz en agua con poca sal hasta muy tierno.</div></div>
+    <div class="paso"><div class="paso-num">2</div><div class="paso-texto">Cocinar merluza al vapor 10 min.</div></div>
+    <div class="paso"><div class="paso-num">3</div><div class="paso-texto">Desmenuzar pescado asegurando que no haya espinas. Servir con arroz y zanahoria.</div></div>
+    <div class="beneficios-wrap"><div class="beneficios-texto">✨ Proteína de fácil digestión, bajo en grasa y sin residuos. Clásico de la dieta blanda en brote intestinal.</div></div>
+    <div class="precaucion">⚠️ Verificar ausencia de espinas. No agregar especias irritantes.</div>
+  </div>
+</div>
+
+<div class="card" data-cat="eii">
+  <div class="card-header">
+    <div class="cat-badge cat-eii">💊 Brote EII activo</div>
+    <div class="card-titulo">Compota de Manzana sin Cáscara</div>
+    <div class="card-tagline">Pectina soluble calmante, suave para intestino irritado</div>
+  </div>
+  <div class="card-div"></div>
+  <button class="toggle-btn" onclick="toggle(this)">Ver receta completa <span class="toggle-icon">▾</span></button>
+  <div class="card-body">
+    <ul class="ing-lista">
+      <li><div class="ing-dot"></div>2 manzanas peladas y sin semillas</li>
+      <li><div class="ing-dot"></div>1 taza de agua · 1 rama de canela</li>
+      <li><div class="ing-dot"></div>1 cdta de miel (opcional)</li>
+    </ul>
+    <div class="paso"><div class="paso-num">1</div><div class="paso-texto">Cortar manzanas en cubos pequeños.</div></div>
+    <div class="paso"><div class="paso-num">2</div><div class="paso-texto">Cocinar con agua y canela 15 min hasta muy blandas.</div></div>
+    <div class="paso"><div class="paso-num">3</div><div class="paso-texto">Retirar canela y procesar hasta puré suave. Endulzar si se desea.</div></div>
+    <div class="beneficios-wrap"><div class="beneficios-texto">✨ La pectina de la manzana cocida es fibra soluble que calma la mucosa intestinal y regula tránsito sin irritar.</div></div>
+  </div>
+</div>
+
+<div class="card" data-cat="eii">
+  <div class="card-header">
+    <div class="cat-badge cat-eii">💊 Brote EII activo</div>
+    <div class="card-titulo">Avena Suave con Banana Madura</div>
+    <div class="card-tagline">Beta-glucanos calmantes, energía sostenida</div>
+  </div>
+  <div class="card-div"></div>
+  <button class="toggle-btn" onclick="toggle(this)">Ver receta completa <span class="toggle-icon">▾</span></button>
+  <div class="card-body">
+    <ul class="ing-lista">
+      <li><div class="ing-dot"></div>½ taza de avena instantánea certificada sin gluten</li>
+      <li><div class="ing-dot"></div>1 banana muy madura</li>
+      <li><div class="ing-dot"></div>1½ tazas de agua o leche sin lactosa</li>
+      <li><div class="ing-dot"></div>Pizca de canela</li>
+    </ul>
+    <div class="paso"><div class="paso-num">1</div><div class="paso-texto">Cocinar avena en líquido 5 min removiendo.</div></div>
+    <div class="paso"><div class="paso-num">2</div><div class="paso-texto">Añadir banana machacada e integrar bien.</div></div>
+    <div class="paso"><div class="paso-num">3</div><div class="paso-texto">Cocinar 2 min más hasta espesar. Espolvorear canela.</div></div>
+    <div class="beneficios-wrap"><div class="beneficios-texto">✨ Beta-glucanos de la avena son fibra soluble prebiótica. La banana madura es fácil de digerir y aporta potasio.</div></div>
+    <div class="precaucion">⚠️ Solo en brotes leves con diarrea controlada. En brote severo, consultar médico antes.</div>
+  </div>
+</div>
+
+<div class="card" data-cat="eii">
+  <div class="card-header">
+    <div class="cat-badge cat-eii">💊 Brote EII activo</div>
+    <div class="card-titulo">Crema de Calabaza sin Piel</div>
+    <div class="card-tagline">Vitamina A, textura suave, hidrata y nutre sin irritar</div>
+  </div>
+  <div class="card-div"></div>
+  <button class="toggle-btn" onclick="toggle(this)">Ver receta completa <span class="toggle-icon">▾</span></button>
+  <div class="card-body">
+    <ul class="ing-lista">
+      <li><div class="ing-dot"></div>300g de calabaza pelada y sin semillas</li>
+      <li><div class="ing-dot"></div>1 patata pequeña pelada</li>
+      <li><div class="ing-dot"></div>3 tazas de caldo suave bajo en sodio</li>
+      <li><div class="ing-dot"></div>1 cda de aceite de oliva · sal mínima</li>
+    </ul>
+    <div class="paso"><div class="paso-num">1</div><div class="paso-texto">Cocinar calabaza y patata en caldo 20 min hasta muy tiernas.</div></div>
+    <div class="paso"><div class="paso-num">2</div><div class="paso-texto">Licuar hasta crema muy fina y suave.</div></div>
+    <div class="paso"><div class="paso-num">3</div><div class="paso-texto">Agregar aceite de oliva y servir tibia.</div></div>
+    <div class="beneficios-wrap"><div class="beneficios-texto">✨ Rica en betacaroteno (vitamina A) que favorece regeneración de mucosas. Textura cremosa sin fibra insoluble.</div></div>
+    <div class="precaucion">⚠️ Sin semillas ni piel. Sal mínima. Colar si queda alguna fibra.</div>
+  </div>
+</div>
+
+<!-- MANTENIMIENTO -->
+<div class="sec-titulo"><h2>🌿 Mantenimiento EII</h2><div class="lin"></div></div>
+
+<div class="card" data-cat="mant">
+  <div class="card-header">
+    <div class="cat-badge cat-mant">🌿 Mantenimiento EII</div>
+    <div class="card-titulo">Berenjenas Rellenas de Quinoa</div>
+    <div class="card-tagline">Quinoa antiinflamatoria, proteína magra, fibra soluble</div>
+  </div>
+  <div class="card-div"></div>
+  <button class="toggle-btn" onclick="toggle(this)">Ver receta completa <span class="toggle-icon">▾</span></button>
+  <div class="card-body">
+    <ul class="ing-lista">
+      <li><div class="ing-dot"></div>2 berenjenas medianas</li>
+      <li><div class="ing-dot"></div>½ taza de quinoa cocida</li>
+      <li><div class="ing-dot"></div>100g de carne magra molida</li>
+      <li><div class="ing-dot"></div>1 tomate sin piel · aceite de oliva</li>
+    </ul>
+    <div class="paso"><div class="paso-num">1</div><div class="paso-texto">Asar berenjenas 20 min, vaciar mitad de pulpa con cuidado.</div></div>
+    <div class="paso"><div class="paso-num">2</div><div class="paso-texto">Saltear carne con tomate picado y pulpa de berenjena.</div></div>
+    <div class="paso"><div class="paso-num">3</div><div class="paso-texto">Mezclar con quinoa cocida y rellenar berenjenas.</div></div>
+    <div class="paso"><div class="paso-num">4</div><div class="paso-texto">Hornear 180°C por 20 min.</div></div>
+    <div class="beneficios-wrap"><div class="beneficios-texto">✨ Quinoa es proteína completa naturalmente sin gluten. La berenjena contiene nasunina, potente antioxidante celular.</div></div>
+  </div>
+</div>
+
+<div class="card" data-cat="mant">
+  <div class="card-header">
+    <div class="cat-badge cat-mant">🌿 Mantenimiento EII</div>
+    <div class="card-titulo">Tortilla de Claras con Brócoli</div>
+    <div class="card-tagline">Proteína de calidad, sulforafano antiinflamatorio</div>
+  </div>
+  <div class="card-div"></div>
+  <button class="toggle-btn" onclick="toggle(this)">Ver receta completa <span class="toggle-icon">▾</span></button>
+  <div class="card-body">
+    <ul class="ing-lista">
+      <li><div class="ing-dot"></div>4 claras de huevo</li>
+      <li><div class="ing-dot"></div>1 taza de brócoli cocido suave y picado fino</li>
+      <li><div class="ing-dot"></div>2 cdas de queso ricota · aceite de oliva</li>
+    </ul>
+    <div class="paso"><div class="paso-num">1</div><div class="paso-texto">Batir claras con pizca de sal hasta espumosas.</div></div>
+    <div class="paso"><div class="paso-num">2</div><div class="paso-texto">Incorporar brócoli picado fino.</div></div>
+    <div class="paso"><div class="paso-num">3</div><div class="paso-texto">Cocinar en sartén con aceite a fuego medio.</div></div>
+    <div class="paso"><div class="paso-num">4</div><div class="paso-texto">Agregar ricota al centro y doblar.</div></div>
+    <div class="beneficios-wrap"><div class="beneficios-texto">✨ El sulforafano del brócoli inhibe NF-κB, mismo mecanismo que algunas plantas medicinales antiinflamatorias.</div></div>
+    <div class="precaucion">⚠️ Brócoli bien cocido y picado fino para mejor tolerancia en EII.</div>
+  </div>
+</div>
+
+<div class="card" data-cat="mant">
+  <div class="card-header">
+    <div class="cat-badge cat-mant">🌿 Mantenimiento EII</div>
+    <div class="card-titulo">Pescado al Horno con Verduras Asadas</div>
+    <div class="card-tagline">Omega-3 y antioxidantes, cocción suave que preserva nutrientes</div>
+  </div>
+  <div class="card-div"></div>
+  <button class="toggle-btn" onclick="toggle(this)">Ver receta completa <span class="toggle-icon">▾</span></button>
+  <div class="card-body">
+    <ul class="ing-lista">
+      <li><div class="ing-dot"></div>1 filete de pescado blanco (150g)</li>
+      <li><div class="ing-dot"></div>1 calabacín en rodajas · 1 zanahoria en rodajas</li>
+      <li><div class="ing-dot"></div>1 cda de aceite de oliva · romero fresco · limón</li>
+    </ul>
+    <div class="paso"><div class="paso-num">1</div><div class="paso-texto">Disponer pescado y verduras en bandeja con papel.</div></div>
+    <div class="paso"><div class="paso-num">2</div><div class="paso-texto">Rociar con aceite, romero y jugo de limón.</div></div>
+    <div class="paso"><div class="paso-num">3</div><div class="paso-texto">Hornear 180°C por 20-25 min hasta que el pescado se desmigue fácil.</div></div>
+    <div class="beneficios-wrap"><div class="beneficios-texto">✨ Proteína omega-3 + carotenoides de las verduras. El romero aporta ácido carnósico con actividad antioxidante.</div></div>
+  </div>
+</div>
+
+<div class="card" data-cat="mant">
+  <div class="card-header">
+    <div class="cat-badge cat-mant">🌿 Mantenimiento EII</div>
+    <div class="card-titulo">Arroz Integral con Verduras Suaves</div>
+    <div class="card-tagline">Fibra soluble reguladora, energía sostenida, bajo en grasa</div>
+  </div>
+  <div class="card-div"></div>
+  <button class="toggle-btn" onclick="toggle(this)">Ver receta completa <span class="toggle-icon">▾</span></button>
+  <div class="card-body">
+    <ul class="ing-lista">
+      <li><div class="ing-dot"></div>½ taza de arroz integral cocido</li>
+      <li><div class="ing-dot"></div>1 zanahoria cocida en cubos</li>
+      <li><div class="ing-dot"></div>½ calabacín cocido · aceite de oliva · perejil fresco</li>
+    </ul>
+    <div class="paso"><div class="paso-num">1</div><div class="paso-texto">Cocinar arroz integral hasta tierno (puede ser de la noche anterior).</div></div>
+    <div class="paso"><div class="paso-num">2</div><div class="paso-texto">Incorporar verduras cocidas y saltear ligeramente con aceite.</div></div>
+    <div class="paso"><div class="paso-num">3</div><div class="paso-texto">Decorar con perejil picado.</div></div>
+    <div class="beneficios-wrap"><div class="beneficios-texto">✨ El arroz integral aporta fibra insoluble solo apta en remisión. Evitar en brote activo. Energía sostenida y regulación intestinal.</div></div>
+    <div class="precaucion">⚠️ Solo en remisión estable. Evitar en brote activo.</div>
+  </div>
+</div>
+
+<div class="card" data-cat="mant">
+  <div class="card-header">
+    <div class="cat-badge cat-mant">🌿 Mantenimiento EII</div>
+    <div class="card-titulo">Batido Verde de Espinaca y Piña</div>
+    <div class="card-tagline">Enzimas digestivas, vitamina C, antiinflamatorio natural</div>
+  </div>
+  <div class="card-div"></div>
+  <button class="toggle-btn" onclick="toggle(this)">Ver receta completa <span class="toggle-icon">▾</span></button>
+  <div class="card-body">
+    <ul class="ing-lista">
+      <li><div class="ing-dot"></div>1 taza de espinaca baby</li>
+      <li><div class="ing-dot"></div>½ taza de piña fresca</li>
+      <li><div class="ing-dot"></div>½ plátano · 1 taza de agua de coco</li>
+      <li><div class="ing-dot"></div>1 cdta de jengibre fresco rallado</li>
+    </ul>
+    <div class="paso"><div class="paso-num">1</div><div class="paso-texto">Licuar todos los ingredientes hasta homogéneo.</div></div>
+    <div class="paso"><div class="paso-num">2</div><div class="paso-texto">Colar si se prefiere sin fibra. Servir inmediatamente.</div></div>
+    <div class="beneficios-wrap"><div class="beneficios-texto">✨ Bromelina de la piña es enzima digestiva potente. El jengibre reduce inflamación intestinal y náuseas en remisión.</div></div>
+    <span class="planta-chip">🫚 Jengibre</span>
+  </div>
+</div>
+
+<!-- BATIDOS -->
+<div class="sec-titulo"><h2>🥤 Batidos medicinales</h2><div class="lin"></div></div>
+
+<div class="card" data-cat="bat">
+  <div class="card-header">
+    <div class="cat-badge cat-bat">🥤 Batidos medicinales</div>
+    <div class="card-titulo">Batido Verde Detox de Espinaca y Pepino</div>
+    <div class="card-tagline">Depurativo hepático, alcalinizante, mejora digestión</div>
+  </div>
+  <div class="card-div"></div>
+  <button class="toggle-btn" onclick="toggle(this)">Ver receta completa <span class="toggle-icon">▾</span></button>
+  <div class="card-body">
+    <ul class="ing-lista">
+      <li><div class="ing-dot"></div>1 taza de espinacas frescas</li>
+      <li><div class="ing-dot"></div>½ pepino pelado · 1 manzana verde</li>
+      <li><div class="ing-dot"></div>Jugo de 1 limón · 1 trozo jengibre (2cm)</li>
+      <li><div class="ing-dot"></div>200ml de agua</li>
+    </ul>
+    <div class="paso"><div class="paso-num">1</div><div class="paso-texto">Lavar y picar todos los ingredientes.</div></div>
+    <div class="paso"><div class="paso-num">2</div><div class="paso-texto">Licuar hasta obtener mezcla homogénea. Beber fresco.</div></div>
+    <div class="beneficios-wrap"><div class="beneficios-texto">✨ Clorofila de la espinaca como depurativo. El jengibre apoya función hepática y reduce inflamación sistémica.</div></div>
+    <span class="planta-chip">🫚 Jengibre</span>
+  </div>
+</div>
+
+<div class="card" data-cat="bat">
+  <div class="card-header">
+    <div class="cat-badge cat-bat">🥤 Batidos medicinales</div>
+    <div class="card-titulo">Batido de Remolacha y Zanahoria</div>
+    <div class="card-tagline">Mejora circulación, antioxidante potente, antiinflamatorio</div>
+  </div>
+  <div class="card-div"></div>
+  <button class="toggle-btn" onclick="toggle(this)">Ver receta completa <span class="toggle-icon">▾</span></button>
+  <div class="card-body">
+    <ul class="ing-lista">
+      <li><div class="ing-dot"></div>½ remolacha pequeña cocida</li>
+      <li><div class="ing-dot"></div>1 zanahoria · ½ manzana</li>
+      <li><div class="ing-dot"></div>1 cdta de cúrcuma en polvo</li>
+      <li><div class="ing-dot"></div>200ml de agua de coco</li>
+    </ul>
+    <div class="paso"><div class="paso-num">1</div><div class="paso-texto">Pelar y cortar todos los vegetales.</div></div>
+    <div class="paso"><div class="paso-num">2</div><div class="paso-texto">Licuar con agua de coco y cúrcuma hasta homogéneo.</div></div>
+    <div class="paso"><div class="paso-num">3</div><div class="paso-texto">Servir frío.</div></div>
+    <div class="beneficios-wrap"><div class="beneficios-texto">✨ Betaína de la remolacha mejora circulación. La cúrcuma potencia el efecto antiinflamatorio. Color intenso = polifenoles activos.</div></div>
+    <span class="planta-chip">🟡 Cúrcuma</span>
+  </div>
+</div>
+
+<div class="card" data-cat="bat">
+  <div class="card-header">
+    <div class="cat-badge cat-bat">🥤 Batidos medicinales</div>
+    <div class="card-titulo">Batido de Papaya y Jengibre</div>
+    <div class="card-tagline">Papaína digestiva, reduce inflamación, probiótico natural</div>
+  </div>
+  <div class="card-div"></div>
+  <button class="toggle-btn" onclick="toggle(this)">Ver receta completa <span class="toggle-icon">▾</span></button>
+  <div class="card-body">
+    <ul class="ing-lista">
+      <li><div class="ing-dot"></div>1 taza de papaya madura pelada</li>
+      <li><div class="ing-dot"></div>½ plátano</li>
+      <li><div class="ing-dot"></div>1 cdta de jengibre fresco rallado</li>
+      <li><div class="ing-dot"></div>1 cdta de semillas de chía · 200ml de leche vegetal</li>
+    </ul>
+    <div class="paso"><div class="paso-num">1</div><div class="paso-texto">Licuar papaya, plátano y jengibre.</div></div>
+    <div class="paso"><div class="paso-num">2</div><div class="paso-texto">Agregar chía y dejar reposar 5 min.</div></div>
+    <div class="paso"><div class="paso-num">3</div><div class="paso-texto">Mezclar y servir.</div></div>
+    <div class="beneficios-wrap"><div class="beneficios-texto">✨ Papaína de la papaya es enzima proteolítica que facilita digestión de proteínas. El jengibre potencia el efecto antiinflamatorio.</div></div>
+    <span class="planta-chip">🍈 Papaya</span><span class="planta-chip">🫚 Jengibre</span>
+  </div>
+</div>
+
+<div class="card" data-cat="bat">
+  <div class="card-header">
+    <div class="cat-badge cat-bat">🥤 Batidos medicinales</div>
+    <div class="card-titulo">Batido de Arándanos y Cúrcuma</div>
+    <div class="card-tagline">Antioxidantes, neuroprotector, antiinflamatorio cerebral</div>
+  </div>
+  <div class="card-div"></div>
+  <button class="toggle-btn" onclick="toggle(this)">Ver receta completa <span class="toggle-icon">▾</span></button>
+  <div class="card-body">
+    <ul class="ing-lista">
+      <li><div class="ing-dot"></div>½ taza de arándanos frescos o congelados</li>
+      <li><div class="ing-dot"></div>½ plátano</li>
+      <li><div class="ing-dot"></div>½ cdta de cúrcuma en polvo · 1 cdta de miel</li>
+      <li><div class="ing-dot"></div>200ml de leche de almendras</li>
+    </ul>
+    <div class="paso"><div class="paso-num">1</div><div class="paso-texto">Licuar todos los ingredientes.</div></div>
+    <div class="paso"><div class="paso-num">2</div><div class="paso-texto">Servir inmediatamente. Opcional: agregar hielo.</div></div>
+    <div class="beneficios-wrap"><div class="beneficios-texto">✨ Antocianinas de los arándanos son neuroprotectores. La cúrcuma cruza la barrera hematoencefálica — combinación sinérgica para cerebro e intestino.</div></div>
+    <span class="planta-chip">🟡 Cúrcuma</span>
+  </div>
+</div>
+
+<div class="card" data-cat="bat">
+  <div class="card-header">
+    <div class="cat-badge cat-bat">🥤 Batidos medicinales</div>
+    <div class="card-titulo">Batido de Espinaca y Piña Tropical</div>
+    <div class="card-tagline">Clorofila, vitamina K, grasas saludables, detoxificante</div>
+  </div>
+  <div class="card-div"></div>
+  <button class="toggle-btn" onclick="toggle(this)">Ver receta completa <span class="toggle-icon">▾</span></button>
+  <div class="card-body">
+    <ul class="ing-lista">
+      <li><div class="ing-dot"></div>2 tazas de espinaca baby</li>
+      <li><div class="ing-dot"></div>1 taza de piña fresca</li>
+      <li><div class="ing-dot"></div>½ aguacate pequeño</li>
+      <li><div class="ing-dot"></div>Jugo de ½ lima · 200ml de agua de coco</li>
+    </ul>
+    <div class="paso"><div class="paso-num">1</div><div class="paso-texto">Licuar espinaca con agua de coco primero hasta homogéneo.</div></div>
+    <div class="paso"><div class="paso-num">2</div><div class="paso-texto">Agregar piña, aguacate y lima. Licuar nuevamente.</div></div>
+    <div class="paso"><div class="paso-num">3</div><div class="paso-texto">Servir fresco inmediatamente.</div></div>
+    <div class="beneficios-wrap"><div class="beneficios-texto">✨ Clorofila de espinaca + bromelina de piña + grasas saludables del aguacate. Trío detoxificante y antiinflamatorio.</div></div>
+  </div>
+</div>
+
+<!-- PANADERÍA -->
+<div class="sec-titulo"><h2>🍞 Panadería sin gluten</h2><div class="lin"></div></div>
+
+<div class="card" data-cat="pan">
+  <div class="card-header">
+    <div class="cat-badge cat-pan">🍞 Panadería sin gluten</div>
+    <div class="card-titulo">Pan de Almendras y Semillas</div>
+    <div class="card-tagline">Alto en proteínas y grasas saludables, sin gluten, saciante</div>
+  </div>
+  <div class="card-div"></div>
+  <button class="toggle-btn" onclick="toggle(this)">Ver receta completa <span class="toggle-icon">▾</span></button>
+  <div class="card-body">
+    <ul class="ing-lista">
+      <li><div class="ing-dot"></div>2 tazas de harina de almendras</li>
+      <li><div class="ing-dot"></div>¼ taza de semillas mixtas (girasol, chía, lino)</li>
+      <li><div class="ing-dot"></div>4 huevos · 1 cdta de polvo de hornear</li>
+      <li><div class="ing-dot"></div>¼ taza de aceite de oliva · sal</li>
+    </ul>
+    <div class="paso"><div class="paso-num">1</div><div class="paso-texto">Mezclar harina con semillas, polvo de hornear y sal.</div></div>
+    <div class="paso"><div class="paso-num">2</div><div class="paso-texto">Incorporar huevos batidos y aceite.</div></div>
+    <div class="paso"><div class="paso-num">3</div><div class="paso-texto">Verter en molde engrasado y hornear 180°C por 30-35 min.</div></div>
+    <div class="beneficios-wrap"><div class="beneficios-texto">✨ Proteína completa y omega-3 de las semillas. Sin harinas ni carbohidratos refinados. Apto para keto y celíacos.</div></div>
+  </div>
+</div>
+
+<div class="card" data-cat="pan">
+  <div class="card-header">
+    <div class="cat-badge cat-pan">🍞 Panadería sin gluten</div>
+    <div class="card-titulo">Galletas de Avena y Pasas Sin Gluten</div>
+    <div class="card-tagline">Fibra soluble, energía sostenida, snack saludable</div>
+  </div>
+  <div class="card-div"></div>
+  <button class="toggle-btn" onclick="toggle(this)">Ver receta completa <span class="toggle-icon">▾</span></button>
+  <div class="card-body">
+    <ul class="ing-lista">
+      <li><div class="ing-dot"></div>2 tazas de avena certificada sin gluten</li>
+      <li><div class="ing-dot"></div>½ taza de pasas · 1 plátano muy maduro</li>
+      <li><div class="ing-dot"></div>1 huevo · 1 cdta de canela · 2 cdas de miel</li>
+    </ul>
+    <div class="paso"><div class="paso-num">1</div><div class="paso-texto">Machacar plátano y mezclar con huevo y miel.</div></div>
+    <div class="paso"><div class="paso-num">2</div><div class="paso-texto">Incorporar avena, canela y pasas. Mezclar bien.</div></div>
+    <div class="paso"><div class="paso-num">3</div><div class="paso-texto">Formar galletas en bandeja y hornear 180°C 12-15 min.</div></div>
+    <div class="beneficios-wrap"><div class="beneficios-texto">✨ Beta-glucanos de la avena regulan glucosa e inmunidad. Sin harinas refinadas. La canela añade efecto regulador glucémico.</div></div>
+    <div class="precaucion">⚠️ Usar avena certificada sin gluten (contaminación cruzada frecuente).</div>
+  </div>
+</div>
+
+<div class="card" data-cat="pan">
+  <div class="card-header">
+    <div class="cat-badge cat-pan">🍞 Panadería sin gluten</div>
+    <div class="card-titulo">Panqueques de Harina de Arroz</div>
+    <div class="card-tagline">Versátiles, fáciles de digerir, desayuno rápido</div>
+  </div>
+  <div class="card-div"></div>
+  <button class="toggle-btn" onclick="toggle(this)">Ver receta completa <span class="toggle-icon">▾</span></button>
+  <div class="card-body">
+    <ul class="ing-lista">
+      <li><div class="ing-dot"></div>1 taza de harina de arroz</li>
+      <li><div class="ing-dot"></div>1 huevo · ¾ taza de leche vegetal</li>
+      <li><div class="ing-dot"></div>1 cdta de polvo de hornear · 1 cda de aceite · sal</li>
+    </ul>
+    <div class="paso"><div class="paso-num">1</div><div class="paso-texto">Mezclar todos los ingredientes hasta masa líquida sin grumos.</div></div>
+    <div class="paso"><div class="paso-num">2</div><div class="paso-texto">Calentar sartén antiadherente a fuego medio.</div></div>
+    <div class="paso"><div class="paso-num">3</div><div class="paso-texto">Verter porciones y cocinar 2 min por lado hasta dorar.</div></div>
+    <div class="paso"><div class="paso-num">4</div><div class="paso-texto">Servir con miel, frutas o yogur sin lactosa.</div></div>
+    <div class="beneficios-wrap"><div class="beneficios-texto">✨ Harina de arroz es una de las más toleradas en celiaquía y EII. Digestión suave y versátil para cualquier momento del día.</div></div>
+  </div>
+</div>
+
+<div class="card" data-cat="pan">
+  <div class="card-header">
+    <div class="cat-badge cat-pan">🍞 Panadería sin gluten</div>
+    <div class="card-titulo">Bizcocho de Yogur Sin Gluten</div>
+    <div class="card-tagline">Textura esponjosa, probióticos del yogur, fácil de preparar</div>
+  </div>
+  <div class="card-div"></div>
+  <button class="toggle-btn" onclick="toggle(this)">Ver receta completa <span class="toggle-icon">▾</span></button>
+  <div class="card-body">
+    <ul class="ing-lista">
+      <li><div class="ing-dot"></div>1 yogur natural sin gluten (como medida base)</li>
+      <li><div class="ing-dot"></div>3 medidas de harina sin gluten</li>
+      <li><div class="ing-dot"></div>2 medidas de azúcar · 3 huevos</li>
+      <li><div class="ing-dot"></div>1 medida de aceite · 1 cdta de polvo de hornear</li>
+      <li><div class="ing-dot"></div>Ralladura de limón</li>
+    </ul>
+    <div class="paso"><div class="paso-num">1</div><div class="paso-texto">Batir yogur con azúcar y huevos hasta homogéneo.</div></div>
+    <div class="paso"><div class="paso-num">2</div><div class="paso-texto">Agregar aceite y ralladura de limón.</div></div>
+    <div class="paso"><div class="paso-num">3</div><div class="paso-texto">Incorporar harina tamizada con polvo de hornear.</div></div>
+    <div class="paso"><div class="paso-num">4</div><div class="paso-texto">Hornear 180°C por 35-40 min. Comprobar con palillo.</div></div>
+    <div class="beneficios-wrap"><div class="beneficios-texto">✨ El yogur natural aporta probióticos y textura esponjosa. Los ácidos del limón mejoran absorción de minerales.</div></div>
+    <div class="precaucion">⚠️ Verificar que el yogur y la harina sean libres de gluten.</div>
+  </div>
+</div>
+
+<div class="card" data-cat="pan">
+  <div class="card-header">
+    <div class="cat-badge cat-pan">🍞 Panadería sin gluten</div>
+    <div class="card-titulo">Pan de Semillas Sin Harina</div>
+    <div class="card-tagline">100% sin harinas, alto en omega-3, fibra y proteínas</div>
+  </div>
+  <div class="card-div"></div>
+  <button class="toggle-btn" onclick="toggle(this)">Ver receta completa <span class="toggle-icon">▾</span></button>
+  <div class="card-body">
+    <ul class="ing-lista">
+      <li><div class="ing-dot"></div>1 taza de semillas de girasol</li>
+      <li><div class="ing-dot"></div>½ taza de semillas de calabaza</li>
+      <li><div class="ing-dot"></div>¼ taza de chía · ¼ taza de lino molido</li>
+      <li><div class="ing-dot"></div>3 huevos · 2 cdas de aceite de coco · sal y especias</li>
+    </ul>
+    <div class="paso"><div class="paso-num">1</div><div class="paso-texto">Mezclar todas las semillas con sal y especias.</div></div>
+    <div class="paso"><div class="paso-num">2</div><div class="paso-texto">Incorporar huevos batidos y aceite de coco.</div></div>
+    <div class="paso"><div class="paso-num">3</div><div class="paso-texto">Verter en molde pequeño engrasado.</div></div>
+    <div class="paso"><div class="paso-num">4</div><div class="paso-texto">Hornear 180°C por 30 min hasta dorar. Dejar enfriar antes de cortar.</div></div>
+    <div class="beneficios-wrap"><div class="beneficios-texto">✨ Sin ninguna harina. Las semillas de lino y chía aportan omega-3 y fibra soluble. La chía forma gel protector intestinal.</div></div>
+  </div>
+</div>
+
+</div><!-- /lista -->
+
+<div class="disclaimer">
+  🌿 Estas recetas son apoyo nutricional complementario.<br>
+  No reemplazan el diagnóstico médico ni el tratamiento farmacológico.<br>
+  <strong>Consultar siempre a un profesional de salud en EII activa.</strong>
+</div>
+
+<nav class="bottom-nav">
+  <a href="../index.html" class="nav-item"><span class="nav-icon">🏠</span>Inicio</a>
+  <a href="herbologia-indice.html" class="nav-item"><span class="nav-icon">🌿</span>Plantas</a>
+  <a href="recetas.html" class="nav-item"><span class="nav-icon">🍽️</span>Recetas</a>
+  <a href="infusiones.html" class="nav-item"><span class="nav-icon">🍵</span>Infusiones</a>
+  <a href="recetas-complementarias.html" class="nav-item activo"><span class="nav-icon">🥗</span>Complementarias</a>
+</nav>
+
+<script>
+function toggle(btn){btn.closest('.card').classList.toggle('abierta')}
+function filtrar(cat,tabEl){
+  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('activo'));
+  tabEl.classList.add('activo');
+  document.querySelectorAll('.card[data-cat]').forEach(c=>{
+    c.style.display=(cat==='todos'||c.dataset.cat===cat)?'':'none';
+    if(c.style.display==='none')c.classList.remove('abierta');
+  });
+  // Ocultar/mostrar títulos de sección
+  document.querySelectorAll('.sec-titulo').forEach(s=>s.style.display=cat==='todos'?'':'none');
+}
+</script>
+</body>
+</html>
