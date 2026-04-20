@@ -513,6 +513,17 @@ body{
       <svg class="mod-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#8b5e00" stroke-width="2" stroke-linecap="round"><path d="M9 18l6-6-6-6"/></svg>
     </div>
 
+
+    <!-- Contribuir -->
+    <div class="mod-card mod-card-wide" style="background:linear-gradient(135deg,#eaf6f0,#c0e8d4)" onclick="irA('contribuir.html')">
+      <div>
+        <span class="mod-ico">🌱</span>
+        <div class="mod-nom">Comparte tu planta</div>
+        <div class="mod-sub">¿Conoces una planta que no está aquí? Contribuye al catálogo</div>
+      </div>
+      <svg class="mod-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--v2)" stroke-width="2" stroke-linecap="round"><path d="M9 18l6-6-6-6"/></svg>
+    </div>
+
   </div>
 </div>
 
@@ -736,7 +747,8 @@ function irA(url) {
     'recetas.html':'Recetas especiales',
     'remedios.html':'Remedios caseros',
     'recetas-complementarias.html':'Recetas complementarias',
-    'recursos.html':'Recursos y referencias'
+    'recursos.html':'Recursos y referencias',
+    'contribuir.html':'Comparte tu planta'
   };
   if (proximamente.includes(url)) {
     const nom = labels[url] || url;
