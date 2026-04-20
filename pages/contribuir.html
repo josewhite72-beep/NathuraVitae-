@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#1a3d2a">
+<title>NathuraVitae — Comparte tu planta</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --v1:#1a3d2a;--v2:#245c3e;--v3:#2e8b5a;--v4:#4aab7f;--v5:#8dd4b0;
+  --vp:#eaf6f0;--vm:#c0e8d4;--vt:#8dd4b0;
+  --crema:#f8f5ee;--crema2:#ede8dc;--crema3:#e2dace;
+  --tx:#1a1a16;--tx2:#44443c;--tx3:#8a8878;
+  --amb:#9a6010;--ambp:#fdf2e0;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'DM Sans',sans-serif;background:var(--crema);color:var(--tx);padding-bottom:80px;-webkit-font-smoothing:antialiased}
+.status-spacer{height:env(safe-area-inset-top,0px);background:var(--v1)}
+.topbar{background:var(--v1);padding:12px 20px 14px;display:flex;align-items:center;gap:10px;position:sticky;top:0;z-index:40}
+.topbar-back{width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.1);border:none;display:flex;align-items:center;justify-content:center;cursor:pointer;color:white;font-size:18px;text-decoration:none}
+.topbar-icon{width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;font-size:16px}
+.topbar-nom{font-family:'Playfair Display',serif;font-size:19px;color:white;font-weight:600}
+.topbar-nom span{font-style:italic;font-weight:400;color:var(--vt)}
+
+.hero{background:var(--v1);padding:4px 24px 44px;position:relative;overflow:hidden}
+.hero::after{content:'';position:absolute;bottom:0;left:0;right:0;height:40px;background:linear-gradient(to bottom,transparent,var(--crema));pointer-events:none}
+.hero-deco{position:absolute;right:-10px;top:-10px;font-size:160px;opacity:.05;line-height:1;pointer-events:none}
+.hero-eyebrow{font-size:10px;font-weight:500;color:var(--vt);letter-spacing:2.5px;text-transform:uppercase;margin-bottom:10px;display:flex;align-items:center;gap:6px}
+.hero-eyebrow::before{content:'';width:20px;height:1px;background:var(--vt);opacity:.6}
+.hero-titulo{font-family:'Playfair Display',serif;font-size:26px;font-weight:700;line-height:1.2;color:white;margin-bottom:10px}
+.hero-titulo em{color:var(--vt);font-style:italic;font-weight:400}
+.hero-sub{font-size:12px;line-height:1.7;color:rgba(255,255,255,.65);max-width:320px}
+
+/* SECCIONES */
+.seccion{margin:20px 16px 0}
+.sec-label{font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--tx3);margin-bottom:12px;display:flex;align-items:center;gap:8px}
+.sec-label::after{content:'';flex:1;height:1px;background:var(--crema3)}
+
+/* TIPOS DE CONTRIBUCIÓN */
+.tipo-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:4px}
+.tipo-card{background:white;border:2px solid var(--crema3);border-radius:16px;padding:14px 12px;cursor:pointer;transition:all .2s;text-align:center}
+.tipo-card.activo{border-color:var(--v3);background:var(--vp)}
+.tipo-card.activo .tipo-ico{transform:scale(1.1)}
+.tipo-ico{font-size:28px;display:block;margin-bottom:6px;transition:transform .2s}
+.tipo-nom{font-size:12px;font-weight:600;color:var(--v1);margin-bottom:2px}
+.tipo-desc{font-size:10px;color:var(--tx3);line-height:1.4}
+
+/* FORMULARIO */
+.form-wrap{background:white;border-radius:20px;border:1.5px solid var(--crema3);padding:18px;margin-top:16px;box-shadow:0 2px 14px rgba(26,61,42,.06)}
+.campo{margin-bottom:16px}
+.campo-label{font-size:11px;font-weight:600;color:var(--tx2);margin-bottom:6px;display:flex;align-items:center;gap:5px}
+.campo-label .req{color:var(--v3);font-size:13px}
+.campo-label .opt{font-size:9px;color:var(--tx3);font-weight:400;margin-left:4px}
+.campo input,.campo textarea,.campo select{
+  width:100%;border:1.5px solid var(--crema3);border-radius:12px;
+  padding:10px 12px;font-size:13px;color:var(--tx);font-family:'DM Sans',sans-serif;
+  background:var(--crema);outline:none;transition:border-color .2s;
+  -webkit-appearance:none;appearance:none
+}
+.campo input:focus,.campo textarea:focus,.campo select:focus{
+  border-color:var(--v3);background:white
+}
+.campo textarea{min-height:80px;resize:vertical;line-height:1.6}
+.campo-hint{font-size:10px;color:var(--tx3);margin-top:5px;line-height:1.5}
+.campo-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+
+/* CHIPS DE CATEGORÍA */
+.chips-wrap{display:flex;flex-wrap:wrap;gap:6px}
+.chip{border:1.5px solid var(--crema3);border-radius:20px;padding:5px 12px;font-size:11px;font-weight:500;color:var(--tx3);cursor:pointer;background:white;transition:all .2s;font-family:'DM Sans',sans-serif}
+.chip.sel{border-color:var(--v3);background:var(--vp);color:var(--v2)}
+
+/* ESTRELLAS DE URGENCIA */
+.urgencia-wrap{display:flex;gap:8px}
+.urg-btn{flex:1;border:1.5px solid var(--crema3);border-radius:12px;padding:8px 6px;text-align:center;cursor:pointer;font-size:10px;font-weight:500;color:var(--tx3);background:white;transition:all .2s;font-family:'DM Sans',sans-serif;line-height:1.4}
+.urg-btn.sel{border-color:var(--v3);background:var(--vp);color:var(--v2)}
+.urg-ico{font-size:16px;display:block;margin-bottom:2px}
+
+/* BOTÓN ENVIAR */
+.btn-enviar{width:100%;background:var(--v1);color:white;border:none;border-radius:16px;padding:16px;font-size:14px;font-weight:600;font-family:'Playfair Display',serif;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;margin-top:20px;transition:background .2s}
+.btn-enviar:active{background:var(--v2)}
+.btn-enviar .ico{font-size:18px}
+
+/* PANTALLA ÉXITO */
+.exito{display:none;background:white;border-radius:20px;border:1.5px solid var(--vm);padding:28px 20px;text-align:center;margin:20px 16px 0;box-shadow:0 2px 14px rgba(26,61,42,.08)}
+.exito-ico{font-size:56px;margin-bottom:12px;display:block}
+.exito-titulo{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--v1);margin-bottom:8px}
+.exito-sub{font-size:13px;color:var(--tx3);line-height:1.7;margin-bottom:20px}
+.exito-pasos{background:var(--vp);border-radius:14px;padding:14px;text-align:left;margin-bottom:16px}
+.exito-paso{display:flex;gap:10px;align-items:flex-start;margin-bottom:8px}
+.exito-paso:last-child{margin-bottom:0}
+.paso-num{width:20px;height:20px;border-radius:50%;background:var(--v1);color:white;font-size:9px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
+.paso-txt{font-size:11px;color:var(--tx2);line-height:1.5}
+.btn-nueva{background:var(--vp);color:var(--v2);border:1.5px solid var(--vm);border-radius:12px;padding:12px;font-size:13px;font-weight:600;font-family:'DM Sans',sans-serif;cursor:pointer;width:100%}
+
+/* INFO BOXES */
+.info-box{background:var(--vp);border-radius:14px;padding:14px;margin:16px 16px 0;border-left:3px solid var(--v3)}
+.info-box p{font-size:11px;color:var(--tx2);line-height:1.7}
+.info-box strong{color:var(--v1)}
+
+.disclaimer{margin:16px 16px 0;background:var(--crema2);border-radius:12px;padding:12px 14px;font-size:10px;color:var(--tx3);line-height:1.7;text-align:center}
+
+.bottom-nav{position:fixed;bottom:0;left:0;right:0;background:white;border-top:1px solid var(--crema3);padding:8px 0 calc(8px + env(safe-area-inset-bottom,0px));display:flex;justify-content:space-around;z-index:40}
+.nav-item{display:flex;flex-direction:column;align-items:center;gap:2px;text-decoration:none;font-size:10px;color:var(--tx3);font-weight:400;min-width:52px}
+.nav-item.activo{color:var(--v3);font-weight:500}
+.nav-icon{font-size:20px}
+
+@keyframes fadeUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.form-wrap{animation:fadeUp .35s ease both}
+</style>
+</head>
+<body>
+<div class="status-spacer"></div>
+<div class="topbar">
+  <a href="../index.html" class="topbar-back">←</a>
+  <div class="topbar-icon">🌱</div>
+  <div class="topbar-nom">Comparte <span>tu planta</span></div>
+</div>
+
+<div class="hero">
+  <div class="hero-deco">🌱</div>
+  <div class="hero-eyebrow">Colaboración abierta</div>
+  <div class="hero-titulo">Tu conocimiento <em>también importa</em></div>
+  <div class="hero-sub">¿Conoces una planta, remedio o receta que no está en NathuraVitae? Compártela. Cada contribución es revisada y puede llegar a miles de personas.</div>
+</div>
+
+<!-- TIPO DE CONTRIBUCIÓN -->
+<div class="seccion">
+  <div class="sec-label">¿Qué quieres compartir?</div>
+  <div class="tipo-grid">
+    <div class="tipo-card activo" onclick="selTipo(this,'planta')" id="tipo-planta">
+      <span class="tipo-ico">🌿</span>
+      <div class="tipo-nom">Planta medicinal</div>
+      <div class="tipo-desc">Ficha de una planta con usos tradicionales</div>
+    </div>
+    <div class="tipo-card" onclick="selTipo(this,'remedio')" id="tipo-remedio">
+      <span class="tipo-ico">🧪</span>
+      <div class="tipo-nom">Remedio casero</div>
+      <div class="tipo-desc">Preparación para un síntoma específico</div>
+    </div>
+    <div class="tipo-card" onclick="selTipo(this,'receta')" id="tipo-receta">
+      <span class="tipo-ico">🍽️</span>
+      <div class="tipo-nom">Receta terapéutica</div>
+      <div class="tipo-desc">Receta para celiaquía, keto, EII u otras</div>
+    </div>
+    <div class="tipo-card" onclick="selTipo(this,'correccion')" id="tipo-correccion">
+      <span class="tipo-ico">✏️</span>
+      <div class="tipo-nom">Corrección</div>
+      <div class="tipo-desc">Un dato incorrecto o incompleto en la app</div>
+    </div>
+  </div>
+</div>
+
+<!-- FORMULARIO PLANTA -->
+<div id="form-planta" class="seccion">
+  <div class="form-wrap">
+
+    <div class="campo">
+      <div class="campo-label">Nombre común <span class="req">*</span></div>
+      <input type="text" id="p-nombre" placeholder="Ej: Mastranto, Sorosí, Llantén..." maxlength="80">
+      <div class="campo-hint">El nombre con el que se conoce en tu región o país.</div>
+    </div>
+
+    <div class="campo">
+      <div class="campo-label">Otros nombres que conoces <span class="opt">(opcional)</span></div>
+      <input type="text" id="p-alternos" placeholder="Ej: Tilo, Juanilama, Limoncillo..." maxlength="150">
+    </div>
+
+    <div class="campo">
+      <div class="campo-label">Nombre científico <span class="opt">(si lo sabes)</span></div>
+      <input type="text" id="p-cientifico" placeholder="Ej: Lippia alba, Cymbopogon citratus..." maxlength="100">
+    </div>
+
+    <div class="campo-grid">
+      <div class="campo">
+        <div class="campo-label">País <span class="req">*</span></div>
+        <input type="text" id="p-pais" placeholder="Ej: Panamá" maxlength="50">
+      </div>
+      <div class="campo">
+        <div class="campo-label">Región / Provincia</div>
+        <input type="text" id="p-region" placeholder="Ej: Chiriquí, Darién..." maxlength="50">
+      </div>
+    </div>
+
+    <div class="campo">
+      <div class="campo-label">Grupo terapéutico <span class="req">*</span></div>
+      <div class="chips-wrap" id="chips-grupo">
+        <div class="chip" onclick="selChip(this,'grupo')">Digestivo</div>
+        <div class="chip" onclick="selChip(this,'grupo')">Respiratorio</div>
+        <div class="chip" onclick="selChip(this,'grupo')">Nervioso</div>
+        <div class="chip" onclick="selChip(this,'grupo')">Cardiovascular</div>
+        <div class="chip" onclick="selChip(this,'grupo')">Urinario</div>
+        <div class="chip" onclick="selChip(this,'grupo')">Piel</div>
+        <div class="chip" onclick="selChip(this,'grupo')">Inmunológico</div>
+        <div class="chip" onclick="selChip(this,'grupo')">Metabólico</div>
+        <div class="chip" onclick="selChip(this,'grupo')">Otro</div>
+      </div>
+    </div>
+
+    <div class="campo">
+      <div class="campo-label">¿Para qué se usa? <span class="req">*</span></div>
+      <textarea id="p-usos" placeholder="Describe los usos tradicionales que conoces. Ej: Se usa para la diarrea, el dolor de estómago y como calmante..."></textarea>
+    </div>
+
+    <div class="campo">
+      <div class="campo-label">¿Cómo se prepara? <span class="req">*</span></div>
+      <textarea id="p-prep" placeholder="Describe la preparación. Ej: Se hierven las hojas durante 5 minutos, se deja reposar y se bebe tibio..."></textarea>
+    </div>
+
+    <div class="campo">
+      <div class="campo-label">¿Qué parte de la planta se usa?</div>
+      <div class="chips-wrap" id="chips-parte">
+        <div class="chip" onclick="selChip(this,'parte')">Hojas</div>
+        <div class="chip" onclick="selChip(this,'parte')">Flores</div>
+        <div class="chip" onclick="selChip(this,'parte')">Raíz</div>
+        <div class="chip" onclick="selChip(this,'parte')">Corteza</div>
+        <div class="chip" onclick="selChip(this,'parte')">Fruto</div>
+        <div class="chip" onclick="selChip(this,'parte')">Semillas</div>
+        <div class="chip" onclick="selChip(this,'parte')">Tallo</div>
+        <div class="chip" onclick="selChip(this,'parte')">Toda la planta</div>
+      </div>
+    </div>
+
+    <div class="campo">
+      <div class="campo-label">¿Dónde se consigue? <span class="opt">(opcional)</span></div>
+      <input type="text" id="p-donde" placeholder="Ej: Mercado de Calidonia, huertos familiares, monte..." maxlength="150">
+    </div>
+
+    <div class="campo">
+      <div class="campo-label">Precauciones que conoces <span class="opt">(opcional)</span></div>
+      <textarea id="p-precauciones" placeholder="Ej: No usar en embarazo, no dar a niños pequeños, puede causar alergia..."></textarea>
+    </div>
+
+    <div class="campo">
+      <div class="campo-label">Prioridad para el catálogo</div>
+      <div class="urgencia-wrap">
+        <div class="urg-btn sel" onclick="selUrg(this,1)">
+          <span class="urg-ico">🌱</span>Cuando puedan
+        </div>
+        <div class="urg-btn" onclick="selUrg(this,2)">
+          <span class="urg-ico">⭐</span>Importante
+        </div>
+        <div class="urg-btn" onclick="selUrg(this,3)">
+          <span class="urg-ico">🔥</span>Muy usada aquí
+        </div>
+      </div>
+    </div>
+
+    <div class="campo">
+      <div class="campo-label">Tu nombre o alias <span class="opt">(para crédito en la ficha)</span></div>
+      <input type="text" id="p-autor" placeholder="Ej: María de Chiriquí, Herbolario Don Pedro..." maxlength="60">
+      <div class="campo-hint">Si quieres aparecer como colaborador en la ficha. Completamente opcional.</div>
+    </div>
+
+    <button class="btn-enviar" onclick="enviar('planta')">
+      <span class="ico">🌿</span> Enviar contribución
+    </button>
+
+  </div>
+</div>
+
+<!-- FORMULARIO REMEDIO -->
+<div id="form-remedio" class="seccion" style="display:none">
+  <div class="form-wrap">
+
+    <div class="campo">
+      <div class="campo-label">Nombre del remedio <span class="req">*</span></div>
+      <input type="text" id="r-nombre" placeholder="Ej: Té de guayaba para la diarrea..." maxlength="100">
+    </div>
+
+    <div class="campo">
+      <div class="campo-label">Síntoma o condición <span class="req">*</span></div>
+      <div class="chips-wrap" id="chips-sintoma">
+        <div class="chip" onclick="selChip(this,'sintoma')">🤧 Gripe</div>
+        <div class="chip" onclick="selChip(this,'sintoma')">🌡️ Fiebre</div>
+        <div class="chip" onclick="selChip(this,'sintoma')">🩺 Diarrea</div>
+        <div class="chip" onclick="selChip(this,'sintoma')">🪱 Parásitos</div>
+        <div class="chip" onclick="selChip(this,'sintoma')">🌙 Nervios</div>
+        <div class="chip" onclick="selChip(this,'sintoma')">❤️ Presión</div>
+        <div class="chip" onclick="selChip(this,'sintoma')">💧 Riñones</div>
+        <div class="chip" onclick="selChip(this,'sintoma')">🩹 Piel</div>
+        <div class="chip" onclick="selChip(this,'sintoma')">🦷 Dolor</div>
+        <div class="chip" onclick="selChip(this,'sintoma')">Otro</div>
+      </div>
+    </div>
+
+    <div class="campo">
+      <div class="campo-label">Plantas que usa <span class="req">*</span></div>
+      <input type="text" id="r-plantas" placeholder="Ej: Guayaba, mastranto, jengibre..." maxlength="200">
+    </div>
+
+    <div class="campo">
+      <div class="campo-label">Ingredientes completos <span class="req">*</span></div>
+      <textarea id="r-ingredientes" placeholder="Lista todos los ingredientes con cantidades aproximadas..."></textarea>
+    </div>
+
+    <div class="campo">
+      <div class="campo-label">Preparación paso a paso <span class="req">*</span></div>
+      <textarea id="r-prep" placeholder="Describe cómo se prepara..."></textarea>
+    </div>
+
+    <div class="campo">
+      <div class="campo-label">País y región <span class="req">*</span></div>
+      <input type="text" id="r-lugar" placeholder="Ej: Panamá, Azuero" maxlength="100">
+    </div>
+
+    <div class="campo">
+      <div class="campo-label">Precauciones <span class="opt">(opcional)</span></div>
+      <textarea id="r-precauciones" placeholder="¿Para quién no es adecuado? ¿Cuánto tiempo usarlo?..."></textarea>
+    </div>
+
+    <div class="campo">
+      <div class="campo-label">Tu nombre o alias <span class="opt">(para crédito)</span></div>
+      <input type="text" id="r-autor" placeholder="Opcional" maxlength="60">
+    </div>
+
+    <button class="btn-enviar" onclick="enviar('remedio')">
+      <span class="ico">🧪</span> Enviar remedio
+    </button>
+
+  </div>
+</div>
+
+<!-- FORMULARIO RECETA -->
+<div id="form-receta" class="seccion" style="display:none">
+  <div class="form-wrap">
+
+    <div class="campo">
+      <div class="campo-label">Nombre de la receta <span class="req">*</span></div>
+      <input type="text" id="rc-nombre" placeholder="Ej: Sopa de calabaza con cúrcuma para EII..." maxlength="100">
+    </div>
+
+    <div class="campo">
+      <div class="campo-label">Categoría <span class="req">*</span></div>
+      <div class="chips-wrap" id="chips-catreceta">
+        <div class="chip" onclick="selChip(this,'catreceta')">🌾 Sin gluten</div>
+        <div class="chip" onclick="selChip(this,'catreceta')">🥑 Keto</div>
+        <div class="chip" onclick="selChip(this,'catreceta')">💊 Brote EII</div>
+        <div class="chip" onclick="selChip(this,'catreceta')">🌿 Mantenimiento EII</div>
+        <div class="chip" onclick="selChip(this,'catreceta')">🥤 Batido</div>
+        <div class="chip" onclick="selChip(this,'catreceta')">🍞 Panadería sin gluten</div>
+        <div class="chip" onclick="selChip(this,'catreceta')">Otra</div>
+      </div>
+    </div>
+
+    <div class="campo">
+      <div class="campo-label">Plantas medicinales incluidas <span class="opt">(si aplica)</span></div>
+      <input type="text" id="rc-plantas" placeholder="Ej: Cúrcuma, jengibre, orégano..." maxlength="150">
+    </div>
+
+    <div class="campo">
+      <div class="campo-label">Ingredientes <span class="req">*</span></div>
+      <textarea id="rc-ingredientes" placeholder="Lista todos con cantidades..."></textarea>
+    </div>
+
+    <div class="campo">
+      <div class="campo-label">Preparación <span class="req">*</span></div>
+      <textarea id="rc-prep" placeholder="Pasos detallados..."></textarea>
+    </div>
+
+    <div class="campo">
+      <div class="campo-label">¿Para quién es? <span class="req">*</span></div>
+      <input type="text" id="rc-para" placeholder="Ej: Personas con colitis ulcerosa en remisión..." maxlength="150">
+    </div>
+
+    <div class="campo">
+      <div class="campo-label">Tu nombre o alias <span class="opt">(para crédito)</span></div>
+      <input type="text" id="rc-autor" placeholder="Opcional" maxlength="60">
+    </div>
+
+    <button class="btn-enviar" onclick="enviar('receta')">
+      <span class="ico">🍽️</span> Enviar receta
+    </button>
+
+  </div>
+</div>
+
+<!-- FORMULARIO CORRECCIÓN -->
+<div id="form-correccion" class="seccion" style="display:none">
+  <div class="form-wrap">
+
+    <div class="campo">
+      <div class="campo-label">Planta o sección con el error <span class="req">*</span></div>
+      <input type="text" id="c-planta" placeholder="Ej: Ficha de Noni, Infusión Anti-Colitis..." maxlength="100">
+    </div>
+
+    <div class="campo">
+      <div class="campo-label">¿Qué dice actualmente? <span class="req">*</span></div>
+      <textarea id="c-actual" placeholder="Escribe el texto o dato que crees que está mal..."></textarea>
+    </div>
+
+    <div class="campo">
+      <div class="campo-label">¿Cuál es la información correcta? <span class="req">*</span></div>
+      <textarea id="c-correcto" placeholder="¿Cuál sería la información correcta o más precisa?..."></textarea>
+    </div>
+
+    <div class="campo">
+      <div class="campo-label">Fuente de referencia <span class="opt">(si tienes)</span></div>
+      <input type="text" id="c-fuente" placeholder="Ej: PubMed PMID 12345678, libro de Botanica..." maxlength="200">
+    </div>
+
+    <div class="campo">
+      <div class="campo-label">Tu nombre o alias <span class="opt">(opcional)</span></div>
+      <input type="text" id="c-autor" placeholder="Opcional" maxlength="60">
+    </div>
+
+    <button class="btn-enviar" onclick="enviar('correccion')">
+      <span class="ico">✏️</span> Enviar corrección
+    </button>
+
+  </div>
+</div>
+
+<!-- PANTALLA ÉXITO -->
+<div class="exito" id="pantalla-exito">
+  <span class="exito-ico">🌿</span>
+  <div class="exito-titulo">¡Gracias por contribuir!</div>
+  <div class="exito-sub">Tu aporte ha sido enviado y será revisado con el mismo rigor científico que el resto del catálogo.</div>
+  <div class="exito-pasos">
+    <div class="exito-paso">
+      <div class="paso-num">1</div>
+      <div class="paso-txt"><strong>Revisión científica:</strong> Cada contribución se verifica con PubMed, TRAMIL y otras fuentes antes de publicarse.</div>
+    </div>
+    <div class="exito-paso">
+      <div class="paso-num">2</div>
+      <div class="paso-txt"><strong>Integración:</strong> Si pasa la revisión, se añade al catálogo con tu crédito si lo indicaste.</div>
+    </div>
+    <div class="exito-paso">
+      <div class="paso-num">3</div>
+      <div class="paso-txt"><strong>Impacto:</strong> Tu planta o remedio puede llegar a miles de personas en todo el mundo.</div>
+    </div>
+  </div>
+  <button class="btn-nueva" onclick="nuevaContribucion()">🌱 Compartir otra</button>
+</div>
+
+<div class="info-box">
+  <p><strong>¿Por qué contribuir?</strong> NathuraVitae es un proyecto personal sin fines de lucro. Cada planta compartida por la comunidad pasa por revisión científica antes de publicarse. Tu conocimiento tradicional merece ser documentado y preservado.</p>
+</div>
+
+<div class="disclaimer">
+  🌿 Todas las contribuciones son revisadas antes de publicarse.<br>
+  NathuraVitae se reserva el derecho de ajustar, ampliar o no publicar contenidos que no superen la revisión de calidad.<br>
+  <strong>No se publican claims médicos sin respaldo científico.</strong>
+</div>
+
+<nav class="bottom-nav">
+  <a href="../index.html" class="nav-item"><span class="nav-icon">🏠</span>Inicio</a>
+  <a href="herbologia-indice.html" class="nav-item"><span class="nav-icon">🌿</span>Plantas</a>
+  <a href="remedios.html" class="nav-item"><span class="nav-icon">🌱</span>Remedios</a>
+  <a href="recursos.html" class="nav-item"><span class="nav-icon">📚</span>Recursos</a>
+  <a href="contribuir.html" class="nav-item activo"><span class="nav-icon">✉️</span>Contribuir</a>
+</nav>
+
+<script>
+// --- TIPO SELECCIÓN ---
+let tipoActual = 'planta';
+function selTipo(card, tipo) {
+  document.querySelectorAll('.tipo-card').forEach(c => c.classList.remove('activo'));
+  card.classList.add('activo');
+  tipoActual = tipo;
+  ['planta','remedio','receta','correccion'].forEach(t => {
+    document.getElementById('form-' + t).style.display = t === tipo ? '' : 'none';
+  });
+}
+
+// --- CHIPS MULTI-SELECCIÓN ---
+function selChip(chip, grupo) {
+  chip.classList.toggle('sel');
+}
+
+// --- URGENCIA (solo una) ---
+function selUrg(btn, val) {
+  document.querySelectorAll('.urg-btn').forEach(b => b.classList.remove('sel'));
+  btn.classList.add('sel');
+}
+
+// --- RECOPILAR DATOS Y ABRIR CORREO ---
+function enviar(tipo) {
+  let asunto = '';
+  let cuerpo = '';
+  const nl = '%0D%0A';
+
+  if (tipo === 'planta') {
+    const nombre = v('p-nombre');
+    if (!nombre) { alerta('Por favor escribe el nombre común de la planta.'); return; }
+    if (!v('p-usos')) { alerta('Por favor describe para qué se usa la planta.'); return; }
+    if (!v('p-prep')) { alerta('Por favor describe cómo se prepara.'); return; }
+    if (!v('p-pais')) { alerta('Por favor indica el país.'); return; }
+    const grupo = chips('chips-grupo');
+    if (!grupo) { alerta('Por favor selecciona el grupo terapéutico.'); return; }
+
+    asunto = encodeURIComponent('NathuraVitae · Contribución: Planta · ' + nombre);
+    cuerpo = `CONTRIBUCIÓN DE PLANTA MEDICINAL${nl}${nl}`
+      + `Nombre común: ${v('p-nombre')}${nl}`
+      + `Otros nombres: ${v('p-alternos') || '—'}${nl}`
+      + `Nombre científico: ${v('p-cientifico') || '—'}${nl}`
+      + `País: ${v('p-pais')}${nl}`
+      + `Región: ${v('p-region') || '—'}${nl}`
+      + `Grupo terapéutico: ${grupo}${nl}`
+      + `Partes usadas: ${chips('chips-parte') || '—'}${nl}`
+      + `${nl}USOS TRADICIONALES:${nl}${v('p-usos')}${nl}`
+      + `${nl}PREPARACIÓN:${nl}${v('p-prep')}${nl}`
+      + `${nl}DÓNDE SE CONSIGUE: ${v('p-donde') || '—'}${nl}`
+      + `PRECAUCIONES: ${v('p-precauciones') || '—'}${nl}`
+      + `PRIORIDAD: ${urgencia()}${nl}`
+      + `CRÉDITO PARA: ${v('p-autor') || 'Anónimo'}${nl}`;
+
+  } else if (tipo === 'remedio') {
+    const nombre = v('r-nombre');
+    if (!nombre) { alerta('Por favor escribe el nombre del remedio.'); return; }
+    if (!chips('chips-sintoma')) { alerta('Por favor selecciona el síntoma.'); return; }
+    if (!v('r-plantas')) { alerta('Por favor indica las plantas que usa.'); return; }
+    if (!v('r-ingredientes')) { alerta('Por favor lista los ingredientes.'); return; }
+    if (!v('r-prep')) { alerta('Por favor describe la preparación.'); return; }
+    if (!v('r-lugar')) { alerta('Por favor indica el país y región.'); return; }
+
+    asunto = encodeURIComponent('NathuraVitae · Contribución: Remedio · ' + nombre);
+    cuerpo = `CONTRIBUCIÓN DE REMEDIO CASERO${nl}${nl}`
+      + `Nombre: ${v('r-nombre')}${nl}`
+      + `Síntoma: ${chips('chips-sintoma')}${nl}`
+      + `Plantas: ${v('r-plantas')}${nl}`
+      + `País/Región: ${v('r-lugar')}${nl}`
+      + `${nl}INGREDIENTES:${nl}${v('r-ingredientes')}${nl}`
+      + `${nl}PREPARACIÓN:${nl}${v('r-prep')}${nl}`
+      + `${nl}PRECAUCIONES: ${v('r-precauciones') || '—'}${nl}`
+      + `CRÉDITO PARA: ${v('r-autor') || 'Anónimo'}${nl}`;
+
+  } else if (tipo === 'receta') {
+    const nombre = v('rc-nombre');
+    if (!nombre) { alerta('Por favor escribe el nombre de la receta.'); return; }
+    if (!chips('chips-catreceta')) { alerta('Por favor selecciona la categoría.'); return; }
+    if (!v('rc-ingredientes')) { alerta('Por favor lista los ingredientes.'); return; }
+    if (!v('rc-prep')) { alerta('Por favor describe la preparación.'); return; }
+    if (!v('rc-para')) { alerta('Por favor indica para quién es la receta.'); return; }
+
+    asunto = encodeURIComponent('NathuraVitae · Contribución: Receta · ' + nombre);
+    cuerpo = `CONTRIBUCIÓN DE RECETA TERAPÉUTICA${nl}${nl}`
+      + `Nombre: ${v('rc-nombre')}${nl}`
+      + `Categoría: ${chips('chips-catreceta')}${nl}`
+      + `Plantas medicinales: ${v('rc-plantas') || '—'}${nl}`
+      + `Para quién: ${v('rc-para')}${nl}`
+      + `${nl}INGREDIENTES:${nl}${v('rc-ingredientes')}${nl}`
+      + `${nl}PREPARACIÓN:${nl}${v('rc-prep')}${nl}`
+      + `CRÉDITO PARA: ${v('rc-autor') || 'Anónimo'}${nl}`;
+
+  } else if (tipo === 'correccion') {
+    if (!v('c-planta')) { alerta('Por favor indica qué planta o sección tiene el error.'); return; }
+    if (!v('c-actual')) { alerta('Por favor describe el dato incorrecto.'); return; }
+    if (!v('c-correcto')) { alerta('Por favor indica cuál sería la información correcta.'); return; }
+
+    asunto = encodeURIComponent('NathuraVitae · Corrección: ' + v('c-planta'));
+    cuerpo = `CORRECCIÓN DE CONTENIDO${nl}${nl}`
+      + `Planta/Sección: ${v('c-planta')}${nl}`
+      + `${nl}DICE ACTUALMENTE:${nl}${v('c-actual')}${nl}`
+      + `${nl}DEBERÍA DECIR:${nl}${v('c-correcto')}${nl}`
+      + `${nl}FUENTE: ${v('c-fuente') || '—'}${nl}`
+      + `ENVIADO POR: ${v('c-autor') || 'Anónimo'}${nl}`;
+  }
+
+  // Abrir cliente de correo
+  const email = 'nathuravitae@gmail.com';
+  window.location.href = `mailto:${email}?subject=${asunto}&body=${cuerpo}`;
+
+  // Mostrar pantalla de éxito
+  setTimeout(() => {
+    document.querySelectorAll('.seccion').forEach(s => s.style.display = 'none');
+    document.getElementById('pantalla-exito').style.display = 'block';
+    window.scrollTo(0, 0);
+  }, 800);
+}
+
+// --- HELPERS ---
+function v(id) { return document.getElementById(id).value.trim(); }
+function chips(id) {
+  return [...document.querySelectorAll('#' + id + ' .chip.sel')]
+    .map(c => c.textContent.trim()).join(', ');
+}
+function urgencia() {
+  const sel = document.querySelector('.urg-btn.sel');
+  return sel ? sel.querySelector('.urg-ico').textContent + ' ' + sel.textContent.replace(/[🌱⭐🔥]/g,'').trim() : 'Normal';
+}
+function alerta(msg) {
+  // Toast simple
+  let t = document.getElementById('toast-contrib');
+  if (!t) {
+    t = document.createElement('div');
+    t.id = 'toast-contrib';
+    t.style.cssText = 'position:fixed;bottom:90px;left:50%;transform:translateX(-50%);background:#1a3d2a;color:white;padding:10px 18px;border-radius:20px;font-size:12px;font-family:DM Sans,sans-serif;z-index:999;max-width:280px;text-align:center;box-shadow:0 4px 20px rgba(0,0,0,.2)';
+    document.body.appendChild(t);
+  }
+  t.textContent = msg;
+  t.style.opacity = '1';
+  clearTimeout(t._timer);
+  t._timer = setTimeout(() => t.style.opacity = '0', 3000);
+}
+function nuevaContribucion() {
+  document.getElementById('pantalla-exito').style.display = 'none';
+  document.querySelectorAll('.seccion').forEach(s => s.style.display = '');
+  selTipo(document.getElementById('tipo-planta'), 'planta');
+  window.scrollTo(0, 0);
+}
+</script>
+</body>
+</html>
