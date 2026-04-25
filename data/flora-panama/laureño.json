@@ -1,0 +1,115 @@
+{
+  "id": "laureño",
+  "versionFicha": "2.0",
+  "estadoFicha": "publicada",
+  "fechaCreacion": "2026-04-18",
+  "fechaRevision": "2026-04-18",
+  "nombreComun": "Laureño",
+  "nombresAlternativos": [
+    "Laurel negro",
+    "Matapasto"
+  ],
+  "nombreCientifico": "Senna reticulata (Willd.) H.S.Irwin & Barneby",
+  "sinonimiasCientificas": [],
+  "familia": "Fabaceae",
+  "orden": "",
+  "clase": "",
+  "regionOrigen": "América tropical",
+  "habitatNatural": "Zonas inundables y planicies",
+  "disponibilidadPanama": {
+    "disponible": true,
+    "nombreLocal": "Laureño",
+    "formaComercial": "Hojas",
+    "dondeConseguir": "Zonas rurales y huertos",
+    "cultivoLocal": true,
+    "endemicaPanama": false,
+    "notaRegional": "Usado en Panamá y Amazonía para afecciones cutáneas"
+  },
+  "cultivoCasero": {
+    "dificultad": "Media",
+    "apta": true,
+    "maceta": false,
+    "luz": "Sol pleno",
+    "agua": "Moderada",
+    "suelo": "Bien drenado",
+    "clima": "Tropical",
+    "notaCultivo": "Arbusto pionero",
+    "tiempoACosecha": "Varios meses"
+  },
+  "partesUsadas": [
+    "Hojas"
+  ],
+  "resumen": "Planta con propiedades antimicrobianas y antiinflamatorias para afecciones cutáneas.",
+  "usoTradicionalHistorico": "Uso tópico para micosis, erupciones, sarna y eczema en tradiciones panameñas y amazónicas.",
+  "nivelEvidenciaGlobal": "C",
+  "fuentePrimaria": "",
+  "grupoTerapeutico": "Antimicrobiano tópico",
+  "propiedades": "Antimicrobiano, antiinflamatorio",
+  "fotoquimica": "Antraquinonas y compuestos fenólicos",
+  "dolencias": [
+    "Infecciones cutáneas",
+    "Micosis",
+    "Eczema"
+  ],
+  "sistemas": [
+    "Dermatológico"
+  ],
+  "modoEII": {
+    "aptaEnBrote": false,
+    "notaBrote": "Solo uso tópico recomendado.",
+    "aptaEnMantenimiento": true,
+    "notaMantenimiento": "Útil para síntomas cutáneos leves.",
+    "mecanismoEII": "Actividad antimicrobiana y antiinflamatoria tópica.",
+    "referenciaEII": "Uso tradicional en Panamá y estudios etnobotánicos"
+  },
+  "modoCeliaquiaGluten": {
+    "libreDeGluten": true,
+    "nota": "Hojas naturalmente libres de gluten.",
+    "indicacionEspecifica": ""
+  },
+  "usos": {
+    "interno": false,
+    "externo": true,
+    "culinario": false
+  },
+  "preparacion": "Decocción de hojas para lavados tópicos.",
+  "contraindicaciones": "Uso interno no recomendado.",
+  "interaccionesMedicamentosas": "Bajo riesgo en uso tópico.",
+  "embarazoLactancia": "Evitar uso interno.",
+  "compatibilidadPlantas": {
+    "sinergicas": [],
+    "incompatibles": []
+  },
+  "infusionesRelacionadas": [],
+  "emoji": "🌿",
+  "etiquetas": [
+    "piel",
+    "antimicrobiano"
+  ],
+  "fuentes": [
+    {
+      "autor": "Oladeji OS et al.",
+      "titulo": "Ethnobotanical Description and Biological Activities of Senna reticulata",
+      "publicacion": "Evidence-Based Complementary and Alternative Medicine",
+      "año": "2020",
+      "doi": "10.1155/2020/8819111",
+      "pmid": "",
+      "tipo": "Revisión",
+      "nivelEvidencia": "C",
+      "idioma": "en"
+    },
+    {
+      "autor": "Johnson-Fulton SB et al.",
+      "titulo": "Comparing Medicinal Uses of Cochlospermaceae and Related Families in the Neotropics",
+      "publicacion": "Diversity",
+      "año": "2018",
+      "doi": "10.3390/d10040123",
+      "pmid": "",
+      "tipo": "Estudio etnobotánico",
+      "nivelEvidencia": "C",
+      "idioma": "en"
+    }
+  ],
+  "advertencia": "Solo uso externo.",
+  "disclaimer": "La información es para fines educativos. Consulta a un profesional de la salud antes de usar."
+}

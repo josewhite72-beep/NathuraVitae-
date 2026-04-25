@@ -1,0 +1,119 @@
+{
+  "id": "anamu",
+  "versionFicha": "2.0",
+  "estadoFicha": "publicada",
+  "fechaCreacion": "2026-04-18",
+  "fechaRevision": "2026-04-18",
+  "nombreComun": "Anamú",
+  "nombresAlternativos": [
+    "Santa María"
+  ],
+  "nombreCientifico": "Petiveria alliacea L.",
+  "sinonimiasCientificas": [],
+  "familia": "Phytolaccaceae",
+  "orden": "",
+  "clase": "",
+  "regionOrigen": "América tropical",
+  "habitatNatural": "Áreas perturbadas, solares y bordes de caminos",
+  "disponibilidadPanama": {
+    "disponible": true,
+    "nombreLocal": "Anamú / Santa María",
+    "formaComercial": "Hojas y raíz secas",
+    "dondeConseguir": "Huertos familiares, herbolarios y mercados rurales",
+    "cultivoLocal": true,
+    "endemicaPanama": false,
+    "notaRegional": "Planta de gran importancia en tradiciones Ngäbe, Emberá y medicina popular panameña"
+  },
+  "cultivoCasero": {
+    "dificultad": "Baja",
+    "apta": true,
+    "maceta": false,
+    "luz": "Sol parcial",
+    "agua": "Moderada",
+    "suelo": "Bien drenado",
+    "clima": "Tropical húmedo",
+    "notaCultivo": "Crece fácilmente en zonas rurales y solares",
+    "tiempoACosecha": "3-4 meses"
+  },
+  "partesUsadas": [
+    "Hojas",
+    "Raíz"
+  ],
+  "resumen": "Planta con propiedades analgésicas, antiinflamatorias e inmunomoduladoras de amplio uso tradicional en Panamá.",
+  "usoTradicionalHistorico": "Usada para dolores reumáticos, inflamación, fiebre, resfriados y como planta ritual en culturas indígenas panameñas.",
+  "nivelEvidenciaGlobal": "C",
+  "fuentePrimaria": "",
+  "grupoTerapeutico": "Analgésico, antiinflamatorio, inmunomodulador",
+  "propiedades": "Antiinflamatorio, analgésico, antioxidante",
+  "fotoquimica": "Compuestos azufrados, flavonoides y saponinas",
+  "dolencias": [
+    "Dolor reumático",
+    "Inflamación",
+    "Resfriados",
+    "Fiebre"
+  ],
+  "sistemas": [
+    "Musculoesquelético",
+    "Inmune",
+    "Respiratorio"
+  ],
+  "modoEII": {
+    "aptaEnBrote": false,
+    "notaBrote": "Evitar por posible irritación gastrointestinal debido a compuestos azufrados.",
+    "aptaEnMantenimiento": false,
+    "notaMantenimiento": "No recomendado en EII por falta de evidencia y riesgo de irritación.",
+    "mecanismoEII": "Actividad antiinflamatoria y analgésica observada en estudios preclínicos, pero sin datos específicos en EII.",
+    "referenciaEII": "Uso tradicional y estudios preclínicos limitados"
+  },
+  "modoCeliaquiaGluten": {
+    "libreDeGluten": true,
+    "nota": "Hojas y raíz naturalmente libres de gluten.",
+    "indicacionEspecifica": ""
+  },
+  "usos": {
+    "interno": true,
+    "externo": true,
+    "culinario": false
+  },
+  "preparacion": "Infusión o decocción de hojas y raíz (30 g por litro de agua).",
+  "contraindicaciones": "Embarazo, lactancia, trastornos de coagulación y niños menores de 12 años.",
+  "interaccionesMedicamentosas": "Puede potenciar anticoagulantes y antihipertensivos.",
+  "embarazoLactancia": "Contraindicado por posible efecto uterino y falta de estudios de seguridad.",
+  "compatibilidadPlantas": {
+    "sinergicas": [],
+    "incompatibles": []
+  },
+  "infusionesRelacionadas": [],
+  "emoji": "🌿",
+  "etiquetas": [
+    "antiinflamatorio",
+    "dolor",
+    "inmune"
+  ],
+  "fuentes": [
+    {
+      "autor": "Urueña C et al.",
+      "titulo": "Petiveria alliacea extracts uses multiple mechanisms to inhibit growth of human and mouse tumoral cells",
+      "publicacion": "BMC Complementary and Alternative Medicine",
+      "año": "2008",
+      "doi": "10.1186/1472-6882-8-60",
+      "pmid": "19017389",
+      "tipo": "Estudio preclínico",
+      "nivelEvidencia": "C",
+      "idioma": "en"
+    },
+    {
+      "autor": "Ballesteros-Ramírez R et al.",
+      "titulo": "Exploring the safety and efficacy of phytomedicine Petiveria alliacea L. in a murine model of leukemia",
+      "publicacion": "Frontiers in Pharmacology",
+      "año": "2023",
+      "doi": "10.3389/fphar.2023.10413616",
+      "pmid": "",
+      "tipo": "Estudio preclínico",
+      "nivelEvidencia": "C",
+      "idioma": "en"
+    }
+  ],
+  "advertencia": "Evitar uso prolongado. Consultar profesional de la salud.",
+  "disclaimer": "La información es para fines educativos. Consulta a un profesional de la salud antes de usar."
+}

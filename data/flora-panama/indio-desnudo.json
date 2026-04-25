@@ -1,0 +1,117 @@
+{
+  "id": "indio-desnudo",
+  "versionFicha": "2.0",
+  "estadoFicha": "publicada",
+  "fechaCreacion": "2026-04-18",
+  "fechaRevision": "2026-04-18",
+  "nombreComun": "Indio desnudo",
+  "nombresAlternativos": [
+    "Gumbo-limbo",
+    "Almácigo"
+  ],
+  "nombreCientifico": "Bursera simaruba (L.) Sarg.",
+  "sinonimiasCientificas": [],
+  "familia": "Burseraceae",
+  "orden": "",
+  "clase": "",
+  "regionOrigen": "América Central y del Sur",
+  "habitatNatural": "Bosques secos y zonas costeras",
+  "disponibilidadPanama": {
+    "disponible": true,
+    "nombreLocal": "Indio desnudo",
+    "formaComercial": "Corteza y hojas",
+    "dondeConseguir": "Huertos rurales y mercados locales",
+    "cultivoLocal": true,
+    "endemicaPanama": false,
+    "notaRegional": "Usado tradicionalmente en Panamá para inflamación, dolor y afecciones cutáneas"
+  },
+  "cultivoCasero": {
+    "dificultad": "Media",
+    "apta": true,
+    "maceta": false,
+    "luz": "Sol pleno",
+    "agua": "Moderada",
+    "suelo": "Bien drenado",
+    "clima": "Tropical seco a húmedo",
+    "notaCultivo": "Árbol de corteza característica que se desprende",
+    "tiempoACosecha": "Varios años"
+  },
+  "partesUsadas": [
+    "Corteza",
+    "Hojas"
+  ],
+  "resumen": "Árbol con propiedades antiinflamatorias y analgésicas de uso tradicional en Panamá y el Caribe.",
+  "usoTradicionalHistorico": "Decocción de corteza y hojas para inflamación, dolor reumático y afecciones cutáneas.",
+  "nivelEvidenciaGlobal": "C",
+  "fuentePrimaria": "",
+  "grupoTerapeutico": "Antiinflamatorio",
+  "propiedades": "Antiinflamatorio, analgésico, antioxidante",
+  "fotoquimica": "Lignanos, terpenos y β-peltatina",
+  "dolencias": [
+    "Inflamación",
+    "Dolor reumático",
+    "Afecciones cutáneas"
+  ],
+  "sistemas": [
+    "Musculoesquelético",
+    "Dermatológico"
+  ],
+  "modoEII": {
+    "aptaEnBrote": false,
+    "notaBrote": "Evitar en brotes activos por posible irritación.",
+    "aptaEnMantenimiento": true,
+    "notaMantenimiento": "Puede apoyar control de inflamación leve como coadyuvante.",
+    "mecanismoEII": "Inhibición de edema y mediadores inflamatorios observada en estudios preclínicos.",
+    "referenciaEII": "Uso tradicional en Panamá y estudios farmacológicos"
+  },
+  "modoCeliaquiaGluten": {
+    "libreDeGluten": true,
+    "nota": "Corteza y hojas naturalmente libres de gluten.",
+    "indicacionEspecifica": ""
+  },
+  "usos": {
+    "interno": true,
+    "externo": true,
+    "culinario": false
+  },
+  "preparacion": "Decocción de corteza o hojas.",
+  "contraindicaciones": "Embarazo y lactancia.",
+  "interaccionesMedicamentosas": "Bajo riesgo documentado.",
+  "embarazoLactancia": "Evitar por falta de estudios de seguridad.",
+  "compatibilidadPlantas": {
+    "sinergicas": [],
+    "incompatibles": []
+  },
+  "infusionesRelacionadas": [],
+  "emoji": "🌳",
+  "etiquetas": [
+    "antiinflamatorio",
+    "dolor"
+  ],
+  "fuentes": [
+    {
+      "autor": "Noguera B et al.",
+      "titulo": "Anti-inflammatory activity of leaf extract and fractions of Bursera simaruba",
+      "publicacion": "Journal of Ethnopharmacology",
+      "año": "2004",
+      "doi": "10.1016/j.jep.2003.09.015",
+      "pmid": "15099859",
+      "tipo": "Estudio preclínico",
+      "nivelEvidencia": "C",
+      "idioma": "en"
+    },
+    {
+      "autor": "Marcotullio MC et al.",
+      "titulo": "An Ethnopharmacological, Phytochemical and Pharmacological Review of the Genus Bursera",
+      "publicacion": "Molecules",
+      "año": "2018",
+      "doi": "10.3390/molecules23101976",
+      "pmid": "",
+      "tipo": "Revisión",
+      "nivelEvidencia": "C",
+      "idioma": "en"
+    }
+  ],
+  "advertencia": "",
+  "disclaimer": "La información es para fines educativos. Consulta a un profesional de la salud antes de usar."
+}

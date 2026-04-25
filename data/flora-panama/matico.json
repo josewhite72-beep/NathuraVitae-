@@ -1,0 +1,116 @@
+{
+  "id": "matico",
+  "versionFicha": "2.0",
+  "estadoFicha": "publicada",
+  "fechaCreacion": "2026-04-18",
+  "fechaRevision": "2026-04-18",
+  "nombreComun": "Matico",
+  "nombresAlternativos": [
+    "Piper aduncum",
+    "Hierba del soldado"
+  ],
+  "nombreCientifico": "Piper aduncum L.",
+  "sinonimiasCientificas": [],
+  "familia": "Piperaceae",
+  "orden": "",
+  "clase": "",
+  "regionOrigen": "América tropical",
+  "habitatNatural": "Zonas húmedas y bordes de caminos",
+  "disponibilidadPanama": {
+    "disponible": true,
+    "nombreLocal": "Matico",
+    "formaComercial": "Hojas secas",
+    "dondeConseguir": "Herbolarios, mercados rurales",
+    "cultivoLocal": true,
+    "endemicaPanama": false,
+    "notaRegional": "Usada tradicionalmente para heridas y problemas digestivos"
+  },
+  "cultivoCasero": {
+    "dificultad": "Baja",
+    "apta": true,
+    "maceta": true,
+    "luz": "Sol parcial",
+    "agua": "Moderada",
+    "suelo": "Bien drenado",
+    "clima": "Tropical húmedo",
+    "notaCultivo": "Crece rápidamente",
+    "tiempoACosecha": "3 meses"
+  },
+  "partesUsadas": [
+    "Hojas"
+  ],
+  "resumen": "Planta con propiedades hemostáticas, antimicrobianas y cicatrizantes.",
+  "usoTradicionalHistorico": "Usada para detener hemorragias, cicatrizar heridas, tratar diarrea y problemas respiratorios.",
+  "nivelEvidenciaGlobal": "C",
+  "fuentePrimaria": "",
+  "grupoTerapeutico": "Hemostático, antimicrobiano",
+  "propiedades": "Hemostático, antimicrobiano, antiinflamatorio",
+  "fotoquimica": "Dillapiol, flavonoides, terpenos",
+  "dolencias": [
+    "Heridas",
+    "Diarrea",
+    "Infecciones cutáneas"
+  ],
+  "sistemas": [
+    "Dermatológico",
+    "Digestivo"
+  ],
+  "modoEII": {
+    "aptaEnBrote": false,
+    "notaBrote": "Evitar en brotes activos por posible irritación.",
+    "aptaEnMantenimiento": true,
+    "notaMantenimiento": "Útil para heridas y síntomas dispépticos leves.",
+    "mecanismoEII": "Actividad antimicrobiana y cicatrizante observada en estudios preclínicos.",
+    "referenciaEII": "Uso tradicional y estudios farmacológicos"
+  },
+  "modoCeliaquiaGluten": {
+    "libreDeGluten": true,
+    "nota": "Hojas naturalmente libres de gluten.",
+    "indicacionEspecifica": ""
+  },
+  "usos": {
+    "interno": true,
+    "externo": true,
+    "culinario": false
+  },
+  "preparacion": "Infusión o decocción de hojas para uso interno; cataplasma para uso externo.",
+  "contraindicaciones": "Embarazo y lactancia.",
+  "interaccionesMedicamentosas": "Precaución con anticoagulantes.",
+  "embarazoLactancia": "Evitar por falta de estudios de seguridad.",
+  "compatibilidadPlantas": {
+    "sinergicas": [],
+    "incompatibles": []
+  },
+  "infusionesRelacionadas": [],
+  "emoji": "🌿",
+  "etiquetas": [
+    "cicatrizante",
+    "antimicrobiano"
+  ],
+  "fuentes": [
+    {
+      "autor": "Durofil A et al.",
+      "titulo": "Piper aduncum essential oil: a promising insecticide, acaricide and anthelmintic agent",
+      "publicacion": "Parasitology Research",
+      "año": "2021",
+      "doi": "10.1007/s00436-021-07145-8",
+      "pmid": "33783615",
+      "tipo": "Revisión",
+      "nivelEvidencia": "C",
+      "idioma": "en"
+    },
+    {
+      "autor": "Morais VP et al.",
+      "titulo": "Brief Review on Piper aduncum L., its Bioactive Compounds, and Their Pharmacological Properties",
+      "publicacion": "Brazilian Archives of Biology and Technology",
+      "año": "2023",
+      "doi": "10.1590/1678-4324-2023220001",
+      "pmid": "",
+      "tipo": "Revisión",
+      "nivelEvidencia": "C",
+      "idioma": "en"
+    }
+  ],
+  "advertencia": "Uso externo preferible en heridas abiertas.",
+  "disclaimer": "La información es para fines educativos. Consulta a un profesional de la salud antes de usar."
+}

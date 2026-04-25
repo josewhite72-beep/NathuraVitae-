@@ -1,0 +1,116 @@
+{
+  "id": "coralillo",
+  "versionFicha": "2.0",
+  "estadoFicha": "publicada",
+  "fechaCreacion": "2026-04-18",
+  "fechaRevision": "2026-04-18",
+  "nombreComun": "Coralillo",
+  "nombresAlternativos": [
+    "Firebush",
+    "Chichipince"
+  ],
+  "nombreCientifico": "Hamelia patens Jacq.",
+  "sinonimiasCientificas": [],
+  "familia": "Rubiaceae",
+  "orden": "",
+  "clase": "",
+  "regionOrigen": "América tropical",
+  "habitatNatural": "Zonas tropicales y subtropicales",
+  "disponibilidadPanama": {
+    "disponible": true,
+    "nombreLocal": "Coralillo",
+    "formaComercial": "Hojas",
+    "dondeConseguir": "Huertos rurales y herbolarios",
+    "cultivoLocal": true,
+    "endemicaPanama": false,
+    "notaRegional": "Usado en Panamá y el Caribe para problemas de piel e inflamación"
+  },
+  "cultivoCasero": {
+    "dificultad": "Baja",
+    "apta": true,
+    "maceta": true,
+    "luz": "Sol parcial a pleno",
+    "agua": "Moderada",
+    "suelo": "Bien drenado",
+    "clima": "Tropical",
+    "notaCultivo": "Arbusto ornamental y medicinal",
+    "tiempoACosecha": "2-3 meses"
+  },
+  "partesUsadas": [
+    "Hojas"
+  ],
+  "resumen": "Arbusto con propiedades antiinflamatorias, antimicrobianas y cicatrizantes de uso tradicional en Panamá y el Caribe.",
+  "usoTradicionalHistorico": "Lavados y cataplasmas para heridas, infecciones cutáneas, erupciones y picaduras.",
+  "nivelEvidenciaGlobal": "C",
+  "fuentePrimaria": "",
+  "grupoTerapeutico": "Antimicrobiano tópico",
+  "propiedades": "Antiinflamatorio, antimicrobiano, cicatrizante",
+  "fotoquimica": "Alcaloides oxindólicos, flavonoides y compuestos fenólicos",
+  "dolencias": [
+    "Heridas",
+    "Infecciones cutáneas",
+    "Erupciones",
+    "Picaduras"
+  ],
+  "sistemas": [
+    "Dermatológico"
+  ],
+  "modoEII": {
+    "aptaEnBrote": false,
+    "notaBrote": "Solo uso externo recomendado.",
+    "aptaEnMantenimiento": true,
+    "notaMantenimiento": "Útil para heridas y síntomas cutáneos leves en remisión.",
+    "mecanismoEII": "Actividad antimicrobiana y antiinflamatoria tópica.",
+    "referenciaEII": "Uso tradicional en Panamá y estudios etnobotánicos"
+  },
+  "modoCeliaquiaGluten": {
+    "libreDeGluten": true,
+    "nota": "Hojas naturalmente libres de gluten.",
+    "indicacionEspecifica": ""
+  },
+  "usos": {
+    "interno": false,
+    "externo": true,
+    "culinario": false
+  },
+  "preparacion": "Decocción de hojas para lavados o cataplasmas.",
+  "contraindicaciones": "Uso interno no recomendado.",
+  "interaccionesMedicamentosas": "Bajo riesgo en uso tópico.",
+  "embarazoLactancia": "Evitar uso interno. Uso tópico con precaución.",
+  "compatibilidadPlantas": {
+    "sinergicas": [],
+    "incompatibles": []
+  },
+  "infusionesRelacionadas": [],
+  "emoji": "🌺",
+  "etiquetas": [
+    "piel",
+    "antiinflamatorio"
+  ],
+  "fuentes": [
+    {
+      "autor": "Noor G et al.",
+      "titulo": "A Phytochemical and Ethnopharmacological Review of Hamelia patens",
+      "publicacion": "Pharmacognosy Journal",
+      "año": "2020",
+      "doi": "10.5530/pj.2020.12.XX",
+      "pmid": "32227313",
+      "tipo": "Revisión",
+      "nivelEvidencia": "C",
+      "idioma": "en"
+    },
+    {
+      "autor": "Ahmad A et al.",
+      "titulo": "A mini review on chemistry and biology of Hamelia patens",
+      "publicacion": "Pharmacognosy Journal",
+      "año": "2012",
+      "doi": "10.5530/pj.2012.4.XX",
+      "pmid": "",
+      "tipo": "Revisión",
+      "nivelEvidencia": "C",
+      "idioma": "en"
+    }
+  ],
+  "advertencia": "Solo uso externo.",
+  "disclaimer": "La información es para fines educativos. Consulta a un profesional de la salud antes de usar."
+}

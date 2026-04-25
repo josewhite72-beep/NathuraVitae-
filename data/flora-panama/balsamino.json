@@ -1,0 +1,116 @@
+{
+  "id": "balsamino",
+  "versionFicha": "2.0",
+  "estadoFicha": "publicada",
+  "fechaCreacion": "2026-04-18",
+  "fechaRevision": "2026-04-18",
+  "nombreComun": "Balsamino",
+  "nombresAlternativos": [
+    "Sorosí",
+    "Cundeamor",
+    "Bitter melon"
+  ],
+  "nombreCientifico": "Momordica charantia L.",
+  "sinonimiasCientificas": [],
+  "familia": "Cucurbitaceae",
+  "orden": "",
+  "clase": "",
+  "regionOrigen": "Asia tropical (naturalizada en América)",
+  "habitatNatural": "Huertos y áreas perturbadas",
+  "disponibilidadPanama": {
+    "disponible": true,
+    "nombreLocal": "Balsamino",
+    "formaComercial": "Fruto fresco y hojas secas",
+    "dondeConseguir": "Mercados locales y huertos familiares",
+    "cultivoLocal": true,
+    "endemicaPanama": false,
+    "notaRegional": "Planta ampliamente usada en Panamá y el Caribe para diabetes y problemas metabólicos"
+  },
+  "cultivoCasero": {
+    "dificultad": "Media",
+    "apta": true,
+    "maceta": true,
+    "luz": "Sol pleno",
+    "agua": "Moderada",
+    "suelo": "Bien drenado y fértil",
+    "clima": "Tropical",
+    "notaCultivo": "Requiere soporte para trepar",
+    "tiempoACosecha": "2-3 meses"
+  },
+  "partesUsadas": [
+    "Fruto",
+    "Hojas"
+  ],
+  "resumen": "Planta amarga con propiedades hipoglucemiantes documentadas en medicina tradicional panameña y caribeña.",
+  "usoTradicionalHistorico": "Infusión o jugo del fruto para diabetes, limpieza de sangre y control de glucosa.",
+  "nivelEvidenciaGlobal": "C",
+  "fuentePrimaria": "",
+  "grupoTerapeutico": "Hipoglucemiante",
+  "propiedades": "Hipoglucemiante, antioxidante, antibacteriano",
+  "fotoquimica": "Charantina, momordicina, polipéptido-p",
+  "dolencias": [
+    "Diabetes tipo 2",
+    "Hiperglucemia"
+  ],
+  "sistemas": [
+    "Endocrino"
+  ],
+  "modoEII": {
+    "aptaEnBrote": false,
+    "notaBrote": "Evitar en brotes por posible irritación gastrointestinal.",
+    "aptaEnMantenimiento": true,
+    "notaMantenimiento": "Puede apoyar control glucémico como coadyuvante en remisión.",
+    "mecanismoEII": "Mejora sensibilidad a la insulina y reduce estrés oxidativo.",
+    "referenciaEII": "Estudios preclínicos y uso tradicional en Panamá"
+  },
+  "modoCeliaquiaGluten": {
+    "libreDeGluten": true,
+    "nota": "Fruto y hojas naturalmente libres de gluten.",
+    "indicacionEspecifica": ""
+  },
+  "usos": {
+    "interno": true,
+    "externo": false,
+    "culinario": true
+  },
+  "preparacion": "Infusión de hojas o jugo del fruto verde en cantidades moderadas.",
+  "contraindicaciones": "Embarazo, hipoglucemia severa, úlcera gástrica activa.",
+  "interaccionesMedicamentosas": "Puede potenciar el efecto de antidiabéticos orales.",
+  "embarazoLactancia": "Contraindicado durante el embarazo por posible efecto abortivo.",
+  "compatibilidadPlantas": {
+    "sinergicas": [],
+    "incompatibles": []
+  },
+  "infusionesRelacionadas": [],
+  "emoji": "🍈",
+  "etiquetas": [
+    "diabetes",
+    "hipoglucemiante"
+  ],
+  "fuentes": [
+    {
+      "autor": "Saeed F et al.",
+      "titulo": "Bitter Melon (Momordica charantia L.) Fruit Bioactives and Potential Health Benefits",
+      "publicacion": "Foods",
+      "año": "2021",
+      "doi": "10.3390/foods10051092",
+      "pmid": "33918062",
+      "tipo": "Revisión",
+      "nivelEvidencia": "C",
+      "idioma": "en"
+    },
+    {
+      "autor": "Dahlquist A et al.",
+      "titulo": "Clinical application of Momordica charantia for type 2 diabetes mellitus",
+      "publicacion": "Frontiers in Endocrinology",
+      "año": "2023",
+      "doi": "10.3389/fendo.2023.12462839",
+      "pmid": "",
+      "tipo": "Revisión",
+      "nivelEvidencia": "C",
+      "idioma": "en"
+    }
+  ],
+  "advertencia": "Puede causar hipoglucemia. Iniciar con dosis bajas y monitorear glucosa.",
+  "disclaimer": "La información es para fines educativos. Consulta a un profesional de la salud antes de usar."
+}

@@ -1,0 +1,116 @@
+{
+  "id": "poro-poro",
+  "versionFicha": "2.0",
+  "estadoFicha": "publicada",
+  "fechaCreacion": "2026-04-18",
+  "fechaRevision": "2026-04-18",
+  "nombreComun": "Poro-poro",
+  "nombresAlternativos": [
+    "Algodón silvestre"
+  ],
+  "nombreCientifico": "Cochlospermum vitifolium (Willd.) Spreng.",
+  "sinonimiasCientificas": [],
+  "familia": "Bixaceae",
+  "orden": "",
+  "clase": "",
+  "regionOrigen": "América tropical",
+  "habitatNatural": "Zonas tropicales secas y huertos",
+  "disponibilidadPanama": {
+    "disponible": true,
+    "nombreLocal": "Poro-poro",
+    "formaComercial": "Hojas y corteza",
+    "dondeConseguir": "Huertos rurales",
+    "cultivoLocal": true,
+    "endemicaPanama": false,
+    "notaRegional": "Usado en Panamá y el Caribe para problemas hepáticos e ictericia"
+  },
+  "cultivoCasero": {
+    "dificultad": "Media",
+    "apta": true,
+    "maceta": false,
+    "luz": "Sol pleno",
+    "agua": "Moderada",
+    "suelo": "Bien drenado",
+    "clima": "Tropical",
+    "notaCultivo": "Árbol de flores amarillas",
+    "tiempoACosecha": "Varios años"
+  },
+  "partesUsadas": [
+    "Hojas",
+    "Corteza"
+  ],
+  "resumen": "Planta con propiedades hepatoprotectoras y antidiabéticas de uso tradicional en Panamá y el Caribe.",
+  "usoTradicionalHistorico": "Decocción para ictericia, problemas hepáticos, diabetes y afecciones renales.",
+  "nivelEvidenciaGlobal": "C",
+  "fuentePrimaria": "",
+  "grupoTerapeutico": "Hepatoprotector",
+  "propiedades": "Hepatoprotector, hipoglucemiante, antioxidante",
+  "fotoquimica": "Flavonoides, esteroles y lignanos",
+  "dolencias": [
+    "Problemas hepáticos",
+    "Ictericia",
+    "Diabetes"
+  ],
+  "sistemas": [
+    "Digestivo",
+    "Endocrino"
+  ],
+  "modoEII": {
+    "aptaEnBrote": false,
+    "notaBrote": "Evitar en brotes con inflamación hepática.",
+    "aptaEnMantenimiento": true,
+    "notaMantenimiento": "Puede apoyar función hepática como coadyuvante.",
+    "mecanismoEII": "Actividad antioxidante y hepatoprotectora observada en estudios.",
+    "referenciaEII": "Uso tradicional en Panamá y estudios farmacológicos"
+  },
+  "modoCeliaquiaGluten": {
+    "libreDeGluten": true,
+    "nota": "Hojas y corteza naturalmente libres de gluten.",
+    "indicacionEspecifica": ""
+  },
+  "usos": {
+    "interno": true,
+    "externo": false,
+    "culinario": false
+  },
+  "preparacion": "Decocción de hojas o corteza.",
+  "contraindicaciones": "Embarazo y problemas hepáticos graves.",
+  "interaccionesMedicamentosas": "Precaución con antidiabéticos.",
+  "embarazoLactancia": "Evitar por falta de estudios.",
+  "compatibilidadPlantas": {
+    "sinergicas": [],
+    "incompatibles": []
+  },
+  "infusionesRelacionadas": [],
+  "emoji": "🌳",
+  "etiquetas": [
+    "hígado",
+    "diabetes"
+  ],
+  "fuentes": [
+    {
+      "autor": "Sánchez-Salgado JC et al.",
+      "titulo": "Cochlospermum vitifolium induces vasorelaxant and antihypertensive effects",
+      "publicacion": "Journal of Ethnopharmacology",
+      "año": "2010",
+      "doi": "10.1016/j.jep.2010.05.038",
+      "pmid": "20553833",
+      "tipo": "Estudio experimental",
+      "nivelEvidencia": "C",
+      "idioma": "en"
+    },
+    {
+      "autor": "Aguilar-Guadarrama AB et al.",
+      "titulo": "Flavonoids, Sterols and Lignans from Cochlospermum vitifolium",
+      "publicacion": "Molecules",
+      "año": "2018",
+      "doi": "10.3390/molecules23081952",
+      "pmid": "",
+      "tipo": "Estudio fitoquímico",
+      "nivelEvidencia": "C",
+      "idioma": "en"
+    }
+  ],
+  "advertencia": "",
+  "disclaimer": "La información es para fines educativos. Consulta a un profesional de la salud antes de usar."
+}
