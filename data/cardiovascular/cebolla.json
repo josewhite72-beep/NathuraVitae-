@@ -1,0 +1,115 @@
+{
+  "id": "cebolla",
+  "versionFicha": "2.0",
+  "estadoFicha": "publicada",
+  "fechaCreacion": "2026-04-18",
+  "fechaRevision": "2026-04-18",
+  "nombreComun": "Cebolla",
+  "nombresAlternativos": [],
+  "nombreCientifico": "Allium cepa L.",
+  "sinonimiasCientificas": [],
+  "familia": "Amaryllidaceae",
+  "orden": "",
+  "clase": "",
+  "regionOrigen": "Asia Central",
+  "habitatNatural": "Huertos y cultivos agrícolas",
+  "disponibilidadPanama": {
+    "disponible": true,
+    "nombreLocal": "Cebolla",
+    "formaComercial": "Bulbo fresco",
+    "dondeConseguir": "Supermercados y mercados locales",
+    "cultivoLocal": true,
+    "endemicaPanama": false,
+    "notaRegional": "Uso culinario y medicinal común en Panamá para problemas respiratorios y digestivos"
+  },
+  "cultivoCasero": {
+    "dificultad": "Baja",
+    "apta": true,
+    "maceta": true,
+    "luz": "Sol pleno",
+    "agua": "Moderada",
+    "suelo": "Bien drenado y fértil",
+    "clima": "Tropical",
+    "notaCultivo": "Fácil de cultivar en huertos caseros",
+    "tiempoACosecha": "3-4 meses"
+  },
+  "partesUsadas": [
+    "Bulbo"
+  ],
+  "resumen": "Bulbo con propiedades antiinflamatorias, expectorantes y cardiovasculares de amplio uso culinario y medicinal.",
+  "usoTradicionalHistorico": "Jarabe o infusión para tos, resfriados, indigestión y como apoyo cardiovascular.",
+  "nivelEvidenciaGlobal": "B",
+  "fuentePrimaria": "",
+  "grupoTerapeutico": "Respiratorio, digestivo",
+  "propiedades": "Antiinflamatorio, expectorante, antioxidante",
+  "fotoquimica": "Quercetina, compuestos azufrados (alicina, sulfuros)",
+  "dolencias": [
+    "Tos",
+    "Resfriados",
+    "Indigestión",
+    "Hipertensión"
+  ],
+  "sistemas": [
+    "Respiratorio",
+    "Digestivo",
+    "Cardiovascular"
+  ],
+  "modoEII": {
+    "aptaEnBrote": true,
+    "notaBrote": "Con moderación para evitar irritación gástrica.",
+    "aptaEnMantenimiento": true,
+    "notaMantenimiento": "Apoyo cardiovascular y respiratorio suave en remisión.",
+    "mecanismoEII": "Efecto antioxidante y antiinflamatorio que reduce inflamación sistémica.",
+    "referenciaEII": "Estudios clínicos y preclínicos en Allium cepa"
+  },
+  "modoCeliaquiaGluten": {
+    "libreDeGluten": true,
+    "nota": "Bulbo naturalmente libre de gluten.",
+    "indicacionEspecifica": ""
+  },
+  "usos": {
+    "interno": true,
+    "externo": false,
+    "culinario": true
+  },
+  "preparacion": "Jarabe de cebolla o infusión.",
+  "contraindicaciones": "Alergia a Allium, úlcera gástrica activa.",
+  "interaccionesMedicamentosas": "Puede potenciar anticoagulantes.",
+  "embarazoLactancia": "Seguro en uso culinario moderado.",
+  "compatibilidadPlantas": {
+    "sinergicas": [],
+    "incompatibles": []
+  },
+  "infusionesRelacionadas": [],
+  "emoji": "🧅",
+  "etiquetas": [
+    "respiratorio",
+    "digestivo"
+  ],
+  "fuentes": [
+    {
+      "autor": "Chakraborty AJ et al.",
+      "titulo": "Allium cepa: A Treasure of Bioactive Phytochemicals with Prospective Health Benefits",
+      "publicacion": "Evidence-Based Complementary and Alternative Medicine",
+      "año": "2022",
+      "doi": "10.1155/2022/4586319",
+      "pmid": "35069779",
+      "tipo": "Revisión",
+      "nivelEvidencia": "B",
+      "idioma": "en"
+    },
+    {
+      "autor": "Galavi A et al.",
+      "titulo": "The effects of Allium cepa L. (onion) and its active constituents on metabolic syndrome: A review",
+      "publicacion": "Iranian Journal of Basic Medical Sciences",
+      "año": "2021",
+      "doi": "10.22038/IJBMS.2020.48006.11028",
+      "pmid": "33603800",
+      "tipo": "Revisión",
+      "nivelEvidencia": "B",
+      "idioma": "en"
+    }
+  ],
+  "advertencia": "",
+  "disclaimer": "La información es para fines educativos. Consulta a un profesional de la salud antes de usar."
+}
