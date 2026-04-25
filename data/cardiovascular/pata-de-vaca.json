@@ -1,0 +1,114 @@
+{
+  "id": "pata-de-vaca",
+  "versionFicha": "2.0",
+  "estadoFicha": "publicada",
+  "fechaCreacion": "2026-04-18",
+  "fechaRevision": "2026-04-18",
+  "nombreComun": "Pata de vaca",
+  "nombresAlternativos": [
+    "Cow foot",
+    "Unha de vaca"
+  ],
+  "nombreCientifico": "Bauhinia forficata Link",
+  "sinonimiasCientificas": [],
+  "familia": "Fabaceae",
+  "orden": "",
+  "clase": "",
+  "regionOrigen": "América del Sur",
+  "habitatNatural": "Bosques y zonas tropicales",
+  "disponibilidadPanama": {
+    "disponible": true,
+    "nombreLocal": "Pata de vaca",
+    "formaComercial": "Hojas secas",
+    "dondeConseguir": "Herbolarios y mercados locales",
+    "cultivoLocal": true,
+    "endemicaPanama": false,
+    "notaRegional": "Planta tradicionalmente usada en Panamá para diabetes"
+  },
+  "cultivoCasero": {
+    "dificultad": "Media",
+    "apta": true,
+    "maceta": false,
+    "luz": "Sol parcial",
+    "agua": "Moderada",
+    "suelo": "Bien drenado",
+    "clima": "Tropical",
+    "notaCultivo": "Árbol pequeño común en huertos",
+    "tiempoACosecha": "Varios meses"
+  },
+  "partesUsadas": [
+    "Hojas"
+  ],
+  "resumen": "Planta con propiedades hipoglucemiantes y antioxidantes usada como coadyuvante en diabetes.",
+  "usoTradicionalHistorico": "Infusión de hojas para control de glucosa y problemas metabólicos en medicina tradicional panameña.",
+  "nivelEvidenciaGlobal": "C",
+  "fuentePrimaria": "",
+  "grupoTerapeutico": "Hipoglucemiante",
+  "propiedades": "Hipoglucemiante, antioxidante",
+  "fotoquimica": "Kaempferitrin y flavonoides",
+  "dolencias": [
+    "Diabetes tipo 2",
+    "Hiperglucemia"
+  ],
+  "sistemas": [
+    "Endocrino"
+  ],
+  "modoEII": {
+    "aptaEnBrote": false,
+    "notaBrote": "Evitar en brotes con alteraciones metabólicas graves.",
+    "aptaEnMantenimiento": true,
+    "notaMantenimiento": "Puede apoyar control glucémico como adyuvante en remisión.",
+    "mecanismoEII": "Mejora captación de glucosa y reduce estrés oxidativo.",
+    "referenciaEII": "Estudios clínicos y preclínicos en diabetes"
+  },
+  "modoCeliaquiaGluten": {
+    "libreDeGluten": true,
+    "nota": "Hojas naturalmente libres de gluten.",
+    "indicacionEspecifica": ""
+  },
+  "usos": {
+    "interno": true,
+    "externo": false,
+    "culinario": false
+  },
+  "preparacion": "Infusión o decocción de hojas secas (1 cucharadita por taza).",
+  "contraindicaciones": "Hipoglucemia, embarazo, lactancia.",
+  "interaccionesMedicamentosas": "Puede potenciar antidiabéticos orales.",
+  "embarazoLactancia": "No recomendado por falta de estudios de seguridad.",
+  "compatibilidadPlantas": {
+    "sinergicas": [],
+    "incompatibles": []
+  },
+  "infusionesRelacionadas": [],
+  "emoji": "🌿",
+  "etiquetas": [
+    "diabetes",
+    "hipoglucemiante"
+  ],
+  "fuentes": [
+    {
+      "autor": "Tonelli CA et al.",
+      "titulo": "Clinical efficacy of capsules containing standardized extract of Bauhinia forficata Link as adjuvant treatment in type 2 diabetes patients",
+      "publicacion": "Journal of Ethnopharmacology",
+      "año": "2022",
+      "doi": "10.1016/j.jep.2021.114616",
+      "pmid": "34506937",
+      "tipo": "Ensayo clínico",
+      "nivelEvidencia": "C",
+      "idioma": "en"
+    },
+    {
+      "autor": "de Souza BVC et al.",
+      "titulo": "Bauhinia forficata in the treatment of diabetes mellitus: a patent review",
+      "publicacion": "Expert Opinion on Therapeutic Patents",
+      "año": "2018",
+      "doi": "10.1080/13543776.2018.1409208",
+      "pmid": "29168921",
+      "tipo": "Revisión",
+      "nivelEvidencia": "C",
+      "idioma": "en"
+    }
+  ],
+  "advertencia": "Monitorear niveles de glucosa. No sustituir tratamiento médico.",
+  "disclaimer": "La información es para fines educativos. Consulta a un profesional de la salud antes de usar."
+}
