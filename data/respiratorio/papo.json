@@ -1,0 +1,113 @@
+{
+  "id": "papo",
+  "versionFicha": "2.0",
+  "estadoFicha": "publicada",
+  "fechaCreacion": "2026-04-18",
+  "fechaRevision": "2026-04-18",
+  "nombreComun": "Papo",
+  "nombresAlternativos": [
+    "Rosa china"
+  ],
+  "nombreCientifico": "Hibiscus rosa-sinensis L.",
+  "sinonimiasCientificas": [],
+  "familia": "Malvaceae",
+  "orden": "",
+  "clase": "",
+  "regionOrigen": "Asia tropical",
+  "habitatNatural": "Huertos y jardines tropicales",
+  "disponibilidadPanama": {
+    "disponible": true,
+    "nombreLocal": "Papo / Rosa china",
+    "formaComercial": "Flores",
+    "dondeConseguir": "Huertos y mercados locales",
+    "cultivoLocal": true,
+    "endemicaPanama": false,
+    "notaRegional": "Usado para problemas respiratorios en Panamá y el Caribe"
+  },
+  "cultivoCasero": {
+    "dificultad": "Baja",
+    "apta": true,
+    "maceta": true,
+    "luz": "Sol pleno",
+    "agua": "Moderada",
+    "suelo": "Bien drenado",
+    "clima": "Tropical",
+    "notaCultivo": "Arbusto ornamental común",
+    "tiempoACosecha": "Continuo"
+  },
+  "partesUsadas": [
+    "Flores"
+  ],
+  "resumen": "Planta con propiedades expectorantes y calmantes usada para afecciones respiratorias.",
+  "usoTradicionalHistorico": "Infusión de flores para tos, asma y resfriados.",
+  "nivelEvidenciaGlobal": "C",
+  "fuentePrimaria": "",
+  "grupoTerapeutico": "Expectorante",
+  "propiedades": "Expectorante, antiinflamatorio, antioxidante",
+  "fotoquimica": "Antocianinas, flavonoides y antocianidinas",
+  "dolencias": [
+    "Tos",
+    "Asma",
+    "Resfriados"
+  ],
+  "sistemas": [
+    "Respiratorio"
+  ],
+  "modoEII": {
+    "aptaEnBrote": true,
+    "notaBrote": "Con precaución por posible efecto diurético.",
+    "aptaEnMantenimiento": true,
+    "notaMantenimiento": "Apoyo para síntomas respiratorios leves.",
+    "mecanismoEII": "Efecto demulcente y antiinflamatorio.",
+    "referenciaEII": "Uso tradicional en el Caribe y estudios fitoquímicos"
+  },
+  "modoCeliaquiaGluten": {
+    "libreDeGluten": true,
+    "nota": "Flores naturalmente libres de gluten.",
+    "indicacionEspecifica": ""
+  },
+  "usos": {
+    "interno": true,
+    "externo": false,
+    "culinario": true
+  },
+  "preparacion": "Infusión de flores frescas o secas.",
+  "contraindicaciones": "",
+  "interaccionesMedicamentosas": "Bajo riesgo.",
+  "embarazoLactancia": "Seguro en uso moderado.",
+  "compatibilidadPlantas": {
+    "sinergicas": [],
+    "incompatibles": []
+  },
+  "infusionesRelacionadas": [],
+  "emoji": "🌺",
+  "etiquetas": [
+    "respiratorio"
+  ],
+  "fuentes": [
+    {
+      "autor": "Raza H et al.",
+      "titulo": "Hibiscus rosa-sinensis: A Multifunctional Flower Bridging Traditional Medicine and Modern Pharmacology",
+      "publicacion": "Phytotherapy Research",
+      "año": "2025",
+      "doi": "10.1002/ptr.XXXX",
+      "pmid": "41323831",
+      "tipo": "Revisión",
+      "nivelEvidencia": "C",
+      "idioma": "en"
+    },
+    {
+      "autor": "Missoum A",
+      "titulo": "An update review on Hibiscus rosa sinensis phytochemistry and medicinal uses",
+      "publicacion": "Journal of Ayurvedic and Herbal Medicine",
+      "año": "2018",
+      "doi": "",
+      "pmid": "",
+      "tipo": "Revisión",
+      "nivelEvidencia": "C",
+      "idioma": "en"
+    }
+  ],
+  "advertencia": "",
+  "disclaimer": "La información es para fines educativos. Consulta a un profesional de la salud antes de usar."
+}
