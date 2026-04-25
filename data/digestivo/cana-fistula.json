@@ -1,0 +1,114 @@
+{
+  "id": "cana-fistula",
+  "versionFicha": "2.0",
+  "estadoFicha": "publicada",
+  "fechaCreacion": "2026-04-18",
+  "fechaRevision": "2026-04-18",
+  "nombreComun": "Caña fístula",
+  "nombresAlternativos": [
+    "Lluvia de oro"
+  ],
+  "nombreCientifico": "Cassia fistula L.",
+  "sinonimiasCientificas": [],
+  "familia": "Fabaceae",
+  "orden": "",
+  "clase": "",
+  "regionOrigen": "Asia tropical (naturalizada en América)",
+  "habitatNatural": "Huertos y zonas tropicales",
+  "disponibilidadPanama": {
+    "disponible": true,
+    "nombreLocal": "Caña fístula",
+    "formaComercial": "Vainas y hojas",
+    "dondeConseguir": "Huertos y herbolarios",
+    "cultivoLocal": true,
+    "endemicaPanama": false,
+    "notaRegional": "Usada en medicina tradicional caribeña y panameña como laxante y para problemas hepáticos"
+  },
+  "cultivoCasero": {
+    "dificultad": "Media",
+    "apta": true,
+    "maceta": false,
+    "luz": "Sol pleno",
+    "agua": "Moderada",
+    "suelo": "Bien drenado",
+    "clima": "Tropical",
+    "notaCultivo": "Árbol ornamental y medicinal",
+    "tiempoACosecha": "Varios años"
+  },
+  "partesUsadas": [
+    "Vainas",
+    "Hojas"
+  ],
+  "resumen": "Planta con propiedades laxantes y hepáticas usada en medicina tradicional.",
+  "usoTradicionalHistorico": "Decocción de vainas para estreñimiento y limpieza hepática en Panamá y el Caribe.",
+  "nivelEvidenciaGlobal": "C",
+  "fuentePrimaria": "",
+  "grupoTerapeutico": "Laxante, hepatoprotector",
+  "propiedades": "Laxante, antioxidante, antiinflamatorio",
+  "fotoquimica": "Antraquinonas, flavonoides",
+  "dolencias": [
+    "Estreñimiento",
+    "Problemas hepáticos"
+  ],
+  "sistemas": [
+    "Digestivo"
+  ],
+  "modoEII": {
+    "aptaEnBrote": false,
+    "notaBrote": "Evitar en brotes con diarrea o inflamación activa.",
+    "aptaEnMantenimiento": true,
+    "notaMantenimiento": "Útil como laxante suave en remisión.",
+    "mecanismoEII": "Efecto laxante por antraquinonas y apoyo hepático.",
+    "referenciaEII": "Uso tradicional en el Caribe y estudios farmacológicos"
+  },
+  "modoCeliaquiaGluten": {
+    "libreDeGluten": true,
+    "nota": "Vainas y hojas naturalmente libres de gluten.",
+    "indicacionEspecifica": ""
+  },
+  "usos": {
+    "interno": true,
+    "externo": false,
+    "culinario": false
+  },
+  "preparacion": "Decocción de vainas o infusión de hojas.",
+  "contraindicaciones": "Embarazo, diarrea, obstrucción intestinal.",
+  "interaccionesMedicamentosas": "Puede potenciar laxantes.",
+  "embarazoLactancia": "Contraindicado por efecto laxante.",
+  "compatibilidadPlantas": {
+    "sinergicas": [],
+    "incompatibles": []
+  },
+  "infusionesRelacionadas": [],
+  "emoji": "🌳",
+  "etiquetas": [
+    "laxante",
+    "hígado"
+  ],
+  "fuentes": [
+    {
+      "autor": "Mwangi RW et al.",
+      "titulo": "The medicinal properties of Cassia fistula L: A review",
+      "publicacion": "Biomedicine & Pharmacotherapy",
+      "año": "2021",
+      "doi": "10.1016/j.biopha.2021.112240",
+      "pmid": "34601194",
+      "tipo": "Revisión",
+      "nivelEvidencia": "C",
+      "idioma": "en"
+    },
+    {
+      "autor": "Avella ME et al.",
+      "titulo": "Effects of Cassia fistula on glucose metabolizing enzymes in diabetic rats",
+      "publicacion": "Phytotherapy Research",
+      "año": "1991",
+      "doi": "10.1002/ptr.2650050106",
+      "pmid": "2024054",
+      "tipo": "Estudio experimental",
+      "nivelEvidencia": "C",
+      "idioma": "en"
+    }
+  ],
+  "advertencia": "Uso corto plazo como laxante. No usar en niños sin supervisión.",
+  "disclaimer": "La información es para fines educativos. Consulta a un profesional de la salud antes de usar."
+}
