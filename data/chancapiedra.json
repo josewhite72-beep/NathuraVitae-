@@ -1,0 +1,116 @@
+{
+  "id": "chancapiedra",
+  "versionFicha": "2.0",
+  "estadoFicha": "publicada",
+  "fechaCreacion": "2026-04-18",
+  "fechaRevision": "2026-04-18",
+  "nombreComun": "Chancapiedra",
+  "nombresAlternativos": [
+    "Stonebreaker",
+    "Quebra-pedra"
+  ],
+  "nombreCientifico": "Phyllanthus niruri L.",
+  "sinonimiasCientificas": [],
+  "familia": "Phyllanthaceae",
+  "orden": "",
+  "clase": "",
+  "regionOrigen": "América tropical",
+  "habitatNatural": "Zonas rurales y huertos",
+  "disponibilidadPanama": {
+    "disponible": true,
+    "nombreLocal": "Chancapiedra",
+    "formaComercial": "Hojas y toda la planta",
+    "dondeConseguir": "Huertos rurales y mercados locales en Panamá",
+    "cultivoLocal": true,
+    "endemicaPanama": false,
+    "notaRegional": "Usada en Panamá y Caribe para litiasis renal y problemas hepáticos"
+  },
+  "cultivoCasero": {
+    "dificultad": "Baja",
+    "apta": true,
+    "maceta": true,
+    "luz": "Sol parcial",
+    "agua": "Moderada",
+    "suelo": "Bien drenado",
+    "clima": "Tropical",
+    "notaCultivo": "Hierba anual de fácil propagación",
+    "tiempoACosecha": "2-3 meses"
+  },
+  "partesUsadas": [
+    "Toda la planta"
+  ],
+  "resumen": "Planta con evidencia clínica para litiasis renal y protección hepática.",
+  "usoTradicionalHistorico": "Disolución y prevención de cálculos renales, problemas hepáticos y diarrea.",
+  "nivelEvidenciaGlobal": "B",
+  "fuentePrimaria": "",
+  "grupoTerapeutico": "Litiásico, hepatoprotector",
+  "propiedades": "Litiásico, hepatoprotector, diurético",
+  "fotoquimica": "Lignanos, flavonoides y alcaloides",
+  "dolencias": [
+    "Litiasis renal",
+    "Cálculos biliares",
+    "Problemas hepáticos"
+  ],
+  "sistemas": [
+    "Urinario",
+    "Digestivo"
+  ],
+  "modoEII": {
+    "aptaEnBrote": false,
+    "notaBrote": "Evitar en brotes con dolor renal agudo.",
+    "aptaEnMantenimiento": true,
+    "notaMantenimiento": "Buen apoyo para prevención de cálculos en remisión.",
+    "mecanismoEII": "Inhibe agregación de cristales y promueve eliminación.",
+    "referenciaEII": "Estudios clínicos en litiasis"
+  },
+  "modoCeliaquiaGluten": {
+    "libreDeGluten": true,
+    "nota": "Planta naturalmente libre de gluten.",
+    "indicacionEspecifica": ""
+  },
+  "usos": {
+    "interno": true,
+    "externo": false,
+    "culinario": false
+  },
+  "preparacion": "Infusión de la planta completa.",
+  "contraindicaciones": "Embarazo.",
+  "interaccionesMedicamentosas": "Bajo riesgo.",
+  "embarazoLactancia": "Evitar.",
+  "compatibilidadPlantas": {
+    "sinergicas": [],
+    "incompatibles": []
+  },
+  "infusionesRelacionadas": [],
+  "emoji": "🌿",
+  "etiquetas": [
+    "riñones",
+    "litiasis"
+  ],
+  "fuentes": [
+    {
+      "autor": "Boim MA et al.",
+      "titulo": "Phyllanthus niruri as a promising alternative treatment for nephrolithiasis",
+      "publicacion": "International Braz J Urol",
+      "año": "2010",
+      "doi": "10.1590/S1677-55382010000600002",
+      "pmid": "21176271",
+      "tipo": "Revisión",
+      "nivelEvidencia": "B",
+      "idioma": "en"
+    },
+    {
+      "autor": "Pucci ND et al.",
+      "titulo": "Effect of phyllanthus niruri on metabolic parameters of patients with kidney stone: a prospective, randomized, placebo-controlled, double-blind clinical trial",
+      "publicacion": "International Braz J Urol",
+      "año": "2018",
+      "doi": "10.1590/S1677-5538.IBJU.2018.0021",
+      "pmid": "",
+      "tipo": "Ensayo clínico",
+      "nivelEvidencia": "B",
+      "idioma": "en"
+    }
+  ],
+  "advertencia": "Consultar médico para litiasis confirmada.",
+  "disclaimer": "La información es para fines educativos. Consulta a un profesional de la salud antes de usar."
+}
