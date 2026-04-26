@@ -1,0 +1,117 @@
+{
+  "id": "lavanda",
+  "versionFicha": "2.0",
+  "estadoFicha": "publicada",
+  "fechaCreacion": "2026-04-18",
+  "fechaRevision": "2026-04-18",
+  "nombreComun": "Lavanda",
+  "nombresAlternativos": [
+    "Lavanda inglesa"
+  ],
+  "nombreCientifico": "Lavandula angustifolia Mill.",
+  "sinonimiasCientificas": [],
+  "familia": "Lamiaceae",
+  "orden": "",
+  "clase": "",
+  "regionOrigen": "Mediterráneo",
+  "habitatNatural": "Huertos y jardines",
+  "disponibilidadPanama": {
+    "disponible": true,
+    "nombreLocal": "Lavanda",
+    "formaComercial": "Flores y aceite esencial",
+    "dondeConseguir": "Herbolarios y tiendas naturistas",
+    "cultivoLocal": true,
+    "endemicaPanama": false,
+    "notaRegional": "Usada en Panamá para ansiedad y relajación"
+  },
+  "cultivoCasero": {
+    "dificultad": "Baja",
+    "apta": true,
+    "maceta": true,
+    "luz": "Sol pleno",
+    "agua": "Baja",
+    "suelo": "Bien drenado",
+    "clima": "Templado a tropical seco",
+    "notaCultivo": "Arbusto aromático",
+    "tiempoACosecha": "Continuo"
+  },
+  "partesUsadas": [
+    "Flores"
+  ],
+  "resumen": "Planta con fuerte evidencia ansiolítica según EMA (nivel A).",
+  "usoTradicionalHistorico": "Ansiedad, insomnio, estrés y relajación.",
+  "nivelEvidenciaGlobal": "A",
+  "fuentePrimaria": "",
+  "grupoTerapeutico": "Ansiolítico",
+  "propiedades": "Ansiolítico, sedante suave, antiespasmódico",
+  "fotoquimica": "Linalool y linalil acetato",
+  "dolencias": [
+    "Ansiedad",
+    "Insomnio",
+    "Estrés"
+  ],
+  "sistemas": [
+    "Nervioso"
+  ],
+  "modoEII": {
+    "aptaEnBrote": true,
+    "notaBrote": "Útil para ansiedad asociada a brotes.",
+    "aptaEnMantenimiento": true,
+    "notaMantenimiento": "Excelente para manejo del estrés crónico.",
+    "mecanismoEII": "Efecto GABAérgico y reducción de cortisol.",
+    "referenciaEII": "Monografía EMA y ensayos clínicos"
+  },
+  "modoCeliaquiaGluten": {
+    "libreDeGluten": true,
+    "nota": "Flores naturalmente libres de gluten.",
+    "indicacionEspecifica": ""
+  },
+  "usos": {
+    "interno": true,
+    "externo": true,
+    "culinario": false
+  },
+  "preparacion": "Infusión de flores o aceite esencial diluido.",
+  "contraindicaciones": "Alergia a Lamiaceae.",
+  "interaccionesMedicamentosas": "Puede potenciar sedantes.",
+  "embarazoLactancia": "Seguro en uso moderado (infusión).",
+  "compatibilidadPlantas": {
+    "sinergicas": [
+      "Pasiflora",
+      "Valeriana"
+    ],
+    "incompatibles": []
+  },
+  "infusionesRelacionadas": [],
+  "emoji": "🌸",
+  "etiquetas": [
+    "ansiedad",
+    "relajante"
+  ],
+  "fuentes": [
+    {
+      "autor": "EMA HMPC",
+      "titulo": "Assessment report on Lavandula angustifolia Miller, aetheroleum and flos",
+      "publicacion": "European Medicines Agency",
+      "año": "2012",
+      "doi": "",
+      "pmid": "",
+      "tipo": "Monografía EMA",
+      "nivelEvidencia": "A",
+      "idioma": "en"
+    },
+    {
+      "autor": "Koulivand PH et al.",
+      "titulo": "Lavender and the Nervous System",
+      "publicacion": "Evidence-Based Complementary and Alternative Medicine",
+      "año": "2013",
+      "doi": "10.1155/2013/681304",
+      "pmid": "23573142",
+      "tipo": "Revisión",
+      "nivelEvidencia": "B",
+      "idioma": "en"
+    }
+  ],
+  "advertencia": "",
+  "disclaimer": "La información es para fines educativos. Consulta a un profesional de la salud antes de usar."
+}

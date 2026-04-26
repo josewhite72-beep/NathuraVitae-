@@ -1,0 +1,118 @@
+{
+  "id": "vergonzosa",
+  "versionFicha": "2.0",
+  "estadoFicha": "publicada",
+  "fechaCreacion": "2026-04-18",
+  "fechaRevision": "2026-04-18",
+  "nombreComun": "Vergonzosa",
+  "nombresAlternativos": [
+    "Dormilona",
+    "Sensitiva"
+  ],
+  "nombreCientifico": "Mimosa pudica L.",
+  "sinonimiasCientificas": [],
+  "familia": "Fabaceae",
+  "orden": "",
+  "clase": "",
+  "regionOrigen": "América tropical",
+  "habitatNatural": "Zonas rurales y solares",
+  "disponibilidadPanama": {
+    "disponible": true,
+    "nombreLocal": "Vergonzosa / Dormilona",
+    "formaComercial": "Hojas",
+    "dondeConseguir": "Huertos rurales en Panamá",
+    "cultivoLocal": true,
+    "endemicaPanama": false,
+    "notaRegional": "Usada en Panamá como ansiolítica y sedante suave"
+  },
+  "cultivoCasero": {
+    "dificultad": "Baja",
+    "apta": true,
+    "maceta": true,
+    "luz": "Sol pleno",
+    "agua": "Moderada",
+    "suelo": "Bien drenado",
+    "clima": "Tropical",
+    "notaCultivo": "Planta sensible al tacto",
+    "tiempoACosecha": "2-3 meses"
+  },
+  "partesUsadas": [
+    "Hojas"
+  ],
+  "resumen": "Planta tradicionalmente usada en Panamá y el Caribe por sus efectos ansiolíticos y sedantes suaves.",
+  "usoTradicionalHistorico": "Infusión para ansiedad, nerviosismo e insomnio.",
+  "nivelEvidenciaGlobal": "C",
+  "fuentePrimaria": "",
+  "grupoTerapeutico": "Ansiolítico",
+  "propiedades": "Ansiolítico, sedante suave, antiinflamatorio",
+  "fotoquimica": "Flavonoides, alcaloides y mimosina",
+  "dolencias": [
+    "Ansiedad",
+    "Nerviosismo",
+    "Insomnio"
+  ],
+  "sistemas": [
+    "Nervioso"
+  ],
+  "modoEII": {
+    "aptaEnBrote": true,
+    "notaBrote": "Útil para ansiedad y nerviosismo asociado a brotes.",
+    "aptaEnMantenimiento": true,
+    "notaMantenimiento": "Apoyo para manejo del estrés.",
+    "mecanismoEII": "Efecto sedante suave sobre el sistema nervioso central.",
+    "referenciaEII": "Uso tradicional panameño y caribeño"
+  },
+  "modoCeliaquiaGluten": {
+    "libreDeGluten": true,
+    "nota": "Hojas naturalmente libres de gluten.",
+    "indicacionEspecifica": ""
+  },
+  "usos": {
+    "interno": true,
+    "externo": false,
+    "culinario": false
+  },
+  "preparacion": "Infusión de hojas.",
+  "contraindicaciones": "Embarazo.",
+  "interaccionesMedicamentosas": "Puede potenciar sedantes.",
+  "embarazoLactancia": "Evitar.",
+  "compatibilidadPlantas": {
+    "sinergicas": [
+      "Lavanda",
+      "Pasiflora"
+    ],
+    "incompatibles": []
+  },
+  "infusionesRelacionadas": [],
+  "emoji": "🌿",
+  "etiquetas": [
+    "ansiedad",
+    "nervios"
+  ],
+  "fuentes": [
+    {
+      "autor": "Gupta MP et al.",
+      "titulo": "Plantas Medicinales de Panamá",
+      "publicacion": "Editorial Universitaria, Universidad de Panamá",
+      "año": "2000",
+      "doi": "",
+      "pmid": "",
+      "tipo": "Monografía etnobotánica",
+      "nivelEvidencia": "C",
+      "idioma": "es"
+    },
+    {
+      "autor": "Bum EN et al.",
+      "titulo": "Anxiolytic activity of Mimosa pudica in mice",
+      "publicacion": "Journal of Ethnopharmacology",
+      "año": "2009",
+      "doi": "10.1016/j.jep.2009.03.008",
+      "pmid": "19375495",
+      "tipo": "Estudio experimental",
+      "nivelEvidencia": "C",
+      "idioma": "en"
+    }
+  ],
+  "advertencia": "",
+  "disclaimer": "La información es para fines educativos. Consulta a un profesional de la salud antes de usar."
+}
