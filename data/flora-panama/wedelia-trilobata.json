@@ -1,0 +1,125 @@
+{
+  "id": "wedelia-trilobata",
+  "versionFicha": "2.0",
+  "estadoFicha": "publicada",
+  "fechaCreacion": "2026-04-18",
+  "fechaRevision": "2026-04-18",
+  "nombreComun": "Wedelia",
+  "nombresAlternativos": [
+    "Vedelia",
+    "Bella Aurora",
+    "Margarita de playa",
+    "Yellow dots"
+  ],
+  "nombreCientifico": "Wedelia trilobata (L.) Hitchc.",
+  "sinonimiasCientificas": [
+    "Sphagneticola trilobata (L.) Pruski"
+  ],
+  "familia": "Asteraceae",
+  "orden": "",
+  "clase": "",
+  "regionOrigen": "América tropical y subtropical",
+  "habitatNatural": "Zonas costeras, playas, huertos y áreas perturbadas",
+  "disponibilidadPanama": {
+    "disponible": true,
+    "nombreLocal": "Wedelia / Bella Aurora",
+    "formaComercial": "Hojas frescas o secas",
+    "dondeConseguir": "Zonas costeras, huertos rurales y jardines en Panamá",
+    "cultivoLocal": true,
+    "endemicaPanama": false,
+    "notaRegional": "Planta común en Panamá y el Caribe, usada tradicionalmente para inflamaciones, heridas y afecciones respiratorias"
+  },
+  "cultivoCasero": {
+    "dificultad": "Baja",
+    "apta": true,
+    "maceta": true,
+    "luz": "Sol pleno",
+    "agua": "Moderada",
+    "suelo": "Bien drenado, arenoso",
+    "clima": "Tropical costero",
+    "notaCultivo": "Planta rastrera de crecimiento rápido, ideal como cubresuelo",
+    "tiempoACosecha": "Continuo"
+  },
+  "partesUsadas": [
+    "Hojas",
+    "Flores"
+  ],
+  "resumen": "Planta rastrera con propiedades antiinflamatorias, antimicrobianas y cicatrizantes de uso tradicional en Panamá y el Caribe.",
+  "usoTradicionalHistorico": "Lavados y cataplasmas para heridas, inflamaciones, úlceras, dolor muscular y afecciones respiratorias. También usada para fiebre y como analgésico.",
+  "nivelEvidenciaGlobal": "C",
+  "fuentePrimaria": "",
+  "grupoTerapeutico": "Antiinflamatorio tópico",
+  "propiedades": "Antiinflamatorio, antimicrobiano, cicatrizante, analgésico",
+  "fotoquimica": "Flavonoides, eudesmanólidos, wedelolactona y compuestos fenólicos",
+  "dolencias": [
+    "Heridas",
+    "Inflamación",
+    "Úlceras cutáneas",
+    "Tos",
+    "Dolor muscular"
+  ],
+  "sistemas": [
+    "Dermatológico",
+    "Respiratorio",
+    "Musculoesquelético"
+  ],
+  "modoEII": {
+    "aptaEnBrote": false,
+    "notaBrote": "Solo uso externo recomendado.",
+    "aptaEnMantenimiento": true,
+    "notaMantenimiento": "Útil para heridas leves y síntomas inflamatorios cutáneos en remisión.",
+    "mecanismoEII": "Actividad antiinflamatoria y antimicrobiana tópica.",
+    "referenciaEII": "Uso tradicional en Panamá y Caribe + estudios farmacológicos"
+  },
+  "modoCeliaquiaGluten": {
+    "libreDeGluten": true,
+    "nota": "Hojas y flores naturalmente libres de gluten.",
+    "indicacionEspecifica": ""
+  },
+  "usos": {
+    "interno": false,
+    "externo": true,
+    "culinario": false
+  },
+  "preparacion": "Decocción de hojas para lavados o cataplasmas tópicas.",
+  "contraindicaciones": "Uso interno no recomendado. Alergia a Asteraceae.",
+  "interaccionesMedicamentosas": "Bajo riesgo en uso tópico.",
+  "embarazoLactancia": "Evitar uso interno; uso tópico con precaución.",
+  "compatibilidadPlantas": {
+    "sinergicas": [],
+    "incompatibles": []
+  },
+  "infusionesRelacionadas": [],
+  "emoji": "🌼",
+  "etiquetas": [
+    "piel",
+    "antiinflamatorio",
+    "heridas"
+  ],
+  "fuentes": [
+    {
+      "autor": "Balekar N et al.",
+      "titulo": "Wedelia trilobata L.: A phytochemical and pharmacological review",
+      "publicacion": "Chiang Mai Journal of Science",
+      "año": "2012",
+      "doi": "",
+      "pmid": "",
+      "tipo": "Revisión",
+      "nivelEvidencia": "C",
+      "idioma": "en"
+    },
+    {
+      "autor": "Taddei A et al.",
+      "titulo": "Antimicrobial activity of Wedelia trilobata crude extracts",
+      "publicacion": "Phytotherapy Research",
+      "año": "1999",
+      "doi": "10.1002/(SICI)1099-1573(199905)13:3<210::AID-PTR413>3.0.CO;2-7",
+      "pmid": "10374253",
+      "tipo": "Estudio in vitro",
+      "nivelEvidencia": "C",
+      "idioma": "en"
+    }
+  ],
+  "advertencia": "Uso principalmente externo. Evitar ingestión.",
+  "disclaimer": "La información es para fines educativos. Consulta a un profesional de la salud antes de usar."
+}
