@@ -1,0 +1,116 @@
+{
+  "id": "calendula",
+  "versionFicha": "2.0",
+  "estadoFicha": "publicada",
+  "fechaCreacion": "2026-04-18",
+  "fechaRevision": "2026-04-18",
+  "nombreComun": "Caléndula",
+  "nombresAlternativos": [
+    "Maravilla",
+    "Flor de muerto"
+  ],
+  "nombreCientifico": "Calendula officinalis L.",
+  "sinonimiasCientificas": [],
+  "familia": "Asteraceae",
+  "orden": "",
+  "clase": "",
+  "regionOrigen": "Mediterráneo (cultivada en América)",
+  "habitatNatural": "Huertos y jardines",
+  "disponibilidadPanama": {
+    "disponible": true,
+    "nombreLocal": "Caléndula",
+    "formaComercial": "Flores secas",
+    "dondeConseguir": "Herbolarios y huertos en Panamá",
+    "cultivoLocal": true,
+    "endemicaPanama": false,
+    "notaRegional": "Usada en Panamá y el Caribe como cicatrizante tópico y antiinflamatoria"
+  },
+  "cultivoCasero": {
+    "dificultad": "Baja",
+    "apta": true,
+    "maceta": true,
+    "luz": "Sol pleno",
+    "agua": "Moderada",
+    "suelo": "Bien drenado",
+    "clima": "Tropical",
+    "notaCultivo": "Planta anual de fácil cultivo",
+    "tiempoACosecha": "2-3 meses"
+  },
+  "partesUsadas": [
+    "Flores"
+  ],
+  "resumen": "Planta con fuerte evidencia como cicatrizante tópico y antiinflamatoria, ideal para uso externo.",
+  "usoTradicionalHistorico": "Lavados y ungüentos para heridas, quemaduras, úlceras cutáneas e inflamaciones.",
+  "nivelEvidenciaGlobal": "B",
+  "fuentePrimaria": "",
+  "grupoTerapeutico": "Cicatrizante tópico",
+  "propiedades": "Cicatrizante, antiinflamatorio, antimicrobiano tópico",
+  "fotoquimica": "Flavonoides, triterpenos y carotenoides",
+  "dolencias": [
+    "Heridas",
+    "Quemaduras",
+    "Úlceras cutáneas",
+    "Inflamación tópica"
+  ],
+  "sistemas": [
+    "Dermatológico"
+  ],
+  "modoEII": {
+    "aptaEnBrote": false,
+    "notaBrote": "Solo uso externo para heridas o irritación cutánea leve.",
+    "aptaEnMantenimiento": true,
+    "notaMantenimiento": "Excelente para cicatrización y reducción de inflamación cutánea.",
+    "mecanismoEII": "Promueve proliferación celular y reduce inflamación local.",
+    "referenciaEII": "Revisiones sistemáticas de wound healing"
+  },
+  "modoCeliaquiaGluten": {
+    "libreDeGluten": true,
+    "nota": "Flores naturalmente libres de gluten.",
+    "indicacionEspecifica": ""
+  },
+  "usos": {
+    "interno": false,
+    "externo": true,
+    "culinario": false
+  },
+  "preparacion": "Infusión para lavados o ungüento tópico.",
+  "contraindicaciones": "Alergia a Asteraceae.",
+  "interaccionesMedicamentosas": "Bajo riesgo en uso tópico.",
+  "embarazoLactancia": "Seguro en uso tópico moderado.",
+  "compatibilidadPlantas": {
+    "sinergicas": [],
+    "incompatibles": []
+  },
+  "infusionesRelacionadas": [],
+  "emoji": "🌼",
+  "etiquetas": [
+    "cicatrizante",
+    "piel"
+  ],
+  "fuentes": [
+    {
+      "autor": "Givol O et al.",
+      "titulo": "A systematic review of Calendula officinalis extract for wound healing",
+      "publicacion": "Wound Repair and Regeneration",
+      "año": "2019",
+      "doi": "10.1111/wrr.12737",
+      "pmid": "31145533",
+      "tipo": "Revisión sistemática",
+      "nivelEvidencia": "B",
+      "idioma": "en"
+    },
+    {
+      "autor": "Rezai S et al.",
+      "titulo": "Effect of oral Calendula officinalis on second-degree burn healing",
+      "publicacion": "Journal of Burn Care & Research",
+      "año": "2023",
+      "doi": "10.1093/jbcr/irac123",
+      "pmid": "36632430",
+      "tipo": "Ensayo clínico",
+      "nivelEvidencia": "B",
+      "idioma": "en"
+    }
+  ],
+  "advertencia": "Uso principalmente externo.",
+  "disclaimer": "La información es para fines educativos. Consulta a un profesional de la salud antes de usar."
+}

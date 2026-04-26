@@ -1,0 +1,120 @@
+{
+  "id": "consuelda",
+  "versionFicha": "2.0",
+  "estadoFicha": "publicada",
+  "fechaCreacion": "2026-04-18",
+  "fechaRevision": "2026-04-18",
+  "nombreComun": "Consuelda",
+  "nombresAlternativos": [
+    "Symphytum",
+    "Comfrey"
+  ],
+  "nombreCientifico": "Symphytum officinale L.",
+  "sinonimiasCientificas": [],
+  "familia": "Boraginaceae",
+  "orden": "",
+  "clase": "",
+  "regionOrigen": "Europa y Asia (naturalizada en América)",
+  "habitatNatural": "Huertos y zonas húmedas",
+  "disponibilidadPanama": {
+    "disponible": true,
+    "nombreLocal": "Consuelda",
+    "formaComercial": "Hojas y raíz",
+    "dondeConseguir": "Herbolarios y huertos en Panamá",
+    "cultivoLocal": true,
+    "endemicaPanama": false,
+    "notaRegional": "Usada en Panamá y Caribe principalmente de forma tópica como cicatrizante óseo y de tejidos"
+  },
+  "cultivoCasero": {
+    "dificultad": "Baja",
+    "apta": true,
+    "maceta": true,
+    "luz": "Sol parcial",
+    "agua": "Moderada",
+    "suelo": "Húmedo y fértil",
+    "clima": "Tropical",
+    "notaCultivo": "Planta perenne de crecimiento vigoroso",
+    "tiempoACosecha": "Continuo"
+  },
+  "partesUsadas": [
+    "Hojas",
+    "Raíz"
+  ],
+  "resumen": "Planta con potente acción cicatrizante de tejidos y huesos, recomendada principalmente para uso tópico.",
+  "usoTradicionalHistorico": "Cataplasmas para fracturas, esguinces, heridas y úlceras cutáneas.",
+  "nivelEvidenciaGlobal": "C",
+  "fuentePrimaria": "",
+  "grupoTerapeutico": "Cicatrizante tópico",
+  "propiedades": "Cicatrizante, antiinflamatorio tópico, regenerador tisular",
+  "fotoquimica": "Alantoína, ácido rosmarínico y mucílagos",
+  "dolencias": [
+    "Fracturas",
+    "Esguinces",
+    "Heridas",
+    "Úlceras cutáneas"
+  ],
+  "sistemas": [
+    "Musculoesquelético",
+    "Dermatológico"
+  ],
+  "modoEII": {
+    "aptaEnBrote": false,
+    "notaBrote": "Solo uso externo para heridas o inflamación cutánea.",
+    "aptaEnMantenimiento": true,
+    "notaMantenimiento": "Excelente para soporte de tejidos y cicatrización en remisión.",
+    "mecanismoEII": "Promueve proliferación celular y formación de tejido conectivo.",
+    "referenciaEII": "Uso tradicional en el Caribe y estudios de wound healing"
+  },
+  "modoCeliaquiaGluten": {
+    "libreDeGluten": true,
+    "nota": "Hojas y raíz naturalmente libres de gluten.",
+    "indicacionEspecifica": ""
+  },
+  "usos": {
+    "interno": false,
+    "externo": true,
+    "culinario": false
+  },
+  "preparacion": "Cataplasma o ungüento de hojas/raíz (uso tópico exclusivo).",
+  "contraindicaciones": "Uso interno contraindicado por alcaloides pirrolizidínicos (hepatotóxicos).",
+  "interaccionesMedicamentosas": "Bajo riesgo en uso tópico.",
+  "embarazoLactancia": "Evitar completamente.",
+  "compatibilidadPlantas": {
+    "sinergicas": [
+      "Caléndula"
+    ],
+    "incompatibles": []
+  },
+  "infusionesRelacionadas": [],
+  "emoji": "🌿",
+  "etiquetas": [
+    "cicatrizante",
+    "huesos"
+  ],
+  "fuentes": [
+    {
+      "autor": "Staiger C",
+      "titulo": "Comfrey: A Clinical Overview",
+      "publicacion": "Phytotherapy Research",
+      "año": "2012",
+      "doi": "10.1002/ptr.4612",
+      "pmid": "22914931",
+      "tipo": "Revisión clínica",
+      "nivelEvidencia": "C",
+      "idioma": "en"
+    },
+    {
+      "autor": "Frost R et al.",
+      "titulo": "Comfrey (Symphytum officinale) for treating wounds: a systematic review",
+      "publicacion": "Complementary Therapies in Medicine",
+      "año": "2020",
+      "doi": "10.1016/j.ctim.2020.102328",
+      "pmid": "32444037",
+      "tipo": "Revisión sistemática",
+      "nivelEvidencia": "C",
+      "idioma": "en"
+    }
+  ],
+  "advertencia": "Uso exclusivamente tópico. No ingerir — alcaloides pirrolizidínicos hepatotóxicos.",
+  "disclaimer": "La información es para fines educativos. Consulta a un profesional de la salud antes de usar."
+}
