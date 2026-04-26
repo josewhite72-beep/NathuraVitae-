@@ -1,0 +1,112 @@
+{
+  "id": "aguacate-hojas",
+  "versionFicha": "2.0",
+  "estadoFicha": "publicada",
+  "fechaCreacion": "2026-04-18",
+  "fechaRevision": "2026-04-18",
+  "nombreComun": "Aguacate (hojas)",
+  "nombresAlternativos": [
+    "Avocado leaves"
+  ],
+  "nombreCientifico": "Persea americana Mill.",
+  "sinonimiasCientificas": [],
+  "familia": "Lauraceae",
+  "orden": "",
+  "clase": "",
+  "regionOrigen": "América Central y del Sur",
+  "habitatNatural": "Huertos tropicales",
+  "disponibilidadPanama": {
+    "disponible": true,
+    "nombreLocal": "Hojas de aguacate",
+    "formaComercial": "Hojas frescas o secas",
+    "dondeConseguir": "Huertos familiares en Panamá",
+    "cultivoLocal": true,
+    "endemicaPanama": false,
+    "notaRegional": "Muy usada en Panamá como hipotensora tradicional"
+  },
+  "cultivoCasero": {
+    "dificultad": "Baja",
+    "apta": true,
+    "maceta": false,
+    "luz": "Sol pleno",
+    "agua": "Moderada",
+    "suelo": "Bien drenado",
+    "clima": "Tropical",
+    "notaCultivo": "Árbol común en huertos panameños; hojas fáciles de recolectar",
+    "tiempoACosecha": "Continuo"
+  },
+  "partesUsadas": [
+    "Hojas"
+  ],
+  "resumen": "Las hojas de aguacate se usan tradicionalmente en Panamá como hipotensoras.",
+  "usoTradicionalHistorico": "Infusión para control de presión arterial alta.",
+  "nivelEvidenciaGlobal": "C",
+  "fuentePrimaria": "",
+  "grupoTerapeutico": "Hipotensor",
+  "propiedades": "Hipotensor, vasodilatador",
+  "fotoquimica": "Flavonoides, taninos y compuestos fenólicos",
+  "dolencias": [
+    "Hipertensión"
+  ],
+  "sistemas": [
+    "Cardiovascular"
+  ],
+  "modoEII": {
+    "aptaEnBrote": true,
+    "notaBrote": "Con precaución para apoyo circulatorio.",
+    "aptaEnMantenimiento": true,
+    "notaMantenimiento": "Apoyo hipotensor suave.",
+    "mecanismoEII": "Efecto vasodilatador observado en estudios.",
+    "referenciaEII": "Uso tradicional panameño y estudios experimentales"
+  },
+  "modoCeliaquiaGluten": {
+    "libreDeGluten": true,
+    "nota": "Hojas naturalmente libres de gluten.",
+    "indicacionEspecifica": ""
+  },
+  "usos": {
+    "interno": true,
+    "externo": false,
+    "culinario": false
+  },
+  "preparacion": "Infusión de hojas frescas o secas.",
+  "contraindicaciones": "Embarazo (precaución).",
+  "interaccionesMedicamentosas": "Puede potenciar hipotensores.",
+  "embarazoLactancia": "Evitar o usar con precaución.",
+  "compatibilidadPlantas": {
+    "sinergicas": [],
+    "incompatibles": []
+  },
+  "infusionesRelacionadas": [],
+  "emoji": "🌳",
+  "etiquetas": [
+    "presión",
+    "hipotensora"
+  ],
+  "fuentes": [
+    {
+      "autor": "Sutiningsih D et al.",
+      "titulo": "Effectiveness of avocado leaf extract (Persea americana Mill.) as antihypertensive",
+      "publicacion": "F1000Research",
+      "año": "2023",
+      "doi": "10.12688/f1000research.124643.2",
+      "pmid": "40919293",
+      "tipo": "Estudio experimental",
+      "nivelEvidencia": "C",
+      "idioma": "en"
+    },
+    {
+      "autor": "Ojewole JAO et al.",
+      "titulo": "Cardiovascular effects of Persea americana Mill (avocado) leaf aqueous extract in experimental animals",
+      "publicacion": "Cardiovascular Journal of Africa",
+      "año": "2007",
+      "doi": "",
+      "pmid": "17497042",
+      "tipo": "Estudio experimental",
+      "nivelEvidencia": "C",
+      "idioma": "en"
+    }
+  ],
+  "advertencia": "Monitorear presión arterial si se combina con medicamentos.",
+  "disclaimer": "La información es para fines educativos. Consulta a un profesional de la salud antes de usar."
+}

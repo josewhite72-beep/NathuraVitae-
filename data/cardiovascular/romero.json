@@ -1,0 +1,117 @@
+{
+  "id": "romero",
+  "versionFicha": "2.0",
+  "estadoFicha": "publicada",
+  "fechaCreacion": "2026-04-18",
+  "fechaRevision": "2026-04-18",
+  "nombreComun": "Romero",
+  "nombresAlternativos": [
+    "Rosemary"
+  ],
+  "nombreCientifico": "Rosmarinus officinalis L.",
+  "sinonimiasCientificas": [],
+  "familia": "Lamiaceae",
+  "orden": "",
+  "clase": "",
+  "regionOrigen": "Mediterráneo",
+  "habitatNatural": "Huertos y jardines",
+  "disponibilidadPanama": {
+    "disponible": true,
+    "nombreLocal": "Romero",
+    "formaComercial": "Hojas",
+    "dondeConseguir": "Huertos y mercados locales en Panamá",
+    "cultivoLocal": true,
+    "endemicaPanama": false,
+    "notaRegional": "Usado en Panamá para circulación, memoria y como antioxidante"
+  },
+  "cultivoCasero": {
+    "dificultad": "Baja",
+    "apta": true,
+    "maceta": true,
+    "luz": "Sol pleno",
+    "agua": "Baja",
+    "suelo": "Bien drenado",
+    "clima": "Tropical seco",
+    "notaCultivo": "Arbusto aromático resistente",
+    "tiempoACosecha": "Continuo"
+  },
+  "partesUsadas": [
+    "Hojas"
+  ],
+  "resumen": "Planta con fuertes propiedades antioxidantes y estimulante de la circulación, usada tradicionalmente en Panamá.",
+  "usoTradicionalHistorico": "Mejora de circulación, memoria, digestión y como antioxidante.",
+  "nivelEvidenciaGlobal": "B",
+  "fuentePrimaria": "",
+  "grupoTerapeutico": "Antioxidante, circulatorio",
+  "propiedades": "Antioxidante, estimulante circulatorio, antiinflamatorio",
+  "fotoquimica": "Ácido rosmarínico, carnosol y flavonoides",
+  "dolencias": [
+    "Problemas circulatorios",
+    "Fatiga mental",
+    "Inflamación"
+  ],
+  "sistemas": [
+    "Cardiovascular",
+    "Nervioso"
+  ],
+  "modoEII": {
+    "aptaEnBrote": true,
+    "notaBrote": "Con moderación para apoyo circulatorio.",
+    "aptaEnMantenimiento": true,
+    "notaMantenimiento": "Excelente antioxidante para control de inflamación crónica.",
+    "mecanismoEII": "Alta capacidad antioxidante que reduce estrés oxidativo.",
+    "referenciaEII": "Uso tradicional panameño y estudios farmacológicos"
+  },
+  "modoCeliaquiaGluten": {
+    "libreDeGluten": true,
+    "nota": "Hojas naturalmente libres de gluten.",
+    "indicacionEspecifica": ""
+  },
+  "usos": {
+    "interno": true,
+    "externo": true,
+    "culinario": true
+  },
+  "preparacion": "Infusión de hojas o uso como especia.",
+  "contraindicaciones": "Embarazo en dosis altas.",
+  "interaccionesMedicamentosas": "Bajo riesgo.",
+  "embarazoLactancia": "Seguro en uso culinario.",
+  "compatibilidadPlantas": {
+    "sinergicas": [
+      "Lavanda"
+    ],
+    "incompatibles": []
+  },
+  "infusionesRelacionadas": [],
+  "emoji": "🌿",
+  "etiquetas": [
+    "circulación",
+    "antioxidante"
+  ],
+  "fuentes": [
+    {
+      "autor": "Nieto G et al.",
+      "titulo": "Antioxidant and Antimicrobial Properties of Rosemary (Rosmarinus officinalis L.): A Review",
+      "publicacion": "Medicines",
+      "año": "2018",
+      "doi": "10.3390/medicines5030098",
+      "pmid": "",
+      "tipo": "Revisión",
+      "nivelEvidencia": "B",
+      "idioma": "en"
+    },
+    {
+      "autor": "Pomi FL et al.",
+      "titulo": "Rosmarinus officinalis and Skin: Antioxidant Activity and Possible Therapeutical Role in Cutaneous Diseases",
+      "publicacion": "Antioxidants",
+      "año": "2023",
+      "doi": "10.3390/antiox12030680",
+      "pmid": "",
+      "tipo": "Revisión",
+      "nivelEvidencia": "B",
+      "idioma": "en"
+    }
+  ],
+  "advertencia": "",
+  "disclaimer": "La información es para fines educativos. Consulta a un profesional de la salud antes de usar."
+}

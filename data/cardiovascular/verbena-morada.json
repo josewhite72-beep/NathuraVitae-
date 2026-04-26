@@ -1,0 +1,112 @@
+{
+  "id": "verbena-morada",
+  "versionFicha": "2.0",
+  "estadoFicha": "publicada",
+  "fechaCreacion": "2026-04-18",
+  "fechaRevision": "2026-04-18",
+  "nombreComun": "Verbena morada",
+  "nombresAlternativos": [
+    "Rabo de ratón"
+  ],
+  "nombreCientifico": "Stachytarpheta jamaicensis (L.) Vahl",
+  "sinonimiasCientificas": [],
+  "familia": "Verbenaceae",
+  "orden": "",
+  "clase": "",
+  "regionOrigen": "América tropical y Caribe",
+  "habitatNatural": "Zonas costeras y rurales",
+  "disponibilidadPanama": {
+    "disponible": true,
+    "nombreLocal": "Verbena morada / Rabo de ratón",
+    "formaComercial": "Hojas",
+    "dondeConseguir": "Huertos rurales en Panamá y Caribe",
+    "cultivoLocal": true,
+    "endemicaPanama": false,
+    "notaRegional": "Usada en Panamá y Caribe como hipotensora, validada por TRAMIL"
+  },
+  "cultivoCasero": {
+    "dificultad": "Baja",
+    "apta": true,
+    "maceta": true,
+    "luz": "Sol pleno",
+    "agua": "Moderada",
+    "suelo": "Bien drenado",
+    "clima": "Tropical",
+    "notaCultivo": "Hierba perenne de fácil propagación",
+    "tiempoACosecha": "Continuo"
+  },
+  "partesUsadas": [
+    "Hojas"
+  ],
+  "resumen": "Planta con actividad hipotensora documentada en estudios tradicionales del Caribe, validada TRAMIL.",
+  "usoTradicionalHistorico": "Infusión para control de presión arterial alta.",
+  "nivelEvidenciaGlobal": "C",
+  "fuentePrimaria": "",
+  "grupoTerapeutico": "Hipotensor",
+  "propiedades": "Hipotensor, antihipertensivo",
+  "fotoquimica": "Flavonoides y compuestos fenólicos",
+  "dolencias": [
+    "Hipertensión"
+  ],
+  "sistemas": [
+    "Cardiovascular"
+  ],
+  "modoEII": {
+    "aptaEnBrote": true,
+    "notaBrote": "Con precaución para apoyo circulatorio.",
+    "aptaEnMantenimiento": true,
+    "notaMantenimiento": "Apoyo hipotensor suave.",
+    "mecanismoEII": "Efecto vasodilatador observado en estudios.",
+    "referenciaEII": "Uso tradicional caribeño y TRAMIL"
+  },
+  "modoCeliaquiaGluten": {
+    "libreDeGluten": true,
+    "nota": "Hojas naturalmente libres de gluten.",
+    "indicacionEspecifica": ""
+  },
+  "usos": {
+    "interno": true,
+    "externo": false,
+    "culinario": false
+  },
+  "preparacion": "Infusión de hojas.",
+  "contraindicaciones": "Hipotensión.",
+  "interaccionesMedicamentosas": "Puede potenciar hipotensores.",
+  "embarazoLactancia": "Evitar.",
+  "compatibilidadPlantas": {
+    "sinergicas": [],
+    "incompatibles": []
+  },
+  "infusionesRelacionadas": [],
+  "emoji": "🌿",
+  "etiquetas": [
+    "presión",
+    "hipotensora"
+  ],
+  "fuentes": [
+    {
+      "autor": "Ojewole JAO et al.",
+      "titulo": "Some cardiovascular effects of the aqueous extract of the leaves of Stachytarpheta jamaicensis (L.) Vahl.",
+      "publicacion": "International Journal of Pharmacology",
+      "año": "2006",
+      "doi": "10.3923/ijp.2006.163.165",
+      "pmid": "",
+      "tipo": "Estudio experimental",
+      "nivelEvidencia": "C",
+      "idioma": "en"
+    },
+    {
+      "autor": "Liew PM et al.",
+      "titulo": "Stachytarpheta jamaicensis (L.) Vahl: From Traditional Usage to Pharmacological Evidence",
+      "publicacion": "Evidence-Based Complementary and Alternative Medicine",
+      "año": "2016",
+      "doi": "10.1155/2016/7842340",
+      "pmid": "",
+      "tipo": "Revisión",
+      "nivelEvidencia": "C",
+      "idioma": "en"
+    }
+  ],
+  "advertencia": "Monitorear presión arterial.",
+  "disclaimer": "La información es para fines educativos. Consulta a un profesional de la salud antes de usar."
+}
