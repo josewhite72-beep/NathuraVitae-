@@ -1,0 +1,117 @@
+{
+  "id": "espirulina",
+  "versionFicha": "2.0",
+  "estadoFicha": "publicada",
+  "fechaCreacion": "2026-04-18",
+  "fechaRevision": "2026-04-18",
+  "nombreComun": "Espirulina",
+  "nombresAlternativos": [
+    "Spirulina"
+  ],
+  "nombreCientifico": "Arthrospira platensis (Nordstedt) Gomont",
+  "sinonimiasCientificas": [
+    "Spirulina platensis"
+  ],
+  "familia": "Cyanobacteria",
+  "orden": "",
+  "clase": "",
+  "regionOrigen": "África y América (cultivada mundialmente)",
+  "habitatNatural": "Lagunas alcalinas",
+  "disponibilidadPanama": {
+    "disponible": true,
+    "nombreLocal": "Espirulina",
+    "formaComercial": "Polvo o comprimidos",
+    "dondeConseguir": "Tiendas naturistas en Panamá",
+    "cultivoLocal": false,
+    "endemicaPanama": false,
+    "notaRegional": "Usada como superalimento inmunomodulador y nutricional en Panamá"
+  },
+  "cultivoCasero": {
+    "dificultad": "Alta",
+    "apta": false,
+    "maceta": false,
+    "luz": "",
+    "agua": "",
+    "suelo": "",
+    "clima": "",
+    "notaCultivo": "Cultivo industrial en tanques controlados",
+    "tiempoACosecha": ""
+  },
+  "partesUsadas": [
+    "Biomasa completa"
+  ],
+  "resumen": "Superalimento rico en proteínas, vitaminas y minerales con propiedades inmunomoduladoras.",
+  "usoTradicionalHistorico": "Fuente nutricional completa, apoyo inmunológico y energético.",
+  "nivelEvidenciaGlobal": "B",
+  "fuentePrimaria": "",
+  "grupoTerapeutico": "Nutricional, inmunomodulador",
+  "propiedades": "Inmunomodulador, antioxidante, rico en proteínas y hierro",
+  "fotoquimica": "Ficocianina, clorofila, ácidos grasos omega-3 y minerales",
+  "dolencias": [
+    "Deficiencias nutricionales",
+    "Fatiga",
+    "Baja inmunidad"
+  ],
+  "sistemas": [
+    "Inmunológico",
+    "Hematológico"
+  ],
+  "modoEII": {
+    "aptaEnBrote": true,
+    "notaBrote": "Útil como apoyo nutricional en brotes.",
+    "aptaEnMantenimiento": true,
+    "notaMantenimiento": "Excelente suplemento nutricional e inmunomodulador.",
+    "mecanismoEII": "Aumento de actividad de células NK y antioxidante.",
+    "referenciaEII": "Estudios clínicos en inmunidad"
+  },
+  "modoCeliaquiaGluten": {
+    "libreDeGluten": true,
+    "nota": "Producto naturalmente libre de gluten (verificar certificación).",
+    "indicacionEspecifica": "Ideal para dietas sin gluten."
+  },
+  "usos": {
+    "interno": true,
+    "externo": false,
+    "culinario": true
+  },
+  "preparacion": "Polvo disuelto en agua, jugos o batidos.",
+  "contraindicaciones": "Fenilcetonuria (contiene fenilalanina), hipertiroidismo.",
+  "interaccionesMedicamentosas": "Bajo riesgo.",
+  "embarazoLactancia": "Seguro en dosis recomendadas.",
+  "compatibilidadPlantas": {
+    "sinergicas": [],
+    "incompatibles": []
+  },
+  "infusionesRelacionadas": [],
+  "emoji": "🌿",
+  "etiquetas": [
+    "inmunidad",
+    "nutricional"
+  ],
+  "fuentes": [
+    {
+      "autor": "Karkos PD et al.",
+      "titulo": "Spirulina in Clinical Practice: Evidence-Based Human Applications",
+      "publicacion": "Evidence-Based Complementary and Alternative Medicine",
+      "año": "2011",
+      "doi": "10.1093/ecam/nen058",
+      "pmid": "18955364",
+      "tipo": "Revisión",
+      "nivelEvidencia": "B",
+      "idioma": "en"
+    },
+    {
+      "autor": "Wu Q et al.",
+      "titulo": "The effect of spirulina on immune function in healthy adults: a randomized, double-blind, placebo-controlled trial",
+      "publicacion": "Journal of Medicinal Food",
+      "año": "2016",
+      "doi": "10.1089/jmf.2015.0107",
+      "pmid": "26813468",
+      "tipo": "Ensayo clínico",
+      "nivelEvidencia": "B",
+      "idioma": "en"
+    }
+  ],
+  "advertencia": "Elegir productos de calidad certificada para evitar contaminación.",
+  "disclaimer": "La información es para fines educativos. Consulta a un profesional de la salud antes de usar."
+}

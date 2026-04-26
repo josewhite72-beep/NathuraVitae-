@@ -1,0 +1,119 @@
+{
+  "id": "cardo-mariano",
+  "versionFicha": "2.0",
+  "estadoFicha": "publicada",
+  "fechaCreacion": "2026-04-18",
+  "fechaRevision": "2026-04-18",
+  "nombreComun": "Cardo mariano",
+  "nombresAlternativos": [
+    "Milk thistle",
+    "Silybum"
+  ],
+  "nombreCientifico": "Silybum marianum (L.) Gaertn.",
+  "sinonimiasCientificas": [],
+  "familia": "Asteraceae",
+  "orden": "",
+  "clase": "",
+  "regionOrigen": "Mediterráneo (cultivada mundialmente)",
+  "habitatNatural": "Huertos y zonas cultivadas",
+  "disponibilidadPanama": {
+    "disponible": true,
+    "nombreLocal": "Cardo mariano",
+    "formaComercial": "Semillas y extracto",
+    "dondeConseguir": "Herbolarios y tiendas naturistas en Panamá",
+    "cultivoLocal": false,
+    "endemicaPanama": false,
+    "notaRegional": "Usado en Panamá como hepatoprotector principal"
+  },
+  "cultivoCasero": {
+    "dificultad": "Media",
+    "apta": true,
+    "maceta": false,
+    "luz": "Sol pleno",
+    "agua": "Moderada",
+    "suelo": "Bien drenado",
+    "clima": "Templado a subtropical",
+    "notaCultivo": "Planta anual de fácil cultivo en clima adecuado",
+    "tiempoACosecha": "4-5 meses"
+  },
+  "partesUsadas": [
+    "Semillas"
+  ],
+  "resumen": "La planta hepatoprotectora más estudiada del mundo, con silimarina como principio activo principal.",
+  "usoTradicionalHistorico": "Protección hepática, detoxificación, daño hepático por alcohol o tóxicos.",
+  "nivelEvidenciaGlobal": "B",
+  "fuentePrimaria": "",
+  "grupoTerapeutico": "Hepatoprotector",
+  "propiedades": "Hepatoprotector, antioxidante, antiinflamatorio, regenerador hepático",
+  "fotoquimica": "Silimarina (silibina, silicristina, silidianina)",
+  "dolencias": [
+    "Daño hepático",
+    "Hepatitis",
+    "Esteatosis hepática",
+    "Intoxicaciones"
+  ],
+  "sistemas": [
+    "Digestivo"
+  ],
+  "modoEII": {
+    "aptaEnBrote": false,
+    "notaBrote": "Evitar en brotes con inflamación hepática aguda sin supervisión.",
+    "aptaEnMantenimiento": true,
+    "notaMantenimiento": "Excelente coadyuvante para soporte hepático en remisión de EII.",
+    "mecanismoEII": "Antioxidante y estabilizador de membranas hepatocíticas; reduce estrés oxidativo.",
+    "referenciaEII": "Múltiples ensayos clínicos y revisiones Cochrane"
+  },
+  "modoCeliaquiaGluten": {
+    "libreDeGluten": true,
+    "nota": "Semillas y extractos naturalmente libres de gluten.",
+    "indicacionEspecifica": ""
+  },
+  "usos": {
+    "interno": true,
+    "externo": false,
+    "culinario": false
+  },
+  "preparacion": "Infusión de semillas o extracto estandarizado (70-80% silimarina).",
+  "contraindicaciones": "Alergia a Asteraceae.",
+  "interaccionesMedicamentosas": "Puede interferir con metabolismo de fármacos por CYP3A4 (precaución).",
+  "embarazoLactancia": "Evitar por falta de datos suficientes.",
+  "compatibilidadPlantas": {
+    "sinergicas": [
+      "Alcachofa",
+      "Diente de león"
+    ],
+    "incompatibles": []
+  },
+  "infusionesRelacionadas": [],
+  "emoji": "🌿",
+  "etiquetas": [
+    "hígado",
+    "hepatoprotector"
+  ],
+  "fuentes": [
+    {
+      "autor": "Rambaldi A et al.",
+      "titulo": "Milk thistle for alcoholic and/or hepatitis B or C virus liver diseases",
+      "publicacion": "Cochrane Database of Systematic Reviews",
+      "año": "2005",
+      "doi": "10.1002/14651858.CD003620.pub2",
+      "pmid": "15846671",
+      "tipo": "Revisión Cochrane",
+      "nivelEvidencia": "A",
+      "idioma": "en"
+    },
+    {
+      "autor": "Abenavoli L et al.",
+      "titulo": "Milk thistle in liver diseases: past, present, future",
+      "publicacion": "Phytotherapy Research",
+      "año": "2010",
+      "doi": "10.1002/ptr.3207",
+      "pmid": "20564545",
+      "tipo": "Revisión",
+      "nivelEvidencia": "B",
+      "idioma": "en"
+    }
+  ],
+  "advertencia": "Consultar médico si se toman otros medicamentos hepatotóxicos.",
+  "disclaimer": "La información es para fines educativos. Consulta a un profesional de la salud antes de usar."
+}

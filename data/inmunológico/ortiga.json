@@ -1,0 +1,116 @@
+{
+  "id": "ortiga",
+  "versionFicha": "2.0",
+  "estadoFicha": "publicada",
+  "fechaCreacion": "2026-04-18",
+  "fechaRevision": "2026-04-18",
+  "nombreComun": "Ortiga",
+  "nombresAlternativos": [
+    "Stinging nettle"
+  ],
+  "nombreCientifico": "Urtica dioica L.",
+  "sinonimiasCientificas": [],
+  "familia": "Urticaceae",
+  "orden": "",
+  "clase": "",
+  "regionOrigen": "Europa y Asia (naturalizada en América)",
+  "habitatNatural": "Zonas húmedas y huertos",
+  "disponibilidadPanama": {
+    "disponible": true,
+    "nombreLocal": "Ortiga",
+    "formaComercial": "Hojas",
+    "dondeConseguir": "Huertos rurales en Panamá",
+    "cultivoLocal": true,
+    "endemicaPanama": false,
+    "notaRegional": "Usada en Panamá como antiinflamatoria y fuente nutricional de hierro"
+  },
+  "cultivoCasero": {
+    "dificultad": "Baja",
+    "apta": true,
+    "maceta": true,
+    "luz": "Sol parcial",
+    "agua": "Moderada",
+    "suelo": "Húmedo y fértil",
+    "clima": "Tropical",
+    "notaCultivo": "Hierba perenne con pelos urticantes",
+    "tiempoACosecha": "Continuo"
+  },
+  "partesUsadas": [
+    "Hojas"
+  ],
+  "resumen": "Planta antiinflamatoria y rica en minerales, especialmente hierro, con uso nutricional y medicinal.",
+  "usoTradicionalHistorico": "Antiinflamatoria para artritis, anemia y problemas urinarios.",
+  "nivelEvidenciaGlobal": "B",
+  "fuentePrimaria": "",
+  "grupoTerapeutico": "Antiinflamatorio, nutricional",
+  "propiedades": "Antiinflamatorio, diurético, rico en hierro y minerales",
+  "fotoquimica": "Flavonoides, ácidos fenólicos y minerales (hierro, calcio)",
+  "dolencias": [
+    "Artritis",
+    "Anemia",
+    "Inflamación",
+    "Problemas urinarios"
+  ],
+  "sistemas": [
+    "Musculoesquelético",
+    "Hematológico"
+  ],
+  "modoEII": {
+    "aptaEnBrote": false,
+    "notaBrote": "Evitar en brotes con irritación intestinal.",
+    "aptaEnMantenimiento": true,
+    "notaMantenimiento": "Buen apoyo antiinflamatorio y nutricional en remisión.",
+    "mecanismoEII": "Inhibición de mediadores inflamatorios y aporte de minerales.",
+    "referenciaEII": "Estudios clínicos en artritis y revisión nutricional"
+  },
+  "modoCeliaquiaGluten": {
+    "libreDeGluten": true,
+    "nota": "Hojas naturalmente libres de gluten.",
+    "indicacionEspecifica": ""
+  },
+  "usos": {
+    "interno": true,
+    "externo": true,
+    "culinario": true
+  },
+  "preparacion": "Infusión de hojas o uso en ensaladas (después de cocinar).",
+  "contraindicaciones": "Embarazo (precaución), alergia a Urticaceae.",
+  "interaccionesMedicamentosas": "Precaución con diuréticos y anticoagulantes.",
+  "embarazoLactancia": "Evitar en dosis altas.",
+  "compatibilidadPlantas": {
+    "sinergicas": [],
+    "incompatibles": []
+  },
+  "infusionesRelacionadas": [],
+  "emoji": "🌿",
+  "etiquetas": [
+    "antiinflamatorio",
+    "hierro"
+  ],
+  "fuentes": [
+    {
+      "autor": "Bhusal KK et al.",
+      "titulo": "Nutritional and pharmacological importance of stinging nettle (Urtica dioica L.): A review",
+      "publicacion": "Heliyon",
+      "año": "2022",
+      "doi": "10.1016/j.heliyon.2022.e09717",
+      "pmid": "",
+      "tipo": "Revisión",
+      "nivelEvidencia": "B",
+      "idioma": "en"
+    },
+    {
+      "autor": "Devkota HP et al.",
+      "titulo": "Stinging Nettle (Urtica dioica L.): Nutritional Composition, Bioactive Compounds, and Food Functional Properties",
+      "publicacion": "Molecules",
+      "año": "2022",
+      "doi": "10.3390/molecules27165229",
+      "pmid": "",
+      "tipo": "Revisión",
+      "nivelEvidencia": "B",
+      "idioma": "en"
+    }
+  ],
+  "advertencia": "Usar guantes al recolectar por pelos urticantes.",
+  "disclaimer": "La información es para fines educativos. Consulta a un profesional de la salud antes de usar."
+}
