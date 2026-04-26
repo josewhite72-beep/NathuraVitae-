@@ -1,0 +1,120 @@
+{
+  "id": "hoja-de-mango",
+  "versionFicha": "2.0",
+  "estadoFicha": "publicada",
+  "fechaCreacion": "2026-04-18",
+  "fechaRevision": "2026-04-18",
+  "nombreComun": "Hoja de mango",
+  "nombresAlternativos": [
+    "Mango leaf"
+  ],
+  "nombreCientifico": "Mangifera indica L.",
+  "sinonimiasCientificas": [],
+  "familia": "Anacardiaceae",
+  "orden": "",
+  "clase": "",
+  "regionOrigen": "Asia tropical (cultivada ampliamente en América)",
+  "habitatNatural": "Huertos tropicales y zonas cultivadas",
+  "disponibilidadPanama": {
+    "disponible": true,
+    "nombreLocal": "Hoja de mango",
+    "formaComercial": "Hojas frescas o secas",
+    "dondeConseguir": "Huertos familiares y mercados locales en Panamá",
+    "cultivoLocal": true,
+    "endemicaPanama": false,
+    "notaRegional": "Uso tradicional panameño y caribeño de las hojas para diabetes, presión arterial y diarrea"
+  },
+  "cultivoCasero": {
+    "dificultad": "Baja",
+    "apta": true,
+    "maceta": false,
+    "luz": "Sol pleno",
+    "agua": "Moderada",
+    "suelo": "Bien drenado y fértil",
+    "clima": "Tropical",
+    "notaCultivo": "Árbol común en huertos; hojas fáciles de recolectar",
+    "tiempoACosecha": "Continuo (árbol maduro)"
+  },
+  "partesUsadas": [
+    "Hojas"
+  ],
+  "resumen": "Las hojas de mango se usan tradicionalmente en Panamá y el Caribe por sus propiedades antidiabéticas, hipotensoras y antidiarréicas.",
+  "usoTradicionalHistorico": "Infusión de hojas para control de diabetes, hipertensión y diarrea.",
+  "nivelEvidenciaGlobal": "B",
+  "fuentePrimaria": "",
+  "grupoTerapeutico": "Antidiabético, hipotensor",
+  "propiedades": "Antidiabético, hipotensor, antidiarréico, antioxidante",
+  "fotoquimica": "Mangiferina, flavonoides, taninos y compuestos fenólicos",
+  "dolencias": [
+    "Diabetes",
+    "Hipertensión",
+    "Diarrea"
+  ],
+  "sistemas": [
+    "Endocrino",
+    "Cardiovascular",
+    "Digestivo"
+  ],
+  "modoEII": {
+    "aptaEnBrote": false,
+    "notaBrote": "Evitar en brotes con diarrea severa o desequilibrios metabólicos.",
+    "aptaEnMantenimiento": true,
+    "notaMantenimiento": "Puede apoyar control glucémico e inflamación leve como coadyuvante.",
+    "mecanismoEII": "Actividad antioxidante y antiinflamatoria de la mangiferina.",
+    "referenciaEII": "Uso tradicional panameño y estudios preclínicos"
+  },
+  "modoCeliaquiaGluten": {
+    "libreDeGluten": true,
+    "nota": "Hojas naturalmente libres de gluten.",
+    "indicacionEspecifica": ""
+  },
+  "usos": {
+    "interno": true,
+    "externo": false,
+    "culinario": false
+  },
+  "preparacion": "Infusión de hojas frescas o secas (5-10 hojas por litro).",
+  "contraindicaciones": "Embarazo (precaución), alergia a Anacardiaceae.",
+  "interaccionesMedicamentosas": "Puede potenciar efectos de antidiabéticos e hipotensores.",
+  "embarazoLactancia": "Evitar o usar con precaución por falta de estudios suficientes.",
+  "compatibilidadPlantas": {
+    "sinergicas": [
+      "Cúrcuma",
+      "Jengibre"
+    ],
+    "incompatibles": []
+  },
+  "infusionesRelacionadas": [],
+  "emoji": "🌿",
+  "etiquetas": [
+    "diabetes",
+    "presión",
+    "diarrea"
+  ],
+  "fuentes": [
+    {
+      "autor": "Boas GRV et al.",
+      "titulo": "Aqueous extract from Mangifera indica Linn. leaves exerts anti-inflammatory and antidiabetic effects in alloxan-induced diabetic rats",
+      "publicacion": "Journal of Ethnopharmacology",
+      "año": "2020",
+      "doi": "10.1016/j.jep.2019.112367",
+      "pmid": "",
+      "tipo": "Estudio experimental",
+      "nivelEvidencia": "B",
+      "idioma": "en"
+    },
+    {
+      "autor": "Kumar M et al.",
+      "titulo": "Mango (Mangifera indica L.) Leaves: Nutritional Composition, Phytochemical Profile, and Health-Promoting Bioactivities",
+      "publicacion": "International Journal of Environmental Research and Public Health",
+      "año": "2021",
+      "doi": "10.3390/ijerph18020741",
+      "pmid": "",
+      "tipo": "Revisión",
+      "nivelEvidencia": "B",
+      "idioma": "en"
+    }
+  ],
+  "advertencia": "Monitorear niveles de glucosa y presión arterial si se usa conjuntamente con medicamentos.",
+  "disclaimer": "La información es para fines educativos. Consulta a un profesional de la salud antes de usar."
+}
