@@ -1,0 +1,121 @@
+{
+  "id": "verbena",
+  "versionFicha": "2.0",
+  "estadoFicha": "publicada",
+  "fechaCreacion": "2026-04-18",
+  "fechaRevision": "2026-04-18",
+  "nombreComun": "Verbena",
+  "nombresAlternativos": [
+    "Verbena común",
+    "Vervain"
+  ],
+  "nombreCientifico": "Verbena officinalis L.",
+  "sinonimiasCientificas": [],
+  "familia": "Verbenaceae",
+  "orden": "",
+  "clase": "",
+  "regionOrigen": "Europa y Asia (cultivada en América)",
+  "habitatNatural": "Huertos y áreas perturbadas",
+  "disponibilidadPanama": {
+    "disponible": true,
+    "nombreLocal": "Verbena",
+    "formaComercial": "Hojas y flores",
+    "dondeConseguir": "Herbolarios y huertos",
+    "cultivoLocal": true,
+    "endemicaPanama": false,
+    "notaRegional": "Uso tradicional en Panamá y Caribe para fiebre, dolor y afecciones hepáticas"
+  },
+  "cultivoCasero": {
+    "dificultad": "Baja",
+    "apta": true,
+    "maceta": true,
+    "luz": "Sol pleno",
+    "agua": "Moderada",
+    "suelo": "Bien drenado",
+    "clima": "Tropical a templado",
+    "notaCultivo": "Hierba perenne fácil de cultivar",
+    "tiempoACosecha": "Continuo"
+  },
+  "partesUsadas": [
+    "Hojas",
+    "Flores"
+  ],
+  "resumen": "Hierba con propiedades febrífugas, analgésicas y hepatoprotectoras de uso tradicional.",
+  "usoTradicionalHistorico": "Infusión para fiebre, dolor corporal y afecciones del hígado.",
+  "nivelEvidenciaGlobal": "C",
+  "fuentePrimaria": "",
+  "grupoTerapeutico": "Febrífugo, analgésico",
+  "propiedades": "Febrífugo, analgésico, antiinflamatorio, hepatoprotector",
+  "fotoquimica": "Iridoides, flavonoides y verbascósido",
+  "dolencias": [
+    "Fiebre",
+    "Dolor",
+    "Afecciones hepáticas"
+  ],
+  "sistemas": [
+    "General",
+    "Musculoesquelético",
+    "Digestivo"
+  ],
+  "modoEII": {
+    "aptaEnBrote": true,
+    "notaBrote": "Con precaución para síntomas febriles o dolor leve.",
+    "aptaEnMantenimiento": true,
+    "notaMantenimiento": "Apoyo para dolor e inflamación leve.",
+    "mecanismoEII": "Actividad antiinflamatoria y analgésica.",
+    "referenciaEII": "Uso tradicional en el Caribe y Panamá"
+  },
+  "modoCeliaquiaGluten": {
+    "libreDeGluten": true,
+    "nota": "Hojas y flores naturalmente libres de gluten.",
+    "indicacionEspecifica": ""
+  },
+  "usos": {
+    "interno": true,
+    "externo": false,
+    "culinario": false
+  },
+  "preparacion": "Infusión de hojas y flores.",
+  "contraindicaciones": "Embarazo (posible efecto uterotónico).",
+  "interaccionesMedicamentosas": "Bajo riesgo.",
+  "embarazoLactancia": "Evitar.",
+  "compatibilidadPlantas": {
+    "sinergicas": [
+      "Manzanilla"
+    ],
+    "incompatibles": []
+  },
+  "infusionesRelacionadas": [],
+  "emoji": "🌿",
+  "etiquetas": [
+    "fiebre",
+    "dolor",
+    "hígado"
+  ],
+  "fuentes": [
+    {
+      "autor": "Kubica P et al.",
+      "titulo": "Verbena officinalis (Common Vervain) – A Review on the Investigations of This Medicinally Important Plant Species",
+      "publicacion": "Planta Medica",
+      "año": "2020",
+      "doi": "10.1055/a-1232-5758",
+      "pmid": "32937665",
+      "tipo": "Revisión",
+      "nivelEvidencia": "C",
+      "idioma": "en"
+    },
+    {
+      "autor": "Gupta MP et al.",
+      "titulo": "Plantas Medicinales de Panamá",
+      "publicacion": "Editorial Universitaria, Universidad de Panamá",
+      "año": "2000",
+      "doi": "",
+      "pmid": "",
+      "tipo": "Monografía etnobotánica",
+      "nivelEvidencia": "C",
+      "idioma": "es"
+    }
+  ],
+  "advertencia": "",
+  "disclaimer": "La información es para fines educativos. Consulta a un profesional de la salud antes de usar."
+}
