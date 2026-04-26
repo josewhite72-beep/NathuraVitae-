@@ -1,0 +1,112 @@
+{
+  "id": "papaya-semillas",
+  "versionFicha": "2.0",
+  "estadoFicha": "publicada",
+  "fechaCreacion": "2026-04-18",
+  "fechaRevision": "2026-04-18",
+  "nombreComun": "Semillas de papaya",
+  "nombresAlternativos": [
+    "Papaya seeds"
+  ],
+  "nombreCientifico": "Carica papaya L.",
+  "sinonimiasCientificas": [],
+  "familia": "Caricaceae",
+  "orden": "",
+  "clase": "",
+  "regionOrigen": "América Central y del Sur",
+  "habitatNatural": "Huertos tropicales",
+  "disponibilidadPanama": {
+    "disponible": true,
+    "nombreLocal": "Semillas de papaya",
+    "formaComercial": "Semillas secas",
+    "dondeConseguir": "Huertos familiares y mercados locales en Panamá",
+    "cultivoLocal": true,
+    "endemicaPanama": false,
+    "notaRegional": "Uso tradicional y clínico en Panamá y Caribe como antiparasitario, especialmente en niños"
+  },
+  "cultivoCasero": {
+    "dificultad": "Baja",
+    "apta": true,
+    "maceta": false,
+    "luz": "Sol pleno",
+    "agua": "Moderada",
+    "suelo": "Bien drenado",
+    "clima": "Tropical",
+    "notaCultivo": "Semillas obtenidas del fruto maduro",
+    "tiempoACosecha": "Continuo (del fruto)"
+  },
+  "partesUsadas": [
+    "Semillas"
+  ],
+  "resumen": "Las semillas de papaya tienen potente actividad antiparasitaria respaldada por estudios clínicos en niños.",
+  "usoTradicionalHistorico": "Antiparasitario intestinal (helmintos y protozoos), especialmente en niños.",
+  "nivelEvidenciaGlobal": "B",
+  "fuentePrimaria": "",
+  "grupoTerapeutico": "Antiparasitario",
+  "propiedades": "Antiparasitario, antihelmíntico, antiprotozoario",
+  "fotoquimica": "Bencil isotiocianato (BITC), carpaina y enzimas proteolíticas",
+  "dolencias": [
+    "Parasitosis intestinal",
+    "Helmintos"
+  ],
+  "sistemas": [
+    "Digestivo"
+  ],
+  "modoEII": {
+    "aptaEnBrote": false,
+    "notaBrote": "Evitar en brotes con diarrea severa o irritación intestinal.",
+    "aptaEnMantenimiento": true,
+    "notaMantenimiento": "Útil como apoyo antiparasitario en remisión.",
+    "mecanismoEII": "Acción antiparasitaria por BITC y enzimas proteolíticas.",
+    "referenciaEII": "Estudios clínicos en niños y uso tradicional en Panamá"
+  },
+  "modoCeliaquiaGluten": {
+    "libreDeGluten": true,
+    "nota": "Semillas naturalmente libres de gluten.",
+    "indicacionEspecifica": ""
+  },
+  "usos": {
+    "interno": true,
+    "externo": false,
+    "culinario": false
+  },
+  "preparacion": "Semillas secas trituradas mezcladas con miel (dosis controlada).",
+  "contraindicaciones": "Embarazo (posible efecto abortivo), úlcera gástrica activa.",
+  "interaccionesMedicamentosas": "Bajo riesgo.",
+  "embarazoLactancia": "Evitar.",
+  "compatibilidadPlantas": {
+    "sinergicas": [],
+    "incompatibles": []
+  },
+  "infusionesRelacionadas": [],
+  "emoji": "🌱",
+  "etiquetas": [
+    "antiparasitario"
+  ],
+  "fuentes": [
+    {
+      "autor": "Okeniyi JAO et al.",
+      "titulo": "Effectiveness of dried Carica papaya seeds against human intestinal parasitosis: A pilot study",
+      "publicacion": "Journal of Medicinal Food",
+      "año": "2007",
+      "doi": "10.1089/jmf.2005.065",
+      "pmid": "17472487",
+      "tipo": "Estudio clínico en niños",
+      "nivelEvidencia": "B",
+      "idioma": "en"
+    },
+    {
+      "autor": "Kugo M et al.",
+      "titulo": "Fortification of Carica papaya fruit seeds to school meal snacks may aid Africa mass deworming programs",
+      "publicacion": "BMC Complementary and Alternative Medicine",
+      "año": "2018",
+      "doi": "10.1186/s12906-018-2403-6",
+      "pmid": "",
+      "tipo": "Estudio en niños",
+      "nivelEvidencia": "B",
+      "idioma": "en"
+    }
+  ],
+  "advertencia": "Uso en dosis controladas; consultar profesional para niños.",
+  "disclaimer": "La información es para fines educativos. Consulta a un profesional de la salud antes de usar."
+}
