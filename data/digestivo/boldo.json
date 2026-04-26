@@ -1,0 +1,115 @@
+{
+  "id": "boldo",
+  "versionFicha": "2.0",
+  "estadoFicha": "publicada",
+  "fechaCreacion": "2026-04-18",
+  "fechaRevision": "2026-04-18",
+  "nombreComun": "Boldo",
+  "nombresAlternativos": [],
+  "nombreCientifico": "Peumus boldus Molina",
+  "sinonimiasCientificas": [],
+  "familia": "Monimiaceae",
+  "orden": "",
+  "clase": "",
+  "regionOrigen": "Chile (cultivado en América tropical)",
+  "habitatNatural": "Huertos y zonas cultivadas",
+  "disponibilidadPanama": {
+    "disponible": true,
+    "nombreLocal": "Boldo",
+    "formaComercial": "Hojas secas",
+    "dondeConseguir": "Herbolarios y tiendas naturistas en Panamá",
+    "cultivoLocal": false,
+    "endemicaPanama": false,
+    "notaRegional": "Usado en Panamá y el Caribe como colagogo y hepatoprotector"
+  },
+  "cultivoCasero": {
+    "dificultad": "Media",
+    "apta": true,
+    "maceta": false,
+    "luz": "Sol pleno",
+    "agua": "Moderada",
+    "suelo": "Bien drenado",
+    "clima": "Templado a subtropical",
+    "notaCultivo": "Arbusto de hojas aromáticas",
+    "tiempoACosecha": "Continuo"
+  },
+  "partesUsadas": [
+    "Hojas"
+  ],
+  "resumen": "Planta con reconocidas propiedades colagogas y hepatoprotectoras, usada tradicionalmente para trastornos digestivos y hepáticos.",
+  "usoTradicionalHistorico": "Infusión para problemas hepáticos, digestivos, biliares y como colagogo.",
+  "nivelEvidenciaGlobal": "B",
+  "fuentePrimaria": "",
+  "grupoTerapeutico": "Hepatoprotector, colagogo",
+  "propiedades": "Colagogo, hepatoprotector, antioxidante, digestivo",
+  "fotoquimica": "Boldina, flavonoides y alcaloides",
+  "dolencias": [
+    "Trastornos hepáticos",
+    "Dispepsia",
+    "Problemas biliares"
+  ],
+  "sistemas": [
+    "Digestivo"
+  ],
+  "modoEII": {
+    "aptaEnBrote": false,
+    "notaBrote": "Evitar en brotes con inflamación hepática aguda.",
+    "aptaEnMantenimiento": true,
+    "notaMantenimiento": "Excelente coadyuvante para soporte hepático y digestivo en remisión de EII.",
+    "mecanismoEII": "Actividad antioxidante y protectora de células hepáticas.",
+    "referenciaEII": "Uso tradicional y estudios preclínicos"
+  },
+  "modoCeliaquiaGluten": {
+    "libreDeGluten": true,
+    "nota": "Hojas naturalmente libres de gluten.",
+    "indicacionEspecifica": ""
+  },
+  "usos": {
+    "interno": true,
+    "externo": false,
+    "culinario": false
+  },
+  "preparacion": "Infusión de hojas (1-2 cucharaditas por taza).",
+  "contraindicaciones": "Obstrucción biliar, embarazo.",
+  "interaccionesMedicamentosas": "Precaución con medicamentos metabolizados por hígado.",
+  "embarazoLactancia": "Evitar.",
+  "compatibilidadPlantas": {
+    "sinergicas": [
+      "Cardo mariano",
+      "Diente de león"
+    ],
+    "incompatibles": []
+  },
+  "infusionesRelacionadas": [],
+  "emoji": "🌿",
+  "etiquetas": [
+    "hígado",
+    "colagogo"
+  ],
+  "fuentes": [
+    {
+      "autor": "Fernández J et al.",
+      "titulo": "Effect of boldo infusion on lipoperoxidation induced by cisplatin in mice liver",
+      "publicacion": "Phytotherapy Research",
+      "año": "2009",
+      "doi": "10.1002/ptr.2746",
+      "pmid": "19145575",
+      "tipo": "Estudio experimental",
+      "nivelEvidencia": "B",
+      "idioma": "en"
+    },
+    {
+      "autor": "Speisky H et al.",
+      "titulo": "Boldo and boldine: an emerging case of natural drug development",
+      "publicacion": "Pharmacological Research",
+      "año": "1994",
+      "doi": "",
+      "pmid": "",
+      "tipo": "Revisión",
+      "nivelEvidencia": "C",
+      "idioma": "en"
+    }
+  ],
+  "advertencia": "No usar en obstrucción biliar. Consultar médico si se tienen problemas hepáticos.",
+  "disclaimer": "La información es para fines educativos. Consulta a un profesional de la salud antes de usar."
+}

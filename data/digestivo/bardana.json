@@ -1,0 +1,119 @@
+{
+  "id": "bardana",
+  "versionFicha": "2.0",
+  "estadoFicha": "publicada",
+  "fechaCreacion": "2026-04-18",
+  "fechaRevision": "2026-04-18",
+  "nombreComun": "Bardana",
+  "nombresAlternativos": [
+    "Lappola",
+    "Lampazo"
+  ],
+  "nombreCientifico": "Arctium lappa L.",
+  "sinonimiasCientificas": [],
+  "familia": "Asteraceae",
+  "orden": "",
+  "clase": "",
+  "regionOrigen": "Europa y Asia (naturalizada en América)",
+  "habitatNatural": "Zonas rurales y huertos",
+  "disponibilidadPanama": {
+    "disponible": true,
+    "nombreLocal": "Bardana",
+    "formaComercial": "Raíz",
+    "dondeConseguir": "Herbolarios en Panamá",
+    "cultivoLocal": true,
+    "endemicaPanama": false,
+    "notaRegional": "Usada en Panamá como depurativa hepática y cutánea"
+  },
+  "cultivoCasero": {
+    "dificultad": "Media",
+    "apta": true,
+    "maceta": false,
+    "luz": "Sol pleno",
+    "agua": "Moderada",
+    "suelo": "Profundo y fértil",
+    "clima": "Templado a tropical",
+    "notaCultivo": "Planta bienal de raíz pivotante",
+    "tiempoACosecha": "Primer año (raíz)"
+  },
+  "partesUsadas": [
+    "Raíz"
+  ],
+  "resumen": "Raíz depurativa con acción hepatoprotectora y depurativa cutánea.",
+  "usoTradicionalHistorico": "Depuración hepática, problemas cutáneos (acné, eczema) y como diurético suave.",
+  "nivelEvidenciaGlobal": "C",
+  "fuentePrimaria": "",
+  "grupoTerapeutico": "Depurativo",
+  "propiedades": "Depurativo hepático, diurético, antiinflamatorio cutáneo",
+  "fotoquimica": "Inulina, lignanos (arctigenina) y flavonoides",
+  "dolencias": [
+    "Problemas hepáticos",
+    "Acné",
+    "Eczema",
+    "Retención de líquidos"
+  ],
+  "sistemas": [
+    "Digestivo",
+    "Dermatológico"
+  ],
+  "modoEII": {
+    "aptaEnBrote": false,
+    "notaBrote": "Evitar en brotes con inflamación intestinal.",
+    "aptaEnMantenimiento": true,
+    "notaMantenimiento": "Apoyo depurativo y hepático en remisión.",
+    "mecanismoEII": "Efecto depurativo y antioxidante.",
+    "referenciaEII": "Uso tradicional y estudios preclínicos"
+  },
+  "modoCeliaquiaGluten": {
+    "libreDeGluten": true,
+    "nota": "Raíz naturalmente libre de gluten.",
+    "indicacionEspecifica": ""
+  },
+  "usos": {
+    "interno": true,
+    "externo": true,
+    "culinario": false
+  },
+  "preparacion": "Decocción de raíz.",
+  "contraindicaciones": "Alergia a Asteraceae.",
+  "interaccionesMedicamentosas": "Bajo riesgo.",
+  "embarazoLactancia": "Evitar.",
+  "compatibilidadPlantas": {
+    "sinergicas": [
+      "Diente de león"
+    ],
+    "incompatibles": []
+  },
+  "infusionesRelacionadas": [],
+  "emoji": "🌿",
+  "etiquetas": [
+    "depurativo",
+    "piel"
+  ],
+  "fuentes": [
+    {
+      "autor": "Chan YS et al.",
+      "titulo": "A review of the pharmacological effects of Arctium lappa (burdock)",
+      "publicacion": "Inflammopharmacology",
+      "año": "2011",
+      "doi": "10.1007/s10787-010-0103-5",
+      "pmid": "20981575",
+      "tipo": "Revisión",
+      "nivelEvidencia": "C",
+      "idioma": "en"
+    },
+    {
+      "autor": "Predes FS et al.",
+      "titulo": "Antioxidant, anti-inflammatory and hepatoprotective effects of Arctium lappa root extract",
+      "publicacion": "Journal of Ethnopharmacology",
+      "año": "2011",
+      "doi": "10.1016/j.jep.2011.05.007",
+      "pmid": "21651957",
+      "tipo": "Estudio experimental",
+      "nivelEvidencia": "C",
+      "idioma": "en"
+    }
+  ],
+  "advertencia": "",
+  "disclaimer": "La información es para fines educativos. Consulta a un profesional de la salud antes de usar."
+}

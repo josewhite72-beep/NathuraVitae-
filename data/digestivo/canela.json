@@ -1,0 +1,120 @@
+{
+  "id": "canela",
+  "versionFicha": "2.0",
+  "estadoFicha": "publicada",
+  "fechaCreacion": "2026-04-18",
+  "fechaRevision": "2026-04-18",
+  "nombreComun": "Canela",
+  "nombresAlternativos": [
+    "Canela verdadera"
+  ],
+  "nombreCientifico": "Cinnamomum verum J.Presl",
+  "sinonimiasCientificas": [
+    "Cinnamomum zeylanicum Blume"
+  ],
+  "familia": "Lauraceae",
+  "orden": "",
+  "clase": "",
+  "regionOrigen": "Sri Lanka e India (cultivada en América)",
+  "habitatNatural": "Huertos tropicales",
+  "disponibilidadPanama": {
+    "disponible": true,
+    "nombreLocal": "Canela",
+    "formaComercial": "Corteza en polvo o rama",
+    "dondeConseguir": "Supermercados y mercados locales en Panamá",
+    "cultivoLocal": false,
+    "endemicaPanama": false,
+    "notaRegional": "Usada ampliamente en Panamá como hipoglucemiante y antimicrobiana"
+  },
+  "cultivoCasero": {
+    "dificultad": "Alta",
+    "apta": false,
+    "maceta": false,
+    "luz": "Sol pleno",
+    "agua": "Moderada",
+    "suelo": "Bien drenado",
+    "clima": "Tropical",
+    "notaCultivo": "Árbol tropical",
+    "tiempoACosecha": "Varios años"
+  },
+  "partesUsadas": [
+    "Corteza"
+  ],
+  "resumen": "Especia con potentes propiedades hipoglucemiantes y antimicrobianas, muy usada en la cocina y medicina tradicional panameña.",
+  "usoTradicionalHistorico": "Control de glucosa, infecciones, digestión y como antimicrobiano.",
+  "nivelEvidenciaGlobal": "B",
+  "fuentePrimaria": "",
+  "grupoTerapeutico": "Hipoglucemiante",
+  "propiedades": "Hipoglucemiante, antimicrobiano, antioxidante",
+  "fotoquimica": "Cinamaldehído y polifenoles",
+  "dolencias": [
+    "Diabetes tipo 2",
+    "Infecciones",
+    "Indigestión"
+  ],
+  "sistemas": [
+    "Endocrino",
+    "Digestivo"
+  ],
+  "modoEII": {
+    "aptaEnBrote": true,
+    "notaBrote": "Con moderación como especia para apoyo digestivo.",
+    "aptaEnMantenimiento": true,
+    "notaMantenimiento": "Buen apoyo hipoglucemiante y antiinflamatorio.",
+    "mecanismoEII": "Mejora sensibilidad a la insulina y reduce inflamación.",
+    "referenciaEII": "Estudios clínicos y uso tradicional panameño"
+  },
+  "modoCeliaquiaGluten": {
+    "libreDeGluten": true,
+    "nota": "Corteza pura naturalmente libre de gluten (verificar mezclas comerciales).",
+    "indicacionEspecifica": ""
+  },
+  "usos": {
+    "interno": true,
+    "externo": false,
+    "culinario": true
+  },
+  "preparacion": "Infusión de corteza o uso como especia.",
+  "contraindicaciones": "Embarazo en dosis altas, úlcera gástrica.",
+  "interaccionesMedicamentosas": "Puede potenciar antidiabéticos.",
+  "embarazoLactancia": "Seguro en uso culinario.",
+  "compatibilidadPlantas": {
+    "sinergicas": [
+      "Jengibre",
+      "Cúrcuma"
+    ],
+    "incompatibles": []
+  },
+  "infusionesRelacionadas": [],
+  "emoji": "🌿",
+  "etiquetas": [
+    "diabetes",
+    "antimicrobiano"
+  ],
+  "fuentes": [
+    {
+      "autor": "Ranasinghe P et al.",
+      "titulo": "Efficacy and safety of true cinnamon (Cinnamomum zeylanicum) as a pharmaceutical agent in diabetes: a systematic review and meta-analysis",
+      "publicacion": "Diabetic Medicine",
+      "año": "2012",
+      "doi": "10.1111/j.1464-5491.2012.03718.x",
+      "pmid": "22671971",
+      "tipo": "Meta-análisis",
+      "nivelEvidencia": "B",
+      "idioma": "en"
+    },
+    {
+      "autor": "Muthukuda D et al.",
+      "titulo": "Effects of Cinnamomum zeylanicum on metabolic parameters in patients with type 2 diabetes mellitus: A systematic review and meta-analysis",
+      "publicacion": "PLOS ONE",
+      "año": "2025",
+      "doi": "",
+      "pmid": "",
+      "tipo": "Meta-análisis",
+      "nivelEvidencia": "B",
+      "idioma": "en"
+    }
+  ],
+  "advertencia": "Usar canela verdadera (C. verum); evitar cassia en exceso por cumarina.",
+  "disclaimer": "La información es para fines educativos. Consulta a un profesional de la salud antes de usar."
+}

@@ -1,0 +1,119 @@
+{
+  "id": "diente-de-leon",
+  "versionFicha": "2.0",
+  "estadoFicha": "publicada",
+  "fechaCreacion": "2026-04-18",
+  "fechaRevision": "2026-04-18",
+  "nombreComun": "Diente de león",
+  "nombresAlternativos": [
+    "Taraxaco"
+  ],
+  "nombreCientifico": "Taraxacum officinale F.H.Wigg.",
+  "sinonimiasCientificas": [],
+  "familia": "Asteraceae",
+  "orden": "",
+  "clase": "",
+  "regionOrigen": "Europa y Asia (naturalizada en América)",
+  "habitatNatural": "Zonas rurales y huertos",
+  "disponibilidadPanama": {
+    "disponible": true,
+    "nombreLocal": "Diente de león",
+    "formaComercial": "Hojas y raíz",
+    "dondeConseguir": "Huertos rurales y herbolarios en Panamá",
+    "cultivoLocal": true,
+    "endemicaPanama": false,
+    "notaRegional": "Usado en Panamá como diurético y para soporte hepático"
+  },
+  "cultivoCasero": {
+    "dificultad": "Baja",
+    "apta": true,
+    "maceta": true,
+    "luz": "Sol pleno",
+    "agua": "Moderada",
+    "suelo": "Bien drenado",
+    "clima": "Tropical",
+    "notaCultivo": "Hierba perenne común",
+    "tiempoACosecha": "Continuo"
+  },
+  "partesUsadas": [
+    "Hojas",
+    "Raíz"
+  ],
+  "resumen": "Planta con propiedades diuréticas y hepatoprotectoras reconocidas por la OMS y estudios clínicos.",
+  "usoTradicionalHistorico": "Diurético, depurativo hepático y soporte digestivo.",
+  "nivelEvidenciaGlobal": "B",
+  "fuentePrimaria": "",
+  "grupoTerapeutico": "Diurético, hepatoprotector",
+  "propiedades": "Diurético, hepatoprotector, antioxidante",
+  "fotoquimica": "Inulina, flavonoides y sesquiterpenos",
+  "dolencias": [
+    "Retención de líquidos",
+    "Problemas hepáticos",
+    "Digestión"
+  ],
+  "sistemas": [
+    "Urinario",
+    "Digestivo"
+  ],
+  "modoEII": {
+    "aptaEnBrote": false,
+    "notaBrote": "Evitar en brotes con diarrea o inflamación intestinal.",
+    "aptaEnMantenimiento": true,
+    "notaMantenimiento": "Buen apoyo diurético y hepático en remisión.",
+    "mecanismoEII": "Efecto diurético suave y protección hepática antioxidante.",
+    "referenciaEII": "Estudios clínicos y monografías OMS"
+  },
+  "modoCeliaquiaGluten": {
+    "libreDeGluten": true,
+    "nota": "Hojas y raíz naturalmente libres de gluten.",
+    "indicacionEspecifica": ""
+  },
+  "usos": {
+    "interno": true,
+    "externo": false,
+    "culinario": true
+  },
+  "preparacion": "Infusión de hojas o raíz.",
+  "contraindicaciones": "Obstrucción biliar, alergia a Asteraceae.",
+  "interaccionesMedicamentosas": "Precaución con diuréticos.",
+  "embarazoLactancia": "Seguro en uso moderado.",
+  "compatibilidadPlantas": {
+    "sinergicas": [
+      "Boldo",
+      "Alcachofa"
+    ],
+    "incompatibles": []
+  },
+  "infusionesRelacionadas": [],
+  "emoji": "🌼",
+  "etiquetas": [
+    "diurético",
+    "hígado"
+  ],
+  "fuentes": [
+    {
+      "autor": "Clare BA et al.",
+      "titulo": "The diuretic effect in human subjects of an extract of Taraxacum officinale folium",
+      "publicacion": "Journal of Alternative and Complementary Medicine",
+      "año": "2009",
+      "doi": "10.1089/acm.2008.0152",
+      "pmid": "19678785",
+      "tipo": "Estudio clínico",
+      "nivelEvidencia": "B",
+      "idioma": "en"
+    },
+    {
+      "autor": "Di Napoli A et al.",
+      "titulo": "A comprehensive review of the benefits of Taraxacum officinale on human health",
+      "publicacion": "Bulletin of the National Research Centre",
+      "año": "2021",
+      "doi": "10.1186/s42269-021-00567-1",
+      "pmid": "",
+      "tipo": "Revisión",
+      "nivelEvidencia": "B",
+      "idioma": "en"
+    }
+  ],
+  "advertencia": "",
+  "disclaimer": "La información es para fines educativos. Consulta a un profesional de la salud antes de usar."
+}

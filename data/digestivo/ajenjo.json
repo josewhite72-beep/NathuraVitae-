@@ -1,0 +1,114 @@
+{
+  "id": "ajenjo",
+  "versionFicha": "2.0",
+  "estadoFicha": "publicada",
+  "fechaCreacion": "2026-04-18",
+  "fechaRevision": "2026-04-18",
+  "nombreComun": "Ajenjo",
+  "nombresAlternativos": [
+    "Absenta"
+  ],
+  "nombreCientifico": "Artemisia absinthium L.",
+  "sinonimiasCientificas": [],
+  "familia": "Asteraceae",
+  "orden": "",
+  "clase": "",
+  "regionOrigen": "Europa y Asia",
+  "habitatNatural": "Huertos y zonas secas",
+  "disponibilidadPanama": {
+    "disponible": true,
+    "nombreLocal": "Ajenjo",
+    "formaComercial": "Hojas secas",
+    "dondeConseguir": "Herbolarios en Panamá",
+    "cultivoLocal": true,
+    "endemicaPanama": false,
+    "notaRegional": "Usado en Panamá como digestivo amargo y antiparasitario"
+  },
+  "cultivoCasero": {
+    "dificultad": "Media",
+    "apta": true,
+    "maceta": true,
+    "luz": "Sol pleno",
+    "agua": "Baja",
+    "suelo": "Bien drenado",
+    "clima": "Templado a tropical seco",
+    "notaCultivo": "Arbusto aromático amargo",
+    "tiempoACosecha": "Continuo"
+  },
+  "partesUsadas": [
+    "Hojas"
+  ],
+  "resumen": "Planta digestiva amarga con actividad antiparasitaria, pero con toxicidad conocida en dosis altas.",
+  "usoTradicionalHistorico": "Digestivo, estimulante del apetito y antiparasitario.",
+  "nivelEvidenciaGlobal": "C",
+  "fuentePrimaria": "",
+  "grupoTerapeutico": "Digestivo amargo",
+  "propiedades": "Amargo digestivo, antiparasitario, estimulante gástrico",
+  "fotoquimica": "Tujona, absintina y flavonoides",
+  "dolencias": [
+    "Indigestión",
+    "Falta de apetito",
+    "Parasitosis"
+  ],
+  "sistemas": [
+    "Digestivo"
+  ],
+  "modoEII": {
+    "aptaEnBrote": false,
+    "notaBrote": "Evitar en brotes con irritación gástrica.",
+    "aptaEnMantenimiento": true,
+    "notaMantenimiento": "Uso corto para apoyo digestivo.",
+    "mecanismoEII": "Estimula secreción gástrica.",
+    "referenciaEII": "Uso tradicional"
+  },
+  "modoCeliaquiaGluten": {
+    "libreDeGluten": true,
+    "nota": "Hojas naturalmente libres de gluten.",
+    "indicacionEspecifica": ""
+  },
+  "usos": {
+    "interno": true,
+    "externo": false,
+    "culinario": false
+  },
+  "preparacion": "Infusión corta de hojas (dosis bajas).",
+  "contraindicaciones": "Embarazo, epilepsia, úlcera gástrica.",
+  "interaccionesMedicamentosas": "Puede interferir con anticonvulsivos.",
+  "embarazoLactancia": "Contraindicado.",
+  "compatibilidadPlantas": {
+    "sinergicas": [],
+    "incompatibles": []
+  },
+  "infusionesRelacionadas": [],
+  "emoji": "🌿",
+  "etiquetas": [
+    "digestivo",
+    "antiparasitario"
+  ],
+  "fuentes": [
+    {
+      "autor": "Lopes-Lutz D et al.",
+      "titulo": "Chemical composition and antimicrobial activity of Artemisia absinthium L.",
+      "publicacion": "Journal of Agricultural and Food Chemistry",
+      "año": "2008",
+      "doi": "10.1021/jf8007407",
+      "pmid": "18543937",
+      "tipo": "Estudio fitoquímico",
+      "nivelEvidencia": "C",
+      "idioma": "en"
+    },
+    {
+      "autor": "Batiha GE et al.",
+      "titulo": "Chemical Constituents and Pharmacological Effects of Artemisia absinthium",
+      "publicacion": "Natural Product Communications",
+      "año": "2020",
+      "doi": "10.1177/1934578X20962405",
+      "pmid": "",
+      "tipo": "Revisión",
+      "nivelEvidencia": "C",
+      "idioma": "en"
+    }
+  ],
+  "advertencia": "⚠ ADVERTENCIA: Contiene tujona, neurotóxica en dosis altas o uso prolongado. No exceder dosis recomendadas ni usar más de 2 semanas seguidas. Contraindicado en epilepsia y embarazo.",
+  "disclaimer": "La información es para fines educativos. Consulta a un profesional de la salud antes de usar."
+}

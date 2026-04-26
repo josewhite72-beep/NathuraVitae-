@@ -1,0 +1,119 @@
+{
+  "id": "oregano",
+  "versionFicha": "2.0",
+  "estadoFicha": "publicada",
+  "fechaCreacion": "2026-04-18",
+  "fechaRevision": "2026-04-18",
+  "nombreComun": "Orégano",
+  "nombresAlternativos": [
+    "Oregano"
+  ],
+  "nombreCientifico": "Origanum vulgare L.",
+  "sinonimiasCientificas": [],
+  "familia": "Lamiaceae",
+  "orden": "",
+  "clase": "",
+  "regionOrigen": "Mediterráneo (cultivado en América)",
+  "habitatNatural": "Huertos y jardines",
+  "disponibilidadPanama": {
+    "disponible": true,
+    "nombreLocal": "Orégano",
+    "formaComercial": "Hojas secas",
+    "dondeConseguir": "Mercados locales y huertos en Panamá",
+    "cultivoLocal": true,
+    "endemicaPanama": false,
+    "notaRegional": "Usado en Panamá como digestivo y antimicrobiano en la cocina y medicina tradicional"
+  },
+  "cultivoCasero": {
+    "dificultad": "Baja",
+    "apta": true,
+    "maceta": true,
+    "luz": "Sol pleno",
+    "agua": "Baja",
+    "suelo": "Bien drenado",
+    "clima": "Tropical a templado",
+    "notaCultivo": "Arbusto aromático de fácil cultivo",
+    "tiempoACosecha": "Continuo"
+  },
+  "partesUsadas": [
+    "Hojas"
+  ],
+  "resumen": "Hierba aromática con potentes propiedades digestivas y antimicrobianas, ampliamente usada en Panamá.",
+  "usoTradicionalHistorico": "Infusión para problemas digestivos, infecciones respiratorias y como antimicrobiano.",
+  "nivelEvidenciaGlobal": "B",
+  "fuentePrimaria": "",
+  "grupoTerapeutico": "Digestivo, antimicrobiano",
+  "propiedades": "Antimicrobiano, digestivo, antioxidante, carminativo",
+  "fotoquimica": "Carvacrol, timol y flavonoides",
+  "dolencias": [
+    "Indigestión",
+    "Gases",
+    "Infecciones bacterianas",
+    "Resfriados"
+  ],
+  "sistemas": [
+    "Digestivo",
+    "Respiratorio"
+  ],
+  "modoEII": {
+    "aptaEnBrote": true,
+    "notaBrote": "Con moderación para síntomas digestivos leves.",
+    "aptaEnMantenimiento": true,
+    "notaMantenimiento": "Apoyo antimicrobiano y digestivo.",
+    "mecanismoEII": "Actividad antibacteriana y antiinflamatoria.",
+    "referenciaEII": "Uso tradicional en Panamá y estudios in vitro"
+  },
+  "modoCeliaquiaGluten": {
+    "libreDeGluten": true,
+    "nota": "Hojas naturalmente libres de gluten.",
+    "indicacionEspecifica": ""
+  },
+  "usos": {
+    "interno": true,
+    "externo": true,
+    "culinario": true
+  },
+  "preparacion": "Infusión de hojas o uso como especia.",
+  "contraindicaciones": "Embarazo en dosis altas.",
+  "interaccionesMedicamentosas": "Bajo riesgo.",
+  "embarazoLactancia": "Seguro en uso culinario moderado.",
+  "compatibilidadPlantas": {
+    "sinergicas": [
+      "Tomillo",
+      "Menta"
+    ],
+    "incompatibles": []
+  },
+  "infusionesRelacionadas": [],
+  "emoji": "🌿",
+  "etiquetas": [
+    "digestivo",
+    "antimicrobiano"
+  ],
+  "fuentes": [
+    {
+      "autor": "Tejada-Muñoz S et al.",
+      "titulo": "Antimicrobial Activity of Origanum vulgare Essential Oil against Staphylococcus aureus and Escherichia coli",
+      "publicacion": "Pharmaceuticals",
+      "año": "2024",
+      "doi": "10.3390/ph17111430",
+      "pmid": "",
+      "tipo": "Estudio in vitro",
+      "nivelEvidencia": "B",
+      "idioma": "en"
+    },
+    {
+      "autor": "Soltani S et al.",
+      "titulo": "A Review of the Phytochemistry and Antimicrobial Properties of Origanum vulgare L.",
+      "publicacion": "Frontiers in Pharmacology",
+      "año": "2021",
+      "doi": "",
+      "pmid": "",
+      "tipo": "Revisión",
+      "nivelEvidencia": "B",
+      "idioma": "en"
+    }
+  ],
+  "advertencia": "",
+  "disclaimer": "La información es para fines educativos. Consulta a un profesional de la salud antes de usar."
+}
