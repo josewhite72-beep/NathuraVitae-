@@ -397,14 +397,14 @@ body{
   <div class="hero-deco">🌿</div>
   <div class="hero-deco2">🌼</div>
   <div class="hero-greeting" id="saludo">Buen día</div>
-  <div class="hero-title">La naturaleza<br>tiene una <em>respuesta</em></div>
+  <div class="hero-title">La Naturaleza es vida,<br>alimento y <em>medicina</em></div>
   <div class="hero-sub">Plantas medicinales, infusiones y bienestar con respaldo científico.</div>
 
-  <div class="planta-dia-chip" onclick="irA('herbologia-indice.html')">
-    <span class="pdc-ico">🌼</span>
+  <div class="planta-dia-chip" onclick="irAPlantaDia()">
+    <span class="pdc-ico" id="hero-pdc-ico">🌿</span>
     <div>
       <div class="pdc-label">Planta del día</div>
-      <div class="pdc-nom">Manzanilla</div>
+      <div class="pdc-nom" id="hero-pdc-nom">—</div>
     </div>
   </div>
 
@@ -965,6 +965,11 @@ function renderPlantaDia(){
     '<span class="pdc-prop '+(i===0?'fuerte':'moderado')+'">'+pr+'</span>').join('');
   document.getElementById('pdc-eii-txt').textContent=
     p.eii?'Segura en brote EII':'Consultar en brote EII';
+  // Actualizar chip del hero
+  var heroNom = document.getElementById('hero-pdc-nom');
+  var heroIco = document.getElementById('hero-pdc-ico');
+  if(heroNom) heroNom.textContent = p.nom;
+  if(heroIco) heroIco.textContent = p.ico;
 }
 renderPlantaDia();
 </script>
