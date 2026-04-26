@@ -1,0 +1,118 @@
+{
+  "id": "violeta",
+  "versionFicha": "2.0",
+  "estadoFicha": "publicada",
+  "fechaCreacion": "2026-04-18",
+  "fechaRevision": "2026-04-18",
+  "nombreComun": "Violeta",
+  "nombresAlternativos": [
+    "Violeta olorosa"
+  ],
+  "nombreCientifico": "Viola odorata L.",
+  "sinonimiasCientificas": [],
+  "familia": "Violaceae",
+  "orden": "",
+  "clase": "",
+  "regionOrigen": "Europa (naturalizada en Caribe)",
+  "habitatNatural": "Huertos y zonas sombreadas",
+  "disponibilidadPanama": {
+    "disponible": true,
+    "nombreLocal": "Violeta",
+    "formaComercial": "Flores y hojas",
+    "dondeConseguir": "Huertos y herbolarios",
+    "cultivoLocal": true,
+    "endemicaPanama": false,
+    "notaRegional": "Usada en el Caribe como expectorante suave"
+  },
+  "cultivoCasero": {
+    "dificultad": "Baja",
+    "apta": true,
+    "maceta": true,
+    "luz": "Sombra parcial",
+    "agua": "Moderada",
+    "suelo": "Húmedo y fértil",
+    "clima": "Tropical",
+    "notaCultivo": "Planta perenne de flores aromáticas",
+    "tiempoACosecha": "Continuo"
+  },
+  "partesUsadas": [
+    "Flores",
+    "Hojas"
+  ],
+  "resumen": "Planta con acción expectorante suave y calmante respiratoria tradicional en el Caribe.",
+  "usoTradicionalHistorico": "Infusión para tos, resfriados y afecciones respiratorias leves.",
+  "nivelEvidenciaGlobal": "C",
+  "fuentePrimaria": "",
+  "grupoTerapeutico": "Expectorante",
+  "propiedades": "Expectorante, emoliente, calmante",
+  "fotoquimica": "Flavonoides, mucílagos y salicilatos",
+  "dolencias": [
+    "Tos",
+    "Resfriados",
+    "Irritación de garganta"
+  ],
+  "sistemas": [
+    "Respiratorio"
+  ],
+  "modoEII": {
+    "aptaEnBrote": true,
+    "notaBrote": "Útil para tos seca o irritativa.",
+    "aptaEnMantenimiento": true,
+    "notaMantenimiento": "Apoyo respiratorio suave.",
+    "mecanismoEII": "Efecto emoliente y expectorante.",
+    "referenciaEII": "Uso tradicional caribeño"
+  },
+  "modoCeliaquiaGluten": {
+    "libreDeGluten": true,
+    "nota": "Flores y hojas naturalmente libres de gluten.",
+    "indicacionEspecifica": ""
+  },
+  "usos": {
+    "interno": true,
+    "externo": false,
+    "culinario": false
+  },
+  "preparacion": "Infusión de flores y hojas.",
+  "contraindicaciones": "",
+  "interaccionesMedicamentosas": "Bajo riesgo.",
+  "embarazoLactancia": "Seguro en uso moderado.",
+  "compatibilidadPlantas": {
+    "sinergicas": [
+      "Eucalipto",
+      "Menta"
+    ],
+    "incompatibles": []
+  },
+  "infusionesRelacionadas": [],
+  "emoji": "🌸",
+  "etiquetas": [
+    "respiratorio",
+    "expectorante"
+  ],
+  "fuentes": [
+    {
+      "autor": "Gupta MP et al.",
+      "titulo": "Plantas Medicinales de Panamá",
+      "publicacion": "Editorial Universitaria, Universidad de Panamá",
+      "año": "2000",
+      "doi": "",
+      "pmid": "",
+      "tipo": "Monografía etnobotánica",
+      "nivelEvidencia": "C",
+      "idioma": "es"
+    },
+    {
+      "autor": "TRAMIL",
+      "titulo": "Viola odorata",
+      "publicacion": "TRAMIL Database",
+      "año": "",
+      "doi": "",
+      "pmid": "",
+      "tipo": "Monografía etnobotánica",
+      "nivelEvidencia": "C",
+      "idioma": "es"
+    }
+  ],
+  "advertencia": "",
+  "disclaimer": "La información es para fines educativos. Consulta a un profesional de la salud antes de usar."
+}

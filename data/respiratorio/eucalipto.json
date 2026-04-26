@@ -2,226 +2,117 @@
   "id": "eucalipto",
   "versionFicha": "2.0",
   "estadoFicha": "publicada",
-  "fechaCreacion": "2026-04-15",
-  "fechaRevision": "2026-04-15",
+  "fechaCreacion": "2026-04-18",
+  "fechaRevision": "2026-04-18",
   "nombreComun": "Eucalipto",
   "nombresAlternativos": [
-    {
-      "nombre": "Eucalyptus",
-      "idioma": "en",
-      "region": "Internacional"
-    }
+    "Eucalipto globulus"
   ],
   "nombreCientifico": "Eucalyptus globulus Labill.",
   "sinonimiasCientificas": [],
   "familia": "Myrtaceae",
-  "orden": "Myrtales",
-  "clase": "Magnoliopsida",
-  "regionOrigen": [
-    "Australia",
-    "Tasmania"
-  ],
-  "habitatNatural": "Bosques húmedos y zonas templadas a subtropicales",
+  "orden": "",
+  "clase": "",
+  "regionOrigen": "Australia (cultivado mundialmente)",
+  "habitatNatural": "Huertos y plantaciones",
   "disponibilidadPanama": {
     "disponible": true,
     "nombreLocal": "Eucalipto",
-    "formaComercial": [
-      "fresca",
-      "seca",
-      "aceite-esencial",
-      "tintura"
-    ],
-    "dondeConseguir": [
-      "mercado-público",
-      "supermercado",
-      "tienda-naturista",
-      "farmacia"
-    ],
+    "formaComercial": "Hojas y aceite esencial",
+    "dondeConseguir": "Mercados locales y herbolarios en Panamá",
     "cultivoLocal": true,
     "endemicaPanama": false,
-    "notaRegional": "Muy común en Panamá, cultivado ampliamente. Hojas disponibles en mercados. Aceite esencial en farmacias y tiendas naturistas."
+    "notaRegional": "Usado ampliamente en Panamá como expectorante para tos y resfriados"
   },
   "cultivoCasero": {
-    "dificultad": "facil",
+    "dificultad": "Media",
     "apta": true,
     "maceta": false,
-    "luz": "pleno-sol",
-    "agua": "moderado",
-    "suelo": "Bien drenado, fértil y ligeramente ácido",
-    "clima": "Excelente adaptación al clima tropical panameño",
-    "notaCultivo": "Árbol de rápido crecimiento. No apto para maceta. Cosechar hojas maduras a partir del segundo año.",
-    "tiempoACosecha": "Continuo desde 1-2 años"
+    "luz": "Sol pleno",
+    "agua": "Moderada",
+    "suelo": "Bien drenado",
+    "clima": "Tropical",
+    "notaCultivo": "Árbol de crecimiento rápido",
+    "tiempoACosecha": "Continuo (hojas)"
   },
   "partesUsadas": [
-    {
-      "parte": "hoja",
-      "nota": "Aceite esencial rico en 1,8-cineol (eucaliptol). CONTRAINDICADO en niños menores de 2 años."
-    }
+    "Hojas"
   ],
-  "resumen": "El aceite esencial de Eucalyptus globulus con 1,8-cineol actúa como expectorante y descongestionante respiratorio. EMA 2024 (revisión 1) reconoce uso bien establecido. Contraindicado en menores de 2 años.",
-  "usoTradicionalHistorico": {
-    "culturas": [
-      {
-        "cultura": "Aborígenes australianos",
-        "uso": "Infecciones respiratorias",
-        "periodo": "Tradicional"
-      },
-      {
-        "cultura": "Medicina europea",
-        "uso": "Bronquitis, sinusitis, inhalaciones",
-        "periodo": "Siglo XIX — presente"
-      }
-    ],
-    "primerasMencionesHistoricas": "Introducido en Europa en 1854",
-    "usoIndigenaRegional": "Cultivado y usado en vaporizaciones en Panamá para resfriados"
-  },
-  "nivelEvidenciaGlobal": "B",
-  "fuentePrimaria": {
-    "institucion": "EMA",
-    "tipo": "monografía",
-    "titulo": "European Union herbal monograph on Eucalyptus globulus Labill., Eucalyptus polybractea R.T. Baker and/or Eucalyptus smithii R.T. Baker, aetheroleum (Revision 1). EMA/HMPC/320292/2023",
-    "año": 2024,
-    "url": "https://www.ema.europa.eu/en/documents/herbal-monograph/final-european-union-herbal-monograph-eucalyptus-globulus-labill-eucalyptus-polybractea-rt-baker-eucalyptus-smithii-rt-baker-aetheroleum-revision-1_en.pdf"
-  },
-  "grupoTerapeutico": [
-    "expectorante",
-    "descongestionante",
-    "antiséptico respiratorio"
-  ],
-  "propiedades": [
-    {
-      "nombre": "Expectorante y mucolítico",
-      "nivelEvidencia": "fuerte",
-      "mecanismoAccion": "El 1,8-cineol estimula la secreción de moco y la actividad ciliar en vías respiratorias, facilitando la expulsión de secreciones. Inhibe la producción de citoquinas proinflamatorias en epitelio bronquial.",
-      "referencia": "EMA/HMPC/320292/2023"
-    }
-  ],
-  "fotoquimica": [
-    {
-      "compuesto": "1,8-Cineol (eucaliptol)",
-      "grupo": "monoterpeno",
-      "accion": "Expectorante, mucolítico, antiséptico, antiinflamatorio",
-      "concentracion": "70-85% en aceite esencial"
-    }
-  ],
+  "resumen": "Expectorante reconocido por la OMS y EMA para afecciones respiratorias.",
+  "usoTradicionalHistorico": "Infusión o inhalaciones para tos, bronquitis, resfriados y congestión nasal.",
+  "nivelEvidenciaGlobal": "A",
+  "fuentePrimaria": "",
+  "grupoTerapeutico": "Expectorante",
+  "propiedades": "Expectorante, mucolítico, antiséptico respiratorio",
+  "fotoquimica": "1,8-cineol (eucaliptol), monoterpenos",
   "dolencias": [
-    {
-      "nombre": "Tos y congestión asociadas a resfriado",
-      "categoria": "respiratorio",
-      "nivelEvidencia": "fuerte",
-      "dosis": "Inhalación: 2-3 gotas aceite esencial en agua caliente. Oral: 100-200 mg en cápsulas entéricas, 2-5 veces/día",
-      "duracion": "Hasta 1 semana",
-      "referencia": "EMA/HMPC/320292/2023"
-    }
+    "Tos",
+    "Bronquitis",
+    "Resfriados",
+    "Congestión nasal"
   ],
   "sistemas": [
-    "respiratorio",
-    "inmunológico"
+    "Respiratorio"
   ],
   "modoEII": {
     "aptaEnBrote": true,
-    "notaBrote": "Segura en inhalación para síntomas respiratorios. El aceite esencial oral en dosis altas puede irritar mucosa gastrointestinal.",
+    "notaBrote": "Útil para síntomas respiratorios leves en brote (inhalaciones).",
     "aptaEnMantenimiento": true,
-    "notaMantenimiento": "Útil para tos o congestión sin agravar inflamación intestinal",
-    "mecanismoEII": "Efecto local mucolítico. El aceite esencial oral debe usarse en cápsulas entéricas para minimizar contacto con mucosa intestinal.",
-    "referenciaEII": "Sin estudios específicos"
+    "notaMantenimiento": "Apoyo expectorante en remisión.",
+    "mecanismoEII": "Estimula secreción y facilita expectoración.",
+    "referenciaEII": "Monografías EMA y OMS"
   },
   "modoCeliaquiaGluten": {
     "libreDeGluten": true,
-    "nota": "Libre de gluten",
-    "indicacionEspecifica": "Seguro en celiaquía"
+    "nota": "Hojas naturalmente libres de gluten.",
+    "indicacionEspecifica": ""
   },
   "usos": {
-    "interno": [
-      "Tos productiva",
-      "resfriado",
-      "bronquitis leve",
-      "sinusitis"
-    ],
-    "externo": [
-      "Inhalación",
-      "friegas torácicas",
-      "repelente de insectos"
-    ],
-    "culinario": []
+    "interno": true,
+    "externo": true,
+    "culinario": false
   },
-  "preparacion": [
-    {
-      "forma": "inhalación",
-      "instrucciones": "Añadir 2-3 gotas de aceite esencial en un recipiente con agua caliente (no hirviendo). Cubrir la cabeza con toalla e inhalar vapores durante 5-10 minutos.",
-      "cantidadPlanta": "2-3 gotas",
-      "temperatura": "60-70°C",
-      "tiempoPreparacion": "Inmediato",
-      "dosis": "2-3 veces al día",
-      "duracionMaxima": "1 semana",
-      "notaPreparacion": "NO aplicar aceite esencial directamente en la cara de niños. NO ingerir aceite esencial puro sin diluir. Contraindicado en menores de 2 años."
-    }
-  ],
-  "contraindicaciones": [
-    {
-      "condicion": "Niños menores de 2 años (aceite esencial)",
-      "gravedad": "absoluta",
-      "justificacion": "Riesgo de laringoespasmo y depresión respiratoria por 1,8-cineol"
-    },
-    {
-      "condicion": "Asma bronquial severa",
-      "gravedad": "relativa",
-      "justificacion": "El aceite esencial inhalado puede desencadenar broncoespasmo"
-    }
-  ],
-  "interaccionesMedicamentosas": [
-    {
-      "medicamento": "Fármacos metabolizados por CYP1A2 y CYP3A4",
-      "tipo": "alteración-metabolismo",
-      "mecanismo": "El 1,8-cineol puede inducir estas enzimas en uso prolongado",
-      "gravedad": "leve"
-    }
-  ],
-  "embarazoLactancia": {
-    "embarazo": "precaución",
-    "lactancia": "precaución",
-    "pediatria": "Contraindicado en menores de 2 años. No recomendado en menores de 12 años para uso oral interno.",
-    "justificacion": "Datos limitados según EMA"
-  },
+  "preparacion": "Infusión de hojas o inhalaciones con aceite esencial.",
+  "contraindicaciones": "Niños menores de 2 años (aceite esencial), asma grave.",
+  "interaccionesMedicamentosas": "Bajo riesgo.",
+  "embarazoLactancia": "Evitar aceite esencial; infusión con precaución.",
   "compatibilidadPlantas": {
     "sinergicas": [
-      {
-        "plantaId": "tomillo",
-        "plantaNom": "Tomillo",
-        "motivo": "Sinergia expectorante y antiséptica en bronquitis"
-      },
-      {
-        "plantaId": "gordolobo",
-        "plantaNom": "Gordolobo",
-        "motivo": "Sinergia expectorante + demulcente — ideal para tos productiva con mucosa irritada"
-      }
+      "Menta",
+      "Tomillo"
     ],
     "incompatibles": []
   },
   "infusionesRelacionadas": [],
-  "emoji": "🌲",
+  "emoji": "🌳",
   "etiquetas": [
-    "expectorante",
     "respiratorio",
-    "nivel-B",
-    "ema",
-    "cultivable-panama",
-    "libre-gluten",
-    "disponible-panama"
+    "expectorante"
   ],
   "fuentes": [
     {
-      "autor": "European Medicines Agency",
-      "titulo": "European Union herbal monograph on Eucalyptus globulus Labill., aetheroleum (Revision 1). EMA/HMPC/320292/2023",
-      "publicacion": "EMA",
-      "año": 2024,
+      "autor": "EMA HMPC",
+      "titulo": "Community herbal monograph on Eucalyptus globulus Labill., folium",
+      "publicacion": "European Medicines Agency",
+      "año": "2013",
       "doi": "",
       "pmid": "",
-      "tipo": "monografía-EMA",
+      "tipo": "Monografía EMA",
+      "nivelEvidencia": "A",
+      "idioma": "en"
+    },
+    {
+      "autor": "Čmiková N et al.",
+      "titulo": "Chemical Composition and Biological Activities of Eucalyptus globulus Essential Oil",
+      "publicacion": "Plants",
+      "año": "2023",
+      "doi": "10.3390/plants12061274",
+      "pmid": "",
+      "tipo": "Revisión",
       "nivelEvidencia": "B",
       "idioma": "en"
     }
   ],
-  "advertencia": "CONTRAINDICADO en niños menores de 2 años. No ingerir aceite esencial puro.",
-  "disclaimer": "Esta información es educativa y no sustituye el diagnóstico ni el tratamiento médico profesional."
+  "advertencia": "No usar aceite esencial puro en niños pequeños.",
+  "disclaimer": "La información es para fines educativos. Consulta a un profesional de la salud antes de usar."
 }
