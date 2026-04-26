@@ -397,7 +397,7 @@ body{
   <div class="hero-deco">🌿</div>
   <div class="hero-deco2">🌼</div>
   <div class="hero-greeting" id="saludo">Buen día</div>
-  <div class="hero-title">La naturaleza es Vida<br>Alimento<em>y Medicina</em></div>
+  <div class="hero-title">La naturaleza<br>tiene una <em>respuesta</em></div>
   <div class="hero-sub">Plantas medicinales, infusiones y bienestar con respaldo científico.</div>
 
   <div class="planta-dia-chip" onclick="irA('herbologia-indice.html')">
@@ -550,29 +550,22 @@ body{
     <div class="sec-title">Planta del día</div>
     <div class="sec-ver-todo" onclick="irA('herbologia-indice.html')">Ver todas →</div>
   </div>
-  <div class="planta-dia-card" onclick="irA('ficha-planta.html')">
+  <div class="planta-dia-card" id="planta-dia-card" onclick="irAPlantaDia()">
     <div class="pdc-head">
       <div>
         <div class="pdc-head-label">Hoy destacamos</div>
-        <div class="pdc-head-nom">Manzanilla</div>
-        <div class="pdc-head-ci">Matricaria chamomilla L.</div>
+        <div class="pdc-head-nom" id="pdc-nom">—</div>
+        <div class="pdc-head-ci" id="pdc-ci">—</div>
       </div>
-      <div class="pdc-head-ico">🌼</div>
+      <div class="pdc-head-ico" id="pdc-ico">🌿</div>
     </div>
     <div class="pdc-body">
-      <div class="pdc-resumen">
-        Una de las plantas medicinales más estudiadas del mundo. Sus flores poseen propiedades antiinflamatorias, antiespasmódicas y calmantes con amplio respaldo de la OMS y la EMA.
-      </div>
-      <div class="pdc-props">
-        <span class="pdc-prop fuerte">Antiinflamatoria</span>
-        <span class="pdc-prop fuerte">Antiespasmódica</span>
-        <span class="pdc-prop moderado">Ansiolítica</span>
-        <span class="pdc-prop moderado">Cicatrizante</span>
-      </div>
+      <div class="pdc-resumen" id="pdc-resumen">Cargando...</div>
+      <div class="pdc-props" id="pdc-props"></div>
       <div class="pdc-footer">
-        <div class="pdc-footer-eii">
+        <div class="pdc-footer-eii" id="pdc-eii">
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg>
-          Segura en brote EII
+          <span id="pdc-eii-txt">—</span>
         </div>
         <div class="pdc-footer-link">
           Ver ficha completa
@@ -920,6 +913,60 @@ function mostrarToast(msg) {
   if (toastTimer) clearTimeout(toastTimer);
   toastTimer = setTimeout(() => t.classList.remove('show'), 2800);
 }
+
+// PLANTA DEL DIA DINAMICA
+const PLANTAS_DIA = [
+  {nom:'Manzanilla',ci:'Matricaria chamomilla L.',ico:'🌼',grupo:'digestivo',id:'manzanilla',resumen:'Una de las plantas más estudiadas del mundo. Propiedades antiinflamatorias, antiespasmódicas y calmantes con respaldo de la OMS y la EMA.',props:['Antiinflamatoria','Antiespasmódica','Ansiolítica'],eii:true},
+  {nom:'Jengibre',ci:'Zingiber officinale Roscoe',ico:'🫚',grupo:'digestivo',id:'jengibre',resumen:'Antiemético y antiinflamatorio potente. Eficaz para náuseas, mareos y dolor articular. Ampliamente validado en ensayos clínicos.',props:['Antiemético','Antiinflamatorio','Digestivo'],eii:true},
+  {nom:'Cúrcuma',ci:'Curcuma longa L.',ico:'🟡',grupo:'digestivo',id:'curcuma',resumen:'La curcumina inhibe el NF-κB, uno de los principales mediadores de inflamación. Coadyuvante en EII y artritis.',props:['Antiinflamatoria','Antioxidante','Hepatoprotectora'],eii:true},
+  {nom:'Aloe vera',ci:'Aloe vera (L.) Burm.f.',ico:'🌵',grupo:'digestivo',id:'aloe-vera',resumen:'El acemanano protege y repara la mucosa intestinal. Cicatrizante tópico de primer nivel y demulcente digestivo.',props:['Cicatrizante','Demulcente','Antiinflamatorio'],eii:true},
+  {nom:'Pasiflora',ci:'Passiflora incarnata L.',ico:'🌸',grupo:'nervioso',id:'pasiflora',resumen:'Sedante comprobado para ansiedad diurna sin somnolencia fuerte. Monografía EMA y uso tradicional panameño.',props:['Ansiolítica','Sedante suave','Antiespasmódica'],eii:true},
+  {nom:'Toronjil',ci:'Melissa officinalis L.',ico:'🍋',grupo:'nervioso',id:'toronjil',resumen:'Melisa combina efecto ansiolítico con digestivo carminativo. Ideal para el estómago nervioso y el insomnio leve.',props:['Ansiolítica','Carminativa','Antiviral'],eii:true},
+  {nom:'Valeriana',ci:'Valeriana officinalis L.',ico:'💜',grupo:'nervioso',id:'valeriana',resumen:'Sedante comprobado para ansiedad nerviosa e insomnio. Actúa sobre receptores GABA con amplio respaldo clínico.',props:['Sedante','Hipnótica','Ansiolítica'],eii:false},
+  {nom:'Hierba de limón',ci:'Cymbopogon citratus (DC.) Stapf',ico:'🌾',grupo:'digestivo',id:'hierba-limon',resumen:'Antiespasmódico estomacal, sedante suave y febrífugo ampliamente usado en Panamá y el Caribe.',props:['Antiespasmódica','Febrífuga','Sedante suave'],eii:true},
+  {nom:'Guayaba',ci:'Psidium guajava L.',ico:'🍐',grupo:'digestivo',id:'guayaba',resumen:'Sus hojas son uno de los astringentes más efectivos del Caribe para diarrea aguda. Validado por TRAMIL.',props:['Astringente','Antibacteriana','Antidiarréica'],eii:true},
+  {nom:'Mastranto',ci:'Lippia alba (Mill.) N.E.Br.',ico:'🌿',grupo:'nervioso',id:'mastranto',resumen:'Tisana calmante de cólicos, nervios e insomnio. Una de las plantas más usadas en la medicina popular panameña.',props:['Calmante','Antiespasmódica','Carminativa'],eii:true},
+  {nom:'Saril',ci:'Hibiscus sabdariffa L.',ico:'🌺',grupo:'cardiovascular',id:'hibisco',resumen:'Las antocianinas inhiben la ECA con efecto hipotensor documentado en meta-análisis. Muy usada en Panamá.',props:['Hipotensora','Antioxidante','Diurética'],eii:true},
+  {nom:'Achiote',ci:'Bixa orellana L.',ico:'🌿',grupo:'flora-panama',id:'achiote',resumen:'Colorante culinario panameño con propiedades antimicrobianas y antioxidantes. Amplio uso en comunidades indígenas.',props:['Antimicrobiano','Antioxidante','Cicatrizante'],eii:false},
+  {nom:'Cola de caballo',ci:'Equisetum bogotense Kunth',ico:'🌿',grupo:'urinario',id:'cola-caballo',resumen:'Diurético remineralizante tradicional para vías urinarias y cálculos renales. Usado en toda Centroamérica.',props:['Diurético','Remineralizante','Antibacteriano'],eii:false},
+  {nom:'Equinácea',ci:'Echinacea purpurea (L.) Moench',ico:'🌸',grupo:'inmunologico',id:'equinacea-purpurea',resumen:'Inmunoestimulante con mayor evidencia clínica en su clase. Reduce duración e intensidad del resfriado.',props:['Inmunoestimulante','Antiviral','Expectorante'],eii:false},
+  {nom:'Menta piperita',ci:'Mentha × piperita L.',ico:'🌿',grupo:'digestivo',id:'menta-piperita',resumen:'Antiespasmódica ideal para síndrome de intestino irritable. Cápsulas entéricas con ensayos clínicos positivos.',props:['Antiespasmódica','Carminativa','Analgésica'],eii:true},
+  {nom:'Ginkgo biloba',ci:'Ginkgo biloba L.',ico:'🌿',grupo:'nervioso',id:'ginkgo-biloba',resumen:'Mejora circulación periférica y cerebral. Útil en deterioro cognitivo leve y tinnitus con amplio respaldo clínico.',props:['Vasodilatador','Neuroprotector','Antioxidante'],eii:false},
+  {nom:'Ajo',ci:'Allium sativum L.',ico:'🧄',grupo:'cardiovascular',id:'ajo',resumen:'La alicina reduce presión arterial, colesterol LDL y agregación plaquetaria. Meta-análisis confirman su eficacia.',props:['Hipotensor','Antimicrobiano','Anticoagulante'],eii:false},
+  {nom:'Naranja agria',ci:'Citrus aurantium L.',ico:'🍊',grupo:'nervioso',id:'naranja-agria',resumen:'Las flores tienen efecto ansiolítico y digestivo. Amplio uso tradicional panameño para nervios y palpitaciones.',props:['Ansiolítica','Espasmolítica','Digestiva'],eii:true},
+  {nom:'Papaya',ci:'Carica papaya L.',ico:'🍈',grupo:'digestivo',id:'papaya',resumen:'La papaína facilita la digestión proteica y tiene efecto antiparasitario leve. Fruta de amplio uso medicinal en Panamá.',props:['Digestiva','Antiparasitaria','Antiinflamatoria'],eii:false},
+  {nom:'Anamú',ci:'Petiveria alliacea L.',ico:'🌿',grupo:'flora-panama',id:'anamu',resumen:'Planta ritual y medicinal de culturas Ngäbe y Emberá. Propiedades analgésicas e inmunomoduladoras documentadas.',props:['Analgésica','Antiinflamatoria','Inmunomoduladora'],eii:false},
+  {nom:'Contragavilana',ci:'Neurolaena lobata (L.) Cass.',ico:'🌿',grupo:'inmunologico',id:'contragavilana',resumen:'Planta amarga usada en Panamá para fiebre, malaria e inflamación. Sesquiterpenos lactónicos con actividad documentada.',props:['Antipirética','Antiinflamatoria','Antiparasitaria'],eii:false},
+  {nom:'Guanábana',ci:'Annona muricata L.',ico:'🍈',grupo:'flora-panama',id:'guanabana',resumen:'Fruta tropical de amplio uso tradicional panameño. Propiedades antiinflamatorias y se investigan sus acetogeninas.',props:['Antiinflamatoria','Antioxidante','Inmunomoduladora'],eii:false},
+  {nom:'Pata de vaca',ci:'Bauhinia forficata Link',ico:'🌿',grupo:'cardiovascular',id:'pata-de-vaca',resumen:'Hipoglucemiante con ensayo clínico en diabetes tipo 2. El kaempferitrin mejora la captación de glucosa.',props:['Hipoglucemiante','Antioxidante','Diurética'],eii:false},
+  {nom:'Cebolla',ci:'Allium cepa L.',ico:'🧅',grupo:'cardiovascular',id:'cebolla',resumen:'La quercetina y los compuestos azufrados tienen efecto antiinflamatorio, expectorante y cardiovascular documentado.',props:['Antiinflamatoria','Expectorante','Antioxidante'],eii:true},
+  {nom:'Balsamino',ci:'Momordica charantia L.',ico:'🍈',grupo:'flora-panama',id:'balsamino',resumen:'Planta amarga hipoglucemiante de amplio uso en Panamá y el Caribe. Mejora sensibilidad a la insulina.',props:['Hipoglucemiante','Antioxidante','Antibacteriana'],eii:false},
+  {nom:'Saúco',ci:'Sambucus peruviana Kunth',ico:'🌸',grupo:'respiratorio',id:'sauco',resumen:'Las antocianinas del saúco tienen actividad antiviral documentada. Amplio uso para resfriados y fiebre.',props:['Antipirético','Antiviral','Expectorante'],eii:true},
+  {nom:'Hierba de sapo',ci:'Eryngium foetidum L.',ico:'🌿',grupo:'flora-panama',id:'hierba-de-sapo',resumen:'Condimento y medicinal panameño con propiedades antiinflamatorias y antipiréticas ampliamente documentadas.',props:['Antiinflamatoria','Antipirética','Digestiva'],eii:false},
+  {nom:'Jobo',ci:'Spondias mombin L.',ico:'🌳',grupo:'digestivo',id:'jobo',resumen:'Árbol panameño con corteza astringente para diarrea y disentería. Amplio uso en medicina tradicional de Azuero.',props:['Astringente','Antibacteriano','Antiinflamatorio'],eii:true},
+];
+
+function irAPlantaDia(){
+  const p=plantaHoy();
+  irA('ficha-planta.html?id='+p.id+'&grupo='+p.grupo);
+}
+function plantaHoy(){
+  const h=new Date();
+  const d=Math.floor((h-new Date(h.getFullYear(),0,0))/864e5);
+  return PLANTAS_DIA[d%PLANTAS_DIA.length];
+}
+function renderPlantaDia(){
+  const p=plantaHoy();
+  document.getElementById('pdc-nom').textContent=p.nom;
+  document.getElementById('pdc-ci').textContent=p.ci;
+  document.getElementById('pdc-ico').textContent=p.ico;
+  document.getElementById('pdc-resumen').textContent=p.resumen;
+  document.getElementById('pdc-props').innerHTML=p.props.map((pr,i)=>
+    '<span class="pdc-prop '+(i===0?'fuerte':'moderado')+'">'+pr+'</span>').join('');
+  document.getElementById('pdc-eii-txt').textContent=
+    p.eii?'Segura en brote EII':'Consultar en brote EII';
+}
+renderPlantaDia();
 </script>
 </body>
 </html>
