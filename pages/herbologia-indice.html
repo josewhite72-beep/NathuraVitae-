@@ -277,15 +277,28 @@ body{font-family:'Nunito',sans-serif;background:var(--crema);color:var(--tx);min
 </div>
 
 <!-- MODO TABS -->
-<div class="modo-tabs">
-  <button class="modo-tab act" id="tabAZ" onclick="setModo('az')">
+<div class="modo-tabs" style="flex-wrap:wrap">
+  <button class="modo-tab act" id="tabAZ" onclick="setModo('az')" style="flex:1;min-width:80px">
     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
     Índice A–Z
   </button>
-  <button class="modo-tab" id="tabDol" onclick="setModo('dolencia')">
+  <button class="modo-tab" id="tabDol" onclick="setModo('dolencia')" style="flex:1;min-width:80px">
     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
     Por dolencia
   </button>
+  <button class="modo-tab" id="tabPanama" onclick="setModo('panama')" style="flex:1;min-width:80px;background:linear-gradient(135deg,#eaf6f0,#c0e8d4);color:#1a3d2a;font-weight:600">
+    🌿 Flora Panamá
+  </button>
+</div>
+
+<!-- PANEL FLORA PANAMA -->
+<div id="panelPanama" style="display:none;padding:0 16px">
+  <div style="background:linear-gradient(135deg,#1a3d2a,#245c3e);border-radius:16px;padding:16px 18px;margin-bottom:16px;color:white">
+    <div style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#8dd4b0;margin-bottom:4px">Fitoterapia panameña</div>
+    <div style="font-family:'Playfair Display',serif;font-size:18px;font-weight:700;margin-bottom:4px">Flora con uso en Panamá</div>
+    <div id="panamaCount" style="font-size:11px;color:rgba(255,255,255,.65)">Cargando...</div>
+  </div>
+  <div id="panamaContainer"></div>
 </div>
 
 <!-- PANEL A-Z -->
@@ -821,6 +834,10 @@ function setModo(m) {
   document.getElementById('panelAZ').style.display  = m==='az' ? 'block' : 'none';
   document.getElementById('panelDol').style.display = m==='dolencia' ? 'block' : 'none';
   document.getElementById('alfaRail').style.display = m==='az' ? 'flex' : 'none';
+
+  if (m==='panama') renderPanama();
+  document.getElementById('tabPanama').classList.toggle('act', m==='panama');
+  document.getElementById('panelPanama').style.display = m==='panama' ? '' : 'none';
 }
 
 /* ══════════════════════════════════════
@@ -833,6 +850,23 @@ function abrirFicha(id) {
   if (!p) return;
   alert(`📋 Ficha de ${p.nom}\n${p.ci}\n\n${p.resumen}\n\n(Enlace a ficha completa — próximamente)`);
 }
+
+// ── FLORA PANAMÁ ──────────────────────────────────────────────
+const PANAMA_IDS = ['achiote', 'algarrobo', 'altamisa', 'anamu', 'bachar', 'balo', 'balsamina', 'balsamino', 'cancerina', 'coralillo', 'escobilla-monte', 'guanabana', 'hierba-de-sapo', 'indio-desnudo', 'laureño', 'maranon', 'matico', 'noni', 'poro-poro', 'ruda', 'santa-maria', 'totumo', 'guacimo', 'guayaba', 'hierba-limon', 'jobo', 'mastranto', 'paico', 'papaya', 'hibisco', 'naranja-agria', 'toronjil', 'salvia-playa', 'sauco', 'papo', 'cana-agria', 'cola-caballo', 'bidens-pilosa', 'contragavilana'];
+
+function renderPanama() {
+  const cont = document.getElementById('panamaContainer');
+  const plantas = PANAMA_IDS.map(id => PLANTAS.find(p => p.id === id)).filter(Boolean);
+  // ordenar A-Z
+  plantas.sort((a,b) => a.nom.localeCompare(b.nom));
+  document.getElementById('panamaCount').textContent = plantas.length + ' plantas con uso documentado en Panamá';
+  cont.innerHTML = '';
+  plantas.forEach((p, i) => {
+    const card = crearCardPlanta(p, i);
+    cont.appendChild(card);
+  });
+}
+// ──────────────────────────────────────────────────────────────
 </script>
 </body>
 </html>
