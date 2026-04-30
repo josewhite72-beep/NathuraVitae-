@@ -1,0 +1,1401 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Talking Book Generator · NathuraVitae</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap');
+
+:root {
+  --verde: #1a3d2a;
+  --verde-medio: #245c3e;
+  --verde-claro: #4a8c65;
+  --crema: #f8f5ee;
+  --dorado: #c9a227;
+  --texto: #1a2310;
+  --blanco: #ffffff;
+  --sombra: rgba(26,61,42,.18);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Lato', sans-serif;
+  background: var(--crema);
+  color: var(--texto);
+  min-height: 100vh;
+}
+
+/* ── HEADER ── */
+.app-header {
+  background: var(--verde);
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-bottom: 3px solid var(--dorado);
+}
+.app-header .logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  color: var(--crema);
+  letter-spacing: .5px;
+}
+.app-header .logo span { color: var(--dorado); font-style: italic; }
+.app-header .badge {
+  margin-left: auto;
+  background: var(--dorado);
+  color: var(--verde);
+  font-size: 10px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* ── PANEL DE CONTROL ── */
+.control-panel {
+  padding: 18px 16px;
+  background: var(--blanco);
+  border-bottom: 1px solid #e0dbd0;
+}
+.control-panel h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 15px;
+  color: var(--verde);
+  margin-bottom: 14px;
+}
+.campo {
+  margin-bottom: 12px;
+}
+.campo label {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--verde-medio);
+  margin-bottom: 5px;
+}
+.campo input, .campo select, .campo textarea {
+  width: 100%;
+  padding: 9px 12px;
+  border: 1.5px solid #d4cfc4;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: 'Lato', sans-serif;
+  background: var(--crema);
+  color: var(--texto);
+}
+.campo textarea { min-height: 70px; resize: vertical; }
+.campo input:focus, .campo select:focus, .campo textarea:focus {
+  outline: none;
+  border-color: var(--verde-claro);
+}
+
+.fila { display: flex; gap: 10px; }
+.fila .campo { flex: 1; }
+
+/* BOTONES */
+.btn-principal {
+  width: 100%;
+  padding: 13px;
+  background: var(--verde);
+  color: var(--crema);
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  cursor: pointer;
+  letter-spacing: .3px;
+  transition: background .2s;
+  margin-top: 4px;
+}
+.btn-principal:hover { background: var(--verde-medio); }
+.btn-principal:disabled { background: #999; cursor: not-allowed; }
+
+.btn-secundario {
+  flex: 1;
+  padding: 11px;
+  border: 2px solid var(--verde);
+  background: transparent;
+  color: var(--verde);
+  border-radius: 10px;
+  font-size: 13px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all .2s;
+}
+.btn-secundario:hover { background: var(--verde); color: var(--crema); }
+.btn-secundario.activo { background: var(--verde); color: var(--crema); }
+
+/* ── PREVIEW DEL TALKING BOOK ── */
+.preview-section {
+  padding: 16px;
+}
+.preview-section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 15px;
+  color: var(--verde);
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Libro */
+.book-container {
+  width: 100%;
+  max-width: 360px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.book-viewport {
+  width: 100%;
+  aspect-ratio: 9/16;
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 8px 40px var(--sombra), 0 2px 8px rgba(0,0,0,.1);
+  background: var(--verde);
+}
+
+/* Páginas */
+.pagina {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 32px 24px;
+  text-align: center;
+  opacity: 0;
+  transform: rotateY(90deg);
+  transform-origin: left center;
+  transition: transform .5s cubic-bezier(.4,0,.2,1), opacity .3s;
+  backface-visibility: hidden;
+}
+.pagina.activa {
+  opacity: 1;
+  transform: rotateY(0deg);
+}
+.pagina.saliendo {
+  opacity: 0;
+  transform: rotateY(-90deg);
+}
+
+/* Estilos por página */
+.pagina-portada { background: var(--verde); }
+.pagina-que-es  { background: var(--crema); }
+.pagina-evidencia { background: #1a3520; }
+.pagina-principio { background: #0d1f16; }
+.pagina-como { background: var(--crema); }
+.pagina-truco { background: #1c1008; }
+.pagina-advertencia { background: #3d2a1a; }
+.pagina-cierre { background: var(--verde); }
+
+/* Contenido de páginas */
+.pag-emoji { font-size: 48px; margin-bottom: 16px; }
+.pag-titulo {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  line-height: 1.25;
+  margin-bottom: 8px;
+}
+.pag-subtitulo {
+  font-size: 12px;
+  line-height: 1.5;
+  opacity: .8;
+  font-style: italic;
+}
+.pag-nombre-cientifico {
+  font-style: italic;
+  font-size: 13px;
+  opacity: .7;
+  margin-bottom: 16px;
+}
+.pag-badge {
+  background: var(--dorado);
+  color: var(--verde);
+  padding: 4px 14px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+  display: inline-block;
+}
+.pag-lista {
+  text-align: left;
+  width: 100%;
+}
+.pag-lista li {
+  font-size: 13px;
+  line-height: 1.8;
+  list-style: none;
+  padding-left: 16px;
+  position: relative;
+}
+.pag-lista li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--dorado);
+  font-weight: 700;
+}
+.pag-texto-grande {
+  font-size: 38px;
+  font-weight: 700;
+  color: var(--dorado);
+  font-family: 'Playfair Display', serif;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+.pag-decoracion {
+  width: 40px;
+  height: 2px;
+  background: var(--dorado);
+  margin: 12px auto;
+  border-radius: 2px;
+}
+.pag-advertencia-icon {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+.pag-url {
+  font-size: 12px;
+  color: var(--dorado);
+  margin-top: 12px;
+  font-weight: 700;
+  letter-spacing: .5px;
+}
+
+/* Colores de texto por fondo */
+.pagina-portada .pag-titulo,
+.pagina-evidencia .pag-titulo,
+.pagina-principio .pag-titulo,
+.pagina-truco .pag-titulo,
+.pagina-advertencia .pag-titulo,
+.pagina-cierre .pag-titulo { color: var(--crema); }
+
+.pagina-que-es .pag-titulo,
+.pagina-como .pag-titulo { color: var(--verde); }
+
+.pagina-portada .pag-subtitulo,
+.pagina-evidencia .pag-subtitulo,
+.pagina-principio .pag-subtitulo,
+.pagina-truco .pag-subtitulo,
+.pagina-advertencia .pag-subtitulo,
+.pagina-cierre .pag-subtitulo { color: rgba(248,245,238,.75); }
+
+.pagina-que-es .pag-subtitulo,
+.pagina-como .pag-subtitulo { color: rgba(26,61,42,.7); }
+
+.pagina-que-es .pag-lista li,
+.pagina-como .pag-lista li { color: var(--texto); }
+
+.pagina-advertencia .pag-lista li { color: var(--crema); }
+.pagina-advertencia .pag-lista li::before { color: #ff9944; }
+
+/* Número de página */
+.pag-numero {
+  position: absolute;
+  bottom: 14px;
+  right: 18px;
+  font-size: 10px;
+  opacity: .4;
+  font-family: 'Playfair Display', serif;
+}
+
+/* Línea decorativa top */
+.pag-linea-top {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: var(--dorado);
+}
+
+/* ── CONTROLES DEL LIBRO ── */
+.book-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 14px;
+}
+.btn-nav {
+  width: 42px; height: 42px;
+  border-radius: 50%;
+  border: 2px solid var(--verde);
+  background: var(--blanco);
+  color: var(--verde);
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .2s;
+}
+.btn-nav:hover { background: var(--verde); color: var(--crema); }
+.btn-nav:disabled { opacity: .3; cursor: not-allowed; }
+
+.pag-indicador {
+  font-size: 12px;
+  color: var(--verde-medio);
+  font-weight: 700;
+  min-width: 60px;
+  text-align: center;
+}
+
+/* Botón TTS */
+.btn-tts {
+  width: 48px; height: 48px;
+  border-radius: 50%;
+  border: none;
+  background: var(--verde);
+  color: var(--crema);
+  font-size: 22px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .2s;
+  box-shadow: 0 3px 12px var(--sombra);
+}
+.btn-tts:hover { background: var(--dorado); color: var(--verde); }
+.btn-tts.hablando { background: var(--dorado); color: var(--verde); animation: pulso .8s infinite; }
+@keyframes pulso { 0%,100%{transform:scale(1)} 50%{transform:scale(1.1)} }
+
+/* Barra de progreso */
+.progreso-bar {
+  width: 100%;
+  height: 3px;
+  background: #e0dbd0;
+  border-radius: 2px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+.progreso-fill {
+  height: 100%;
+  background: var(--dorado);
+  border-radius: 2px;
+  transition: width .4s;
+}
+
+/* Acciones inferiores */
+.acciones {
+  display: flex;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+/* ── AUTO PLAY ── */
+.autoplay-section {
+  background: var(--blanco);
+  border: 1.5px solid #e0dbd0;
+  border-radius: 12px;
+  padding: 14px;
+  margin-top: 14px;
+}
+.autoplay-section h3 {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--verde);
+  margin-bottom: 10px;
+}
+.toggle-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+.toggle {
+  width: 44px; height: 24px;
+  background: #ccc;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  transition: background .2s;
+}
+.toggle::after {
+  content: '';
+  position: absolute;
+  top: 3px; left: 3px;
+  width: 18px; height: 18px;
+  background: white;
+  border-radius: 50%;
+  transition: left .2s;
+}
+.toggle.on { background: var(--verde); }
+.toggle.on::after { left: 23px; }
+
+/* Imagen en página */
+.pag-imagen {
+  width: 100%;
+  max-height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 14px;
+  box-shadow: 0 4px 16px rgba(0,0,0,.25);
+}
+.pag-imagen-circular {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid var(--dorado);
+  margin-bottom: 14px;
+  box-shadow: 0 4px 16px rgba(0,0,0,.3);
+}
+
+
+  background: var(--verde);
+  color: var(--crema);
+  border-radius: 12px;
+  padding: 16px;
+  margin-top: 14px;
+  font-size: 13px;
+  line-height: 1.7;
+}
+.instrucciones h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 15px;
+  color: var(--dorado);
+  margin-bottom: 10px;
+}
+.instrucciones ol { padding-left: 18px; }
+.instrucciones li { margin-bottom: 4px; }
+
+/* Estado vacío */
+.estado-vacio {
+  text-align: center;
+  padding: 40px 20px;
+  color: var(--verde-medio);
+}
+.estado-vacio .icono { font-size: 48px; margin-bottom: 12px; }
+.estado-vacio p { font-size: 14px; line-height: 1.6; }
+
+/* Spinner */
+.spinner {
+  display: none;
+  text-align: center;
+  padding: 20px;
+  color: var(--verde);
+  font-style: italic;
+}
+.spinner.visible { display: block; }
+
+</style>
+</head>
+<body>
+
+<div class="app-header">
+  <div class="logo">Nathura<span>Vitae</span></div>
+  <div class="badge">🎙 Talking Book</div>
+</div>
+
+<!-- PANEL DE CONTROL -->
+<!-- SELECTOR DE PLANTA -->
+<div style="background:var(--verde);padding:16px;border-bottom:3px solid var(--dorado)">
+  <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--dorado);margin-bottom:8px">🌿 Cargar desde catálogo NathuraVitae</div>
+  <div style="display:flex;gap:8px;align-items:center">
+    <select id="selectorGrupo" onchange="cargarPlantasDeGrupo()" style="flex:1;padding:9px 10px;border-radius:8px;border:none;font-size:13px;background:rgba(255,255,255,.12);color:var(--crema);font-family:'Lato',sans-serif">
+      <option value="">— Grupo terapéutico —</option>
+      <option value="digestivo">Digestivo</option>
+      <option value="cardiovascular">Cardiovascular</option>
+      <option value="nervioso">Nervioso</option>
+      <option value="respiratorio">Respiratorio</option>
+      <option value="inmunologico">Inmunológico</option>
+      <option value="flora-panama">Flora Panamá</option>
+      <option value="urinario">Urinario</option>
+    </select>
+  </div>
+  <div style="margin-top:8px;display:flex;gap:8px;align-items:center">
+    <select id="selectorPlanta" style="flex:1;padding:9px 10px;border-radius:8px;border:none;font-size:13px;background:rgba(255,255,255,.12);color:var(--crema);font-family:'Lato',sans-serif" disabled>
+      <option value="">— Selecciona grupo primero —</option>
+    </select>
+    <button onclick="cargarPlantaSeleccionada()" style="padding:9px 14px;background:var(--dorado);color:var(--verde);border:none;border-radius:8px;font-weight:700;font-size:13px;cursor:pointer;white-space:nowrap">Cargar ✓</button>
+  </div>
+  <div id="estadoCarga" style="font-size:11px;color:rgba(248,245,238,.6);margin-top:6px;font-style:italic"></div>
+</div>
+
+<div class="control-panel">
+  <h2>📋 Datos de la planta</h2>
+
+  <div class="campo">
+    <label>Nombre común</label>
+    <input type="text" id="nombreComun" placeholder="Ej: Cúrcuma" value="Cúrcuma">
+  </div>
+
+  <div class="fila">
+    <div class="campo">
+      <label>Nombre científico</label>
+      <input type="text" id="nombreCientifico" placeholder="Ej: Curcuma longa" value="Curcuma longa">
+    </div>
+    <div class="campo" style="max-width:90px">
+      <label>Nivel</label>
+      <select id="nivelEvidencia">
+        <option value="A">A</option>
+        <option value="B" selected>B</option>
+        <option value="C">C</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="campo">
+    <label>Emoji representativo</label>
+    <input type="text" id="emoji" placeholder="🌿" value="🟡" style="font-size:22px;width:70px">
+  </div>
+
+  <div class="campo">
+    <label>Uso principal (1 línea)</label>
+    <input type="text" id="usoPrincipal" placeholder="Antiinflamatorio, colitis, artritis" value="Antiinflamatorio natural · colitis · artritis">
+  </div>
+
+  <div class="campo">
+    <label>Principio activo</label>
+    <input type="text" id="principioActivo" placeholder="Curcumina" value="Curcumina (inhibe el NF-κB)">
+  </div>
+
+  <div class="campo">
+    <label>Cómo prepararlo (pasos, separados por |)</label>
+    <textarea id="preparacion">½ cdta cúrcuma en polvo|Leche vegetal caliente|Pizca de pimienta negra|Opcional: jengibre rallado|Una vez al día</textarea>
+  </div>
+
+  <div class="campo">
+    <label>Dato sorprendente</label>
+    <input type="text" id="datoSorprendente" value="La pimienta negra multiplica por 20 su absorción">
+  </div>
+
+  <div class="campo">
+    <label>Advertencia</label>
+    <input type="text" id="advertencia" value="Cuidado con anticoagulantes y cálculos biliares">
+  </div>
+
+  <div class="campo">
+    <label>Uso panameño / tradición</label>
+    <input type="text" id="tradicion" value="Conocida en Panamá como palillo, usada en la cocina y medicina popular">
+  </div>
+
+  <!-- IMÁGENES -->
+  <div style="background:var(--crema);border:1.5px dashed #c9a227;border-radius:10px;padding:14px;margin-bottom:12px">
+    <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--verde-medio);margin-bottom:12px">🖼 Imágenes (opcional)</div>
+
+    <div class="campo">
+      <label>Imagen portada — desde galería</label>
+      <input type="file" id="imgPortadaFile" accept="image/*" onchange="cargarImagenArchivo('portada', this)">
+    </div>
+    <div class="campo">
+      <label>Imagen portada — URL</label>
+      <input type="url" id="imgPortadaUrl" placeholder="https://..." oninput="cargarImagenUrl('portada', this.value)">
+    </div>
+    <div id="prevPortada" style="display:none;margin-bottom:12px">
+      <img id="prevPortadaImg" style="width:100%;max-height:120px;object-fit:cover;border-radius:8px;border:1.5px solid #c9a227">
+      <button onclick="limpiarImagen('portada')" style="margin-top:4px;font-size:11px;color:#c00;background:none;border:none;cursor:pointer">✕ Quitar imagen</button>
+    </div>
+
+    <div class="campo">
+      <label>Imagen preparación — desde galería</label>
+      <input type="file" id="imgPrepFile" accept="image/*" onchange="cargarImagenArchivo('prep', this)">
+    </div>
+    <div class="campo">
+      <label>Imagen preparación — URL</label>
+      <input type="url" id="imgPrepUrl" placeholder="https://..." oninput="cargarImagenUrl('prep', this.value)">
+    </div>
+    <div id="prevPrep" style="display:none">
+      <img id="prevPrepImg" style="width:100%;max-height:120px;object-fit:cover;border-radius:8px;border:1.5px solid #c9a227">
+      <button onclick="limpiarImagen('prep')" style="margin-top:4px;font-size:11px;color:#c00;background:none;border:none;cursor:pointer">✕ Quitar imagen</button>
+    </div>
+  </div>
+
+  <button class="btn-principal" onclick="generarTalkingBook()">
+    🌿 Generar Talking Book
+  </button>
+</div>
+
+<div class="spinner" id="spinner">Generando tu Talking Book...</div>
+
+<!-- PREVIEW -->
+<div class="preview-section" id="previewSection" style="display:none">
+  <h2>📖 Vista previa</h2>
+
+  <div class="book-container">
+    <div class="book-viewport" id="bookViewport">
+      <!-- Páginas generadas dinámicamente -->
+    </div>
+
+    <!-- Barra interna de controles -->
+    <div style="position:absolute;bottom:0;left:0;right:0;background:rgba(26,61,42,.88);backdrop-filter:blur(6px);display:flex;align-items:center;justify-content:space-between;padding:10px 18px;z-index:10;border-top:1px solid rgba(201,162,39,.3)">
+      <button id="btnAnterior" onclick="navegarPagina(-1)" disabled style="width:38px;height:38px;border-radius:50%;border:1.5px solid rgba(255,255,255,.3);background:rgba(255,255,255,.1);color:white;font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center">‹</button>
+      <button id="btnTTS" onclick="toggleTTS()" style="width:46px;height:46px;border-radius:50%;border:none;background:var(--dorado);color:var(--verde);font-size:22px;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 10px rgba(0,0,0,.3)">🔊</button>
+      <span id="pagIndicador" style="color:var(--crema);font-size:12px;font-weight:700;min-width:44px;text-align:center">1 / 8</span>
+      <button onclick="reproducirCompleto()" style="padding:8px 14px;border-radius:20px;border:none;background:var(--verde-claro);color:white;font-size:12px;font-weight:700;cursor:pointer">▶ Play</button>
+      <button id="btnSiguiente" onclick="navegarPagina(1)" style="width:38px;height:38px;border-radius:50%;border:1.5px solid rgba(255,255,255,.3);background:rgba(255,255,255,.1);color:white;font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center">›</button>
+    </div>
+  </div>
+
+  <div class="progreso-bar">
+    <div class="progreso-fill" id="progresoFill" style="width:12.5%"></div>
+  </div>
+
+  <!-- Auto play -->
+  <div class="autoplay-section">
+    <h3>⚙️ Reproducción automática</h3>
+    <div class="toggle-row">
+      <span>Avance automático de páginas</span>
+      <button class="toggle" id="toggleAuto" onclick="toggleAutoPlay()"></button>
+    </div>
+    <div class="toggle-row">
+      <span>Narración continua (TTS)</span>
+      <button class="toggle" id="toggleNarracion" onclick="toggleNarracionContinua()"></button>
+    </div>
+  </div>
+
+
+  <!-- Panel de voz -->
+  <div class="autoplay-section" style="margin-top:10px">
+    <h3>🎙 Configuración de voz</h3>
+
+    <div class="campo" style="margin-bottom:10px">
+      <label style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--verde-medio)">Voz</label>
+      <select id="selectVoz" style="width:100%;padding:8px 10px;border:1.5px solid #d4cfc4;border-radius:8px;font-size:13px;background:var(--crema);font-family:'Lato',sans-serif">
+        <option value="">Voz predeterminada</option>
+      </select>
+    </div>
+
+    <div class="toggle-row" style="margin-bottom:6px">
+      <span style="font-size:12px">Velocidad</span>
+      <span id="valorVelocidad" style="font-size:12px;font-weight:700;color:var(--verde);min-width:35px;text-align:right">1.0×</span>
+    </div>
+    <input type="range" id="rangeVelocidad" min="0.5" max="2" step="0.1" value="0.92"
+      oninput="document.getElementById('valorVelocidad').textContent=parseFloat(this.value).toFixed(1)+'×'"
+      style="width:100%;accent-color:var(--verde);margin-bottom:10px">
+
+    <div class="toggle-row" style="margin-bottom:6px">
+      <span style="font-size:12px">Tono</span>
+      <span id="valorTono" style="font-size:12px;font-weight:700;color:var(--verde);min-width:35px;text-align:right">1.0</span>
+    </div>
+    <input type="range" id="rangeTono" min="0.5" max="2" step="0.1" value="1"
+      oninput="document.getElementById('valorTono').textContent=parseFloat(this.value).toFixed(1)"
+      style="width:100%;accent-color:var(--verde);margin-bottom:10px">
+
+    <div class="toggle-row" style="margin-bottom:6px">
+      <span style="font-size:12px">Volumen</span>
+      <span id="valorVolumen" style="font-size:12px;font-weight:700;color:var(--verde);min-width:35px;text-align:right">100%</span>
+    </div>
+    <input type="range" id="rangeVolumen" min="0" max="1" step="0.05" value="1"
+      oninput="document.getElementById('valorVolumen').textContent=Math.round(this.value*100)+'%'"
+      style="width:100%;accent-color:var(--verde);margin-bottom:6px">
+
+    <button onclick="probarVoz()" style="width:100%;padding:9px;background:var(--verde-claro);color:white;border:none;border-radius:8px;font-size:13px;font-weight:700;cursor:pointer;margin-top:4px">
+      🔊 Probar voz
+    </button>
+  </div>
+
+  <!-- Acciones secundarias (fuera del área de grabación) -->
+  <div class="acciones" style="margin-top:12px">
+    <button class="btn-secundario" onclick="reiniciarLibro()">↺ Reiniciar</button>
+    <button class="btn-secundario" id="btnEditar" onclick="toggleEdicion()">✏️ Editar texto</button>
+  </div>
+  <p style="font-size:11px;color:#888;text-align:center;margin-top:8px;font-style:italic">
+    💡 Graba solo el área del libro — los controles de abajo no aparecen en el video
+  </p>
+
+  <!-- Instrucciones de grabación -->
+  <div class="instrucciones">
+    <h3>🎬 Cómo grabar tu Reel</h3>
+    <ol>
+      <li>Toca <strong>✏️ Editar texto</strong> para ajustar cualquier texto directamente sobre el libro</li>
+      <li>Toca <strong>▶ Reproducir todo</strong></li>
+      <li>Activa la grabadora de pantalla de tu Android</li>
+      <li>Asegúrate de activar <strong>"Audio interno"</strong></li>
+      <li>El libro pasará páginas solo con narración</li>
+      <li>Al terminar, detén la grabación</li>
+      <li>Sube el video a Instagram como Reel</li>
+    </ol>
+  </div>
+</div>
+
+<!-- Estado vacío -->
+<div class="estado-vacio" id="estadoVacio">
+  <div class="icono">📖</div>
+  <p>Completa los datos de la planta<br>y toca <strong>Generar Talking Book</strong><br>para ver la vista previa animada.</p>
+</div>
+
+<script>
+// ── ESTADO ────────────────────────────────────────────────
+var paginaActual = 0;
+var totalPaginas = 8;
+var autoPlay = false;
+var narracionContinua = false;
+var autoPlayTimer = null;
+var hablando = false;
+var datosPlanta = {};
+var imagenes = { portada: null, prep: null };
+
+// ── CARGA DE IMÁGENES ──────────────────────────────────────
+function cargarImagenArchivo(tipo, input) {
+  var file = input.files[0];
+  if (!file) return;
+  var reader = new FileReader();
+  reader.onload = function(e) {
+    imagenes[tipo] = e.target.result;
+    mostrarPreview(tipo, e.target.result);
+  };
+  reader.readAsDataURL(file);
+}
+
+function cargarImagenUrl(tipo, url) {
+  if (!url) return;
+  imagenes[tipo] = url;
+  mostrarPreview(tipo, url);
+}
+
+function mostrarPreview(tipo, src) {
+  var divId = tipo === 'portada' ? 'prevPortada' : 'prevPrep';
+  var imgId = tipo === 'portada' ? 'prevPortadaImg' : 'prevPrepImg';
+  document.getElementById(divId).style.display = 'block';
+  document.getElementById(imgId).src = src;
+}
+
+function limpiarImagen(tipo) {
+  imagenes[tipo] = null;
+  var divId = tipo === 'portada' ? 'prevPortada' : 'prevPrep';
+  var fileId = tipo === 'portada' ? 'imgPortadaFile' : 'imgPrepFile';
+  var urlId  = tipo === 'portada' ? 'imgPortadaUrl'  : 'imgPrepUrl';
+  document.getElementById(divId).style.display = 'none';
+  document.getElementById(fileId).value = '';
+  document.getElementById(urlId).value = '';
+}
+
+// ── GENERAR TALKING BOOK ───────────────────────────────────
+function generarTalkingBook() {
+  datosPlanta = {
+    nombreComun:      document.getElementById('nombreComun').value || 'Planta',
+    nombreCientifico: document.getElementById('nombreCientifico').value || '',
+    nivel:            document.getElementById('nivelEvidencia').value || 'B',
+    emoji:            document.getElementById('emoji').value || '🌿',
+    usoPrincipal:     document.getElementById('usoPrincipal').value || '',
+    principioActivo:  document.getElementById('principioActivo').value || '',
+    preparacion:      document.getElementById('preparacion').value.split('|').map(s=>s.trim()).filter(Boolean),
+    datoSorprendente: document.getElementById('datoSorprendente').value || '',
+    advertencia:      document.getElementById('advertencia').value || '',
+    tradicion:        document.getElementById('tradicion').value || '',
+  };
+
+  document.getElementById('spinner').classList.add('visible');
+  document.getElementById('estadoVacio').style.display = 'none';
+  document.getElementById('previewSection').style.display = 'none';
+
+  setTimeout(function() {
+    document.getElementById('spinner').classList.remove('visible');
+    construirPaginas();
+    paginaActual = 0;
+    mostrarPagina(0);
+    document.getElementById('previewSection').style.display = 'block';
+    document.getElementById('previewSection').scrollIntoView({behavior:'smooth'});
+  }, 600);
+}
+
+// ── CONSTRUIR PÁGINAS ──────────────────────────────────────
+function construirPaginas() {
+  var d = datosPlanta;
+  var vp = document.getElementById('bookViewport');
+
+  var paginas = [
+    // 1 — PORTADA
+    '<div class="pagina pagina-portada" id="pag-0">' +
+      '<div class="pag-linea-top"></div>' +
+      (imagenes.portada
+        ? '<img src="' + imagenes.portada + '" class="pag-imagen-circular" alt="' + d.nombreComun + '">'
+        : '<div class="pag-emoji">' + d.emoji + '</div>') +
+      '<div class="pag-titulo">' + d.nombreComun + '</div>' +
+      '<div class="pag-decoracion"></div>' +
+      '<div class="pag-subtitulo">El remedio natural que la ciencia respalda</div>' +
+      '<div class="pag-numero">1 / 8</div>' +
+    '</div>',
+
+    // 2 — QUÉ ES
+    '<div class="pagina pagina-que-es" id="pag-1">' +
+      '<div class="pag-linea-top"></div>' +
+      '<div class="pag-emoji">🌿</div>' +
+      '<div class="pag-titulo">¿Qué es?</div>' +
+      '<div class="pag-nombre-cientifico">' + d.nombreCientifico + '</div>' +
+      '<div class="pag-decoracion"></div>' +
+      '<div class="pag-subtitulo" style="color:var(--verde);font-style:normal">' + d.tradicion + '</div>' +
+      '<div class="pag-numero">2 / 8</div>' +
+    '</div>',
+
+    // 3 — EVIDENCIA
+    '<div class="pagina pagina-evidencia" id="pag-2">' +
+      '<div class="pag-linea-top"></div>' +
+      '<div class="pag-badge">Nivel ' + d.nivel + ' de evidencia</div>' +
+      '<div class="pag-titulo">Respaldo científico</div>' +
+      '<div class="pag-decoracion"></div>' +
+      '<div class="pag-subtitulo">OMS · EMA · TRAMIL</div>' +
+      '<div style="margin-top:16px;font-size:13px;color:rgba(248,245,238,.8);line-height:1.6">' + d.usoPrincipal + '</div>' +
+      '<div class="pag-numero">3 / 8</div>' +
+    '</div>',
+
+    // 4 — PRINCIPIO ACTIVO
+    '<div class="pagina pagina-principio" id="pag-3">' +
+      '<div class="pag-linea-top"></div>' +
+      '<div class="pag-titulo" style="font-size:13px;margin-bottom:10px">Principio activo</div>' +
+      '<div class="pag-texto-grande" style="font-size:22px;line-height:1.3">' + d.principioActivo + '</div>' +
+      '<div class="pag-decoracion"></div>' +
+      '<div class="pag-subtitulo">El compuesto que hace la diferencia</div>' +
+      '<div class="pag-numero">4 / 8</div>' +
+    '</div>',
+
+    // 5 — CÓMO PREPARARLO
+    '<div class="pagina pagina-como" id="pag-4">' +
+      '<div class="pag-linea-top"></div>' +
+      '<div class="pag-titulo">¿Cómo prepararlo?</div>' +
+      '<div class="pag-decoracion"></div>' +
+      (imagenes.prep
+        ? '<img src="' + imagenes.prep + '" class="pag-imagen" alt="Preparación">'
+        : '') +
+      '<ul class="pag-lista" style="margin-top:' + (imagenes.prep ? '0' : '8px') + '">' +
+        d.preparacion.map(function(p){ return '<li>' + p + '</li>'; }).join('') +
+      '</ul>' +
+      '<div class="pag-numero">5 / 8</div>' +
+    '</div>',
+
+    // 6 — DATO SORPRENDENTE
+    '<div class="pagina pagina-truco" id="pag-5">' +
+      '<div class="pag-linea-top"></div>' +
+      '<div style="font-size:36px;margin-bottom:14px">⚡</div>' +
+      '<div class="pag-titulo" style="font-size:13px;color:rgba(248,245,238,.6);margin-bottom:10px">¿Sabías que...?</div>' +
+      '<div class="pag-titulo" style="font-size:18px;line-height:1.4">' + d.datoSorprendente + '</div>' +
+      '<div class="pag-numero">6 / 8</div>' +
+    '</div>',
+
+    // 7 — ADVERTENCIAS
+    '<div class="pagina pagina-advertencia" id="pag-6">' +
+      '<div class="pag-linea-top" style="background:#ff9944"></div>' +
+      '<div class="pag-advertencia-icon">⚠️</div>' +
+      '<div class="pag-titulo">Precauciones</div>' +
+      '<div class="pag-decoracion" style="background:#ff9944"></div>' +
+      '<div class="pag-subtitulo" style="font-style:normal;line-height:1.7">' + d.advertencia + '</div>' +
+      '<div style="margin-top:14px;font-size:11px;color:rgba(248,245,238,.5)">Consulta siempre a tu médico</div>' +
+      '<div class="pag-numero">7 / 8</div>' +
+    '</div>',
+
+    // 8 — CIERRE
+    '<div class="pagina pagina-cierre" id="pag-7">' +
+      '<div class="pag-linea-top"></div>' +
+      '<div style="font-size:36px;margin-bottom:16px">🌿</div>' +
+      '<div class="pag-titulo" style="font-size:16px">Encuentra la ficha completa</div>' +
+      '<div class="pag-url">nathura-vitae.vercel.app</div>' +
+      '<div class="pag-decoracion"></div>' +
+      '<div class="pag-subtitulo">App gratuita de fitoterapia panameña</div>' +
+      '<div style="margin-top:16px;font-size:11px;color:rgba(248,245,238,.4)">@nathuravitae · Uso educativo · No sustituye consejo médico</div>' +
+      '<div class="pag-numero">8 / 8</div>' +
+    '</div>',
+  ];
+
+  vp.innerHTML = paginas.join('');
+  totalPaginas = paginas.length;
+}
+
+// ── NAVEGACIÓN ─────────────────────────────────────────────
+function mostrarPagina(n) {
+  var pags = document.querySelectorAll('.pagina');
+  pags.forEach(function(p, i) {
+    p.classList.remove('activa', 'saliendo');
+    if (i === n) p.classList.add('activa');
+  });
+  paginaActual = n;
+  document.getElementById('pagIndicador').textContent = (n+1) + ' / ' + totalPaginas;
+  document.getElementById('btnAnterior').disabled = n === 0;
+  document.getElementById('btnSiguiente').disabled = n === totalPaginas - 1;
+  var pct = ((n+1) / totalPaginas * 100) + '%';
+  document.getElementById('progresoFill').style.width = pct;
+
+  if (narracionContinua) narrarPagina(n);
+}
+
+function navegarPagina(dir) {
+  detenerTTS();
+  var nueva = paginaActual + dir;
+  if (nueva < 0 || nueva >= totalPaginas) return;
+  var pags = document.querySelectorAll('.pagina');
+  pags[paginaActual].classList.add('saliendo');
+  setTimeout(function() {
+    pags[paginaActual].classList.remove('activa','saliendo');
+    mostrarPagina(nueva);
+  }, 300);
+}
+
+// ── TTS ────────────────────────────────────────────────────
+var textosPaginas = [];
+
+function obtenerTextosPaginas() {
+  var d = datosPlanta;
+  return [
+    d.nombreComun + '. ' + 'El remedio natural que la ciencia respalda.',
+    '¿Qué es ' + d.nombreComun + '? ' + d.nombreCientifico + '. ' + d.tradicion + '.',
+    'Respaldo científico Nivel ' + d.nivel + '. Avalado por la OMS, la EMA y TRAMIL. ' + d.usoPrincipal + '.',
+    'Su principio activo: ' + d.principioActivo + '. El compuesto que hace la diferencia.',
+    '¿Cómo prepararlo? ' + d.preparacion.join('. ') + '.',
+    '¿Sabías que? ' + d.datoSorprendente + '.',
+    'Precauciones importantes. ' + d.advertencia + '. Consulta siempre a tu médico.',
+    'Encuentra la ficha completa de ' + d.nombreComun + ' y más de cien plantas en NathuraVitae, app gratuita de fitoterapia panameña. Enlace en bio.',
+  ];
+}
+
+function narrarPagina(n) {
+  if (!('speechSynthesis' in window)) {
+    alert('Tu navegador no soporta TTS. Usa Chrome.');
+    return;
+  }
+  detenerTTS();
+  var textos = obtenerTextosPaginas();
+  var texto = expandirAbreviaciones(textos[n] || '');
+  var utt = new SpeechSynthesisUtterance(texto);
+  utt.lang = 'es-PA';
+  utt.rate  = parseFloat(document.getElementById('rangeVelocidad').value) || 0.92;
+  utt.pitch = parseFloat(document.getElementById('rangeTono').value) || 1;
+  utt.volume= parseFloat(document.getElementById('rangeVolumen').value) || 1;
+
+  // Voz seleccionada o buscar español
+  var voces = window.speechSynthesis.getVoices();
+  var vozSelId = document.getElementById('selectVoz').value;
+  var vozSel = vozSelId ? voces.find(function(v){ return v.name === vozSelId; }) : null;
+  if (vozSel) {
+    utt.voice = vozSel;
+  } else {
+    var vozES = voces.find(function(v){ return v.lang.startsWith('es'); });
+    if (vozES) utt.voice = vozES;
+  }
+
+  utt.onstart = function() {
+    hablando = true;
+    document.getElementById('btnTTS').classList.add('hablando');
+    document.getElementById('btnTTS').textContent = '⏸';
+  };
+  utt.onend = function() {
+    hablando = false;
+    document.getElementById('btnTTS').classList.remove('hablando');
+    document.getElementById('btnTTS').textContent = '🔊';
+    if (autoPlay && paginaActual < totalPaginas - 1) {
+      setTimeout(function() { navegarPagina(1); }, 800);
+    }
+  };
+  window.speechSynthesis.speak(utt);
+}
+
+function detenerTTS() {
+  window.speechSynthesis.cancel();
+  hablando = false;
+  var btn = document.getElementById('btnTTS');
+  if (btn) { btn.classList.remove('hablando'); btn.textContent = '🔊'; }
+}
+
+function toggleTTS() {
+  if (hablando) {
+    detenerTTS();
+  } else {
+    narrarPagina(paginaActual);
+  }
+}
+
+function toggleAutoPlay() {
+  autoPlay = !autoPlay;
+  var t = document.getElementById('toggleAuto');
+  t.classList.toggle('on', autoPlay);
+}
+
+function toggleNarracionContinua() {
+  narracionContinua = !narracionContinua;
+  var t = document.getElementById('toggleNarracion');
+  t.classList.toggle('on', narracionContinua);
+}
+
+function reiniciarLibro() {
+  detenerTTS();
+  clearTimeout(autoPlayTimer);
+  mostrarPagina(0);
+}
+
+function reproducirCompleto() {
+  reiniciarLibro();
+  setTimeout(function() {
+    narracionContinua = true;
+    autoPlay = true;
+    document.getElementById('toggleAuto').classList.add('on');
+    document.getElementById('toggleNarracion').classList.add('on');
+    narrarPagina(0);
+  }, 300);
+}
+
+// ── DICCIONARIO DE ABREVIACIONES PARA TTS ─────────────────
+var diccionarioTTS = [
+  [/\bcdta\b/gi,   'cucharadita'],
+  [/\bcdtas\b/gi,  'cucharaditas'],
+  [/\bcda\b/gi,    'cucharada'],
+  [/\bcdas\b/gi,   'cucharadas'],
+  [/\btbsp\b/gi,   'cucharada'],
+  [/\btsp\b/gi,    'cucharadita'],
+  [/\bg\b/g,       'gramos'],
+  [/\bml\b/gi,     'mililitros'],
+  [/\bl\b/g,       'litros'],
+  [/\bmin\b/gi,    'minutos'],
+  [/\bh\b/g,       'horas'],
+  [/\bOMS\b/g,     'Organización Mundial de la Salud'],
+  [/\bEMA\b/g,     'Agencia Europea de Medicamentos'],
+  [/\bNF-κB\b/g,   'NF kappa B'],
+  [/½/g,           'media'],
+  [/¼/g,           'un cuarto de'],
+  [/¾/g,           'tres cuartos de'],
+  [/°C\b/g,        'grados centígrados'],
+  [/\bvs\b/gi,     'versus'],
+  [/\betc\./gi,    'etcétera'],
+  [/\bp\.ej\./gi,  'por ejemplo'],
+];
+
+function expandirAbreviaciones(texto) {
+  var resultado = texto;
+  diccionarioTTS.forEach(function(par) {
+    resultado = resultado.replace(par[0], par[1]);
+  });
+  return resultado;
+}
+
+// ── EDICIÓN INLINE ─────────────────────────────────────────
+function activarEdicionInline() {
+  var paginas = document.querySelectorAll('.pagina');
+  paginas.forEach(function(pag) {
+    // Hacer editables los elementos de texto
+    var editables = pag.querySelectorAll(
+      '.pag-titulo, .pag-subtitulo, .pag-subtitulo, ' +
+      '.pag-lista li, .pag-texto-grande, .pag-url, ' +
+      '[style*="font-size:13px"], [style*="font-size:18px"]'
+    );
+    editables.forEach(function(el) {
+      el.setAttribute('contenteditable', 'true');
+      el.style.outline = 'none';
+      el.style.cursor = 'text';
+      el.style.borderBottom = '1px dashed rgba(201,162,39,.5)';
+      el.title = 'Toca para editar';
+      el.addEventListener('focus', function() {
+        el.style.borderBottom = '2px solid var(--dorado)';
+        detenerTTS();
+      });
+      el.addEventListener('blur', function() {
+        el.style.borderBottom = '1px dashed rgba(201,162,39,.5)';
+      });
+    });
+  });
+
+  // Cambiar botón
+  var btn = document.getElementById('btnEditar');
+  if (btn) {
+    btn.textContent = '✅ Edición activa';
+    btn.classList.add('activo');
+  }
+}
+
+function desactivarEdicionInline() {
+  var editables = document.querySelectorAll('[contenteditable="true"]');
+  editables.forEach(function(el) {
+    el.removeAttribute('contenteditable');
+    el.style.borderBottom = 'none';
+    el.style.cursor = '';
+  });
+  var btn = document.getElementById('btnEditar');
+  if (btn) {
+    btn.textContent = '✏️ Editar texto';
+    btn.classList.remove('activo');
+  }
+}
+
+var modoEdicion = false;
+function toggleEdicion() {
+  modoEdicion = !modoEdicion;
+  if (modoEdicion) {
+    activarEdicionInline();
+  } else {
+    desactivarEdicionInline();
+  }
+}
+
+
+// ── BASE URL DEL CATÁLOGO ─────────────────────────────────
+var BASE_URL = 'https://nathura-vitae.vercel.app/data/';
+
+// Lista de plantas por grupo (ids de los JSONs)
+var catalogoPlantas = {
+  'digestivo': [
+    'ajenjo','albahaca','alcachofa','aloe-vera','bardana',
+    'boldo','calea-urticifolia','cana-fistula','canela',
+    'curcuma','diente-de-leon','fumaria','guacimo','guayaba',
+    'hierba-limon','hinojo','jengibre','jobo','manzanilla',
+    'menta-piperita','noni','oregano','papaya','papaya-semillas',
+    'psyllium','te-verde','tomillo'
+  ],
+  'cardiovascular': [
+    'aguacate-hojas','ajo','cebolla','espino-blanco','hibisco',
+    'olivo','pata-de-vaca','romero','verbena-morada'
+  ],
+  'nervioso': [
+    'ashwagandha','bacopa-monnieri','damiana','escutelaria',
+    'ginkgo-biloba','griffonia','lavanda','lupulo','maca',
+    'mastranto','naranja-agria','pasiflora','rodiola',
+    'toronjil','valeriana','vergonzosa'
+  ],
+  'respiratorio': [
+    'andrographis','equinacea-purpurea','eucalipto','gordolobo',
+    'marrubio-blanco','papo','pelargonium-sidoides','regaliz-dgl',
+    'salvia','salvia-playa','sauco','tomillo','violeta'
+  ],
+  'inmunologico': [
+    'astragalo','bidens-pilosa','contragavilana','espirulina',
+    'muicle','ortiga'
+  ],
+  'flora-panama': [
+    'achiote','algarrobo','altamisa','anamu','bachar','balo',
+    'balsamino','calendula','cancerina','coralillo','consuelda',
+    'escobilla-monte','guanabana','hierba-de-sapo','hoja-de-mango',
+    'indio-desnudo','laureño','maranon','matico','poro-poro',
+    'ruda','santa-maria','totumo','verbena','wedelia-trilobata',
+    'xylopia-aromatica','alternanthera-pubiflora','blechum-pyramidatum',
+    'rauvolfia-tetraphylla'
+  ],
+  'urinario': [
+    'cana-agria','chancapiedra','cola-caballo',
+    'echinodorus-grandiflorus','peine-de-mono'
+  ]
+};
+
+// Nombres legibles por id
+var nombresLegibles = {
+  'ajenjo':'Ajenjo','albahaca':'Albahaca','alcachofa':'Alcachofa',
+  'aloe-vera':'Aloe vera / Sábila','bardana':'Bardana',
+  'boldo':'Boldo','calea-urticifolia':'Juanislama',
+  'cana-fistula':'Caña fístula','canela':'Canela',
+  'curcuma':'Cúrcuma','diente-de-leon':'Diente de león',
+  'fumaria':'Fumaria','guacimo':'Guácimo','guayaba':'Guayaba',
+  'hierba-limon':'Hierba de limón','hinojo':'Hinojo',
+  'jengibre':'Jengibre','jobo':'Jobo','manzanilla':'Manzanilla',
+  'menta-piperita':'Menta piperita','noni':'Noni',
+  'oregano':'Orégano','papaya':'Papaya',
+  'papaya-semillas':'Semillas de papaya','psyllium':'Psyllium',
+  'te-verde':'Té verde','tomillo':'Tomillo',
+  'aguacate-hojas':'Aguacate (hojas)','ajo':'Ajo',
+  'cebolla':'Cebolla','espino-blanco':'Espino blanco',
+  'hibisco':'Hibisco / Saril','olivo':'Olivo',
+  'pata-de-vaca':'Pata de vaca','romero':'Romero',
+  'verbena-morada':'Verbena morada',
+  'ashwagandha':'Ashwagandha','bacopa-monnieri':'Bacopa',
+  'damiana':'Damiana','escutelaria':'Escutelaria',
+  'ginkgo-biloba':'Ginkgo biloba','griffonia':'Griffonia',
+  'lavanda':'Lavanda','lupulo':'Lúpulo','maca':'Maca',
+  'mastranto':'Mastranto','naranja-agria':'Naranja agria',
+  'pasiflora':'Pasiflora','rodiola':'Rhodiola',
+  'toronjil':'Toronjil / Melisa','valeriana':'Valeriana',
+  'vergonzosa':'Vergonzosa / Dormilona',
+  'andrographis':'Andrographis','equinacea-purpurea':'Equinácea',
+  'eucalipto':'Eucalipto','gordolobo':'Gordolobo',
+  'marrubio-blanco':'Marrubio blanco','papo':'Papo / Rosa china',
+  'pelargonium-sidoides':'Pelargonium','regaliz-dgl':'Regaliz',
+  'salvia':'Salvia','salvia-playa':'Salvia de playa',
+  'sauco':'Saúco','violeta':'Violeta',
+  'astragalo':'Astrágalo','bidens-pilosa':'Bidens / Arponcito',
+  'contragavilana':'Contragavilana','espirulina':'Espirulina',
+  'muicle':'Muicle','ortiga':'Ortiga',
+  'achiote':'Achiote','algarrobo':'Algarrobo',
+  'altamisa':'Altamisa','anamu':'Anamú',
+  'bachar':'Bachar','balo':'Balo','balsamino':'Balsamino',
+  'calendula':'Caléndula','cancerina':'Cancerina',
+  'coralillo':'Coralillo','consuelda':'Consuelda',
+  'escobilla-monte':'Escobilla de monte',
+  'guanabana':'Guanábana','hierba-de-sapo':'Hierba de sapo',
+  'hoja-de-mango':'Hoja de mango','indio-desnudo':'Indio desnudo',
+  'laureño':'Laureño','maranon':'Marañón','matico':'Matico',
+  'poro-poro':'Poro-poro','ruda':'Ruda','santa-maria':'Santa María',
+  'totumo':'Totumo','verbena':'Verbena',
+  'wedelia-trilobata':'Wedelia','xylopia-aromatica':'Malagueta',
+  'alternanthera-pubiflora':'Hierba blanca',
+  'blechum-pyramidatum':'Mazorquilla',
+  'rauvolfia-tetraphylla':'Chalchupa',
+  'cana-agria':'Caña agria','chancapiedra':'Chancapiedra',
+  'cola-caballo':'Cola de caballo',
+  'echinodorus-grandiflorus':'Cucharones',
+  'peine-de-mono':'Peine de mono'
+};
+
+function cargarPlantasDeGrupo() {
+  var grupo = document.getElementById('selectorGrupo').value;
+  var sel = document.getElementById('selectorPlanta');
+  sel.innerHTML = '<option value="">— Selecciona planta —</option>';
+
+  if (!grupo) { sel.disabled = true; return; }
+
+  var lista = catalogoPlantas[grupo] || [];
+  lista.sort(function(a,b){
+    var na = nombresLegibles[a] || a;
+    var nb = nombresLegibles[b] || b;
+    return na.localeCompare(nb);
+  });
+  lista.forEach(function(id) {
+    var opt = document.createElement('option');
+    opt.value = id;
+    opt.textContent = nombresLegibles[id] || id;
+    sel.appendChild(opt);
+  });
+  sel.disabled = false;
+  document.getElementById('estadoCarga').textContent = lista.length + ' plantas disponibles';
+}
+
+function cargarPlantaSeleccionada() {
+  var grupo = document.getElementById('selectorGrupo').value;
+  var id    = document.getElementById('selectorPlanta').value;
+  if (!grupo || !id) {
+    document.getElementById('estadoCarga').textContent = '⚠ Selecciona grupo y planta';
+    return;
+  }
+  var url = BASE_URL + grupo + '/' + id + '.json';
+  document.getElementById('estadoCarga').textContent = 'Cargando ' + (nombresLegibles[id]||id) + '...';
+
+  document.getElementById('estadoCarga').textContent = '⏳ Cargando...';
+  
+  fetch(url, {mode: 'cors'})
+    .then(function(r){ 
+      if (!r.ok) throw new Error('HTTP ' + r.status);
+      return r.json(); 
+    })
+    .then(function(data){ 
+      autocompletarFormulario(data);
+    })
+    .catch(function(err){ 
+      // Intentar sin modo cors como fallback
+      fetch(url)
+        .then(function(r){ return r.json(); })
+        .then(function(data){ autocompletarFormulario(data); })
+        .catch(function(){
+          document.getElementById('estadoCarga').textContent = 
+            '⚠️ No se pudo cargar online. Abre esta app desde nathura-vitae.vercel.app para que funcione la carga automática.';
+        });
+    });
+}
+
+function autocompletarFormulario(data) {
+  // Limpiar imágenes previas
+  imagenes = { portada: null, prep: null };
+  limpiarImagen('portada');
+  limpiarImagen('prep');
+  
+  // Nombre común
+  document.getElementById('nombreComun').value =
+    data.nombreComun || '';
+
+  // Nombre científico
+  document.getElementById('nombreCientifico').value =
+    data.nombreCientifico || '';
+
+  // Nivel de evidencia
+  var nivel = data.nivelEvidenciaGlobal || 'C';
+  document.getElementById('nivelEvidencia').value = nivel;
+
+  // Emoji
+  document.getElementById('emoji').value = data.emoji || '🌿';
+
+  // Uso principal
+  var uso = data.grupoTerapeutico || data.propiedades || data.resumen || '';
+  document.getElementById('usoPrincipal').value = uso.substring(0,120);
+
+  // Principio activo
+  document.getElementById('principioActivo').value =
+    data.fotoquimica || '';
+
+  // Preparación — convertir a pasos separados por |
+  var prep = data.preparacion || '';
+  // Dividir por comas o puntos si es un párrafo
+  var pasos = prep.split(/[,;]/).map(function(s){ return s.trim(); }).filter(Boolean);
+  if (pasos.length <= 1) pasos = [prep];
+  document.getElementById('preparacion').value = pasos.join('|');
+
+  // Tradición / uso panameño
+  var nota = (data.disponibilidadPanama && data.disponibilidadPanama.notaRegional) || '';
+  var hist  = data.usoTradicionalHistorico || '';
+  document.getElementById('tradicion').value = (nota || hist).substring(0,150);
+
+  // Dato sorprendente — desde resumen
+  document.getElementById('datoSorprendente').value =
+    (data.resumen || '').substring(0,120);
+
+  // Advertencia
+  var adv = data.advertencia || data.contraindicaciones || '';
+  document.getElementById('advertencia').value = adv.substring(0,120);
+
+  document.getElementById('estadoCarga').textContent =
+    '✅ ' + data.nombreComun + ' cargada. Revisa y ajusta si deseas.';
+
+  // Scroll al formulario
+  document.querySelector('.control-panel').scrollIntoView({behavior:'smooth'});
+}
+
+
+// ── CONFIGURACIÓN DE VOCES ────────────────────────────────
+function cargarListaVoces() {
+  var voces = window.speechSynthesis.getVoices();
+  var sel = document.getElementById('selectVoz');
+  if (!sel) return;
+  sel.innerHTML = '<option value="">Voz predeterminada</option>';
+  voces.filter(function(v){ return v.lang.startsWith('es'); })
+    .forEach(function(v) {
+      var opt = document.createElement('option');
+      opt.value = v.name;
+      opt.textContent = v.name + ' (' + v.lang + ')';
+      sel.appendChild(opt);
+    });
+  // Si no hay voces en español, mostrar todas
+  if (sel.options.length <= 1) {
+    voces.forEach(function(v) {
+      var opt = document.createElement('option');
+      opt.value = v.name;
+      opt.textContent = v.name + ' (' + v.lang + ')';
+      sel.appendChild(opt);
+    });
+  }
+}
+
+function probarVoz() {
+  detenerTTS();
+  var utt = new SpeechSynthesisUtterance(
+    'Hola, soy la voz de NathuraVitae. La planta del día es jengibre.'
+  );
+  utt.lang   = 'es-PA';
+  utt.rate   = parseFloat(document.getElementById('rangeVelocidad').value) || 0.92;
+  utt.pitch  = parseFloat(document.getElementById('rangeTono').value) || 1;
+  utt.volume = parseFloat(document.getElementById('rangeVolumen').value) || 1;
+  var voces = window.speechSynthesis.getVoices();
+  var vozSelId = document.getElementById('selectVoz').value;
+  if (vozSelId) {
+    var voz = voces.find(function(v){ return v.name === vozSelId; });
+    if (voz) utt.voice = voz;
+  }
+  window.speechSynthesis.speak(utt);
+}
+
+// Cargar voces
+window.speechSynthesis.onvoiceschanged = function() {
+  cargarListaVoces();
+};
+// Cargar al inicio también
+setTimeout(cargarListaVoces, 500);
+</script>
+</body>
+</html>
