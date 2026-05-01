@@ -330,16 +330,15 @@ function rellenar(d){
   document.getElementById('fCientifico').value=d.nombreCientifico||'';
   document.getElementById('fNivel').value=d.nivelEvidenciaGlobal||'C';
   document.getElementById('fEmoji').value=d.emoji||'🌿';
-  document.getElementById('fUso').value=(d.grupoTerapeutico||d.propiedades||d.resumen||'').substring(0,120);
-  document.getElementById('fPrincipio').value=(d.fotoquimica||'').substring(0,100);
+  var usoVal=d.grupoTerapeutico||d.propiedades||d.resumen||''; if(Array.isArray(usoVal))usoVal=usoVal.join(', '); document.getElementById('fUso').value=String(usoVal).substring(0,120);
+  var prinVal=d.fotoquimica||''; if(Array.isArray(prinVal))prinVal=prinVal.join(', '); document.getElementById('fPrincipio').value=String(prinVal).substring(0,100);
   var prep=d.preparacion||'';
   var pasos=prep.split(/[,;]/).map(function(s){return s.trim();}).filter(Boolean);
   if(pasos.length<=1)pasos=[prep];
   document.getElementById('fPrep').value=pasos.join('|');
-  var nota=(d.disponibilidadPanama&&d.disponibilidadPanama.notaRegional)||'';
-  document.getElementById('fTrad').value=(nota||d.usoTradicionalHistorico||'').substring(0,150);
-  document.getElementById('fDato').value=(d.resumen||'').substring(0,120);
-  document.getElementById('fAdv').value=(d.advertencia||d.contraindicaciones||'').substring(0,120);
+  var nota=(d.disponibilidadPanama&&d.disponibilidadPanama.notaRegional)||''; var tradVal=nota||d.usoTradicionalHistorico||''; if(Array.isArray(tradVal))tradVal=tradVal.join('. '); document.getElementById('fTrad').value=String(tradVal).substring(0,150);
+  var datoVal=d.resumen||''; if(Array.isArray(datoVal))datoVal=datoVal.join('. '); document.getElementById('fDato').value=String(datoVal).substring(0,120);
+  var advVal=d.advertencia||d.contraindicaciones||''; if(Array.isArray(advVal))advVal=advVal.join('. '); document.getElementById('fAdv').value=String(advVal).substring(0,120);
   document.getElementById('estadoCarga').textContent='✅ '+d.nombreComun+' cargada. Ajusta si es necesario.';
   document.querySelector('.form-panel').scrollIntoView({behavior:'smooth'});
 }
