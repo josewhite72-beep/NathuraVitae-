@@ -227,11 +227,54 @@ input[type=range]{width:100%;accent-color:var(--verde)}
 
   <div class="panel">
     <h3>🎙 Configuración de voz</h3>
+    <!-- API Key Gemini -->
+    <div style="background:#f0f7f0;border:1.5px solid var(--verde-c);border-radius:8px;padding:10px;margin-bottom:12px">
+      <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--verde);margin-bottom:6px">🔑 Gemini API Key (privada)</div>
+      <div style="display:flex;gap:6px">
+        <input type="password" id="geminiKey" placeholder="Pega tu API key aquí"
+          style="flex:1;padding:8px 10px;border:1.5px solid #d4cfc4;border-radius:8px;font-size:13px;background:white;font-family:'Lato',sans-serif">
+        <button onclick="toggleKeyVis()" id="btnToggleKey"
+          style="padding:8px 10px;background:var(--verde);color:white;border:none;border-radius:8px;font-size:13px;cursor:pointer">👁</button>
+      </div>
+      <div style="font-size:10px;color:#666;margin-top:4px;font-style:italic">Solo se guarda en tu dispositivo. No se envía a ningún servidor externo.</div>
+      <div style="margin-top:6px;display:flex;gap:6px">
+        <button onclick="guardarKey()" style="flex:1;padding:7px;background:var(--verde);color:white;border:none;border-radius:6px;font-size:12px;font-weight:700;cursor:pointer">💾 Guardar key</button>
+        <button onclick="borrarKey()" style="padding:7px 10px;background:#c00;color:white;border:none;border-radius:6px;font-size:12px;cursor:pointer">🗑</button>
+      </div>
+    </div>
+
+    <!-- Selector de motor TTS -->
     <div class="campo" style="margin-bottom:10px">
-      <label>Voz</label>
-      <select id="selVoz" style="width:100%;padding:8px 10px;border:1.5px solid #d4cfc4;border-radius:8px;font-size:13px;background:var(--crema);font-family:'Lato',sans-serif">
-        <option value="">Voz predeterminada</option>
+      <label>Motor de voz</label>
+      <select id="motorTTS" onchange="cambiarMotor()" style="width:100%;padding:8px 10px;border:1.5px solid #d4cfc4;border-radius:8px;font-size:13px;background:var(--crema);font-family:'Lato',sans-serif">
+        <option value="gemini">🤖 Gemini (voz masculina natural)</option>
+        <option value="navegador">📱 Navegador (voz del dispositivo)</option>
       </select>
+    </div>
+
+    <!-- Voz Gemini -->
+    <div id="panelGemini">
+      <div class="campo" style="margin-bottom:10px">
+        <label>Voz Gemini</label>
+        <select id="selVozGemini" style="width:100%;padding:8px 10px;border:1.5px solid #d4cfc4;border-radius:8px;font-size:13px;background:var(--crema);font-family:'Lato',sans-serif">
+          <option value="Charon">Charon — Masculina, profunda</option>
+          <option value="Fenrir">Fenrir — Masculina, natural</option>
+          <option value="Orus">Orus — Masculina, clara</option>
+          <option value="Puck">Puck — Masculina, amigable</option>
+          <option value="Aoede">Aoede — Femenina, suave</option>
+          <option value="Kore">Kore — Femenina, clara</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Voz navegador (oculto por defecto) -->
+    <div id="panelNavegador" style="display:none">
+      <div class="campo" style="margin-bottom:10px">
+        <label>Voz del dispositivo</label>
+        <select id="selVoz" style="width:100%;padding:8px 10px;border:1.5px solid #d4cfc4;border-radius:8px;font-size:13px;background:var(--crema);font-family:'Lato',sans-serif">
+          <option value="">Voz predeterminada</option>
+        </select>
+      </div>
     </div>
     <div class="range-row">
       <div class="range-lbl"><span>Velocidad</span><span id="lblVel">0.9×</span></div>
@@ -326,14 +369,43 @@ function cargarPlanta(){
 function aStr(val){
   if(!val) return '';
   if(typeof val==='string') return val;
-  if(Array.isArray(val)) return val.map(aStr).join(', ');
-  if(typeof val==='object') return Object.values(val).map(aStr).join(', ');
+  if(typeof val==='number') return String(val);
+  if(Array.isArray(val)){
+    return val.map(function(v){
+      // Si el elemento del array es un objeto, buscar campo de texto
+      if(v && typeof v==='object'){
+        return v.nombre||v.name||v.principio||v.compuesto||v.texto||v.valor||
+               v.interno||v.externo||Object.values(v).filter(function(x){return typeof x==='string';})[0]||'';
+      }
+      return aStr(v);
+    }).filter(Boolean).join(', ');
+  }
+  if(typeof val==='object'){
+    // Objeto: intentar campos conocidos primero
+    var directo = val.interno||val.externo||val.culinario||val.descripcion||
+                  val.texto||val.valor||val.nombre||val.principio||val.resumen;
+    if(directo) return aStr(directo);
+    return Object.values(val).filter(function(v){return typeof v==='string'&&v.length>3;}).join('. ');
+  }
   return String(val);
 }
 function aPrep(val){
   if(!val) return '';
-  if(Array.isArray(val)) return val.join('|');
   if(typeof val==='string') return val;
+  if(Array.isArray(val)){
+    return val.map(function(v){
+      if(v && typeof v==='object') return v.paso||v.texto||v.descripcion||aStr(v);
+      return String(v);
+    }).filter(Boolean).join('|');
+  }
+  if(typeof val==='object'){
+    // Objeto con interno/externo
+    var parts=[];
+    if(val.interno) parts.push(aStr(val.interno));
+    if(val.externo) parts.push(aStr(val.externo));
+    if(!parts.length) parts=Object.values(val).filter(function(v){return typeof v==='string';});
+    return parts.join('|');
+  }
   return String(val);
 }
 function rellenar(d){
@@ -507,10 +579,141 @@ function getVoz(){
   return voz;
 }
 
+
+// ── GEMINI TTS ────────────────────────────────────────────
+var motorActual = 'gemini';
+var audioActual = null;
+
+function cambiarMotor(){
+  motorActual = document.getElementById('motorTTS').value;
+  document.getElementById('panelGemini').style.display =
+    motorActual==='gemini' ? 'block' : 'none';
+  document.getElementById('panelNavegador').style.display =
+    motorActual==='navegador' ? 'block' : 'none';
+  detenerTTS();
+}
+
+function guardarKey(){
+  var k = document.getElementById('geminiKey').value.trim();
+  if(!k){ alert('Pega tu API key primero'); return; }
+  localStorage.setItem('nvGeminiKey', k);
+  alert('✅ Key guardada en este dispositivo');
+}
+
+function borrarKey(){
+  localStorage.removeItem('nvGeminiKey');
+  document.getElementById('geminiKey').value='';
+  alert('🗑 Key borrada');
+}
+
+function toggleKeyVis(){
+  var inp = document.getElementById('geminiKey');
+  inp.type = inp.type==='password' ? 'text' : 'password';
+}
+
+function cargarKeyGuardada(){
+  var k = localStorage.getItem('nvGeminiKey');
+  if(k) document.getElementById('geminiKey').value = k;
+}
+
+async function narrarGemini(texto){
+  var key = (document.getElementById('geminiKey').value.trim()) ||
+             localStorage.getItem('nvGeminiKey') || '';
+  if(!key){
+    alert('⚠️ Ingresa tu Gemini API key en el panel de voz y toca Guardar.');
+    return;
+  }
+
+  var voz = document.getElementById('selVozGemini').value || 'Charon';
+  var vel = parseFloat(document.getElementById('rVel').value) || 0.9;
+  var btn = document.getElementById('btnTTS');
+
+  // Modelo que soporta TTS
+  var url = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-tts:generateContent?key=' + key;
+
+  var body = {
+    contents:[{parts:[{text: texto}]}],
+    generationConfig:{
+      responseModalities:['AUDIO'],
+      speechConfig:{
+        voiceConfig:{
+          prebuiltVoiceConfig:{voiceName: voz}
+        }
+      }
+    }
+  };
+
+  try {
+    btn.textContent = '⏳';
+    btn.classList.add('hablando');
+    hablando = true;
+
+    var res = await fetch(url, {
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body: JSON.stringify(body)
+    });
+
+    var data = await res.json();
+
+    if(!res.ok){
+      throw new Error((data.error && data.error.message) || 'Error HTTP ' + res.status);
+    }
+
+    var part = data.candidates &&
+               data.candidates[0] &&
+               data.candidates[0].content &&
+               data.candidates[0].content.parts &&
+               data.candidates[0].content.parts[0];
+
+    var b64 = part && part.inlineData && part.inlineData.data;
+    var mime = (part && part.inlineData && part.inlineData.mimeType) || 'audio/wav';
+
+    if(!b64) throw new Error('No se recibió audio. Verifica que tu key tenga acceso a Gemini 2.0 Flash.');
+
+    var bytes = atob(b64);
+    var arr = new Uint8Array(bytes.length);
+    for(var i=0;i<bytes.length;i++) arr[i]=bytes.charCodeAt(i);
+    var blob = new Blob([arr],{type:mime});
+    var audioUrl = URL.createObjectURL(blob);
+
+    if(audioActual){ audioActual.pause(); URL.revokeObjectURL(audioActual.src); audioActual=null; }
+    audioActual = new Audio(audioUrl);
+    audioActual.playbackRate = vel;
+
+    audioActual.onended = function(){
+      hablando = false;
+      btn.classList.remove('hablando');
+      btn.textContent = '🔊';
+      if(autoAvance && pagAct < totPags-1){
+        setTimeout(function(){ navegar(1); }, 700);
+      }
+    };
+    audioActual.onerror = function(){
+      hablando = false;
+      btn.classList.remove('hablando');
+      btn.textContent = '🔊';
+      alert('❌ Error al reproducir el audio');
+    };
+
+    await audioActual.play();
+
+  } catch(e){
+    hablando = false;
+    btn.classList.remove('hablando');
+    btn.textContent = '🔊';
+    alert('❌ Gemini TTS: ' + e.message);
+  }
+}
+
+setTimeout(cargarKeyGuardada, 400);
+
 function narrar(n){
+  var txt=expandir(textos()[n]||'');
+  if(motorActual==='gemini'){narrarGemini(txt);return;}
   if(!('speechSynthesis' in window))return;
   detenerTTS();
-  var utt=new SpeechSynthesisUtterance(expandir(textos()[n]||''));
+  var utt=new SpeechSynthesisUtterance(txt);
   utt.lang='es-PA';
   utt.rate=parseFloat(document.getElementById('rVel').value)||0.9;
   utt.pitch=parseFloat(document.getElementById('rTono').value)||1;
@@ -525,16 +728,27 @@ function narrar(n){
 }
 
 function detenerTTS(){
-  window.speechSynthesis.cancel();hablando=false;
+  window.speechSynthesis.cancel();
+  if(audioActual){audioActual.pause();audioActual=null;}
+  hablando=false;
   var b=document.getElementById('btnTTS');
   if(b){b.classList.remove('hablando');b.textContent='🔊';}
 }
 
-function toggleTTS(){hablando?detenerTTS():narrar(pagAct);}
+function toggleTTS(){
+  if(hablando){detenerTTS();return;}
+  if(!datos.nombre){alert('⚠️ Primero genera el Talking Book');return;}
+  narrar(pagAct);
+}
 
 function probarVoz(){
   detenerTTS();
-  var utt=new SpeechSynthesisUtterance('Hola, soy la voz de NathuraVitae. Planta del día: '+(document.getElementById('fNombre').value||'jengibre')+'.');
+  var txt='Hola, soy la voz de NathuraVitae. Planta del día: '+(document.getElementById('fNombre').value||'jengibre')+'.';
+  if(motorActual==='gemini'){
+    narrarGemini(txt);
+    return;
+  }
+  var utt=new SpeechSynthesisUtterance(txt);
   utt.lang='es-PA';
   utt.rate=parseFloat(document.getElementById('rVel').value)||0.9;
   utt.pitch=parseFloat(document.getElementById('rTono').value)||1;
@@ -559,13 +773,18 @@ function toggleAuto(){autoAvance=!autoAvance;document.getElementById('togAuto').
 function toggleNarr(){narrContinua=!narrContinua;document.getElementById('togNarr').classList.toggle('on',narrContinua);}
 function reiniciar(){detenerTTS();mostrarPag(0);}
 function reproducirTodo(){
+  // Verificar que el libro esté generado
+  if(!datos.nombre){
+    alert('⚠️ Primero genera el Talking Book');
+    return;
+  }
   reiniciar();
   setTimeout(function(){
     autoAvance=true;narrContinua=true;
     document.getElementById('togAuto').classList.add('on');
     document.getElementById('togNarr').classList.add('on');
     narrar(0);
-  },300);
+  },400);
 }
 
 function toggleEdicion(){
